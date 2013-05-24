@@ -1,0 +1,52 @@
+rebuild-needed = true
+variant = Android/Android Debug 
+success = false
+timestamp = 1368447943447
+
+[files]
+.settings/org.eclipse.core.resources.prefs = 1368429849137
+.mosyncproject.local = 1368447942251
+Util.h = 1367230175451
+.mosyncproject = 1368447942249
+AlertTab.cpp = 1368446913161
+AlertTab.h = 1368445704630
+main.cpp = 1368446783135
+HTTPConnection.cpp = 1368447675386
+ScreenMain.cpp = 1368446783153
+.cproject = 1368429849137
+.project = 1368429849043
+HTTPConnection.h = 1368447675352
+ScreenMain.h = 1368445497233
+
+[dependencies]
+
+[build-properties]
+build.prefs:ignore.default.library.paths/Release = true
+excludes/Release = 
+template.id = project.nativeuicpp
+build.prefs:additional.library.paths/Release = %mosync-home%/lib/pipe
+build.prefs:extra.res.sw/Release = 
+build.prefs:gcc.warnings/Debug = 0
+build.prefs:ignore.default.libraries/Release = true
+build.prefs:memory.heap/Debug = 3072
+build.prefs:extra.link.sw/Release = 
+build.prefs:memory.stack/Release = 512
+build.prefs:additional.library.paths/Debug = %mosync-home%/lib/pipe
+profile.mgr.type = 0
+build.prefs:memory.data/Release = 4096
+build.prefs:additional.include.paths/Release = %mosync-home%/include
+excludes/Debug = 
+build.prefs:additional.include.paths/Debug = %mosync-home%/include
+build.prefs:additional.libraries = MAUtil.lib,nativeui.lib
+build.prefs:gcc.warnings/Release = 0
+dependency.strategy = 0
+build.prefs:memory.heap/Release = 3072
+build.prefs:extra.res.sw/Debug = 
+build.prefs:additional.libraries/Debug = MAUtil.lib, NativeUI.lib, yajl.lib
+build.prefs:extra.link.sw/Debug = 
+build.prefs:ignore.default.include.paths/Release = true
+build.prefs:additional.libraries/Release = mastd.lib, MAUtil.lib, NativeUI.lib, Ads.lib,yajl.lib
+build.prefs:memory.stack/Debug = 512
+build.prefs:memory.data/Debug = 4096
+build.prefs:project.type = 
+
