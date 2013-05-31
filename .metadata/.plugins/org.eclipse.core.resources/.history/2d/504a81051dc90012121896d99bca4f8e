@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+
+  <message id="Alert.button-add-new-alert">Ajouter une alerte</message>
+
+  <message id="Alert.alert.alert-form-title">Alerts</message>
+  <message id="Alert.alert.alert-form-info">This page gives you the possibility to create an alert</message>
+
+</messages>

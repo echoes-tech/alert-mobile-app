@@ -1,0 +1,6 @@
+.res LOGO
+.image "icon.png"
+
+.res TEST_STRING
+.ubin
+.string "ceci est un test"

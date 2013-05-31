@@ -1,0 +1,96 @@
+/*
+ * ScreenMain.cpp
+ *
+ *  Created on: 13 mai 2013
+ *      Author: gdr
+ */
+#include "ScreenMain.h"
+
+
+
+/**
+ * Create the main screen with three tabs.
+ */
+ScreenMain* ScreenMain::createTabUI()
+{
+
+}
+
+/**
+ * Constructor.
+ */
+ScreenMain::ScreenMain() : TabScreen()
+{
+
+	// Create child screens.
+	alertTab = new AlertTab();
+	trackingTab = new TrackingTab();
+	homeTab = new HomeTab();
+
+	// Add them as tabs.
+	this->addTab(homeTab); //tab index 0;
+	this->addTab(trackingTab);//tab index 1;
+	this->addTab(alertTab);//tab index 2;
+}
+
+/**
+ * Destructor.
+ */
+ScreenMain::~ScreenMain()
+{
+}
+
+void ScreenMain::pullRequest(){trackingTab->runTimerEvent();}
+
+/**
+	 * Handle keypresses.
+	 */
+	void ScreenMain::handleKeyPress(int keyCode){
+		lprintfln("test");
+		lprintfln("Tab Active : %d",this->getActiveTabIndex());
+		if(keyCode == MAK_BACK)
+		{
+			Button* test = new Button();
+			maAlert("", "" , "Close Application", "test", "Cancel");
+
+		} //What do you want ?
+		if(this->getActiveTabIndex() == 2)
+		{
+			alertTab->handleKeyPress(keyCode);
+		}
+}
+
+
+    /**
+     * Called for events that have no predefined
+     * event handling method.
+     */
+    void ScreenMain::customEvent(const MAEvent& event)
+    {
+        if (EVENT_TYPE_ALERT == event.type)
+        {
+            if (1 == event.alertButtonIndex)
+            {
+                printf("YES it is then!\n");
+            }
+            else if (3 == event.alertButtonIndex)
+            {
+                printf("Ok, then it is a NO\n");
+            }
+        }
+    }
+
+	/**
+	 * Handle pointer presses.
+	 */
+	void ScreenMain::handlePointerPressed(MAPoint2d point){lprintfln("test mainScreen 2");}
+
+	/**
+	 * Handle pointer moves.
+	 */
+	void ScreenMain::handlePointerMoved(MAPoint2d point){lprintfln("test mainScreen 3");}
+
+	/**
+	 * Handle pointer releases.
+	 */
+	void ScreenMain::handlePointerReleased(MAPoint2d point){lprintfln("test mainScreen 4");}

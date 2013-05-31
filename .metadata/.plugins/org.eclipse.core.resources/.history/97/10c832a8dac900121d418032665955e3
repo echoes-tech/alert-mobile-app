@@ -1,0 +1,14 @@
+
+<resources>
+    <image id="LOGO" resource="icon.png"/>
+
+
+<!-- ATTENTION POUR QUE LES TRADUCTIONS MARCHE IL FAUT ABSOLUMENT ECRIRE LA TRADUCTION ANGLAISE SUIVI DE LA FRANCAISE 
+ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPILATION SI ON A FAIT UNE ERREUR, IL SERA REFAIT LORS DE LA COMPILATION-->
+    <string id="HOME_TAB_EN"> HOME </string>
+    <string id="HOME_TAB_FR"> ACCUEIL </string>
+    <string id="TRACKING_ALERT_TAB_EN"> TRACKING ALERT </string>
+    <string id="TRACKING_ALERT_TAB_FR"> Remonté d'alerte </string>
+    <string id="CREATE_ALERT_TAB_EN"> CREATE ALERT </string>
+    <string id="CREATE_ALERT_TAB_FR"> Creation d'alerte </string>
+</resources>

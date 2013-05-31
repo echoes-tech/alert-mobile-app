@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="25" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="340" y="178">
+<window height="768" maximized="true" width="1024" x="492" y="234">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="91" y="30"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.mobilesorcery.sdk.ui.changeActiveConfigToolbar" itemType="typeToolBarContribution" x="146" y="30"/>
@@ -24,6 +24,8 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -51,38 +53,44 @@
 <part id="14"/>
 <part id="15"/>
 <part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="AlertTab.h" partName="AlertTab.h" path="C:/Users/gdr/Documents/mosync/MobileApp/AlertTab.h" title="AlertTab.h" tooltip="MobileApp/AlertTab.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/AlertTab.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3873" selectionTopPixel="1967"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="AlertTab.cpp" partName="AlertTab.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/AlertTab.cpp" title="AlertTab.cpp" tooltip="MobileApp/AlertTab.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/AlertTab.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5349" selectionTopPixel="2300"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/main.cpp" title="main.cpp" tooltip="MobileApp/main.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3335" selectionTopPixel="2070"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.h" partName="ScreenMain.h" path="C:/Users/gdr/Documents/mosync/MobileApp/ScreenMain.h" title="ScreenMain.h" tooltip="MobileApp/ScreenMain.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/ScreenMain.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="449" selectionTopPixel="180"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.cpp" partName="ScreenMain.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/ScreenMain.cpp" title="ScreenMain.cpp" tooltip="MobileApp/ScreenMain.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/ScreenMain.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="562" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TrackingTab.cpp" partName="TrackingTab.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/TrackingTab.cpp" title="TrackingTab.cpp" tooltip="MobileApp/TrackingTab.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/TrackingTab.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="1069" selectionTopPixel="195"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="HomeTab.cpp" partName="HomeTab.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/HomeTab.cpp" title="HomeTab.cpp" tooltip="MobileApp/HomeTab.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/HomeTab.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="TabScreen.h" partName="TabScreen.h" title="TabScreen.h" tooltip="C:\MoSync\include\NativeUI\TabScreen.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\TabScreen.h" project="MobileApp"/>
 <editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="2255" selectionTopPixel="555"/>
@@ -93,27 +101,19 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="TextWidget.h" partName="TextWidget.h" title="TextWidget.h" tooltip="C:\MoSync\include\NativeUI\TextWidget.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\TextWidget.h" project="MobileApp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1096" selectionTopPixel="315"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1096" selectionTopPixel="270"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="HighLevelHttpConnection.h" partName="HighLevelHttpConnection.h" title="HighLevelHttpConnection.h" tooltip="C:\MoSync\include\Wormhole\HighLevelHttpConnection.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\Wormhole\HighLevelHttpConnection.h" project="MobileApp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="59" selectionOffset="4144" selectionTopPixel="2130"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Util.h" partName="Util.h" path="C:/Users/gdr/Documents/mosync/MobileApp/Util.h" title="Util.h" tooltip="MobileApp/Util.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/Util.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="944" selectionTopPixel="62"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="1168" selectionTopPixel="240"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Convert.cpp" partName="Convert.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/resource/Convert.cpp" title="Convert.cpp" tooltip="MobileApp/resource/Convert.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resource/Convert.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="45"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6138" selectionTopPixel="3482"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="Convert.h" partName="Convert.h" path="C:/Users/gdr/Documents/mosync/MobileApp/resource/Convert.h" title="Convert.h" tooltip="MobileApp/resource/Convert.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resource/Convert.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="36" selectionOffset="907" selectionTopPixel="90"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="snprintf.c" partName="snprintf.c" path="C:/Users/gdr/Documents/mosync/MobileApp/resource/snprintf.c" title="snprintf.c" tooltip="MobileApp/resource/snprintf.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resource/snprintf.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1312" selectionTopPixel="122"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="snprintf.h" partName="snprintf.h" path="C:/Users/gdr/Documents/mosync/MobileApp/resource/snprintf.h" title="snprintf.h" tooltip="MobileApp/resource/snprintf.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resource/snprintf.h"/>
@@ -121,7 +121,168 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="EditBox.h" partName="EditBox.h" title="EditBox.h" tooltip="C:\MoSync\include\NativeUI\EditBox.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\EditBox.h" project="MobileApp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="4855" selectionTopPixel="2535"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="4361" selectionTopPixel="2805"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="EditBoxListener.h" partName="EditBoxListener.h" title="EditBoxListener.h" tooltip="C:\MoSync\include\NativeUI\EditBoxListener.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\EditBoxListener.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="49" selectionOffset="2412" selectionTopPixel="422"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Connection.h" partName="Connection.h" title="Connection.h" tooltip="C:\MoSync\include\MAUtil\Connection.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\MAUtil\Connection.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="5204" selectionTopPixel="1875"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="HTTPConnect.cpp" partName="HTTPConnect.cpp" path="C:/Users/gdr/Documents/mosync/MobileApp/HTTPConnect.cpp" title="HTTPConnect.cpp" tooltip="MobileApp/HTTPConnect.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/HTTPConnect.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PluginEditionWidget(1).cpp" partName="PluginEditionWidget(1).cpp" title="PluginEditionWidget(1).cpp" tooltip="C:\Users\gdr\Downloads\PluginEditionWidget(1).cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/PluginEditionWidget(1).cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="41" selectionOffset="7460" selectionTopPixel="2250"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="EchoesHome.cpp" partName="EchoesHome.cpp" title="EchoesHome.cpp" tooltip="C:\Users\gdr\Downloads\EchoesHome.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/EchoesHome.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="1170"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="alert.xml" partName="alert.xml" title="alert.xml" tooltip="C:\Users\gdr\Downloads\alert.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/alert.xml"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MTXml.h" partName="MTXml.h" title="MTXml.h" tooltip="C:\MoSync\include\MTXml\MTXml.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\MTXml\MTXml.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10888" selectionTopPixel="3795"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="MobileApp.icon" partName="MobileApp.icon" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/MobileApp.icon" title="MobileApp.icon" tooltip="MobileApp/MobileApp.icon" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/MobileApp.icon"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="AlertTab.cpp" partName="AlertTab.cpp" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/AlertTab.cpp" title="AlertTab.cpp" tooltip="MobileApp/AlertTab.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/AlertTab.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1842" selectionTopPixel="420"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.cpp" partName="ScreenMain.cpp" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/ScreenMain.cpp" title="ScreenMain.cpp" tooltip="MobileApp/ScreenMain.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/ScreenMain.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="937" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="HomeTab.cpp" partName="HomeTab.cpp" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/HomeTab.cpp" title="HomeTab.cpp" tooltip="MobileApp/HomeTab.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/HomeTab.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1559" selectionTopPixel="225"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="SOAPRequest.cpp" partName="SOAPRequest.cpp" title="SOAPRequest.cpp" tooltip="C:\Users\gdr\Downloads\mosyncTest\AMSoap_0\SOAPRequest.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/mosyncTest/AMSoap_0/SOAPRequest.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="SOAPRequest.h" partName="SOAPRequest.h" title="SOAPRequest.h" tooltip="C:\Users\gdr\Downloads\mosyncTest\AMSoap_0\SOAPRequest.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/mosyncTest/AMSoap_0/SOAPRequest.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="1886" selectionTopPixel="257"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MTSax.h" partName="MTSax.h" title="MTSax.h" tooltip="c:\MoSync\include\MTXml\MTSax.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/c:/MoSync/include/MTXml/MTSax.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="9593" selectionTopPixel="4200"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="XMLReader.h" partName="XMLReader.h" title="XMLReader.h" tooltip="C:\MoSync\include\AMXml\XMLReader.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\AMXml\XMLReader.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="1430" selectionTopPixel="270"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TrackingTab.cpp" partName="TrackingTab.cpp" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/TrackingTab.cpp" title="TrackingTab.cpp" tooltip="MobileApp/TrackingTab.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/TrackingTab.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="113" selectionOffset="857" selectionTopPixel="360"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="AlertTab.h" partName="AlertTab.h" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/AlertTab.h" title="AlertTab.h" tooltip="MobileApp/AlertTab.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/AlertTab.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="775" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Widget.h" partName="Widget.h" title="Widget.h" tooltip="C:\MoSync\include\NativeUI\Widget.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\Widget.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="9598" selectionTopPixel="1607"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Label.h" partName="Label.h" title="Label.h" tooltip="C:\MoSync\include\NativeUI\Label.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\Label.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1424" selectionTopPixel="257"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="AlertResource.cpp" partName="AlertResource.cpp" title="AlertResource.cpp" tooltip="C:\Users\gdr\Downloads\AlertResource.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/gdr/Downloads/AlertResource.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="20705" selectionTopPixel="8085"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/main.cpp" title="main.cpp" tooltip="MobileApp/main.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="2867" selectionTopPixel="1590"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.h" partName="ScreenMain.h" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/ScreenMain.h" title="ScreenMain.h" tooltip="MobileApp/ScreenMain.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/ScreenMain.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="890" selectionTopPixel="272"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Moblet.h" partName="Moblet.h" title="Moblet.h" tooltip="C:\MoSync\include\MAUtil\Moblet.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\MAUtil\Moblet.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="3496" selectionTopPixel="915"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Screen.h" partName="Screen.h" title="Screen.h" tooltip="C:\MoSync\include\NativeUI\Screen.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\NativeUI\Screen.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1801" selectionTopPixel="720"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maapi.h" partName="maapi.h" title="maapi.h" tooltip="C:\MoSync\include\maapi.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" path="C:\MoSync\include\maapi.h" project="MobileApp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="140913" selectionTopPixel="70050"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="resources.lst" partName="resources.lst" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/resources/resources.lst" title="resources.lst" tooltip="MobileApp/resources/resources.lst" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resources/resources.lst"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="resources.lst" partName="resources.lst" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/resources/resources.lst" title="resources.lst" tooltip="MobileApp/resources/resources.lst" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resources/resources.lst"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="23" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="Resources.lst" partName="Resources.lst" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/Resources/Resources.lst" title="Resources.lst" tooltip="NativeUIDemo/Resources/Resources.lst" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/Resources/Resources.lst"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1298" selectionTopPixel="332"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ImageScreen.h" partName="ImageScreen.h" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ImageScreen.h" title="ImageScreen.h" tooltip="NativeUIDemo/ImageScreen.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ImageScreen.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ImageScreen.cpp" partName="ImageScreen.cpp" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ImageScreen.cpp" title="ImageScreen.cpp" tooltip="NativeUIDemo/ImageScreen.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ImageScreen.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="126" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Main.cpp" partName="Main.cpp" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/Main.cpp" title="Main.cpp" tooltip="NativeUIDemo/Main.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/Main.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1171" selectionTopPixel="135"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Util.h" partName="Util.h" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/Util.h" title="Util.h" tooltip="NativeUIDemo/Util.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/Util.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MAHeaders.h" partName="MAHeaders.h" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/Output/Release/Android/Android/MAHeaders.h" title="MAHeaders.h" tooltip="NativeUIDemo/Output/Release/Android/Android/MAHeaders.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/Output/Release/Android/Android/MAHeaders.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="ReadMe.txt" partName="ReadMe.txt" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ReadMe.txt" title="ReadMe.txt" tooltip="NativeUIDemo/ReadMe.txt" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ReadMe.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="92"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenColorList.cpp" partName="ScreenColorList.cpp" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ScreenColorList.cpp" title="ScreenColorList.cpp" tooltip="NativeUIDemo/ScreenColorList.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ScreenColorList.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1127" selectionTopPixel="2177"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.cpp" partName="ScreenMain.cpp" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ScreenMain.cpp" title="ScreenMain.cpp" tooltip="NativeUIDemo/ScreenMain.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ScreenMain.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.h" partName="ScreenMain.h" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/ScreenMain.h" title="ScreenMain.h" tooltip="NativeUIDemo/ScreenMain.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/ScreenMain.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="MAHeaders.h" partName="MAHeaders.h" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h" title="MAHeaders.h" tooltip="MobileApp/Output/Release/Android/Android/MAHeaders.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/Output/Release/Android/Android/MAHeaders.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.mobilesorcery.sdk.editor.resources" name="resources.lst" partName="resources.lst" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/resources/resources.lst" title="resources.lst" tooltip="MobileApp/resources/resources.lst" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/resources/resources.lst"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="37" selectionTopPixel="0"/>
+</editor>
+<editor id="com.mobilesorcery.sdk.editor.resources" name="Resources.lst" partName="Resources.lst" path="C:/Users/gdr/Documents/mosync/NativeUIDemo/Resources/Resources.lst" title="Resources.lst" tooltip="NativeUIDemo/Resources/Resources.lst" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NativeUIDemo/Resources/Resources.lst"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="500" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="HomeTab.h" partName="HomeTab.h" path="C:/Users/gdr/Documents/source/mobile-app/MobileApp/HomeTab.h" title="HomeTab.h" tooltip="MobileApp/HomeTab.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MobileApp/HomeTab.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="609" selectionTopPixel="107"/>
 </editor>
 </editors>
 <views>
@@ -131,7 +292,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (4 items)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -215,160 +377,174 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/AlertTab.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/AlertTab.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/HomeTab.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/NativeUIDemo/Resources/Resources.lst"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/ImageScreen.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/ImageScreen.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/Main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/Util.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/Output/Release/Android/Android/MAHeaders.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/NativeUIDemo/ReadMe.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/ScreenColorList.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/NativeUIDemo/workfile.rb"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/ScreenMain.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/NativeUIDemo/ScreenMain.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/Output/Release/Android/Android/MAHeaders.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.mobilesorcery.sdk.editor.resources" path="/MobileApp/resources/resources.lst"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/TrackingTab.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/AlertTab.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.mobilesorcery.sdk.editor.resources" path="/NativeUIDemo/Resources/Resources.lst"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/AlertTab.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/MobileApp/HomeTab.h"/>
 </editors>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="20277" y="19"/>
+<item historyLabel="MAHeaders.h" index="6">
+<position info="not_deleted" x="690" y="0"/>
 </item>
-<item historyLabel="AlertTab.h" index="1">
-<position info="not_deleted" x="2508" y="0"/>
+<item historyLabel="ImageScreen.cpp" index="3">
+<position info="not_deleted" x="136" y="8"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="20901" y="0"/>
+<item historyLabel="ReadMe.txt" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.h" index="1">
-<position info="not_deleted" x="2508" y="0"/>
+<item historyLabel="Main.cpp" index="4">
+<position info="not_deleted" x="1545" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="20901" y="0"/>
+<item historyLabel="ImageScreen.h" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="6271" y="0"/>
+<item historyLabel="ScreenColorList.cpp" index="8">
+<position info="not_deleted" x="1127" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="6377" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="6461" y="10"/>
+<item historyLabel="Resources.lst" index="1">
+<position info="not_deleted" x="817" y="22"/>
 </item>
-<item historyLabel="AlertTab.h" index="1">
-<position info="not_deleted" x="941" y="0"/>
+<item historyLabel="Util.h" index="5">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="6461" y="10"/>
+<item historyLabel="workfile.rb" index="9">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3962" y="63"/>
+<item historyLabel="Util.h" index="5">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="AlertTab.h" index="1">
-<position info="not_deleted" x="2133" y="0"/>
+<item historyLabel="ScreenMain.cpp" index="10">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3962" y="63"/>
+<item historyLabel="ScreenMain.h" index="11">
+<position info="not_deleted" x="3" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4119" y="0"/>
+<item historyLabel="ImageScreen.cpp" index="3">
+<position info="not_deleted" x="141" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="6440" y="48"/>
+<item historyLabel="MAHeaders.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3949" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="196" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="2830" y="0"/>
+<item historyLabel="Main.cpp" index="4">
+<position info="not_deleted" x="1545" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3949" y="0"/>
+<item historyLabel="Main.cpp" index="4">
+<position info="not_deleted" x="1171" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3131" y="0"/>
+<item historyLabel="ImageScreen.cpp" index="3">
+<position info="not_deleted" x="126" y="22"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="16494" y="14"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="211" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="16769" y="0"/>
+<item historyLabel="MAHeaders.h" index="12">
+<position info="not_deleted" x="16" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="16818" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="1547" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3190" y="0"/>
+<item historyLabel="Resources.lst" index="1">
+<position info="not_deleted" x="1298" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="14876" y="14"/>
+<item historyLabel="resources.lst" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TrackingTab.cpp" index="2">
-<position info="not_deleted" x="1150" y="201"/>
+<item historyLabel="MAHeaders.h" index="12">
+<position info="not_deleted" x="16" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4197" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position/>
 </item>
-<item historyLabel="TrackingTab.cpp" index="2">
-<position info="not_deleted" x="1069" y="12"/>
+<item historyLabel="TrackingTab.cpp" index="14">
+<position info="not_deleted" x="857" y="113"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4197" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position/>
 </item>
-<item historyLabel="AlertTab.h" index="3">
-<position info="not_deleted" x="2424" y="0"/>
+<item historyLabel="MAHeaders.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="23027" y="0"/>
+<item historyLabel="resources.lst" index="13">
+<position info="not_deleted" x="71" y="0"/>
 </item>
-<item historyLabel="AlertTab.h" index="3">
-<position info="not_deleted" x="830" y="9"/>
+<item historyLabel="Resources.lst" index="15">
+<position info="not_deleted" x="1298" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="23027" y="0"/>
+<item historyLabel="resources.lst" index="13">
+<position info="not_deleted" x="71" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3312" y="0"/>
+<item historyLabel="Resources.lst" index="15">
+<position info="not_deleted" x="1298" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="12534" y="17"/>
+<item historyLabel="resources.lst" index="13">
+<position info="not_deleted" x="58" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="13453" y="0"/>
+<item historyLabel="MAHeaders.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="13382" y="0"/>
+<item historyLabel="Resources.lst" index="15">
+<position info="not_deleted" x="1298" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="13453" y="0"/>
+<item historyLabel="AlertTab.cpp" index="16">
+<position info="not_deleted" x="1842" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="13453" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="1578" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="13497" y="11"/>
+<item historyLabel="HomeTab.h" index="17">
+<position/>
 </item>
-<item historyLabel="AlertTab.h" index="3">
-<position info="not_deleted" x="957" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4262" y="64"/>
+<item historyLabel="HomeTab.h" index="17">
+<position/>
 </item>
-<item historyLabel="AlertTab.h" index="3">
-<position info="not_deleted" x="2266" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="1402" y="65"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4262" y="64"/>
+<item historyLabel="HomeTab.h" index="17">
+<position info="not_deleted" x="935" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="3795" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4427" y="49"/>
+<item historyLabel="HomeTab.h" index="17">
+<position/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4778" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="1568" y="0"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="4870" y="0"/>
+<item historyLabel="HomeTab.h" index="17">
+<position info="not_deleted" x="618" y="9"/>
 </item>
-<item historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="5020" y="0"/>
+<item historyLabel="HomeTab.cpp" index="0">
+<position info="not_deleted" x="1561" y="0"/>
 </item>
-<item historyLabel="AlertTab.h" index="3">
-<position info="not_deleted" x="3873" y="0"/>
+<item historyLabel="HomeTab.h" index="17">
+<position info="not_deleted" x="617" y="9"/>
 </item>
-<item active="true" historyLabel="AlertTab.cpp" index="0">
-<position info="not_deleted" x="5020" y="0"/>
+<item active="true" historyLabel="MAHeaders.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -387,50 +563,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="EditBox.h" tooltip="C:\MoSync\include\NativeUI\EditBox.h">
-<persistable path="C:\MoSync\include\NativeUI\EditBox.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HomeTab.h" tooltip="MobileApp/HomeTab.h">
+<persistable path="/MobileApp/HomeTab.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="snprintf.h" tooltip="MobileApp/resource/snprintf.h">
-<persistable path="/MobileApp/resource/snprintf.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.mobilesorcery.sdk.editor.resources" name="Resources.lst" tooltip="NativeUIDemo/Resources/Resources.lst">
+<persistable path="/NativeUIDemo/Resources/Resources.lst"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="snprintf.c" tooltip="MobileApp/resource/snprintf.c">
-<persistable path="/MobileApp/resource/snprintf.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.mobilesorcery.sdk.editor.resources" name="resources.lst" tooltip="MobileApp/resources/resources.lst">
+<persistable path="/MobileApp/resources/resources.lst"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Convert.h" tooltip="MobileApp/resource/Convert.h">
-<persistable path="/MobileApp/resource/Convert.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="icon.png" tooltip="MobileApp/resources/icon.png">
+<persistable path="/MobileApp/resources/icon.png"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Convert.cpp" tooltip="MobileApp/resource/Convert.cpp">
-<persistable path="/MobileApp/resource/Convert.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MAHeaders.h" tooltip="MobileApp/Output/Release/Android/Android/MAHeaders.h">
+<persistable path="/MobileApp/Output/Release/Android/Android/MAHeaders.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Util.h" tooltip="MobileApp/Util.h">
-<persistable path="/MobileApp/Util.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.h" tooltip="NativeUIDemo/ScreenMain.h">
+<persistable path="/NativeUIDemo/ScreenMain.h"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HighLevelHttpConnection.h" tooltip="C:\MoSync\include\Wormhole\HighLevelHttpConnection.h">
-<persistable path="C:\MoSync\include\Wormhole\HighLevelHttpConnection.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenMain.cpp" tooltip="NativeUIDemo/ScreenMain.cpp">
+<persistable path="/NativeUIDemo/ScreenMain.cpp"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Widget.h" tooltip="C:\MoSync\include\NativeUI\Widget.h">
-<persistable path="C:\MoSync\include\NativeUI\Widget.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="workfile.rb" tooltip="NativeUIDemo/workfile.rb">
+<persistable path="/NativeUIDemo/workfile.rb"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Layout.h" tooltip="C:\MoSync\include\NativeUI\Layout.h">
-<persistable path="C:\MoSync\include\NativeUI\Layout.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ScreenColorList.cpp" tooltip="NativeUIDemo/ScreenColorList.cpp">
+<persistable path="/NativeUIDemo/ScreenColorList.cpp"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TextWidget.h" tooltip="C:\MoSync\include\NativeUI\TextWidget.h">
-<persistable path="C:\MoSync\include\NativeUI\TextWidget.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ReadMe.txt" tooltip="NativeUIDemo/ReadMe.txt">
+<persistable path="/NativeUIDemo/ReadMe.txt"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Button.h" tooltip="C:\MoSync\include\NativeUI\Button.h">
-<persistable path="C:\MoSync\include\NativeUI\Button.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MAHeaders.h" tooltip="NativeUIDemo/Output/Release/Android/Android/MAHeaders.h">
+<persistable path="/NativeUIDemo/Output/Release/Android/Android/MAHeaders.h"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TabScreen.h" tooltip="C:\MoSync\include\NativeUI\TabScreen.h">
-<persistable path="C:\MoSync\include\NativeUI\TabScreen.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Util.h" tooltip="NativeUIDemo/Util.h">
+<persistable path="/NativeUIDemo/Util.h"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Screen.h" tooltip="C:\MoSync\include\MAUI\Screen.h">
-<persistable path="C:\MoSync\include\MAUI\Screen.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Main.cpp" tooltip="NativeUIDemo/Main.cpp">
+<persistable path="/NativeUIDemo/Main.cpp"/>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="maapi.h" tooltip="C:\MoSync\include\maapi.h">
-<persistable path="C:\MoSync\include\maapi.h" project="MobileApp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ImageScreen.cpp" tooltip="NativeUIDemo/ImageScreen.cpp">
+<persistable path="/NativeUIDemo/ImageScreen.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="HomeTab.cpp" tooltip="MobileApp/HomeTab.cpp">
-<persistable path="/MobileApp/HomeTab.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ImageScreen.h" tooltip="NativeUIDemo/ImageScreen.h">
+<persistable path="/NativeUIDemo/ImageScreen.h"/>
 </file>
 </mruList>
 </workbench>

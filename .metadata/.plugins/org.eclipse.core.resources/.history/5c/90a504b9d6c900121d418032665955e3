@@ -1,0 +1,9 @@
+#define LOGO 1
+#define HOME_TAB_EN 2
+#define TRACKING_ALERT_TAB_EN 3
+#define CREATE_ALERT_TAB_EN 4
+#define HOME_TAB_FR 5
+#define TRACKING_ALERT_TAB_FR 6
+#define CREATE_ALERT_TAB_FR 7
+//not defined 8
+//not defined 9

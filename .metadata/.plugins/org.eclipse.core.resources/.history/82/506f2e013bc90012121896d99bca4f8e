@@ -1,0 +1,10 @@
+<resources>
+    <image id="LOGO" resource="icon.png"/>
+   
+    <condition screenSize="large">
+        <image id="BRICK1" resource="image/large/brick1.png"/>
+    </condition>
+    <condition platform="android">
+        <image id="BRICK1" resource="platform/android/brick1.png"/>
+    </condition>
+</resources>

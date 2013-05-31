@@ -1,0 +1,5 @@
+.res LOGO
+.image "icon.png"
+
+.res TEST_STRING
+.pstring "ceci est un test"

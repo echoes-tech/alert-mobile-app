@@ -1,0 +1,7 @@
+
+<resources>
+    <image id="LOGO" resource="icon.png"/>
+    <string id="HOME_TAB_EN"> HOME </string>
+    <string id="TRACKING_ALERT_TAB_EN"> TRACKING ALERT </string>
+    <string id="CREATE_ALERT_TAB_EN"> CREATE ALERT </string>
+</resources>

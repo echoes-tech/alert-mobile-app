@@ -1,0 +1,63 @@
+/*
+ * HomeTab.h
+ *
+ *  Created on: 14 mai 2013
+ *      Author: gdr
+ */
+
+#ifndef HOMETAB_H_
+#define HOMETAB_H_
+
+#include <NativeUI/Screen.h>
+#include <Wormhole/HighLevelHttpConnection.h>
+#include <Wormhole/MessageStreamJSON.h>
+#include <mastdlib.h>
+
+#define BUFSIZE 1024
+using namespace Wormhole;
+using namespace MAUtil;
+using namespace NativeUI;
+
+class HomeTab : public NativeUI::Screen, public HighLevelHttpConnection
+{
+public:
+	/**
+	 * Constructor.
+	 */
+	HomeTab();
+
+	/**
+	 * Destructor.
+	 */
+	virtual ~HomeTab();
+
+	void dataDownloaded(MAHandle , int );
+	void createUI();
+
+	char* GetString(MAHandle stringResource)
+	{
+	    // Get the length of the string data.
+	    int length = maGetDataSize(stringResource);
+
+	    // Allocate space for the string data plus the
+	    // null termination character.
+	    char* buffer = new char[length + 1];
+
+	    // Read data.
+	    maReadData(stringResource, buffer, 0, length);
+
+	    // Null terminate the string.
+	    buffer[length] = 'TEMPLATE_PAGE_CONTENT';
+
+	    // Return the string.
+	    return buffer;
+	}
+
+
+private:
+
+
+};
+
+
+#endif /* HOMETAB_H_ */

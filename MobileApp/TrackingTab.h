@@ -1,0 +1,100 @@
+/*
+ * TrackingTab.h
+ *
+ *  Created on: 13 mai 2013
+ *      Author: gdr
+ */
+
+#ifndef TRACKINGTAB_H_
+#define TRACKINGTAB_H_
+
+#include <ma.h>
+#include <MAUtil/String.h>		// C++ String class
+#include <MAUtil/Moblet.h>		// Moblet class
+
+#include <conprint.h>			// lprintfln for logging
+
+#include <NativeUI/Widgets.h>// Include all widgets
+#include <MAP/DateTime.h>
+
+#include "conf.h"
+#include "Util.h"
+#include "notification/LocalNotification.h"
+#include "notification/NotificationManager.h"
+
+#include <IX_CELLID.h>
+
+#include "resource/Convert.h"
+#include "MAHeaders.h"
+#include "IncludeFile.h"
+
+#include <MTXml/MTXml.h>
+
+#define BUFSIZE 1024
+
+using namespace Wormhole;
+using namespace MAUtil;
+using namespace NativeUI;
+using namespace MAPUtil;
+using Notification::NotificationManager;
+using Notification::LocalNotification;
+
+class TrackingTab : public NativeUI::Screen, public HighLevelHttpConnection
+{
+public:
+
+	enum eTrakingTab {
+			TRACKING_LIST = 0,
+		};
+
+	/**
+	 * Constructor.
+	 */
+	TrackingTab(int language);
+
+	/**
+	 * Destructor.
+	 */
+	virtual ~TrackingTab();
+
+	void parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root);
+
+	void connectUrl(String url, eTrakingTab fct);
+	void dataDownloaded(MAHandle , int );
+	void createUI();
+
+
+	void runTimerEvent();
+//	void drawChangeVerticalHorizontal(int width, int height);
+
+private:
+	int LANGUAGE;
+	int connERR;
+
+	eTrakingTab fonction;
+	char mBuffer[BUFSIZE];
+	bool mIsConnected;
+	bool bCreateUI;
+
+	int count;
+	String contentString;
+
+	ListView *lValert;
+	MAPUtil::DateTime dateLastSend;
+
+	 MAUtil::Map<int, MAUtil::String> mapTrackingAlertDesc;
+	 MAUtil::Map<int, String> mapTrackingAlertDate;
+
+	 MAUtil::Map<int,HorizontalLayout*> mapHLTA;
+	 MAUtil::Map<int,ListViewItem*> mapLVITA;
+	 MAUtil::Map<int,Label*> mapLTADesc;
+	 MAUtil::Map<int,Label*> mapLTAHeure;
+
+	VerticalLayout* mainLayout;
+
+	STime lastSendAlert;
+	LocalNotification* notification;
+};
+
+
+#endif /* TRACKINGTAB_H_ */

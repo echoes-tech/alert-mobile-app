@@ -1,0 +1,18 @@
+
+<resources>
+    <image id="LOGO" resource="icon.png"/>
+    
+    
+
+    <condition language="en">
+    <string id="HOME_TAB_EN"> HOME </string>
+    <string id="TRACKING_ALERT_TAB_EN"> TRACKING ALERT </string>
+    <string id="CREATE_ALERT_TAB_EN"> CREATE ALERT </string>
+    </condition>
+     <condition language="fr">
+    <string id="HOME_TAB_EN"> HOMEfr </string>
+    <string id="TRACKING_ALERT_TAB_EN"> TRACKING ALERTfr </string>
+    <string id="CREATE_ALERT_TAB_EN"> CREATE ALERTfr </string>
+    </condition>
+    
+</resources>
