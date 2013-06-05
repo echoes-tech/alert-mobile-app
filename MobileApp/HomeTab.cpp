@@ -13,8 +13,9 @@
 	/**
 	 * Constructor.
 	 */
-	HomeTab::HomeTab(int language): Screen(), LANGUAGE(language)
+	HomeTab::HomeTab(int language, String loginToken): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
 	{
+
 //		char buffer[2500];
 //MAHandle XML = maFileOpen("alert.xml",MA_ACCESS_READ);
 //maFileRead(xmlFile, buffer, 2500);

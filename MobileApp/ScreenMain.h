@@ -25,6 +25,7 @@ public:
 	 */
 	virtual ~ScreenMain();
 
+	void createUI(String loginToken);
 
     void pullRequest();
 
@@ -58,6 +59,8 @@ public:
 
 private:
 	int LANGUAGE;
+
+	bool uiCreated;
 
 	AlertTab* alertTab;
 	TrackingTab* trackingTab;

@@ -27,7 +27,16 @@ MA 02110-1301, USA.
 #define UTIL_H_
 
 #include <mastring.h>		// C string functions
+
+
+#include <ma.h>
+#include <maassert.h>
+#include <conprint.h>
+#include <MAUtil/String.h>
+#include <MAUtil/FileLister.h>
+
 #include "mavsprintf.h"
+#include "resource/Convert.h"
 
 #define BUF_MAX 256
 
@@ -40,6 +49,12 @@ enum platform_code{
 enum eHttp{
 	GET = 0,
 	POST
+};
+
+enum eFile{
+	FILE_OPEN_ERROR = 0,
+	FILE_NOT_EXIST,
+	FILE_CLOSE
 };
 
 /**
@@ -63,6 +78,23 @@ static int getPlatform()
 	return WINDOWSPHONE7;
 }
 
+static int getSystemConnection()
+{
+	char buf[64] = "";
+
+		int res = maGetSystemProperty("mosync.network.type",buf, sizeof(buf));
+		lprintfln("Connecté ? : %i: %s\n", res, buf);
+		MAUtil::String tmp = buf;
+		if(tmp == "none")
+		{
+			maPanic(1, "No connection detected");
+			return -1;
+		}
+		return res;
+
+}
+
+
 static int getSystemLanguage()
 {
 	int language = 0;
@@ -76,6 +108,125 @@ static int getSystemLanguage()
 		language = 1;
 	}
 	return language;
+}
+
+static int getSystemProperty(const char* key, MAUtil::String& dst) {
+    int size = maGetSystemProperty(key, NULL, 0);
+    if(size < 0)
+        return size;
+    dst.resize(size-1);
+    maGetSystemProperty(key, dst.pointer(), size);
+    return size;
+}
+
+static MAUtil::String getLocalPath() {
+    // Do this here to work around a MoRE bug.
+    FileLister fl;
+    fl.start("/");
+
+    MAUtil::String path;
+    // Try getting the local path.
+    int result = getSystemProperty("mosync.path.local", path);
+    // If it works, fine.
+    if(result > 0) {
+//        printf("Got local path: %i\n", result);
+        return path + "";
+    }
+
+    // Otherwise, get the first root directory.
+    fl.start("");
+    result = fl.next(path);
+    MAASSERT(result > 0);
+    return path;
+}
+
+static eFile tryToRead(MAUtil::String &config) {
+    // Construct the filename.
+    MAUtil::String filename = getLocalPath() + "EA_mobile_conf.txt";
+
+    // Open the file handle.
+    lprintfln("Open '%s'\n", filename.c_str());
+    MAHandle file = maFileOpen(filename.c_str(), MA_ACCESS_READ);
+    if(file < 0) {
+//        printf("Error %i\n", file);
+        return FILE_OPEN_ERROR;
+    }
+
+    // Check if the file exists.
+    int res = maFileExists(file);
+    MAASSERT(res >= 0);
+    if(!res) {
+//        printf("File does not exist.\n");
+        maFileClose(file);
+        return FILE_NOT_EXIST;
+    }
+
+    // Get the file size.
+    int size = maFileSize(file);
+    lprintfln("Size: %i\n", size);
+    MAASSERT(size >= 0);
+
+    // Read the file data.
+    static char data[600];
+    MAASSERT(size < (int)sizeof(data));
+    res = maFileRead(file, data, size);
+    MAASSERT(res == 0);
+    config = data;
+    // Print some data.
+    data[300] = 0;
+    lprintfln("%s\n", data);
+
+    // Close the file.
+    lprintfln("Closing...\n");
+    res = maFileClose(file);
+    MAASSERT(res == 0);
+
+    lprintfln("Done.\n");
+    return FILE_CLOSE;
+}
+
+static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUtil::String &tokenAuthent, MAUtil::String &mode, long long &idMedia) {
+    // Construct the filename.
+    MAUtil::String filename = getLocalPath() + "EA_mobile_conf.txt";
+
+    // Open the file handle.
+//    printf("Open '%s'\n", filename.c_str());
+    MAHandle file = maFileOpen(filename.c_str(), MA_ACCESS_READ_WRITE);
+    if(file < 0) {
+//        printf("Error %i\n", file);
+        return FILE_OPEN_ERROR;
+    }
+
+    // If the file exists...
+    int res = maFileExists(file);
+    MAASSERT(res >= 0);
+    if(res) {
+        // Truncate it, deleting any old data.
+//        printf("Truncating file...\n");
+        res = maFileTruncate(file, 0);
+        MAASSERT(res == 0);
+    } else {
+        // Otherwise, create it.
+//        printf("Creating file...\n");
+        res = maFileCreate(file);
+        MAASSERT(res >= 0);
+    }
+    // In either case, we now have an empty file at our disposal.
+
+    // Write some data.
+    MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \"" + tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent + "\",\"authentication_mode\" : \"" + mode + "\",\"id_media_value\" : " + Convert::toString(idMedia) +"}";
+//    static const char data[] = tmp.c_str();
+    res = maFileWrite(file, tmp.c_str(), tmp.size());
+//    res = maFileWrite(file, data, sizeof(data));
+    MAASSERT(res == 0);
+
+    // Close the file.
+//    printf("Closing...\n");
+    res = maFileClose(file);
+    MAASSERT(res == 0);
+
+//    printf("Done.\n");
+    return FILE_CLOSE;
 }
 
 #endif /* UTIL_H_ */

@@ -90,12 +90,12 @@
   c:/MoSync/include/MAP/TimeSpan.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
-  c:/MoSync/include/mavsprintf.h \
+  c:/MoSync/include/MAUtil/FileLister.h c:/MoSync/include/mavsprintf.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
   c:/MoSync/include/notification/LocalNotification.h \
   c:/MoSync/include/notification/NotificationManager.h \
   c:/MoSync/include/notification/LocalNotification.h \
   c:/MoSync/include/IX_CELLID.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
   C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
   c:/MoSync/include/NativeUI/Screen.h \

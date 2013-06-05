@@ -78,7 +78,7 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="Screen_Main_close_app_FR">Maintenant vous ne recevrez plus d'alert, l'application est arretée </string>
    
     <string id="Screen_Main_Button_close_app">Close Application</string>
-    <string id="Screen_Main_close_app_FR">Fermer l'appication</string>
+    <string id="Screen_Main_Button_close_app_FR">Fermer l'appication</string>
     
     <string id="Screen_Main_Button_home">Home</string>
     <string id="Screen_Main_Button_home_FR">Accueil</string>

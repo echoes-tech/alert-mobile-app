@@ -18,20 +18,14 @@ ScreenMain* ScreenMain::createTabUI() {
  */
 ScreenMain::ScreenMain() :
 		TabScreen() {
+	uiCreated = false;
+	LANGUAGE = getSystemLanguage();
+	lprintfln("test mainscreen %s", getLocalPath().c_str());
 
 	// Create child screens.
-	LANGUAGE = getSystemLanguage();
-	alertTab = new AlertTab(LANGUAGE);
-//	alertTab->setLanguage(getSystemLanguage());
-	trackingTab = new TrackingTab(LANGUAGE);
-//	trackingTab->setLanguage(getSystemLanguage());
-	homeTab = new HomeTab(LANGUAGE);
 
-	// Add them as tabs.
-	this->addTab(homeTab); //tab index 0;
-	this->addTab(trackingTab); //tab index 1;
-	this->addTab(alertTab); //tab index 2;
 }
+
 
 /**
  * Destructor.
@@ -39,8 +33,24 @@ ScreenMain::ScreenMain() :
 ScreenMain::~ScreenMain() {
 }
 
+void ScreenMain::createUI(String loginToken){
+	alertTab = new AlertTab(LANGUAGE, loginToken);
+	trackingTab = new TrackingTab(LANGUAGE, loginToken);
+	homeTab = new HomeTab(LANGUAGE, loginToken);
+
+	// Add them as tabs.
+	this->addTab(homeTab); //tab index 0;
+	this->addTab(trackingTab); //tab index 1;
+	this->addTab(alertTab); //tab index 2;
+
+	this->show();
+	uiCreated = true;
+}
+
 void ScreenMain::pullRequest() {
-	trackingTab->runTimerEvent();
+	if(uiCreated){
+		trackingTab->runTimerEvent();
+	}
 }
 
 /**

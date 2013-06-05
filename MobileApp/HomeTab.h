@@ -30,7 +30,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	HomeTab(int language);
+	HomeTab(int language, String loginToken);
 
 	/**
 	 * Destructor.
@@ -42,6 +42,7 @@ public:
 	void createUI();
 
 private:
+	String _LOGINTOKEN;
 	int LANGUAGE;
 
 };

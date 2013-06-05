@@ -10,8 +10,8 @@
 /**
  * Constructor.
  */
-TrackingTab::TrackingTab(int language) :
-		Screen(), LANGUAGE(language) {
+TrackingTab::TrackingTab(int language, String loginToken) :
+		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken) {
 
 	// Set title and icon of the stack screen.
 	setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
@@ -30,7 +30,7 @@ void TrackingTab::runTimerEvent() {
 	String urlTmp = HOST;
 	urlTmp += "/alerts/tracking/messages";
 	//		urlTmp += "/plugins/1/informations";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	urlTmp += "&media=1";
 	lprintfln(urlTmp.c_str());
 	connectUrl(urlTmp, TRACKING_LIST);
@@ -64,6 +64,7 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 	}
 	if(connERR >= 3)
 	{
+		getSystemConnection();
 		String sMessage = "Connection ERROR. ERREUR:";
 		sMessage += Convert::toString(result);
 		maMessageBox("Connection Error", sMessage.c_str() );
@@ -183,7 +184,7 @@ void TrackingTab::createUI() {
 	String urlTmp = HOST;
 	urlTmp += "/alerts/tracking/messages";
 //		urlTmp += "/plugins/1/informations";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	urlTmp += "&media=1";
 	lprintfln(urlTmp.c_str());
 

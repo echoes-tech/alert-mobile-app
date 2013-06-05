@@ -50,7 +50,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	TrackingTab(int language);
+	TrackingTab(int language, String loginToken);
 
 	/**
 	 * Destructor.
@@ -68,6 +68,7 @@ public:
 //	void drawChangeVerticalHorizontal(int width, int height);
 
 private:
+	String _LOGINTOKEN;
 	int LANGUAGE;
 	int connERR;
 

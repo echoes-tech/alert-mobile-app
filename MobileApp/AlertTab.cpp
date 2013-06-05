@@ -9,8 +9,8 @@
 /**
  * Constructor.
  */
-AlertTab::AlertTab(int language) :
-		Screen(), LANGUAGE(language){
+AlertTab::AlertTab(int language, String loginToken) :
+		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken){
 	// Set title and icon of the stack screen.
 	setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
 	selectedAsset = -1;
@@ -26,7 +26,6 @@ AlertTab::AlertTab(int language) :
 //			httpConnect = new HTTPConnect();
 //			httpConnect->connectUrl("https://alert-api.echoes-tech.com/plugins/1/sources/1/searches/?login=thomas.saquet@echoes-tech.com&password=147258369aA", "parseJSONPlugin"/*,this*/);
 	createUI();
-
 }
 
 /**
@@ -172,6 +171,7 @@ if (connERR >= 3) {
 	sMessage = "Connection Error. ERREUR :";
 	sMessage += Convert::toString(result);
 	maMessageBox("Connection Error", sMessage.c_str());
+	getSystemConnection();
 }
 
 }
@@ -208,7 +208,7 @@ void AlertTab::parseJSONPostAlert(MAUtil::YAJLDom::Value* root) {
 lprintfln("parseJSONPostAlert");
 String urlTmp = HOST;
 urlTmp += "/alerts/";
-urlTmp += LOGIN;
+urlTmp += _LOGINTOKEN;
 connectUrl(urlTmp, ALERT_LIST);
 
 int index = mapSnoozeList.size();
@@ -288,7 +288,7 @@ currentAMS++;
 if (currentAMS < mapMediaValueListId.size()) {
 	String urlTmp = HOST;
 	urlTmp += "/medias/specializations/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	String message = "{\"ams_snooze\": ";
 	message += Convert::toString(mapSnoozeList[currentAMS]);
 //				lprintfln(" mapSnoozeList[currentAMS] = %d",  mapSnoozeList[currentAMS]);
@@ -300,7 +300,7 @@ if (currentAMS < mapMediaValueListId.size()) {
 } else {
 	String urlTmp = HOST;
 	urlTmp += "/alerts/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 
 	String message = "{\"name\": \"" + mapLAssetName[selectedAsset]->getText()
 			+ " - " + mapLPluginName[selectedPlugin]->getText() + " - "
@@ -488,7 +488,7 @@ if (NULL == root || YAJLDom::Value::NUL == root->getType()
 	urlTmp += "/plugins/" + Convert::toString(mapPluginId[selectedPlugin])
 			+ "/sources/" + Convert::toString(mapInfoIdSrc[selectedInformation])
 			+ "/searches/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	connectUrl(urlTmp, SEARCH_INFO);
 }
 }
@@ -728,7 +728,7 @@ if (listView == lValert) {
 			urlTmp += "/assets/";
 			urlTmp += Convert::toString(mapAssetId[i]);
 			urlTmp += "/plugins/";
-			urlTmp += LOGIN;
+			urlTmp += _LOGINTOKEN;
 			lprintfln(urlTmp.c_str());
 			connectUrl(urlTmp, PLUGIN_LIST);
 		}
@@ -741,7 +741,7 @@ if (listView == lValert) {
 			urlTmp += "/plugins/";
 			urlTmp += Convert::toString(mapPluginId[i]);
 			urlTmp += "/informations/";
-			urlTmp += LOGIN;
+			urlTmp += _LOGINTOKEN;
 			lprintfln(urlTmp.c_str());
 			connectUrl(urlTmp, INFORMATION_LIST);
 		}
@@ -757,14 +757,14 @@ if (listView == lValert) {
 	String urlTmp = HOST;
 	urlTmp += "/units/";
 	urlTmp += Convert::toString(mapUnitId[0]);
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	connectUrl(urlTmp, UNIT_INFO);
 	createOptionPage();
 
 } else if (listViewItem == mapLVIOption[1]) {
 	String urlTmp = HOST;
 	urlTmp += "/criteria/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	connectUrl(urlTmp, OPERATOR_LIST);
 } else if (listView == lVOperator) {
 	String criterionTmp = Convert::tr(alert_create_String_Operator_Name + LANGUAGE);
@@ -783,7 +783,7 @@ if (listView == lValert) {
 		urlTmp1 += "/units/";
 		urlTmp1 += Convert::toString(mapUnitId[0]);
 		urlTmp1 += "/subunits/";
-		urlTmp1 += LOGIN;
+		urlTmp1 += _LOGINTOKEN;
 		connectUrl(urlTmp1, SUB_UNIT_INFO);
 	} else if (mapUnitId.size() == 1) {
 		createUnitPage();
@@ -812,7 +812,7 @@ if (listView == lValert) {
 	urlTmp1 += "/organizations/users/";
 	urlTmp1 += Convert::toString(mapUserId[selectedUser]);
 	urlTmp1 += "/medias/";
-	urlTmp1 += LOGIN;
+	urlTmp1 += _LOGINTOKEN;
 	connectUrl(urlTmp1, MEDIA_TYPE);
 } else if (listView == lVMedia) {
 	for (int idx = 0; idx < mapLVIMedia.size(); idx++) {
@@ -825,7 +825,7 @@ if (listView == lValert) {
 	urlTmp1 += Convert::toString(mapUserId[selectedUser]);
 	urlTmp1 += "/medias/";
 	urlTmp1 += Convert::toString(mapMediaId[selectedMedia]);
-	urlTmp1 += LOGIN;
+	urlTmp1 += _LOGINTOKEN;
 	connectUrl(urlTmp1, MEDIA_VALUE_LIST);
 } else if (listView == lVMediaValue) {
 	for (int idx = 0; idx < mapLVIMediaValue.size(); idx++) {
@@ -842,7 +842,7 @@ lprintfln("bouton click");
 if (button == bAddAlert) {
 	String urlTmp = HOST;
 	urlTmp += "/assets/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	connectUrl(urlTmp, ASSET_LIST);
 } else if (button == bCancel) {
 	mapLVIAlert[posOptionAlert]->removeChild(HLOptionAlert);
@@ -852,14 +852,14 @@ if (button == bAddAlert) {
 	//		TODO : remonte toutes les alertes existantes pour voire les détails de l'alerte sélctionnée (il faudrait utiliser get /alerts/idAlert (pas encore créée dans l'API))
 	String urlTmp = HOST;
 	urlTmp += "/alerts/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	connectUrl(urlTmp, ALERT_INFO);
 } else if (button == bDelete) {
 	// TODO : Attention on ne peut pas regarder le resultat de la requete avec HTTP_DELETE
 	HttpConnection httpCon(this);
 	String urlTmp = HOST;
 	urlTmp +=
-			"/alerts/" + Convert::toString(mapAlertId[posOptionAlert]) + LOGIN;
+			"/alerts/" + Convert::toString(mapAlertId[posOptionAlert]) + _LOGINTOKEN;
 //		httpCon.create(urlTmp.c_str(), HTTP_DELETE);
 	int res = maHttpCreate(urlTmp.c_str(), HTTP_DELETE);
 	if (res < 0) {
@@ -869,7 +869,7 @@ if (button == bAddAlert) {
 		maHttpFinish(res);
 		String urlTmp = HOST;
 		urlTmp += "/alerts/";
-		urlTmp += LOGIN;
+		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, ALERT_LIST);
 		for (int idx0 = 0; idx0 < mapAlertId.size(); idx0++) {
 			lValert->removeChild(mapLVIAlert[idx0]);
@@ -881,7 +881,7 @@ if (button == bAddAlert) {
 	if (optionPageValid()) {
 		String urlTmp = HOST;
 		urlTmp += "/organizations/users/";
-		urlTmp += LOGIN;
+		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, USER_LIST);
 	}
 } else if (button == bAddToList) {
@@ -905,7 +905,7 @@ if (button == bAddAlert) {
 	currentAMS = 0;
 	String urlTmp = HOST;
 	urlTmp += "/medias/specializations/";
-	urlTmp += LOGIN;
+	urlTmp += _LOGINTOKEN;
 	String message = "{\"ams_snooze\": ";
 	message += Convert::toString(mapSnoozeList[0]);
 	message += ",\"mev_id\" : ";
@@ -1070,7 +1070,7 @@ void AlertTab::createUI() {
 
 String urlTmp = HOST;
 urlTmp += "/alerts/";
-urlTmp += LOGIN;
+urlTmp += _LOGINTOKEN;
 connectUrl(urlTmp, ALERT_LIST);
 
 mainLayoutAlertChoice = new VerticalLayout();

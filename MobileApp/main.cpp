@@ -5,6 +5,7 @@
 #include <NativeUI/Widgets.h>// Include all widgets
 #include "ScreenMain.h"			// Main UI screen
 #include "Util.h"
+#include "Authentication.h"
 // How often the timer will be invoked
 #define TIMER_PERIOD 60000
 
@@ -21,7 +22,9 @@ public:
 	 */
 	NativeUIMoblet() {
 		// Create the main user interface screen.
-				mMainScreen = new ScreenMain();
+		getSystemConnection();
+
+		mMainScreen = new ScreenMain();
 		addTimer(this, TIMER_PERIOD, 0);
 		addFocusListener(this);
 		maScreenSetOrientation(SCREEN_ORIENTATION_DYNAMIC);
@@ -38,8 +41,29 @@ public:
 
 
 
-		// Show the screen.
-		mMainScreen->show();
+//		// Show the screen.
+//		mMainScreen->show();
+					Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
+					mAuthentication->show();
+//			//		while (mAuthentication.getAuthentication() != true)
+//			//		{
+//			//			maWait(10000);
+//			//			lprintfln("en attente d'authentification");
+//			//		}
+//					lprintfln("nouvelle utilisateur");
+////					tryToWrite();
+//				}
+//				else {
+//					Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
+//					mAuthentication->show();
+////					mAuthentication->authenticationAccepted();
+//			//		while (mAuthentication.getAuthentication() != true) {
+//			//			maWait(10000);
+//			//			lprintfln("en attente d'authentification");
+//			//		}
+//		//			tryToWrite();
+//		//			tryToRead();
+//				}
 	}
 
 	// send timer event to trackingTabObject
