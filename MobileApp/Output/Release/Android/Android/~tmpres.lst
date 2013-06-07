@@ -22,6 +22,72 @@
 .res CREATE_ALERT_TAB_FR
 .bin
 .string " Creation d'alerte "
+.res alert_create_Label_asset_choice
+.bin
+.string "Asset choice"
+.res alert_create_Label_asset_choice_FR
+.bin
+.string "Choix du serveur"
+.res alert_create_Label_plugin_choice
+.bin
+.string "Plugin choice"
+.res alert_create_Label_plugin_choice_FR
+.bin
+.string "Choix de l'application"
+.res alert_create_Label_info_choice
+.bin
+.string "Information choice"
+.res alert_create_Label_info_choice_FR
+.bin
+.string "Choix de l'information"
+.res alert_create_Label_option_choice
+.bin
+.string "Option choice"
+.res alert_create_Label_option_choice_FR
+.bin
+.string "Choix des options"
+.res alert_create_Label_operator_choice
+.bin
+.string "Operator choice"
+.res alert_create_Label_operator_choice_FR
+.bin
+.string "Choix de l'operateur"
+.res alert_create_Label_unit_choice
+.bin
+.string "Unit choice"
+.res alert_create_Label_unit_choice_FR
+.bin
+.string "Choix de l'unit"
+.res alert_create_Label_user_choice
+.bin
+.string "User choice"
+.res alert_create_Label_user_choice_FR
+.bin
+.string "Choix de l'utilisateur"
+.res alert_create_Label_media_choice
+.bin
+.string "Media choice"
+.res alert_create_Label_media_choice_FR
+.bin
+.string "Choix du media"
+.res alert_create_Label_media_value_choice
+.bin
+.string "Recipient choice"
+.res alert_create_Label_media_value_choice_FR
+.bin
+.string "Choix du media"
+.res alert_create_Label_snooze_choice
+.bin
+.string "Snooze choice"
+.res alert_create_Label_snooze_choice_FR
+.bin
+.string "Choix du snooze"
+.res alert_create_Label_list_dest_choice
+.bin
+.string "Reicevers List"
+.res alert_create_Label_list_dest_choice_FR
+.bin
+.string "List des destinataires"
 .res alert_create_String_Alert_Name
 .bin
 .string "Alert name : "
@@ -39,7 +105,7 @@
 .string "Threshold value : "
 .res alert_create_String_Threshold_Value_FR
 .bin
-.string "Valeur du seuil"
+.string "Valeur du seuil : "
 .res alert_create_String_Unit
 .bin
 .string "Unit : "
@@ -56,12 +122,6 @@
 .string "Valeur cl"
 .byte 0xc3,0xa9
 .string "f : "
-.res alert_create_Label_asset_choice
-.bin
-.string "Asset choice : "
-.res alert_create_Label_asset_choice_FR
-.bin
-.string "Choix du serveur"
 .res alert_create_Button_Delete_Alert
 .bin
 .string "Delete"
@@ -172,6 +232,70 @@
 .res alert_create_Button_add_alert_FR
 .bin
 .string "Ajouter une alerte"
+.res authentication_new_media_title
+.bin
+.string "New terminal ?"
+.res authentication_new_media_title_FR
+.bin
+.string "Nouveau terminal ?"
+.res authentication_button_add_new_media
+.bin
+.string "Validate"
+.res authentication_button_add_new_media_FR
+.bin
+.string "Valider"
+.res authentication_old_media_title
+.bin
+.string "Use an existing terminal"
+.res authentication_old_media_title_FR
+.bin
+.string "Utiliser un terminal d"
+.byte 0xc3,0xa9
+.string "j"
+.byte 0xc3,0xa0
+.string " existant ?"
+.res authentication_mode_page_title
+.bin
+.string "Add an alert"
+.res authentication_mode_page_title_FR
+.bin
+.string "Quel mode d'authentification voulez vous choisr pour cette application ?"
+.res authentication_mode_credential
+.bin
+.string "With credential"
+.res authentication_mode_credential_FR
+.bin
+.string "Avec les identifiants"
+.res authentication_mode_none
+.bin
+.string "Remember me"
+.res authentication_mode_none_FR
+.bin
+.string "Se souvenir de moi"
+.res authentication_connection_title
+.bin
+.string "Connexion"
+.res authentication_connection_title_FR
+.bin
+.string "Connexion"
+.res authentication_connection_login
+.bin
+.string "E-mail address : "
+.res authentication_connection_login_FR
+.bin
+.string "Adresse e-mail : "
+.res authentication_connection_password
+.bin
+.string "Password : "
+.res authentication_connection_password_FR
+.bin
+.string "Mot de passe : "
+.res authentication_connection_validate_button
+.bin
+.string "Connexion"
+.res authentication_connection_validate_button_FR
+.bin
+.string "Connexion"
 
 // *** End of non-variant resources
 
@@ -179,8 +303,11 @@
 .label "res-types"
 .res
 .bin
-.byte 0x35,0x00,0x02,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x5d,0x00,0x02,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
-.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04

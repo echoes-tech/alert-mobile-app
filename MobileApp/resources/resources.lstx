@@ -20,6 +20,40 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="CREATE_ALERT_TAB_EN">CREATE ALERT</string>
     <string id="CREATE_ALERT_TAB_FR"> Creation d'alerte </string> 
     
+    
+    <string id="alert_create_Label_asset_choice">Asset choice</string>
+    <string id="alert_create_Label_asset_choice_FR">Choix du serveur</string>
+    
+    <string id="alert_create_Label_plugin_choice">Plugin choice</string>
+    <string id="alert_create_Label_plugin_choice_FR">Choix de l'application</string>
+    
+    <string id="alert_create_Label_info_choice">Information choice</string>
+    <string id="alert_create_Label_info_choice_FR">Choix de l'information</string>
+    
+    <string id="alert_create_Label_option_choice">Option choice</string>
+    <string id="alert_create_Label_option_choice_FR">Choix des options</string>
+    
+    <string id="alert_create_Label_operator_choice">Operator choice</string>
+    <string id="alert_create_Label_operator_choice_FR">Choix de l'operateur</string>
+    
+    <string id="alert_create_Label_unit_choice">Unit choice</string>
+    <string id="alert_create_Label_unit_choice_FR">Choix de l'unité</string>
+    
+     <string id="alert_create_Label_user_choice">User choice</string>
+    <string id="alert_create_Label_user_choice_FR">Choix de l'utilisateur</string>
+    
+     <string id="alert_create_Label_media_choice">Media choice</string>
+    <string id="alert_create_Label_media_choice_FR">Choix du media</string>
+    
+     <string id="alert_create_Label_media_value_choice">Recipient choice</string>
+    <string id="alert_create_Label_media_value_choice_FR">Choix du media</string>
+    
+    <string id="alert_create_Label_snooze_choice">Snooze choice</string>
+    <string id="alert_create_Label_snooze_choice_FR">Choix du snooze</string>
+    
+    <string id="alert_create_Label_list_dest_choice">Reicevers List</string>
+    <string id="alert_create_Label_list_dest_choice_FR">List des destinataires</string>
+    
     <string id="alert_create_String_Alert_Name">Alert name : </string>
     <string id="alert_create_String_Alert_Name_FR">Nom de l'alerte : </string>
     
@@ -27,16 +61,13 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_String_Operator_Name_FR">Operateur : </string>
     
     <string id="alert_create_String_Threshold_Value">Threshold value : </string>
-    <string id="alert_create_String_Threshold_Value_FR">Valeur du seuil</string>
+    <string id="alert_create_String_Threshold_Value_FR">Valeur du seuil : </string>
     
     <string id="alert_create_String_Unit">Unit : </string>
     <string id="alert_create_String_Unit_FR">Unité : </string>
     
     <string id="alert_create_String_Key_Value">Key value : </string>
     <string id="alert_create_String_Key_Value_FR">Valeur cléf : </string>
-    
-    <string id="alert_create_Label_asset_choice">Asset choice : </string>
-    <string id="alert_create_Label_asset_choice_FR">Choix du serveur</string>
     
     <string id="alert_create_Button_Delete_Alert">Delete</string>
     <string id="alert_create_Button_Delete_Alert_FR">Supprimer</string>
@@ -88,5 +119,40 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     
     <string id="alert_create_Button_add_alert">Add an alert</string>
     <string id="alert_create_Button_add_alert_FR">Ajouter une alerte</string>
+    
+    
+  <!-- authentication (page choix des medias) -->
+    <string id="authentication_new_media_title">New terminal ?</string>
+    <string id="authentication_new_media_title_FR">Nouveau terminal ?</string>
+    
+    <string id="authentication_button_add_new_media">Validate</string>
+    <string id="authentication_button_add_new_media_FR">Valider</string>
+    
+    <string id="authentication_old_media_title">Use an existing terminal</string>
+    <string id="authentication_old_media_title_FR">Utiliser un terminal déjà existant ?</string>
+    
+    <!-- authentication (page choix du mode d'authent) -->
+    <string id="authentication_mode_page_title">Add an alert</string>
+    <string id="authentication_mode_page_title_FR">Quel mode d'authentification voulez vous choisr pour cette application ?</string>
+    
+    <string id="authentication_mode_credential">With credential</string>
+    <string id="authentication_mode_credential_FR">Avec les identifiants</string>
+    
+    <string id="authentication_mode_none">Remember me</string>
+    <string id="authentication_mode_none_FR">Se souvenir de moi</string>
+    
+    <!-- authent (pas de log) -->
+    <string id="authentication_connection_title">Connexion</string>
+    <string id="authentication_connection_title_FR">Connexion</string>
+    
+    <string id="authentication_connection_login">E-mail address : </string>
+    <string id="authentication_connection_login_FR">Adresse e-mail : </string>
+    
+    <string id="authentication_connection_password">Password : </string>
+    <string id="authentication_connection_password_FR">Mot de passe : </string>
+    
+    <string id="authentication_connection_validate_button">Connexion</string>
+    <string id="authentication_connection_validate_button_FR">Connexion</string>
+    
     
 </resources>

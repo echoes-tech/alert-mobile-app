@@ -39,11 +39,7 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		_tokenMobile = root->getValueForKey("token_mobile")->toString();
 		_login = root->getValueForKey("login")->toString();
 
-		if(_modeAuth == "credential")
-		{
-			createUI();
-		}
-		else if (_modeAuth == "none")
+		if (_modeAuth == "none")
 		{
 //			TODO : va voir toute les appmobile du compte, il faudrait utilisé get /medias/3/media_values/id (pas encore creer dans l'API) AUTHENTICATION_VALIDATION
 			_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
@@ -114,11 +110,14 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
 	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN){
+		connERR = 0;
 		presentation->setText(
 				"erreur d'authentification verifier votre login et password");
 	} else if (result == 404 && fonction == MEDIAS_LIST) {
+		connERR = 0;
 		createPageMobileChoice();
 	} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
+		connERR = 0;
 		_idMobile = 0;
 		_tokenMobile = "";
 		String urlTmp = HOST;
@@ -127,6 +126,7 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		connectUrl(urlTmp, MEDIAS_LIST);
 
 	}else if (result == CONNERR_GENERIC && fonction == AUTHENTICATION_VALIDATION) {//si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credential.
+		connERR = 0;
 		_tokenConnection = "";
 		_login = "";
 		createUI();
@@ -154,19 +154,32 @@ void Authentication::parseJSONAuthenticationValidation(MAUtil::YAJLDom::Value* r
 		} else {
 			lprintfln("Root node is valid :) \n");
 			bool isAuth = false;
+			bool isConfirmed = false;
 			for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 				MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
-				if(valueTmp->getValueForKey("id")->toInt() == _idMobile && valueTmp->getValueForKey("token")->toString() == _tokenMobile){
-					isAuth = true;
+				if(valueTmp->getValueForKey("id")->toInt() == _idMobile){
+					if(valueTmp->getValueForKey("is_confirmed")->toString() == "true" && valueTmp->getValueForKey("token")->toString() == _tokenMobile)
+					{
+						isAuth = true;
+						isConfirmed = true;
+					}
+					else
+					{
+						isAuth = true;
+						isConfirmed = false;
+					}
 				}
+
 			}
-			if(isAuth)
-			{
+			if(isAuth && isConfirmed){
 				authenticationAccepted();
-			}
-			else
-			{
+			}else if(isAuth && !isConfirmed){
+				_tokenMobile = "";
+				_tokenConnection = "";
+				_login = "";
+				createUI();
+			}else{
 				_idMobile = 0;
 				_tokenMobile = "";
 				String urlTmp = HOST;
@@ -261,7 +274,7 @@ void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root)
 }
 
 void Authentication::authenticationAccepted() {
-	screenMain->createUI(_LOGINTOKEN);
+	screenMain->createUI(_LOGINTOKEN, _idMobile);
 }
 
 void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
@@ -293,7 +306,7 @@ void Authentication::createPageMobileChoice() {
 	vLMediaChoice->fillSpaceHorizontally();
 	vLMediaChoice->fillSpaceVertically();
 
-	newMediaTitle = new Label("Nouveau terminal ?");
+	newMediaTitle = new Label(Convert::tr(authentication_new_media_title + LANGUAGE));
 	newMediaTitle->setHeight(100);
 	newMediaTitle->fillSpaceHorizontally();
 	vLMediaChoice->addChild(newMediaTitle);
@@ -308,13 +321,12 @@ void Authentication::createPageMobileChoice() {
 	hlNewMedia->addChild(ebNewMediaName);
 	bAddNewMedia = new Button();
 	bAddNewMedia->addButtonListener(this);
-	bAddNewMedia->setText("send");
+	bAddNewMedia->setText(Convert::tr(authentication_button_add_new_media + LANGUAGE));
 	hlNewMedia->addChild(bAddNewMedia);
 
 
 	if (mapMediaID.size() != 0) {
-		Label* oldMediaTitle = new Label(
-				"Utiliser un terminal déjà existant ?");
+		Label* oldMediaTitle = new Label(Convert::tr(authentication_old_media_title + LANGUAGE));
 		oldMediaTitle->fillSpaceHorizontally();
 		oldMediaTitle->setHeight(100);
 		vLMediaChoice->addChild(oldMediaTitle);
@@ -340,7 +352,7 @@ void Authentication::createPageAuthenticationMode()
 	vLAuthenticationModeChoice->fillSpaceHorizontally();
 	vLAuthenticationModeChoice->fillSpaceVertically();
 
-	authenticationModeTitle = new Label("Quel mode d'authentification voulez vous choisr pour cette application ?");
+	authenticationModeTitle = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
 	authenticationModeTitle->fillSpaceHorizontally();
 	vLAuthenticationModeChoice->addChild(authenticationModeTitle);
 
@@ -350,12 +362,12 @@ void Authentication::createPageAuthenticationMode()
 	vLAuthenticationModeChoice->addChild(lVAuthenticationMode);
 
 	lVIModeCredential = new ListViewItem();
-	lModeCredential = new Label("Avec les identifiants habituelle");
+	lModeCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
 	lVIModeCredential->addChild(lModeCredential);
 	lVAuthenticationMode->addChild(lVIModeCredential);
 
 	lVIModeNone = new ListViewItem();
-	lModeNone = new Label("Aucune authentification");
+	lModeNone = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
 	lVIModeNone->addChild(lModeNone);
 	lVAuthenticationMode->addChild(lVIModeNone);
 	Screen::setMainWidget(vLAuthenticationModeChoice);
@@ -371,12 +383,12 @@ void Authentication::createUI() {
 	icon->fillSpaceHorizontally();
 
 	vLAuthentication->addChild(icon);
-	presentation = new Label("AUTHENTIFICATION");
+	presentation = new Label(Convert::tr(authentication_connection_title + LANGUAGE));
 	presentation->setHeight(100);
 	presentation->fillSpaceHorizontally();
 
 	vLAuthentication->addChild(presentation);
-	login = new Label("Login : ");
+	login = new Label(Convert::tr(authentication_connection_login + LANGUAGE));
 
 	eLogin = new EditBox();
 	eLogin->fillSpaceHorizontally();
@@ -386,7 +398,7 @@ void Authentication::createUI() {
 	hLLogin->addChild(eLogin);
 	vLAuthentication->addChild(hLLogin);
 
-	password = new Label("Password : ");
+	password = new Label(Convert::tr(authentication_connection_password + LANGUAGE));
 	ePassword = new EditBox();
 	ePassword->setEditMode(EDIT_BOX_MODE_PASSWORD);
 	ePassword->fillSpaceHorizontally();
@@ -398,7 +410,7 @@ void Authentication::createUI() {
 	vLAuthentication->addChild(hLPassword);
 
 	bValidate = new Button();
-	bValidate->setText("Send");
+	bValidate->setText(Convert::tr(authentication_connection_validate_button + LANGUAGE));
 	bValidate->addButtonListener(this);
 	bValidate->fillSpaceHorizontally();
 	vLAuthentication->addChild(bValidate);
@@ -419,6 +431,8 @@ void Authentication::buttonClicked(Widget* button) {
 		maWidgetSetProperty(ePassword->getWidgetHandle(),
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 	} else if (button == bAddNewMedia) {
+		maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
+						MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		String urlTmp = HOST;
 		urlTmp += "/medias/";
 		urlTmp += _LOGINTOKEN;
@@ -430,17 +444,30 @@ void Authentication::buttonClicked(Widget* button) {
 }
 
 void Authentication::listViewItemClicked(ListView* listView,
-	ListViewItem* listViewItem) {
-lprintfln("Clicked");
-if (listView == lVAuthenticationMode) {
-	if(listViewItem == lVIModeNone)
-	{
-		_modeAuth = "none";
+		ListViewItem* listViewItem) {
+	lprintfln("Clicked");
+	if (listView == lVAuthenticationMode) {
+		if (listViewItem == lVIModeNone) {
+			_modeAuth = "none";
+		} else {
+			_modeAuth = "credential";
+		}
+		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+				_idMobile);
+		authenticationAccepted();
+	} else if (listView == lVMedia) {
+		for (int i = 0; i < mapLVIMedia.size(); i++) {
+			if (mapLVIMedia[i] == listViewItem) {
+				_idMobile = mapMediaID[i];
+				_tokenMobile = mapMediaToken[i];
+				String urlTmp = HOST;
+				urlTmp += "/medias/3/media_values/"
+						+ Convert::toString(_idMobile) + "/validate/";
+				urlTmp += _LOGINTOKEN;
+				String message = "{\"mev_validation\": true ,\"mev_token\" : \""
+						+ _tokenMobile + "\"}";
+				connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
+			}
+		}
 	}
-	else{
-		_modeAuth = "credential";
-	}
-	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
-	authenticationAccepted();
-}
 }

@@ -33,9 +33,9 @@ ScreenMain::ScreenMain() :
 ScreenMain::~ScreenMain() {
 }
 
-void ScreenMain::createUI(String loginToken){
+void ScreenMain::createUI(String loginToken, long long idMobile){
 	alertTab = new AlertTab(LANGUAGE, loginToken);
-	trackingTab = new TrackingTab(LANGUAGE, loginToken);
+	trackingTab = new TrackingTab(LANGUAGE, loginToken, idMobile);
 	homeTab = new HomeTab(LANGUAGE, loginToken);
 
 	// Add them as tabs.

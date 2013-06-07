@@ -25,7 +25,7 @@ public:
 	 */
 	virtual ~ScreenMain();
 
-	void createUI(String loginToken);
+	void createUI(String loginToken, long long idMobile);
 
     void pullRequest();
 

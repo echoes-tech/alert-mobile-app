@@ -29,7 +29,7 @@ using namespace MAUtil;
 using namespace NativeUI;
 
 
-class AlertTab : public NativeUI::Screen, public ButtonListener, public HighLevelHttpConnection, public ListViewListener, public EditBoxListener
+class AlertTab : public NativeUI::Screen, public ButtonListener, public HighLevelHttpConnection, public ListViewListener//, public EditBoxListener
 {
 public:
 
@@ -47,7 +47,8 @@ public:
 		POST_MEDIA_SPE,
 		POST_ALERT,
 		SEARCH_INFO,
-		ALERT_INFO
+		ALERT_INFO,
+		ALERT_RECIPIENT_LIST
 	};
 
 	/**
@@ -68,7 +69,7 @@ public:
 	virtual void buttonClicked(Widget* button);
 //	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
-	virtual void editBoxReturn(EditBox* editBox){};
+	//virtual void editBoxReturn(EditBox* editBox){};
 
 	void parseJSONPlugin(MAUtil::YAJLDom::Value* root);
 	void parseJSONInformation(MAUtil::YAJLDom::Value* root);
@@ -85,6 +86,7 @@ public:
 	void parseJSONPostAlert(MAUtil::YAJLDom::Value* root);
 	void parseJSONSearchInfo(MAUtil::YAJLDom::Value* root);
 	void parseJSONAlertInfo(MAUtil::YAJLDom::Value* root);
+	void parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root);
 
 	void createUI();
 	void createOptionPage();
@@ -120,7 +122,7 @@ private:
 
 	//View 1
 	ListView *lValert;
-	VerticalLayout* mainLayoutAlertChoice;
+	VerticalLayout *mainLayoutAlertChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAlert;
 	MAUtil::Map<int, Label*> mapLAlertName;
 	MAUtil::Map<int, long long> mapAlertId;
@@ -140,6 +142,13 @@ private:
 	Label* lAlertKeyValue;
 	Label* lAlertMedia;
 	Label* lAlertSnooze;
+//
+	ListView* lVRecipients;
+	Label* lAlertRecipient;
+	MAUtil::Map<int, Label*> mapLRecipients;
+	MAUtil::Map<int, ListViewItem*> mapLVIRecipients;
+
+
 
 	//View 2
 	Label* assetTitle;
@@ -150,6 +159,7 @@ private:
 	MAUtil::Map<int, Label*> mapLAssetName;
 
 	//View 3
+	Label* pluginTitle;
 	ListView *lVPlugin;
 	MAUtil::Map<int, long long> mapPluginId;
 	VerticalLayout* mainLayoutPluginChoice;
@@ -157,6 +167,7 @@ private:
 	MAUtil::Map<int, Label*> mapLPluginName;
 
 	//View 4
+	Label* infoTitle;
 	ListView *lVInfo;
 	MAUtil::Map<int, long long> mapInfoIdSrc;
 	MAUtil::Map<int, long long> mapInfoIdSea;
@@ -167,6 +178,7 @@ private:
 	MAUtil::Map<int, Label*> mapLInfoName;
 
 	//View 5
+	Label* optionTitle;
 	VerticalLayout* mainLayoutOptionChoice;
 	ListView* lVOption;
 	MAUtil::Map<int, ListViewItem*> mapLVIOption;
@@ -180,6 +192,7 @@ private:
 	Button* bDest;
 
 	//view 5.2
+	Label* operatorTitle;
 	ListView *lVOperator;
 	MAUtil::Map<int, long long> mapOperatorId;
 	VerticalLayout* mainLayoutOperatorChoice;
@@ -187,6 +200,7 @@ private:
 	MAUtil::Map<int, Label*> mapLOperatorName;
 
 	//view 5.3
+	Label* unitTitle;
 	int nbOfSubUnits; //si > 0 alors on va chercher les sous unités.
 	ListView *lVUnit;
 	MAUtil::Map<int, long long> mapUnitId;
@@ -195,6 +209,7 @@ private:
 	MAUtil::Map<int, Label*> mapLUnitName;
 
 	//View 6
+	Label* userTitle;
 	ListView *lVUser;
 	MAUtil::Map<int, long long> mapUserId;
 	VerticalLayout* mainLayoutUserChoice;
@@ -202,6 +217,7 @@ private:
 	MAUtil::Map<int, Label*> mapLUserName;
 
 	//View 7
+	Label* mediaTitle;
 	ListView *lVMedia;
 	MAUtil::Map<int, long long> mapMediaId;
 	VerticalLayout* mainLayoutMediaChoice;
@@ -209,6 +225,7 @@ private:
 	MAUtil::Map<int, Label*> mapLMediaName;
 
 	//View 8
+	Label* mediaValueTitle;
 	ListView *lVMediaValue;
 	MAUtil::Map<int, long long> mapMediaValueId;
 	VerticalLayout* mainLayoutMediaValueChoice;
@@ -216,6 +233,7 @@ private:
 	MAUtil::Map<int, Label*> mapLMediaValueName;
 
 	//View 9
+	Label* snoozeTitle;
 	VerticalLayout* mainLayoutSnoozeChoice;
 	Label* lSnooze;
 	EditBox* eBSnooze;
@@ -223,6 +241,7 @@ private:
 	Button* bAddToList;
 
 	//View 10
+	Label* listDestTitle;
 	ListView *lVListDest;
 //	MAUtil::Map<int, long long> mapMediaValueId;
 	VerticalLayout* mainLayoutListDestChoice;

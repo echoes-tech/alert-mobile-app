@@ -10,8 +10,8 @@
 /**
  * Constructor.
  */
-TrackingTab::TrackingTab(int language, String loginToken) :
-		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken) {
+TrackingTab::TrackingTab(int language, String loginToken, long long idMobile) :
+		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(idMobile) {
 
 	// Set title and icon of the stack screen.
 	setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
@@ -28,7 +28,7 @@ TrackingTab::~TrackingTab() {
 
 void TrackingTab::runTimerEvent() {
 	String urlTmp = HOST;
-	urlTmp += "/alerts/tracking/messages";
+	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
 	//		urlTmp += "/plugins/1/informations";
 	urlTmp += _LOGINTOKEN;
 	urlTmp += "&media=1";
@@ -58,7 +58,7 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
-	} else {
+	}  else if (result != 404) {
 		connERR++;
 		lprintfln("TrackingTab DataDownload result = %d", result);
 	}
@@ -72,24 +72,18 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 }
 
 void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
-//	char * jsonData = new char[maGetDataSize(data) + 1];
-//	maReadData(data, jsonData, 0, maGetDataSize(data));
-//
-//	String Tmp = jsonData;
-//
-//	MAUtil::YAJLDom::Value* root = YAJLDom::parse(
-//			(const unsigned char*) jsonData, maGetDataSize(data));
 	// Traverse the Json tree and print data.
 	// Check that the root is valid.
 	// The root type should have type with above data ARRAY.
+
+
+
 	if (NULL == root || YAJLDom::Value::NUL == root->getType()
 			|| YAJLDom::Value::ARRAY != root->getType()) {
 		lprintfln("Root node is not valid\n");
 
 	} else {
 		lprintfln("Root node is valid :) \n");
-	}
-
 	lprintfln("%d\n", root->getNumChildValues());
 
 	STime lastSendAlertTmp;
@@ -105,10 +99,22 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 //		Screen::setMainWidget(new ActivityIndicator());
 		Screen::removeChild(mainLayout);
 
-		for(int idx1 = 0; idx1 < mapLVITA.size(); idx1++)
-		{
-			lValert->removeChild(mapLVITA[idx1]);
-		}
+		//////clean la memoire
+			for (int idx1 = 0; idx1 < mapLVITA.size(); idx1++) {
+				mapHLTA[idx1]->removeChild(mapLTAHeure[idx1]);
+				mapHLTA[idx1]->removeChild(mapLTADesc[idx1]);
+				delete mapLTAHeure[idx1];
+				delete mapLTADesc[idx1];
+				mapLVITA[idx1]->removeChild(mapHLTA[idx1]);
+				delete mapHLTA[idx1];
+				lValert->removeChild(mapLVITA[idx1]);
+				delete mapLVITA[idx1];
+			}
+			mapHLTA.clear();
+			mapLTAHeure.clear();
+			mapLTADesc.clear();
+			mapLVITA.clear();
+		//////
 
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
@@ -116,14 +122,6 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 		mapTrackingAlertDate[idx] =
 				valueTmp->getValueForKey("send_date")->toString();
 		lprintfln(mapTrackingAlertDate[idx].c_str());
-//		dateTmp1 = valueTmp->getValueForKey("send_date")->toString();
-//
-//		lastSendAlertTmp = Convert::toSTime(dateTmp1);
-//		if (bCreateUI) {
-//		if (idx == 0) {
-//			String dateTmp = valueTmp->getValueForKey("send_date")->toString();
-//			lastSendAlertTmp = Convert::toSTime(dateTmp);
-//		}
 
 		if(!bCreateUI)
 		{
@@ -144,7 +142,7 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 						notification->setVibrate(true);
 						notification->setVibrateDuration(5);
 						// Set notification title and ticker.
-				//				    notification->setContentTitle("My message title");
+	//				    notification->setContentTitle("My message title");
 						notification->setTickerText("Nouvelle alerte");
 					} else {
 						// Set a badge number.
@@ -177,13 +175,13 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 		}
 		Screen::setMainWidget(mainLayout);
 	}
+	}
 }
 
 void TrackingTab::createUI() {
 	bCreateUI = true;
 	String urlTmp = HOST;
-	urlTmp += "/alerts/tracking/messages";
-//		urlTmp += "/plugins/1/informations";
+	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
 	urlTmp += _LOGINTOKEN;
 	urlTmp += "&media=1";
 	lprintfln(urlTmp.c_str());
@@ -206,7 +204,6 @@ void TrackingTab::createUI() {
 
 	lValert = new ListView();
 	mainLayout->addChild(lValert);
-//	lprintfln("%d",maShowVirtualKeyboard());
 }
 
 void TrackingTab::connectUrl(String url, eTrakingTab fct) {

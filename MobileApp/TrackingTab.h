@@ -50,7 +50,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	TrackingTab(int language, String loginToken);
+	TrackingTab(int language, String loginToken, long long idMobile);
 
 	/**
 	 * Destructor.
@@ -69,6 +69,7 @@ public:
 
 private:
 	String _LOGINTOKEN;
+	long long _IDMOBILE;
 	int LANGUAGE;
 	int connERR;
 
