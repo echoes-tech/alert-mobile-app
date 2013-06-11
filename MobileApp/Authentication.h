@@ -64,6 +64,8 @@ public:
 	void createPageAuthenticationMode();
 	void authenticationAccepted();
 
+	bool newMediaNameValid();
+
 private:
 	int LANGUAGE;
 	eAuthenticationTab fonction;

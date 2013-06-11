@@ -57,6 +57,11 @@ class Convert
 
 		static char* tr(MAHandle stringResource);
 
+		static String URLencode(const String& c);
+		static String URLdecode(const String& c);
+
+		static String HTMLdecode(String& text);
+
 };
 
 #endif /* CONVERT_H_ */

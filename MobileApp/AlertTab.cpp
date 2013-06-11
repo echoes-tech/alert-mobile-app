@@ -113,7 +113,7 @@ void AlertTab::dataDownloaded(MAHandle data, int result) {
 		String jsonTmp = jsonData;
 		Convert::formatJSONBeforeParse(jsonTmp);
 
-		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+		MAUtil::YAJLDom::Value *root = YAJLDom::parse(
 				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
 		switch (fonction) {
 		case PLUGIN_LIST:
@@ -161,14 +161,22 @@ void AlertTab::dataDownloaded(MAHandle data, int result) {
 		case ALERT_RECIPIENT_LIST:
 			parseJSONAlertRecipientList(root);
 			break;
+		case UNITS_TYPES:
+			parseJSONUnitsTypes(root);
 		default:
 			break;
+
+			delete jsonData;
+			delete root;
 		}
 	} else if (result == CONNERR_DNS) {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
-	} else {
+	} else if (result == 404 && fonction == ALERT_LIST ) {
+		lListTitle->setText(Convert::tr(alert_list_Label_title_no_alert + LANGUAGE));
+	}
+	else {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 	}
@@ -188,13 +196,10 @@ void AlertTab::parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root) {
 		lVRecipients->removeChild(mapLVIRecipients[idx1]);
 		mapLVIRecipients[idx1]->removeChild(mapLRecipients[idx1]);
 		delete mapLRecipients[idx1];
-		mapLRecipients[idx1] = NULL;
 		delete mapLVIRecipients[idx1];
-		mapLVIRecipients[idx1] = NULL;
 	}
 	mapLRecipients.clear();
 	mapLVIRecipients.clear();
-	lprintfln("parseJSONAlertRecipientList %d", mapLVIRecipients.size());
 
 	if (NULL == root || YAJLDom::Value::NUL == root->getType()
 			|| YAJLDom::Value::ARRAY != root->getType()) {
@@ -209,12 +214,30 @@ void AlertTab::parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root) {
 			lVRecipients->addChild(mapLVIRecipients[idx]);
 			mapLRecipients[idx] = new Label(valueTmp1->getValueForKey("value")->toString());
 			mapLVIRecipients[idx]->addChild(mapLRecipients[idx]);
-
 		}
 
 		Screen::setMainWidget(mainLayoutAlertDetailChoice);
 		activeMainLayout = mainLayoutAlertDetailChoice;
 	}
+}
+
+void AlertTab::parseJSONUnitsTypes(MAUtil::YAJLDom::Value* root){
+	lprintfln("parseJSONUnitsTypes");
+		if (NULL == root || YAJLDom::Value::NUL == root->getType()
+				|| YAJLDom::Value::ARRAY == root->getType()) {
+			lprintfln("Root node is not valid\n");
+		} else {
+			lprintfln("Root node is valid :) \n");
+	//		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(0);
+	//		MAUtil::YAJLDom::Value* valueTmp1 = root->getValueForKey("id");
+			if (root->getValueForKey("name")->toString() == "number") {
+				eBValue->setInputMode(EDIT_BOX_INPUT_MODE_NUMERIC);
+			} else {
+				eBValue->setInputMode(EDIT_BOX_INPUT_MODE_ANY);
+			}
+			Screen::setMainWidget(mainLayoutOptionChoice);
+			activeMainLayout = mainLayoutOptionChoice;
+		}
 }
 
 void AlertTab::parseJSONSearchInfo(MAUtil::YAJLDom::Value* root) {
@@ -235,6 +258,10 @@ void AlertTab::parseJSONSearchInfo(MAUtil::YAJLDom::Value* root) {
 			eBKeyValue->setText("");
 			eBKeyValue->setEnabled(true);
 		}
+		String urlTmp = HOST;
+		urlTmp += "/units/" + Convert::toString(mapInfoIdUnit[selectedInformation]) + "/types/";
+		urlTmp += _LOGINTOKEN;
+		connectUrl(urlTmp, UNITS_TYPES);
 	}
 }
 
@@ -249,7 +276,11 @@ void AlertTab::parseJSONPostAlert(MAUtil::YAJLDom::Value* root) {
 	for (int idx = 0; idx < index; idx++) {
 		lVListDest->removeChild(mapLVIListDest[idx]);
 		mapLVIListDest[idx]->removeChild(mapLListDestName[idx]);
+		delete mapLListDestName[idx];
+		delete mapLVIListDest[idx];
 	}
+	mapLListDestName.clear();
+	mapLVIListDest.clear();
 	mapAMSId.clear();
 	mapMediaValueListId.clear();
 	mapSnoozeList.clear();
@@ -387,17 +418,33 @@ void AlertTab::parseJSONMediaValue(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		mainLayoutMediaValueChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
-		mainLayoutMediaValueChoice->fillSpaceHorizontally();
-		mainLayoutMediaValueChoice->fillSpaceVertically();
 
-		mediaValueTitle = new Label(Convert::tr(alert_create_Label_media_value_choice + LANGUAGE));
-		mediaValueTitle->fillSpaceHorizontally();
-		mainLayoutMediaValueChoice->addChild(mediaValueTitle);
-		lVMediaValue = new ListView();
-		lVMediaValue->addListViewListener(this);
-		mainLayoutMediaValueChoice->addChild(lVMediaValue);
+		if(mainLayoutMediaValueChoice == NULL)
+		{
+			mainLayoutMediaValueChoice = new VerticalLayout();
+			// Make the layout fill the entire screen.
+			mainLayoutMediaValueChoice->fillSpaceHorizontally();
+			mainLayoutMediaValueChoice->fillSpaceVertically();
+
+			mediaValueTitle = new Label(Convert::tr(alert_create_Label_media_value_choice + LANGUAGE));
+			mediaValueTitle->fillSpaceHorizontally();
+			mainLayoutMediaValueChoice->addChild(mediaValueTitle);
+			lVMediaValue = new ListView();
+			lVMediaValue->addListViewListener(this);
+			mainLayoutMediaValueChoice->addChild(lVMediaValue);
+		}
+		else
+		{
+			int index = mapLVIMediaValue.size();
+			for (int idx = 0; idx < index; idx++) {
+					lVMediaValue->removeChild(mapLVIMediaValue[idx]);
+					mapLVIMediaValue[idx]->removeChild(mapLMediaValueName[idx]);
+					delete mapLMediaValueName[idx];
+					delete mapLVIMediaValue[idx];
+				}
+			mapLMediaValueName.clear();
+			mapLVIMediaValue.clear();
+		}
 
 		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
@@ -422,20 +469,32 @@ void AlertTab::parseJSONMediaType(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		mainLayoutMediaChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
-		mainLayoutMediaChoice->fillSpaceHorizontally();
-		mainLayoutMediaChoice->fillSpaceVertically();
+		if(mainLayoutMediaChoice == NULL)
+		{
+			mainLayoutMediaChoice = new VerticalLayout();
+			// Make the layout fill the entire screen.
+			mainLayoutMediaChoice->fillSpaceHorizontally();
+			mainLayoutMediaChoice->fillSpaceVertically();
 
-		mediaTitle = new Label(Convert::tr(alert_create_Label_media_choice + LANGUAGE));
-		mediaTitle->fillSpaceHorizontally();
-				mainLayoutMediaChoice->addChild(mediaTitle);
-//			Screen::setMainWidget(mainLayoutMediaChoice);
-//			activeMainLayout = mainLayoutMediaChoice;
-		lVMedia = new ListView();
-		lVMedia->addListViewListener(this);
-		mainLayoutMediaChoice->addChild(lVMedia);
-
+			mediaTitle = new Label(Convert::tr(alert_create_Label_media_choice + LANGUAGE));
+			mediaTitle->fillSpaceHorizontally();
+			mainLayoutMediaChoice->addChild(mediaTitle);
+			lVMedia = new ListView();
+			lVMedia->addListViewListener(this);
+			mainLayoutMediaChoice->addChild(lVMedia);
+		}
+		else
+		{
+			int index = mapLVIMedia.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVMedia->removeChild(mapLVIMedia[idx]);
+				mapLVIMedia[idx]->removeChild(mapLMediaName[idx]);
+				delete mapLMediaName[idx];
+				delete mapLVIMedia[idx];
+			}
+			mapLMediaName.clear();
+			mapLVIMedia.clear();
+		}
 		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 			mapMediaId[idx] = valueTmp->getValueForKey("id")->toInt();
@@ -461,18 +520,30 @@ void AlertTab::parseJSONUserForOrganisation(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
+		if(mainLayoutUserChoice == NULL)
+		{
 		mainLayoutUserChoice = new VerticalLayout();
 		// Make the layout fill the entire screen.
 		mainLayoutUserChoice->fillSpaceHorizontally();
 		mainLayoutUserChoice->fillSpaceVertically();
-//		Screen::setMainWidget(mainLayoutUserChoice);
-//		activeMainLayout = mainLayoutUserChoice;
 		userTitle = new Label(Convert::tr(alert_create_Label_user_choice + LANGUAGE));
 		userTitle->fillSpaceHorizontally();
 			mainLayoutUserChoice->addChild(userTitle);
 		lVUser = new ListView();
 		lVUser->addListViewListener(this);
 		mainLayoutUserChoice->addChild(lVUser);
+		}
+		else {
+			int index = mapLVIUser.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVUser->removeChild(mapLVIUser[idx]);
+				mapLVIUser[idx]->removeChild(mapLUserName[idx]);
+				delete mapLUserName[idx];
+				delete mapLVIUser[idx];
+			}
+			mapLUserName.clear();
+			mapLVIUser.clear();
+		}
 
 		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
@@ -500,6 +571,9 @@ void AlertTab::parseJSONSubUnitInfo(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
+
+		int index = mapLVIUser.size();
+
 		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 			mapLUnitName[idx + 1] = new Label();
@@ -520,6 +594,17 @@ void AlertTab::parseJSONUnitInfo(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
+
+		int index = mapLVIUnit.size();
+		for (int idx = 0; idx < index; idx++) {
+			lVUnit->removeChild(mapLVIUnit[idx]);
+			mapLVIUnit[idx]->removeChild(mapLUnitName[idx]);
+			delete mapLUnitName[idx];
+			delete mapLVIUnit[idx];
+		}
+		mapLUnitName.clear();
+		mapLVIUnit.clear();
+
 		mapLUnitName[0] = new Label();
 		mapLUnitName[0]->setText(root->getValueForKey("name")->toString());
 		String UnitTmp = "Unit : ";
@@ -547,6 +632,8 @@ void AlertTab::parseJSONOperator(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
+		if(mainLayoutOperatorChoice == NULL)
+		{
 		mainLayoutOperatorChoice = new VerticalLayout();
 		// Make the layout fill the entire screen.
 		mainLayoutOperatorChoice->fillSpaceHorizontally();
@@ -558,6 +645,19 @@ void AlertTab::parseJSONOperator(MAUtil::YAJLDom::Value* root) {
 		lVOperator = new ListView();
 		lVOperator->addListViewListener(this);
 		mainLayoutOperatorChoice->addChild(lVOperator);
+		}
+		else
+		{
+			int index = mapLVIOperator.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVOperator->removeChild(mapLVIOperator[idx]);
+				mapLVIOperator[idx]->removeChild(mapLOperatorName[idx]);
+				delete mapLOperatorName[idx];
+				delete mapLVIOperator[idx];
+			}
+			mapLOperatorName.clear();
+			mapLVIOperator.clear();
+		}
 	}
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
@@ -583,12 +683,11 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
+		if(mainLayoutAssetChoice == NULL)
+		{
 		mainLayoutAssetChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
 		mainLayoutAssetChoice->fillSpaceHorizontally();
-//		mainLayoutAssetChoice->fillSpaceVertically();
-//		Screen::setMainWidget(mainLayoutAssetChoice);
-		activeMainLayout = mainLayoutAssetChoice;
+
 		assetTitle = new Label();
 		assetTitle->fillSpaceHorizontally();
 		assetTitle->setText(
@@ -597,6 +696,18 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 		lVAsset = new ListView();
 		lVAsset->addListViewListener(this);
 		mainLayoutAssetChoice->addChild(lVAsset);
+		}
+		else{
+			int index = mapLVIAsset.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVAsset->removeChild(mapLVIAsset[idx]);
+				mapLVIAsset[idx]->removeChild(mapLAssetName[idx]);
+				delete mapLAssetName[idx];
+				delete mapLVIAsset[idx];
+			}
+			mapLAssetName.clear();
+			mapLVIAsset.clear();
+		}
 	}
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 //				lprintfln("dans le for Asset");
@@ -615,14 +726,13 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 	}
 	mainLayoutAssetChoice->fillSpaceVertically();
 	Screen::setMainWidget(mainLayoutAssetChoice);
+	activeMainLayout = mainLayoutAssetChoice;
 }
 
 void AlertTab::parseJSONAlert(MAUtil::YAJLDom::Value* root) {
 	lprintfln("parseJSONAlert");
 	posOptionAlert = -1;
-// Traverse the Json tree and print data.
-// Check that the root is valid.
-// The root type should have type with above data ARRAY.
+
 	for (int idx0 = 0; idx0 < mapAlertId.size(); idx0++) {
 		lValert->removeChild(mapLVIAlert[idx0]);
 	}
@@ -635,13 +745,13 @@ void AlertTab::parseJSONAlert(MAUtil::YAJLDom::Value* root) {
 	} else {
 		lprintfln("Root node is valid :) \n");
 	}
+	lListTitle->setText(Convert::tr(alert_list_Label_title + LANGUAGE));
 	Screen::setMainWidget(mainLayoutAlertChoice);
 	activeMainLayout = mainLayoutAlertChoice;
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 		MAUtil::YAJLDom::Value* valueTmp1 = valueTmp->getValueForKey("alert");
 
-//		String test1 = valueTmp1->getValueForKey("name")->toString();
 		mapAlertId[idx] = valueTmp1->getValueForKey("id")->toInt();
 		mapLAlertName[idx] = new Label();
 		mapLAlertName[idx]->fillSpaceHorizontally();
@@ -666,6 +776,7 @@ void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
 
 	} else {
 		lprintfln("Root node is valid :) \n");
+		if(mainLayoutInfoChoice == NULL){
 		mainLayoutInfoChoice = new VerticalLayout();
 		// Make the layout fill the entire screen.
 		mainLayoutInfoChoice->fillSpaceHorizontally();
@@ -678,7 +789,18 @@ void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
 		lVInfo = new ListView();
 		lVInfo->addListViewListener(this);
 		mainLayoutInfoChoice->addChild(lVInfo);
-	}
+		}
+		else {
+			int index = mapLVIInfo.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVInfo->removeChild(mapLVIInfo[idx]);
+				mapLVIInfo[idx]->removeChild(mapLInfoName[idx]);
+				delete mapLInfoName[idx];
+				delete mapLVIInfo[idx];
+			}
+			mapLInfoName.clear();
+			mapLVIInfo.clear();
+		}
 
 	lprintfln("%d\n", root->getNumChildValues());
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
@@ -701,6 +823,7 @@ void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
 	}
 	Screen::setMainWidget(mainLayoutInfoChoice);
 	activeMainLayout = mainLayoutInfoChoice;
+	}
 }
 
 void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
@@ -711,6 +834,8 @@ void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
 
 	} else {
 		lprintfln("Root node is valid :) \n");
+		if(mainLayoutPluginChoice == NULL)
+		{
 		mainLayoutPluginChoice = new VerticalLayout();
 		mainLayoutPluginChoice->fillSpaceHorizontally();
 		mainLayoutPluginChoice->fillSpaceVertically();
@@ -722,7 +847,18 @@ void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
 		lVPlugin = new ListView();
 		lVPlugin->addListViewListener(this);
 		mainLayoutPluginChoice->addChild(lVPlugin);
-	}
+		}
+		else {
+			int index = mapLVIPlugin.size();
+			for (int idx = 0; idx < index; idx++) {
+				lVPlugin->removeChild(mapLVIPlugin[idx]);
+				mapLVIPlugin[idx]->removeChild(mapLPluginName[idx]);
+				delete mapLPluginName[idx];
+				delete mapLVIPlugin[idx];
+			}
+			mapLPluginName.clear();
+			mapLVIPlugin.clear();
+		}
 
 	lprintfln("%d\n", root->getNumChildValues());
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
@@ -740,7 +876,9 @@ void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
 	}
 	Screen::setMainWidget(mainLayoutPluginChoice);
 	activeMainLayout = mainLayoutPluginChoice;
+	}
 }
+
 
 void AlertTab::listViewItemClicked(ListView* listView,
 		ListViewItem* listViewItem) {
@@ -923,7 +1061,7 @@ void AlertTab::buttonClicked(Widget* button) {
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, ALERT_INFO);
 	} else if (button == bDelete) {
-		// TODO : Attention on ne peut pas regarder le resultat de la requete avec HTTP_DELETE
+		//  Attention on ne peut pas regarder le resultat de la requete avec HTTP_DELETE
 		HttpConnection httpCon(this);
 		String urlTmp = HOST;
 		urlTmp += "/alerts/" + Convert::toString(mapAlertId[posOptionAlert])
@@ -978,7 +1116,7 @@ void AlertTab::buttonClicked(Widget* button) {
 		Screen::setMainWidget(mainLayoutUserChoice);
 		activeMainLayout = mainLayoutUserChoice;
 	} else if (button == bCreateAlert) {
-
+		mapAMSId.clear();
 		currentAMS = 0;
 		String urlTmp = HOST;
 		urlTmp += "/medias/specializations/";
@@ -1061,16 +1199,18 @@ void AlertTab::createSnoozePage() {
 }
 
 void AlertTab::createUnitPage() {
-	mainLayoutUnitChoice = new VerticalLayout();
-	mainLayoutUnitChoice->fillSpaceHorizontally();
-	mainLayoutUnitChoice->fillSpaceVertically();
-	unitTitle = new Label(Convert::tr(alert_create_Label_unit_choice + LANGUAGE));
-	unitTitle->fillSpaceHorizontally();
-	mainLayoutUnitChoice->addChild(unitTitle);
-	lVUnit = new ListView();
-	lVUnit->addListViewListener(this);
-	mainLayoutUnitChoice->addChild(lVUnit);
-
+	if(mainLayoutUnitChoice == NULL)
+	{
+		mainLayoutUnitChoice = new VerticalLayout();
+		mainLayoutUnitChoice->fillSpaceHorizontally();
+		mainLayoutUnitChoice->fillSpaceVertically();
+		unitTitle = new Label(Convert::tr(alert_create_Label_unit_choice + LANGUAGE));
+		unitTitle->fillSpaceHorizontally();
+		mainLayoutUnitChoice->addChild(unitTitle);
+		lVUnit = new ListView();
+		lVUnit->addListViewListener(this);
+		mainLayoutUnitChoice->addChild(lVUnit);
+	}
 	for (int idx = 0; idx <= mapUnitId.size() - 1; idx++) {
 		mapLVIUnit[idx] = new ListViewItem();
 		mapLVIUnit[idx]->addChild(mapLUnitName[idx]);
@@ -1111,7 +1251,6 @@ void AlertTab::createOptionPage() {
 	value->setText(Convert::tr(alert_create_Label_value + LANGUAGE));
 	hLTmp1->addChild(value);
 	eBValue = new EditBox();
-	eBValue->setInputMode(EDIT_BOX_INPUT_MODE_NUMERIC);
 	hLTmp1->addChild(eBValue);
 	mainLayoutOptionChoice->addChild(hLTmp1);
 	mapLVIOption[0] = new ListViewItem();
@@ -1129,8 +1268,8 @@ void AlertTab::createOptionPage() {
 	bDest->addButtonListener(this);
 	bDest->setText(Convert::tr(alert_create_Button_Add_recipient + LANGUAGE));
 	mainLayoutOptionChoice->addChild(bDest);
-	Screen::setMainWidget(mainLayoutOptionChoice);
-	activeMainLayout = mainLayoutOptionChoice;
+//	Screen::setMainWidget(mainLayoutOptionChoice);
+//	activeMainLayout = mainLayoutOptionChoice;
 }
 
 void AlertTab::createDetailAlertPage() {
@@ -1171,6 +1310,9 @@ void AlertTab::createUI() {
 // Make the layout fill the entire screen.
 	mainLayoutAlertChoice->fillSpaceHorizontally();
 	mainLayoutAlertChoice->fillSpaceVertically();
+	lListTitle = new Label(Convert::tr(alert_list_Label_title + LANGUAGE));
+	lListTitle->fillSpaceHorizontally();
+	mainLayoutAlertChoice->addChild(lListTitle);
 	Screen::setMainWidget(mainLayoutAlertChoice);
 	activeMainLayout = mainLayoutAlertChoice;
 	lValert = new ListView();

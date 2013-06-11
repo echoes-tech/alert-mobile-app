@@ -48,7 +48,8 @@ public:
 		POST_ALERT,
 		SEARCH_INFO,
 		ALERT_INFO,
-		ALERT_RECIPIENT_LIST
+		ALERT_RECIPIENT_LIST,
+		UNITS_TYPES
 	};
 
 	/**
@@ -87,6 +88,7 @@ public:
 	void parseJSONSearchInfo(MAUtil::YAJLDom::Value* root);
 	void parseJSONAlertInfo(MAUtil::YAJLDom::Value* root);
 	void parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root);
+	void parseJSONUnitsTypes(MAUtil::YAJLDom::Value* root);
 
 	void createUI();
 	void createOptionPage();
@@ -121,6 +123,7 @@ private:
 	int selectedMediaValue;
 
 	//View 1
+	Label *lListTitle;
 	ListView *lValert;
 	VerticalLayout *mainLayoutAlertChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAlert;
@@ -225,7 +228,7 @@ private:
 	MAUtil::Map<int, Label*> mapLMediaName;
 
 	//View 8
-	Label* mediaValueTitle;
+	Label *mediaValueTitle;
 	ListView *lVMediaValue;
 	MAUtil::Map<int, long long> mapMediaValueId;
 	VerticalLayout* mainLayoutMediaValueChoice;

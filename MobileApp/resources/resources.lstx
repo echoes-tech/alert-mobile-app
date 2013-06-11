@@ -20,6 +20,11 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="CREATE_ALERT_TAB_EN">CREATE ALERT</string>
     <string id="CREATE_ALERT_TAB_FR"> Creation d'alerte </string> 
     
+    <string id="alert_list_Label_title">Alerts list</string>
+    <string id="alert_list_Label_title_FR">Liste de vos alertes</string>
+    
+    <string id="alert_list_Label_title_no_alert">There is no scheduled alert</string>
+    <string id="alert_list_Label_title_no_alert_FR">Il n'y a aucune alerte paramétrée pour le moment</string>
     
     <string id="alert_create_Label_asset_choice">Asset choice</string>
     <string id="alert_create_Label_asset_choice_FR">Choix du serveur</string>
@@ -108,8 +113,8 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="Screen_Main_close_app">Now, you can not receive alerts, this application is stopped</string>
     <string id="Screen_Main_close_app_FR">Maintenant vous ne recevrez plus d'alert, l'application est arretée </string>
    
-    <string id="Screen_Main_Button_close_app">Close Application</string>
-    <string id="Screen_Main_Button_close_app_FR">Fermer l'appication</string>
+    <string id="Screen_Main_Button_close_app">Close application</string>
+    <string id="Screen_Main_Button_close_app_FR">Fermer l'application</string>
     
     <string id="Screen_Main_Button_home">Home</string>
     <string id="Screen_Main_Button_home_FR">Accueil</string>

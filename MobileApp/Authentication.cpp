@@ -104,6 +104,9 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 			parseJSONAuthenticationValidation(root);
 		default:
 			break;
+
+			delete jsonData;
+			delete root;
 		}
 	} else if (result == CONNERR_DNS) {
 		connERR++;
@@ -120,10 +123,11 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		connERR = 0;
 		_idMobile = 0;
 		_tokenMobile = "";
-		String urlTmp = HOST;
-		urlTmp += "/medias/3";
-		urlTmp += _LOGINTOKEN ;
-		connectUrl(urlTmp, MEDIAS_LIST);
+		createUI();////////
+//		String urlTmp = HOST;
+//		urlTmp += "/medias/3";
+//		urlTmp += _LOGINTOKEN ;
+//		connectUrl(urlTmp, MEDIAS_LIST);
 
 	}else if (result == CONNERR_GENERIC && fonction == AUTHENTICATION_VALIDATION) {//si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credential.
 		connERR = 0;
@@ -155,31 +159,44 @@ void Authentication::parseJSONAuthenticationValidation(MAUtil::YAJLDom::Value* r
 			lprintfln("Root node is valid :) \n");
 			bool isAuth = false;
 			bool isConfirmed = false;
+			String tmpMobiletoken;
 			for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 				MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
 				if(valueTmp->getValueForKey("id")->toInt() == _idMobile){
-					if(valueTmp->getValueForKey("is_confirmed")->toString() == "true" && valueTmp->getValueForKey("token")->toString() == _tokenMobile)
+					if(valueTmp->getValueForKey("is_confirmed")->toString() == "true")
 					{
-						isAuth = true;
 						isConfirmed = true;
 					}
-					else
+					if(valueTmp->getValueForKey("token")->toString() == _tokenMobile)
 					{
 						isAuth = true;
-						isConfirmed = false;
 					}
+					tmpMobiletoken = valueTmp->getValueForKey("token")->toString();
 				}
 
 			}
 			if(isAuth && isConfirmed){
+				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);////////////
 				authenticationAccepted();
-			}else if(isAuth && !isConfirmed){
+			}else if(isAuth && !isConfirmed && _modeAuth != "credential"){
+				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);////////////
 				_tokenMobile = "";
 				_tokenConnection = "";
 				_login = "";
 				createUI();
-			}else{
+			}else if (!isAuth && isConfirmed && _modeAuth == "credential"){
+				_tokenMobile = tmpMobiletoken;
+				_tokenConnection = "";
+				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+				authenticationAccepted();
+			}else if (!isAuth && isConfirmed){
+				_tokenMobile = tmpMobiletoken;
+				_tokenConnection = "";
+				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+				createUI();
+			}
+			else{
 				_idMobile = 0;
 				_tokenMobile = "";
 				String urlTmp = HOST;
@@ -254,7 +271,7 @@ void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root)
 			_tokenConnection = root->getValueForKey("token")->toString();
 			lprintfln(_tokenConnection.c_str());
 			_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+			//tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
 			if(_tokenMobile == "")
 			{
 				String urlTmp = HOST;
@@ -391,6 +408,7 @@ void Authentication::createUI() {
 	login = new Label(Convert::tr(authentication_connection_login + LANGUAGE));
 
 	eLogin = new EditBox();
+	eLogin->setInputMode(EDIT_BOX_INPUT_MODE_URL);
 	eLogin->fillSpaceHorizontally();
 	hLLogin = new HorizontalLayout();
 	hLLogin->setHeight(70);
@@ -424,13 +442,15 @@ void Authentication::buttonClicked(Widget* button) {
 
 		String urlTmp = HOST;
 		urlTmp += "/users/";
-		urlTmp += "?login=" + _login + "&password=" + ePassword->getText();
+		urlTmp += "?login=" + _login + "&password=" + Convert::URLencode(ePassword->getText());
 		connectUrl(urlTmp, USER_TOKEN);
 		maWidgetSetProperty(eLogin->getWidgetHandle(),
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		maWidgetSetProperty(ePassword->getWidgetHandle(),
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 	} else if (button == bAddNewMedia) {
+		if(newMediaNameValid())
+		{
 		maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
 						MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		String urlTmp = HOST;
@@ -439,6 +459,7 @@ void Authentication::buttonClicked(Widget* button) {
 		String message = "{\"med_id\": 3";
 		message += ",\"mev_value\" : \"" + ebNewMediaName->getText() + "\"}";
 		connectUrl(urlTmp, POST_MEDIA_VALUE, POST, message);
+		}
 	}
 
 }
@@ -451,6 +472,7 @@ void Authentication::listViewItemClicked(ListView* listView,
 			_modeAuth = "none";
 		} else {
 			_modeAuth = "credential";
+			_tokenMobile = "";
 		}
 		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
 				_idMobile);
@@ -470,4 +492,12 @@ void Authentication::listViewItemClicked(ListView* listView,
 			}
 		}
 	}
+}
+
+bool Authentication::newMediaNameValid() {
+	if (ebNewMediaName->getText() == "") {
+		maMessageBox("Warning", "Field name can not be empty");
+		return false;
+	}
+	return true;
 }

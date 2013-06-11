@@ -31,7 +31,6 @@ void TrackingTab::runTimerEvent() {
 	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
 	//		urlTmp += "/plugins/1/informations";
 	urlTmp += _LOGINTOKEN;
-	urlTmp += "&media=1";
 	lprintfln(urlTmp.c_str());
 	connectUrl(urlTmp, TRACKING_LIST);
 
@@ -53,6 +52,8 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 
 
 		parseJSONTrackingAlert(root);
+		delete jsonData;
+		delete root;
 		//this->close();
 	} else if (result == CONNERR_DNS) {
 		connERR++;
@@ -100,7 +101,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 		Screen::removeChild(mainLayout);
 
 		//////clean la memoire
-			for (int idx1 = 0; idx1 < mapLVITA.size(); idx1++) {
+		int index = mapLVITA.size();
+			for (int idx1 = 0; idx1 < index; idx1++) {
 				mapHLTA[idx1]->removeChild(mapLTAHeure[idx1]);
 				mapHLTA[idx1]->removeChild(mapLTADesc[idx1]);
 				delete mapLTAHeure[idx1];
@@ -122,6 +124,9 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 		mapTrackingAlertDate[idx] =
 				valueTmp->getValueForKey("send_date")->toString();
 		lprintfln(mapTrackingAlertDate[idx].c_str());
+		String convert = valueTmp->getValueForKey("content")->toString();
+//		Convert::HTMLdecode(convert);
+		mapLTADesc[idx] = new Label(convert);
 
 		if(!bCreateUI)
 		{
@@ -133,8 +138,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 //				lprintfln("%d %d %d %d %d %d", lastSendAlertTmp1.year,lastSendAlertTmp1.mon,lastSendAlertTmp1.day,lastSendAlertTmp1.hour,lastSendAlertTmp1.min,lastSendAlertTmp1.sec);
 //				lprintfln("%d %d %d %d %d %d", lastSendAlert.year,lastSendAlert.mon,lastSendAlert.day,lastSendAlert.hour,lastSendAlert.min,lastSendAlert.sec);
 				notification = new LocalNotification();
-				notification->setContentBody(valueTmp->getValueForKey("content")->toString().c_str());
-				lprintfln(valueTmp->getValueForKey("content")->toString().c_str());
+				notification->setContentBody(mapLTADesc[idx]->getText());
+//				lprintfln(valueTmp->getValueForKey("content")->toString().c_str());
 					// Set some platform specific values.
 
 					if (getPlatform() == ANDROID) {
@@ -160,8 +165,7 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 			mapLTAHeure[idx]->setBackgroundColor(0x666666);
 			mapLTAHeure[idx]->setWidth(110);
 			mapHLTA[idx]->addChild(mapLTAHeure[idx]);
-			mapLTADesc[idx] = new Label(
-					valueTmp->getValueForKey("content")->toString().c_str());
+
 			mapHLTA[idx]->addChild(mapLTADesc[idx]);
 			mapLVITA[idx] = new ListViewItem();
 			mapLVITA[idx]->addChild(mapHLTA[idx]);
@@ -183,7 +187,6 @@ void TrackingTab::createUI() {
 	String urlTmp = HOST;
 	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
 	urlTmp += _LOGINTOKEN;
-	urlTmp += "&media=1";
 	lprintfln(urlTmp.c_str());
 
 	connectUrl(urlTmp, TRACKING_LIST);
