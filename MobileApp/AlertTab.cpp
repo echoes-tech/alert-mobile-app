@@ -6,6 +6,7 @@
  */
 
 #include "AlertTab.h"
+
 /**
  * Constructor.
  */
@@ -1365,5 +1366,19 @@ bool AlertTab::snoozePageValid() {
 //	{
 //		setTitle("");
 //		setIcon(LOGO);
+//	}
+//}
+
+
+//void AlertTab::orientationChange(bool landscape) {
+//
+//	if (landscape) {
+//		lprintfln("Orientation paysage");
+//		Screen::setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+//	} else // Portrait
+//	{
+//		lprintfln("Orientation Portrait");
+//		Screen::setTitle("");
+//		Screen::setIcon(LOGO3);
 //	}
 //}

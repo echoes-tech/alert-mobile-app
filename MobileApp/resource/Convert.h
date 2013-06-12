@@ -60,7 +60,7 @@ class Convert
 		static String URLencode(const String& c);
 		static String URLdecode(const String& c);
 
-		static String HTMLdecode(String& text);
+		static void HTMLdecode(String& text);
 
 };
 

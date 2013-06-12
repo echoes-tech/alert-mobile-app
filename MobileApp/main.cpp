@@ -15,18 +15,12 @@ using namespace NativeUI;
 /**
  * Moblet for the  application.
  */
-class NativeUIMoblet: public Moblet, public FocusListener, public TimerListener {
+class NativeUIMoblet: public Moblet, public FocusListener, public TimerListener{
 public:
 	/**
 	 * Constructor that creates the UI.
 	 */
 	NativeUIMoblet() {
-		// Create the main user interface screen.
-		getSystemConnection();
-
-		mMainScreen = new ScreenMain();
-		addTimer(this, TIMER_PERIOD, 0);
-		addFocusListener(this);
 		maScreenSetOrientation(SCREEN_ORIENTATION_DYNAMIC);
 
 		// iOS and Windows Phone.
@@ -36,34 +30,17 @@ public:
 						| MA_SCREEN_ORIENTATION_PORTRAIT
 						| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 
+		// Create the main user interface screen.
+		getSystemConnection();
+
+		mMainScreen = new ScreenMain();
+		addTimer(this, TIMER_PERIOD, 0);
+		addFocusListener(this);
+
 		// Update the display.
-		drawScreen();
-
-
-
-//		// Show the screen.
-//		mMainScreen->show();
-					Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
-					mAuthentication->show();
-//			//		while (mAuthentication.getAuthentication() != true)
-//			//		{
-//			//			maWait(10000);
-//			//			lprintfln("en attente d'authentification");
-//			//		}
-//					lprintfln("nouvelle utilisateur");
-////					tryToWrite();
-//				}
-//				else {
-//					Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
-//					mAuthentication->show();
-////					mAuthentication->authenticationAccepted();
-//			//		while (mAuthentication.getAuthentication() != true) {
-//			//			maWait(10000);
-//			//			lprintfln("en attente d'authentification");
-//			//		}
-//		//			tryToWrite();
-//		//			tryToRead();
-//				}
+//		drawScreen();
+		Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
+		mAuthentication->show();
 	}
 
 	// send timer event to trackingTabObject
@@ -76,9 +53,12 @@ public:
 	 */
 	void customEvent(const MAEvent& event) {
 
+//		lprintfln("test event %d",event.type);
+
 		// If the event type is screen changed we update the display.
 		if (EVENT_TYPE_SCREEN_CHANGED == event.type) {
 			drawScreen();
+			lprintfln("yoooooooooooooooo1");
 		} else if (EVENT_TYPE_ALERT == event.type) {
 			mMainScreen->customEvent(event);
 		}
@@ -87,46 +67,44 @@ public:
 	/**
 	 * Method that draws display data to the screen.
 	 */
-	void drawScreen() {
-		MAExtent screenSize = maGetScrSize();
-		int width = EXTENT_X(screenSize);
-		int height = EXTENT_Y(screenSize);
-		int x = 20;
-		int y = height / 2;
-		char orientationText[128];
-
-//		lprintfln("YOYOYOYOYOYOYYOYOY");
-//		mMainScreen->drawChangeVerticalHorizontal(width, height);
-
-		if (width > height) // Landscape
-				{
-			// Set the background color.
-			maSetColor(0x000099);
-
-			// Set text.
-			sprintf(orientationText, "Landscape %d %d", width, height);
-		} else // Portrait
+	void drawScreen()
 		{
-			// Set the background color.
-			maSetColor(0x009900);
+			MAExtent screenSize = maGetScrSize();
+			int width = EXTENT_X(screenSize);
+			int height = EXTENT_Y(screenSize);
+			int x = 20;
+			int y = height / 2;
+			char orientationText[128];
+//			mMainScreen->drawChangeVerticalHorizontal(width, height);
+			if (width > height) // Landscape
+			{
+				// Set the background color.
+				maSetColor(0x000099);
 
-			// Set text.
-			sprintf(orientationText, "Portrait %d %d", width, height);
+				// Set text.
+				sprintf(orientationText, "Landscape %d %d", width, height);
+			}
+			else // Portrait
+			{
+				// Set the background color.
+				maSetColor(0x009900);
+
+				// Set text.
+				sprintf(orientationText, "Portrait %d %d", width, height);
+			}
+
+			// Fill background
+			maFillRect(0, 0, width, height);
+
+			// Use white to display the text.
+			maSetColor(0xFFFFFF);
+
+			// Draw the text.
+			maDrawText(x, y, orientationText);
+
+			// Redraw the screen.
+			maUpdateScreen();
 		}
-
-		// Fill background
-		maFillRect(0, 0, width, height);
-
-		// Use white to display the text.
-		maSetColor(0xFFFFFF);
-
-		// Draw the text.
-		maDrawText(x, y, orientationText);
-
-		// Redraw the screen.
-		maUpdateScreen();
-	}
-
 	/**
 	 * Destructor.
 	 */
@@ -141,17 +119,7 @@ public:
 	void keyPressEvent(int keyCode, int nativeCode) {
 
 		if (keyCode == MAK_MENU) {
-
-//					maSendToBackground(); //
-//			lprintfln("maBringToForeground() = %d" ,maBringToForeground());
-
 			lprintfln("maSendToBackground() = %d", maSendToBackground());
-//								lprintfln("aprés wait");
-//			exit();
-
-//								lprintfln("maBringToForeground() = %d" ,maBringToForeground());
-//								maBringToForeground();
-
 		}
 
 		// Let the screen handle the keypress.
@@ -211,6 +179,7 @@ extern "C" int MAMain() {
 
 //	if (RUN == 0) {
 //		RUN = 1;
+		maAutostartOn();
 		Moblet::run(new NativeUIMoblet());
 
 //	}

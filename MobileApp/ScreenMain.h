@@ -1,18 +1,21 @@
+
 #ifndef SCREEN_MAIN_H_
 #define SCREEN_MAIN_H_
 
 // Include all the wrappers.
 #include <NativeUI/Widgets.h>
-#include "AlertTab.h"
+
 #include "TrackingTab.h"
 #include "HomeTab.h"
+#include "OptionTab.h"
+#include "AlertTab.h"
 
 using namespace NativeUI;
 
 /**
  * This is the main screen of the application.
  */
-class ScreenMain : public TabScreen
+class ScreenMain : public TabScreen, public CustomEventListener
 {
 public:
 	/**
@@ -49,22 +52,24 @@ public:
 	 */
 	virtual void handlePointerReleased(MAPoint2d point);
 
-	/**
-	 * Create UI with tabs
-	 */
-	ScreenMain* createTabUI();
-
 	void customEvent(const MAEvent& event);
 //	void drawChangeVerticalHorizontal(int width, int height);
 
-private:
+	virtual void handleWidgetEvent(
+				Widget* widget,
+				MAWidgetEventData* widgetEventData){lprintfln("EVENT LISTENER");}
+
+
+	private:
 	int LANGUAGE;
 
 	bool uiCreated;
+	bool landscape;
 
 	AlertTab* alertTab;
 	TrackingTab* trackingTab;
 	HomeTab* homeTab;
+	OptionTab* optionTab;
 
 };
 

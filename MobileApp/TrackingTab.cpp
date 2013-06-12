@@ -27,6 +27,7 @@ TrackingTab::~TrackingTab() {
 }
 
 void TrackingTab::runTimerEvent() {
+	bCreateUI = false;
 	String urlTmp = HOST;
 	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
 	//		urlTmp += "/plugins/1/informations";
@@ -125,7 +126,7 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 				valueTmp->getValueForKey("send_date")->toString();
 		lprintfln(mapTrackingAlertDate[idx].c_str());
 		String convert = valueTmp->getValueForKey("content")->toString();
-//		Convert::HTMLdecode(convert);
+		Convert::HTMLdecode(convert);
 		mapLTADesc[idx] = new Label(convert);
 
 		if(!bCreateUI)
@@ -224,20 +225,37 @@ void TrackingTab::connectUrl(String url, eTrakingTab fct) {
 	if (mIsConnected == false) {
 		mIsConnected = true;
 		fonction = fct;
-		this->get(url.c_str());
+		lprintfln("GET REQUEST : %d", this->get(url.c_str()));
 	} else {
 		lprintfln("Déjà connecté: %d", fonction);
 	}
 }
 
-//void TrackingTab::drawChangeVerticalHorizontal(int width, int height) {
+
+//void TrackingTab::orientationChange(bool landscape) {
 //
-//	if (width < height) // Landscape
-//			{
-//		setTitle(Convert::getString(TRACKING_ALERT_TAB_EN));
+//	if (landscape) {
+//		lprintfln("Orientation paysage");
+//		Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
 //	} else // Portrait
 //	{
-//		setTitle("");
-//		setIcon(LOGO);
+//		lprintfln("Orientation Portrait");
+//		Screen::setTitle("");
+//		Screen::setIcon(LOGO2);
+//	}
+//}
+//void TrackingTab::orientationDidChange() {
+//	int width = Screen::getWidth();
+//	int height = Screen::getHeight();
+//	lprintfln("width %d", width);
+//	lprintfln("height %d", height);
+//	if (width < height) {
+//		lprintfln("Orientation paysage");
+//		Screen::setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
+//	} else // Portrait
+//	{
+//		lprintfln("Orientation Portrait");
+//		Screen::setTitle("");
+//		Screen::setIcon(LOGO1);
 //	}
 //}

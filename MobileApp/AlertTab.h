@@ -97,6 +97,8 @@ public:
 	void createDestListPage();
 	void createDetailAlertPage();
 
+//	void orientationChange(bool);
+
 	bool optionPageValid();
 	bool snoozePageValid();
 

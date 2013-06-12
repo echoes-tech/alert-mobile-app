@@ -24,7 +24,7 @@ using namespace MAUtil;
 using namespace NativeUI;
 
 
-class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener
+class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener
 {
 public:
 
@@ -52,6 +52,7 @@ public:
 
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
 	virtual void buttonClicked(Widget* button);
+	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 
 	void parseJSONUserToken(MAUtil::YAJLDom::Value* root);
 	void parseJSONMediasList(MAUtil::YAJLDom::Value* root);
@@ -61,7 +62,7 @@ public:
 
 	void createUI();
 	void createPageMobileChoice();
-	void createPageAuthenticationMode();
+//	void createPageAuthenticationMode();
 	void authenticationAccepted();
 
 	bool newMediaNameValid();
@@ -92,6 +93,12 @@ private:
 	EditBox *ePassword;
 	Button *bValidate;
 
+	Label* lAuthenticationMode;
+	RadioGroup* rGAuthenticationChoice;
+	RadioButton* rBModeCredential;
+	RadioButton* rBModeNone;
+
+
 //	View 2
 	VerticalLayout *vLMediaChoice;
 	ListView* lVMedia;
@@ -106,15 +113,15 @@ private:
 	Button* bAddNewMedia;
 
 	//	View 3
-	VerticalLayout *vLAuthenticationModeChoice;
-	Label* authenticationModeTitle;
-
-	ListView* lVAuthenticationMode;
-	ListViewItem* lVIModeCredential;
-	Label* lModeCredential;
-	ListViewItem* lVIModeNone;
-	Label* lModeNone;
-//	ListViewItem* lVIModePin;
+//	VerticalLayout *vLAuthenticationModeChoice;
+//	Label* authenticationModeTitle;
+//
+//	ListView* lVAuthenticationMode;
+//	ListViewItem* lVIModeCredential;
+//	Label* lModeCredential;
+//	ListViewItem* lVIModeNone;
+//	Label* lModeNone;
+////	ListViewItem* lVIModePin;
 
 
 };

@@ -8,7 +8,6 @@
 #include "Authentication.h"
 #include "MAHeaders.h"
 
-
 Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		Screen(), LANGUAGE(language) {
 //	authenticationAccepted = false;
@@ -218,7 +217,8 @@ void Authentication::parseJSONPostMediaValueValidation(
 
 		if (root->getValueForKey("is_confirmed")->toString() == "true") {
 			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
-			createPageAuthenticationMode();
+			authenticationAccepted();
+//			createPageAuthenticationMode();
 		}
 	}
 }
@@ -363,34 +363,36 @@ void Authentication::createPageMobileChoice() {
 
 }
 
-void Authentication::createPageAuthenticationMode()
-{
-	vLAuthenticationModeChoice = new VerticalLayout();
-	vLAuthenticationModeChoice->fillSpaceHorizontally();
-	vLAuthenticationModeChoice->fillSpaceVertically();
-
-	authenticationModeTitle = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
-	authenticationModeTitle->fillSpaceHorizontally();
-	vLAuthenticationModeChoice->addChild(authenticationModeTitle);
-
-	lVAuthenticationMode = new ListView() ;
-	lVAuthenticationMode->fillSpaceHorizontally();
-	lVAuthenticationMode->addListViewListener(this);
-	vLAuthenticationModeChoice->addChild(lVAuthenticationMode);
-
-	lVIModeCredential = new ListViewItem();
-	lModeCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
-	lVIModeCredential->addChild(lModeCredential);
-	lVAuthenticationMode->addChild(lVIModeCredential);
-
-	lVIModeNone = new ListViewItem();
-	lModeNone = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
-	lVIModeNone->addChild(lModeNone);
-	lVAuthenticationMode->addChild(lVIModeNone);
-	Screen::setMainWidget(vLAuthenticationModeChoice);
-}
+//void Authentication::createPageAuthenticationMode()
+//{
+//	vLAuthenticationModeChoice = new VerticalLayout();
+//	vLAuthenticationModeChoice->fillSpaceHorizontally();
+//	vLAuthenticationModeChoice->fillSpaceVertically();
+//
+//	authenticationModeTitle = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
+//	authenticationModeTitle->fillSpaceHorizontally();
+//	vLAuthenticationModeChoice->addChild(authenticationModeTitle);
+//
+//	lVAuthenticationMode = new ListView() ;
+//	lVAuthenticationMode->fillSpaceHorizontally();
+//	lVAuthenticationMode->addListViewListener(this);
+//	vLAuthenticationModeChoice->addChild(lVAuthenticationMode);
+//
+//	lVIModeCredential = new ListViewItem();
+//	lModeCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
+//	lVIModeCredential->addChild(lModeCredential);
+//	lVAuthenticationMode->addChild(lVIModeCredential);
+//
+//	lVIModeNone = new ListViewItem();
+//	lModeNone = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
+//	lVIModeNone->addChild(lModeNone);
+//	lVAuthenticationMode->addChild(lVIModeNone);
+//	Screen::setMainWidget(vLAuthenticationModeChoice);
+//}
 
 void Authentication::createUI() {
+	if(vLAuthentication == NULL)
+	{
 	vLAuthentication = new VerticalLayout();
 	vLAuthentication->fillSpaceHorizontally();
 	vLAuthentication->fillSpaceVertically();
@@ -424,13 +426,39 @@ void Authentication::createUI() {
 	hLPassword->setHeight(70);
 	hLPassword->addChild(password);
 	hLPassword->addChild(ePassword);
-	hLPassword->fillSpaceVertically();
+//	hLPassword->fillSpaceVertically();
 	vLAuthentication->addChild(hLPassword);
+
+	lAuthenticationMode = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
+	vLAuthentication->addChild(lAuthenticationMode);
+
+	rGAuthenticationChoice = new RadioGroup();
+	rGAuthenticationChoice->addRadioGroupListener(this);
+	vLAuthentication->addChild(rGAuthenticationChoice);
+
+	rBModeCredential = new RadioButton();
+	rBModeCredential->setText(Convert::tr(authentication_mode_credential + LANGUAGE));
+	rGAuthenticationChoice->addView(rBModeCredential);
+	rBModeNone = new RadioButton();
+	rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
+//	rBModeNone->setProperty("fontSize", "50");
+//	lprintfln("TEEEESSt %d",maWidgetSetProperty(rBModeNone->getWidgetHandle(), MAW_BUTTON_FONT_SIZE, "30.0"));
+	rGAuthenticationChoice->addView(rBModeNone);
+	if(_modeAuth == "none")
+	{
+		rGAuthenticationChoice->setChecked(rBModeNone);
+	}
+	else{
+	rGAuthenticationChoice->setChecked(rBModeCredential);
+	}
+	rGAuthenticationChoice->fillSpaceVertically();
+
 
 	bValidate = new Button();
 	bValidate->setText(Convert::tr(authentication_connection_validate_button + LANGUAGE));
 	bValidate->addButtonListener(this);
 	bValidate->fillSpaceHorizontally();
+	}
 	vLAuthentication->addChild(bValidate);
 	Screen::setMainWidget(vLAuthentication);
 }
@@ -467,17 +495,18 @@ void Authentication::buttonClicked(Widget* button) {
 void Authentication::listViewItemClicked(ListView* listView,
 		ListViewItem* listViewItem) {
 	lprintfln("Clicked");
-	if (listView == lVAuthenticationMode) {
-		if (listViewItem == lVIModeNone) {
-			_modeAuth = "none";
-		} else {
-			_modeAuth = "credential";
-			_tokenMobile = "";
-		}
-		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-				_idMobile);
-		authenticationAccepted();
-	} else if (listView == lVMedia) {
+//	if (listView == lVAuthenticationMode) {
+//		if (listViewItem == lVIModeNone) {
+//			_modeAuth = "none";
+//		} else {
+//			_modeAuth = "credential";
+//			_tokenMobile = "";
+//		}
+//		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+//				_idMobile);
+//		authenticationAccepted();
+//	} else
+	if (listView == lVMedia) {
 		for (int i = 0; i < mapLVIMedia.size(); i++) {
 			if (mapLVIMedia[i] == listViewItem) {
 				_idMobile = mapMediaID[i];
@@ -492,6 +521,19 @@ void Authentication::listViewItemClicked(ListView* listView,
 			}
 		}
 	}
+}
+
+void Authentication::radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton* rB)
+{
+	if(rB == rBModeCredential)
+	{
+		_modeAuth = "credential";
+	}
+	else if (rB == rBModeNone)
+	{
+		_modeAuth = "none";
+	}
+	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
 }
 
 bool Authentication::newMediaNameValid() {

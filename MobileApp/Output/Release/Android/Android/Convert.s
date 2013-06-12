@@ -116,7 +116,7 @@
 	.stabn	162,0,0,0
 	.stabs	"BasicString<char>:Tt(2,2)=s4sd:/1(1,1)=*(1,2)=xsStringData<char>:,0,32;__base_ctor::(1,3)=#(2,2),(0,6),(1,4)=*(2,2),(0,6);:_ZN6MAUtil11BasicStringIcEC2Ev;2A.;__comp_ctor::(1,3):_ZN6MAUtil11BasicStringIcEC1Ev;2A.;__base_ctor::(1,5)=#(2,2),(0,6),(1,4),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEC2Ei;2A.;__comp_ctor::(1,5):_ZN6MAUtil11BasicStringIcEC1Ei;2A.;__base_ctor::(1,6)=#(2,2),(0,6),(1,4),(1,7)=*(1,8)=k(0,19),(0,6);:_ZN6MAUtil11BasicStringIcEC2EPKc;2A.;__comp_ctor::(1,6):_ZN6MAUtil11BasicStringIcEC1EPKc;2A.;__base_ctor::(1,9)=#(2,2),(0,6),(1,4),(1,7),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEC2EPKci;2A.;__comp_ctor::(1,9):_ZN6MAUtil11BasicStringIcEC1EPKci;2A.;__base_ctor::(1,10)=#(2,2),(0,6),(1,4),(1,11)=&(1,12)=k(2,2),(0,6);:_ZN6MAUtil11BasicStringIcEC2ERKS1_;2A.;__comp_ctor::(1,10):_ZN6MAUtil11BasicStringIcEC1ERKS1_;2A.;c_str::(1,13)=#(2,2),(1,7),(1,14)=*(1,12),(0,6);:_ZNK6MAUtil11BasicStringIcE5c_strEv;2B.;operator=::(1,15)=#(2,2),(1,16)=&(2,2),(1,4),(1,11),(0,6);:_ZN6MAUtil11BasicStringIcEaSERKS1_;2A.;operator[]::(1,17)=#(2,2),(1,18)=&(0,19),(1,4),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEixEi;2A.(1,19)=#(2,2),(1,20)=&(1,8),(1,14),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcEixEi;2B.;operator==::(1,21)=#(2,2),(0,4),(1,14),(1,11),(0,6);:_ZNK6MAUtil11BasicStringIcEeqERKS1_;2B.;operator!=::(1,21):_ZNK6MAUtil11BasicStringIcEneERKS1_;2B.;operator<::(1,21):_ZNK6MAUtil11BasicStringIcEltERKS1_;2B.;operator>::(1,21):_ZNK6MAUtil11BasicStringIcEgtERKS1_;2B.;operator<=::(1,21):_ZNK6MAUtil11BasicStringIcEleERKS1_;2B.;operator>=::(1,21):_ZNK6MAUtil11BasicStringIcEgeERKS1_;2B.;operator+::(1,22)=#(2,2),(2,2),(1,14),(1,11),(0,6);:_ZNK6MAUtil11BasicStringIcEplERKS1_;2B.;operator+=::(1,15):_ZN6MAUtil11BasicStringIcEpLERKS1_;2A.;operator+::(1,23)=#(2,2),(2,2),(1,14),(0,19),(0,6);:_ZNK6MAUtil11BasicStringIcEplEc;2B.;operator+=::(1,24)=#(2,2),(1,16),(1,4),(0,19),(0,6);:_ZN6MAUtil11BasicStringIcEpLEc;2A.;find::(1,25)=#(2,2),(0,3),(1,14),(1,11),(0,17),(0,6);:_ZNK6MAUtil11BasicStringIcE4findERKS1_j;2B.;findLastOf::(1,26)=#(2,2),(0,3),(1,14),(0,19),(0,6);:_ZNK6MAUtil11BasicStringIcE10findLastOfEc;2B.;findFirstOf::(1,27)=#(2,2),(0,3),(1,14),(0,19),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcE11findFirstOfEci;2B.;findFirstNotOf::(1,27):_ZNK6MAUtil11BasicStringIcE14findFirstNotOfEci;2B.;insert::(1,28)=#(2,2),(0,6),(1,4),(0,3),(1,11),(0,6);:_ZN6MAUtil11BasicStringIcE6insertEiRKS1_;2A.(1,29)=#(2,2),(0,6),(1,4),(0,3),(0,19),(0,6);:_ZN6MAUtil11BasicStringIcE6insertEic;2A.;remove::(1,30)=#(2,2),(0,6),(1,4),(0,3),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcE6removeEii;2A.;substr::(1,31)=#(2,2),(2,2),(1,14),(0,3),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcE6substrEii;2B.;capacity::(1,32)=#(2,2),(0,3),(1,14),(0,6);:_ZNK6MAUtil11BasicStringIcE8capacityEv;2B.;size::(1,32):_ZNK6MAUtil11BasicStringIcE4sizeEv;2B.;length::(1,32):_ZNK6MAUtil11BasicStringIcE6lengthEv;2B.;resize::(1,5):_ZN6MAUtil11BasicStringIcE6resizeEi;2A.;reserve::(1,5):_ZN6MAUtil11BasicStringIcE7reserveEi;2A.;clear::(1,3):_ZN6MAUtil11BasicStringIcE5clearEv;2A.;append::(1,9):_ZN6MAUtil11BasicStringIcE6appendEPKci;2A.;setData::(1,33)=#(2,2),(0,6),(1,4),(1,1),(0,6);:_ZN6MAUtil11BasicStringIcE7setDataEPNS_10StringDataIcEE;2A.;pointer::(1,34)=#(2,2),(5,5),(1,4),(0,6);:_ZN6MAUtil11BasicStringIcE7pointerEv;2A.(1,13):_ZNK6MAUtil11BasicStringIcE7pointerEv;2B.;__base_dtor::(1,3):_ZN6MAUtil11BasicStringIcED2Ev;2A.;__comp_dtor::(1,3):_ZN6MAUtil11BasicStringIcED1Ev;2A.;allocStringData::(1,9):_ZN6MAUtil11BasicStringIcE15allocStringDataEPKci;1A.;;",128,0,104,0
 	.stabs	"STime:Tt(1,35)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(2,1),160,32;year:(0,3),192,32;operator=::(1,36)=#(1,35),(1,37)=&(1,35),(1,38)=*(1,35),(1,39)=&(1,40)=k(1,35),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(1,41)=#(1,35),(0,6),(1,38),(1,39),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(1,41):_ZN5STimeC1ERKS_;2A.;__base_ctor::(1,42)=#(1,35),(0,6),(1,38),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(1,42):_ZN5STimeC1Ev;2A.;__base_dtor::(1,42):_ZN5STimeD2Ev;2A.;__comp_dtor::(1,42):_ZN5STimeD1Ev;2A.;;",128,0,19,0
-	.stabs	"Convert:Tt(1,43)=s1__base_ctor::(1,44)=#(1,43),(0,6),(1,45)=*(1,43),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(1,44):_ZN7ConvertC1Ev;2A.;__base_dtor::(1,44):_ZN7ConvertD2Ev;2A.;__comp_dtor::(1,44):_ZN7ConvertD1Ev;2A.;toSTime::(1,46)=f(1,35):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(1,47)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(1,48)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(1,49)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(1,50)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(1,51)=f(7,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(1,52)=f(2,1):_ZN7Convert8toStringEi;2A?(1,53)=f(2,1):_ZN7Convert8toStringEd;2A?(1,54)=f(2,1):_ZN7Convert8toStringEx;2A?(1,55)=f(2,1):_ZN7Convert8toStringEPKhm;2A?(1,56)=f(2,1):_ZN7Convert8toStringEb;2A?;hexToInt::(1,48):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(1,57)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(1,58)=f(5,5):_ZN7Convert2trEi;2A?;URLencode::(1,59)=f(2,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(1,59):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(1,60)=f(2,1):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(1,61)=#(1,43),(1,62)=&(1,43),(1,45),(1,63)=&(1,64)=k(1,43),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(1,65)=#(1,43),(0,6),(1,45),(1,63),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(1,65):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
+	.stabs	"Convert:Tt(1,43)=s1__base_ctor::(1,44)=#(1,43),(0,6),(1,45)=*(1,43),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(1,44):_ZN7ConvertC1Ev;2A.;__base_dtor::(1,44):_ZN7ConvertD2Ev;2A.;__comp_dtor::(1,44):_ZN7ConvertD1Ev;2A.;toSTime::(1,46)=f(1,35):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(1,47)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(1,48)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(1,49)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(1,50)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(1,51)=f(7,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(1,52)=f(2,1):_ZN7Convert8toStringEi;2A?(1,53)=f(2,1):_ZN7Convert8toStringEd;2A?(1,54)=f(2,1):_ZN7Convert8toStringEx;2A?(1,55)=f(2,1):_ZN7Convert8toStringEPKhm;2A?(1,56)=f(2,1):_ZN7Convert8toStringEb;2A?;hexToInt::(1,48):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(1,57)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(1,58)=f(5,5):_ZN7Convert2trEi;2A?;URLencode::(1,59)=f(2,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(1,59):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(1,60)=f(0,6):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(1,61)=#(1,43),(1,62)=&(1,43),(1,45),(1,63)=&(1,64)=k(1,43),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(1,65)=#(1,43),(0,6),(1,45),(1,63),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(1,65):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/mavsprintf.h",130,0,0,0
 	.stabs	"c:/MoSync/include/maarg.h",130,0,0,0
@@ -2376,18 +2376,17 @@ Lscope21:
 LC20:
 	.ascii "<br />\0"
 .code
-	.stabs	"_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE:F(2,1)",36,0,366,__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
+	.stabs	"_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE:F(0,6)",36,0,366,__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 	.stabs	"input:p(0,26)",160,0,366,-16
 	.global	__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 
-.func __ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE, 2, int
+.func __ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE, 1, void
 	.line 366
 	push rt,d0
-	sub  sp,#0x20
+	sub  sp,#0x1c
 	ld   fr,sp
-	add  fr,#0x2c
-	ld   [fr,-36],i0
-	ld   [fr,-16],i1
+	add  fr,#0x28
+	ld   [fr,-16],i0
 	.dlab LBB61
 	.dlab LBB62
 	.line 367
@@ -2397,17 +2396,17 @@ L117:
 	.line 368
 	ld   r0,[fr,-20]
 	ld   r14,#0xffffffff
-	jc   eq,r0,r14,#L118
-	.line 370
+	jc   eq,r0,r14,#L116
+	.line 372
 	ld   r14,#0x0
-	ld.b [fr,-37],r14
+	ld.b [fr,-33],r14
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	ld   i1,#LC20
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,#0x0
-	ld   [fr,-44],r0
+	ld   [fr,-40],r0
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,[fr,-16]
@@ -2424,7 +2423,7 @@ L117:
 	ld   i1,#LC20
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,#0x1
-	ld   [fr,-44],r14
+	ld   [fr,-40],r14
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,[fr,-16]
@@ -2435,10 +2434,10 @@ L117:
 	ld   r14,#0x0
 	jc   lt,r0,r14,#L120
 	ld   r0,#0x1
-	ld.b [fr,-37],r0
+	ld.b [fr,-33],r0
 L120:
 	ld   r14,#0x0
-	ld   r0,[fr,-44]
+	ld   r0,[fr,-40]
 	jc   eq,r0,r14,#L122
 	ld   r14,fr
 	add  r14,#0xffffffe4
@@ -2449,11 +2448,11 @@ L122:
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld.b r0,[fr,-37]
+	ld.b r0,[fr,-33]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L119
-	.line 372
+	.line 375
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
@@ -2473,24 +2472,17 @@ L122:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L123
+	jp   #L117
 L119:
-	.line 377
+	.line 380
 	ld   r14,#0xffffffff
 	ld   [fr,-20],r14
-L123:
-	.line 379
-	ld   i0,[fr,-16]
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   i0,r14
-	call &_lprintfln
 	jp   #L117
-L118:
+L116:
 	.dlab LBE62
 	.dlab LBE61
-	.line 381
-	ld   r14,[fr,-36]
-	add  sp,#0x20
+	.line 384
+	add  sp,#0x1c
 	pop  rt,d0
 	ret
 	.stabs	"compt:(0,3)",128,0,367,-20

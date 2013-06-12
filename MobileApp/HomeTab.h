@@ -36,10 +36,11 @@ public:
 	 * Destructor.
 	 */
 	virtual ~HomeTab();
-
-//	void drawChangeVerticalHorizontal(int width, int height);
 	void dataDownloaded(MAHandle , int );
 	void createUI();
+
+//	void orientationChange(bool);
+	void orientationDidChange();
 
 private:
 	String _LOGINTOKEN;

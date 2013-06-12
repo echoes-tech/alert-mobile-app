@@ -350,64 +350,30 @@
 	.stabs	"Map<MAHandle,NativeUI::Widget*>:Tt(80,30)=s56!1,020,(80,1);__base_ctor::(80,31)=#(80,30),(0,6),(80,32)=*(80,30),(80,22),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2EPFiRKiS6_E;2A.;__comp_ctor::(80,31):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1EPFiRKiS6_E;2A.;insert::(80,33)=#(80,30),(80,26),(80,32),(80,11),(4,91),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKiRKS3_;2A.(80,34)=#(80,30),(80,26),(80,32),(80,35)=&(80,36)=k(80,37)=xsPair<MAHandle,NativeUI::Widget*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(80,38)=#(80,30),(4,102),(80,32),(80,11),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEixERKi;2A.;operator=::(80,39)=#(80,30),(80,40)=&(80,30),(80,32),(80,41)=&(80,42)=k(80,30),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEaSERKS4_;2A.;__base_ctor::(80,43)=#(80,30),(0,6),(80,32),(80,41),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2ERKS4_;2A.;__comp_ctor::(80,43):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1ERKS4_;2A.;__base_dtor::(80,44)=#(80,30),(0,6),(80,32),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED2Ev;2A.;__comp_dtor::(80,44):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",130,0,0,0
-	.stabs	"c:/MoSync/include/Wormhole/HighLevelHttpConnection.h",130,0,0,0
-	.stabs	"c:/MoSync/include/maheap.h",130,0,0,0
-	.stabs	"malloc_handler:t(84,1)=(84,2)=*(84,3)=f(0,6)",128,0,108,0
-	.stabs	"malloc_hook:t(84,4)=(84,5)=*(84,6)=f(6,9)",128,0,109,0
-	.stabs	"free_hook:t(84,7)=(84,8)=*(84,9)=f(0,6)",128,0,110,0
-	.stabs	"realloc_hook:t(84,10)=(84,11)=*(84,12)=f(6,9)",128,0,111,0
-	.stabs	"block_size_hook:t(84,13)=(84,14)=*(84,15)=f(0,3)",128,0,112,0
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",130,0,0,0
+	.stabs	"c:/MoSync/include/MAUtil/Moblet.h",130,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"c:/MoSync/include/MAUtil/Connection.h",130,0,0,0
+	.stabs	"c:/MoSync/include/MAP/DateTime.h",130,0,0,0
+	.stabs	"c:/MoSync/include/matime.h",130,0,0,0
+	.stabs	"time_t:t(85,1)=(0,3)",128,0,41,0
+	.stabs	"tm:Tt(85,2)=s36tm_sec:(0,3),0,32;tm_min:(0,3),32,32;tm_hour:(0,3),64,32;tm_mday:(0,3),96,32;tm_mon:(0,3),128,32;tm_year:(0,3),160,32;tm_wday:(0,3),192,32;tm_yday:(0,3),224,32;tm_isdst:(0,3),256,32;operator=::(85,3)=#(85,2),(85,4)=&(85,2),(85,5)=*(85,2),(85,6)=&(85,7)=k(85,2),(0,6);:_ZN2tmaSERKS_;2A.;__base_ctor::(85,8)=#(85,2),(0,6),(85,5),(85,6),(0,6);:_ZN2tmC2ERKS_;2A.;__comp_ctor::(85,8):_ZN2tmC1ERKS_;2A.;__base_ctor::(85,9)=#(85,2),(0,6),(85,5),(0,6);:_ZN2tmC2Ev;2A.;__comp_ctor::(85,9):_ZN2tmC1Ev;2A.;;",128,0,47,0
 	.stabn	162,0,0,0
-	.stabs	"Vector<MAHandle>:Tt(83,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(83,2)=*(6,10),64,32;__base_ctor::(83,3)=#(83,1),(0,6),(83,4)=*(83,1),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2Ei;2A.;__comp_ctor::(83,3):_ZN6MAUtil6VectorIiEC1Ei;2A.;__base_ctor::(83,5)=#(83,1),(0,6),(83,4),(83,6)=*(80,12),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2EPKii;2A.;__comp_ctor::(83,5):_ZN6MAUtil6VectorIiEC1EPKii;2A.;__base_ctor::(83,7)=#(83,1),(0,6),(83,4),(83,8)=&(83,9)=k(83,1),(0,6);:_ZN6MAUtil6VectorIiEC2ERKS1_;2A.;__comp_ctor::(83,7):_ZN6MAUtil6VectorIiEC1ERKS1_;2A.;__base_dtor::(83,10)=#(83,1),(0,6),(83,4),(0,6);:_ZN6MAUtil6VectorIiED2Ev;2A.;__comp_dtor::(83,10):_ZN6MAUtil6VectorIiED1Ev;2A.;operator=::(83,11)=#(83,1),(83,12)=&(83,1),(83,4),(83,8),(0,6);:_ZN6MAUtil6VectorIiEaSERKS1_;2A.;add::(83,13)=#(83,1),(0,6),(83,4),(80,11),(0,6);:_ZN6MAUtil6VectorIiE3addERKi;2A.(83,5):_ZN6MAUtil6VectorIiE3addEPKii;2A.;remove::(83,14)=#(83,1),(0,6),(83,4),(83,2),(0,6);:_ZN6MAUtil6VectorIiE6removeEPi;2A.(83,15)=#(83,1),(0,6),(83,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEi;2A.(83,16)=#(83,1),(0,6),(83,4),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEii;2A.;insert::(83,16):_ZN6MAUtil6VectorIiE6insertEii;2A.;size::(83,17)=#(83,1),(0,3),(83,18)=*(83,9),(0,6);:_ZNK6MAUtil6VectorIiE4sizeEv;2B.;resize::(83,15):_ZN6MAUtil6VectorIiE6resizeEi;2A.;reserve::(83,15):_ZN6MAUtil6VectorIiE7reserveEi;2A.;clear::(83,10):_ZN6MAUtil6VectorIiE5clearEv;2A.;empty::(83,19)=#(83,1),(0,4),(83,18),(0,6);:_ZNK6MAUtil6VectorIiE5emptyEv;2B.;capacity::(83,17):_ZNK6MAUtil6VectorIiE8capacityEv;2B.;begin::(83,20)=#(83,1),(83,2),(83,4),(0,6);:_ZN6MAUtil6VectorIiE5beginEv;2A.;end::(83,20):_ZN6MAUtil6VectorIiE3endEv;2A.;begin::(83,21)=#(83,1),(83,6),(83,18),(0,6);:_ZNK6MAUtil6VectorIiE5beginEv;2B.;end::(83,21):_ZNK6MAUtil6VectorIiE3endEv;2B.;operator[]::(83,22)=#(83,1),(83,23)=&(6,10),(83,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiEixEi;2A.(83,24)=#(83,1),(80,11),(83,18),(0,3),(0,6);:_ZNK6MAUtil6VectorIiEixEi;2B.;pointer::(83,21):_ZNK6MAUtil6VectorIiE7pointerEv;2B.(83,20):_ZN6MAUtil6VectorIiE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"c:/MoSync/include/MAP/TimeSpan.h",130,0,0,0
+	.stabs	"TimeSpan:Tt(86,1)=s4mTicks:/0(85,1),0,32;__base_ctor::(86,2)=#(86,1),(0,6),(86,3)=*(86,1),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Ei;2A.;__comp_ctor::(86,2):_ZN7MAPUtil8TimeSpanC1Ei;2A.;__base_ctor::(86,4)=#(86,1),(0,6),(86,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiii;2A.;__comp_ctor::(86,4):_ZN7MAPUtil8TimeSpanC1Eiii;2A.;__base_ctor::(86,5)=#(86,1),(0,6),(86,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiiii;2A.;__comp_ctor::(86,5):_ZN7MAPUtil8TimeSpanC1Eiiii;2A.;maxValue::(86,6)=f(86,1):_ZN7MAPUtil8TimeSpan8maxValueEv;2A?;minValue::(86,6):_ZN7MAPUtil8TimeSpan8minValueEv;2A?;zero::(86,6):_ZN7MAPUtil8TimeSpan4zeroEv;2A?;getTicks::(86,7)=#(86,1),(85,1),(86,8)=*(86,9)=k(86,1),(0,6);:_ZNK7MAPUtil8TimeSpan8getTicksEv;2B.;getDays::(86,10)=#(86,1),(0,3),(86,8),(0,6);:_ZNK7MAPUtil8TimeSpan7getDaysEv;2B.;getHours::(86,10):_ZNK7MAPUtil8TimeSpan8getHoursEv;2B.;getMinutes::(86,10):_ZNK7MAPUtil8TimeSpan10getMinutesEv;2B.;getSeconds::(86,10):_ZNK7MAPUtil8TimeSpan10getSecondsEv;2B.;getTotalDays::(86,11)=#(86,1),(0,8),(86,8),(0,6);:_ZNK7MAPUtil8TimeSpan12getTotalDaysEv;2B.;getTotalHours::(86,11):_ZNK7MAPUtil8TimeSpan13getTotalHoursEv;2B.;getTotalMinutes::(86,11):_ZNK7MAPUtil8TimeSpan15getTotalMinutesEv;2B.;getTotalSeconds::(86,11):_ZNK7MAPUtil8TimeSpan15getTotalSecondsEv;2B.;add::(86,12)=#(86,1),(86,1),(86,8),(86,1),(0,6);:_ZNK7MAPUtil8TimeSpan3addES0_;2B.;duration::(86,13)=#(86,1),(86,1),(86,8),(0,6);:_ZNK7MAPUtil8TimeSpan8durationEv;2B.;negate::(86,13):_ZNK7MAPUtil8TimeSpan6negateEv;2B.;subtract::(86,12):_ZNK7MAPUtil8TimeSpan8subtractES0_;2B.;fromDays::(86,14)=f(86,1):_ZN7MAPUtil8TimeSpan8fromDaysEd;2A?;fromHours::(86,14):_ZN7MAPUtil8TimeSpan9fromHoursEd;2A?;fromMinutes::(86,14):_ZN7MAPUtil8TimeSpan11fromMinutesEd;2A?;fromSeconds::(86,14):_ZN7MAPUtil8TimeSpan11fromSecondsEd;2A?;operator=::(86,15)=#(86,1),(86,16)=&(86,1),(86,3),(86,17)=&(86,9),(0,6);:_ZN7MAPUtil8TimeSpanaSERKS0_;2A.;__base_ctor::(86,18)=#(86,1),(0,6),(86,3),(86,17),(0,6);:_ZN7MAPUtil8TimeSpanC2ERKS0_;2A.;__comp_ctor::(86,18):_ZN7MAPUtil8TimeSpanC1ERKS0_;2A.;;",128,0,37,0
 	.stabn	162,0,0,0
-	.stabs	"c:/MoSync/include/Wormhole/MessageStreamJSON.h",130,0,0,0
-	.stabs	"c:/MoSync/include/MAUtil/HashMap.h",130,0,0,0
-	.stabs	"c:/MoSync/include/MAUtil/HashDict.h",130,0,0,0
-	.stabs	"c:/MoSync/include/kazlib/hash.h",130,0,0,0
-	.stabs	"hashcount_t:t(89,1)=(0,16)",128,0,37,0
-	.stabs	"hash_val_t:t(89,2)=(0,16)",128,0,40,0
-	.stabs	"hnode_t:Tt(89,3)=s16hash_next:(89,4)=*(89,3),0,32;hash_key:(14,5),32,32;hash_data:(6,9),64,32;hash_hkey:(89,2),96,32;operator=::(89,5)=#(89,3),(89,6)=&(89,3),(89,4),(89,7)=&(89,8)=k(89,3),(0,6);:_ZN7hnode_taSERKS_;2A.;__base_ctor::(89,9)=#(89,3),(0,6),(89,4),(89,7),(0,6);:_ZN7hnode_tC2ERKS_;2A.;__comp_ctor::(89,9):_ZN7hnode_tC1ERKS_;2A.;__base_ctor::(89,10)=#(89,3),(0,6),(89,4),(0,6);:_ZN7hnode_tC2Ev;2A.;__comp_ctor::(89,10):_ZN7hnode_tC1Ev;2A.;;",128,0,73,0
-	.stabs	"hnode_t:t(89,11)=(89,3)",128,0,82,0
-	.stabs	"hash_comp_t:t(89,12)=(14,15)",128,0,91,0
-	.stabs	"hash_fun_t:t(89,13)=(89,14)=*(89,15)=f(89,2)",128,0,105,0
-	.stabs	"hnode_alloc_t:t(89,16)=(89,17)=*(89,18)=f(89,19)=*(89,11)",128,0,111,0
-	.stabs	"hnode_free_t:t(89,20)=(89,21)=*(89,22)=f(0,6)",128,0,112,0
-	.stabs	"hash_t:Tt(89,23)=s52hash_table:(89,24)=*(89,4),0,32;hash_nchains:(89,1),32,32;hash_nodecount:(89,1),64,32;hash_maxcount:(89,1),96,32;hash_highmark:(89,1),128,32;hash_lowmark:(89,1),160,32;hash_compare:(89,12),192,32;hash_function:(89,13),224,32;hash_allocnode:(89,16),256,32;hash_freenode:(89,20),288,32;hash_context:(6,9),320,32;hash_mask:(89,2),352,32;hash_dynamic:(0,3),384,32;operator=::(89,25)=#(89,23),(89,26)=&(89,23),(89,27)=*(89,23),(89,28)=&(89,29)=k(89,23),(0,6);:_ZN6hash_taSERKS_;2A.;__base_ctor::(89,30)=#(89,23),(0,6),(89,27),(89,28),(0,6);:_ZN6hash_tC2ERKS_;2A.;__comp_ctor::(89,30):_ZN6hash_tC1ERKS_;2A.;__base_ctor::(89,31)=#(89,23),(0,6),(89,27),(0,6);:_ZN6hash_tC2Ev;2A.;__comp_ctor::(89,31):_ZN6hash_tC1Ev;2A.;;",128,0,149,0
-	.stabs	"hash_t:t(89,32)=(89,23)",128,0,167,0
-	.stabs	"hscan_t:Tt(89,33)=s12hash_table:(89,34)=*(89,32),0,32;hash_chain:(89,2),32,32;hash_next:(89,19),64,32;operator=::(89,35)=#(89,33),(89,36)=&(89,33),(89,37)=*(89,33),(89,38)=&(89,39)=k(89,33),(0,6);:_ZN7hscan_taSERKS_;2A.;__base_ctor::(89,40)=#(89,33),(0,6),(89,37),(89,38),(0,6);:_ZN7hscan_tC2ERKS_;2A.;__comp_ctor::(89,40):_ZN7hscan_tC1ERKS_;2A.;__base_ctor::(89,41)=#(89,33),(0,6),(89,37),(0,6);:_ZN7hscan_tC2Ev;2A.;__comp_ctor::(89,41):_ZN7hscan_tC1Ev;2A.;;",128,0,179,0
-	.stabs	"hscan_t:t(89,42)=(89,33)",128,0,187,0
-	.stabn	162,0,0,0
-	.stabn	162,0,0,0
-	.stabn	162,0,0,0
-	.stabs	"c:/MoSync/include/yajl/YAJLDom.h",130,0,0,0
-	.stabs	"Value::Type:t(90,1)=eNUL:0,BOOLEAN:1,NUMBER:2,ARRAY:3,MAP:4,STRING:5,;",128,0,37,0
-	.stabs	"Dictionary<const MAUtil::BasicString<char>,MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >:Tt(90,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(90,3)=#(90,2),(0,6),(90,4)=*(90,2),(90,5)=&(90,6)=k(90,2),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2ERKS9_;2A.;__comp_ctor::(90,3):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1ERKS9_;2A.;operator=::(90,7)=#(90,2),(90,8)=&(90,2),(90,4),(90,5),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEaSERKS9_;2A.;__base_dtor::(90,9)=#(90,2),(0,6),(90,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED2Ev;2A.;__comp_dtor::(90,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED1Ev;2A.;find::(90,10)=#(90,2),(90,11)=xsIterator:,(90,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2A.(90,12)=#(90,2),(90,13)=xsConstIterator:,(90,14)=*(90,6),(4,38),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2B.;erase::(90,15)=#(90,2),(0,4),(90,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseERS3_;2A.(90,16)=#(90,2),(0,6),(90,4),(90,11),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseENS9_8IteratorE;2A.;begin::(90,17)=#(90,2),(90,11),(90,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2A.(90,18)=#(90,2),(90,13),(90,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2B.;end::(90,17):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2A.(90,18):_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2B.;size::(90,19)=#(90,2),(5,1),(90,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4sizeEv;2B.;clear::(90,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5clearEv;2A.;init::(90,20)=#(90,2),(0,6),(90,4),(90,21)=*(90,22)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4initEPFiRS3_SA_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(90,23)=#(90,2),(0,6),(90,4),(90,21),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2EPFiRS3_SA_Ei;1A.;__comp_ctor::(90,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1EPFiRS3_SA_Ei;1A.;insert::(90,24)=#(90,2),(90,25)=xsPair<MAUtil::Dictionary<const MAUtil::BasicString<char>, MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >::Iterator,bool>:,(90,4),(90,26)=&(90,27)=k(90,28)=xsPair<const MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE6insertERKS8_;1A.;;",128,0,57,0
-	.stabs	"Map<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:Tt(90,29)=s56!1,020,(90,2);__base_ctor::(90,30)=#(90,29),(0,6),(90,31)=*(90,29),(90,21),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2EPFiRKS2_S8_E;2A.;__comp_ctor::(90,30):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1EPFiRKS2_S8_E;2A.;insert::(90,32)=#(90,29),(90,25),(90,31),(4,38),(90,33)=&(90,34)=k(90,35)=*(90,36)=xsValue:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKS2_RKS5_;2A.(90,37)=#(90,29),(90,25),(90,31),(90,38)=&(90,39)=k(90,40)=xsPair<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKNS_4PairIS2_S5_EE;2A.;operator[]::(90,41)=#(90,29),(90,42)=&(90,35),(90,31),(4,38),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEixERKS2_;2A.;operator=::(90,43)=#(90,29),(90,44)=&(90,29),(90,31),(90,45)=&(90,46)=k(90,29),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEaSERKS6_;2A.;__base_ctor::(90,47)=#(90,29),(0,6),(90,31),(90,45),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2ERKS6_;2A.;__comp_ctor::(90,47):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1ERKS6_;2A.;__base_dtor::(90,48)=#(90,29),(0,6),(90,31),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(90,48):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Vector<MAUtil::YAJLDom::Value*>:Tt(90,49)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(90,50)=*(90,35),64,32;__base_ctor::(90,51)=#(90,49),(0,6),(90,52)=*(90,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2Ei;2A.;__comp_ctor::(90,51):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1Ei;2A.;__base_ctor::(90,53)=#(90,49),(0,6),(90,52),(90,54)=*(90,34),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2EPKS3_i;2A.;__comp_ctor::(90,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1EPKS3_i;2A.;__base_ctor::(90,55)=#(90,49),(0,6),(90,52),(90,56)=&(90,57)=k(90,49),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2ERKS4_;2A.;__comp_ctor::(90,55):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1ERKS4_;2A.;__base_dtor::(90,58)=#(90,49),(0,6),(90,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(90,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED1Ev;2A.;operator=::(90,59)=#(90,49),(90,60)=&(90,49),(90,52),(90,56),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEaSERKS4_;2A.;add::(90,61)=#(90,49),(0,6),(90,52),(90,33),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addERKS3_;2A.(90,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addEPKS3_i;2A.;remove::(90,62)=#(90,49),(0,6),(90,52),(90,50),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEPS3_;2A.(90,63)=#(90,49),(0,6),(90,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEi;2A.(90,64)=#(90,49),(0,6),(90,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEii;2A.;insert::(90,65)=#(90,49),(0,6),(90,52),(0,3),(90,35),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6insertEiS3_;2A.;size::(90,66)=#(90,49),(0,3),(90,67)=*(90,57),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE4sizeEv;2B.;resize::(90,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6resizeEi;2A.;reserve::(90,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7reserveEi;2A.;clear::(90,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5clearEv;2A.;empty::(90,68)=#(90,49),(0,4),(90,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5emptyEv;2B.;capacity::(90,66):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE8capacityEv;2B.;begin::(90,69)=#(90,49),(90,50),(90,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2A.;end::(90,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2A.;begin::(90,70)=#(90,49),(90,54),(90,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2B.;end::(90,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2B.;operator[]::(90,71)=#(90,49),(90,42),(90,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2A.(90,72)=#(90,49),(90,33),(90,67),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2B.;pointer::(90,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2B.(90,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2A.;;",128,0,95,0
-	.stabn	162,0,0,0
-	.stabn	162,0,0,0
-	.stabs	"c:/MoSync/include/mastdlib.h",130,0,0,0
-	.stabs	"div_t:Tt(91,1)=s8quot:(0,3),0,32;rem:(0,3),32,32;operator=::(91,2)=#(91,1),(91,3)=&(91,1),(91,4)=*(91,1),(91,5)=&(91,6)=k(91,1),(0,6);:_ZN5div_taSERKS_;2A.;__base_ctor::(91,7)=#(91,1),(0,6),(91,4),(91,5),(0,6);:_ZN5div_tC2ERKS_;2A.;__comp_ctor::(91,7):_ZN5div_tC1ERKS_;2A.;__base_ctor::(91,8)=#(91,1),(0,6),(91,4),(0,6);:_ZN5div_tC2Ev;2A.;__comp_ctor::(91,8):_ZN5div_tC1Ev;2A.;;",128,0,58,0
-	.stabs	"div_t:t(91,9)=(91,1)",128,0,60,0
+	.stabs	"DateTime:Tt(84,1)=s4mTicks:/0(85,1),0,32;__base_ctor::(84,2)=#(84,1),(0,6),(84,3)=*(84,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ev;2A.;__comp_ctor::(84,2):_ZN7MAPUtil8DateTimeC1Ev;2A.;__base_ctor::(84,4)=#(84,1),(0,6),(84,3),(85,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ei;2A.;__comp_ctor::(84,4):_ZN7MAPUtil8DateTimeC1Ei;2A.;__base_ctor::(84,5)=#(84,1),(0,6),(84,3),(85,5),(0,6);:_ZN7MAPUtil8DateTimeC2EP2tm;2A.;__comp_ctor::(84,5):_ZN7MAPUtil8DateTimeC1EP2tm;2A.;__base_ctor::(84,6)=#(84,1),(0,6),(84,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiii;2A.;__comp_ctor::(84,6):_ZN7MAPUtil8DateTimeC1Eiii;2A.;__base_ctor::(84,7)=#(84,1),(0,6),(84,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiiiiii;2A.;__comp_ctor::(84,7):_ZN7MAPUtil8DateTimeC1Eiiiiii;2A.;__base_ctor::(84,8)=#(84,1),(0,6),(84,3),(4,7),(0,6);:_ZN7MAPUtil8DateTimeC2EPKc;2A.;__comp_ctor::(84,8):_ZN7MAPUtil8DateTimeC1EPKc;2A.;__base_dtor::(84,2):_ZN7MAPUtil8DateTimeD2Ev;2A.;__comp_dtor::(84,2):_ZN7MAPUtil8DateTimeD1Ev;2A.;maxValue::(84,9)=f(84,1):_ZN7MAPUtil8DateTime8maxValueEv;2A?;minValue::(84,9):_ZN7MAPUtil8DateTime8minValueEv;2A?;now::(84,9):_ZN7MAPUtil8DateTime3nowEv;2A?;today::(84,9):_ZN7MAPUtil8DateTime5todayEv;2A?;timeOfDay::(84,10)=#(84,1),(86,1),(84,11)=*(84,12)=k(84,1),(0,6);:_ZNK7MAPUtil8DateTime9timeOfDayEv;2B.;getTicks::(84,13)=#(84,1),(85,1),(84,11),(0,6);:_ZNK7MAPUtil8DateTime8getTicksEv;2B.;getYear::(84,14)=#(84,1),(0,3),(84,11),(0,6);:_ZNK7MAPUtil8DateTime7getYearEv;2B.;getMonth::(84,14):_ZNK7MAPUtil8DateTime8getMonthEv;2B.;getWeekday::(84,14):_ZNK7MAPUtil8DateTime10getWeekdayEv;2B.;getDay::(84,14):_ZNK7MAPUtil8DateTime6getDayEv;2B.;getHour::(84,14):_ZNK7MAPUtil8DateTime7getHourEv;2B.;getMinute::(84,14):_ZNK7MAPUtil8DateTime9getMinuteEv;2B.;getSecond::(84,14):_ZNK7MAPUtil8DateTime9getSecondEv;2B.;add::(84,15)=#(84,1),(84,1),(84,11),(86,1),(0,6);:_ZNK7MAPUtil8DateTime3addENS_8TimeSpanE;2B.;addYears::(84,16)=#(84,1),(84,1),(84,11),(0,3),(0,6);:_ZNK7MAPUtil8DateTime8addYearsEi;2B.;addMonths::(84,16):_ZNK7MAPUtil8DateTime9addMonthsEi;2B.;addDays::(84,17)=#(84,1),(84,1),(84,11),(0,8),(0,6);:_ZNK7MAPUtil8DateTime7addDaysEd;2B.;addHours::(84,17):_ZNK7MAPUtil8DateTime8addHoursEd;2B.;addMinutes::(84,17):_ZNK7MAPUtil8DateTime10addMinutesEd;2B.;addSeconds::(84,17):_ZNK7MAPUtil8DateTime10addSecondsEd;2B.;addTicks::(84,16):_ZNK7MAPUtil8DateTime8addTicksEi;2B.;subtract::(84,18)=#(84,1),(86,1),(84,11),(84,1),(0,6);:_ZNK7MAPUtil8DateTime8subtractES0_;2B.(84,15):_ZNK7MAPUtil8DateTime8subtractENS_8TimeSpanE;2B.;operator=::(84,19)=#(84,1),(84,20)=&(84,1),(84,3),(84,21)=&(84,12),(0,6);:_ZN7MAPUtil8DateTimeaSERKS0_;2A.;__base_ctor::(84,22)=#(84,1),(0,6),(84,3),(84,21),(0,6);:_ZN7MAPUtil8DateTimeC2ERKS0_;2A.;__comp_ctor::(84,22):_ZN7MAPUtil8DateTimeC1ERKS0_;2A.;;",128,0,41,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",130,0,0,0
-	.stabs	"FileLister:Tt(93,1)=s4mList:/0(6,10),0,32;__base_ctor::(93,2)=#(93,1),(0,6),(93,3)=*(93,1),(0,6);:_ZN10FileListerC2Ev;2A.;__comp_ctor::(93,2):_ZN10FileListerC1Ev;2A.;__base_dtor::(93,2):_ZN10FileListerD2Ev;2A.;__comp_dtor::(93,2):_ZN10FileListerD1Ev;2A.;start::(93,4)=#(93,1),(0,3),(93,3),(4,7),(4,7),(0,3),(0,6);:_ZN10FileLister5startEPKcS1_i;2A.;next::(93,5)=#(93,1),(0,3),(93,3),(93,6)=&(10,1),(0,6);:_ZN10FileLister4nextERN6MAUtil11BasicStringIcEE;2A.;close::(93,2):_ZN10FileLister5closeEv;2A.;operator=::(93,7)=#(93,1),(93,8)=&(93,1),(93,3),(93,9)=&(93,10)=k(93,1),(0,6);:_ZN10FileListeraSERKS_;2A.;__base_ctor::(93,11)=#(93,1),(0,6),(93,3),(93,9),(0,6);:_ZN10FileListerC2ERKS_;2A.;__comp_ctor::(93,11):_ZN10FileListerC1ERKS_;2A.;;",128,0,34,0
+	.stabs	"FileLister:Tt(88,1)=s4mList:/0(6,10),0,32;__base_ctor::(88,2)=#(88,1),(0,6),(88,3)=*(88,1),(0,6);:_ZN10FileListerC2Ev;2A.;__comp_ctor::(88,2):_ZN10FileListerC1Ev;2A.;__base_dtor::(88,2):_ZN10FileListerD2Ev;2A.;__comp_dtor::(88,2):_ZN10FileListerD1Ev;2A.;start::(88,4)=#(88,1),(0,3),(88,3),(4,7),(4,7),(0,3),(0,6);:_ZN10FileLister5startEPKcS1_i;2A.;next::(88,5)=#(88,1),(0,3),(88,3),(88,6)=&(10,1),(0,6);:_ZN10FileLister4nextERN6MAUtil11BasicStringIcEE;2A.;close::(88,2):_ZN10FileLister5closeEv;2A.;operator=::(88,7)=#(88,1),(88,8)=&(88,1),(88,3),(88,9)=&(88,10)=k(88,1),(0,6);:_ZN10FileListeraSERKS_;2A.;__base_ctor::(88,11)=#(88,1),(0,6),(88,3),(88,9),(0,6);:_ZN10FileListerC2ERKS_;2A.;__comp_ctor::(88,11):_ZN10FileListerC1ERKS_;2A.;;",128,0,34,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/resource/Convert.h",130,0,0,0
-	.stabs	"c:/MoSync/include/matime.h",130,0,0,0
-	.stabs	"time_t:t(95,1)=(0,3)",128,0,41,0
-	.stabs	"tm:Tt(95,2)=s36tm_sec:(0,3),0,32;tm_min:(0,3),32,32;tm_hour:(0,3),64,32;tm_mday:(0,3),96,32;tm_mon:(0,3),128,32;tm_year:(0,3),160,32;tm_wday:(0,3),192,32;tm_yday:(0,3),224,32;tm_isdst:(0,3),256,32;operator=::(95,3)=#(95,2),(95,4)=&(95,2),(95,5)=*(95,2),(95,6)=&(95,7)=k(95,2),(0,6);:_ZN2tmaSERKS_;2A.;__base_ctor::(95,8)=#(95,2),(0,6),(95,5),(95,6),(0,6);:_ZN2tmC2ERKS_;2A.;__comp_ctor::(95,8):_ZN2tmC1ERKS_;2A.;__base_ctor::(95,9)=#(95,2),(0,6),(95,5),(0,6);:_ZN2tmC2Ev;2A.;__comp_ctor::(95,9):_ZN2tmC1Ev;2A.;;",128,0,47,0
+	.stabs	"STime:Tt(89,1)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(10,1),160,32;year:(0,3),192,32;operator=::(89,2)=#(89,1),(89,3)=&(89,1),(89,4)=*(89,1),(89,5)=&(89,6)=k(89,1),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(89,7)=#(89,1),(0,6),(89,4),(89,5),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(89,7):_ZN5STimeC1ERKS_;2A.;__base_ctor::(89,8)=#(89,1),(0,6),(89,4),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(89,8):_ZN5STimeC1Ev;2A.;__base_dtor::(89,8):_ZN5STimeD2Ev;2A.;__comp_dtor::(89,8):_ZN5STimeD1Ev;2A.;;",128,0,19,0
+	.stabs	"Convert:Tt(89,9)=s1__base_ctor::(89,10)=#(89,9),(0,6),(89,11)=*(89,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(89,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(89,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(89,10):_ZN7ConvertD1Ev;2A.;toSTime::(89,12)=f(89,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(89,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(89,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(89,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(89,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(89,17)=f(85,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(89,18)=f(10,1):_ZN7Convert8toStringEi;2A?(89,19)=f(10,1):_ZN7Convert8toStringEd;2A?(89,20)=f(10,1):_ZN7Convert8toStringEx;2A?(89,21)=f(10,1):_ZN7Convert8toStringEPKhm;2A?(89,22)=f(10,1):_ZN7Convert8toStringEb;2A?;hexToInt::(89,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(89,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(89,24)=f(6,5):_ZN7Convert2trEi;2A?;URLencode::(89,25)=f(10,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(89,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(89,26)=f(0,6):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(89,27)=#(89,9),(89,28)=&(89,9),(89,11),(89,29)=&(89,30)=k(89,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(89,31)=#(89,9),(0,6),(89,11),(89,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(89,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
 	.stabn	162,0,0,0
-	.stabs	"STime:Tt(94,1)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(10,1),160,32;year:(0,3),192,32;operator=::(94,2)=#(94,1),(94,3)=&(94,1),(94,4)=*(94,1),(94,5)=&(94,6)=k(94,1),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(94,7)=#(94,1),(0,6),(94,4),(94,5),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(94,7):_ZN5STimeC1ERKS_;2A.;__base_ctor::(94,8)=#(94,1),(0,6),(94,4),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(94,8):_ZN5STimeC1Ev;2A.;__base_dtor::(94,8):_ZN5STimeD2Ev;2A.;__comp_dtor::(94,8):_ZN5STimeD1Ev;2A.;;",128,0,19,0
-	.stabs	"Convert:Tt(94,9)=s1__base_ctor::(94,10)=#(94,9),(0,6),(94,11)=*(94,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(94,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(94,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(94,10):_ZN7ConvertD1Ev;2A.;toSTime::(94,12)=f(94,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(94,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(94,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(94,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(94,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(94,17)=f(95,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(94,18)=f(10,1):_ZN7Convert8toStringEi;2A?(94,19)=f(10,1):_ZN7Convert8toStringEd;2A?(94,20)=f(10,1):_ZN7Convert8toStringEx;2A?(94,21)=f(10,1):_ZN7Convert8toStringEPKhm;2A?(94,22)=f(10,1):_ZN7Convert8toStringEb;2A?;hexToInt::(94,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(94,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(94,24)=f(6,5):_ZN7Convert2trEi;2A?;URLencode::(94,25)=f(10,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(94,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(94,26)=f(10,1):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(94,27)=#(94,9),(94,28)=&(94,9),(94,11),(94,29)=&(94,30)=k(94,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(94,31)=#(94,9),(0,6),(94,11),(94,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(94,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
-	.stabn	162,0,0,0
-	.stabs	"platform_code:t(92,1)=eANDROID:0,IOS:1,WINDOWSPHONE7:2,;",128,0,43,0
-	.stabs	"eHttp:t(92,2)=eGET:0,POST:1,;",128,0,49,0
-	.stabs	"eFile:t(92,3)=eFILE_OPEN_ERROR:0,FILE_NOT_EXIST:1,FILE_CLOSE:2,;",128,0,54,0
+	.stabs	"platform_code:t(87,1)=eANDROID:0,IOS:1,WINDOWSPHONE7:2,;",128,0,43,0
+	.stabs	"eHttp:t(87,2)=eGET:0,POST:1,;",128,0,49,0
+	.stabs	"eFile:t(87,3)=eFILE_OPEN_ERROR:0,FILE_NOT_EXIST:1,FILE_CLOSE:2,;",128,0,54,0
 .data
 LC0:
 	.ascii "mosync.device.OS\0"
@@ -474,7 +440,7 @@ L1:
 	add  sp,#0x104
 	pop  rt,fr
 	ret
-	.stabs	"platform:(92,4)=ar(6,57);0;255;(0,19)",128,0,66,-264
+	.stabs	"platform:(87,4)=ar(6,57);0;255;(0,19)",128,0,66,-264
 	.stabn	192,0,0,LBB3-__Z11getPlatformv
 	.stabn	224,0,0,LBE3-__Z11getPlatformv
 Lscope0:
@@ -608,7 +574,7 @@ L7:
 	add  sp,#0x54
 	pop  rt,d0
 	ret
-	.stabs	"buf:(92,5)=ar(6,57);0;63;(0,19)",128,0,83,-76
+	.stabs	"buf:(87,5)=ar(6,57);0;63;(0,19)",128,0,83,-76
 	.stabs	"res:(0,3)",128,0,85,-80
 	.stabs	"tmp:(10,1)",128,0,87,-84
 	.stabn	192,0,0,LBB6-__Z19getSystemConnectionv
@@ -721,7 +687,7 @@ L9:
 	pop  rt,d0
 	ret
 	.stabs	"language:(0,3)",128,0,100,-16
-	.stabs	"buf:(92,5)",128,0,101,-80
+	.stabs	"buf:(87,5)",128,0,101,-80
 	.stabs	"res:(0,3)",128,0,102,-84
 	.stabs	"tmp:(10,1)",128,0,104,-88
 	.stabn	192,0,0,LBB9-__Z17getSystemLanguagev
@@ -729,7 +695,7 @@ L9:
 Lscope3:
 	.stabs	"_Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,113,__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
 	.stabs	"key:p(4,7)",160,0,113,-12
-	.stabs	"dst:p(93,6)",160,0,113,-16
+	.stabs	"dst:p(88,6)",160,0,113,-16
 
 .func __Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE, 2, int
 	.line 113
@@ -918,14 +884,14 @@ L12:
 	add  sp,#0x14
 	pop  rt,fr
 	ret
-	.stabs	"fl:(93,1)",128,0,124,-12
+	.stabs	"fl:(88,1)",128,0,124,-12
 	.stabs	"path:(10,1)",128,0,127,-16
 	.stabs	"result:(0,3)",128,0,129,-20
 	.stabn	192,0,0,LBB14-__Z12getLocalPathv
 	.stabn	224,0,0,LBE14-__Z12getLocalPathv
 Lscope5:
 	.stabs	"_ZN10FileListerD1Ev:f(0,6)",36,0,37,__ZN10FileListerD1Ev
-	.stabs	"this:p(92,6)=k(93,3)",160,0,37,-12
+	.stabs	"this:p(87,6)=k(88,3)",160,0,37,-12
 
 .func __ZN10FileListerD1Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext4
@@ -946,7 +912,7 @@ Ltext4:
 	ret
 Lscope6:
 	.stabs	"_ZN10FileListerC1Ev:f(0,6)",36,0,36,__ZN10FileListerC1Ev
-	.stabs	"this:p(92,6)",160,0,36,-12
+	.stabs	"this:p(87,6)",160,0,36,-12
 
 .func __ZN10FileListerC1Ev, 1, void
 	.line 36
@@ -980,8 +946,8 @@ LC21:
 LC22:
 	.ascii "Done.\12\0"
 .code
-	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(92,3)",36,0,143,__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabs	"config:p(93,6)",160,0,143,-20
+	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(87,3)",36,0,143,__Z9tryToReadRN6MAUtil11BasicStringIcEE
+	.stabs	"config:p(88,6)",160,0,143,-20
 
 .func __Z9tryToReadRN6MAUtil11BasicStringIcEE, 1, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext5
@@ -1200,7 +1166,7 @@ L20:
 	.stabs	"file:(6,10)",128,0,149,-36
 	.stabs	"res:(0,3)",128,0,156,-40
 	.stabs	"size:(0,3)",128,0,165,-44
-	.stabs	"data:V(92,7)=ar(6,57);0;599;(0,19)",40,0,170,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
+	.stabs	"data:V(87,7)=ar(6,57);0;599;(0,19)",40,0,170,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
 	.stabn	192,0,0,LBB20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
 Lscope8:
@@ -1341,12 +1307,12 @@ LC27:
 LC28:
 	.ascii "}\0"
 .code
-	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx:f(92,3)",36,0,188,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.stabs	"login:p(93,6)",160,0,188,-44
-	.stabs	"tokenMobile:p(93,6)",160,0,188,-48
-	.stabs	"tokenAuthent:p(93,6)",160,0,188,-52
-	.stabs	"mode:p(93,6)",160,0,188,-56
-	.stabs	"idMedia:p(92,8)=&(0,15)",160,0,188,0
+	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx:f(87,3)",36,0,188,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
+	.stabs	"login:p(88,6)",160,0,188,-44
+	.stabs	"tokenMobile:p(88,6)",160,0,188,-48
+	.stabs	"tokenAuthent:p(88,6)",160,0,188,-52
+	.stabs	"mode:p(88,6)",160,0,188,-56
+	.stabs	"idMedia:p(87,8)=&(0,15)",160,0,188,0
 
 .func __Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx, 5, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext7
@@ -1796,45 +1762,70 @@ Lscope16:
 	ret
 Lscope17:
 	.stabn	162,0,0,0
-	.stabs	"AlertTab::eAlertTab:t(82,1)=ePLUGIN_LIST:0,INFORMATION_LIST:1,ALERT_LIST:2,ASSET_LIST:3,OPERATOR_LIST:4,UNIT_INFO:5,SUB_UNIT_INFO:6,USER_LIST:7,MEDIA_VALUE_LIST:8,MEDIA_TYPE:9,POST_MEDIA_SPE:10,POST_ALERT:11,SEARCH_INFO:12,ALERT_INFO:13,ALERT_RECIPIENT_LIST:14,UNITS_TYPES:15,;",128,0,36,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >:Tt(82,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,3)=#(82,2),(0,6),(82,4)=*(82,2),(82,5)=&(82,6)=k(82,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2ERKS7_;2A.;__comp_ctor::(82,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1ERKS7_;2A.;operator=::(82,7)=#(82,2),(82,8)=&(82,2),(82,4),(82,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEaSERKS7_;2A.;__base_dtor::(82,9)=#(82,2),(0,6),(82,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev;2A.;__comp_dtor::(82,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED1Ev;2A.;find::(82,10)=#(82,2),(82,11)=xsIterator:,(82,4),(82,12)=&(82,13)=k(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2A.(82,14)=#(82,2),(82,15)=xsConstIterator:,(82,16)=*(82,6),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2B.;erase::(82,17)=#(82,2),(0,4),(82,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseERS1_;2A.(82,18)=#(82,2),(0,6),(82,4),(82,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseENS7_8IteratorE;2A.;begin::(82,19)=#(82,2),(82,11),(82,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2A.(82,20)=#(82,2),(82,15),(82,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2B.;end::(82,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2A.(82,20):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2B.;size::(82,21)=#(82,2),(5,1),(82,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv;2B.;clear::(82,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv;2A.;init::(82,22)=#(82,2),(0,6),(82,4),(82,23)=*(82,24)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,25)=#(82,2),(0,6),(82,4),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,25):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,26)=#(82,2),(82,27)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::ListViewItem*> >::Iterator,bool>:,(82,4),(82,28)=&(82,29)=k(82,30)=xsPair<const int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::ListViewItem*>:Tt(82,31)=s56!1,020,(82,2);__base_ctor::(82,32)=#(82,31),(0,6),(82,33)=*(82,31),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,32):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E;2A.;insert::(82,34)=#(82,31),(82,27),(82,33),(82,12),(82,35)=&(82,36)=k(82,37)=*(82,38)=xsListViewItem:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKiRKS3_;2A.(82,39)=#(82,31),(82,27),(82,33),(82,40)=&(82,41)=k(82,42)=xsPair<int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,43)=#(82,31),(82,44)=&(82,37),(82,33),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi;2A.;operator=::(82,45)=#(82,31),(82,46)=&(82,31),(82,33),(82,47)=&(82,48)=k(82,31),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEaSERKS4_;2A.;__base_ctor::(82,49)=#(82,31),(0,6),(82,33),(82,47),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2ERKS4_;2A.;__comp_ctor::(82,49):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1ERKS4_;2A.;__base_dtor::(82,50)=#(82,31),(0,6),(82,33),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED2Ev;2A.;__comp_dtor::(82,50):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >:Tt(82,51)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,52)=#(82,51),(0,6),(82,53)=*(82,51),(82,54)=&(82,55)=k(82,51),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2ERKS7_;2A.;__comp_ctor::(82,52):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1ERKS7_;2A.;operator=::(82,56)=#(82,51),(82,57)=&(82,51),(82,53),(82,54),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEaSERKS7_;2A.;__base_dtor::(82,58)=#(82,51),(0,6),(82,53),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev;2A.;__comp_dtor::(82,58):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED1Ev;2A.;find::(82,59)=#(82,51),(82,60)=xsIterator:,(82,53),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2A.(82,61)=#(82,51),(82,62)=xsConstIterator:,(82,63)=*(82,55),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2B.;erase::(82,64)=#(82,51),(0,4),(82,53),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseERS1_;2A.(82,65)=#(82,51),(0,6),(82,53),(82,60),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseENS7_8IteratorE;2A.;begin::(82,66)=#(82,51),(82,60),(82,53),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2A.(82,67)=#(82,51),(82,62),(82,63),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2B.;end::(82,66):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2A.(82,67):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2B.;size::(82,68)=#(82,51),(5,1),(82,63),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4sizeEv;2B.;clear::(82,58):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv;2A.;init::(82,69)=#(82,51),(0,6),(82,53),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,70)=#(82,51),(0,6),(82,53),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,70):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,71)=#(82,51),(82,72)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::Label*> >::Iterator,bool>:,(82,53),(82,73)=&(82,74)=k(82,75)=xsPair<const int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::Label*>:Tt(82,76)=s56!1,020,(82,51);__base_ctor::(82,77)=#(82,76),(0,6),(82,78)=*(82,76),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,77):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E;2A.;insert::(82,79)=#(82,76),(82,72),(82,78),(82,12),(82,80)=&(82,81)=k(82,82)=*(82,83)=xsLabel:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKiRKS3_;2A.(82,84)=#(82,76),(82,72),(82,78),(82,85)=&(82,86)=k(82,87)=xsPair<int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,88)=#(82,76),(82,89)=&(82,82),(82,78),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi;2A.;operator=::(82,90)=#(82,76),(82,91)=&(82,76),(82,78),(82,92)=&(82,93)=k(82,76),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEaSERKS4_;2A.;__base_ctor::(82,94)=#(82,76),(0,6),(82,78),(82,92),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2ERKS4_;2A.;__comp_ctor::(82,94):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1ERKS4_;2A.;__base_dtor::(82,95)=#(82,76),(0,6),(82,78),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEED2Ev;2A.;__comp_dtor::(82,95):_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >:Tt(82,96)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,97)=#(82,96),(0,6),(82,98)=*(82,96),(82,99)=&(82,100)=k(82,96),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2ERKS4_;2A.;__comp_ctor::(82,97):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1ERKS4_;2A.;operator=::(82,101)=#(82,96),(82,102)=&(82,96),(82,98),(82,99),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEaSERKS4_;2A.;__base_dtor::(82,103)=#(82,96),(0,6),(82,98),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev;2A.;__comp_dtor::(82,103):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED1Ev;2A.;find::(82,104)=#(82,96),(82,105)=xsIterator:,(82,98),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2A.(82,106)=#(82,96),(82,107)=xsConstIterator:,(82,108)=*(82,100),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2B.;erase::(82,109)=#(82,96),(0,4),(82,98),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseERS1_;2A.(82,110)=#(82,96),(0,6),(82,98),(82,105),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseENS4_8IteratorE;2A.;begin::(82,111)=#(82,96),(82,105),(82,98),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2A.(82,112)=#(82,96),(82,107),(82,108),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2B.;end::(82,111):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2A.(82,112):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2B.;size::(82,113)=#(82,96),(5,1),(82,108),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv;2B.;clear::(82,103):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv;2A.;init::(82,114)=#(82,96),(0,6),(82,98),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,115)=#(82,96),(0,6),(82,98),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(82,115):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1EPFiRS1_S5_Ei;1A.;insert::(82,116)=#(82,96),(82,117)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, long long int> >::Iterator,bool>:,(82,98),(82,118)=&(82,119)=k(82,120)=xsPair<const int,long long int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE6insertERKS3_;1A.;;",128,0,57,0
-	.stabs	"Map<int,long long int>:Tt(82,121)=s56!1,020,(82,96);__base_ctor::(82,122)=#(82,121),(0,6),(82,123)=*(82,121),(82,23),(0,6);:_ZN6MAUtil3MapIixEC2EPFiRKiS3_E;2A.;__comp_ctor::(82,122):_ZN6MAUtil3MapIixEC1EPFiRKiS3_E;2A.;insert::(82,124)=#(82,121),(82,117),(82,123),(82,12),(82,125)=&(82,126)=k(0,15),(0,6);:_ZN6MAUtil3MapIixE6insertERKiRKx;2A.(82,127)=#(82,121),(82,117),(82,123),(82,128)=&(82,129)=k(82,130)=xsPair<int,long long int>:,(0,6);:_ZN6MAUtil3MapIixE6insertERKNS_4PairIixEE;2A.;operator[]::(82,131)=#(82,121),(92,8),(82,123),(82,12),(0,6);:_ZN6MAUtil3MapIixEixERKi;2A.;operator=::(82,132)=#(82,121),(82,133)=&(82,121),(82,123),(82,134)=&(82,135)=k(82,121),(0,6);:_ZN6MAUtil3MapIixEaSERKS1_;2A.;__base_ctor::(82,136)=#(82,121),(0,6),(82,123),(82,134),(0,6);:_ZN6MAUtil3MapIixEC2ERKS1_;2A.;__comp_ctor::(82,136):_ZN6MAUtil3MapIixEC1ERKS1_;2A.;__base_dtor::(82,137)=#(82,121),(0,6),(82,123),(0,6);:_ZN6MAUtil3MapIixED2Ev;2A.;__comp_dtor::(82,137):_ZN6MAUtil3MapIixED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, int> >:Tt(82,138)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,139)=#(82,138),(0,6),(82,140)=*(82,138),(82,141)=&(82,142)=k(82,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2ERKS4_;2A.;__comp_ctor::(82,139):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1ERKS4_;2A.;operator=::(82,143)=#(82,138),(82,144)=&(82,138),(82,140),(82,141),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEaSERKS4_;2A.;__base_dtor::(82,145)=#(82,138),(0,6),(82,140),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED2Ev;2A.;__comp_dtor::(82,145):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED1Ev;2A.;find::(82,146)=#(82,138),(82,147)=xsIterator:,(82,140),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2A.(82,148)=#(82,138),(82,149)=xsConstIterator:,(82,150)=*(82,142),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2B.;erase::(82,151)=#(82,138),(0,4),(82,140),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseERS1_;2A.(82,152)=#(82,138),(0,6),(82,140),(82,147),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseENS4_8IteratorE;2A.;begin::(82,153)=#(82,138),(82,147),(82,140),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2A.(82,154)=#(82,138),(82,149),(82,150),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2B.;end::(82,153):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2A.(82,154):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2B.;size::(82,155)=#(82,138),(5,1),(82,150),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4sizeEv;2B.;clear::(82,145):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5clearEv;2A.;init::(82,156)=#(82,138),(0,6),(82,140),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,157)=#(82,138),(0,6),(82,140),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(82,157):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1EPFiRS1_S5_Ei;1A.;insert::(82,158)=#(82,138),(82,159)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, int> >::Iterator,bool>:,(82,140),(82,160)=&(82,161)=k(82,162)=xsPair<const int,int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE6insertERKS3_;1A.;;",128,0,57,0
-	.stabs	"Map<int,int>:Tt(82,163)=s56!1,020,(82,138);__base_ctor::(82,164)=#(82,163),(0,6),(82,165)=*(82,163),(82,23),(0,6);:_ZN6MAUtil3MapIiiEC2EPFiRKiS3_E;2A.;__comp_ctor::(82,164):_ZN6MAUtil3MapIiiEC1EPFiRKiS3_E;2A.;insert::(82,166)=#(82,163),(82,159),(82,165),(82,12),(82,12),(0,6);:_ZN6MAUtil3MapIiiE6insertERKiS3_;2A.(82,167)=#(82,163),(82,159),(82,165),(82,168)=&(82,169)=k(82,170)=xsPair<int,int>:,(0,6);:_ZN6MAUtil3MapIiiE6insertERKNS_4PairIiiEE;2A.;operator[]::(82,171)=#(82,163),(82,172)=&(0,3),(82,165),(82,12),(0,6);:_ZN6MAUtil3MapIiiEixERKi;2A.;operator=::(82,173)=#(82,163),(82,174)=&(82,163),(82,165),(82,175)=&(82,176)=k(82,163),(0,6);:_ZN6MAUtil3MapIiiEaSERKS1_;2A.;__base_ctor::(82,177)=#(82,163),(0,6),(82,165),(82,175),(0,6);:_ZN6MAUtil3MapIiiEC2ERKS1_;2A.;__comp_ctor::(82,177):_ZN6MAUtil3MapIiiEC1ERKS1_;2A.;__base_dtor::(82,178)=#(82,163),(0,6),(82,165),(0,6);:_ZN6MAUtil3MapIiiED2Ev;2A.;__comp_dtor::(82,178):_ZN6MAUtil3MapIiiED1Ev;2A.;;",128,0,33,0
-	.stabn	162,0,0,0
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",130,0,0,0
-	.stabs	"c:/MoSync/include/MAUtil/Moblet.h",130,0,0,0
-	.stabn	162,0,0,0
-	.stabs	"c:/MoSync/include/MAP/DateTime.h",130,0,0,0
-	.stabs	"c:/MoSync/include/MAP/TimeSpan.h",130,0,0,0
-	.stabs	"TimeSpan:Tt(99,1)=s4mTicks:/0(95,1),0,32;__base_ctor::(99,2)=#(99,1),(0,6),(99,3)=*(99,1),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Ei;2A.;__comp_ctor::(99,2):_ZN7MAPUtil8TimeSpanC1Ei;2A.;__base_ctor::(99,4)=#(99,1),(0,6),(99,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiii;2A.;__comp_ctor::(99,4):_ZN7MAPUtil8TimeSpanC1Eiii;2A.;__base_ctor::(99,5)=#(99,1),(0,6),(99,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiiii;2A.;__comp_ctor::(99,5):_ZN7MAPUtil8TimeSpanC1Eiiii;2A.;maxValue::(99,6)=f(99,1):_ZN7MAPUtil8TimeSpan8maxValueEv;2A?;minValue::(99,6):_ZN7MAPUtil8TimeSpan8minValueEv;2A?;zero::(99,6):_ZN7MAPUtil8TimeSpan4zeroEv;2A?;getTicks::(99,7)=#(99,1),(95,1),(99,8)=*(99,9)=k(99,1),(0,6);:_ZNK7MAPUtil8TimeSpan8getTicksEv;2B.;getDays::(99,10)=#(99,1),(0,3),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan7getDaysEv;2B.;getHours::(99,10):_ZNK7MAPUtil8TimeSpan8getHoursEv;2B.;getMinutes::(99,10):_ZNK7MAPUtil8TimeSpan10getMinutesEv;2B.;getSeconds::(99,10):_ZNK7MAPUtil8TimeSpan10getSecondsEv;2B.;getTotalDays::(99,11)=#(99,1),(0,8),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan12getTotalDaysEv;2B.;getTotalHours::(99,11):_ZNK7MAPUtil8TimeSpan13getTotalHoursEv;2B.;getTotalMinutes::(99,11):_ZNK7MAPUtil8TimeSpan15getTotalMinutesEv;2B.;getTotalSeconds::(99,11):_ZNK7MAPUtil8TimeSpan15getTotalSecondsEv;2B.;add::(99,12)=#(99,1),(99,1),(99,8),(99,1),(0,6);:_ZNK7MAPUtil8TimeSpan3addES0_;2B.;duration::(99,13)=#(99,1),(99,1),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan8durationEv;2B.;negate::(99,13):_ZNK7MAPUtil8TimeSpan6negateEv;2B.;subtract::(99,12):_ZNK7MAPUtil8TimeSpan8subtractES0_;2B.;fromDays::(99,14)=f(99,1):_ZN7MAPUtil8TimeSpan8fromDaysEd;2A?;fromHours::(99,14):_ZN7MAPUtil8TimeSpan9fromHoursEd;2A?;fromMinutes::(99,14):_ZN7MAPUtil8TimeSpan11fromMinutesEd;2A?;fromSeconds::(99,14):_ZN7MAPUtil8TimeSpan11fromSecondsEd;2A?;operator=::(99,15)=#(99,1),(99,16)=&(99,1),(99,3),(99,17)=&(99,9),(0,6);:_ZN7MAPUtil8TimeSpanaSERKS0_;2A.;__base_ctor::(99,18)=#(99,1),(0,6),(99,3),(99,17),(0,6);:_ZN7MAPUtil8TimeSpanC2ERKS0_;2A.;__comp_ctor::(99,18):_ZN7MAPUtil8TimeSpanC1ERKS0_;2A.;;",128,0,37,0
-	.stabn	162,0,0,0
-	.stabs	"DateTime:Tt(98,1)=s4mTicks:/0(95,1),0,32;__base_ctor::(98,2)=#(98,1),(0,6),(98,3)=*(98,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ev;2A.;__comp_ctor::(98,2):_ZN7MAPUtil8DateTimeC1Ev;2A.;__base_ctor::(98,4)=#(98,1),(0,6),(98,3),(95,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ei;2A.;__comp_ctor::(98,4):_ZN7MAPUtil8DateTimeC1Ei;2A.;__base_ctor::(98,5)=#(98,1),(0,6),(98,3),(95,5),(0,6);:_ZN7MAPUtil8DateTimeC2EP2tm;2A.;__comp_ctor::(98,5):_ZN7MAPUtil8DateTimeC1EP2tm;2A.;__base_ctor::(98,6)=#(98,1),(0,6),(98,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiii;2A.;__comp_ctor::(98,6):_ZN7MAPUtil8DateTimeC1Eiii;2A.;__base_ctor::(98,7)=#(98,1),(0,6),(98,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiiiiii;2A.;__comp_ctor::(98,7):_ZN7MAPUtil8DateTimeC1Eiiiiii;2A.;__base_ctor::(98,8)=#(98,1),(0,6),(98,3),(4,7),(0,6);:_ZN7MAPUtil8DateTimeC2EPKc;2A.;__comp_ctor::(98,8):_ZN7MAPUtil8DateTimeC1EPKc;2A.;__base_dtor::(98,2):_ZN7MAPUtil8DateTimeD2Ev;2A.;__comp_dtor::(98,2):_ZN7MAPUtil8DateTimeD1Ev;2A.;maxValue::(98,9)=f(98,1):_ZN7MAPUtil8DateTime8maxValueEv;2A?;minValue::(98,9):_ZN7MAPUtil8DateTime8minValueEv;2A?;now::(98,9):_ZN7MAPUtil8DateTime3nowEv;2A?;today::(98,9):_ZN7MAPUtil8DateTime5todayEv;2A?;timeOfDay::(98,10)=#(98,1),(99,1),(98,11)=*(98,12)=k(98,1),(0,6);:_ZNK7MAPUtil8DateTime9timeOfDayEv;2B.;getTicks::(98,13)=#(98,1),(95,1),(98,11),(0,6);:_ZNK7MAPUtil8DateTime8getTicksEv;2B.;getYear::(98,14)=#(98,1),(0,3),(98,11),(0,6);:_ZNK7MAPUtil8DateTime7getYearEv;2B.;getMonth::(98,14):_ZNK7MAPUtil8DateTime8getMonthEv;2B.;getWeekday::(98,14):_ZNK7MAPUtil8DateTime10getWeekdayEv;2B.;getDay::(98,14):_ZNK7MAPUtil8DateTime6getDayEv;2B.;getHour::(98,14):_ZNK7MAPUtil8DateTime7getHourEv;2B.;getMinute::(98,14):_ZNK7MAPUtil8DateTime9getMinuteEv;2B.;getSecond::(98,14):_ZNK7MAPUtil8DateTime9getSecondEv;2B.;add::(98,15)=#(98,1),(98,1),(98,11),(99,1),(0,6);:_ZNK7MAPUtil8DateTime3addENS_8TimeSpanE;2B.;addYears::(98,16)=#(98,1),(98,1),(98,11),(0,3),(0,6);:_ZNK7MAPUtil8DateTime8addYearsEi;2B.;addMonths::(98,16):_ZNK7MAPUtil8DateTime9addMonthsEi;2B.;addDays::(98,17)=#(98,1),(98,1),(98,11),(0,8),(0,6);:_ZNK7MAPUtil8DateTime7addDaysEd;2B.;addHours::(98,17):_ZNK7MAPUtil8DateTime8addHoursEd;2B.;addMinutes::(98,17):_ZNK7MAPUtil8DateTime10addMinutesEd;2B.;addSeconds::(98,17):_ZNK7MAPUtil8DateTime10addSecondsEd;2B.;addTicks::(98,16):_ZNK7MAPUtil8DateTime8addTicksEi;2B.;subtract::(98,18)=#(98,1),(99,1),(98,11),(98,1),(0,6);:_ZNK7MAPUtil8DateTime8subtractES0_;2B.(98,15):_ZNK7MAPUtil8DateTime8subtractENS_8TimeSpanE;2B.;operator=::(98,19)=#(98,1),(98,20)=&(98,1),(98,3),(98,21)=&(98,12),(0,6);:_ZN7MAPUtil8DateTimeaSERKS0_;2A.;__base_ctor::(98,22)=#(98,1),(0,6),(98,3),(98,21),(0,6);:_ZN7MAPUtil8DateTimeC2ERKS0_;2A.;__comp_ctor::(98,22):_ZN7MAPUtil8DateTimeC1ERKS0_;2A.;;",128,0,41,0
-	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/notification/LocalNotification.h",130,0,0,0
-	.stabs	"NotificationFlag:t(100,1)=eNOTIFICATION_FLAG_INSISTENT:4,NOTIFICATION_FLAG_NO_CLEAR:32,NOTIFICATION_FLAG_HIGH_PRIORITY:128,NOTIFICATION_FLAG_AUTO_CANCEL:16,;",128,0,59,0
-	.stabs	"NotificationDisplayFlag:t(100,2)=eNOTIFICATION_DISPLAY_DEFAULT:0,NOTIFICATION_DISPLAY_ANYTIME:1,;",128,0,91,0
-	.stabs	"NotificationFlashLights:Tt(100,3)=s12ledARGB:(0,3),0,32;ledOnMS:(0,3),32,32;ledOffMS:(0,3),64,32;__base_ctor::(100,4)=#(100,3),(0,6),(100,5)=*(100,3),(0,3),(0,3),(0,3),(0,6);:_ZN12Notification23NotificationFlashLightsC2Eiii;2A.;__comp_ctor::(100,4):_ZN12Notification23NotificationFlashLightsC1Eiii;2A.;__base_ctor::(100,6)=#(100,3),(0,6),(100,5),(0,6);:_ZN12Notification23NotificationFlashLightsC2Ev;2A.;__comp_ctor::(100,6):_ZN12Notification23NotificationFlashLightsC1Ev;2A.;operator=::(100,7)=#(100,3),(100,8)=&(100,3),(100,5),(100,9)=&(100,10)=k(100,3),(0,6);:_ZN12Notification23NotificationFlashLightsaSERKS0_;2A.;__base_ctor::(100,11)=#(100,3),(0,6),(100,5),(100,9),(0,6);:_ZN12Notification23NotificationFlashLightsC2ERKS0_;2A.;__comp_ctor::(100,11):_ZN12Notification23NotificationFlashLightsC1ERKS0_;2A.;;",128,0,115,0
+	.stabs	"NotificationFlag:t(90,1)=eNOTIFICATION_FLAG_INSISTENT:4,NOTIFICATION_FLAG_NO_CLEAR:32,NOTIFICATION_FLAG_HIGH_PRIORITY:128,NOTIFICATION_FLAG_AUTO_CANCEL:16,;",128,0,59,0
+	.stabs	"NotificationDisplayFlag:t(90,2)=eNOTIFICATION_DISPLAY_DEFAULT:0,NOTIFICATION_DISPLAY_ANYTIME:1,;",128,0,91,0
+	.stabs	"NotificationFlashLights:Tt(90,3)=s12ledARGB:(0,3),0,32;ledOnMS:(0,3),32,32;ledOffMS:(0,3),64,32;__base_ctor::(90,4)=#(90,3),(0,6),(90,5)=*(90,3),(0,3),(0,3),(0,3),(0,6);:_ZN12Notification23NotificationFlashLightsC2Eiii;2A.;__comp_ctor::(90,4):_ZN12Notification23NotificationFlashLightsC1Eiii;2A.;__base_ctor::(90,6)=#(90,3),(0,6),(90,5),(0,6);:_ZN12Notification23NotificationFlashLightsC2Ev;2A.;__comp_ctor::(90,6):_ZN12Notification23NotificationFlashLightsC1Ev;2A.;operator=::(90,7)=#(90,3),(90,8)=&(90,3),(90,5),(90,9)=&(90,10)=k(90,3),(0,6);:_ZN12Notification23NotificationFlashLightsaSERKS0_;2A.;__base_ctor::(90,11)=#(90,3),(0,6),(90,5),(90,9),(0,6);:_ZN12Notification23NotificationFlashLightsC2ERKS0_;2A.;__comp_ctor::(90,11):_ZN12Notification23NotificationFlashLightsC1ERKS0_;2A.;;",128,0,115,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/notification/NotificationManager.h",130,0,0,0
-	.stabs	"PushNotificationType:t(101,1)=ePUSH_NOTIFICATION_TYPE_BADGE:1,PUSH_NOTIFICATION_TYPE_SOUND:2,PUSH_NOTIFICATION_TYPE_ALERT:4,;",128,0,60,0
+	.stabs	"PushNotificationType:t(91,1)=ePUSH_NOTIFICATION_TYPE_BADGE:1,PUSH_NOTIFICATION_TYPE_SOUND:2,PUSH_NOTIFICATION_TYPE_ALERT:4,;",128,0,60,0
 	.lcomm	__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE, 4 ; size=4
 	.lcomm	__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE, 4 ; size=4
 	.lcomm	__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE, 4 ; size=4
 	.lcomm	__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE, 4 ; size=4
 	.lcomm	__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE, 4 ; size=4
-	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >:Tt(101,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(101,3)=#(101,2),(0,6),(101,4)=*(101,2),(101,5)=&(101,6)=k(101,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2ERKS7_;2A.;__comp_ctor::(101,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1ERKS7_;2A.;operator=::(101,7)=#(101,2),(101,8)=&(101,2),(101,4),(101,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEaSERKS7_;2A.;__base_dtor::(101,9)=#(101,2),(0,6),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED2Ev;2A.;__comp_dtor::(101,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED1Ev;2A.;find::(101,10)=#(101,2),(101,11)=xsIterator:,(101,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2A.(101,12)=#(101,2),(101,13)=xsConstIterator:,(101,14)=*(101,6),(80,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2B.;erase::(101,15)=#(101,2),(0,4),(101,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseERS1_;2A.(101,16)=#(101,2),(0,6),(101,4),(101,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseENS7_8IteratorE;2A.;begin::(101,17)=#(101,2),(101,11),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2A.(101,18)=#(101,2),(101,13),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2B.;end::(101,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2A.(101,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2B.;size::(101,19)=#(101,2),(5,1),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4sizeEv;2B.;clear::(101,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5clearEv;2A.;init::(101,20)=#(101,2),(0,6),(101,4),(80,22),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(101,21)=#(101,2),(0,6),(101,4),(80,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(101,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1EPFiRS1_S8_Ei;1A.;insert::(101,22)=#(101,2),(101,23)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >::Iterator,bool>:,(101,4),(101,24)=&(101,25)=k(101,26)=xsPair<const MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<MAHandle,Notification::LocalNotification*>:Tt(101,27)=s56!1,020,(101,2);__base_ctor::(101,28)=#(101,27),(0,6),(101,29)=*(101,27),(80,22),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2EPFiRKiS6_E;2A.;__comp_ctor::(101,28):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1EPFiRKiS6_E;2A.;insert::(101,30)=#(101,27),(101,23),(101,29),(80,11),(101,31)=&(101,32)=k(101,33)=*(101,34)=xsLocalNotification:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKiRKS3_;2A.(101,35)=#(101,27),(101,23),(101,29),(101,36)=&(101,37)=k(101,38)=xsPair<MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(101,39)=#(101,27),(101,40)=&(101,33),(101,29),(80,11),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEixERKi;2A.;operator=::(101,41)=#(101,27),(101,42)=&(101,27),(101,29),(101,43)=&(101,44)=k(101,27),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEaSERKS4_;2A.;__base_ctor::(101,45)=#(101,27),(0,6),(101,29),(101,43),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2ERKS4_;2A.;__comp_ctor::(101,45):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1ERKS4_;2A.;__base_dtor::(101,46)=#(101,27),(0,6),(101,29),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED2Ev;2A.;__comp_dtor::(101,46):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Vector<Notification::LocalNotificationListener*>:Tt(101,47)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(101,48)=*(101,49)=*(101,50)=xsLocalNotificationListener:,64,32;__base_ctor::(101,51)=#(101,47),(0,6),(101,52)=*(101,47),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2Ei;2A.;__comp_ctor::(101,51):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1Ei;2A.;__base_ctor::(101,53)=#(101,47),(0,6),(101,52),(101,54)=*(101,55)=k(101,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(101,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(101,56)=#(101,47),(0,6),(101,52),(101,57)=&(101,58)=k(101,47),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(101,56):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(101,59)=#(101,47),(0,6),(101,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED2Ev;2A.;__comp_dtor::(101,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED1Ev;2A.;operator=::(101,60)=#(101,47),(101,61)=&(101,47),(101,52),(101,57),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEaSERKS4_;2A.;add::(101,62)=#(101,47),(0,6),(101,52),(101,63)=&(101,55),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addERKS3_;2A.(101,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addEPKS3_i;2A.;remove::(101,64)=#(101,47),(0,6),(101,52),(101,48),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEPS3_;2A.(101,65)=#(101,47),(0,6),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEi;2A.(101,66)=#(101,47),(0,6),(101,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEii;2A.;insert::(101,67)=#(101,47),(0,6),(101,52),(0,3),(101,49),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6insertEiS3_;2A.;size::(101,68)=#(101,47),(0,3),(101,69)=*(101,58),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE4sizeEv;2B.;resize::(101,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6resizeEi;2A.;reserve::(101,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7reserveEi;2A.;clear::(101,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5clearEv;2A.;empty::(101,70)=#(101,47),(0,4),(101,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5emptyEv;2B.;capacity::(101,68):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE8capacityEv;2B.;begin::(101,71)=#(101,47),(101,48),(101,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2A.;end::(101,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2A.;begin::(101,72)=#(101,47),(101,54),(101,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2B.;end::(101,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2B.;operator[]::(101,73)=#(101,47),(101,74)=&(101,49),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2A.(101,75)=#(101,47),(101,63),(101,69),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2B.;pointer::(101,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2B.(101,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"Vector<Notification::PushNotificationListener*>:Tt(101,76)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(101,77)=*(101,78)=*(101,79)=xsPushNotificationListener:,64,32;__base_ctor::(101,80)=#(101,76),(0,6),(101,81)=*(101,76),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2Ei;2A.;__comp_ctor::(101,80):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1Ei;2A.;__base_ctor::(101,82)=#(101,76),(0,6),(101,81),(101,83)=*(101,84)=k(101,78),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(101,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(101,85)=#(101,76),(0,6),(101,81),(101,86)=&(101,87)=k(101,76),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(101,85):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(101,88)=#(101,76),(0,6),(101,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED2Ev;2A.;__comp_dtor::(101,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED1Ev;2A.;operator=::(101,89)=#(101,76),(101,90)=&(101,76),(101,81),(101,86),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEaSERKS4_;2A.;add::(101,91)=#(101,76),(0,6),(101,81),(101,92)=&(101,84),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addERKS3_;2A.(101,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addEPKS3_i;2A.;remove::(101,93)=#(101,76),(0,6),(101,81),(101,77),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEPS3_;2A.(101,94)=#(101,76),(0,6),(101,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEi;2A.(101,95)=#(101,76),(0,6),(101,81),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEii;2A.;insert::(101,96)=#(101,76),(0,6),(101,81),(0,3),(101,78),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6insertEiS3_;2A.;size::(101,97)=#(101,76),(0,3),(101,98)=*(101,87),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE4sizeEv;2B.;resize::(101,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6resizeEi;2A.;reserve::(101,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7reserveEi;2A.;clear::(101,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5clearEv;2A.;empty::(101,99)=#(101,76),(0,4),(101,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5emptyEv;2B.;capacity::(101,97):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE8capacityEv;2B.;begin::(101,100)=#(101,76),(101,77),(101,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2A.;end::(101,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2A.;begin::(101,101)=#(101,76),(101,83),(101,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2B.;end::(101,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2B.;operator[]::(101,102)=#(101,76),(101,103)=&(101,78),(101,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2A.(101,104)=#(101,76),(101,92),(101,98),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2B.;pointer::(101,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2B.(101,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >:Tt(91,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(91,3)=#(91,2),(0,6),(91,4)=*(91,2),(91,5)=&(91,6)=k(91,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2ERKS7_;2A.;__comp_ctor::(91,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1ERKS7_;2A.;operator=::(91,7)=#(91,2),(91,8)=&(91,2),(91,4),(91,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEaSERKS7_;2A.;__base_dtor::(91,9)=#(91,2),(0,6),(91,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED2Ev;2A.;__comp_dtor::(91,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED1Ev;2A.;find::(91,10)=#(91,2),(91,11)=xsIterator:,(91,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2A.(91,12)=#(91,2),(91,13)=xsConstIterator:,(91,14)=*(91,6),(80,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2B.;erase::(91,15)=#(91,2),(0,4),(91,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseERS1_;2A.(91,16)=#(91,2),(0,6),(91,4),(91,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseENS7_8IteratorE;2A.;begin::(91,17)=#(91,2),(91,11),(91,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2A.(91,18)=#(91,2),(91,13),(91,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2B.;end::(91,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2A.(91,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2B.;size::(91,19)=#(91,2),(5,1),(91,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4sizeEv;2B.;clear::(91,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5clearEv;2A.;init::(91,20)=#(91,2),(0,6),(91,4),(80,22),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(91,21)=#(91,2),(0,6),(91,4),(80,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(91,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1EPFiRS1_S8_Ei;1A.;insert::(91,22)=#(91,2),(91,23)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >::Iterator,bool>:,(91,4),(91,24)=&(91,25)=k(91,26)=xsPair<const MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<MAHandle,Notification::LocalNotification*>:Tt(91,27)=s56!1,020,(91,2);__base_ctor::(91,28)=#(91,27),(0,6),(91,29)=*(91,27),(80,22),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2EPFiRKiS6_E;2A.;__comp_ctor::(91,28):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1EPFiRKiS6_E;2A.;insert::(91,30)=#(91,27),(91,23),(91,29),(80,11),(91,31)=&(91,32)=k(91,33)=*(91,34)=xsLocalNotification:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKiRKS3_;2A.(91,35)=#(91,27),(91,23),(91,29),(91,36)=&(91,37)=k(91,38)=xsPair<MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(91,39)=#(91,27),(91,40)=&(91,33),(91,29),(80,11),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEixERKi;2A.;operator=::(91,41)=#(91,27),(91,42)=&(91,27),(91,29),(91,43)=&(91,44)=k(91,27),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEaSERKS4_;2A.;__base_ctor::(91,45)=#(91,27),(0,6),(91,29),(91,43),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2ERKS4_;2A.;__comp_ctor::(91,45):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1ERKS4_;2A.;__base_dtor::(91,46)=#(91,27),(0,6),(91,29),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED2Ev;2A.;__comp_dtor::(91,46):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Vector<Notification::LocalNotificationListener*>:Tt(91,47)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(91,48)=*(91,49)=*(91,50)=xsLocalNotificationListener:,64,32;__base_ctor::(91,51)=#(91,47),(0,6),(91,52)=*(91,47),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2Ei;2A.;__comp_ctor::(91,51):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1Ei;2A.;__base_ctor::(91,53)=#(91,47),(0,6),(91,52),(91,54)=*(91,55)=k(91,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(91,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(91,56)=#(91,47),(0,6),(91,52),(91,57)=&(91,58)=k(91,47),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(91,56):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(91,59)=#(91,47),(0,6),(91,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED2Ev;2A.;__comp_dtor::(91,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED1Ev;2A.;operator=::(91,60)=#(91,47),(91,61)=&(91,47),(91,52),(91,57),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEaSERKS4_;2A.;add::(91,62)=#(91,47),(0,6),(91,52),(91,63)=&(91,55),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addERKS3_;2A.(91,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addEPKS3_i;2A.;remove::(91,64)=#(91,47),(0,6),(91,52),(91,48),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEPS3_;2A.(91,65)=#(91,47),(0,6),(91,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEi;2A.(91,66)=#(91,47),(0,6),(91,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEii;2A.;insert::(91,67)=#(91,47),(0,6),(91,52),(0,3),(91,49),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6insertEiS3_;2A.;size::(91,68)=#(91,47),(0,3),(91,69)=*(91,58),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE4sizeEv;2B.;resize::(91,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6resizeEi;2A.;reserve::(91,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7reserveEi;2A.;clear::(91,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5clearEv;2A.;empty::(91,70)=#(91,47),(0,4),(91,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5emptyEv;2B.;capacity::(91,68):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE8capacityEv;2B.;begin::(91,71)=#(91,47),(91,48),(91,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2A.;end::(91,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2A.;begin::(91,72)=#(91,47),(91,54),(91,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2B.;end::(91,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2B.;operator[]::(91,73)=#(91,47),(91,74)=&(91,49),(91,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2A.(91,75)=#(91,47),(91,63),(91,69),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2B.;pointer::(91,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2B.(91,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<Notification::PushNotificationListener*>:Tt(91,76)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(91,77)=*(91,78)=*(91,79)=xsPushNotificationListener:,64,32;__base_ctor::(91,80)=#(91,76),(0,6),(91,81)=*(91,76),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2Ei;2A.;__comp_ctor::(91,80):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1Ei;2A.;__base_ctor::(91,82)=#(91,76),(0,6),(91,81),(91,83)=*(91,84)=k(91,78),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(91,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(91,85)=#(91,76),(0,6),(91,81),(91,86)=&(91,87)=k(91,76),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(91,85):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(91,88)=#(91,76),(0,6),(91,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED2Ev;2A.;__comp_dtor::(91,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED1Ev;2A.;operator=::(91,89)=#(91,76),(91,90)=&(91,76),(91,81),(91,86),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEaSERKS4_;2A.;add::(91,91)=#(91,76),(0,6),(91,81),(91,92)=&(91,84),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addERKS3_;2A.(91,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addEPKS3_i;2A.;remove::(91,93)=#(91,76),(0,6),(91,81),(91,77),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEPS3_;2A.(91,94)=#(91,76),(0,6),(91,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEi;2A.(91,95)=#(91,76),(0,6),(91,81),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEii;2A.;insert::(91,96)=#(91,76),(0,6),(91,81),(0,3),(91,78),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6insertEiS3_;2A.;size::(91,97)=#(91,76),(0,3),(91,98)=*(91,87),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE4sizeEv;2B.;resize::(91,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6resizeEi;2A.;reserve::(91,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7reserveEi;2A.;clear::(91,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5clearEv;2A.;empty::(91,99)=#(91,76),(0,4),(91,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5emptyEv;2B.;capacity::(91,97):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE8capacityEv;2B.;begin::(91,100)=#(91,76),(91,77),(91,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2A.;end::(91,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2A.;begin::(91,101)=#(91,76),(91,83),(91,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2B.;end::(91,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2B.;operator[]::(91,102)=#(91,76),(91,103)=&(91,78),(91,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2A.(91,104)=#(91,76),(91,92),(91,98),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2B.;pointer::(91,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2B.(91,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/IX_CELLID.h",130,0,0,0
-	.stabs	"MACellInfo:Tt(102,1)=s20mcc:(102,2)=ar(6,57);0;3;(0,19),0,32;mnc:(102,3)=ar(6,57);0;7;(0,19),32,64;lac:(0,3),96,32;cellId:(0,3),128,32;operator=::(102,4)=#(102,1),(102,5)=&(102,1),(102,6)=*(102,1),(102,7)=&(102,8)=k(102,1),(0,6);:_ZN10MACellInfoaSERKS_;2A.;__base_ctor::(102,9)=#(102,1),(0,6),(102,6),(102,7),(0,6);:_ZN10MACellInfoC2ERKS_;2A.;__comp_ctor::(102,9):_ZN10MACellInfoC1ERKS_;2A.;__base_ctor::(102,10)=#(102,1),(0,6),(102,6),(0,6);:_ZN10MACellInfoC2Ev;2A.;__comp_ctor::(102,10):_ZN10MACellInfoC1Ev;2A.;;",128,0,20,0
-	.stabs	"MACellInfo:t(102,11)=(102,1)",128,0,47,0
+	.stabs	"MACellInfo:Tt(92,1)=s20mcc:(92,2)=ar(6,57);0;3;(0,19),0,32;mnc:(92,3)=ar(6,57);0;7;(0,19),32,64;lac:(0,3),96,32;cellId:(0,3),128,32;operator=::(92,4)=#(92,1),(92,5)=&(92,1),(92,6)=*(92,1),(92,7)=&(92,8)=k(92,1),(0,6);:_ZN10MACellInfoaSERKS_;2A.;__base_ctor::(92,9)=#(92,1),(0,6),(92,6),(92,7),(0,6);:_ZN10MACellInfoC2ERKS_;2A.;__comp_ctor::(92,9):_ZN10MACellInfoC1ERKS_;2A.;__base_ctor::(92,10)=#(92,1),(0,6),(92,6),(0,6);:_ZN10MACellInfoC2Ev;2A.;__comp_ctor::(92,10):_ZN10MACellInfoC1Ev;2A.;;",128,0,20,0
+	.stabs	"MACellInfo:t(92,11)=(92,1)",128,0,47,0
+	.stabn	162,0,0,0
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/IncludeFile.h",130,0,0,0
+	.stabs	"c:/MoSync/include/Wormhole/HighLevelHttpConnection.h",130,0,0,0
+	.stabs	"c:/MoSync/include/maheap.h",130,0,0,0
+	.stabs	"malloc_handler:t(95,1)=(95,2)=*(95,3)=f(0,6)",128,0,108,0
+	.stabs	"malloc_hook:t(95,4)=(95,5)=*(95,6)=f(6,9)",128,0,109,0
+	.stabs	"free_hook:t(95,7)=(95,8)=*(95,9)=f(0,6)",128,0,110,0
+	.stabs	"realloc_hook:t(95,10)=(95,11)=*(95,12)=f(6,9)",128,0,111,0
+	.stabs	"block_size_hook:t(95,13)=(95,14)=*(95,15)=f(0,3)",128,0,112,0
+	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/MAUtil/Connection.h",130,0,0,0
+	.stabn	162,0,0,0
+	.stabs	"Vector<MAHandle>:Tt(94,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(94,2)=*(6,10),64,32;__base_ctor::(94,3)=#(94,1),(0,6),(94,4)=*(94,1),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2Ei;2A.;__comp_ctor::(94,3):_ZN6MAUtil6VectorIiEC1Ei;2A.;__base_ctor::(94,5)=#(94,1),(0,6),(94,4),(94,6)=*(80,12),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2EPKii;2A.;__comp_ctor::(94,5):_ZN6MAUtil6VectorIiEC1EPKii;2A.;__base_ctor::(94,7)=#(94,1),(0,6),(94,4),(94,8)=&(94,9)=k(94,1),(0,6);:_ZN6MAUtil6VectorIiEC2ERKS1_;2A.;__comp_ctor::(94,7):_ZN6MAUtil6VectorIiEC1ERKS1_;2A.;__base_dtor::(94,10)=#(94,1),(0,6),(94,4),(0,6);:_ZN6MAUtil6VectorIiED2Ev;2A.;__comp_dtor::(94,10):_ZN6MAUtil6VectorIiED1Ev;2A.;operator=::(94,11)=#(94,1),(94,12)=&(94,1),(94,4),(94,8),(0,6);:_ZN6MAUtil6VectorIiEaSERKS1_;2A.;add::(94,13)=#(94,1),(0,6),(94,4),(80,11),(0,6);:_ZN6MAUtil6VectorIiE3addERKi;2A.(94,5):_ZN6MAUtil6VectorIiE3addEPKii;2A.;remove::(94,14)=#(94,1),(0,6),(94,4),(94,2),(0,6);:_ZN6MAUtil6VectorIiE6removeEPi;2A.(94,15)=#(94,1),(0,6),(94,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEi;2A.(94,16)=#(94,1),(0,6),(94,4),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEii;2A.;insert::(94,16):_ZN6MAUtil6VectorIiE6insertEii;2A.;size::(94,17)=#(94,1),(0,3),(94,18)=*(94,9),(0,6);:_ZNK6MAUtil6VectorIiE4sizeEv;2B.;resize::(94,15):_ZN6MAUtil6VectorIiE6resizeEi;2A.;reserve::(94,15):_ZN6MAUtil6VectorIiE7reserveEi;2A.;clear::(94,10):_ZN6MAUtil6VectorIiE5clearEv;2A.;empty::(94,19)=#(94,1),(0,4),(94,18),(0,6);:_ZNK6MAUtil6VectorIiE5emptyEv;2B.;capacity::(94,17):_ZNK6MAUtil6VectorIiE8capacityEv;2B.;begin::(94,20)=#(94,1),(94,2),(94,4),(0,6);:_ZN6MAUtil6VectorIiE5beginEv;2A.;end::(94,20):_ZN6MAUtil6VectorIiE3endEv;2A.;begin::(94,21)=#(94,1),(94,6),(94,18),(0,6);:_ZNK6MAUtil6VectorIiE5beginEv;2B.;end::(94,21):_ZNK6MAUtil6VectorIiE3endEv;2B.;operator[]::(94,22)=#(94,1),(94,23)=&(6,10),(94,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiEixEi;2A.(94,24)=#(94,1),(80,11),(94,18),(0,3),(0,6);:_ZNK6MAUtil6VectorIiEixEi;2B.;pointer::(94,21):_ZNK6MAUtil6VectorIiE7pointerEv;2B.(94,20):_ZN6MAUtil6VectorIiE7pointerEv;2A.;;",128,0,95,0
+	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/Wormhole/MessageStreamJSON.h",130,0,0,0
+	.stabs	"c:/MoSync/include/MAUtil/HashMap.h",130,0,0,0
+	.stabs	"c:/MoSync/include/MAUtil/HashDict.h",130,0,0,0
+	.stabs	"c:/MoSync/include/kazlib/hash.h",130,0,0,0
+	.stabs	"hashcount_t:t(100,1)=(0,16)",128,0,37,0
+	.stabs	"hash_val_t:t(100,2)=(0,16)",128,0,40,0
+	.stabs	"hnode_t:Tt(100,3)=s16hash_next:(100,4)=*(100,3),0,32;hash_key:(14,5),32,32;hash_data:(6,9),64,32;hash_hkey:(100,2),96,32;operator=::(100,5)=#(100,3),(100,6)=&(100,3),(100,4),(100,7)=&(100,8)=k(100,3),(0,6);:_ZN7hnode_taSERKS_;2A.;__base_ctor::(100,9)=#(100,3),(0,6),(100,4),(100,7),(0,6);:_ZN7hnode_tC2ERKS_;2A.;__comp_ctor::(100,9):_ZN7hnode_tC1ERKS_;2A.;__base_ctor::(100,10)=#(100,3),(0,6),(100,4),(0,6);:_ZN7hnode_tC2Ev;2A.;__comp_ctor::(100,10):_ZN7hnode_tC1Ev;2A.;;",128,0,73,0
+	.stabs	"hnode_t:t(100,11)=(100,3)",128,0,82,0
+	.stabs	"hash_comp_t:t(100,12)=(14,15)",128,0,91,0
+	.stabs	"hash_fun_t:t(100,13)=(100,14)=*(100,15)=f(100,2)",128,0,105,0
+	.stabs	"hnode_alloc_t:t(100,16)=(100,17)=*(100,18)=f(100,19)=*(100,11)",128,0,111,0
+	.stabs	"hnode_free_t:t(100,20)=(100,21)=*(100,22)=f(0,6)",128,0,112,0
+	.stabs	"hash_t:Tt(100,23)=s52hash_table:(100,24)=*(100,4),0,32;hash_nchains:(100,1),32,32;hash_nodecount:(100,1),64,32;hash_maxcount:(100,1),96,32;hash_highmark:(100,1),128,32;hash_lowmark:(100,1),160,32;hash_compare:(100,12),192,32;hash_function:(100,13),224,32;hash_allocnode:(100,16),256,32;hash_freenode:(100,20),288,32;hash_context:(6,9),320,32;hash_mask:(100,2),352,32;hash_dynamic:(0,3),384,32;operator=::(100,25)=#(100,23),(100,26)=&(100,23),(100,27)=*(100,23),(100,28)=&(100,29)=k(100,23),(0,6);:_ZN6hash_taSERKS_;2A.;__base_ctor::(100,30)=#(100,23),(0,6),(100,27),(100,28),(0,6);:_ZN6hash_tC2ERKS_;2A.;__comp_ctor::(100,30):_ZN6hash_tC1ERKS_;2A.;__base_ctor::(100,31)=#(100,23),(0,6),(100,27),(0,6);:_ZN6hash_tC2Ev;2A.;__comp_ctor::(100,31):_ZN6hash_tC1Ev;2A.;;",128,0,149,0
+	.stabs	"hash_t:t(100,32)=(100,23)",128,0,167,0
+	.stabs	"hscan_t:Tt(100,33)=s12hash_table:(100,34)=*(100,32),0,32;hash_chain:(100,2),32,32;hash_next:(100,19),64,32;operator=::(100,35)=#(100,33),(100,36)=&(100,33),(100,37)=*(100,33),(100,38)=&(100,39)=k(100,33),(0,6);:_ZN7hscan_taSERKS_;2A.;__base_ctor::(100,40)=#(100,33),(0,6),(100,37),(100,38),(0,6);:_ZN7hscan_tC2ERKS_;2A.;__comp_ctor::(100,40):_ZN7hscan_tC1ERKS_;2A.;__base_ctor::(100,41)=#(100,33),(0,6),(100,37),(0,6);:_ZN7hscan_tC2Ev;2A.;__comp_ctor::(100,41):_ZN7hscan_tC1Ev;2A.;;",128,0,179,0
+	.stabs	"hscan_t:t(100,42)=(100,33)",128,0,187,0
+	.stabn	162,0,0,0
+	.stabn	162,0,0,0
+	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/yajl/YAJLDom.h",130,0,0,0
+	.stabs	"Value::Type:t(101,1)=eNUL:0,BOOLEAN:1,NUMBER:2,ARRAY:3,MAP:4,STRING:5,;",128,0,37,0
+	.stabs	"Dictionary<const MAUtil::BasicString<char>,MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >:Tt(101,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(101,3)=#(101,2),(0,6),(101,4)=*(101,2),(101,5)=&(101,6)=k(101,2),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2ERKS9_;2A.;__comp_ctor::(101,3):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1ERKS9_;2A.;operator=::(101,7)=#(101,2),(101,8)=&(101,2),(101,4),(101,5),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEaSERKS9_;2A.;__base_dtor::(101,9)=#(101,2),(0,6),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED2Ev;2A.;__comp_dtor::(101,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED1Ev;2A.;find::(101,10)=#(101,2),(101,11)=xsIterator:,(101,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2A.(101,12)=#(101,2),(101,13)=xsConstIterator:,(101,14)=*(101,6),(4,38),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2B.;erase::(101,15)=#(101,2),(0,4),(101,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseERS3_;2A.(101,16)=#(101,2),(0,6),(101,4),(101,11),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseENS9_8IteratorE;2A.;begin::(101,17)=#(101,2),(101,11),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2A.(101,18)=#(101,2),(101,13),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2B.;end::(101,17):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2A.(101,18):_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2B.;size::(101,19)=#(101,2),(5,1),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4sizeEv;2B.;clear::(101,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5clearEv;2A.;init::(101,20)=#(101,2),(0,6),(101,4),(101,21)=*(101,22)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4initEPFiRS3_SA_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(101,23)=#(101,2),(0,6),(101,4),(101,21),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2EPFiRS3_SA_Ei;1A.;__comp_ctor::(101,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1EPFiRS3_SA_Ei;1A.;insert::(101,24)=#(101,2),(101,25)=xsPair<MAUtil::Dictionary<const MAUtil::BasicString<char>, MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >::Iterator,bool>:,(101,4),(101,26)=&(101,27)=k(101,28)=xsPair<const MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE6insertERKS8_;1A.;;",128,0,57,0
+	.stabs	"Map<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:Tt(101,29)=s56!1,020,(101,2);__base_ctor::(101,30)=#(101,29),(0,6),(101,31)=*(101,29),(101,21),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2EPFiRKS2_S8_E;2A.;__comp_ctor::(101,30):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1EPFiRKS2_S8_E;2A.;insert::(101,32)=#(101,29),(101,25),(101,31),(4,38),(101,33)=&(101,34)=k(101,35)=*(101,36)=xsValue:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKS2_RKS5_;2A.(101,37)=#(101,29),(101,25),(101,31),(101,38)=&(101,39)=k(101,40)=xsPair<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKNS_4PairIS2_S5_EE;2A.;operator[]::(101,41)=#(101,29),(101,42)=&(101,35),(101,31),(4,38),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEixERKS2_;2A.;operator=::(101,43)=#(101,29),(101,44)=&(101,29),(101,31),(101,45)=&(101,46)=k(101,29),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEaSERKS6_;2A.;__base_ctor::(101,47)=#(101,29),(0,6),(101,31),(101,45),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2ERKS6_;2A.;__comp_ctor::(101,47):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1ERKS6_;2A.;__base_dtor::(101,48)=#(101,29),(0,6),(101,31),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(101,48):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Vector<MAUtil::YAJLDom::Value*>:Tt(101,49)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(101,50)=*(101,35),64,32;__base_ctor::(101,51)=#(101,49),(0,6),(101,52)=*(101,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2Ei;2A.;__comp_ctor::(101,51):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1Ei;2A.;__base_ctor::(101,53)=#(101,49),(0,6),(101,52),(101,54)=*(101,34),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2EPKS3_i;2A.;__comp_ctor::(101,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1EPKS3_i;2A.;__base_ctor::(101,55)=#(101,49),(0,6),(101,52),(101,56)=&(101,57)=k(101,49),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2ERKS4_;2A.;__comp_ctor::(101,55):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1ERKS4_;2A.;__base_dtor::(101,58)=#(101,49),(0,6),(101,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(101,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED1Ev;2A.;operator=::(101,59)=#(101,49),(101,60)=&(101,49),(101,52),(101,56),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEaSERKS4_;2A.;add::(101,61)=#(101,49),(0,6),(101,52),(101,33),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addERKS3_;2A.(101,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addEPKS3_i;2A.;remove::(101,62)=#(101,49),(0,6),(101,52),(101,50),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEPS3_;2A.(101,63)=#(101,49),(0,6),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEi;2A.(101,64)=#(101,49),(0,6),(101,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEii;2A.;insert::(101,65)=#(101,49),(0,6),(101,52),(0,3),(101,35),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6insertEiS3_;2A.;size::(101,66)=#(101,49),(0,3),(101,67)=*(101,57),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE4sizeEv;2B.;resize::(101,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6resizeEi;2A.;reserve::(101,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7reserveEi;2A.;clear::(101,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5clearEv;2A.;empty::(101,68)=#(101,49),(0,4),(101,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5emptyEv;2B.;capacity::(101,66):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE8capacityEv;2B.;begin::(101,69)=#(101,49),(101,50),(101,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2A.;end::(101,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2A.;begin::(101,70)=#(101,49),(101,54),(101,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2B.;end::(101,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2B.;operator[]::(101,71)=#(101,49),(101,42),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2A.(101,72)=#(101,49),(101,33),(101,67),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2B.;pointer::(101,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2B.(101,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2A.;;",128,0,95,0
+	.stabn	162,0,0,0
+	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/mastdlib.h",130,0,0,0
+	.stabs	"div_t:Tt(102,1)=s8quot:(0,3),0,32;rem:(0,3),32,32;operator=::(102,2)=#(102,1),(102,3)=&(102,1),(102,4)=*(102,1),(102,5)=&(102,6)=k(102,1),(0,6);:_ZN5div_taSERKS_;2A.;__base_ctor::(102,7)=#(102,1),(0,6),(102,4),(102,5),(0,6);:_ZN5div_tC2ERKS_;2A.;__comp_ctor::(102,7):_ZN5div_tC1ERKS_;2A.;__base_ctor::(102,8)=#(102,1),(0,6),(102,4),(0,6);:_ZN5div_tC2Ev;2A.;__comp_ctor::(102,8):_ZN5div_tC1Ev;2A.;;",128,0,58,0
+	.stabs	"div_t:t(102,9)=(102,1)",128,0,60,0
+	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/MTXml/MTXml.h",130,0,0,0
 	.stabs	"MTXContext:t(103,1)=(103,2)=xsMTXContext:",128,0,82,0
@@ -1843,64 +1834,69 @@ Lscope17:
 	.stabs	"ContextW:Tt(103,35)=s60!1,020,(103,24);mXml:/0(103,36)=*(103,37)=xsXmlListenerW:,448,32;init::(103,38)=#(103,35),(0,6),(103,39)=*(103,35),(103,25),(103,36),(0,6);:_ZN3Mtx8ContextW4initEPNS_11MtxListenerEPNS_12XmlListenerWE;2A.;feed::(103,40)=#(103,35),(0,4),(103,39),(6,5),(103,41)=*(0,5),(0,6);:_ZN3Mtx8ContextW4feedEPcPw;2A.;operator=::(103,42)=#(103,35),(103,43)=&(103,35),(103,39),(103,44)=&(103,45)=k(103,35),(0,6);:_ZN3Mtx8ContextWaSERKS0_;2A.;__base_ctor::(103,46)=#(103,35),(0,6),(103,39),(103,44),(0,6);:_ZN3Mtx8ContextWC2ERKS0_;2A.;__comp_ctor::(103,46):_ZN3Mtx8ContextWC1ERKS0_;2A.;__base_ctor::(103,47)=#(103,35),(0,6),(103,39),(0,6);:_ZN3Mtx8ContextWC2Ev;2A.;__comp_ctor::(103,47):_ZN3Mtx8ContextWC1Ev;2A.;;",128,0,380,0
 	.stabs	"Context:Tt(103,48)=s60!1,020,(103,24);mXml:/0(103,49)=*(103,50)=xsXmlListener:,448,32;init::(103,51)=#(103,48),(0,6),(103,52)=*(103,48),(103,25),(103,49),(0,6);:_ZN3Mtx7Context4initEPNS_11MtxListenerEPNS_11XmlListenerE;2A.;feed::(103,53)=#(103,48),(0,4),(103,52),(6,5),(0,6);:_ZN3Mtx7Context4feedEPc;2A.;feedProcess::(103,53):_ZN3Mtx7Context11feedProcessEPc;2A.;process::(103,54)=#(103,48),(0,3),(103,52),(6,5),(0,6);:_ZN3Mtx7Context7processEPc;2A.;operator=::(103,55)=#(103,48),(103,56)=&(103,48),(103,52),(103,57)=&(103,58)=k(103,48),(0,6);:_ZN3Mtx7ContextaSERKS0_;2A.;__base_ctor::(103,59)=#(103,48),(0,6),(103,52),(103,57),(0,6);:_ZN3Mtx7ContextC2ERKS0_;2A.;__comp_ctor::(103,59):_ZN3Mtx7ContextC1ERKS0_;2A.;__base_ctor::(103,60)=#(103,48),(0,6),(103,52),(0,6);:_ZN3Mtx7ContextC2Ev;2A.;__comp_ctor::(103,60):_ZN3Mtx7ContextC1Ev;2A.;;",128,0,397,0
 	.stabn	162,0,0,0
-	.stabs	"TrackingTab::eTrakingTab:t(96,1)=eTRACKING_LIST:0,;",128,0,46,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >:Tt(96,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,3)=#(96,2),(0,6),(96,4)=*(96,2),(96,5)=&(96,6)=k(96,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2ERKS6_;2A.;__comp_ctor::(96,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1ERKS6_;2A.;operator=::(96,7)=#(96,2),(96,8)=&(96,2),(96,4),(96,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEaSERKS6_;2A.;__base_dtor::(96,9)=#(96,2),(0,6),(96,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev;2A.;__comp_dtor::(96,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED1Ev;2A.;find::(96,10)=#(96,2),(96,11)=xsIterator:,(96,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2A.(96,12)=#(96,2),(96,13)=xsConstIterator:,(96,14)=*(96,6),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2B.;erase::(96,15)=#(96,2),(0,4),(96,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseERS1_;2A.(96,16)=#(96,2),(0,6),(96,4),(96,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseENS6_8IteratorE;2A.;begin::(96,17)=#(96,2),(96,11),(96,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2A.(96,18)=#(96,2),(96,13),(96,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2B.;end::(96,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2A.(96,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2B.;size::(96,19)=#(96,2),(5,1),(96,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4sizeEv;2B.;clear::(96,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv;2A.;init::(96,20)=#(96,2),(0,6),(96,4),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,21)=#(96,2),(0,6),(96,4),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei;1A.;__comp_ctor::(96,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1EPFiRS1_S7_Ei;1A.;insert::(96,22)=#(96,2),(96,23)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, MAUtil::BasicString<char> > >::Iterator,bool>:,(96,4),(96,24)=&(96,25)=k(96,26)=xsPair<const int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE6insertERKS5_;1A.;;",128,0,57,0
-	.stabs	"Map<int,MAUtil::BasicString<char> >:Tt(96,27)=s56!1,020,(96,2);__base_ctor::(96,28)=#(96,27),(0,6),(96,29)=*(96,27),(82,23),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2EPFiRKiS5_E;2A.;__comp_ctor::(96,28):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E;2A.;insert::(96,30)=#(96,27),(96,23),(96,29),(82,12),(4,38),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKiRKS2_;2A.(96,31)=#(96,27),(96,23),(96,29),(96,32)=&(96,33)=k(96,34)=xsPair<int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKNS_4PairIiS2_EE;2A.;operator[]::(96,35)=#(96,27),(93,6),(96,29),(82,12),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi;2A.;operator=::(96,36)=#(96,27),(96,37)=&(96,27),(96,29),(96,38)=&(96,39)=k(96,27),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEaSERKS3_;2A.;__base_ctor::(96,40)=#(96,27),(0,6),(96,29),(96,38),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2ERKS3_;2A.;__comp_ctor::(96,40):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1ERKS3_;2A.;__base_dtor::(96,41)=#(96,27),(0,6),(96,29),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(96,41):_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >:Tt(96,42)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,43)=#(96,42),(0,6),(96,44)=*(96,42),(96,45)=&(96,46)=k(96,42),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2ERKS7_;2A.;__comp_ctor::(96,43):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1ERKS7_;2A.;operator=::(96,47)=#(96,42),(96,48)=&(96,42),(96,44),(96,45),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEaSERKS7_;2A.;__base_dtor::(96,49)=#(96,42),(0,6),(96,44),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev;2A.;__comp_dtor::(96,49):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED1Ev;2A.;find::(96,50)=#(96,42),(96,51)=xsIterator:,(96,44),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2A.(96,52)=#(96,42),(96,53)=xsConstIterator:,(96,54)=*(96,46),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2B.;erase::(96,55)=#(96,42),(0,4),(96,44),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseERS1_;2A.(96,56)=#(96,42),(0,6),(96,44),(96,51),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseENS7_8IteratorE;2A.;begin::(96,57)=#(96,42),(96,51),(96,44),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2A.(96,58)=#(96,42),(96,53),(96,54),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2B.;end::(96,57):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2A.(96,58):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2B.;size::(96,59)=#(96,42),(5,1),(96,54),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4sizeEv;2B.;clear::(96,49):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv;2A.;init::(96,60)=#(96,42),(0,6),(96,44),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,61)=#(96,42),(0,6),(96,44),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(96,61):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1EPFiRS1_S8_Ei;1A.;insert::(96,62)=#(96,42),(96,63)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >::Iterator,bool>:,(96,44),(96,64)=&(96,65)=k(96,66)=xsPair<const int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::HorizontalLayout*>:Tt(96,67)=s56!1,020,(96,42);__base_ctor::(96,68)=#(96,67),(0,6),(96,69)=*(96,67),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2EPFiRKiS6_E;2A.;__comp_ctor::(96,68):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E;2A.;insert::(96,70)=#(96,67),(96,63),(96,69),(82,12),(96,71)=&(96,72)=k(96,73)=*(96,74)=xsHorizontalLayout:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKiRKS3_;2A.(96,75)=#(96,67),(96,63),(96,69),(96,76)=&(96,77)=k(96,78)=xsPair<int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(96,79)=#(96,67),(96,80)=&(96,73),(96,69),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi;2A.;operator=::(96,81)=#(96,67),(96,82)=&(96,67),(96,69),(96,83)=&(96,84)=k(96,67),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEaSERKS4_;2A.;__base_ctor::(96,85)=#(96,67),(0,6),(96,69),(96,83),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2ERKS4_;2A.;__comp_ctor::(96,85):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1ERKS4_;2A.;__base_dtor::(96,86)=#(96,67),(0,6),(96,69),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED2Ev;2A.;__comp_dtor::(96,86):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev;2A.;;",128,0,33,0
+	.stabs	"TrackingTab::eTrakingTab:t(82,1)=eTRACKING_LIST:0,;",128,0,46,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >:Tt(82,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,3)=#(82,2),(0,6),(82,4)=*(82,2),(82,5)=&(82,6)=k(82,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2ERKS6_;2A.;__comp_ctor::(82,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1ERKS6_;2A.;operator=::(82,7)=#(82,2),(82,8)=&(82,2),(82,4),(82,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEaSERKS6_;2A.;__base_dtor::(82,9)=#(82,2),(0,6),(82,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev;2A.;__comp_dtor::(82,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED1Ev;2A.;find::(82,10)=#(82,2),(82,11)=xsIterator:,(82,4),(82,12)=&(82,13)=k(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2A.(82,14)=#(82,2),(82,15)=xsConstIterator:,(82,16)=*(82,6),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2B.;erase::(82,17)=#(82,2),(0,4),(82,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseERS1_;2A.(82,18)=#(82,2),(0,6),(82,4),(82,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseENS6_8IteratorE;2A.;begin::(82,19)=#(82,2),(82,11),(82,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2A.(82,20)=#(82,2),(82,15),(82,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2B.;end::(82,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2A.(82,20):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2B.;size::(82,21)=#(82,2),(5,1),(82,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4sizeEv;2B.;clear::(82,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv;2A.;init::(82,22)=#(82,2),(0,6),(82,4),(82,23)=*(82,24)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,25)=#(82,2),(0,6),(82,4),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei;1A.;__comp_ctor::(82,25):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1EPFiRS1_S7_Ei;1A.;insert::(82,26)=#(82,2),(82,27)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, MAUtil::BasicString<char> > >::Iterator,bool>:,(82,4),(82,28)=&(82,29)=k(82,30)=xsPair<const int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE6insertERKS5_;1A.;;",128,0,57,0
+	.stabs	"Map<int,MAUtil::BasicString<char> >:Tt(82,31)=s56!1,020,(82,2);__base_ctor::(82,32)=#(82,31),(0,6),(82,33)=*(82,31),(82,23),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2EPFiRKiS5_E;2A.;__comp_ctor::(82,32):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E;2A.;insert::(82,34)=#(82,31),(82,27),(82,33),(82,12),(4,38),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKiRKS2_;2A.(82,35)=#(82,31),(82,27),(82,33),(82,36)=&(82,37)=k(82,38)=xsPair<int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKNS_4PairIiS2_EE;2A.;operator[]::(82,39)=#(82,31),(88,6),(82,33),(82,12),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi;2A.;operator=::(82,40)=#(82,31),(82,41)=&(82,31),(82,33),(82,42)=&(82,43)=k(82,31),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEaSERKS3_;2A.;__base_ctor::(82,44)=#(82,31),(0,6),(82,33),(82,42),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2ERKS3_;2A.;__comp_ctor::(82,44):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1ERKS3_;2A.;__base_dtor::(82,45)=#(82,31),(0,6),(82,33),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(82,45):_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >:Tt(82,46)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,47)=#(82,46),(0,6),(82,48)=*(82,46),(82,49)=&(82,50)=k(82,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2ERKS7_;2A.;__comp_ctor::(82,47):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1ERKS7_;2A.;operator=::(82,51)=#(82,46),(82,52)=&(82,46),(82,48),(82,49),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEaSERKS7_;2A.;__base_dtor::(82,53)=#(82,46),(0,6),(82,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev;2A.;__comp_dtor::(82,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED1Ev;2A.;find::(82,54)=#(82,46),(82,55)=xsIterator:,(82,48),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2A.(82,56)=#(82,46),(82,57)=xsConstIterator:,(82,58)=*(82,50),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2B.;erase::(82,59)=#(82,46),(0,4),(82,48),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseERS1_;2A.(82,60)=#(82,46),(0,6),(82,48),(82,55),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseENS7_8IteratorE;2A.;begin::(82,61)=#(82,46),(82,55),(82,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2A.(82,62)=#(82,46),(82,57),(82,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2B.;end::(82,61):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2A.(82,62):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2B.;size::(82,63)=#(82,46),(5,1),(82,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4sizeEv;2B.;clear::(82,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv;2A.;init::(82,64)=#(82,46),(0,6),(82,48),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,65)=#(82,46),(0,6),(82,48),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,65):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,66)=#(82,46),(82,67)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >::Iterator,bool>:,(82,48),(82,68)=&(82,69)=k(82,70)=xsPair<const int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::HorizontalLayout*>:Tt(82,71)=s56!1,020,(82,46);__base_ctor::(82,72)=#(82,71),(0,6),(82,73)=*(82,71),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,72):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E;2A.;insert::(82,74)=#(82,71),(82,67),(82,73),(82,12),(82,75)=&(82,76)=k(82,77)=*(82,78)=xsHorizontalLayout:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKiRKS3_;2A.(82,79)=#(82,71),(82,67),(82,73),(82,80)=&(82,81)=k(82,82)=xsPair<int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,83)=#(82,71),(82,84)=&(82,77),(82,73),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi;2A.;operator=::(82,85)=#(82,71),(82,86)=&(82,71),(82,73),(82,87)=&(82,88)=k(82,71),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEaSERKS4_;2A.;__base_ctor::(82,89)=#(82,71),(0,6),(82,73),(82,87),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2ERKS4_;2A.;__comp_ctor::(82,89):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1ERKS4_;2A.;__base_dtor::(82,90)=#(82,71),(0,6),(82,73),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED2Ev;2A.;__comp_dtor::(82,90):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >:Tt(82,91)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,92)=#(82,91),(0,6),(82,93)=*(82,91),(82,94)=&(82,95)=k(82,91),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2ERKS7_;2A.;__comp_ctor::(82,92):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1ERKS7_;2A.;operator=::(82,96)=#(82,91),(82,97)=&(82,91),(82,93),(82,94),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEaSERKS7_;2A.;__base_dtor::(82,98)=#(82,91),(0,6),(82,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev;2A.;__comp_dtor::(82,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED1Ev;2A.;find::(82,99)=#(82,91),(82,100)=xsIterator:,(82,93),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2A.(82,101)=#(82,91),(82,102)=xsConstIterator:,(82,103)=*(82,95),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2B.;erase::(82,104)=#(82,91),(0,4),(82,93),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseERS1_;2A.(82,105)=#(82,91),(0,6),(82,93),(82,100),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseENS7_8IteratorE;2A.;begin::(82,106)=#(82,91),(82,100),(82,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2A.(82,107)=#(82,91),(82,102),(82,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2B.;end::(82,106):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2A.(82,107):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2B.;size::(82,108)=#(82,91),(5,1),(82,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv;2B.;clear::(82,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv;2A.;init::(82,109)=#(82,91),(0,6),(82,93),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,110)=#(82,91),(0,6),(82,93),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,110):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,111)=#(82,91),(82,112)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::ListViewItem*> >::Iterator,bool>:,(82,93),(82,113)=&(82,114)=k(82,115)=xsPair<const int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::ListViewItem*>:Tt(82,116)=s56!1,020,(82,91);__base_ctor::(82,117)=#(82,116),(0,6),(82,118)=*(82,116),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,117):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E;2A.;insert::(82,119)=#(82,116),(82,112),(82,118),(82,12),(82,120)=&(82,121)=k(82,122)=*(82,123)=xsListViewItem:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKiRKS3_;2A.(82,124)=#(82,116),(82,112),(82,118),(82,125)=&(82,126)=k(82,127)=xsPair<int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,128)=#(82,116),(82,129)=&(82,122),(82,118),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi;2A.;operator=::(82,130)=#(82,116),(82,131)=&(82,116),(82,118),(82,132)=&(82,133)=k(82,116),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEaSERKS4_;2A.;__base_ctor::(82,134)=#(82,116),(0,6),(82,118),(82,132),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2ERKS4_;2A.;__comp_ctor::(82,134):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1ERKS4_;2A.;__base_dtor::(82,135)=#(82,116),(0,6),(82,118),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED2Ev;2A.;__comp_dtor::(82,135):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >:Tt(82,136)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,137)=#(82,136),(0,6),(82,138)=*(82,136),(82,139)=&(82,140)=k(82,136),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2ERKS7_;2A.;__comp_ctor::(82,137):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1ERKS7_;2A.;operator=::(82,141)=#(82,136),(82,142)=&(82,136),(82,138),(82,139),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEaSERKS7_;2A.;__base_dtor::(82,143)=#(82,136),(0,6),(82,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev;2A.;__comp_dtor::(82,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED1Ev;2A.;find::(82,144)=#(82,136),(82,145)=xsIterator:,(82,138),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2A.(82,146)=#(82,136),(82,147)=xsConstIterator:,(82,148)=*(82,140),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2B.;erase::(82,149)=#(82,136),(0,4),(82,138),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseERS1_;2A.(82,150)=#(82,136),(0,6),(82,138),(82,145),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseENS7_8IteratorE;2A.;begin::(82,151)=#(82,136),(82,145),(82,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2A.(82,152)=#(82,136),(82,147),(82,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2B.;end::(82,151):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2A.(82,152):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2B.;size::(82,153)=#(82,136),(5,1),(82,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4sizeEv;2B.;clear::(82,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv;2A.;init::(82,154)=#(82,136),(0,6),(82,138),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,155)=#(82,136),(0,6),(82,138),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,155):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,156)=#(82,136),(82,157)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::Label*> >::Iterator,bool>:,(82,138),(82,158)=&(82,159)=k(82,160)=xsPair<const int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::Label*>:Tt(82,161)=s56!1,020,(82,136);__base_ctor::(82,162)=#(82,161),(0,6),(82,163)=*(82,161),(82,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,162):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E;2A.;insert::(82,164)=#(82,161),(82,157),(82,163),(82,12),(82,165)=&(82,166)=k(82,167)=*(82,168)=xsLabel:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKiRKS3_;2A.(82,169)=#(82,161),(82,157),(82,163),(82,170)=&(82,171)=k(82,172)=xsPair<int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,173)=#(82,161),(82,174)=&(82,167),(82,163),(82,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi;2A.;operator=::(82,175)=#(82,161),(82,176)=&(82,161),(82,163),(82,177)=&(82,178)=k(82,161),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEaSERKS4_;2A.;__base_ctor::(82,179)=#(82,161),(0,6),(82,163),(82,177),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2ERKS4_;2A.;__comp_ctor::(82,179):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1ERKS4_;2A.;__base_dtor::(82,180)=#(82,161),(0,6),(82,163),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEED2Ev;2A.;__comp_dtor::(82,180):_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/HomeTab.h",130,0,0,0
 	.stabn	162,0,0,0
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",130,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"_ZN10ScreenMain11createTabUIEv:F(0,25)=*(0,26)=xsScreenMain:",36,0,12,__ZN10ScreenMain11createTabUIEv
-	.stabs	"this:p(0,27)=k(0,25)",160,0,12,-12
-	.global	__ZN10ScreenMain11createTabUIEv
-
-.func __ZN10ScreenMain11createTabUIEv, 1, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext9
-Ltext9:
-	.line 12
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.line 14
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope18:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",130,0,0,0
+	.stabs	"AlertTab::eAlertTab:t(106,1)=ePLUGIN_LIST:0,INFORMATION_LIST:1,ALERT_LIST:2,ASSET_LIST:3,OPERATOR_LIST:4,UNIT_INFO:5,SUB_UNIT_INFO:6,USER_LIST:7,MEDIA_VALUE_LIST:8,MEDIA_TYPE:9,POST_MEDIA_SPE:10,POST_ALERT:11,SEARCH_INFO:12,ALERT_INFO:13,ALERT_RECIPIENT_LIST:14,UNITS_TYPES:15,;",128,0,36,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >:Tt(106,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(106,3)=#(106,2),(0,6),(106,4)=*(106,2),(106,5)=&(106,6)=k(106,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2ERKS4_;2A.;__comp_ctor::(106,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1ERKS4_;2A.;operator=::(106,7)=#(106,2),(106,8)=&(106,2),(106,4),(106,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEaSERKS4_;2A.;__base_dtor::(106,9)=#(106,2),(0,6),(106,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev;2A.;__comp_dtor::(106,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED1Ev;2A.;find::(106,10)=#(106,2),(106,11)=xsIterator:,(106,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2A.(106,12)=#(106,2),(106,13)=xsConstIterator:,(106,14)=*(106,6),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2B.;erase::(106,15)=#(106,2),(0,4),(106,4),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseERS1_;2A.(106,16)=#(106,2),(0,6),(106,4),(106,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseENS4_8IteratorE;2A.;begin::(106,17)=#(106,2),(106,11),(106,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2A.(106,18)=#(106,2),(106,13),(106,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2B.;end::(106,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2A.(106,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2B.;size::(106,19)=#(106,2),(5,1),(106,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv;2B.;clear::(106,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv;2A.;init::(106,20)=#(106,2),(0,6),(106,4),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv;1A?;__base_ctor::(106,21)=#(106,2),(0,6),(106,4),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(106,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1EPFiRS1_S5_Ei;1A.;insert::(106,22)=#(106,2),(106,23)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, long long int> >::Iterator,bool>:,(106,4),(106,24)=&(106,25)=k(106,26)=xsPair<const int,long long int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE6insertERKS3_;1A.;;",128,0,57,0
+	.stabs	"Map<int,long long int>:Tt(106,27)=s56!1,020,(106,2);__base_ctor::(106,28)=#(106,27),(0,6),(106,29)=*(106,27),(82,23),(0,6);:_ZN6MAUtil3MapIixEC2EPFiRKiS3_E;2A.;__comp_ctor::(106,28):_ZN6MAUtil3MapIixEC1EPFiRKiS3_E;2A.;insert::(106,30)=#(106,27),(106,23),(106,29),(82,12),(106,31)=&(106,32)=k(0,15),(0,6);:_ZN6MAUtil3MapIixE6insertERKiRKx;2A.(106,33)=#(106,27),(106,23),(106,29),(106,34)=&(106,35)=k(106,36)=xsPair<int,long long int>:,(0,6);:_ZN6MAUtil3MapIixE6insertERKNS_4PairIixEE;2A.;operator[]::(106,37)=#(106,27),(87,8),(106,29),(82,12),(0,6);:_ZN6MAUtil3MapIixEixERKi;2A.;operator=::(106,38)=#(106,27),(106,39)=&(106,27),(106,29),(106,40)=&(106,41)=k(106,27),(0,6);:_ZN6MAUtil3MapIixEaSERKS1_;2A.;__base_ctor::(106,42)=#(106,27),(0,6),(106,29),(106,40),(0,6);:_ZN6MAUtil3MapIixEC2ERKS1_;2A.;__comp_ctor::(106,42):_ZN6MAUtil3MapIixEC1ERKS1_;2A.;__base_dtor::(106,43)=#(106,27),(0,6),(106,29),(0,6);:_ZN6MAUtil3MapIixED2Ev;2A.;__comp_dtor::(106,43):_ZN6MAUtil3MapIixED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, int> >:Tt(106,44)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(106,45)=#(106,44),(0,6),(106,46)=*(106,44),(106,47)=&(106,48)=k(106,44),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2ERKS4_;2A.;__comp_ctor::(106,45):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1ERKS4_;2A.;operator=::(106,49)=#(106,44),(106,50)=&(106,44),(106,46),(106,47),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEaSERKS4_;2A.;__base_dtor::(106,51)=#(106,44),(0,6),(106,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED2Ev;2A.;__comp_dtor::(106,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED1Ev;2A.;find::(106,52)=#(106,44),(106,53)=xsIterator:,(106,46),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2A.(106,54)=#(106,44),(106,55)=xsConstIterator:,(106,56)=*(106,48),(82,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2B.;erase::(106,57)=#(106,44),(0,4),(106,46),(82,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseERS1_;2A.(106,58)=#(106,44),(0,6),(106,46),(106,53),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseENS4_8IteratorE;2A.;begin::(106,59)=#(106,44),(106,53),(106,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2A.(106,60)=#(106,44),(106,55),(106,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2B.;end::(106,59):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2A.(106,60):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2B.;size::(106,61)=#(106,44),(5,1),(106,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4sizeEv;2B.;clear::(106,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5clearEv;2A.;init::(106,62)=#(106,44),(0,6),(106,46),(82,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4freeEP7dnode_tPv;1A?;__base_ctor::(106,63)=#(106,44),(0,6),(106,46),(82,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(106,63):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1EPFiRS1_S5_Ei;1A.;insert::(106,64)=#(106,44),(106,65)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, int> >::Iterator,bool>:,(106,46),(106,66)=&(106,67)=k(106,68)=xsPair<const int,int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE6insertERKS3_;1A.;;",128,0,57,0
+	.stabs	"Map<int,int>:Tt(106,69)=s56!1,020,(106,44);__base_ctor::(106,70)=#(106,69),(0,6),(106,71)=*(106,69),(82,23),(0,6);:_ZN6MAUtil3MapIiiEC2EPFiRKiS3_E;2A.;__comp_ctor::(106,70):_ZN6MAUtil3MapIiiEC1EPFiRKiS3_E;2A.;insert::(106,72)=#(106,69),(106,65),(106,71),(82,12),(82,12),(0,6);:_ZN6MAUtil3MapIiiE6insertERKiS3_;2A.(106,73)=#(106,69),(106,65),(106,71),(106,74)=&(106,75)=k(106,76)=xsPair<int,int>:,(0,6);:_ZN6MAUtil3MapIiiE6insertERKNS_4PairIiiEE;2A.;operator[]::(106,77)=#(106,69),(106,78)=&(0,3),(106,71),(82,12),(0,6);:_ZN6MAUtil3MapIiiEixERKi;2A.;operator=::(106,79)=#(106,69),(106,80)=&(106,69),(106,71),(106,81)=&(106,82)=k(106,69),(0,6);:_ZN6MAUtil3MapIiiEaSERKS1_;2A.;__base_ctor::(106,83)=#(106,69),(0,6),(106,71),(106,81),(0,6);:_ZN6MAUtil3MapIiiEC2ERKS1_;2A.;__comp_ctor::(106,83):_ZN6MAUtil3MapIiiEC1ERKS1_;2A.;__base_dtor::(106,84)=#(106,69),(0,6),(106,71),(0,6);:_ZN6MAUtil3MapIiiED2Ev;2A.;__comp_dtor::(106,84):_ZN6MAUtil3MapIiiED1Ev;2A.;;",128,0,33,0
+	.stabn	162,0,0,0
+	.stabn	162,0,0,0
 .data
 LC29:
 	.ascii "test mainscreen %s\0"
 .code
-	.stabs	"_ZN10ScreenMainC2Ev:F(0,6)",36,0,19,__ZN10ScreenMainC2Ev
-	.stabs	"this:p(0,27)",160,0,19,-16
+	.stabs	"_ZN10ScreenMainC2Ev:F(0,6)",36,0,12,__ZN10ScreenMainC2Ev
+	.stabs	"this:p(0,25)=k(0,26)=*(0,27)=xsScreenMain:",160,0,12,-16
 	.global	__ZN10ScreenMainC2Ev
 
 .func __ZN10ScreenMainC2Ev, 1, void
-	.line 19
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext9
+Ltext9:
+	.line 12
 	push rt,d0
 	sub  sp,#0xc
 	ld   fr,sp
 	add  fr,#0x18
 	ld   [fr,-16],i0
 	.dlab LBB36
-	.line 20
+	.line 13
 	ld   i0,[fr,-16]
 	call &__ZN8NativeUI9TabScreenC2Ev
 	ld   r14,[fr,-16]
+	add  r14,#0x48
+	ld   i0,r14
+	call &__ZN6MAUtil19CustomEventListenerC2Ev
+	ld   r14,[fr,-16]
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [r14],r0
-	.line 21
+	ld   r14,[fr,-16]
+	add  r14,#0x48
+	ld   r0,#__ZTV10ScreenMain+244
+	ld   [r14],r0
+	.line 15
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld.b [r14,76],r0
-	.line 22
+	ld.b [r14,80],r0
+	.line 16
 	ld   d0,[fr,-16]
 	call &__Z17getSystemLanguagev
-	ld   [d0,72],r14
-	.line 23
+	ld   [d0,76],r14
+	.line 17
 	ld   r14,fr
 	add  r14,#0xffffffec
 	ld   i0,r14
@@ -1917,38 +1913,66 @@ LC29:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.dlab LBE36
-	.line 27
+	.line 21
 	add  sp,#0xc
 	pop  rt,d0
 	ret
+Lscope18:
+	.stabs	"_ZN6MAUtil19CustomEventListenerC2Ev:f(0,6)",36,0,13,__ZN6MAUtil19CustomEventListenerC2Ev
+	.stabs	"this:p(0,28)=k(15,348)",160,0,141,-12
+
+.func __ZN6MAUtil19CustomEventListenerC2Ev, 1, void
+	.line 13
+	push rt,fr
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0xc
+	ld   [fr,-12],i0
+	.dlab LBB37
+	.line 13
+	ld   r14,[fr,-12]
+	ld   r0,#__ZTVN6MAUtil19CustomEventListenerE+8
+	ld   [r14],r0
+	.dlab LBE37
+	add  sp,#0x4
+	pop  rt,fr
+	ret
 Lscope19:
-	.stabs	"_ZN10ScreenMainC1Ev:F(0,6)",36,0,19,__ZN10ScreenMainC1Ev
-	.stabs	"this:p(0,27)",160,0,19,-16
+	.stabs	"_ZN10ScreenMainC1Ev:F(0,6)",36,0,12,__ZN10ScreenMainC1Ev
+	.stabs	"this:p(0,25)",160,0,12,-16
 	.global	__ZN10ScreenMainC1Ev
 
 .func __ZN10ScreenMainC1Ev, 1, void
-	.line 19
+	.line 12
 	push rt,d0
 	sub  sp,#0xc
 	ld   fr,sp
 	add  fr,#0x18
 	ld   [fr,-16],i0
-	.dlab LBB37
-	.line 20
+	.dlab LBB38
+	.line 13
 	ld   i0,[fr,-16]
 	call &__ZN8NativeUI9TabScreenC2Ev
 	ld   r14,[fr,-16]
+	add  r14,#0x48
+	ld   i0,r14
+	call &__ZN6MAUtil19CustomEventListenerC2Ev
+	ld   r14,[fr,-16]
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [r14],r0
-	.line 21
+	ld   r14,[fr,-16]
+	add  r14,#0x48
+	ld   r0,#__ZTV10ScreenMain+244
+	ld   [r14],r0
+	.line 15
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld.b [r14,76],r0
-	.line 22
+	ld.b [r14,80],r0
+	.line 16
 	ld   d0,[fr,-16]
 	call &__Z17getSystemLanguagev
-	ld   [d0,72],r14
-	.line 23
+	ld   [d0,76],r14
+	.line 17
 	ld   r14,fr
 	add  r14,#0xffffffec
 	ld   i0,r14
@@ -1964,32 +1988,36 @@ Lscope19:
 	add  r14,#0xffffffec
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE37
-	.line 27
+	.dlab LBE38
+	.line 21
 	add  sp,#0xc
 	pop  rt,d0
 	ret
 Lscope20:
-	.stabs	"_ZN10ScreenMainD2Ev:F(0,6)",36,0,33,__ZN10ScreenMainD2Ev
-	.stabs	"this:p(0,27)",160,0,33,-12
+	.stabs	"_ZN10ScreenMainD2Ev:F(0,6)",36,0,26,__ZN10ScreenMainD2Ev
+	.stabs	"this:p(0,25)",160,0,26,-12
 	.global	__ZN10ScreenMainD2Ev
 
 .func __ZN10ScreenMainD2Ev, 1, void
-	.line 33
+	.line 26
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB38
-	.line 33
+	.dlab LBB39
+	.line 26
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x48
+	ld   r0,#__ZTV10ScreenMain+244
+	ld   [r14],r0
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI9TabScreenD2Ev
-	.dlab LBE38
-	.line 34
+	.dlab LBE39
+	.line 27
 	ld   r14,#0x1
 	and  r14,#0x0
 	ld   r0,r14
@@ -2003,26 +2031,30 @@ L58:
 	pop  rt,fr
 	ret
 Lscope21:
-	.stabs	"_ZN10ScreenMainD1Ev:F(0,6)",36,0,33,__ZN10ScreenMainD1Ev
-	.stabs	"this:p(0,27)",160,0,33,-12
+	.stabs	"_ZN10ScreenMainD1Ev:F(0,6)",36,0,26,__ZN10ScreenMainD1Ev
+	.stabs	"this:p(0,25)",160,0,26,-12
 	.global	__ZN10ScreenMainD1Ev
 
 .func __ZN10ScreenMainD1Ev, 1, void
-	.line 33
+	.line 26
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB39
-	.line 33
+	.dlab LBB40
+	.line 26
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x48
+	ld   r0,#__ZTV10ScreenMain+244
+	ld   [r14],r0
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI9TabScreenD2Ev
-	.dlab LBE39
-	.line 34
+	.dlab LBE40
+	.line 27
 	ld   r14,#0x1
 	and  r14,#0x2
 	ld   r0,r14
@@ -2036,26 +2068,30 @@ L62:
 	pop  rt,fr
 	ret
 Lscope22:
-	.stabs	"_ZN10ScreenMainD0Ev:F(0,6)",36,0,33,__ZN10ScreenMainD0Ev
-	.stabs	"this:p(0,27)",160,0,33,-12
+	.stabs	"_ZN10ScreenMainD0Ev:F(0,6)",36,0,26,__ZN10ScreenMainD0Ev
+	.stabs	"this:p(0,25)",160,0,26,-12
 	.global	__ZN10ScreenMainD0Ev
 
 .func __ZN10ScreenMainD0Ev, 1, void
-	.line 33
+	.line 26
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB40
-	.line 33
+	.dlab LBB41
+	.line 26
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x48
+	ld   r0,#__ZTV10ScreenMain+244
+	ld   [r14],r0
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI9TabScreenD2Ev
-	.dlab LBE40
-	.line 34
+	.dlab LBE41
+	.line 27
 	ld   r14,#0x1
 	and  r14,#0x3
 	ld   r0,r14
@@ -2069,14 +2105,14 @@ L66:
 	pop  rt,fr
 	ret
 Lscope23:
-	.stabs	"_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx:F(0,6)",36,0,36,__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
-	.stabs	"this:p(0,27)",160,0,36,-28
-	.stabs	"loginToken:a(10,1)",64,0,36,6
-	.stabs	"idMobile:p(0,15)",160,0,36,-36
+	.stabs	"_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx:F(0,6)",36,0,29,__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"this:p(0,25)",160,0,29,-28
+	.stabs	"loginToken:a(10,1)",64,0,29,6
+	.stabs	"idMobile:p(0,15)",160,0,29,-36
 	.global	__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
 
 .func __ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx, 4, void
-	.line 36
+	.line 29
 	push rt,d3
 	sub  sp,#0x18
 	ld   fr,sp
@@ -2085,8 +2121,12 @@ Lscope23:
 	ld   d2,i1
 	ld   [fr,-36],i2
 	ld   [fr,-32],i3
-	.dlab LBB41
-	.line 37
+	.dlab LBB42
+	.line 30
+	ld   r14,[fr,-28]
+	ld   r0,#0x0
+	ld.b [r14,81],r0
+	.line 31
 	ld   d3,[fr,-28]
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -2100,15 +2140,15 @@ Lscope23:
 	ld   d0,r14
 	ld   r14,[fr,-28]
 	ld   i0,d0
-	ld   i1,[r14,72]
+	ld   i1,[r14,76]
 	ld   i2,d1
 	call &__ZN8AlertTabC1EiN6MAUtil11BasicStringIcEE
-	ld   [d3,80],d0
+	ld   [d3,84],d0
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 38
+	.line 32
 	ld   d3,[fr,-28]
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -2126,15 +2166,15 @@ Lscope23:
 	ld   r0,[fr,-32]
 	ld   [sp,4],r0
 	ld   i0,d1
-	ld   i1,[r14,72]
+	ld   i1,[r14,76]
 	ld   i2,d0
 	call &__ZN11TrackingTabC1EiN6MAUtil11BasicStringIcEEx
-	ld   [d3,84],d1
+	ld   [d3,88],d1
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 39
+	.line 34
 	ld   d3,[fr,-28]
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -2143,20 +2183,20 @@ Lscope23:
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
 	ld   d1,fr
 	add  d1,#0xffffffd8
-	ld   i0,#0x74
+	ld   i0,#0xa4
 	call &__Znwm
 	ld   d0,r14
 	ld   r14,[fr,-28]
 	ld   i0,d0
-	ld   i1,[r14,72]
+	ld   i1,[r14,76]
 	ld   i2,d1
-	call &__ZN7HomeTabC1EiN6MAUtil11BasicStringIcEE
-	ld   [d3,88],d0
+	call &__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE
+	ld   [d3,96],d0
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 42
+	.line 38
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0xb8
@@ -2165,7 +2205,7 @@ Lscope23:
 	ld   i0,[fr,-28]
 	ld   i1,[r0,88]
 	call r14
-	.line 43
+	.line 39
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0xb8
@@ -2174,57 +2214,64 @@ Lscope23:
 	ld   i0,[fr,-28]
 	ld   i1,[r0,84]
 	call r14
-	.line 44
+	.line 40
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0xb8
 	ld   r0,[fr,-28]
 	ld   r14,[r14]
 	ld   i0,[fr,-28]
-	ld   i1,[r0,80]
+	ld   i1,[r0,96]
 	call r14
-	.line 46
+	.line 42
+	call &__ZN6MAUtil11Environment14getEnvironmentEv
+	ld   r0,[fr,-28]
+	add  r0,#0x48
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11Environment22addCustomEventListenerEPNS_19CustomEventListenerE
+	.line 49
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r14,[r14]
 	ld   i0,[fr,-28]
 	call r14
-	.line 47
+	.line 50
 	ld   r14,[fr,-28]
 	ld   r0,#0x1
-	ld.b [r14,76],r0
-	.dlab LBE41
-	.line 48
+	ld.b [r14,80],r0
+	.dlab LBE42
+	.line 51
 	add  sp,#0x18
 	pop  rt,d3
 	ret
 Lscope24:
-	.stabs	"_ZN10ScreenMain11pullRequestEv:F(0,6)",36,0,50,__ZN10ScreenMain11pullRequestEv
-	.stabs	"this:p(0,27)",160,0,50,-12
+	.stabs	"_ZN10ScreenMain11pullRequestEv:F(0,6)",36,0,53,__ZN10ScreenMain11pullRequestEv
+	.stabs	"this:p(0,25)",160,0,53,-12
 	.global	__ZN10ScreenMain11pullRequestEv
 
 .func __ZN10ScreenMain11pullRequestEv, 1, void
-	.line 50
+	.line 53
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB42
-	.line 51
+	.dlab LBB43
+	.line 54
 	ld   r14,[fr,-12]
-	ld.b r0,[r14,76]
+	ld.b r0,[r14,80]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L71
-	.line 52
+	.line 55
 	ld   r14,[fr,-12]
-	ld   i0,[r14,84]
+	ld   i0,[r14,88]
 	call &__ZN11TrackingTab13runTimerEventEv
 L71:
-	.dlab LBE42
-	.line 54
+	.dlab LBE43
+	.line 57
 	add  sp,#0x4
 	pop  rt,fr
 	ret
@@ -2235,24 +2282,24 @@ LC30:
 LC31:
 	.ascii "Tab Active : %d\0"
 .code
-	.stabs	"_ZN10ScreenMain14handleKeyPressEi:F(0,6)",36,0,59,__ZN10ScreenMain14handleKeyPressEi
-	.stabs	"this:p(0,27)",160,0,59,-20
-	.stabs	"keyCode:p(0,3)",160,0,59,-24
+	.stabs	"_ZN10ScreenMain14handleKeyPressEi:F(0,6)",36,0,62,__ZN10ScreenMain14handleKeyPressEi
+	.stabs	"this:p(0,25)",160,0,62,-20
+	.stabs	"keyCode:p(0,3)",160,0,62,-24
 	.global	__ZN10ScreenMain14handleKeyPressEi
 
 .func __ZN10ScreenMain14handleKeyPressEi, 2, void
-	.line 59
+	.line 62
 	push rt,d1
 	sub  sp,#0xc
 	ld   fr,sp
 	add  fr,#0x1c
 	ld   [fr,-20],i0
 	ld   [fr,-24],i1
-	.dlab LBB43
-	.line 60
+	.dlab LBB44
+	.line 63
 	ld   i0,#LC30
 	call &_lprintfln
-	.line 61
+	.line 64
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	add  r14,#0xc0
@@ -2262,11 +2309,11 @@ LC31:
 	ld   [sp],r14
 	ld   i0,#LC31
 	call &_lprintfln
-	.line 62
+	.line 65
 	ld   r0,[fr,-24]
 	ld   r14,#0x124
 	jc   ne,r0,r14,#L73
-	.line 63
+	.line 66
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	add  r14,#0xc0
@@ -2274,31 +2321,31 @@ LC31:
 	ld   i0,[fr,-20]
 	call r14
 	ld   r0,r14
-	ld   r14,#0x2
+	ld   r14,#0x1
 	jc   ne,r0,r14,#L75
-	.line 64
+	.line 67
 	ld   r14,[fr,-20]
-	ld   i0,[r14,80]
+	ld   i0,[r14,84]
 	ld   i1,[fr,-24]
 	call &__ZN8AlertTab14handleKeyPressEi
 	jp   #L73
 L75:
-	.line 66
+	.line 69
 	ld   r14,[fr,-20]
-	ld   r14,[r14,72]
-	add  r14,#0x46
+	ld   r14,[r14,76]
+	add  r14,#0x49
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   d1,r14
 	ld   r14,[fr,-20]
-	ld   r14,[r14,72]
-	add  r14,#0x48
+	ld   r14,[r14,76]
+	add  r14,#0x4b
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   d0,r14
 	ld   r14,[fr,-20]
-	ld   r14,[r14,72]
-	add  r14,#0x4a
+	ld   r14,[r14,76]
+	add  r14,#0x4d
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   [sp],r14
@@ -2308,8 +2355,8 @@ L75:
 	ld   i3,d0
 	call &_maAlert
 L73:
-	.dlab LBE43
-	.line 70
+	.dlab LBE44
+	.line 75
 	add  sp,#0xc
 	pop  rt,d1
 	ret
@@ -2333,7 +2380,7 @@ Ltext10:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.dlab LBB44
+	.dlab LBB45
 	.line 6532
 	ld   r14,[fr,-24]
 	ld   [sp],r14
@@ -2344,124 +2391,131 @@ Ltext10:
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
-	.dlab LBE44
+	.dlab LBE45
 	.line 6533
 	add  sp,#0x18
 	pop  rt,fr
 	ret
 Lscope27:
-	.stabs	"_ZN10ScreenMain11customEventERK7MAEvent:F(0,6)",36,0,76,__ZN10ScreenMain11customEventERK7MAEvent
-	.stabs	"this:p(0,27)",160,0,76,-12
-	.stabs	"event:p(0,28)=&(0,29)=k(6,153)",160,0,76,-16
-	.global	__ZN10ScreenMain11customEventERK7MAEvent
+	.set	%0=__ZN10ScreenMain11customEventERK7MAEvent
+	.stabs	"this:p(0,25)",160,0,81,-12
+	.stabs	"event:p(0,29)=&(0,30)=k(6,153)",160,0,81,-16
+	.global	__ZThn72_N10ScreenMain11customEventERK7MAEvent
 
-.func __ZN10ScreenMain11customEventERK7MAEvent, 2, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext11
+.func __ZThn72_N10ScreenMain11customEventERK7MAEvent, 2, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/ScreenMain.h",132,0,0,Ltext11
 Ltext11:
-	.line 76
+	.line 19
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB45
-	.line 77
+	.line 19
+	ld   r14,[fr,-12]
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	ld   i1,[fr,-16]
+	call &%0
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope28:
+.data
+LC32:
+	.ascii "TTTTTTTT test event1 %d\0"
+.code
+	.stabs	"_ZN10ScreenMain11customEventERK7MAEvent:F(0,6)",36,0,81,__ZN10ScreenMain11customEventERK7MAEvent
+	.stabs	"this:p(0,25)",160,0,81,-12
+	.stabs	"event:p(0,29)",160,0,81,-16
+	.global	__ZN10ScreenMain11customEventERK7MAEvent
+
+.func __ZN10ScreenMain11customEventERK7MAEvent, 2, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext12
+Ltext12:
+	.line 81
+	push rt,fr
+	sub  sp,#0xc
+	ld   fr,sp
+	add  fr,#0x14
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.dlab LBB46
+	.line 82
+	ld   r14,[fr,-16]
+	ld   r14,[r14]
+	ld   [sp],r14
+	ld   i0,#LC32
+	call &_lprintfln
+	.line 83
 	ld   r14,[fr,-16]
 	ld   r0,[r14]
 	ld   r14,#0x22
-	jc   ne,r0,r14,#L78
-	.line 78
+	jc   ne,r0,r14,#L79
+	.line 84
 	ld   r14,[fr,-16]
 	ld   r0,[r14,4]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L80
-	.line 79
+	jc   ne,r0,r14,#L81
+	.line 85
 	ld   r14,[fr,-12]
-	ld   r14,[r14,72]
-	add  r14,#0x44
+	ld   r14,[r14,76]
+	add  r14,#0x47
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   i0,#0x1
 	ld   i1,r14
 	call &_maPanic
-L80:
-	.line 80
+L81:
+	.line 86
 	ld   r14,[fr,-16]
 	ld   r0,[r14,4]
 	ld   r14,#0x2
-	jc   ne,r0,r14,#L78
-	.line 82
+	jc   ne,r0,r14,#L79
+	.line 88
 	call &_maSendToBackground
-L78:
-	.dlab LBE45
-	.line 86
-	add  sp,#0x8
+L79:
+	.dlab LBE46
+	.line 115
+	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope28:
+Lscope29:
 	.stabs	"maSendToBackground:f(0,3)",36,0,5958,_maSendToBackground
 
 .func _maSendToBackground, 0, int
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext12
-Ltext12:
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext13
+Ltext13:
 	.line 5958
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.dlab LBB46
+	.dlab LBB47
 	.line 5959
 	ld   i0,#0x56
 	ld   i1,#0x0
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE46
-	.line 5960
-	pop  rt,fr
-	ret
-Lscope29:
-.data
-LC32:
-	.ascii "test mainScreen 2\0"
-.code
-	.stabs	"_ZN10ScreenMain20handlePointerPressedE9MAPoint2d:F(0,6)",36,0,91,__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
-	.stabs	"this:p(0,27)",160,0,91,-12
-	.stabs	"point:p(6,27)",160,0,91,-20
-	.global	__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
-
-.func __ZN10ScreenMain20handlePointerPressedE9MAPoint2d, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext13
-Ltext13:
-	.line 91
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-20],i1
-	ld   [fr,-16],i2
-	.dlab LBB47
-	.line 92
-	ld   i0,#LC32
-	call &_lprintfln
 	.dlab LBE47
-	.line 93
-	add  sp,#0xc
+	.line 5960
 	pop  rt,fr
 	ret
 Lscope30:
 .data
 LC33:
-	.ascii "test mainScreen 3\0"
+	.ascii "test mainScreen 2\0"
 .code
-	.stabs	"_ZN10ScreenMain18handlePointerMovedE9MAPoint2d:F(0,6)",36,0,98,__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
-	.stabs	"this:p(0,27)",160,0,98,-12
-	.stabs	"point:p(6,27)",160,0,98,-20
-	.global	__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
+	.stabs	"_ZN10ScreenMain20handlePointerPressedE9MAPoint2d:F(0,6)",36,0,120,__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
+	.stabs	"this:p(0,25)",160,0,120,-12
+	.stabs	"point:p(6,27)",160,0,120,-20
+	.global	__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
 
-.func __ZN10ScreenMain18handlePointerMovedE9MAPoint2d, 3, void
-	.line 98
+.func __ZN10ScreenMain20handlePointerPressedE9MAPoint2d, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext14
+Ltext14:
+	.line 120
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -2470,26 +2524,26 @@ LC33:
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
 	.dlab LBB48
-	.line 99
+	.line 121
 	ld   i0,#LC33
 	call &_lprintfln
 	.dlab LBE48
-	.line 100
+	.line 122
 	add  sp,#0xc
 	pop  rt,fr
 	ret
 Lscope31:
 .data
 LC34:
-	.ascii "test mainScreen 4\0"
+	.ascii "test mainScreen 3\0"
 .code
-	.stabs	"_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d:F(0,6)",36,0,105,__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
-	.stabs	"this:p(0,27)",160,0,105,-12
-	.stabs	"point:p(6,27)",160,0,105,-20
-	.global	__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
+	.stabs	"_ZN10ScreenMain18handlePointerMovedE9MAPoint2d:F(0,6)",36,0,127,__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
+	.stabs	"this:p(0,25)",160,0,127,-12
+	.stabs	"point:p(6,27)",160,0,127,-20
+	.global	__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
 
-.func __ZN10ScreenMain21handlePointerReleasedE9MAPoint2d, 3, void
-	.line 105
+.func __ZN10ScreenMain18handlePointerMovedE9MAPoint2d, 3, void
+	.line 127
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -2498,22 +2552,50 @@ LC34:
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
 	.dlab LBB49
-	.line 106
+	.line 128
 	ld   i0,#LC34
 	call &_lprintfln
 	.dlab LBE49
-	.line 107
+	.line 129
 	add  sp,#0xc
 	pop  rt,fr
 	ret
 Lscope32:
+.data
+LC35:
+	.ascii "test mainScreen 4\0"
+.code
+	.stabs	"_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d:F(0,6)",36,0,134,__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
+	.stabs	"this:p(0,25)",160,0,134,-12
+	.stabs	"point:p(6,27)",160,0,134,-20
+	.global	__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
+
+.func __ZN10ScreenMain21handlePointerReleasedE9MAPoint2d, 3, void
+	.line 134
+	push rt,fr
+	sub  sp,#0xc
+	ld   fr,sp
+	add  fr,#0x14
+	ld   [fr,-12],i0
+	ld   [fr,-20],i1
+	ld   [fr,-16],i2
+	.dlab LBB50
+	.line 135
+	ld   i0,#LC35
+	call &_lprintfln
+	.dlab LBE50
+	.line 136
+	add  sp,#0xc
+	pop  rt,fr
+	ret
+Lscope33:
 	.stabs	"_ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_:f(10,2)",36,0,395,__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	.stabs	"c:p(4,7)",160,0,395,-16
 	.stabs	"s:p(4,11)",160,0,395,-20
 
 .func __ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_, 3, int
-	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext14
-Ltext14:
+	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext15
+Ltext15:
 	.line 395
 	push rt,d0
 	sub  sp,#0xc
@@ -2522,7 +2604,7 @@ Ltext14:
 	ld   d0,i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB50
+	.dlab LBB51
 	.line 396
 	ld   r14,fr
 	add  r14,#0xffffffe8
@@ -2535,18 +2617,18 @@ Ltext14:
 	ld   i1,r14
 	ld   i2,[fr,-20]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB51
+	.dlab LBB52
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE52
 	.dlab LBE51
-	.dlab LBE50
 	ld   r14,d0
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope33:
+Lscope34:
 	.global	__ZTV10ScreenMain
 .data
 	.align 4
@@ -2608,106 +2690,105 @@ __ZTV10ScreenMain:
 	.long	__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
 	.long	__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
 	.long	__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
-	.stabs	"ScreenMain:Tt(0,26)=s92!1,020,(0,30)=xsTabScreen:;LANGUAGE:/0(0,3),576,32;uiCreated:/0(0,4),608,8;alertTab:/0(0,31)=*(0,32)=xsAlertTab:,640,32;trackingTab:/0(0,33)=*(0,34)=xsTrackingTab:,672,32;homeTab:/0(0,35)=*(0,36)=xsHomeTab:,704,32;__base_ctor::(0,37)=#(0,26),(0,6),(0,25),(0,6);:_ZN10ScreenMainC2Ev;2A.;__comp_ctor::(0,37):_ZN10ScreenMainC1Ev;2A.;__base_dtor::(0,37):_ZN10ScreenMainD2Ev;2A.;__comp_dtor::(0,37):_ZN10ScreenMainD1Ev;2A*0;(0,26);;__deleting_dtor::(0,37):_ZN10ScreenMainD0Ev;2A*1;(0,26);;createUI::(0,38)=#(0,26),(0,6),(0,25),(10,1),(0,15),(0,6);:_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx;2A.;pullRequest::(0,37):_ZN10ScreenMain11pullRequestEv;2A.;handleKeyPress::(0,39)=#(0,26),(0,6),(0,25),(0,3),(0,6);:_ZN10ScreenMain14handleKeyPressEi;2A*51;(0,26);;handlePointerPressed::(0,40)=#(0,26),(0,6),(0,25),(6,27),(0,6);:_ZN10ScreenMain20handlePointerPressedE9MAPoint2d;2A*52;(0,26);;handlePointerMoved::(0,40):_ZN10ScreenMain18handlePointerMovedE9MAPoint2d;2A*53;(0,26);;handlePointerReleased::(0,40):_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d;2A*54;(0,26);;createTabUI::(0,41)=#(0,26),(0,25),(0,25),(0,6);:_ZN10ScreenMain11createTabUIEv;2A.;customEvent::(0,42)=#(0,26),(0,6),(0,25),(0,28),(0,6);:_ZN10ScreenMain11customEventERK7MAEvent;2A.;operator=::(0,43)=#(0,26),(0,44)=&(0,26),(0,25),(0,45)=&(0,46)=k(0,26),(0,6);:_ZN10ScreenMainaSERKS_;2A.;__base_ctor::(0,47)=#(0,26),(0,6),(0,25),(0,45),(0,6);:_ZN10ScreenMainC2ERKS_;2A.;__comp_ctor::(0,47):_ZN10ScreenMainC1ERKS_;2A.;;~%(4,78);",128,0,16,0
-LC35:
-	.ascii "TEST_EMULATOR\0"
+	.long	__ZN10ScreenMain11customEventERK7MAEvent
+	.long	__ZN10ScreenMain17handleWidgetEventEPN8NativeUI6WidgetEP17MAWidgetEventData
+	.long	-72
+	.long	0
+	.long	__ZThn72_N10ScreenMain11customEventERK7MAEvent
+	.stabs	"ScreenMain:Tt(0,27)=s100!2,020,(0,31)=xsTabScreen:;02576,(15,349);LANGUAGE:/0(0,3),608,32;uiCreated:/0(0,4),640,8;landscape:/0(0,4),648,8;alertTab:/0(0,32)=*(0,33)=xsAlertTab:,672,32;trackingTab:/0(0,34)=*(0,35)=xsTrackingTab:,704,32;homeTab:/0(0,36)=*(0,37)=xsHomeTab:,736,32;optionTab:/0(0,38)=*(0,39)=xsOptionTab:,768,32;__base_ctor::(0,40)=#(0,27),(0,6),(0,26),(0,6);:_ZN10ScreenMainC2Ev;2A.;__comp_ctor::(0,40):_ZN10ScreenMainC1Ev;2A.;__base_dtor::(0,40):_ZN10ScreenMainD2Ev;2A.;__comp_dtor::(0,40):_ZN10ScreenMainD1Ev;2A*0;(0,27);;__deleting_dtor::(0,40):_ZN10ScreenMainD0Ev;2A*1;(0,27);;createUI::(0,41)=#(0,27),(0,6),(0,26),(10,1),(0,15),(0,6);:_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx;2A.;pullRequest::(0,40):_ZN10ScreenMain11pullRequestEv;2A.;handleKeyPress::(0,42)=#(0,27),(0,6),(0,26),(0,3),(0,6);:_ZN10ScreenMain14handleKeyPressEi;2A*51;(0,27);;handlePointerPressed::(0,43)=#(0,27),(0,6),(0,26),(6,27),(0,6);:_ZN10ScreenMain20handlePointerPressedE9MAPoint2d;2A*52;(0,27);;handlePointerMoved::(0,43):_ZN10ScreenMain18handlePointerMovedE9MAPoint2d;2A*53;(0,27);;handlePointerReleased::(0,43):_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d;2A*54;(0,27);;customEvent::(0,44)=#(0,27),(0,6),(0,26),(0,29),(0,6);:_ZN10ScreenMain11customEventERK7MAEvent;2A*55;(0,27);;handleWidgetEvent::(0,45)=#(0,27),(0,6),(0,26),(4,77),(0,46)=*(16,17),(0,6);:_ZN10ScreenMain17handleWidgetEventEPN8NativeUI6WidgetEP17MAWidgetEventData;2A*56;(0,27);;operator=::(0,47)=#(0,27),(0,48)=&(0,27),(0,26),(0,49)=&(0,50)=k(0,27),(0,6);:_ZN10ScreenMainaSERKS_;2A.;__base_ctor::(0,51)=#(0,27),(0,6),(0,26),(0,49),(0,6);:_ZN10ScreenMainC2ERKS_;2A.;__comp_ctor::(0,51):_ZN10ScreenMainC1ERKS_;2A.;;~%(4,78);",128,0,19,0
+	.align 4
+__ZTVN6MAUtil19CustomEventListenerE:
+	.long	0
+	.long	0
+	.long	___cxa_pure_virtual
+	.stabs	"CustomEventListener:Tt(15,349)=s4_vptr$CustomEventListener:(0,52)=*(0,1),0,32;customEvent::(0,53)=#(15,349),(0,6),(15,348),(0,29),(0,6);:_ZN6MAUtil19CustomEventListener11customEventERK7MAEvent;2A*0;(15,349);;operator=::(0,54)=#(15,349),(0,55)=&(15,349),(15,348),(0,56)=&(0,57)=k(15,349),(0,6);:_ZN6MAUtil19CustomEventListeneraSERKS0_;2A.;__base_ctor::(0,58)=#(15,349),(0,6),(15,348),(0,56),(0,6);:_ZN6MAUtil19CustomEventListenerC2ERKS0_;2A.;__comp_ctor::(0,58):_ZN6MAUtil19CustomEventListenerC1ERKS0_;2A.;__base_ctor::(0,59)=#(15,349),(0,6),(15,348),(0,6);:_ZN6MAUtil19CustomEventListenerC2Ev;2A.;__comp_ctor::(0,59):_ZN6MAUtil19CustomEventListenerC1Ev;2A.;;~%(15,349);",128,0,141,0
 LC36:
-	.ascii "SERVICE_NOT_AVAILABLE\0"
+	.ascii "TEST_EMULATOR\0"
 LC37:
-	.ascii "ACCOUNT_MISSING\0"
+	.ascii "SERVICE_NOT_AVAILABLE\0"
 LC38:
-	.ascii "AUTHENTICATION_FAILED\0"
+	.ascii "ACCOUNT_MISSING\0"
 LC39:
-	.ascii "TOO_MANY_REGISTRATIONS\0"
+	.ascii "AUTHENTICATION_FAILED\0"
 LC40:
+	.ascii "TOO_MANY_REGISTRATIONS\0"
+LC41:
 	.ascii "INVALID_SENDER\0"
 .code
-	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,107,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:p(0,3)",160,0,107,-12
-	.stabs	"__priority:p(0,3)",160,0,107,-16
+	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,136,__Z41__static_initialization_and_destruction_0ii
+	.stabs	"__initialize_p:p(0,3)",160,0,136,-12
+	.stabs	"__priority:p(0,3)",160,0,136,-16
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext15
-Ltext15:
-	.line 107
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext16
+Ltext16:
+	.line 136
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext16
-Ltext16:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext17
+Ltext17:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L91
+	jc   ne,r0,r14,#L92
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L91
+	jc   ne,r0,r14,#L92
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC35
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L91:
-	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext17
-Ltext17:
-	.line 87
-	ld   r0,[fr,-16]
-	ld   r14,#0xffff
-	jc   ne,r0,r14,#L92
-	ld   r0,[fr,-12]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L92
-	.line 88
-	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	ld   i1,#LC36
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L92:
-	.line 96
+	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext18
+Ltext18:
+	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L93
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L93
-	.line 97
-	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
+	.line 88
+	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	ld   i1,#LC37
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L93:
-	.line 105
+	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L94
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L94
-	.line 106
-	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
+	.line 97
+	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L94:
-	.line 114
+	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L95
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L95
-	.line 115
-	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
+	.line 106
+	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
 	ld   i1,#LC39
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L95:
-	.line 121
+	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L96
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L96
-	.line 122
-	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
+	.line 115
+	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
 	ld   i1,#LC40
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L96:
@@ -2716,70 +2797,111 @@ L96:
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L97
 	ld   r0,[fr,-12]
-	ld   r14,#0x0
+	ld   r14,#0x1
 	jc   ne,r0,r14,#L97
+	.line 122
+	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
+	ld   i1,#LC41
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+L97:
+	.line 121
+	ld   r0,[fr,-16]
+	ld   r14,#0xffff
+	jc   ne,r0,r14,#L98
+	ld   r0,[fr,-12]
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L98
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L97:
+L98:
 	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L98
+	jc   ne,r0,r14,#L99
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L98
+	jc   ne,r0,r14,#L99
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L98:
+L99:
 	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L99
+	jc   ne,r0,r14,#L100
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L99
+	jc   ne,r0,r14,#L100
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L99:
+L100:
 	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L100
+	jc   ne,r0,r14,#L101
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L100
+	jc   ne,r0,r14,#L101
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L100:
+L101:
 	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L101
+	jc   ne,r0,r14,#L102
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L101
+	jc   ne,r0,r14,#L102
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L101:
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext18
-Ltext18:
+L102:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext19
+Ltext19:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L90
+	jc   ne,r0,r14,#L91
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L90
+	jc   ne,r0,r14,#L91
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L90:
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext19
-Ltext19:
-	.line 107
+L91:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext20
+Ltext20:
+	.line 136
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope34:
+Lscope35:
+.data
+LC42:
+	.ascii "EVENT LISTENER\0"
+.code
+	.stabs	"_ZN10ScreenMain17handleWidgetEventEPN8NativeUI6WidgetEP17MAWidgetEventData:f(0,6)",36,0,60,__ZN10ScreenMain17handleWidgetEventEPN8NativeUI6WidgetEP17MAWidgetEventData
+	.stabs	"this:p(0,25)",160,0,60,-12
+	.stabs	"widget:p(4,77)",160,0,60,-16
+	.stabs	"widgetEventData:p(0,46)",160,0,60,-20
+
+.func __ZN10ScreenMain17handleWidgetEventEPN8NativeUI6WidgetEP17MAWidgetEventData, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/ScreenMain.h",132,0,0,Ltext21
+Ltext21:
+	.line 60
+	push rt,fr
+	sub  sp,#0xc
+	ld   fr,sp
+	add  fr,#0x14
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	ld   [fr,-20],i2
+	.dlab LBB53
+	.line 60
+	ld   i0,#LC42
+	call &_lprintfln
+	.dlab LBE53
+	add  sp,#0xc
+	pop  rt,fr
+	ret
+Lscope36:
 .data
 	.align 4
 __ZN8NativeUI8BUF_SIZEE:
@@ -2788,36 +2910,38 @@ __ZN8NativeUI8BUF_SIZEE:
 __ZN8NativeUI12MAX_BUF_SIZEE:
 	.long	2048
 .code
-	.stabs	"_GLOBAL__I__ZN10ScreenMain11createTabUIEv:f(0,6)",36,0,108,__GLOBAL__I__ZN10ScreenMain11createTabUIEv
+	.stabs	"_GLOBAL__I__ZN10ScreenMainC2Ev:f(0,6)",36,0,137,__GLOBAL__I__ZN10ScreenMainC2Ev
 
-.func __GLOBAL__I__ZN10ScreenMain11createTabUIEv, 0, void
-	.line 108
+.func __GLOBAL__I__ZN10ScreenMainC2Ev, 0, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext22
+Ltext22:
+	.line 137
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 108
+	.line 137
 	ld   i0,#0x1
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope35:
-	.ctor __GLOBAL__I__ZN10ScreenMain11createTabUIEv
-	.stabs	"_GLOBAL__D__ZN10ScreenMain11createTabUIEv:f(0,6)",36,0,109,__GLOBAL__D__ZN10ScreenMain11createTabUIEv
+Lscope37:
+	.ctor __GLOBAL__I__ZN10ScreenMainC2Ev
+	.stabs	"_GLOBAL__D__ZN10ScreenMainC2Ev:f(0,6)",36,0,138,__GLOBAL__D__ZN10ScreenMainC2Ev
 
-.func __GLOBAL__D__ZN10ScreenMain11createTabUIEv, 0, void
-	.line 109
+.func __GLOBAL__D__ZN10ScreenMainC2Ev, 0, void
+	.line 138
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 109
+	.line 138
 	ld   i0,#0x0
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope36:
-	.dtor __GLOBAL__D__ZN10ScreenMain11createTabUIEv
+Lscope38:
+	.dtor __GLOBAL__D__ZN10ScreenMainC2Ev
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE:S(4,39)",40,0,87,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	.stabs	"_ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE:S(4,39)",40,0,96,__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE:S(4,39)",40,0,105,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE

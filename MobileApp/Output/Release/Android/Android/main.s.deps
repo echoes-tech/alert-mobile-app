@@ -85,7 +85,20 @@
   c:/MoSync/include/NativeUI/WidgetManager.h \
   c:/MoSync/include/NativeUI/WidgetEventListener.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ScreenMain.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/TrackingTab.h \
+  c:/MoSync/include/MAP/DateTime.h c:/MoSync/include/maapi.h \
+  c:/MoSync/include/mastring.h c:/MoSync/include/matime.h \
+  c:/MoSync/include/MAP/TimeSpan.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
+  c:/MoSync/include/MAUtil/FileLister.h c:/MoSync/include/mavsprintf.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
+  c:/MoSync/include/notification/LocalNotification.h \
+  c:/MoSync/include/notification/NotificationManager.h \
+  c:/MoSync/include/notification/LocalNotification.h \
+  c:/MoSync/include/IX_CELLID.h \
+  C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
   c:/MoSync/include/NativeUI/Screen.h \
   c:/MoSync/include/Wormhole/HighLevelHttpConnection.h \
   c:/MoSync/include/maheap.h c:/MoSync/include/MAUtil/Connection.h \
@@ -96,20 +109,6 @@
   c:/MoSync/include/MAUtil/HashMap_impl.h \
   c:/MoSync/include/NativeUI/WebView.h c:/MoSync/include/yajl/YAJLDom.h \
   c:/MoSync/include/mastdlib.h c:/MoSync/include/maxtoa.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
-  c:/MoSync/include/mastring.h c:/MoSync/include/MAUtil/FileLister.h \
-  c:/MoSync/include/maapi.h c:/MoSync/include/mavsprintf.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
-  c:/MoSync/include/matime.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
-  C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/TrackingTab.h \
-  c:/MoSync/include/MAP/DateTime.h c:/MoSync/include/MAP/TimeSpan.h \
-  c:/MoSync/include/notification/LocalNotification.h \
-  c:/MoSync/include/notification/NotificationManager.h \
-  c:/MoSync/include/notification/LocalNotification.h \
-  c:/MoSync/include/IX_CELLID.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
   c:/MoSync/include/NativeUI/RadioButton.h \
   c:/MoSync/include/NativeUI/Button.h \
   c:/MoSync/include/NativeUI/ButtonListener.h \
@@ -122,6 +121,8 @@
   c:/MoSync/include/NativeUI/ListViewItem.h \
   c:/MoSync/include/MTXml/MTXml.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/HomeTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/OptionTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Authentication.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ScreenMain.h

@@ -362,13 +362,16 @@ String Convert::URLdecode(const String& c)
     return unescaped;
 };
 
-String Convert::HTMLdecode(String& input)
+void Convert::HTMLdecode(String& input)
 {
 	int compt = 0;
 	    while( compt != -1)
 	    {
+//	    	lprintfln("avant le if");
+//	    	lprintfln("avant %d", input.find("<br />",compt));
 	        if(input.find("<br />",compt) < input.size() && input.find("<br />",compt) >= 0 )
 	        {
+//	        	lprintfln("dans le if");
 	            	input.remove(input.find("<br />", compt), 6);
 
 	        }
@@ -376,7 +379,7 @@ String Convert::HTMLdecode(String& input)
 	        {
 	            compt=-1;
 	        }
-	        lprintfln(input.c_str());
+//	        lprintfln(input.c_str());
 	    }
 }
 

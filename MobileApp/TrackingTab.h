@@ -61,8 +61,10 @@ public:
 
 	void connectUrl(String url, eTrakingTab fct);
 	void dataDownloaded(MAHandle , int );
+
 	void createUI();
 
+//	void orientationChange(bool);
 
 	void runTimerEvent();
 //	void drawChangeVerticalHorizontal(int width, int height);

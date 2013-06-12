@@ -221,7 +221,7 @@
 	.stabs	"tm:Tt(27,2)=s36tm_sec:(0,3),0,32;tm_min:(0,3),32,32;tm_hour:(0,3),64,32;tm_mday:(0,3),96,32;tm_mon:(0,3),128,32;tm_year:(0,3),160,32;tm_wday:(0,3),192,32;tm_yday:(0,3),224,32;tm_isdst:(0,3),256,32;operator=::(27,3)=#(27,2),(27,4)=&(27,2),(27,5)=*(27,2),(27,6)=&(27,7)=k(27,2),(0,6);:_ZN2tmaSERKS_;2A.;__base_ctor::(27,8)=#(27,2),(0,6),(27,5),(27,6),(0,6);:_ZN2tmC2ERKS_;2A.;__comp_ctor::(27,8):_ZN2tmC1ERKS_;2A.;__base_ctor::(27,9)=#(27,2),(0,6),(27,5),(0,6);:_ZN2tmC2Ev;2A.;__comp_ctor::(27,9):_ZN2tmC1Ev;2A.;;",128,0,47,0
 	.stabn	162,0,0,0
 	.stabs	"STime:Tt(26,1)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(9,1),160,32;year:(0,3),192,32;operator=::(26,2)=#(26,1),(26,3)=&(26,1),(26,4)=*(26,1),(26,5)=&(26,6)=k(26,1),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(26,7)=#(26,1),(0,6),(26,4),(26,5),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(26,7):_ZN5STimeC1ERKS_;2A.;__base_ctor::(26,8)=#(26,1),(0,6),(26,4),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(26,8):_ZN5STimeC1Ev;2A.;__base_dtor::(26,8):_ZN5STimeD2Ev;2A.;__comp_dtor::(26,8):_ZN5STimeD1Ev;2A.;;",128,0,19,0
-	.stabs	"Convert:Tt(26,9)=s1__base_ctor::(26,10)=#(26,9),(0,6),(26,11)=*(26,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(26,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(26,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(26,10):_ZN7ConvertD1Ev;2A.;toSTime::(26,12)=f(26,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(26,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(26,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(26,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(26,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(26,17)=f(27,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(26,18)=f(9,1):_ZN7Convert8toStringEi;2A?(26,19)=f(9,1):_ZN7Convert8toStringEd;2A?(26,20)=f(9,1):_ZN7Convert8toStringEx;2A?(26,21)=f(9,1):_ZN7Convert8toStringEPKhm;2A?(26,22)=f(9,1):_ZN7Convert8toStringEb;2A?;hexToInt::(26,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(26,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(26,24)=f(5,5):_ZN7Convert2trEi;2A?;URLencode::(26,25)=f(9,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(26,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(26,26)=f(9,1):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(26,27)=#(26,9),(26,28)=&(26,9),(26,11),(26,29)=&(26,30)=k(26,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(26,31)=#(26,9),(0,6),(26,11),(26,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(26,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
+	.stabs	"Convert:Tt(26,9)=s1__base_ctor::(26,10)=#(26,9),(0,6),(26,11)=*(26,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(26,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(26,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(26,10):_ZN7ConvertD1Ev;2A.;toSTime::(26,12)=f(26,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(26,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(26,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(26,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(26,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(26,17)=f(27,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(26,18)=f(9,1):_ZN7Convert8toStringEi;2A?(26,19)=f(9,1):_ZN7Convert8toStringEd;2A?(26,20)=f(9,1):_ZN7Convert8toStringEx;2A?(26,21)=f(9,1):_ZN7Convert8toStringEPKhm;2A?(26,22)=f(9,1):_ZN7Convert8toStringEb;2A?;hexToInt::(26,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(26,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(26,24)=f(5,5):_ZN7Convert2trEi;2A?;URLencode::(26,25)=f(9,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(26,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(26,26)=f(0,6):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(26,27)=#(26,9),(26,28)=&(26,9),(26,11),(26,29)=&(26,30)=k(26,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(26,31)=#(26,9),(0,6),(26,11),(26,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(26,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",130,0,0,0
@@ -1630,9 +1630,9 @@ Lscope17:
 Ltext9:
 	.line 16
 	push rt,d0
-	sub  sp,#0xc
+	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x18
+	add  fr,#0x14
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
 	ld   d0,i2
@@ -1663,27 +1663,9 @@ Ltext9:
 	ld   r14,[fr,-16]
 	ld   r0,[fr,-20]
 	ld   [r14,112],r0
-	.line 57
-	ld   r14,[fr,-16]
-	ld   r14,[r14,112]
-	add  r14,#0x2
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
+	.line 54
 	ld   i0,[fr,-16]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	call &__ZN7HomeTab20orientationDidChangeEv
 	.line 58
 	ld   i0,[fr,-16]
 	ld   i1,#0xff
@@ -1695,7 +1677,7 @@ Ltext9:
 	call &__ZN7HomeTab8createUIEv
 	.dlab LBE36
 	.line 60
-	add  sp,#0xc
+	add  sp,#0x8
 	pop  rt,d0
 	ret
 Lscope18:
@@ -1708,9 +1690,9 @@ Lscope18:
 .func __ZN7HomeTabC1EiN6MAUtil11BasicStringIcEE, 3, void
 	.line 16
 	push rt,d0
-	sub  sp,#0xc
+	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x18
+	add  fr,#0x14
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
 	ld   d0,i2
@@ -1741,27 +1723,9 @@ Lscope18:
 	ld   r14,[fr,-16]
 	ld   r0,[fr,-20]
 	ld   [r14,112],r0
-	.line 57
-	ld   r14,[fr,-16]
-	ld   r14,[r14,112]
-	add  r14,#0x2
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
+	.line 54
 	ld   i0,[fr,-16]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	call &__ZN7HomeTab20orientationDidChangeEv
 	.line 58
 	ld   i0,[fr,-16]
 	ld   i1,#0xff
@@ -1773,7 +1737,7 @@ Lscope18:
 	call &__ZN7HomeTab8createUIEv
 	.dlab LBE37
 	.line 60
-	add  sp,#0xc
+	add  sp,#0x8
 	pop  rt,d0
 	ret
 Lscope19:
@@ -2042,11 +2006,121 @@ Lscope26:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.line 80
+	.line 79
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope27:
+.data
+LC30:
+	.ascii "orientation a chang\303\251\0"
+LC31:
+	.ascii "width %d\0"
+LC32:
+	.ascii "height %d\0"
+LC33:
+	.ascii "Orientation paysage\0"
+LC34:
+	.ascii "Orientation Portrait\0"
+.code
+	.stabs	"_ZN7HomeTab20orientationDidChangeEv:F(0,6)",36,0,95,__ZN7HomeTab20orientationDidChangeEv
+	.stabs	"this:p(0,25)",160,0,95,-12
+	.global	__ZN7HomeTab20orientationDidChangeEv
+
+.func __ZN7HomeTab20orientationDidChangeEv, 1, void
+	.line 95
+	push rt,fr
+	sub  sp,#0x14
+	ld   fr,sp
+	add  fr,#0x1c
+	ld   [fr,-12],i0
+	.dlab LBB42
+	.dlab LBB43
+	.line 97
+	ld   i0,#LC30
+	call &_lprintfln
+	.line 98
+	ld   i0,[fr,-12]
+	call &__ZN8NativeUI6Widget8getWidthEv
+	ld   [fr,-16],r14
+	.line 99
+	ld   i0,[fr,-12]
+	call &__ZN8NativeUI6Widget9getHeightEv
+	ld   [fr,-20],r14
+	.line 100
+	ld   r14,[fr,-16]
+	ld   [sp],r14
+	ld   i0,#LC31
+	call &_lprintfln
+	.line 101
+	ld   r14,[fr,-20]
+	ld   [sp],r14
+	ld   i0,#LC32
+	call &_lprintfln
+	.line 102
+	ld   r0,[fr,-16]
+	ld   r14,[fr,-20]
+	jc   ge,r0,r14,#L75
+	.line 103
+	ld   i0,#LC33
+	call &_lprintfln
+	.line 104
+	ld   r14,[fr,-12]
+	ld   r14,[r14,112]
+	add  r14,#0x3
+	ld   i0,r14
+	call &__ZN7Convert2trEi
+	ld   r0,r14
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,[fr,-12]
+	ld   i1,r14
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	jp   #L74
+L75:
+	.line 107
+	ld   i0,#LC34
+	call &_lprintfln
+	.line 108
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,[fr,-12]
+	ld   i1,r14
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
+	ld   r14,fr
+	add  r14,#0xffffffe8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 109
+	ld   i0,[fr,-12]
+	ld   i1,#0x2
+	call &__ZN8NativeUI6Screen7setIconEi
+L74:
+	.dlab LBE43
+	.dlab LBE42
+	.line 111
+	add  sp,#0x14
+	pop  rt,fr
+	ret
+	.stabs	"width:(0,3)",128,0,98,-16
+	.stabs	"height:(0,3)",128,0,99,-20
+	.stabn	192,0,0,LBB43-__ZN7HomeTab20orientationDidChangeEv
+	.stabn	224,0,0,LBE43-__ZN7HomeTab20orientationDidChangeEv
+Lscope28:
 	.stabs	"_ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_:f(9,2)",36,0,395,__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	.stabs	"c:p(3,7)",160,0,395,-16
 	.stabs	"s:p(3,11)",160,0,395,-20
@@ -2062,7 +2136,7 @@ Ltext16:
 	ld   d0,i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB42
+	.dlab LBB44
 	.line 396
 	ld   r14,fr
 	add  r14,#0xffffffe8
@@ -2075,18 +2149,18 @@ Ltext16:
 	ld   i1,r14
 	ld   i2,[fr,-20]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB43
+	.dlab LBB45
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE43
-	.dlab LBE42
+	.dlab LBE45
+	.dlab LBE44
 	ld   r14,d0
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope28:
+Lscope29:
 	.global	__ZTV7HomeTab
 .data
 	.align 4
@@ -2135,7 +2209,7 @@ __ZTV7HomeTab:
 	.long	__ZN8NativeUI6Screen17handleWidgetEventEP17MAWidgetEventData
 	.long	__ZN8NativeUI6Screen4showEv
 	.long	__ZN8NativeUI6Screen21orientationWillChangeEv
-	.long	__ZN8NativeUI6Screen20orientationDidChangeEv
+	.long	__ZN7HomeTab20orientationDidChangeEv
 	.long	__ZN8NativeUI6Screen17removeOptionsMenuEv
 	.long	__ZN8NativeUI6Screen17addScreenListenerEPNS_14ScreenListenerE
 	.long	__ZN8NativeUI6Screen20removeScreenListenerEPNS_14ScreenListenerE
@@ -2157,7 +2231,7 @@ __ZTV7HomeTab:
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection17connWriteFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection16connReadFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection12httpFinishedEPN6MAUtil14HttpConnectionEi
-	.stabs	"HomeTab:Tt(0,27)=s116!2,020,(0,28)=xsScreen:;02480,(0,29)=xsHighLevelHttpConnection:;_LOGINTOKEN:/0(9,1),864,32;LANGUAGE:/0(0,3),896,32;__base_ctor::(0,30)=#(0,27),(0,6),(0,26),(0,3),(9,1),(0,6);:_ZN7HomeTabC2EiN6MAUtil11BasicStringIcEE;2A.;__comp_ctor::(0,30):_ZN7HomeTabC1EiN6MAUtil11BasicStringIcEE;2A.;__base_dtor::(0,31)=#(0,27),(0,6),(0,26),(0,6);:_ZN7HomeTabD2Ev;2A.;__comp_dtor::(0,31):_ZN7HomeTabD1Ev;2A*0;(0,27);;__deleting_dtor::(0,31):_ZN7HomeTabD0Ev;2A*1;(0,27);;dataDownloaded::(0,32)=#(0,27),(0,6),(0,26),(5,10),(0,3),(0,6);:_ZN7HomeTab14dataDownloadedEii;2A*46;(0,27);;createUI::(0,31):_ZN7HomeTab8createUIEv;2A.;operator=::(0,33)=#(0,27),(0,34)=&(0,27),(0,26),(0,35)=&(0,36)=k(0,27),(0,6);:_ZN7HomeTabaSERKS_;2A.;__base_ctor::(0,37)=#(0,27),(0,6),(0,26),(0,35),(0,6);:_ZN7HomeTabC2ERKS_;2A.;__comp_ctor::(0,37):_ZN7HomeTabC1ERKS_;2A.;;~%(3,78);",128,0,28,0
+	.stabs	"HomeTab:Tt(0,27)=s116!2,020,(0,28)=xsScreen:;02480,(0,29)=xsHighLevelHttpConnection:;_LOGINTOKEN:/0(9,1),864,32;LANGUAGE:/0(0,3),896,32;__base_ctor::(0,30)=#(0,27),(0,6),(0,26),(0,3),(9,1),(0,6);:_ZN7HomeTabC2EiN6MAUtil11BasicStringIcEE;2A.;__comp_ctor::(0,30):_ZN7HomeTabC1EiN6MAUtil11BasicStringIcEE;2A.;__base_dtor::(0,31)=#(0,27),(0,6),(0,26),(0,6);:_ZN7HomeTabD2Ev;2A.;__comp_dtor::(0,31):_ZN7HomeTabD1Ev;2A*0;(0,27);;__deleting_dtor::(0,31):_ZN7HomeTabD0Ev;2A*1;(0,27);;dataDownloaded::(0,32)=#(0,27),(0,6),(0,26),(5,10),(0,3),(0,6);:_ZN7HomeTab14dataDownloadedEii;2A*46;(0,27);;createUI::(0,31):_ZN7HomeTab8createUIEv;2A.;orientationDidChange::(0,31):_ZN7HomeTab20orientationDidChangeEv;2A*42;(0,27);;operator=::(0,33)=#(0,27),(0,34)=&(0,27),(0,26),(0,35)=&(0,36)=k(0,27),(0,6);:_ZN7HomeTabaSERKS_;2A.;__base_ctor::(0,37)=#(0,27),(0,6),(0,26),(0,35),(0,6);:_ZN7HomeTabC2ERKS_;2A.;__comp_ctor::(0,37):_ZN7HomeTabC1ERKS_;2A.;;~%(3,78);",128,0,28,0
 	.stabs	"HttpConnectionListener:Tt(0,38)=s4!1,020,(0,39)=xsConnectionListener:;httpFinished::(0,40)=#(0,38),(0,6),(0,41)=*(0,38),(0,42)=*(0,43)=xsHttpConnection:,(0,3),(0,6);:_ZN6MAUtil22HttpConnectionListener12httpFinishedEPNS_14HttpConnectionEi;2A*4;(0,38);;operator=::(0,44)=#(0,38),(0,45)=&(0,38),(0,41),(0,46)=&(0,47)=k(0,38),(0,6);:_ZN6MAUtil22HttpConnectionListeneraSERKS0_;2A.;__base_ctor::(0,48)=#(0,38),(0,6),(0,41),(0,46),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2ERKS0_;2A.;__comp_ctor::(0,48):_ZN6MAUtil22HttpConnectionListenerC1ERKS0_;2A.;__base_ctor::(0,49)=#(0,38),(0,6),(0,41),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2Ev;2A.;__comp_ctor::(0,49):_ZN6MAUtil22HttpConnectionListenerC1Ev;2A.;;~%(0,39);",128,0,203,0
 	.stabs	"ConnListener:Tt(14,167)=s8_vptr$ConnListener:(0,50)=*(0,1),0,32;_mConn:/0(5,10),32,32;connEvent::(0,51)=#(14,167),(0,6),(14,166),(0,52)=&(0,53)=k(5,93),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(14,167);;operator=::(0,54)=#(14,167),(0,55)=&(14,167),(14,166),(0,56)=&(0,57)=k(14,167),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,58)=#(14,167),(0,6),(14,166),(0,56),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,58):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,59)=#(14,167),(0,6),(14,166),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,59):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(14,167);",128,0,89,0
 	.align 4
