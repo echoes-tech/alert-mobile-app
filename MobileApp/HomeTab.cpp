@@ -13,7 +13,7 @@
 	/**
 	 * Constructor.
 	 */
-	HomeTab::HomeTab(int language, String loginToken): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
+	HomeTab::HomeTab(int language, String loginToken, eScreenResolution screenResolution): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
 	{
 //		char buffer[2500];
 //MAHandle XML = maFileOpen("alert.xml",MA_ACCESS_READ);
@@ -51,10 +51,9 @@
 //		char * testData = new char[maGetDataSize(TEST_STRING) + 1];
 //										maReadData(TEST_STRING, testData, 0, maGetDataSize(TEST_STRING));
 
-		orientationDidChange();
+
 //		setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-//		setTitle("");
-//		setIcon(LOGO);
+		setIcon(ICON_HOME + screenResolution);
 			setBackgroundColor(255,255,255);
 			createUI();
 	}
@@ -79,33 +78,15 @@
 	}
 
 
-//	void HomeTab::orientationChange(bool landscape) {
-//
-//		if (landscape) {
-//			lprintfln("Orientation paysage");
-//			this->setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-//		} else // Portrait
-//		{
-//			lprintfln("Orientation Portrait");
-//			this->setTitle("");
-//			this->setIcon(LOGO1);
-//		}
-//	}
+	void HomeTab::orientationChange(int screenOrientation) {
 
-void HomeTab::orientationDidChange() {
-
-	lprintfln("orientation a changé");
-	int width = Screen::getWidth();
-	int height = Screen::getHeight();
-	lprintfln("width %d", width);
-	lprintfln("height %d", height);
-	if (width < height) {
-		lprintfln("Orientation paysage");
-		Screen::setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-	} else // Portrait
-	{
-		lprintfln("Orientation Portrait");
-		Screen::setTitle("");
-		Screen::setIcon(LOGO1);
+		if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+				lprintfln("Orientation paysage");
+				Screen::setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
+			} else // Portrait
+			{
+				lprintfln("Orientation Portrait");
+				Screen::setTitle("");
+//				Screen::setIcon(ICON_HOME);
+			}
 	}
-}

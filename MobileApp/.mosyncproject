@@ -18,7 +18,7 @@
 <property key="build.prefs:app.name/Debug" value="ECHOES Alert App"/>
 <property key="build.prefs:app.name/Release" value="ECHOES Alert App"/>
 <property key="build.prefs:app.output.path/Debug" value="Release/"/>
-<property key="build.prefs:app.permissions" value="File\ Storage Internet\ Access Push\ Notifications Vibration"/>
+<property key="build.prefs:app.permissions" value="Autostart File\ Storage Internet\ Access Push\ Notifications Vibration"/>
 <property key="build.prefs:extra.link.sw/Debug" value=""/>
 <property key="build.prefs:extra.link.sw/Release" value=""/>
 <property key="build.prefs:extra.res.sw/Debug" value=""/>

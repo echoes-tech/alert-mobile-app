@@ -50,7 +50,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	TrackingTab(int language, String loginToken, long long idMobile);
+	TrackingTab(int language, String loginToken, eScreenResolution screenResolution, long long idMobile);
 
 	/**
 	 * Destructor.
@@ -64,7 +64,7 @@ public:
 
 	void createUI();
 
-//	void orientationChange(bool);
+	void orientationChange(int screenOrientation);
 
 	void runTimerEvent();
 //	void drawChangeVerticalHorizontal(int width, int height);
@@ -82,6 +82,8 @@ private:
 
 	int count;
 	String contentString;
+
+	Label *lTrackingTitle;
 
 	ListView *lValert;
 	MAPUtil::DateTime dateLastSend;

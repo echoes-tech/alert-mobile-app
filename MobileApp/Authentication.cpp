@@ -10,6 +10,10 @@
 
 Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		Screen(), LANGUAGE(language) {
+	activityIndicator = new ActivityIndicator();
+	Screen::setMainWidget(activityIndicator);
+	this->show();
+//	Environment::getEnvironment().addKeyListener(this);
 //	authenticationAccepted = false;
 	mIsConnected = false;
 	_modeAuth = "credential";
@@ -20,35 +24,28 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 
 	String config;
 	eFile eFileTmp = tryToRead(config);
-	if(eFileTmp == FILE_NOT_EXIST)
-	{
+	if (eFileTmp == FILE_NOT_EXIST) {
 		createUI();
-	}
-	else if(eFileTmp == FILE_OPEN_ERROR)
-	{
+	} else if (eFileTmp == FILE_OPEN_ERROR) {
 		maPanic(1, "ERROR FILE STRORAGE");
-	}
-	else
-	{
+	} else {
 		Convert::formatJSONBeforeParse(config);
-		MAUtil::YAJLDom::Value* root = YAJLDom::parse((const unsigned char*) config.c_str(), config.size());
+		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+				(const unsigned char*) config.c_str(), config.size());
 		_modeAuth = root->getValueForKey("authentication_mode")->toString();
 		_idMobile = root->getValueForKey("id_media_value")->toInt();
 		_tokenConnection = root->getValueForKey("token_authent")->toString();
 		_tokenMobile = root->getValueForKey("token_mobile")->toString();
 		_login = root->getValueForKey("login")->toString();
 
-		if (_modeAuth == "none")
-		{
+		if (_modeAuth == "none") {
 //			TODO : va voir toute les appmobile du compte, il faudrait utilisé get /medias/3/media_values/id (pas encore creer dans l'API) AUTHENTICATION_VALIDATION
 			_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
 			String urlTmp = HOST;
 			urlTmp += "/medias/3/";
 			urlTmp += _LOGINTOKEN;
 			connectUrl(urlTmp, AUTHENTICATION_VALIDATION);
-		}
-		else
-		{
+		} else {
 			createUI();
 		}
 //		lprintfln(_tokenMobile.c_str());
@@ -56,7 +53,6 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 //		lprintfln("%d", _idMobile);
 //		lprintfln(_tokenConnection.c_str());
 //		lprintfln(_login.c_str());
-
 
 	}
 	screenMain = mScreenMain;
@@ -111,10 +107,12 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
-	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN){
+		Screen::setMainWidget(vLAuthentication);
+	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
 		connERR = 0;
 		presentation->setText(
 				"erreur d'authentification verifier votre login et password");
+		Screen::setMainWidget(vLAuthentication);
 	} else if (result == 404 && fonction == MEDIAS_LIST) {
 		connERR = 0;
 		createPageMobileChoice();
@@ -122,13 +120,14 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		connERR = 0;
 		_idMobile = 0;
 		_tokenMobile = "";
-		createUI();////////
+		createUI(); ////////
 //		String urlTmp = HOST;
 //		urlTmp += "/medias/3";
 //		urlTmp += _LOGINTOKEN ;
 //		connectUrl(urlTmp, MEDIAS_LIST);
 
-	}else if (result == CONNERR_GENERIC && fonction == AUTHENTICATION_VALIDATION) {//si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credential.
+	} else if (result == CONNERR_GENERIC
+			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credential.
 		connERR = 0;
 		_tokenConnection = "";
 		_login = "";
@@ -138,8 +137,9 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 	else {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
+		Screen::setMainWidget(vLAuthentication);
 	}
-	if (connERR >= 3) {
+	if (connERR >= 1) {
 		sMessage = "Connection Error. ERREUR :";
 		sMessage += Convert::toString(result);
 		maMessageBox("Connection Error", sMessage.c_str());
@@ -148,62 +148,65 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 
 }
 
-void Authentication::parseJSONAuthenticationValidation(MAUtil::YAJLDom::Value* root)
-{
+void Authentication::parseJSONAuthenticationValidation(
+		MAUtil::YAJLDom::Value* root) {
 	lprintfln("parseJSONAuthenticationValidation");
-		if (NULL == root || YAJLDom::Value::NUL == root->getType()
-				|| YAJLDom::Value::ARRAY != root->getType()) {
-			lprintfln("Root node is not valid\n");
-		} else {
-			lprintfln("Root node is valid :) \n");
-			bool isAuth = false;
-			bool isConfirmed = false;
-			String tmpMobiletoken;
-			for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
-				MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
+	if (NULL == root || YAJLDom::Value::NUL == root->getType()
+			|| YAJLDom::Value::ARRAY != root->getType()) {
+		lprintfln("Root node is not valid\n");
+	} else {
+		lprintfln("Root node is valid :) \n");
+		bool isAuth = false;
+		bool isConfirmed = false;
+		String tmpMobiletoken;
+		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
+			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
-				if(valueTmp->getValueForKey("id")->toInt() == _idMobile){
-					if(valueTmp->getValueForKey("is_confirmed")->toString() == "true")
-					{
-						isConfirmed = true;
-					}
-					if(valueTmp->getValueForKey("token")->toString() == _tokenMobile)
-					{
-						isAuth = true;
-					}
-					tmpMobiletoken = valueTmp->getValueForKey("token")->toString();
+			if (valueTmp->getValueForKey("id")->toInt() == _idMobile) {
+				if (valueTmp->getValueForKey("is_confirmed")->toString()
+						== "true") {
+					isConfirmed = true;
 				}
+				if (valueTmp->getValueForKey("token")->toString()
+						== _tokenMobile) {
+					isAuth = true;
+				}
+				tmpMobiletoken = valueTmp->getValueForKey("token")->toString();
+			}
 
-			}
-			if(isAuth && isConfirmed){
-				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);////////////
-				authenticationAccepted();
-			}else if(isAuth && !isConfirmed && _modeAuth != "credential"){
-				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);////////////
-				_tokenMobile = "";
-				_tokenConnection = "";
-				_login = "";
-				createUI();
-			}else if (!isAuth && isConfirmed && _modeAuth == "credential"){
-				_tokenMobile = tmpMobiletoken;
-				_tokenConnection = "";
-				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
-				authenticationAccepted();
-			}else if (!isAuth && isConfirmed){
-				_tokenMobile = tmpMobiletoken;
-				_tokenConnection = "";
-				tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
-				createUI();
-			}
-			else{
-				_idMobile = 0;
-				_tokenMobile = "";
-				String urlTmp = HOST;
-				urlTmp += "/medias/3";
-				urlTmp += _LOGINTOKEN ;
-				connectUrl(urlTmp, MEDIAS_LIST);
-			}
 		}
+		if (isAuth && isConfirmed) {
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile); ////////////
+			authenticationAccepted();
+		} else if (isAuth && !isConfirmed && _modeAuth != "credential") {
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile); ////////////
+			_tokenMobile = "";
+			_tokenConnection = "";
+			_login = "";
+			createUI();
+		} else if (!isAuth && isConfirmed && _modeAuth == "credential") {
+			_tokenMobile = tmpMobiletoken;
+			_tokenConnection = "";
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile);
+			authenticationAccepted();
+		} else if (!isAuth && isConfirmed) {
+			_tokenMobile = tmpMobiletoken;
+			_tokenConnection = "";
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile);
+			createUI();
+		} else {
+			_idMobile = 0;
+			_tokenMobile = "";
+			String urlTmp = HOST;
+			urlTmp += "/medias/3";
+			urlTmp += _LOGINTOKEN;
+			connectUrl(urlTmp, MEDIAS_LIST);
+		}
+	}
 }
 
 void Authentication::parseJSONPostMediaValueValidation(
@@ -216,7 +219,8 @@ void Authentication::parseJSONPostMediaValueValidation(
 		lprintfln("Root node is valid :) \n");
 
 		if (root->getValueForKey("is_confirmed")->toString() == "true") {
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile);
 			authenticationAccepted();
 //			createPageAuthenticationMode();
 		}
@@ -235,10 +239,13 @@ void Authentication::parseJSONPostMediaValue(MAUtil::YAJLDom::Value* root) {
 		_idMobile = root->getValueForKey("id")->toInt();
 	}
 	String urlTmp = HOST;
-		urlTmp += "/medias/3/media_values/" + Convert::toString(_idMobile) + "/validate/";
-		urlTmp += _LOGINTOKEN;
-		String message = "{\"mev_validation\": true ,\"mev_token\" : \"" + _tokenMobile + "\"}";
-		connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
+	urlTmp += "/medias/3/media_values/" + Convert::toString(_idMobile)
+			+ "/validate/";
+	urlTmp += _LOGINTOKEN;
+	String message = "";
+				message.clear();
+message = "                  {\"mev_validation\": true ,\"mev_token\" : \"" + _tokenMobile + "\"}";
+	connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
 }
 
 void Authentication::parseJSONMediasList(MAUtil::YAJLDom::Value* root) {
@@ -252,40 +259,36 @@ void Authentication::parseJSONMediasList(MAUtil::YAJLDom::Value* root) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
 			mapMediaID[idx] = valueTmp->getValueForKey("id")->toInt();
-			mapMediaName[idx] = new Label(valueTmp->getValueForKey("value")->toString());
+			mapMediaName[idx] = new Label(
+					valueTmp->getValueForKey("value")->toString());
 			mapMediaToken[idx] = valueTmp->getValueForKey("token")->toString();
 		}
 		createPageMobileChoice();
 	}
 }
 
-
-void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root)
- {
+void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root) {
 	lprintfln("parseJSONUserToken");
 	if (NULL == root || YAJLDom::Value::NUL == root->getType()
 			|| YAJLDom::Value::ARRAY == root->getType()) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-			_tokenConnection = root->getValueForKey("token")->toString();
-			lprintfln(_tokenConnection.c_str());
-			_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
-			//tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
-			if(_tokenMobile == "")
-			{
-				String urlTmp = HOST;
-				urlTmp += "/medias/3";
-				urlTmp += _LOGINTOKEN ;
-				connectUrl(urlTmp, MEDIAS_LIST);
-			}
-			else
-			{
-				String urlTmp = HOST;
-				urlTmp += "/medias/3";
-				urlTmp += _LOGINTOKEN ;
-				connectUrl(urlTmp, AUTHENTICATION_VALIDATION);
-			}
+		_tokenConnection = root->getValueForKey("token")->toString();
+		lprintfln(_tokenConnection.c_str());
+		_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
+		//tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+		if (_tokenMobile == "") {
+			String urlTmp = HOST;
+			urlTmp += "/medias/3";
+			urlTmp += _LOGINTOKEN;
+			connectUrl(urlTmp, MEDIAS_LIST);
+		} else {
+			String urlTmp = HOST;
+			urlTmp += "/medias/3";
+			urlTmp += _LOGINTOKEN;
+			connectUrl(urlTmp, AUTHENTICATION_VALIDATION);
+		}
 
 	}
 }
@@ -295,27 +298,40 @@ void Authentication::authenticationAccepted() {
 }
 
 void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
-	String jsonMessage) {
-lprintfln("connectUrl");
-lprintfln(url.c_str());
+		String jsonMessage) {
 
-if (mIsConnected == false) {
-	mIsConnected = true;
-	fonction = fct;
+	lprintfln("connectUrl");
 	lprintfln(url.c_str());
-	if (verb == GET) {
-		lprintfln("GET");
-		int tmp = this->get(url.c_str());
-		lprintfln("GET send = %d", tmp);
-	} else if (verb == POST) {
-		lprintfln("POST");
-		lprintfln(jsonMessage.c_str());
-		int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
-		lprintfln("POST send = %d", tmp);
+
+	if (mIsConnected == false) {
+		mIsConnected = true;
+		fonction = fct;
+		lprintfln(url.c_str());
+		if (verb == GET) {
+			lprintfln("GET");
+			int tmp = this->get(url.c_str());
+			lprintfln("GET send = %d", tmp);
+		} else if (verb == POST) {
+			lprintfln("POST");
+			lprintfln(jsonMessage.c_str());
+			lprintfln("jsonMessage.size() : %d ", jsonMessage.size());
+			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
+//			Vector<String> test; test.clear();
+
+//			int tmp = this->postRequest(url.c_str(), test, jsonMessage.c_str(), jsonMessage.size());
+//			this->create(url.c_str(), HTTP_POST);
+//			this->setRequestHeader("Content-Length", Convert::toString(jsonMessage.size()).c_str());
+//			this->write(jsonMessage.c_str(), jsonMessage.size());
+//			maWait(0);
+//			this->finish();
+
+
+
+//			lprintfln("POST send = %d", tmp);
+		}
+	} else {
+		lprintfln("Déjà connecté: %d", fonction);
 	}
-} else {
-	lprintfln("Déjà connecté: %d", fonction);
-}
 }
 
 void Authentication::createPageMobileChoice() {
@@ -323,8 +339,9 @@ void Authentication::createPageMobileChoice() {
 	vLMediaChoice->fillSpaceHorizontally();
 	vLMediaChoice->fillSpaceVertically();
 
-	newMediaTitle = new Label(Convert::tr(authentication_new_media_title + LANGUAGE));
-	newMediaTitle->setHeight(100);
+	newMediaTitle = new Label(
+			Convert::tr(authentication_new_media_title + LANGUAGE));
+//	newMediaTitle->setHeight(100);
 	newMediaTitle->fillSpaceHorizontally();
 	vLMediaChoice->addChild(newMediaTitle);
 
@@ -334,16 +351,18 @@ void Authentication::createPageMobileChoice() {
 	lNewMediaName = new Label("Name : ");
 	hlNewMedia->addChild(lNewMediaName);
 	ebNewMediaName = new EditBox();
+	ebNewMediaName->addEditBoxListener(this);
 	ebNewMediaName->fillSpaceHorizontally();
 	hlNewMedia->addChild(ebNewMediaName);
 	bAddNewMedia = new Button();
 	bAddNewMedia->addButtonListener(this);
-	bAddNewMedia->setText(Convert::tr(authentication_button_add_new_media + LANGUAGE));
+	bAddNewMedia->setText(
+			Convert::tr(authentication_button_add_new_media + LANGUAGE));
 	hlNewMedia->addChild(bAddNewMedia);
 
-
 	if (mapMediaID.size() != 0) {
-		Label* oldMediaTitle = new Label(Convert::tr(authentication_old_media_title + LANGUAGE));
+		Label* oldMediaTitle = new Label(
+				Convert::tr(authentication_old_media_title + LANGUAGE));
 		oldMediaTitle->fillSpaceHorizontally();
 		oldMediaTitle->setHeight(100);
 		vLMediaChoice->addChild(oldMediaTitle);
@@ -351,8 +370,7 @@ void Authentication::createPageMobileChoice() {
 		lVMedia->fillSpaceVertically();
 		lVMedia->addListViewListener(this);
 		vLMediaChoice->addChild(lVMedia);
-		for(int idx = 0; idx < mapMediaID.size(); idx++)
-		{
+		for (int idx = 0; idx < mapMediaID.size(); idx++) {
 			mapLVIMedia[idx] = new ListViewItem();
 			mapLVIMedia[idx]->addChild(mapMediaName[idx]);
 			lVMedia->addChild(mapLVIMedia[idx]);
@@ -391,73 +409,78 @@ void Authentication::createPageMobileChoice() {
 //}
 
 void Authentication::createUI() {
-	if(vLAuthentication == NULL)
-	{
-	vLAuthentication = new VerticalLayout();
-	vLAuthentication->fillSpaceHorizontally();
-	vLAuthentication->fillSpaceVertically();
-	icon = new Image();
+	if (vLAuthentication == NULL) {
+		vLAuthentication = new VerticalLayout();
+		vLAuthentication->fillSpaceHorizontally();
+		vLAuthentication->fillSpaceVertically();
+		vLAuthentication->setScrollable(true);
+		icon = new Image();
+		icon->setImage(LOGO);
+		icon->fillSpaceHorizontally();
 
-	icon->setImage(LOGO);
-	icon->fillSpaceHorizontally();
+		vLAuthentication->addChild(icon);
+		presentation = new Label(
+				Convert::tr(authentication_connection_title + LANGUAGE));
+//		presentation->setHeight(100);
+		presentation->fillSpaceHorizontally();
 
-	vLAuthentication->addChild(icon);
-	presentation = new Label(Convert::tr(authentication_connection_title + LANGUAGE));
-	presentation->setHeight(100);
-	presentation->fillSpaceHorizontally();
+		vLAuthentication->addChild(presentation);
+		login = new Label(
+				Convert::tr(authentication_connection_login + LANGUAGE));
 
-	vLAuthentication->addChild(presentation);
-	login = new Label(Convert::tr(authentication_connection_login + LANGUAGE));
+		eLogin = new EditBox();
+//		eLogin->addEditBoxListener(this);
+		eLogin->setInputMode(EDIT_BOX_INPUT_MODE_URL);
+		eLogin->fillSpaceHorizontally();
+		hLLogin = new HorizontalLayout();
+//		hLLogin->setHeight(70);
+		hLLogin->addChild(login);
+		hLLogin->addChild(eLogin);
+		vLAuthentication->addChild(hLLogin);
 
-	eLogin = new EditBox();
-	eLogin->setInputMode(EDIT_BOX_INPUT_MODE_URL);
-	eLogin->fillSpaceHorizontally();
-	hLLogin = new HorizontalLayout();
-	hLLogin->setHeight(70);
-	hLLogin->addChild(login);
-	hLLogin->addChild(eLogin);
-	vLAuthentication->addChild(hLLogin);
-
-	password = new Label(Convert::tr(authentication_connection_password + LANGUAGE));
-	ePassword = new EditBox();
-	ePassword->setEditMode(EDIT_BOX_MODE_PASSWORD);
-	ePassword->fillSpaceHorizontally();
-	hLPassword = new HorizontalLayout();
-	hLPassword->setHeight(70);
-	hLPassword->addChild(password);
-	hLPassword->addChild(ePassword);
+		password = new Label(
+				Convert::tr(authentication_connection_password + LANGUAGE));
+		ePassword = new EditBox();
+		ePassword->addEditBoxListener(this);
+		ePassword->setEditMode(EDIT_BOX_MODE_PASSWORD);
+		ePassword->fillSpaceHorizontally();
+		hLPassword = new HorizontalLayout();
+		hLPassword->setHeight(70);
+		hLPassword->addChild(password);
+		hLPassword->addChild(ePassword);
 //	hLPassword->fillSpaceVertically();
-	vLAuthentication->addChild(hLPassword);
+		vLAuthentication->addChild(hLPassword);
 
-	lAuthenticationMode = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
-	vLAuthentication->addChild(lAuthenticationMode);
+		lAuthenticationMode = new Label(
+				Convert::tr(authentication_mode_page_title + LANGUAGE));
+		vLAuthentication->addChild(lAuthenticationMode);
 
-	rGAuthenticationChoice = new RadioGroup();
-	rGAuthenticationChoice->addRadioGroupListener(this);
-	vLAuthentication->addChild(rGAuthenticationChoice);
+		rGAuthenticationChoice = new RadioGroup();
+		rGAuthenticationChoice->addRadioGroupListener(this);
+		vLAuthentication->addChild(rGAuthenticationChoice);
 
-	rBModeCredential = new RadioButton();
-	rBModeCredential->setText(Convert::tr(authentication_mode_credential + LANGUAGE));
-	rGAuthenticationChoice->addView(rBModeCredential);
-	rBModeNone = new RadioButton();
-	rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
+		rBModeCredential = new RadioButton();
+		rBModeCredential->setText(
+				Convert::tr(authentication_mode_credential + LANGUAGE));
+		rGAuthenticationChoice->addView(rBModeCredential);
+		rBModeNone = new RadioButton();
+		rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
 //	rBModeNone->setProperty("fontSize", "50");
 //	lprintfln("TEEEESSt %d",maWidgetSetProperty(rBModeNone->getWidgetHandle(), MAW_BUTTON_FONT_SIZE, "30.0"));
-	rGAuthenticationChoice->addView(rBModeNone);
-	if(_modeAuth == "none")
-	{
-		rGAuthenticationChoice->setChecked(rBModeNone);
-	}
-	else{
-	rGAuthenticationChoice->setChecked(rBModeCredential);
-	}
-	rGAuthenticationChoice->fillSpaceVertically();
+		rGAuthenticationChoice->addView(rBModeNone);
+		if (_modeAuth == "none") {
+			rGAuthenticationChoice->setChecked(rBModeNone);
+		} else {
+			rGAuthenticationChoice->setChecked(rBModeCredential);
+		}
+		rGAuthenticationChoice->fillSpaceVertically();
 
-
-	bValidate = new Button();
-	bValidate->setText(Convert::tr(authentication_connection_validate_button + LANGUAGE));
-	bValidate->addButtonListener(this);
-	bValidate->fillSpaceHorizontally();
+		bValidate = new Button();
+		bValidate->setText(
+				Convert::tr(
+						authentication_connection_validate_button + LANGUAGE));
+		bValidate->addButtonListener(this);
+		bValidate->fillSpaceHorizontally();
 	}
 	vLAuthentication->addChild(bValidate);
 	Screen::setMainWidget(vLAuthentication);
@@ -466,27 +489,30 @@ void Authentication::createUI() {
 void Authentication::buttonClicked(Widget* button) {
 	lprintfln("bouton click");
 	if (button == bValidate) {
+		Screen::setMainWidget(activityIndicator);
 		_login = eLogin->getText();
 
 		String urlTmp = HOST;
 		urlTmp += "/users/";
-		urlTmp += "?login=" + _login + "&password=" + Convert::URLencode(ePassword->getText());
+		urlTmp += "?login=" + _login + "&password="
+				+ Convert::URLencode(ePassword->getText());
 		connectUrl(urlTmp, USER_TOKEN);
 		maWidgetSetProperty(eLogin->getWidgetHandle(),
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		maWidgetSetProperty(ePassword->getWidgetHandle(),
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 	} else if (button == bAddNewMedia) {
-		if(newMediaNameValid())
-		{
-		maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
-						MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
-		String urlTmp = HOST;
-		urlTmp += "/medias/";
-		urlTmp += _LOGINTOKEN;
-		String message = "{\"med_id\": 3";
-		message += ",\"mev_value\" : \"" + ebNewMediaName->getText() + "\"}";
-		connectUrl(urlTmp, POST_MEDIA_VALUE, POST, message);
+		if (newMediaNameValid()) {
+			Screen::setMainWidget(activityIndicator);
+			maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
+					MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+			String urlTmp = HOST;
+			urlTmp += "/medias/";
+			urlTmp += _LOGINTOKEN;
+			String message = "";
+			message.clear();
+			message = "                  {\"med_id\": 3 ,\"mev_value\" : \"" + ebNewMediaName->getText() + "\"}";
+			connectUrl(urlTmp, POST_MEDIA_VALUE, POST, message);
 		}
 	}
 
@@ -509,31 +535,30 @@ void Authentication::listViewItemClicked(ListView* listView,
 	if (listView == lVMedia) {
 		for (int i = 0; i < mapLVIMedia.size(); i++) {
 			if (mapLVIMedia[i] == listViewItem) {
+				Screen::setMainWidget(activityIndicator);
 				_idMobile = mapMediaID[i];
 				_tokenMobile = mapMediaToken[i];
 				String urlTmp = HOST;
 				urlTmp += "/medias/3/media_values/"
 						+ Convert::toString(_idMobile) + "/validate/";
 				urlTmp += _LOGINTOKEN;
-				String message = "{\"mev_validation\": true ,\"mev_token\" : \""
-						+ _tokenMobile + "\"}";
+				String message = "";
+				message.clear();
+				message = "                  {\"mev_validation\": true ,\"mev_token\" : \"" + _tokenMobile + "\"}";
 				connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
 			}
 		}
 	}
 }
 
-void Authentication::radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton* rB)
-{
-	if(rB == rBModeCredential)
-	{
+void Authentication::radioButtonSelected(NativeUI::RadioGroup*, int,
+		NativeUI::RadioButton* rB) {
+	if (rB == rBModeCredential) {
 		_modeAuth = "credential";
-	}
-	else if (rB == rBModeNone)
-	{
+	} else if (rB == rBModeNone) {
 		_modeAuth = "none";
 	}
-	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth, _idMobile);
 }
 
 bool Authentication::newMediaNameValid() {

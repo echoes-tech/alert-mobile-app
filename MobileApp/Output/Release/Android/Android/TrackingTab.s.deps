@@ -20,12 +20,15 @@
   c:/MoSync/include/MAUtil/Environment.h c:/MoSync/include/MAUtil/util.h \
   c:/MoSync/include/MAUtil/String.h c:/MoSync/include/IX_WIDGET.h \
   c:/MoSync/include/NativeUI/WidgetUtil.h \
+  c:/MoSync/include/NativeUI/ActionBar.h \
   c:/MoSync/include/NativeUI/Button.h \
   c:/MoSync/include/NativeUI/TextWidget.h \
   c:/MoSync/include/NativeUI/ButtonListener.h \
   c:/MoSync/include/NativeUI/CameraPreview.h \
+  c:/MoSync/include/NativeUI/Camera.h \
   c:/MoSync/include/NativeUI/CheckBox.h \
   c:/MoSync/include/NativeUI/CheckBoxListener.h \
+  c:/MoSync/include/NativeUI/CustomPicker.h \
   c:/MoSync/include/NativeUI/DatePicker.h \
   c:/MoSync/include/NativeUI/DatePickerListener.h \
   c:/MoSync/include/NativeUI/Dialog.h \

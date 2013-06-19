@@ -24,7 +24,7 @@ using namespace MAUtil;
 using namespace NativeUI;
 
 
-class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener
+class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener
 {
 public:
 
@@ -54,6 +54,10 @@ public:
 	virtual void buttonClicked(Widget* button);
 	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 
+	 virtual void editBoxEditingDidEnd(EditBox* editBox) {}
+	 virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
+	 virtual void editBoxEditingDidBegin(EditBox* editBox) {maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "true");}
+
 	void parseJSONUserToken(MAUtil::YAJLDom::Value* root);
 	void parseJSONMediasList(MAUtil::YAJLDom::Value* root);
 	void parseJSONPostMediaValue(MAUtil::YAJLDom::Value* root);
@@ -68,6 +72,7 @@ public:
 	bool newMediaNameValid();
 
 private:
+	ActivityIndicator* activityIndicator;
 	int LANGUAGE;
 	eAuthenticationTab fonction;
 	bool mIsConnected;

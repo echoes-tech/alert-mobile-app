@@ -1,0 +1,84 @@
+rebuild-needed = true
+variant = Android/Android\\ Experimental Release 
+success = false
+timestamp = 1371053824766
+output-main = C:\\\\Users\\\\gdr\\\\Documents\\\\source\\\\mobile-app\\\\MobileApp\\\\Output\\\\Release\\\\Android\\\\Android\\ Experimental\\\\package\\\\ECHOES\\ Alert\\ App.apk
+
+[files]
+Authentication.h = 1371029134944
+IncludeFile.h = 1368610091253
+resources/icon.png = 1369925811966
+.project = 1368429849043
+TrackingTab.h = 1371044979109
+TrackingTab.cpp = 1371046988273
+resource/Convert.cpp = 1371025452940
+EA_72.png = 1370957149489
+Authentication.cpp = 1371029134925
+.mosyncproject.local = 1371047688131
+.mosyncproject = 1371047688128
+OptionTab.h = 1371044979142
+resource/snprintf.c = 1368536515139
+.cproject = 1368429849137
+resources/graph.png = 1371046803443
+resource/Convert.h = 1371022591078
+EA_36.png = 1370957149493
+resources/resources.lstx = 1371047693330
+HomeTab.h = 1371045138506
+AlertTab.cpp = 1371046988237
+EA_48.png = 1370957149495
+OptionTab.cpp = 1371046988293
+MobileApp.icon = 1370957409296
+AlertTab.h = 1371044084925
+HomeTab.cpp = 1371046988255
+main.cpp = 1371048363414
+ScreenMain.cpp = 1371049219365
+conf.h = 1371049488163
+icon.png = 1369925811966
+EA_96.png = 1370957149492
+resources/client.png = 1371046803441
+.settings/org.eclipse.core.resources.prefs = 1368429849137
+resources/survey.png = 1371046803437
+resource/snprintf.h = 1368536515141
+Util.h = 1370360539029
+resources/home.png = 1371046803444
+ScreenMain.h = 1371048363428
+
+[dependencies]
+
+[build-properties]
+build.prefs:app.name/Release = ECHOES Alert App
+build.prefs:ignore.default.library.paths/Release = true
+excludes/Release = 
+template.id = project.nativeuicpp
+build.prefs:ignore.default.libraries/Debug = true
+build.prefs:app.name/Debug = ECHOES Alert App
+build.prefs:additional.library.paths/Release = %mosync-home%/lib/pipe
+build.prefs:extra.res.sw/Release = 
+build.prefs:gcc.warnings/Debug = 0
+build.prefs:ignore.default.libraries/Release = true
+build.prefs:ignore.default.include.paths/Debug = true
+build.prefs:memory.heap/Debug = 3072
+build.prefs:extra.link.sw/Release = 
+build.prefs:memory.stack/Release = 512
+build.prefs:additional.library.paths/Debug = %mosync-home%/lib/pipe
+profile.mgr.type = 0
+build.prefs:memory.data/Release = 4096
+build.prefs:additional.include.paths/Release = %mosync-home%/include
+excludes/Debug = 
+build.prefs:additional.include.paths/Debug = %mosync-home%/include
+build.prefs:additional.libraries = MAUtil.lib,nativeui.lib
+build.prefs:gcc.warnings/Release = 0
+build.prefs:ignore.default.library.paths/Debug = true
+dependency.strategy = 0
+build.prefs:memory.heap/Release = 3072
+build.prefs:extra.res.sw/Debug = 
+build.prefs:additional.libraries/Debug = mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajlD.lib, MAP.lib, MAUI.lib
+build.prefs:app.output.path/Debug = Release/
+build.prefs:extra.link.sw/Debug = 
+build.prefs:memory.data/Debug = 4096
+build.prefs:ignore.default.include.paths/Release = true
+build.prefs:additional.libraries/Release = mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajl.lib,  MAP.lib, MAUI.lib
+build.prefs:memory.stack/Debug = 512
+build.prefs:project.type = 
+build.prefs:app.permissions = File\\ Storage Internet\\ Access Push\\ Notifications Vibration
+

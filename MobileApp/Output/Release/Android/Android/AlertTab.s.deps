@@ -20,12 +20,15 @@
   c:/MoSync/include/NativeUI/WidgetUtil.h \
   c:/MoSync/include/NativeUI/Widgets.h \
   c:/MoSync/include/NativeUI/ActivityIndicator.h \
+  c:/MoSync/include/NativeUI/ActionBar.h \
   c:/MoSync/include/NativeUI/Button.h \
   c:/MoSync/include/NativeUI/TextWidget.h \
   c:/MoSync/include/NativeUI/ButtonListener.h \
   c:/MoSync/include/NativeUI/CameraPreview.h \
+  c:/MoSync/include/NativeUI/Camera.h \
   c:/MoSync/include/NativeUI/CheckBox.h \
   c:/MoSync/include/NativeUI/CheckBoxListener.h \
+  c:/MoSync/include/NativeUI/CustomPicker.h \
   c:/MoSync/include/NativeUI/DatePicker.h \
   c:/MoSync/include/NativeUI/DatePickerListener.h \
   c:/MoSync/include/NativeUI/Dialog.h \
@@ -101,4 +104,8 @@
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
   c:/MoSync/include/matime.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
-  C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h
+  C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
+  c:/MoSync/include/MAUI/Image.h c:/MoSync/include/MAUI/Widget.h \
+  c:/MoSync/include/MAUtil/RefCounted.h \
+  c:/MoSync/include/MAUtil/Geometry.h c:/MoSync/include/MAUI/WidgetSkin.h \
+  c:/MoSync/include/MAUI/InputManager.h

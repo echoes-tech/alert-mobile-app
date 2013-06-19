@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <icon>
-  <instance size="default" src="icon.png" />
-   <instance size="72x72" src="EA_72.png" />
-  <instance size="36x36" src="EA_36.png" /> 
-   <instance size="48x48" src="EA_48.png" />
-  <instance size="96x96" src="EA_96.png" /> 
+  <instance size="default" src="resources/icon.png" />
+   <instance size="72x72" src="resources/EA_72.png" />
+  <instance size="36x36" src="resources/EA_36.png" /> 
+   <instance size="48x48" src="resources/EA_48.png" />
+  <instance size="96x96" src="resources/EA_96.png" /> 
 </icon>

@@ -31,18 +31,17 @@ public:
 	/**
 	 * Constructor.
 	 */
-	OptionTab(int language, String loginToken);
+	OptionTab(int language, String loginToken, eScreenResolution screenResolution);
 
 	/**
 	 * Destructor.
 	 */
 	virtual ~OptionTab();
 
-//	void drawChangeVerticalHorizontal(int width, int height);
 	void dataDownloaded(MAHandle , int );
 	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 
-//	void orientationChange(bool);
+	void orientationChange(int screenOrientation);
 
 	void createUI();
 

@@ -15,9 +15,10 @@ using namespace NativeUI;
 /**
  * This is the main screen of the application.
  */
-class ScreenMain : public TabScreen, public CustomEventListener
+class ScreenMain : public TabScreen, public ScreenListener
 {
 public:
+
 	/**
 	 * Constructor.
 	 */
@@ -53,18 +54,15 @@ public:
 	virtual void handlePointerReleased(MAPoint2d point);
 
 	void customEvent(const MAEvent& event);
-//	void drawChangeVerticalHorizontal(int width, int height);
 
-	virtual void handleWidgetEvent(
-				Widget* widget,
-				MAWidgetEventData* widgetEventData){lprintfln("EVENT LISTENER");}
+	virtual void orientationChanged(Screen* screen, int screenOrientation);
 
 
 	private:
 	int LANGUAGE;
 
+	bool maAlertPrintFirstTime;
 	bool uiCreated;
-	bool landscape;
 
 	AlertTab* alertTab;
 	TrackingTab* trackingTab;

@@ -57,6 +57,11 @@ enum eFile{
 	FILE_CLOSE
 };
 
+enum eScreenResolution{
+    LARGE_SCREEN_RESOLUTION	= 0,
+    SMALL_SCREEN_RESOLUTION = 1
+};
+
 /**
  * Detects the current platform
  * @return platform_code specific for Android, iPhone OS or WindowsPhone

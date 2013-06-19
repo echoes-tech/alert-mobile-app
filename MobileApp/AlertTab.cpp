@@ -6,14 +6,16 @@
  */
 
 #include "AlertTab.h"
-
+#include <MAUI/Image.h>
 /**
  * Constructor.
  */
-AlertTab::AlertTab(int language, String loginToken) :
+AlertTab::AlertTab(int language, String loginToken, eScreenResolution screenResolution) :
 		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken) {
 	// Set title and icon of the stack screen.
-	setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+
+	setIcon(ICON_ALERT + screenResolution);
+//	setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
 	selectedAsset = -1;
 	selectedPlugin = -1;
 	selectedInformation = -1;
@@ -41,41 +43,41 @@ void AlertTab::handleKeyPress(int keyCode) {
 	if (keyCode == MAK_BACK) {
 		if (activeMainLayout == mainLayoutAssetChoice) {
 			activeMainLayout = mainLayoutAlertChoice;
-			Screen::setMainWidget(mainLayoutAlertChoice);
 		} else if (activeMainLayout == mainLayoutPluginChoice) {
 			activeMainLayout = mainLayoutAssetChoice;
-			Screen::setMainWidget(mainLayoutAssetChoice);
 		} else if (activeMainLayout == mainLayoutInfoChoice) {
 			activeMainLayout = mainLayoutPluginChoice;
-			Screen::setMainWidget(mainLayoutPluginChoice);
 		} else if (activeMainLayout == mainLayoutOptionChoice) {
 			activeMainLayout = mainLayoutInfoChoice;
-			Screen::setMainWidget(mainLayoutInfoChoice);
 		} else if (activeMainLayout == mainLayoutOperatorChoice
 				|| activeMainLayout == mainLayoutUnitChoice) {
 			activeMainLayout = mainLayoutOptionChoice;
-			Screen::setMainWidget(mainLayoutOptionChoice);
 		} else if (activeMainLayout == mainLayoutMediaChoice) {
 			activeMainLayout = mainLayoutUserChoice;
-			Screen::setMainWidget(mainLayoutUserChoice);
 		} else if (activeMainLayout == mainLayoutMediaValueChoice) {
 			activeMainLayout = mainLayoutMediaChoice;
-			Screen::setMainWidget(mainLayoutMediaChoice);
 		} else if (activeMainLayout == mainLayoutSnoozeChoice) {
 			activeMainLayout = mainLayoutMediaValueChoice;
-			Screen::setMainWidget(mainLayoutMediaValueChoice);
 		} else if (activeMainLayout == mainLayoutAlertDetailChoice) {
 			activeMainLayout = mainLayoutAlertChoice;
-			Screen::setMainWidget(mainLayoutAlertChoice);
+		} else if (activeMainLayout == mainLayoutUserChoice) {
+			if (mapLListDestName.size() > 0) {
+				activeMainLayout = mainLayoutListDestChoice;
+			} else {
+				activeMainLayout = mainLayoutOptionChoice;
+			}
 		} else if (activeMainLayout == mainLayoutAlertChoice) {
 			maAlert("", "",
 					Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
 					Convert::tr(Screen_Main_Button_home + LANGUAGE),
 					Convert::tr(Screen_Main_Button_cancel + LANGUAGE));
 		}
+
 		activeMainLayout->setHeight(30000);
+		Screen::setMainWidget(activeMainLayout);
 		activeMainLayout->fillSpaceVertically();
 		activeMainLayout->fillSpaceHorizontally();
+
 	}
 }
 
@@ -95,6 +97,8 @@ void AlertTab::connectUrl(String url, eAlertTab fct, int verb,
 			lprintfln("POST");
 			lprintfln(jsonMessage.c_str());
 			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
+			//			Vector<String> test; test.clear();
+			//			int tmp = this->postRequest(url.c_str(), test, jsonMessage.c_str(), jsonMessage.size());
 			lprintfln("POST send = %d", tmp);
 		}
 	} else {
@@ -174,26 +178,36 @@ void AlertTab::dataDownloaded(MAHandle data, int result) {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
-	} else if (result == 404 && fonction == ALERT_LIST ) {
-		lListTitle->setText(Convert::tr(alert_list_Label_title_no_alert + LANGUAGE));
-	}
-	else {
+	} else if (result == 404 && fonction == ALERT_LIST) {
+		lListTitle->setText(
+				Convert::tr(alert_list_Label_title_no_alert + LANGUAGE));
+	}  else if (result == 503 && fonction == POST_ALERT) {
+		maMessageBox("Error", "La creation d'alerte à echoué ");
+		activeMainLayout = mainLayoutAlertChoice;
+	} else {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 	}
 	if (connERR >= 3) {
-		sMessage = "Connection Error. ERREUR :";
-		sMessage += Convert::toString(result);
-		maMessageBox("Connection Error", sMessage.c_str());
+		if (result != 404) {
+			sMessage = "Connection Error. ERREUR :";
+			sMessage += Convert::toString(result);
+			maMessageBox("Connection Error", sMessage.c_str());
+		}
 		getSystemConnection();
+	}
+	if (result != RES_OK) {
+		activeMainLayout->setHeight(30000);
+		Screen::setMainWidget(activeMainLayout);
+		activeMainLayout->fillSpaceVertically();
+		activeMainLayout->fillSpaceHorizontally();
 	}
 }
 
 void AlertTab::parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root) {
 	lprintfln("parseJSONAlertRecipientList");
 	int tmpSize = mapLVIRecipients.size();
-	for(int idx1 = 0; idx1 < tmpSize ; idx1++)
-	{
+	for (int idx1 = 0; idx1 < tmpSize; idx1++) {
 		lVRecipients->removeChild(mapLVIRecipients[idx1]);
 		mapLVIRecipients[idx1]->removeChild(mapLRecipients[idx1]);
 		delete mapLRecipients[idx1];
@@ -209,11 +223,13 @@ void AlertTab::parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is valid :) \n");
 		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
-			MAUtil::YAJLDom::Value* valueTmp1 = valueTmp->getValueForKey("media_value");
+			MAUtil::YAJLDom::Value* valueTmp1 = valueTmp->getValueForKey(
+					"media_value");
 
 			mapLVIRecipients[idx] = new ListViewItem();
 			lVRecipients->addChild(mapLVIRecipients[idx]);
-			mapLRecipients[idx] = new Label(valueTmp1->getValueForKey("value")->toString());
+			mapLRecipients[idx] = new Label(
+					valueTmp1->getValueForKey("value")->toString());
 			mapLVIRecipients[idx]->addChild(mapLRecipients[idx]);
 		}
 
@@ -222,23 +238,23 @@ void AlertTab::parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root) {
 	}
 }
 
-void AlertTab::parseJSONUnitsTypes(MAUtil::YAJLDom::Value* root){
+void AlertTab::parseJSONUnitsTypes(MAUtil::YAJLDom::Value* root) {
 	lprintfln("parseJSONUnitsTypes");
-		if (NULL == root || YAJLDom::Value::NUL == root->getType()
-				|| YAJLDom::Value::ARRAY == root->getType()) {
-			lprintfln("Root node is not valid\n");
+	if (NULL == root || YAJLDom::Value::NUL == root->getType()
+			|| YAJLDom::Value::ARRAY == root->getType()) {
+		lprintfln("Root node is not valid\n");
+	} else {
+		lprintfln("Root node is valid :) \n");
+		//		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(0);
+		//		MAUtil::YAJLDom::Value* valueTmp1 = root->getValueForKey("id");
+		if (root->getValueForKey("name")->toString() == "number") {
+			eBValue->setInputMode(EDIT_BOX_INPUT_MODE_NUMERIC);
 		} else {
-			lprintfln("Root node is valid :) \n");
-	//		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(0);
-	//		MAUtil::YAJLDom::Value* valueTmp1 = root->getValueForKey("id");
-			if (root->getValueForKey("name")->toString() == "number") {
-				eBValue->setInputMode(EDIT_BOX_INPUT_MODE_NUMERIC);
-			} else {
-				eBValue->setInputMode(EDIT_BOX_INPUT_MODE_ANY);
-			}
-			Screen::setMainWidget(mainLayoutOptionChoice);
-			activeMainLayout = mainLayoutOptionChoice;
+			eBValue->setInputMode(EDIT_BOX_INPUT_MODE_ANY);
 		}
+		Screen::setMainWidget(mainLayoutOptionChoice);
+		activeMainLayout = mainLayoutOptionChoice;
+	}
 }
 
 void AlertTab::parseJSONSearchInfo(MAUtil::YAJLDom::Value* root) {
@@ -260,7 +276,9 @@ void AlertTab::parseJSONSearchInfo(MAUtil::YAJLDom::Value* root) {
 			eBKeyValue->setEnabled(true);
 		}
 		String urlTmp = HOST;
-		urlTmp += "/units/" + Convert::toString(mapInfoIdUnit[selectedInformation]) + "/types/";
+		urlTmp += "/units/"
+				+ Convert::toString(mapInfoIdUnit[selectedInformation])
+				+ "/types/";
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, UNITS_TYPES);
 	}
@@ -308,13 +326,11 @@ void AlertTab::parseJSONAlertInfo(MAUtil::YAJLDom::Value* root) {
 		lAlertName->setText(
 				Convert::tr(alert_create_String_Alert_Name + LANGUAGE)
 						+ valueTmp1->getValueForKey("name")->toString());
-		MAUtil::YAJLDom::Value* valueTmp2 = root->getValueForKey(
-				"criteria");
+		MAUtil::YAJLDom::Value* valueTmp2 = root->getValueForKey("criteria");
 		lAlertOperator->setText(
 				Convert::tr(alert_create_String_Operator_Name + LANGUAGE)
 						+ valueTmp2->getValueForKey("name")->toString());
-		MAUtil::YAJLDom::Value* valueTmp3 = root->getValueForKey(
-				"alert_value");
+		MAUtil::YAJLDom::Value* valueTmp3 = root->getValueForKey("alert_value");
 		lAlertValue->setText(
 				Convert::tr(alert_create_String_Threshold_Value + LANGUAGE)
 						+ valueTmp3->getValueForKey("value")->toString());
@@ -332,7 +348,8 @@ void AlertTab::parseJSONAlertInfo(MAUtil::YAJLDom::Value* root) {
 //		Screen::setMainWidget(mainLayoutAlertDetailChoice);
 //			activeMainLayout = mainLayoutAlertDetailChoice;
 		String urlTmp = HOST;
-		urlTmp += "/alerts/" + Convert::toString(mapAlertId[posOptionAlert]) + "/recipients/";
+		urlTmp += "/alerts/" + Convert::toString(mapAlertId[posOptionAlert])
+				+ "/recipients/";
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, ALERT_RECIPIENT_LIST);
 	}
@@ -354,7 +371,7 @@ void AlertTab::parseJSONPostMediaSpe(MAUtil::YAJLDom::Value* root) {
 		String urlTmp = HOST;
 		urlTmp += "/medias/specializations/";
 		urlTmp += _LOGINTOKEN;
-		String message = "{\"ams_snooze\": ";
+		String message = "                {\"ams_snooze\": ";
 		message += Convert::toString(mapSnoozeList[currentAMS]);
 //				lprintfln(" mapSnoozeList[currentAMS] = %d",  mapSnoozeList[currentAMS]);
 		message += ",\"mev_id\" : ";
@@ -367,7 +384,7 @@ void AlertTab::parseJSONPostMediaSpe(MAUtil::YAJLDom::Value* root) {
 		urlTmp += "/alerts/";
 		urlTmp += _LOGINTOKEN;
 
-		String message = "{\"name\": \""
+		String message = "                        {\"name\": \""
 				+ mapLAssetName[selectedAsset]->getText() + " - "
 				+ mapLPluginName[selectedPlugin]->getText() + " - "
 				+ mapLInfoName[selectedInformation]->getText()
@@ -420,29 +437,28 @@ void AlertTab::parseJSONMediaValue(MAUtil::YAJLDom::Value* root) {
 	} else {
 		lprintfln("Root node is valid :) \n");
 
-		if(mainLayoutMediaValueChoice == NULL)
-		{
+		if (mainLayoutMediaValueChoice == NULL) {
 			mainLayoutMediaValueChoice = new VerticalLayout();
 			// Make the layout fill the entire screen.
 			mainLayoutMediaValueChoice->fillSpaceHorizontally();
 			mainLayoutMediaValueChoice->fillSpaceVertically();
 
-			mediaValueTitle = new Label(Convert::tr(alert_create_Label_media_value_choice + LANGUAGE));
+			mediaValueTitle = new Label(
+					Convert::tr(
+							alert_create_Label_media_value_choice + LANGUAGE));
 			mediaValueTitle->fillSpaceHorizontally();
 			mainLayoutMediaValueChoice->addChild(mediaValueTitle);
 			lVMediaValue = new ListView();
 			lVMediaValue->addListViewListener(this);
 			mainLayoutMediaValueChoice->addChild(lVMediaValue);
-		}
-		else
-		{
+		} else {
 			int index = mapLVIMediaValue.size();
 			for (int idx = 0; idx < index; idx++) {
-					lVMediaValue->removeChild(mapLVIMediaValue[idx]);
-					mapLVIMediaValue[idx]->removeChild(mapLMediaValueName[idx]);
-					delete mapLMediaValueName[idx];
-					delete mapLVIMediaValue[idx];
-				}
+				lVMediaValue->removeChild(mapLVIMediaValue[idx]);
+				mapLVIMediaValue[idx]->removeChild(mapLMediaValueName[idx]);
+				delete mapLMediaValueName[idx];
+				delete mapLVIMediaValue[idx];
+			}
 			mapLMediaValueName.clear();
 			mapLVIMediaValue.clear();
 		}
@@ -470,22 +486,20 @@ void AlertTab::parseJSONMediaType(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutMediaChoice == NULL)
-		{
+		if (mainLayoutMediaChoice == NULL) {
 			mainLayoutMediaChoice = new VerticalLayout();
 			// Make the layout fill the entire screen.
 			mainLayoutMediaChoice->fillSpaceHorizontally();
 			mainLayoutMediaChoice->fillSpaceVertically();
 
-			mediaTitle = new Label(Convert::tr(alert_create_Label_media_choice + LANGUAGE));
+			mediaTitle = new Label(
+					Convert::tr(alert_create_Label_media_choice + LANGUAGE));
 			mediaTitle->fillSpaceHorizontally();
 			mainLayoutMediaChoice->addChild(mediaTitle);
 			lVMedia = new ListView();
 			lVMedia->addListViewListener(this);
 			mainLayoutMediaChoice->addChild(lVMedia);
-		}
-		else
-		{
+		} else {
 			int index = mapLVIMedia.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVMedia->removeChild(mapLVIMedia[idx]);
@@ -521,20 +535,19 @@ void AlertTab::parseJSONUserForOrganisation(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutUserChoice == NULL)
-		{
-		mainLayoutUserChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
-		mainLayoutUserChoice->fillSpaceHorizontally();
-		mainLayoutUserChoice->fillSpaceVertically();
-		userTitle = new Label(Convert::tr(alert_create_Label_user_choice + LANGUAGE));
-		userTitle->fillSpaceHorizontally();
+		if (mainLayoutUserChoice == NULL) {
+			mainLayoutUserChoice = new VerticalLayout();
+			// Make the layout fill the entire screen.
+			mainLayoutUserChoice->fillSpaceHorizontally();
+			mainLayoutUserChoice->fillSpaceVertically();
+			userTitle = new Label(
+					Convert::tr(alert_create_Label_user_choice + LANGUAGE));
+			userTitle->fillSpaceHorizontally();
 			mainLayoutUserChoice->addChild(userTitle);
-		lVUser = new ListView();
-		lVUser->addListViewListener(this);
-		mainLayoutUserChoice->addChild(lVUser);
-		}
-		else {
+			lVUser = new ListView();
+			lVUser->addListViewListener(this);
+			mainLayoutUserChoice->addChild(lVUser);
+		} else {
 			int index = mapLVIUser.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVUser->removeChild(mapLVIUser[idx]);
@@ -633,22 +646,21 @@ void AlertTab::parseJSONOperator(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutOperatorChoice == NULL)
-		{
-		mainLayoutOperatorChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
-		mainLayoutOperatorChoice->fillSpaceHorizontally();
-		mainLayoutOperatorChoice->fillSpaceVertically();
-		operatorTitle = new Label(Convert::tr(alert_create_Label_operator_choice + LANGUAGE));
-		mainLayoutOperatorChoice->addChild(operatorTitle);
+		if (mainLayoutOperatorChoice == NULL) {
+			mainLayoutOperatorChoice = new VerticalLayout();
+			// Make the layout fill the entire screen.
+			mainLayoutOperatorChoice->fillSpaceHorizontally();
+			mainLayoutOperatorChoice->fillSpaceVertically();
+			operatorTitle = new Label(
+					Convert::tr(alert_create_Label_operator_choice + LANGUAGE));
+			operatorTitle->fillSpaceHorizontally();
+			mainLayoutOperatorChoice->addChild(operatorTitle);
 //		Screen::setMainWidget(mainLayoutOperatorChoice);
 //		activeMainLayout = mainLayoutOperatorChoice;
-		lVOperator = new ListView();
-		lVOperator->addListViewListener(this);
-		mainLayoutOperatorChoice->addChild(lVOperator);
-		}
-		else
-		{
+			lVOperator = new ListView();
+			lVOperator->addListViewListener(this);
+			mainLayoutOperatorChoice->addChild(lVOperator);
+		} else {
 			int index = mapLVIOperator.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVOperator->removeChild(mapLVIOperator[idx]);
@@ -684,21 +696,19 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 		lprintfln("Root node is not valid\n");
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutAssetChoice == NULL)
-		{
-		mainLayoutAssetChoice = new VerticalLayout();
-		mainLayoutAssetChoice->fillSpaceHorizontally();
+		if (mainLayoutAssetChoice == NULL) {
+			mainLayoutAssetChoice = new VerticalLayout();
+			mainLayoutAssetChoice->fillSpaceHorizontally();
 
-		assetTitle = new Label();
-		assetTitle->fillSpaceHorizontally();
-		assetTitle->setText(
-				Convert::tr(alert_create_Label_asset_choice + LANGUAGE));
-		mainLayoutAssetChoice->addChild(assetTitle);
-		lVAsset = new ListView();
-		lVAsset->addListViewListener(this);
-		mainLayoutAssetChoice->addChild(lVAsset);
-		}
-		else{
+			assetTitle = new Label();
+			assetTitle->fillSpaceHorizontally();
+			assetTitle->setText(
+					Convert::tr(alert_create_Label_asset_choice + LANGUAGE));
+			mainLayoutAssetChoice->addChild(assetTitle);
+			lVAsset = new ListView();
+			lVAsset->addListViewListener(this);
+			mainLayoutAssetChoice->addChild(lVAsset);
+		} else {
 			int index = mapLVIAsset.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVAsset->removeChild(mapLVIAsset[idx]);
@@ -721,6 +731,7 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 				valueTmp->getValueForKey("name")->toString().c_str());
 //				mapLAssetName[idx]->setText(mapAssetName[idx].c_str());
 		mapLVIAsset[idx] = new ListViewItem();
+		mapLVIAsset[idx]->setAccessoryType(LIST_VIEW_ITEM_ACCESSORY_DETAIL);
 		mapLVIAsset[idx]->addChild(mapLAssetName[idx]);
 		lVAsset->addChild(mapLVIAsset[idx]);
 
@@ -777,21 +788,24 @@ void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
 
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutInfoChoice == NULL){
-		mainLayoutInfoChoice = new VerticalLayout();
-		// Make the layout fill the entire screen.
-		mainLayoutInfoChoice->fillSpaceHorizontally();
-		mainLayoutInfoChoice->fillSpaceVertically();
-		infoTitle = new Label(Convert::tr(alert_create_Label_info_choice + LANGUAGE));
-		infoTitle->fillSpaceHorizontally();
-		mainLayoutInfoChoice->addChild(infoTitle);
+		if (mainLayoutInfoChoice == NULL) {
+			mainLayoutInfoChoice = new VerticalLayout();
+			// Make the layout fill the entire screen.
+			mainLayoutInfoChoice->fillSpaceHorizontally();
+			mainLayoutInfoChoice->fillSpaceVertically();
+			followAlertInformation = new Label();
+			followAlertInformation->setFontSize(13);
+			mainLayoutInfoChoice->addChild(followAlertInformation);
+			infoTitle = new Label(
+					Convert::tr(alert_create_Label_info_choice + LANGUAGE));
+			infoTitle->fillSpaceHorizontally();
+			mainLayoutInfoChoice->addChild(infoTitle);
 //		Screen::setMainWidget(mainLayoutInfoChoice);
 //		activeMainLayout = mainLayoutInfoChoice;
-		lVInfo = new ListView();
-		lVInfo->addListViewListener(this);
-		mainLayoutInfoChoice->addChild(lVInfo);
-		}
-		else {
+			lVInfo = new ListView();
+			lVInfo->addListViewListener(this);
+			mainLayoutInfoChoice->addChild(lVInfo);
+		} else {
 			int index = mapLVIInfo.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVInfo->removeChild(mapLVIInfo[idx]);
@@ -803,27 +817,35 @@ void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
 			mapLVIInfo.clear();
 		}
 
-	lprintfln("%d\n", root->getNumChildValues());
-	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
+		followAlertInformation->setText(followAlertPlugin->getText() + mapLPluginName[selectedPlugin]->getText() + "/");
 
-		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
-		if (valueTmp->getValueForKey("display")->toString() == "true") {
-			MAUtil::YAJLDom::Value* valueTmp1 = valueTmp->getValueForKey("id");
-			mapLInfoName[idx] = new Label();
-			mapLInfoName[idx]->setText(
-					valueTmp->getValueForKey("name")->toString().c_str());
-			mapInfoIdSea[idx] = valueTmp1->getValueForKey("search_id")->toInt();
-			mapInfoIdSrc[idx] = valueTmp1->getValueForKey("source_id")->toInt();
-			mapInfoIdUnit[idx] = valueTmp1->getValueForKey("unit_id")->toInt();
-			mapInfoInfValueNum[idx] = valueTmp1->getValueForKey(
-					"sub_search_number")->toInt();
-			mapLVIInfo[idx] = new ListViewItem();
-			mapLVIInfo[idx]->addChild(mapLInfoName[idx]);
-			lVInfo->addChild(mapLVIInfo[idx]);
+		lprintfln("%d\n", root->getNumChildValues());
+		int idx1 = 0;
+		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
+
+			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
+			if (valueTmp->getValueForKey("display")->toString() == "true") {
+				MAUtil::YAJLDom::Value* valueTmp1 = valueTmp->getValueForKey(
+						"id");
+				mapLInfoName[idx1] = new Label();
+				mapLInfoName[idx1]->setText(
+						valueTmp->getValueForKey("name")->toString().c_str());
+				mapInfoIdSea[idx1] =
+						valueTmp1->getValueForKey("search_id")->toInt();
+				mapInfoIdSrc[idx1] =
+						valueTmp1->getValueForKey("source_id")->toInt();
+				mapInfoIdUnit[idx1] =
+						valueTmp1->getValueForKey("unit_id")->toInt();
+				mapInfoInfValueNum[idx1] = valueTmp1->getValueForKey(
+						"sub_search_number")->toInt();
+				mapLVIInfo[idx1] = new ListViewItem();
+				mapLVIInfo[idx1]->addChild(mapLInfoName[idx1]);
+				lVInfo->addChild(mapLVIInfo[idx1]);
+				idx1 ++;
+			}
 		}
-	}
-	Screen::setMainWidget(mainLayoutInfoChoice);
-	activeMainLayout = mainLayoutInfoChoice;
+		Screen::setMainWidget(mainLayoutInfoChoice);
+		activeMainLayout = mainLayoutInfoChoice;
 	}
 }
 
@@ -835,21 +857,23 @@ void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
 
 	} else {
 		lprintfln("Root node is valid :) \n");
-		if(mainLayoutPluginChoice == NULL)
-		{
-		mainLayoutPluginChoice = new VerticalLayout();
-		mainLayoutPluginChoice->fillSpaceHorizontally();
-		mainLayoutPluginChoice->fillSpaceVertically();
-		pluginTitle = new Label(Convert::tr(alert_create_Label_plugin_choice + LANGUAGE));
-		pluginTitle->fillSpaceHorizontally();
-		mainLayoutPluginChoice->addChild(pluginTitle);
+		if (mainLayoutPluginChoice == NULL) {
+			mainLayoutPluginChoice = new VerticalLayout();
+			mainLayoutPluginChoice->fillSpaceHorizontally();
+			mainLayoutPluginChoice->fillSpaceVertically();
+			followAlertPlugin = new Label();
+			followAlertPlugin->setFontSize(13);
+			mainLayoutPluginChoice->addChild(followAlertPlugin);
+			pluginTitle = new Label(
+					Convert::tr(alert_create_Label_plugin_choice + LANGUAGE));
+			pluginTitle->fillSpaceHorizontally();
+			mainLayoutPluginChoice->addChild(pluginTitle);
 //		Screen::setMainWidget(mainLayoutPluginChoice);
 //		activeMainLayout = mainLayoutPluginChoice;
-		lVPlugin = new ListView();
-		lVPlugin->addListViewListener(this);
-		mainLayoutPluginChoice->addChild(lVPlugin);
-		}
-		else {
+			lVPlugin = new ListView();
+			lVPlugin->addListViewListener(this);
+			mainLayoutPluginChoice->addChild(lVPlugin);
+		} else {
 			int index = mapLVIPlugin.size();
 			for (int idx = 0; idx < index; idx++) {
 				lVPlugin->removeChild(mapLVIPlugin[idx]);
@@ -860,26 +884,26 @@ void AlertTab::parseJSONPlugin(MAUtil::YAJLDom::Value* root) {
 			mapLPluginName.clear();
 			mapLVIPlugin.clear();
 		}
+		followAlertPlugin->setText( mapLAssetName[selectedAsset]->getText() + "/");
 
-	lprintfln("%d\n", root->getNumChildValues());
-	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
-		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
+		lprintfln("%d\n", root->getNumChildValues());
+		for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
+			MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
-		String test1 = valueTmp->getValueForKey("name")->toString();
+			String test1 = valueTmp->getValueForKey("name")->toString();
 //		mapPluginName[idx] = valueTmp->getValueForKey("name")->toString();
-		mapPluginId[idx] = valueTmp->getValueForKey("id")->toInt();
-		mapLPluginName[idx] = new Label();
-		mapLPluginName[idx]->setText(
-				valueTmp->getValueForKey("name")->toString().c_str());
-		mapLVIPlugin[idx] = new ListViewItem();
-		mapLVIPlugin[idx]->addChild(mapLPluginName[idx]);
-		lVPlugin->addChild(mapLVIPlugin[idx]);
-	}
-	Screen::setMainWidget(mainLayoutPluginChoice);
-	activeMainLayout = mainLayoutPluginChoice;
+			mapPluginId[idx] = valueTmp->getValueForKey("id")->toInt();
+			mapLPluginName[idx] = new Label();
+			mapLPluginName[idx]->setText(
+					valueTmp->getValueForKey("name")->toString().c_str());
+			mapLVIPlugin[idx] = new ListViewItem();
+			mapLVIPlugin[idx]->addChild(mapLPluginName[idx]);
+			lVPlugin->addChild(mapLVIPlugin[idx]);
+		}
+		Screen::setMainWidget(mainLayoutPluginChoice);
+		activeMainLayout = mainLayoutPluginChoice;
 	}
 }
-
 
 void AlertTab::listViewItemClicked(ListView* listView,
 		ListViewItem* listViewItem) {
@@ -923,6 +947,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 			}
 		}
 	} else if (listView == lVAsset) {
+		Screen::setMainWidget(activityIndicator);
 		for (int i = 0; i < mapLVIAsset.size(); i++) {
 			if (mapLVIAsset[i] == listViewItem) {
 				selectedAsset = i;
@@ -936,6 +961,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 			}
 		}
 	} else if (listView == lVPlugin) {
+		Screen::setMainWidget(activityIndicator);
 		for (int i = 0; i < mapLVIPlugin.size(); i++) {
 			if (mapLVIPlugin[i] == listViewItem) {
 				selectedPlugin = i;
@@ -949,7 +975,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 			}
 		}
 	} else if (listView == lVInfo) {
-
+		Screen::setMainWidget(activityIndicator);
 		for (int idx = 0; idx < mapInfoIdUnit.size(); idx++) {
 			if (listViewItem == mapLVIInfo[idx]) {
 				selectedInformation = idx;
@@ -963,14 +989,18 @@ void AlertTab::listViewItemClicked(ListView* listView,
 		connectUrl(urlTmp, UNIT_INFO);
 		createOptionPage();
 
-	} else if (listViewItem == mapLVIOption[1]) {
-		maWidgetSetProperty(eBKeyValue->getWidgetHandle(),MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
-		maWidgetSetProperty(eBValue->getWidgetHandle(),MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+	} else if (listViewItem == mapLVIOption[0]) {
+		Screen::setMainWidget(activityIndicator);
+		maWidgetSetProperty(eBKeyValue->getWidgetHandle(),
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+		maWidgetSetProperty(eBValue->getWidgetHandle(),
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		String urlTmp = HOST;
 		urlTmp += "/criteria/";
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, OPERATOR_LIST);
 	} else if (listView == lVOperator) {
+
 		String criterionTmp = Convert::tr(
 				alert_create_String_Operator_Name + LANGUAGE);
 		for (int idx = 0; idx < mapLVIOperator.size(); idx++) {
@@ -982,10 +1012,14 @@ void AlertTab::listViewItemClicked(ListView* listView,
 		criterion->setText(criterionTmp);
 		Screen::setMainWidget(mainLayoutOptionChoice);
 		activeMainLayout = mainLayoutOptionChoice;
-	} else if (listViewItem == mapLVIOption[0]) {
-		maWidgetSetProperty(eBKeyValue->getWidgetHandle(),MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
-				maWidgetSetProperty(eBValue->getWidgetHandle(),MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+	} else if (listViewItem == mapLVIOption[1]) {
+		Screen::setMainWidget(activityIndicator);
+		maWidgetSetProperty(eBKeyValue->getWidgetHandle(),
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+		maWidgetSetProperty(eBValue->getWidgetHandle(),
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		if (nbOfSubUnits != 0 && mapUnitId.size() == 1) {
+
 			String urlTmp1 = HOST;
 			urlTmp1 += "/units/";
 			urlTmp1 += Convert::toString(mapUnitId[0]);
@@ -1010,6 +1044,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 		Screen::setMainWidget(mainLayoutOptionChoice);
 		activeMainLayout = mainLayoutOptionChoice;
 	} else if (listView == lVUser) {
+		Screen::setMainWidget(activityIndicator);
 		for (int idx = 0; idx < mapLVIUser.size(); idx++) {
 			if (mapLVIUser[idx] == listViewItem) {
 				selectedUser = idx;
@@ -1022,6 +1057,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 		urlTmp1 += _LOGINTOKEN;
 		connectUrl(urlTmp1, MEDIA_TYPE);
 	} else if (listView == lVMedia) {
+		Screen::setMainWidget(activityIndicator);
 		for (int idx = 0; idx < mapLVIMedia.size(); idx++) {
 			if (mapLVIMedia[idx] == listViewItem) {
 				selectedMedia = idx;
@@ -1047,6 +1083,7 @@ void AlertTab::listViewItemClicked(ListView* listView,
 void AlertTab::buttonClicked(Widget* button) {
 	lprintfln("bouton click");
 	if (button == bAddAlert) {
+		Screen::setMainWidget(activityIndicator);
 		String urlTmp = HOST;
 		urlTmp += "/assets/";
 		urlTmp += _LOGINTOKEN;
@@ -1057,11 +1094,13 @@ void AlertTab::buttonClicked(Widget* button) {
 		posOptionAlert = -1;
 	} else if (button == bView) {
 		//		TODO :
+		Screen::setMainWidget(activityIndicator);
 		String urlTmp = HOST;
 		urlTmp += "/alerts/" + Convert::toString(mapAlertId[posOptionAlert]);
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, ALERT_INFO);
 	} else if (button == bDelete) {
+		Screen::setMainWidget(activityIndicator);
 		//  Attention on ne peut pas regarder le resultat de la requete avec HTTP_DELETE
 		HttpConnection httpCon(this);
 		String urlTmp = HOST;
@@ -1086,11 +1125,11 @@ void AlertTab::buttonClicked(Widget* button) {
 
 	} else if (button == bDest) {
 		maWidgetSetProperty(eBKeyValue->getWidgetHandle(),
-										MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		maWidgetSetProperty(eBValue->getWidgetHandle(),
-												MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		if (optionPageValid()) {
-
+			Screen::setMainWidget(activityIndicator);
 			String urlTmp = HOST;
 			urlTmp += "/organizations/users/";
 			urlTmp += _LOGINTOKEN;
@@ -1098,7 +1137,7 @@ void AlertTab::buttonClicked(Widget* button) {
 		}
 	} else if (button == bAddToList) {
 		maWidgetSetProperty(eBSnooze->getWidgetHandle(),
-								MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
+				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 		if (snoozePageValid()) {
 			int index = mapSnoozeList.size();
 			mapSnoozeList[index] = Convert::toInt(eBSnooze->getText().c_str());
@@ -1114,15 +1153,20 @@ void AlertTab::buttonClicked(Widget* button) {
 			lVListDest->addChild(mapLVIListDest[index]);
 		}
 	} else if (button == bAddOtherDest) {
+		activeMainLayout->setHeight(30000);
 		Screen::setMainWidget(mainLayoutUserChoice);
+		activeMainLayout->fillSpaceVertically();
+		activeMainLayout->fillSpaceHorizontally();
+
 		activeMainLayout = mainLayoutUserChoice;
 	} else if (button == bCreateAlert) {
+		Screen::setMainWidget(activityIndicator);
 		mapAMSId.clear();
 		currentAMS = 0;
 		String urlTmp = HOST;
 		urlTmp += "/medias/specializations/";
 		urlTmp += _LOGINTOKEN;
-		String message = "{\"ams_snooze\": ";
+		String message = "             {\"ams_snooze\": ";
 		message += Convert::toString(mapSnoozeList[0]);
 		message += ",\"mev_id\" : ";
 		message += Convert::toString(mapMediaValueListId[0]);
@@ -1132,13 +1176,20 @@ void AlertTab::buttonClicked(Widget* button) {
 }
 
 void AlertTab::createDestListPage() {
+	if(mainLayoutListDestChoice == NULL){
 	MAExtent screenSize = maGetScrSize();
 	int width = EXTENT_X(screenSize);
 
 	mainLayoutListDestChoice = new VerticalLayout();
 	mainLayoutListDestChoice->fillSpaceHorizontally();
 	mainLayoutListDestChoice->fillSpaceVertically();
-	listDestTitle = new Label(Convert::tr(alert_create_Label_list_dest_choice + LANGUAGE));
+
+	followAlertlistDest = new Label();
+	followAlertlistDest->setFontSize(13);
+	mainLayoutListDestChoice->addChild(followAlertlistDest);
+
+	listDestTitle = new Label(
+			Convert::tr(alert_create_Label_list_dest_choice + LANGUAGE));
 	listDestTitle->fillSpaceHorizontally();
 	mainLayoutListDestChoice->addChild(listDestTitle);
 
@@ -1164,6 +1215,7 @@ void AlertTab::createDestListPage() {
 	bCreateAlert->addButtonListener(this);
 	lVIButtonListDest->addChild(bCreateAlert);
 	mainLayoutListDestChoice->addChild(lVIButtonListDest);
+	}
 
 //	Screen::setMainWidget(mainLayoutListDestChoice); //DEBUG
 }
@@ -1173,7 +1225,8 @@ void AlertTab::createSnoozePage() {
 	mainLayoutSnoozeChoice->fillSpaceHorizontally();
 	mainLayoutSnoozeChoice->fillSpaceVertically();
 
-	snoozeTitle = new Label(Convert::tr(alert_create_Label_snooze_choice + LANGUAGE));
+	snoozeTitle = new Label(
+			Convert::tr(alert_create_Label_snooze_choice + LANGUAGE));
 	snoozeTitle->fillSpaceHorizontally();
 	mainLayoutSnoozeChoice->addChild(snoozeTitle);
 
@@ -1183,7 +1236,7 @@ void AlertTab::createSnoozePage() {
 	HorizontalLayout* hLSnooze = new HorizontalLayout();
 	hLSnooze->fillSpaceVertically();
 	eBSnooze = new EditBox();
-//	eBSnooze->addEditBoxListener(this);
+	eBSnooze->addEditBoxListener(this);
 	eBSnooze->setInputMode(EDIT_BOX_INPUT_MODE_NUMERIC);
 	hLSnooze->addChild(eBSnooze);
 	lSecond = new Label();
@@ -1200,12 +1253,12 @@ void AlertTab::createSnoozePage() {
 }
 
 void AlertTab::createUnitPage() {
-	if(mainLayoutUnitChoice == NULL)
-	{
+	if (mainLayoutUnitChoice == NULL) {
 		mainLayoutUnitChoice = new VerticalLayout();
 		mainLayoutUnitChoice->fillSpaceHorizontally();
 		mainLayoutUnitChoice->fillSpaceVertically();
-		unitTitle = new Label(Convert::tr(alert_create_Label_unit_choice + LANGUAGE));
+		unitTitle = new Label(
+				Convert::tr(alert_create_Label_unit_choice + LANGUAGE));
 		unitTitle->fillSpaceHorizontally();
 		mainLayoutUnitChoice->addChild(unitTitle);
 		lVUnit = new ListView();
@@ -1222,10 +1275,15 @@ void AlertTab::createUnitPage() {
 }
 
 void AlertTab::createOptionPage() {
+	if(mainLayoutOptionChoice == NULL)
+	{
 	mainLayoutOptionChoice = new VerticalLayout();
 	mainLayoutOptionChoice->fillSpaceHorizontally();
 	mainLayoutOptionChoice->fillSpaceVertically();
-
+//	mainLayoutOptionChoice->setScrollable(true);
+	followAlertOption = new Label();
+	followAlertOption->setFontSize(13);
+	mainLayoutOptionChoice->addChild(followAlertOption);
 
 	optionTitle = new Label(Convert::tr(alert_create_Label_option_choice + LANGUAGE));
 	optionTitle->fillSpaceHorizontally();
@@ -1241,29 +1299,39 @@ void AlertTab::createOptionPage() {
 	keyValue->setText(Convert::tr(alert_create_Label_key_value + LANGUAGE));
 
 	eBKeyValue = new EditBox();
+	eBKeyValue->addEditBoxListener(this);
 	hlTmp->addChild(keyValue);
-	hlTmp->setHeight(50);
+//	hlTmp->setHeight(eBKeyValue->getHeight() + 5);
 	hlTmp->addChild(eBKeyValue);
 
+		lVCriteria = new ListView();
+		lVCriteria->addListViewListener(this);
+		lVCriteria->fillSpaceVertically();
+		criterion = new Label();
+		criterion->setText(Convert::tr(alert_create_Label_operator + LANGUAGE));
+		mapLVIOption[0] = new ListViewItem();
+		mapLVIOption[0]->addChild(criterion);
+		lVCriteria->addChild(mapLVIOption[0]);
+		mainLayoutOptionChoice->addChild(lVCriteria);
+
+
 	HorizontalLayout *hLTmp1 = new HorizontalLayout();
-	hLTmp1->setHeight(50);
 
 	value = new Label();
 	value->setText(Convert::tr(alert_create_Label_value + LANGUAGE));
 	hLTmp1->addChild(value);
 	eBValue = new EditBox();
+	eBValue->addEditBoxListener(this);
+//	hLTmp1->setHeight(eBKeyValue->getHeight() + 5);
 	hLTmp1->addChild(eBValue);
 	mainLayoutOptionChoice->addChild(hLTmp1);
-	mapLVIOption[0] = new ListViewItem();
-	unit = new Label();
-	unit->setText("unit : ");
-	mapLVIOption[0]->addChild(unit);
-	lVOption->addChild(mapLVIOption[0]);
 	mapLVIOption[1] = new ListViewItem();
-		criterion = new Label();
-		criterion->setText(Convert::tr(alert_create_Label_operator + LANGUAGE));
-		mapLVIOption[1]->addChild(criterion);
-		lVOption->addChild(mapLVIOption[1]);
+	unit = new Label();
+
+	mapLVIOption[1]->addChild(unit);
+	lVOption->addChild(mapLVIOption[1]);
+
+
 	mainLayoutOptionChoice->addChild(lVOption);
 	bDest = new Button();
 	bDest->addButtonListener(this);
@@ -1271,6 +1339,14 @@ void AlertTab::createOptionPage() {
 	mainLayoutOptionChoice->addChild(bDest);
 //	Screen::setMainWidget(mainLayoutOptionChoice);
 //	activeMainLayout = mainLayoutOptionChoice;
+	}
+
+	followAlertOption->setText(followAlertInformation->getText() + mapLInfoName[selectedInformation]->getText());
+	followAlertlistDest->setText(followAlertOption->getText());
+		criterion->setText(Convert::tr(alert_create_Label_operator + LANGUAGE));
+		eBValue->setText("");
+		selectedOperator = -1;
+
 }
 
 void AlertTab::createDetailAlertPage() {
@@ -1301,7 +1377,7 @@ void AlertTab::createDetailAlertPage() {
 }
 
 void AlertTab::createUI() {
-
+	activityIndicator = new ActivityIndicator();
 	String urlTmp = HOST;
 	urlTmp += "/alerts/";
 	urlTmp += _LOGINTOKEN;
@@ -1357,28 +1433,16 @@ bool AlertTab::snoozePageValid() {
 	return true;
 }
 
-//void AlertTab::drawChangeVerticalHorizontal(int width, int height) {
-//
-//	if (width < height) // Landscape
-//			{
-//		setTitle(Convert::getString(CREATE_ALERT_TAB_EN));
-//	} else // Portrait
-//	{
-//		setTitle("");
-//		setIcon(LOGO);
-//	}
-//}
+void AlertTab::orientationChange(int screenOrientation) {
 
-
-//void AlertTab::orientationChange(bool landscape) {
-//
-//	if (landscape) {
-//		lprintfln("Orientation paysage");
-//		Screen::setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
-//	} else // Portrait
-//	{
-//		lprintfln("Orientation Portrait");
-//		Screen::setTitle("");
-//		Screen::setIcon(LOGO3);
-//	}
-//}
+	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		lprintfln("Orientation paysage");
+		Screen::setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+//		Screen::setIcon(LOGO);
+	} else // Portrait
+	{
+		lprintfln("Orientation Portrait");
+		Screen::setTitle("");
+//		Screen::setIcon(ICON_ALERT);
+	}
+}

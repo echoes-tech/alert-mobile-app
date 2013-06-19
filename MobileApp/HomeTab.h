@@ -30,7 +30,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	HomeTab(int language, String loginToken);
+	HomeTab(int language, String loginToken, eScreenResolution screenResolution);
 
 	/**
 	 * Destructor.
@@ -39,8 +39,7 @@ public:
 	void dataDownloaded(MAHandle , int );
 	void createUI();
 
-//	void orientationChange(bool);
-	void orientationDidChange();
+	void orientationChange(int screenOrientation);
 
 private:
 	String _LOGINTOKEN;

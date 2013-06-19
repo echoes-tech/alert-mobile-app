@@ -37,73 +37,75 @@
 	.stabs	"MA_FV:Tt(7,11)=u4f:(0,9),0,32;i:(0,3),0,32;operator=::(7,12)=#(7,11),(7,13)=&(7,11),(7,14)=*(7,11),(7,15)=&(7,16)=k(7,11),(0,6);:_ZN5MA_FVaSERKS_;2A.;__base_ctor::(7,17)=#(7,11),(0,6),(7,14),(7,15),(0,6);:_ZN5MA_FVC2ERKS_;2A.;__comp_ctor::(7,17):_ZN5MA_FVC1ERKS_;2A.;__base_ctor::(7,18)=#(7,11),(0,6),(7,14),(0,6);:_ZN5MA_FVC2Ev;2A.;__comp_ctor::(7,18):_ZN5MA_FVC1Ev;2A.;;",128,0,78,0
 	.stabs	"MA_FV:t(7,19)=(7,11)",128,0,81,0
 	.stabn	162,0,0,0
-	.stabs	"wchar:t(6,1)=(0,5)",128,0,653,0
-	.stabs	"ushort:t(6,2)=(0,12)",128,0,665,0
-	.stabs	"uint:t(6,3)=(0,17)",128,0,666,0
-	.stabs	"MAString:t(6,4)=(6,5)=*(0,19)",128,0,669,0
-	.stabs	"MAWString:t(6,6)=(6,7)=*(6,1)",128,0,670,0
-	.stabs	"MAAddress:t(6,8)=(6,9)=*(0,6)",128,0,671,0
-	.stabs	"MAHandle:t(6,10)=(0,3)",128,0,672,0
-	.stabs	"MAExtent:t(6,11)=(0,3)",128,0,673,0
-	.stabs	"byte:t(6,12)=(0,10)",128,0,674,0
-	.stabs	"ulong:t(6,13)=(0,16)",128,0,675,0
-	.stabs	"longlong:t(6,14)=(0,15)",128,0,676,0
-	.stabs	"MAExtensionModule:t(6,15)=(0,3)",128,0,677,0
-	.stabs	"MAExtensionFunction:t(6,16)=(0,3)",128,0,678,0
-	.stabs	"MAAudioData:t(6,17)=(0,3)",128,0,680,0
-	.stabs	"MAAudioInstance:t(6,18)=(0,3)",128,0,682,0
-	.stabs	"MAPoint2d:Tt(6,19)=s8x:(0,3),0,32;y:(0,3),32,32;operator=::(6,20)=#(6,19),(6,21)=&(6,19),(6,22)=*(6,19),(6,23)=&(6,24)=k(6,19),(0,6);:_ZN9MAPoint2daSERKS_;2A.;__base_ctor::(6,25)=#(6,19),(0,6),(6,22),(6,23),(0,6);:_ZN9MAPoint2dC2ERKS_;2A.;__comp_ctor::(6,25):_ZN9MAPoint2dC1ERKS_;2A.;__base_ctor::(6,26)=#(6,19),(0,6),(6,22),(0,6);:_ZN9MAPoint2dC2Ev;2A.;__comp_ctor::(6,26):_ZN9MAPoint2dC1Ev;2A.;;",128,0,3495,0
-	.stabs	"MAPoint2d:t(6,27)=(6,19)",128,0,3498,0
-	.stabs	"MARect:Tt(6,28)=s16left:(0,3),0,32;top:(0,3),32,32;width:(0,3),64,32;height:(0,3),96,32;operator=::(6,29)=#(6,28),(6,30)=&(6,28),(6,31)=*(6,28),(6,32)=&(6,33)=k(6,28),(0,6);:_ZN6MARectaSERKS_;2A.;__base_ctor::(6,34)=#(6,28),(0,6),(6,31),(6,32),(0,6);:_ZN6MARectC2ERKS_;2A.;__comp_ctor::(6,34):_ZN6MARectC1ERKS_;2A.;__base_ctor::(6,35)=#(6,28),(0,6),(6,31),(0,6);:_ZN6MARectC2Ev;2A.;__comp_ctor::(6,35):_ZN6MARectC1Ev;2A.;;",128,0,3517,0
-	.stabs	"MARect:t(6,36)=(6,28)",128,0,3522,0
-	.stabs	"MACopyData:Tt(6,37)=s20dst:(6,10),0,32;dstOffset:(0,3),32,32;src:(6,10),64,32;srcOffset:(0,3),96,32;size:(0,3),128,32;operator=::(6,38)=#(6,37),(6,39)=&(6,37),(6,40)=*(6,37),(6,41)=&(6,42)=k(6,37),(0,6);:_ZN10MACopyDataaSERKS_;2A.;__base_ctor::(6,43)=#(6,37),(0,6),(6,40),(6,41),(0,6);:_ZN10MACopyDataC2ERKS_;2A.;__comp_ctor::(6,43):_ZN10MACopyDataC1ERKS_;2A.;__base_ctor::(6,44)=#(6,37),(0,6),(6,40),(0,6);:_ZN10MACopyDataC2Ev;2A.;__comp_ctor::(6,44):_ZN10MACopyDataC1Ev;2A.;;",128,0,3538,0
-	.stabs	"MACopyData:t(6,45)=(6,37)",128,0,3544,0
-	.stabs	"MAConnAddrInet4:Tt(6,46)=s8addr:(0,3),0,32;port:(0,3),32,32;operator=::(6,47)=#(6,46),(6,48)=&(6,46),(6,49)=*(6,46),(6,50)=&(6,51)=k(6,46),(0,6);:_ZN15MAConnAddrInet4aSERKS_;2A.;__base_ctor::(6,52)=#(6,46),(0,6),(6,49),(6,50),(0,6);:_ZN15MAConnAddrInet4C2ERKS_;2A.;__comp_ctor::(6,52):_ZN15MAConnAddrInet4C1ERKS_;2A.;__base_ctor::(6,53)=#(6,46),(0,6),(6,49),(0,6);:_ZN15MAConnAddrInet4C2Ev;2A.;__comp_ctor::(6,53):_ZN15MAConnAddrInet4C1Ev;2A.;;",128,0,3560,0
-	.stabs	"MAConnAddrInet4:t(6,54)=(6,46)",128,0,3563,0
-	.stabs	"MABtAddr:Tt(6,55)=s8a:(6,56)=ar(6,57)=r(6,57);0000000000000;0037777777777;;0;5;(6,12),0,48;operator=::(6,58)=#(6,55),(6,59)=&(6,55),(6,60)=*(6,55),(6,61)=&(6,62)=k(6,55),(0,6);:_ZN8MABtAddraSERKS_;2A.;__base_ctor::(6,63)=#(6,55),(0,6),(6,60),(6,61),(0,6);:_ZN8MABtAddrC2ERKS_;2A.;__comp_ctor::(6,63):_ZN8MABtAddrC1ERKS_;2A.;__base_ctor::(6,64)=#(6,55),(0,6),(6,60),(0,6);:_ZN8MABtAddrC2Ev;2A.;__comp_ctor::(6,64):_ZN8MABtAddrC1Ev;2A.;;",128,0,3579,0
-	.stabs	"MABtAddr:t(6,65)=(6,55)",128,0,3581,0
-	.stabs	"MAConnAddrBt:Tt(6,66)=s12port:(0,3),0,32;addr:(6,65),32,64;operator=::(6,67)=#(6,66),(6,68)=&(6,66),(6,69)=*(6,66),(6,70)=&(6,71)=k(6,66),(0,6);:_ZN12MAConnAddrBtaSERKS_;2A.;__base_ctor::(6,72)=#(6,66),(0,6),(6,69),(6,70),(0,6);:_ZN12MAConnAddrBtC2ERKS_;2A.;__comp_ctor::(6,72):_ZN12MAConnAddrBtC1ERKS_;2A.;__base_ctor::(6,73)=#(6,66),(0,6),(6,69),(0,6);:_ZN12MAConnAddrBtC2Ev;2A.;__comp_ctor::(6,73):_ZN12MAConnAddrBtC1Ev;2A.;;",128,0,3597,0
-	.stabs	"MAConnAddrBt:t(6,74)=(6,66)",128,0,3600,0
-	.stabs	"MAConnAddr:Tt(6,75)=s16family:(0,3),0,32;:(6,76)=u12inet4:(6,54),0,64;bt:(6,74),0,96;;,32,96;operator=::(6,77)=#(6,75),(6,78)=&(6,75),(6,79)=*(6,75),(6,80)=&(6,81)=k(6,75),(0,6);:_ZN10MAConnAddraSERKS_;2A.;__base_ctor::(6,82)=#(6,75),(0,6),(6,79),(6,80),(0,6);:_ZN10MAConnAddrC2ERKS_;2A.;__comp_ctor::(6,82):_ZN10MAConnAddrC1ERKS_;2A.;__base_ctor::(6,83)=#(6,75),(0,6),(6,79),(0,6);:_ZN10MAConnAddrC2Ev;2A.;__comp_ctor::(6,83):_ZN10MAConnAddrC1Ev;2A.;;",128,0,3616,0
-	.stabs	"MAConnAddr:t(6,84)=(6,75)",128,0,3625,0
-	.stabs	"MAConnEventData:Tt(6,85)=s12handle:(6,10),0,32;opType:(0,3),32,32;result:(0,3),64,32;operator=::(6,86)=#(6,85),(6,87)=&(6,85),(6,88)=*(6,85),(6,89)=&(6,90)=k(6,85),(0,6);:_ZN15MAConnEventDataaSERKS_;2A.;__base_ctor::(6,91)=#(6,85),(0,6),(6,88),(6,89),(0,6);:_ZN15MAConnEventDataC2ERKS_;2A.;__comp_ctor::(6,91):_ZN15MAConnEventDataC1ERKS_;2A.;__base_ctor::(6,92)=#(6,85),(0,6),(6,88),(0,6);:_ZN15MAConnEventDataC2Ev;2A.;__comp_ctor::(6,92):_ZN15MAConnEventDataC1Ev;2A.;;",128,0,3641,0
-	.stabs	"MAConnEventData:t(6,93)=(6,85)",128,0,3650,0
-	.stabs	"MASensor:Tt(6,94)=s16type:(0,3),0,32;values:(6,95)=ar(6,57);0;2;(0,9),32,96;operator=::(6,96)=#(6,94),(6,97)=&(6,94),(6,98)=*(6,94),(6,99)=&(6,100)=k(6,94),(0,6);:_ZN8MASensoraSERKS_;2A.;__base_ctor::(6,101)=#(6,94),(0,6),(6,98),(6,99),(0,6);:_ZN8MASensorC2ERKS_;2A.;__comp_ctor::(6,101):_ZN8MASensorC1ERKS_;2A.;__base_ctor::(6,102)=#(6,94),(0,6),(6,98),(0,6);:_ZN8MASensorC2Ev;2A.;__comp_ctor::(6,102):_ZN8MASensorC1Ev;2A.;;",128,0,3666,0
-	.stabs	"MASensor:t(6,103)=(6,94)",128,0,3669,0
-	.stabs	"MANFCEventData:Tt(6,104)=s12handle:(6,10),0,32;result:(0,3),32,32;dstId:(0,3),64,32;operator=::(6,105)=#(6,104),(6,106)=&(6,104),(6,107)=*(6,104),(6,108)=&(6,109)=k(6,104),(0,6);:_ZN14MANFCEventDataaSERKS_;2A.;__base_ctor::(6,110)=#(6,104),(0,6),(6,107),(6,108),(0,6);:_ZN14MANFCEventDataC2ERKS_;2A.;__comp_ctor::(6,110):_ZN14MANFCEventDataC1ERKS_;2A.;__base_ctor::(6,111)=#(6,104),(0,6),(6,107),(0,6);:_ZN14MANFCEventDataC2Ev;2A.;__comp_ctor::(6,111):_ZN14MANFCEventDataC1Ev;2A.;;",128,0,3685,0
-	.stabs	"MANFCEventData:t(6,112)=(6,104)",128,0,3696,0
-	.stabs	"MAAdsEventData:Tt(6,113)=s12bannerHandle:(6,10),0,32;bannerEventType:(0,3),32,32;bannerErrorCode:(0,3),64,32;operator=::(6,114)=#(6,113),(6,115)=&(6,113),(6,116)=*(6,113),(6,117)=&(6,118)=k(6,113),(0,6);:_ZN14MAAdsEventDataaSERKS_;2A.;__base_ctor::(6,119)=#(6,113),(0,6),(6,116),(6,117),(0,6);:_ZN14MAAdsEventDataC2ERKS_;2A.;__comp_ctor::(6,119):_ZN14MAAdsEventDataC1ERKS_;2A.;__base_ctor::(6,120)=#(6,113),(0,6),(6,116),(0,6);:_ZN14MAAdsEventDataC2Ev;2A.;__comp_ctor::(6,120):_ZN14MAAdsEventDataC1Ev;2A.;;",128,0,3712,0
-	.stabs	"MAAdsEventData:t(6,121)=(6,113)",128,0,3723,0
-	.stabs	"MACaptureEventData:Tt(6,122)=s8type:(0,3),0,32;handle:(6,10),32,32;operator=::(6,123)=#(6,122),(6,124)=&(6,122),(6,125)=*(6,122),(6,126)=&(6,127)=k(6,122),(0,6);:_ZN18MACaptureEventDataaSERKS_;2A.;__base_ctor::(6,128)=#(6,122),(0,6),(6,125),(6,126),(0,6);:_ZN18MACaptureEventDataC2ERKS_;2A.;__comp_ctor::(6,128):_ZN18MACaptureEventDataC1ERKS_;2A.;__base_ctor::(6,129)=#(6,122),(0,6),(6,125),(0,6);:_ZN18MACaptureEventDataC2Ev;2A.;__comp_ctor::(6,129):_ZN18MACaptureEventDataC1Ev;2A.;;",128,0,3739,0
-	.stabs	"MACaptureEventData:t(6,130)=(6,122)",128,0,3746,0
-	.stabs	"MAPurchaseEventData:Tt(6,131)=s16type:(0,3),0,32;state:(0,3),32,32;productHandle:(6,10),64,32;errorCode:(0,3),96,32;operator=::(6,132)=#(6,131),(6,133)=&(6,131),(6,134)=*(6,131),(6,135)=&(6,136)=k(6,131),(0,6);:_ZN19MAPurchaseEventDataaSERKS_;2A.;__base_ctor::(6,137)=#(6,131),(0,6),(6,134),(6,135),(0,6);:_ZN19MAPurchaseEventDataC2ERKS_;2A.;__comp_ctor::(6,137):_ZN19MAPurchaseEventDataC1ERKS_;2A.;__base_ctor::(6,138)=#(6,131),(0,6),(6,134),(0,6);:_ZN19MAPurchaseEventDataC2Ev;2A.;__comp_ctor::(6,138):_ZN19MAPurchaseEventDataC1Ev;2A.;;",128,0,3764,0
-	.stabs	"MAPurchaseEventData:t(6,139)=(6,131)",128,0,3789,0
-	.stabs	"MAEvent:Tt(6,140)=s20type:(0,3),0,32;:(6,141)=u16:(6,142)=s8key:(0,3),0,32;nativeKey:(0,3),32,32;;,0,64;character:(6,3),0,32;:(6,143)=s12point:(6,27),0,64;touchId:(0,3),64,32;;,0,96;state:(0,3),0,32;conn:(6,93),0,96;:(6,144)=s8textboxResult:(0,3),0,32;textboxLength:(0,3),32,32;;,0,64;:(6,145)=s12imagePickerState:(0,3),0,32;imagePickerItem:(6,10),32,32;imagePickerEncodingType:(0,3),64,32;;,0,96;optionsBoxButtonIndex:(0,3),0,32;alertButtonIndex:(0,3),0,32;status:(0,3),0,32;sensor:(6,103),0,128;nfc:(6,112),0,96;adsData:(6,121),0,96;localNotificationHandle:(6,10),0,32;pushNotificationHandle:(6,10),0,32;captureData:(6,130),0,64;data:(6,9),0,32;audioInstance:(6,18),0,32;purchaseData:(6,139),0,128;;,32,128;operator=::(6,146)=#(6,140),(6,147)=&(6,140),(6,148)=*(6,140),(6,149)=&(6,150)=k(6,140),(0,6);:_ZN7MAEventaSERKS_;2A.;__base_ctor::(6,151)=#(6,140),(0,6),(6,148),(6,149),(0,6);:_ZN7MAEventC2ERKS_;2A.;__comp_ctor::(6,151):_ZN7MAEventC1ERKS_;2A.;__base_ctor::(6,152)=#(6,140),(0,6),(6,148),(0,6);:_ZN7MAEventC2Ev;2A.;__comp_ctor::(6,152):_ZN7MAEventC1Ev;2A.;;",128,0,3805,0
-	.stabs	"MAEvent:t(6,153)=(6,140)",128,0,3959,0
-	.stabs	"MAPanicReport:Tt(6,154)=s24runtimeId:(0,3),0,32;reportType:(0,3),32,32;time:(0,3),64,32;ip:(0,3),96,32;code:(0,3),128,32;string:(6,155)=ar(6,57);0;0;(0,19),160,8;operator=::(6,156)=#(6,154),(6,157)=&(6,154),(6,158)=*(6,154),(6,159)=&(6,160)=k(6,154),(0,6);:_ZN13MAPanicReportaSERKS_;2A.;__base_ctor::(6,161)=#(6,154),(0,6),(6,158),(6,159),(0,6);:_ZN13MAPanicReportC2ERKS_;2A.;__comp_ctor::(6,161):_ZN13MAPanicReportC1ERKS_;2A.;__base_ctor::(6,162)=#(6,154),(0,6),(6,158),(0,6);:_ZN13MAPanicReportC2Ev;2A.;__comp_ctor::(6,162):_ZN13MAPanicReportC1Ev;2A.;;",128,0,3991,0
-	.stabs	"MAPanicReport:t(6,163)=(6,154)",128,0,4013,0
-	.stabs	"MABtDevice:Tt(6,164)=s20name:(6,5),0,32;nameBufSize:(0,3),32,32;actualNameLength:(0,3),64,32;address:(6,65),96,64;operator=::(6,165)=#(6,164),(6,166)=&(6,164),(6,167)=*(6,164),(6,168)=&(6,169)=k(6,164),(0,6);:_ZN10MABtDeviceaSERKS_;2A.;__base_ctor::(6,170)=#(6,164),(0,6),(6,167),(6,168),(0,6);:_ZN10MABtDeviceC2ERKS_;2A.;__comp_ctor::(6,170):_ZN10MABtDeviceC1ERKS_;2A.;__base_ctor::(6,171)=#(6,164),(0,6),(6,167),(0,6);:_ZN10MABtDeviceC2Ev;2A.;__comp_ctor::(6,171):_ZN10MABtDeviceC1Ev;2A.;;",128,0,4029,0
-	.stabs	"MABtDevice:t(6,172)=(6,164)",128,0,4041,0
-	.stabs	"MAUUID:Tt(6,173)=s16i:(6,174)=ar(6,57);0;3;(0,3),0,128;operator=::(6,175)=#(6,173),(6,176)=&(6,173),(6,177)=*(6,173),(6,178)=&(6,179)=k(6,173),(0,6);:_ZN6MAUUIDaSERKS_;2A.;__base_ctor::(6,180)=#(6,173),(0,6),(6,177),(6,178),(0,6);:_ZN6MAUUIDC2ERKS_;2A.;__comp_ctor::(6,180):_ZN6MAUUIDC1ERKS_;2A.;__base_ctor::(6,181)=#(6,173),(0,6),(6,177),(0,6);:_ZN6MAUUIDC2Ev;2A.;__comp_ctor::(6,181):_ZN6MAUUIDC1Ev;2A.;;",128,0,4059,0
-	.stabs	"MAUUID:t(6,182)=(6,173)",128,0,4061,0
-	.stabs	"MABtServiceSize:Tt(6,183)=s8nameBufSize:(0,3),0,32;nUuids:(0,3),32,32;operator=::(6,184)=#(6,183),(6,185)=&(6,183),(6,186)=*(6,183),(6,187)=&(6,188)=k(6,183),(0,6);:_ZN15MABtServiceSizeaSERKS_;2A.;__base_ctor::(6,189)=#(6,183),(0,6),(6,186),(6,187),(0,6);:_ZN15MABtServiceSizeC2ERKS_;2A.;__comp_ctor::(6,189):_ZN15MABtServiceSizeC1ERKS_;2A.;__base_ctor::(6,190)=#(6,183),(0,6),(6,186),(0,6);:_ZN15MABtServiceSizeC2Ev;2A.;__comp_ctor::(6,190):_ZN15MABtServiceSizeC1Ev;2A.;;",128,0,4077,0
-	.stabs	"MABtServiceSize:t(6,191)=(6,183)",128,0,4088,0
-	.stabs	"MABtService:Tt(6,192)=s16port:(0,3),0,32;name:(6,5),32,32;nameBufSize:(0,3),64,32;uuids:(6,193)=*(6,182),96,32;operator=::(6,194)=#(6,192),(6,195)=&(6,192),(6,196)=*(6,192),(6,197)=&(6,198)=k(6,192),(0,6);:_ZN11MABtServiceaSERKS_;2A.;__base_ctor::(6,199)=#(6,192),(0,6),(6,196),(6,197),(0,6);:_ZN11MABtServiceC2ERKS_;2A.;__comp_ctor::(6,199):_ZN11MABtServiceC1ERKS_;2A.;__base_ctor::(6,200)=#(6,192),(0,6),(6,196),(0,6);:_ZN11MABtServiceC2Ev;2A.;__comp_ctor::(6,200):_ZN11MABtServiceC1Ev;2A.;;",128,0,4104,0
-	.stabs	"MABtService:t(6,201)=(6,192)",128,0,4127,0
-	.stabs	"MALocation:Tt(6,202)=s40state:(0,3),0,32;lat:(0,8),32,64;lon:(0,8),96,64;horzAcc:(0,8),160,64;vertAcc:(0,8),224,64;alt:(0,9),288,32;operator=::(6,203)=#(6,202),(6,204)=&(6,202),(6,205)=*(6,202),(6,206)=&(6,207)=k(6,202),(0,6);:_ZN10MALocationaSERKS_;2A.;__base_ctor::(6,208)=#(6,202),(0,6),(6,205),(6,206),(0,6);:_ZN10MALocationC2ERKS_;2A.;__comp_ctor::(6,208):_ZN10MALocationC1ERKS_;2A.;__base_ctor::(6,209)=#(6,202),(0,6),(6,205),(0,6);:_ZN10MALocationC2Ev;2A.;__comp_ctor::(6,209):_ZN10MALocationC1Ev;2A.;;",128,0,4158,0
-	.stabs	"MALocation:t(6,210)=(6,202)",128,0,4174,0
-	.stabs	"MAFrameBufferInfo:Tt(6,211)=s64sizeInBytes:(0,3),0,32;bytesPerPixel:(0,3),32,32;bitsPerPixel:(0,3),64,32;redMask:(0,3),96,32;redShift:(0,3),128,32;redBits:(0,3),160,32;greenMask:(0,3),192,32;greenShift:(0,3),224,32;greenBits:(0,3),256,32;blueMask:(0,3),288,32;blueShift:(0,3),320,32;blueBits:(0,3),352,32;width:(0,3),384,32;height:(0,3),416,32;pitch:(0,3),448,32;supportsGfxSyscalls:(0,3),480,32;operator=::(6,212)=#(6,211),(6,213)=&(6,211),(6,214)=*(6,211),(6,215)=&(6,216)=k(6,211),(0,6);:_ZN17MAFrameBufferInfoaSERKS_;2A.;__base_ctor::(6,217)=#(6,211),(0,6),(6,214),(6,215),(0,6);:_ZN17MAFrameBufferInfoC2ERKS_;2A.;__comp_ctor::(6,217):_ZN17MAFrameBufferInfoC1ERKS_;2A.;__base_ctor::(6,218)=#(6,211),(0,6),(6,214),(0,6);:_ZN17MAFrameBufferInfoC2Ev;2A.;__comp_ctor::(6,218):_ZN17MAFrameBufferInfoC1Ev;2A.;;",128,0,4192,0
-	.stabs	"MAFrameBufferInfo:t(6,219)=(6,211)",128,0,4209,0
-	.stabs	"MA_CAMERA_FORMAT:Tt(6,220)=s8width:(0,3),0,32;height:(0,3),32,32;operator=::(6,221)=#(6,220),(6,222)=&(6,220),(6,223)=*(6,220),(6,224)=&(6,225)=k(6,220),(0,6);:_ZN16MA_CAMERA_FORMATaSERKS_;2A.;__base_ctor::(6,226)=#(6,220),(0,6),(6,223),(6,224),(0,6);:_ZN16MA_CAMERA_FORMATC2ERKS_;2A.;__comp_ctor::(6,226):_ZN16MA_CAMERA_FORMATC1ERKS_;2A.;__base_ctor::(6,227)=#(6,220),(0,6),(6,223),(0,6);:_ZN16MA_CAMERA_FORMATC2Ev;2A.;__comp_ctor::(6,227):_ZN16MA_CAMERA_FORMATC1Ev;2A.;;",128,0,4226,0
-	.stabs	"MA_CAMERA_FORMAT:t(6,228)=(6,220)",128,0,4229,0
-	.stabs	"MADBBlob:Tt(6,229)=s8data:(6,8),0,32;size:(0,3),32,32;operator=::(6,230)=#(6,229),(6,231)=&(6,229),(6,232)=*(6,229),(6,233)=&(6,234)=k(6,229),(0,6);:_ZN8MADBBlobaSERKS_;2A.;__base_ctor::(6,235)=#(6,229),(0,6),(6,232),(6,233),(0,6);:_ZN8MADBBlobC2ERKS_;2A.;__comp_ctor::(6,235):_ZN8MADBBlobC1ERKS_;2A.;__base_ctor::(6,236)=#(6,229),(0,6),(6,232),(0,6);:_ZN8MADBBlobC2Ev;2A.;__comp_ctor::(6,236):_ZN8MADBBlobC1Ev;2A.;;",128,0,4243,0
-	.stabs	"MADBBlob:t(6,237)=(6,229)",128,0,4246,0
-	.stabs	"MADBText:Tt(6,238)=s8addr:(6,4),0,32;length:(0,3),32,32;operator=::(6,239)=#(6,238),(6,240)=&(6,238),(6,241)=*(6,238),(6,242)=&(6,243)=k(6,238),(0,6);:_ZN8MADBTextaSERKS_;2A.;__base_ctor::(6,244)=#(6,238),(0,6),(6,241),(6,242),(0,6);:_ZN8MADBTextC2ERKS_;2A.;__comp_ctor::(6,244):_ZN8MADBTextC1ERKS_;2A.;__base_ctor::(6,245)=#(6,238),(0,6),(6,241),(0,6);:_ZN8MADBTextC2Ev;2A.;__comp_ctor::(6,245):_ZN8MADBTextC1Ev;2A.;;",128,0,4260,0
-	.stabs	"MADBText:t(6,246)=(6,238)",128,0,4265,0
-	.stabs	"MADBValue:Tt(6,247)=s12:(6,248)=u8i:(0,3),0,32;d:(0,8),0,64;blob:(6,237),0,64;dataHandle:(6,10),0,32;text:(6,246),0,64;i64:(6,14),0,64;;,0,64;type:(0,3),64,32;operator=::(6,249)=#(6,247),(6,250)=&(6,247),(6,251)=*(6,247),(6,252)=&(6,253)=k(6,247),(0,6);:_ZN9MADBValueaSERKS_;2A.;__base_ctor::(6,254)=#(6,247),(0,6),(6,251),(6,252),(0,6);:_ZN9MADBValueC2ERKS_;2A.;__comp_ctor::(6,254):_ZN9MADBValueC1ERKS_;2A.;__base_ctor::(6,255)=#(6,247),(0,6),(6,251),(0,6);:_ZN9MADBValueC2Ev;2A.;__comp_ctor::(6,255):_ZN9MADBValueC1Ev;2A.;;",128,0,4280,0
-	.stabs	"MADBValue:t(6,256)=(6,247)",128,0,4291,0
-	.stabs	"MAPushNotificationData:Tt(6,257)=s24type:(0,3),0,32;alertMessage:(6,4),32,32;alertMessageSize:(0,3),64,32;soundFileName:(6,4),96,32;soundFileNameSize:(0,3),128,32;badgeIcon:(0,3),160,32;operator=::(6,258)=#(6,257),(6,259)=&(6,257),(6,260)=*(6,257),(6,261)=&(6,262)=k(6,257),(0,6);:_ZN22MAPushNotificationDataaSERKS_;2A.;__base_ctor::(6,263)=#(6,257),(0,6),(6,260),(6,261),(0,6);:_ZN22MAPushNotificationDataC2ERKS_;2A.;__comp_ctor::(6,263):_ZN22MAPushNotificationDataC1ERKS_;2A.;__base_ctor::(6,264)=#(6,257),(0,6),(6,260),(0,6);:_ZN22MAPushNotificationDataC2Ev;2A.;__comp_ctor::(6,264):_ZN22MAPushNotificationDataC1Ev;2A.;;",128,0,4308,0
-	.stabs	"MAPushNotificationData:t(6,265)=(6,257)",128,0,4337,0
+	.stabs	"wchar:t(6,1)=(0,5)",128,0,668,0
+	.stabs	"ushort:t(6,2)=(0,12)",128,0,680,0
+	.stabs	"uint:t(6,3)=(0,17)",128,0,681,0
+	.stabs	"MAString:t(6,4)=(6,5)=*(0,19)",128,0,684,0
+	.stabs	"MAWString:t(6,6)=(6,7)=*(6,1)",128,0,685,0
+	.stabs	"MAAddress:t(6,8)=(6,9)=*(0,6)",128,0,686,0
+	.stabs	"MAHandle:t(6,10)=(0,3)",128,0,687,0
+	.stabs	"MAExtent:t(6,11)=(0,3)",128,0,688,0
+	.stabs	"byte:t(6,12)=(0,10)",128,0,689,0
+	.stabs	"ulong:t(6,13)=(0,16)",128,0,690,0
+	.stabs	"longlong:t(6,14)=(0,15)",128,0,691,0
+	.stabs	"MAExtensionModule:t(6,15)=(0,3)",128,0,692,0
+	.stabs	"MAExtensionFunction:t(6,16)=(0,3)",128,0,693,0
+	.stabs	"MAAudioData:t(6,17)=(0,3)",128,0,695,0
+	.stabs	"MAAudioInstance:t(6,18)=(0,3)",128,0,697,0
+	.stabs	"MAPoint2d:Tt(6,19)=s8x:(0,3),0,32;y:(0,3),32,32;operator=::(6,20)=#(6,19),(6,21)=&(6,19),(6,22)=*(6,19),(6,23)=&(6,24)=k(6,19),(0,6);:_ZN9MAPoint2daSERKS_;2A.;__base_ctor::(6,25)=#(6,19),(0,6),(6,22),(6,23),(0,6);:_ZN9MAPoint2dC2ERKS_;2A.;__comp_ctor::(6,25):_ZN9MAPoint2dC1ERKS_;2A.;__base_ctor::(6,26)=#(6,19),(0,6),(6,22),(0,6);:_ZN9MAPoint2dC2Ev;2A.;__comp_ctor::(6,26):_ZN9MAPoint2dC1Ev;2A.;;",128,0,3637,0
+	.stabs	"MAPoint2d:t(6,27)=(6,19)",128,0,3640,0
+	.stabs	"MARect:Tt(6,28)=s16left:(0,3),0,32;top:(0,3),32,32;width:(0,3),64,32;height:(0,3),96,32;operator=::(6,29)=#(6,28),(6,30)=&(6,28),(6,31)=*(6,28),(6,32)=&(6,33)=k(6,28),(0,6);:_ZN6MARectaSERKS_;2A.;__base_ctor::(6,34)=#(6,28),(0,6),(6,31),(6,32),(0,6);:_ZN6MARectC2ERKS_;2A.;__comp_ctor::(6,34):_ZN6MARectC1ERKS_;2A.;__base_ctor::(6,35)=#(6,28),(0,6),(6,31),(0,6);:_ZN6MARectC2Ev;2A.;__comp_ctor::(6,35):_ZN6MARectC1Ev;2A.;;",128,0,3659,0
+	.stabs	"MARect:t(6,36)=(6,28)",128,0,3664,0
+	.stabs	"MACopyData:Tt(6,37)=s20dst:(6,10),0,32;dstOffset:(0,3),32,32;src:(6,10),64,32;srcOffset:(0,3),96,32;size:(0,3),128,32;operator=::(6,38)=#(6,37),(6,39)=&(6,37),(6,40)=*(6,37),(6,41)=&(6,42)=k(6,37),(0,6);:_ZN10MACopyDataaSERKS_;2A.;__base_ctor::(6,43)=#(6,37),(0,6),(6,40),(6,41),(0,6);:_ZN10MACopyDataC2ERKS_;2A.;__comp_ctor::(6,43):_ZN10MACopyDataC1ERKS_;2A.;__base_ctor::(6,44)=#(6,37),(0,6),(6,40),(0,6);:_ZN10MACopyDataC2Ev;2A.;__comp_ctor::(6,44):_ZN10MACopyDataC1Ev;2A.;;",128,0,3680,0
+	.stabs	"MACopyData:t(6,45)=(6,37)",128,0,3686,0
+	.stabs	"MAConnAddrInet4:Tt(6,46)=s8addr:(0,3),0,32;port:(0,3),32,32;operator=::(6,47)=#(6,46),(6,48)=&(6,46),(6,49)=*(6,46),(6,50)=&(6,51)=k(6,46),(0,6);:_ZN15MAConnAddrInet4aSERKS_;2A.;__base_ctor::(6,52)=#(6,46),(0,6),(6,49),(6,50),(0,6);:_ZN15MAConnAddrInet4C2ERKS_;2A.;__comp_ctor::(6,52):_ZN15MAConnAddrInet4C1ERKS_;2A.;__base_ctor::(6,53)=#(6,46),(0,6),(6,49),(0,6);:_ZN15MAConnAddrInet4C2Ev;2A.;__comp_ctor::(6,53):_ZN15MAConnAddrInet4C1Ev;2A.;;",128,0,3702,0
+	.stabs	"MAConnAddrInet4:t(6,54)=(6,46)",128,0,3705,0
+	.stabs	"MAConnAddrInet6:Tt(6,55)=s20port:(0,3),0,32;addr:(6,56)=ar(6,57)=r(6,57);0000000000000;0037777777777;;0;15;(6,12),32,128;operator=::(6,58)=#(6,55),(6,59)=&(6,55),(6,60)=*(6,55),(6,61)=&(6,62)=k(6,55),(0,6);:_ZN15MAConnAddrInet6aSERKS_;2A.;__base_ctor::(6,63)=#(6,55),(0,6),(6,60),(6,61),(0,6);:_ZN15MAConnAddrInet6C2ERKS_;2A.;__comp_ctor::(6,63):_ZN15MAConnAddrInet6C1ERKS_;2A.;__base_ctor::(6,64)=#(6,55),(0,6),(6,60),(0,6);:_ZN15MAConnAddrInet6C2Ev;2A.;__comp_ctor::(6,64):_ZN15MAConnAddrInet6C1Ev;2A.;;",128,0,3721,0
+	.stabs	"MAConnAddrInet6:t(6,65)=(6,55)",128,0,3724,0
+	.stabs	"MABtAddr:Tt(6,66)=s8a:(6,67)=ar(6,57);0;5;(6,12),0,48;operator=::(6,68)=#(6,66),(6,69)=&(6,66),(6,70)=*(6,66),(6,71)=&(6,72)=k(6,66),(0,6);:_ZN8MABtAddraSERKS_;2A.;__base_ctor::(6,73)=#(6,66),(0,6),(6,70),(6,71),(0,6);:_ZN8MABtAddrC2ERKS_;2A.;__comp_ctor::(6,73):_ZN8MABtAddrC1ERKS_;2A.;__base_ctor::(6,74)=#(6,66),(0,6),(6,70),(0,6);:_ZN8MABtAddrC2Ev;2A.;__comp_ctor::(6,74):_ZN8MABtAddrC1Ev;2A.;;",128,0,3740,0
+	.stabs	"MABtAddr:t(6,75)=(6,66)",128,0,3742,0
+	.stabs	"MAConnAddrBt:Tt(6,76)=s12port:(0,3),0,32;addr:(6,75),32,64;operator=::(6,77)=#(6,76),(6,78)=&(6,76),(6,79)=*(6,76),(6,80)=&(6,81)=k(6,76),(0,6);:_ZN12MAConnAddrBtaSERKS_;2A.;__base_ctor::(6,82)=#(6,76),(0,6),(6,79),(6,80),(0,6);:_ZN12MAConnAddrBtC2ERKS_;2A.;__comp_ctor::(6,82):_ZN12MAConnAddrBtC1ERKS_;2A.;__base_ctor::(6,83)=#(6,76),(0,6),(6,79),(0,6);:_ZN12MAConnAddrBtC2Ev;2A.;__comp_ctor::(6,83):_ZN12MAConnAddrBtC1Ev;2A.;;",128,0,3758,0
+	.stabs	"MAConnAddrBt:t(6,84)=(6,76)",128,0,3761,0
+	.stabs	"MAConnAddr:Tt(6,85)=s24family:(0,3),0,32;:(6,86)=u20inet4:(6,54),0,64;bt:(6,84),0,96;inet6:(6,65),0,160;;,32,160;operator=::(6,87)=#(6,85),(6,88)=&(6,85),(6,89)=*(6,85),(6,90)=&(6,91)=k(6,85),(0,6);:_ZN10MAConnAddraSERKS_;2A.;__base_ctor::(6,92)=#(6,85),(0,6),(6,89),(6,90),(0,6);:_ZN10MAConnAddrC2ERKS_;2A.;__comp_ctor::(6,92):_ZN10MAConnAddrC1ERKS_;2A.;__base_ctor::(6,93)=#(6,85),(0,6),(6,89),(0,6);:_ZN10MAConnAddrC2Ev;2A.;__comp_ctor::(6,93):_ZN10MAConnAddrC1Ev;2A.;;",128,0,3777,0
+	.stabs	"MAConnAddr:t(6,94)=(6,85)",128,0,3788,0
+	.stabs	"MAConnEventData:Tt(6,95)=s12handle:(6,10),0,32;opType:(0,3),32,32;result:(0,3),64,32;operator=::(6,96)=#(6,95),(6,97)=&(6,95),(6,98)=*(6,95),(6,99)=&(6,100)=k(6,95),(0,6);:_ZN15MAConnEventDataaSERKS_;2A.;__base_ctor::(6,101)=#(6,95),(0,6),(6,98),(6,99),(0,6);:_ZN15MAConnEventDataC2ERKS_;2A.;__comp_ctor::(6,101):_ZN15MAConnEventDataC1ERKS_;2A.;__base_ctor::(6,102)=#(6,95),(0,6),(6,98),(0,6);:_ZN15MAConnEventDataC2Ev;2A.;__comp_ctor::(6,102):_ZN15MAConnEventDataC1Ev;2A.;;",128,0,3804,0
+	.stabs	"MAConnEventData:t(6,103)=(6,95)",128,0,3813,0
+	.stabs	"MASensor:Tt(6,104)=s16type:(0,3),0,32;values:(6,105)=ar(6,57);0;2;(0,9),32,96;operator=::(6,106)=#(6,104),(6,107)=&(6,104),(6,108)=*(6,104),(6,109)=&(6,110)=k(6,104),(0,6);:_ZN8MASensoraSERKS_;2A.;__base_ctor::(6,111)=#(6,104),(0,6),(6,108),(6,109),(0,6);:_ZN8MASensorC2ERKS_;2A.;__comp_ctor::(6,111):_ZN8MASensorC1ERKS_;2A.;__base_ctor::(6,112)=#(6,104),(0,6),(6,108),(0,6);:_ZN8MASensorC2Ev;2A.;__comp_ctor::(6,112):_ZN8MASensorC1Ev;2A.;;",128,0,3829,0
+	.stabs	"MASensor:t(6,113)=(6,104)",128,0,3832,0
+	.stabs	"MANFCEventData:Tt(6,114)=s12handle:(6,10),0,32;result:(0,3),32,32;dstId:(0,3),64,32;operator=::(6,115)=#(6,114),(6,116)=&(6,114),(6,117)=*(6,114),(6,118)=&(6,119)=k(6,114),(0,6);:_ZN14MANFCEventDataaSERKS_;2A.;__base_ctor::(6,120)=#(6,114),(0,6),(6,117),(6,118),(0,6);:_ZN14MANFCEventDataC2ERKS_;2A.;__comp_ctor::(6,120):_ZN14MANFCEventDataC1ERKS_;2A.;__base_ctor::(6,121)=#(6,114),(0,6),(6,117),(0,6);:_ZN14MANFCEventDataC2Ev;2A.;__comp_ctor::(6,121):_ZN14MANFCEventDataC1Ev;2A.;;",128,0,3848,0
+	.stabs	"MANFCEventData:t(6,122)=(6,114)",128,0,3859,0
+	.stabs	"MAAdsEventData:Tt(6,123)=s12bannerHandle:(6,10),0,32;bannerEventType:(0,3),32,32;bannerErrorCode:(0,3),64,32;operator=::(6,124)=#(6,123),(6,125)=&(6,123),(6,126)=*(6,123),(6,127)=&(6,128)=k(6,123),(0,6);:_ZN14MAAdsEventDataaSERKS_;2A.;__base_ctor::(6,129)=#(6,123),(0,6),(6,126),(6,127),(0,6);:_ZN14MAAdsEventDataC2ERKS_;2A.;__comp_ctor::(6,129):_ZN14MAAdsEventDataC1ERKS_;2A.;__base_ctor::(6,130)=#(6,123),(0,6),(6,126),(0,6);:_ZN14MAAdsEventDataC2Ev;2A.;__comp_ctor::(6,130):_ZN14MAAdsEventDataC1Ev;2A.;;",128,0,3875,0
+	.stabs	"MAAdsEventData:t(6,131)=(6,123)",128,0,3886,0
+	.stabs	"MACaptureEventData:Tt(6,132)=s8type:(0,3),0,32;handle:(6,10),32,32;operator=::(6,133)=#(6,132),(6,134)=&(6,132),(6,135)=*(6,132),(6,136)=&(6,137)=k(6,132),(0,6);:_ZN18MACaptureEventDataaSERKS_;2A.;__base_ctor::(6,138)=#(6,132),(0,6),(6,135),(6,136),(0,6);:_ZN18MACaptureEventDataC2ERKS_;2A.;__comp_ctor::(6,138):_ZN18MACaptureEventDataC1ERKS_;2A.;__base_ctor::(6,139)=#(6,132),(0,6),(6,135),(0,6);:_ZN18MACaptureEventDataC2Ev;2A.;__comp_ctor::(6,139):_ZN18MACaptureEventDataC1Ev;2A.;;",128,0,3902,0
+	.stabs	"MACaptureEventData:t(6,140)=(6,132)",128,0,3909,0
+	.stabs	"MAPurchaseEventData:Tt(6,141)=s16type:(0,3),0,32;state:(0,3),32,32;productHandle:(6,10),64,32;errorCode:(0,3),96,32;operator=::(6,142)=#(6,141),(6,143)=&(6,141),(6,144)=*(6,141),(6,145)=&(6,146)=k(6,141),(0,6);:_ZN19MAPurchaseEventDataaSERKS_;2A.;__base_ctor::(6,147)=#(6,141),(0,6),(6,144),(6,145),(0,6);:_ZN19MAPurchaseEventDataC2ERKS_;2A.;__comp_ctor::(6,147):_ZN19MAPurchaseEventDataC1ERKS_;2A.;__base_ctor::(6,148)=#(6,141),(0,6),(6,144),(0,6);:_ZN19MAPurchaseEventDataC2Ev;2A.;__comp_ctor::(6,148):_ZN19MAPurchaseEventDataC1Ev;2A.;;",128,0,3927,0
+	.stabs	"MAPurchaseEventData:t(6,149)=(6,141)",128,0,3952,0
+	.stabs	"MAEvent:Tt(6,150)=s20type:(0,3),0,32;:(6,151)=u16:(6,152)=s8key:(0,3),0,32;nativeKey:(0,3),32,32;;,0,64;character:(6,3),0,32;:(6,153)=s12point:(6,27),0,64;touchId:(0,3),64,32;;,0,96;state:(0,3),0,32;conn:(6,103),0,96;:(6,154)=s8textboxResult:(0,3),0,32;textboxLength:(0,3),32,32;;,0,64;:(6,155)=s12imagePickerState:(0,3),0,32;imagePickerItem:(6,10),32,32;imagePickerEncodingType:(0,3),64,32;;,0,96;:(6,156)=s16snapshotImageDataHandle:(6,10),0,32;snapshotSize:(0,3),32,32;snapshotImageDataRepresentation:(0,3),64,32;snapshotReturnCode:(0,3),96,32;;,0,128;:(6,157)=s12mediaType:(0,3),0,32;mediaHandle:(6,10),32,32;operationResultCode:(0,3),64,32;;,0,96;optionsBoxButtonIndex:(0,3),0,32;alertButtonIndex:(0,3),0,32;status:(0,3),0,32;sensor:(6,113),0,128;nfc:(6,122),0,96;adsData:(6,131),0,96;localNotificationHandle:(6,10),0,32;pushNotificationHandle:(6,10),0,32;captureData:(6,140),0,64;data:(6,9),0,32;audioInstance:(6,18),0,32;purchaseData:(6,149),0,128;orientation:(0,3),0,32;;,32,128;operator=::(6,158)=#(6,150),(6,159)=&(6,150),(6,160)=*(6,150),(6,161)=&(6,162)=k(6,150),(0,6);:_ZN7MAEventaSERKS_;2A.;__base_ctor::(6,163)=#(6,150),(0,6),(6,160),(6,161),(0,6);:_ZN7MAEventC2ERKS_;2A.;__comp_ctor::(6,163):_ZN7MAEventC1ERKS_;2A.;__base_ctor::(6,164)=#(6,150),(0,6),(6,160),(0,6);:_ZN7MAEventC2Ev;2A.;__comp_ctor::(6,164):_ZN7MAEventC1Ev;2A.;;",128,0,3968,0
+	.stabs	"MAEvent:t(6,165)=(6,150)",128,0,4180,0
+	.stabs	"MAPanicReport:Tt(6,166)=s24runtimeId:(0,3),0,32;reportType:(0,3),32,32;time:(0,3),64,32;ip:(0,3),96,32;code:(0,3),128,32;string:(6,167)=ar(6,57);0;0;(0,19),160,8;operator=::(6,168)=#(6,166),(6,169)=&(6,166),(6,170)=*(6,166),(6,171)=&(6,172)=k(6,166),(0,6);:_ZN13MAPanicReportaSERKS_;2A.;__base_ctor::(6,173)=#(6,166),(0,6),(6,170),(6,171),(0,6);:_ZN13MAPanicReportC2ERKS_;2A.;__comp_ctor::(6,173):_ZN13MAPanicReportC1ERKS_;2A.;__base_ctor::(6,174)=#(6,166),(0,6),(6,170),(0,6);:_ZN13MAPanicReportC2Ev;2A.;__comp_ctor::(6,174):_ZN13MAPanicReportC1Ev;2A.;;",128,0,4212,0
+	.stabs	"MAPanicReport:t(6,175)=(6,166)",128,0,4234,0
+	.stabs	"MABtDevice:Tt(6,176)=s20name:(6,5),0,32;nameBufSize:(0,3),32,32;actualNameLength:(0,3),64,32;address:(6,75),96,64;operator=::(6,177)=#(6,176),(6,178)=&(6,176),(6,179)=*(6,176),(6,180)=&(6,181)=k(6,176),(0,6);:_ZN10MABtDeviceaSERKS_;2A.;__base_ctor::(6,182)=#(6,176),(0,6),(6,179),(6,180),(0,6);:_ZN10MABtDeviceC2ERKS_;2A.;__comp_ctor::(6,182):_ZN10MABtDeviceC1ERKS_;2A.;__base_ctor::(6,183)=#(6,176),(0,6),(6,179),(0,6);:_ZN10MABtDeviceC2Ev;2A.;__comp_ctor::(6,183):_ZN10MABtDeviceC1Ev;2A.;;",128,0,4250,0
+	.stabs	"MABtDevice:t(6,184)=(6,176)",128,0,4262,0
+	.stabs	"MAUUID:Tt(6,185)=s16i:(6,186)=ar(6,57);0;3;(0,3),0,128;operator=::(6,187)=#(6,185),(6,188)=&(6,185),(6,189)=*(6,185),(6,190)=&(6,191)=k(6,185),(0,6);:_ZN6MAUUIDaSERKS_;2A.;__base_ctor::(6,192)=#(6,185),(0,6),(6,189),(6,190),(0,6);:_ZN6MAUUIDC2ERKS_;2A.;__comp_ctor::(6,192):_ZN6MAUUIDC1ERKS_;2A.;__base_ctor::(6,193)=#(6,185),(0,6),(6,189),(0,6);:_ZN6MAUUIDC2Ev;2A.;__comp_ctor::(6,193):_ZN6MAUUIDC1Ev;2A.;;",128,0,4280,0
+	.stabs	"MAUUID:t(6,194)=(6,185)",128,0,4282,0
+	.stabs	"MABtServiceSize:Tt(6,195)=s8nameBufSize:(0,3),0,32;nUuids:(0,3),32,32;operator=::(6,196)=#(6,195),(6,197)=&(6,195),(6,198)=*(6,195),(6,199)=&(6,200)=k(6,195),(0,6);:_ZN15MABtServiceSizeaSERKS_;2A.;__base_ctor::(6,201)=#(6,195),(0,6),(6,198),(6,199),(0,6);:_ZN15MABtServiceSizeC2ERKS_;2A.;__comp_ctor::(6,201):_ZN15MABtServiceSizeC1ERKS_;2A.;__base_ctor::(6,202)=#(6,195),(0,6),(6,198),(0,6);:_ZN15MABtServiceSizeC2Ev;2A.;__comp_ctor::(6,202):_ZN15MABtServiceSizeC1Ev;2A.;;",128,0,4298,0
+	.stabs	"MABtServiceSize:t(6,203)=(6,195)",128,0,4309,0
+	.stabs	"MABtService:Tt(6,204)=s16port:(0,3),0,32;name:(6,5),32,32;nameBufSize:(0,3),64,32;uuids:(6,205)=*(6,194),96,32;operator=::(6,206)=#(6,204),(6,207)=&(6,204),(6,208)=*(6,204),(6,209)=&(6,210)=k(6,204),(0,6);:_ZN11MABtServiceaSERKS_;2A.;__base_ctor::(6,211)=#(6,204),(0,6),(6,208),(6,209),(0,6);:_ZN11MABtServiceC2ERKS_;2A.;__comp_ctor::(6,211):_ZN11MABtServiceC1ERKS_;2A.;__base_ctor::(6,212)=#(6,204),(0,6),(6,208),(0,6);:_ZN11MABtServiceC2Ev;2A.;__comp_ctor::(6,212):_ZN11MABtServiceC1Ev;2A.;;",128,0,4325,0
+	.stabs	"MABtService:t(6,213)=(6,204)",128,0,4348,0
+	.stabs	"MALocation:Tt(6,214)=s40state:(0,3),0,32;lat:(0,8),32,64;lon:(0,8),96,64;horzAcc:(0,8),160,64;vertAcc:(0,8),224,64;alt:(0,9),288,32;operator=::(6,215)=#(6,214),(6,216)=&(6,214),(6,217)=*(6,214),(6,218)=&(6,219)=k(6,214),(0,6);:_ZN10MALocationaSERKS_;2A.;__base_ctor::(6,220)=#(6,214),(0,6),(6,217),(6,218),(0,6);:_ZN10MALocationC2ERKS_;2A.;__comp_ctor::(6,220):_ZN10MALocationC1ERKS_;2A.;__base_ctor::(6,221)=#(6,214),(0,6),(6,217),(0,6);:_ZN10MALocationC2Ev;2A.;__comp_ctor::(6,221):_ZN10MALocationC1Ev;2A.;;",128,0,4379,0
+	.stabs	"MALocation:t(6,222)=(6,214)",128,0,4395,0
+	.stabs	"MAFrameBufferInfo:Tt(6,223)=s64sizeInBytes:(0,3),0,32;bytesPerPixel:(0,3),32,32;bitsPerPixel:(0,3),64,32;redMask:(0,3),96,32;redShift:(0,3),128,32;redBits:(0,3),160,32;greenMask:(0,3),192,32;greenShift:(0,3),224,32;greenBits:(0,3),256,32;blueMask:(0,3),288,32;blueShift:(0,3),320,32;blueBits:(0,3),352,32;width:(0,3),384,32;height:(0,3),416,32;pitch:(0,3),448,32;supportsGfxSyscalls:(0,3),480,32;operator=::(6,224)=#(6,223),(6,225)=&(6,223),(6,226)=*(6,223),(6,227)=&(6,228)=k(6,223),(0,6);:_ZN17MAFrameBufferInfoaSERKS_;2A.;__base_ctor::(6,229)=#(6,223),(0,6),(6,226),(6,227),(0,6);:_ZN17MAFrameBufferInfoC2ERKS_;2A.;__comp_ctor::(6,229):_ZN17MAFrameBufferInfoC1ERKS_;2A.;__base_ctor::(6,230)=#(6,223),(0,6),(6,226),(0,6);:_ZN17MAFrameBufferInfoC2Ev;2A.;__comp_ctor::(6,230):_ZN17MAFrameBufferInfoC1Ev;2A.;;",128,0,4413,0
+	.stabs	"MAFrameBufferInfo:t(6,231)=(6,223)",128,0,4430,0
+	.stabs	"MA_CAMERA_FORMAT:Tt(6,232)=s8width:(0,3),0,32;height:(0,3),32,32;operator=::(6,233)=#(6,232),(6,234)=&(6,232),(6,235)=*(6,232),(6,236)=&(6,237)=k(6,232),(0,6);:_ZN16MA_CAMERA_FORMATaSERKS_;2A.;__base_ctor::(6,238)=#(6,232),(0,6),(6,235),(6,236),(0,6);:_ZN16MA_CAMERA_FORMATC2ERKS_;2A.;__comp_ctor::(6,238):_ZN16MA_CAMERA_FORMATC1ERKS_;2A.;__base_ctor::(6,239)=#(6,232),(0,6),(6,235),(0,6);:_ZN16MA_CAMERA_FORMATC2Ev;2A.;__comp_ctor::(6,239):_ZN16MA_CAMERA_FORMATC1Ev;2A.;;",128,0,4447,0
+	.stabs	"MA_CAMERA_FORMAT:t(6,240)=(6,232)",128,0,4450,0
+	.stabs	"MADBBlob:Tt(6,241)=s8data:(6,8),0,32;size:(0,3),32,32;operator=::(6,242)=#(6,241),(6,243)=&(6,241),(6,244)=*(6,241),(6,245)=&(6,246)=k(6,241),(0,6);:_ZN8MADBBlobaSERKS_;2A.;__base_ctor::(6,247)=#(6,241),(0,6),(6,244),(6,245),(0,6);:_ZN8MADBBlobC2ERKS_;2A.;__comp_ctor::(6,247):_ZN8MADBBlobC1ERKS_;2A.;__base_ctor::(6,248)=#(6,241),(0,6),(6,244),(0,6);:_ZN8MADBBlobC2Ev;2A.;__comp_ctor::(6,248):_ZN8MADBBlobC1Ev;2A.;;",128,0,4464,0
+	.stabs	"MADBBlob:t(6,249)=(6,241)",128,0,4467,0
+	.stabs	"MADBText:Tt(6,250)=s8addr:(6,4),0,32;length:(0,3),32,32;operator=::(6,251)=#(6,250),(6,252)=&(6,250),(6,253)=*(6,250),(6,254)=&(6,255)=k(6,250),(0,6);:_ZN8MADBTextaSERKS_;2A.;__base_ctor::(6,256)=#(6,250),(0,6),(6,253),(6,254),(0,6);:_ZN8MADBTextC2ERKS_;2A.;__comp_ctor::(6,256):_ZN8MADBTextC1ERKS_;2A.;__base_ctor::(6,257)=#(6,250),(0,6),(6,253),(0,6);:_ZN8MADBTextC2Ev;2A.;__comp_ctor::(6,257):_ZN8MADBTextC1Ev;2A.;;",128,0,4481,0
+	.stabs	"MADBText:t(6,258)=(6,250)",128,0,4486,0
+	.stabs	"MADBValue:Tt(6,259)=s12:(6,260)=u8i:(0,3),0,32;d:(0,8),0,64;blob:(6,249),0,64;dataHandle:(6,10),0,32;text:(6,258),0,64;i64:(6,14),0,64;;,0,64;type:(0,3),64,32;operator=::(6,261)=#(6,259),(6,262)=&(6,259),(6,263)=*(6,259),(6,264)=&(6,265)=k(6,259),(0,6);:_ZN9MADBValueaSERKS_;2A.;__base_ctor::(6,266)=#(6,259),(0,6),(6,263),(6,264),(0,6);:_ZN9MADBValueC2ERKS_;2A.;__comp_ctor::(6,266):_ZN9MADBValueC1ERKS_;2A.;__base_ctor::(6,267)=#(6,259),(0,6),(6,263),(0,6);:_ZN9MADBValueC2Ev;2A.;__comp_ctor::(6,267):_ZN9MADBValueC1Ev;2A.;;",128,0,4501,0
+	.stabs	"MADBValue:t(6,268)=(6,259)",128,0,4512,0
+	.stabs	"MAPushNotificationData:Tt(6,269)=s24type:(0,3),0,32;alertMessage:(6,4),32,32;alertMessageSize:(0,3),64,32;soundFileName:(6,4),96,32;soundFileNameSize:(0,3),128,32;badgeIcon:(0,3),160,32;operator=::(6,270)=#(6,269),(6,271)=&(6,269),(6,272)=*(6,269),(6,273)=&(6,274)=k(6,269),(0,6);:_ZN22MAPushNotificationDataaSERKS_;2A.;__base_ctor::(6,275)=#(6,269),(0,6),(6,272),(6,273),(0,6);:_ZN22MAPushNotificationDataC2ERKS_;2A.;__comp_ctor::(6,275):_ZN22MAPushNotificationDataC1ERKS_;2A.;__base_ctor::(6,276)=#(6,269),(0,6),(6,272),(0,6);:_ZN22MAPushNotificationDataC2Ev;2A.;__comp_ctor::(6,276):_ZN22MAPushNotificationDataC1Ev;2A.;;",128,0,4529,0
+	.stabs	"MAPushNotificationData:t(6,277)=(6,269)",128,0,4558,0
 	.stabn	162,0,0,0
 	.stabs	"size_t:t(5,1)=(0,16)",128,0,32,0
 	.stabn	162,0,0,0
@@ -138,31 +140,39 @@
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/Environment.h",130,0,0,0
-	.stabs	"Environment::TimerEventInstance:Tt(15,1)=s20e:(15,2)=*(15,3)=xsTimerListener:,0,32;addTime:(0,3),32,32;period:(0,3),64,32;numTimes:(0,3),96,32;nextInvoke:(0,3),128,32;__base_ctor::(15,4)=#(15,1),(0,6),(15,5)=*(15,1),(15,2),(0,3),(0,3),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceC2EPNS_13TimerListenerEii;2A.;__comp_ctor::(15,4):_ZN6MAUtil11Environment18TimerEventInstanceC1EPNS_13TimerListenerEii;2A.;operator=::(15,6)=#(15,1),(15,7)=&(15,1),(15,5),(15,8)=&(15,9)=k(15,1),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceaSERKS1_;2A.;__base_ctor::(15,10)=#(15,1),(0,6),(15,5),(15,8),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceC2ERKS1_;2A.;__comp_ctor::(15,10):_ZN6MAUtil11Environment18TimerEventInstanceC1ERKS1_;2A.;;",128,0,428,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::KeyListener>::Combo>:Tt(15,11)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,12)=*(15,13)=xsCombo:,64,32;__base_ctor::(15,14)=#(15,11),(0,6),(15,15)=*(15,11),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,14):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,16)=#(15,11),(0,6),(15,15),(15,17)=*(15,18)=k(15,13),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,16):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,19)=#(15,11),(0,6),(15,15),(15,20)=&(15,21)=k(15,11),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,19):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,22)=#(15,11),(0,6),(15,15),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,22):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEED1Ev;2A.;operator=::(15,23)=#(15,11),(15,24)=&(15,11),(15,15),(15,20),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEaSERKS5_;2A.;add::(15,25)=#(15,11),(0,6),(15,15),(15,26)=&(15,18),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3addERKS4_;2A.(15,16):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,27)=#(15,11),(0,6),(15,15),(15,12),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEPS4_;2A.(15,28)=#(15,11),(0,6),(15,15),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEi;2A.(15,29)=#(15,11),(0,6),(15,15),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEii;2A.;insert::(15,30)=#(15,11),(0,6),(15,15),(0,3),(15,13),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6insertEiS4_;2A.;size::(15,31)=#(15,11),(0,3),(15,32)=*(15,21),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE4sizeEv;2B.;resize::(15,28):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6resizeEi;2A.;reserve::(15,28):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7reserveEi;2A.;clear::(15,22):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5clearEv;2A.;empty::(15,33)=#(15,11),(0,4),(15,32),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5emptyEv;2B.;capacity::(15,31):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE8capacityEv;2B.;begin::(15,34)=#(15,11),(15,12),(15,15),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5beginEv;2A.;end::(15,34):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3endEv;2A.;begin::(15,35)=#(15,11),(15,17),(15,32),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5beginEv;2B.;end::(15,35):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3endEv;2B.;operator[]::(15,36)=#(15,11),(15,37)=&(15,13),(15,15),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEixEi;2A.(15,38)=#(15,11),(15,26),(15,32),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEixEi;2B.;pointer::(15,35):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7pointerEv;2B.(15,34):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::KeyListener>:Tt(15,39)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,11),32,96;__base_ctor::(15,40)=#(15,39),(0,6),(15,41)=*(15,39),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC2Eb;2A.;__comp_ctor::(15,40):_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC1Eb;2A.;begin::(15,42)=#(15,39),(15,43)=xsiterator:,(15,41),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE5beginEv;2A.;add::(15,44)=#(15,39),(0,6),(15,41),(15,45)=*(15,46)=xsKeyListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE3addEPS1_;2A.;remove::(15,44):_ZN6MAUtil11ListenerSetINS_11KeyListenerEE6removeEPS1_;2A.;contains::(15,47)=#(15,39),(0,4),(15,41),(15,45),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE8containsEPS1_;2A.;setRunning::(15,48)=#(15,39),(0,6),(15,41),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE10setRunningEb;2A.;size::(15,49)=#(15,39),(0,3),(15,50)=*(15,51)=k(15,39),(0,6);:_ZNK6MAUtil11ListenerSetINS_11KeyListenerEE4sizeEv;2B.;operator=::(15,52)=#(15,39),(15,53)=&(15,39),(15,41),(15,54)=&(15,51),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEaSERKS2_;2A.;__base_ctor::(15,55)=#(15,39),(0,6),(15,41),(15,54),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC2ERKS2_;2A.;__comp_ctor::(15,55):_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC1ERKS2_;2A.;__base_dtor::(15,56)=#(15,39),(0,6),(15,41),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEED2Ev;2A.;__comp_dtor::(15,56):_ZN6MAUtil11ListenerSetINS_11KeyListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::PointerListener>::Combo>:Tt(15,57)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,58)=*(15,59)=xsCombo:,64,32;__base_ctor::(15,60)=#(15,57),(0,6),(15,61)=*(15,57),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,60):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,62)=#(15,57),(0,6),(15,61),(15,63)=*(15,64)=k(15,59),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,62):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,65)=#(15,57),(0,6),(15,61),(15,66)=&(15,67)=k(15,57),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,65):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,68)=#(15,57),(0,6),(15,61),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,68):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEED1Ev;2A.;operator=::(15,69)=#(15,57),(15,70)=&(15,57),(15,61),(15,66),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEaSERKS5_;2A.;add::(15,71)=#(15,57),(0,6),(15,61),(15,72)=&(15,64),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3addERKS4_;2A.(15,62):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,73)=#(15,57),(0,6),(15,61),(15,58),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEPS4_;2A.(15,74)=#(15,57),(0,6),(15,61),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEi;2A.(15,75)=#(15,57),(0,6),(15,61),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEii;2A.;insert::(15,76)=#(15,57),(0,6),(15,61),(0,3),(15,59),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6insertEiS4_;2A.;size::(15,77)=#(15,57),(0,3),(15,78)=*(15,67),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE4sizeEv;2B.;resize::(15,74):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6resizeEi;2A.;reserve::(15,74):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7reserveEi;2A.;clear::(15,68):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5clearEv;2A.;empty::(15,79)=#(15,57),(0,4),(15,78),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5emptyEv;2B.;capacity::(15,77):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE8capacityEv;2B.;begin::(15,80)=#(15,57),(15,58),(15,61),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5beginEv;2A.;end::(15,80):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3endEv;2A.;begin::(15,81)=#(15,57),(15,63),(15,78),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5beginEv;2B.;end::(15,81):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3endEv;2B.;operator[]::(15,82)=#(15,57),(15,83)=&(15,59),(15,61),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEixEi;2A.(15,84)=#(15,57),(15,72),(15,78),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEixEi;2B.;pointer::(15,81):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7pointerEv;2B.(15,80):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::PointerListener>:Tt(15,85)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,57),32,96;__base_ctor::(15,86)=#(15,85),(0,6),(15,87)=*(15,85),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC2Eb;2A.;__comp_ctor::(15,86):_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC1Eb;2A.;begin::(15,88)=#(15,85),(15,89)=xsiterator:,(15,87),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE5beginEv;2A.;add::(15,90)=#(15,85),(0,6),(15,87),(15,91)=*(15,92)=xsPointerListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE3addEPS1_;2A.;remove::(15,90):_ZN6MAUtil11ListenerSetINS_15PointerListenerEE6removeEPS1_;2A.;contains::(15,93)=#(15,85),(0,4),(15,87),(15,91),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE8containsEPS1_;2A.;setRunning::(15,94)=#(15,85),(0,6),(15,87),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE10setRunningEb;2A.;size::(15,95)=#(15,85),(0,3),(15,96)=*(15,97)=k(15,85),(0,6);:_ZNK6MAUtil11ListenerSetINS_15PointerListenerEE4sizeEv;2B.;operator=::(15,98)=#(15,85),(15,99)=&(15,85),(15,87),(15,100)=&(15,97),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEaSERKS2_;2A.;__base_ctor::(15,101)=#(15,85),(0,6),(15,87),(15,100),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC2ERKS2_;2A.;__comp_ctor::(15,101):_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC1ERKS2_;2A.;__base_dtor::(15,102)=#(15,85),(0,6),(15,87),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEED2Ev;2A.;__comp_dtor::(15,102):_ZN6MAUtil11ListenerSetINS_15PointerListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::CloseListener*>:Tt(15,103)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,104)=*(15,105)=*(15,106)=xsCloseListener:,64,32;__base_ctor::(15,107)=#(15,103),(0,6),(15,108)=*(15,103),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2Ei;2A.;__comp_ctor::(15,107):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1Ei;2A.;__base_ctor::(15,109)=#(15,103),(0,6),(15,108),(15,110)=*(15,111)=k(15,105),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2EPKS2_i;2A.;__comp_ctor::(15,109):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1EPKS2_i;2A.;__base_ctor::(15,112)=#(15,103),(0,6),(15,108),(15,113)=&(15,114)=k(15,103),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2ERKS3_;2A.;__comp_ctor::(15,112):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1ERKS3_;2A.;__base_dtor::(15,115)=#(15,103),(0,6),(15,108),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEED2Ev;2A.;__comp_dtor::(15,115):_ZN6MAUtil6VectorIPNS_13CloseListenerEED1Ev;2A.;operator=::(15,116)=#(15,103),(15,117)=&(15,103),(15,108),(15,113),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEaSERKS3_;2A.;add::(15,118)=#(15,103),(0,6),(15,108),(15,119)=&(15,111),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE3addERKS2_;2A.(15,109):_ZN6MAUtil6VectorIPNS_13CloseListenerEE3addEPKS2_i;2A.;remove::(15,120)=#(15,103),(0,6),(15,108),(15,104),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEPS2_;2A.(15,121)=#(15,103),(0,6),(15,108),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEi;2A.(15,122)=#(15,103),(0,6),(15,108),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEii;2A.;insert::(15,123)=#(15,103),(0,6),(15,108),(0,3),(15,105),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6insertEiS2_;2A.;size::(15,124)=#(15,103),(0,3),(15,125)=*(15,114),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE4sizeEv;2B.;resize::(15,121):_ZN6MAUtil6VectorIPNS_13CloseListenerEE6resizeEi;2A.;reserve::(15,121):_ZN6MAUtil6VectorIPNS_13CloseListenerEE7reserveEi;2A.;clear::(15,115):_ZN6MAUtil6VectorIPNS_13CloseListenerEE5clearEv;2A.;empty::(15,126)=#(15,103),(0,4),(15,125),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE5emptyEv;2B.;capacity::(15,124):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE8capacityEv;2B.;begin::(15,127)=#(15,103),(15,104),(15,108),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE5beginEv;2A.;end::(15,127):_ZN6MAUtil6VectorIPNS_13CloseListenerEE3endEv;2A.;begin::(15,128)=#(15,103),(15,110),(15,125),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE5beginEv;2B.;end::(15,128):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE3endEv;2B.;operator[]::(15,129)=#(15,103),(15,130)=&(15,105),(15,108),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEixEi;2A.(15,131)=#(15,103),(15,119),(15,125),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEEixEi;2B.;pointer::(15,128):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE7pointerEv;2B.(15,127):_ZN6MAUtil6VectorIPNS_13CloseListenerEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::ConnListener>::Combo>:Tt(15,132)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,133)=*(15,134)=xsCombo:,64,32;__base_ctor::(15,135)=#(15,132),(0,6),(15,136)=*(15,132),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,135):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,137)=#(15,132),(0,6),(15,136),(15,138)=*(15,139)=k(15,134),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,137):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,140)=#(15,132),(0,6),(15,136),(15,141)=&(15,142)=k(15,132),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,140):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,143)=#(15,132),(0,6),(15,136),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,143):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEED1Ev;2A.;operator=::(15,144)=#(15,132),(15,145)=&(15,132),(15,136),(15,141),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEaSERKS5_;2A.;add::(15,146)=#(15,132),(0,6),(15,136),(15,147)=&(15,139),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3addERKS4_;2A.(15,137):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,148)=#(15,132),(0,6),(15,136),(15,133),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEPS4_;2A.(15,149)=#(15,132),(0,6),(15,136),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEi;2A.(15,150)=#(15,132),(0,6),(15,136),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEii;2A.;insert::(15,151)=#(15,132),(0,6),(15,136),(0,3),(15,134),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6insertEiS4_;2A.;size::(15,152)=#(15,132),(0,3),(15,153)=*(15,142),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE4sizeEv;2B.;resize::(15,149):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6resizeEi;2A.;reserve::(15,149):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7reserveEi;2A.;clear::(15,143):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5clearEv;2A.;empty::(15,154)=#(15,132),(0,4),(15,153),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5emptyEv;2B.;capacity::(15,152):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE8capacityEv;2B.;begin::(15,155)=#(15,132),(15,133),(15,136),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5beginEv;2A.;end::(15,155):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3endEv;2A.;begin::(15,156)=#(15,132),(15,138),(15,153),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5beginEv;2B.;end::(15,156):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3endEv;2B.;operator[]::(15,157)=#(15,132),(15,158)=&(15,134),(15,136),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEixEi;2A.(15,159)=#(15,132),(15,147),(15,153),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEixEi;2B.;pointer::(15,156):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7pointerEv;2B.(15,155):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::ConnListener>:Tt(15,160)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,132),32,96;__base_ctor::(15,161)=#(15,160),(0,6),(15,162)=*(15,160),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC2Eb;2A.;__comp_ctor::(15,161):_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC1Eb;2A.;begin::(15,163)=#(15,160),(15,164)=xsiterator:,(15,162),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE5beginEv;2A.;add::(15,165)=#(15,160),(0,6),(15,162),(15,166)=*(15,167)=xsConnListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE3addEPS1_;2A.;remove::(15,165):_ZN6MAUtil11ListenerSetINS_12ConnListenerEE6removeEPS1_;2A.;contains::(15,168)=#(15,160),(0,4),(15,162),(15,166),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE8containsEPS1_;2A.;setRunning::(15,169)=#(15,160),(0,6),(15,162),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE10setRunningEb;2A.;size::(15,170)=#(15,160),(0,3),(15,171)=*(15,172)=k(15,160),(0,6);:_ZNK6MAUtil11ListenerSetINS_12ConnListenerEE4sizeEv;2B.;operator=::(15,173)=#(15,160),(15,174)=&(15,160),(15,162),(15,175)=&(15,172),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEaSERKS2_;2A.;__base_ctor::(15,176)=#(15,160),(0,6),(15,162),(15,175),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC2ERKS2_;2A.;__comp_ctor::(15,176):_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC1ERKS2_;2A.;__base_dtor::(15,177)=#(15,160),(0,6),(15,162),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEED2Ev;2A.;__comp_dtor::(15,177):_ZN6MAUtil11ListenerSetINS_12ConnListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::IdleListener>::Combo>:Tt(15,178)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,179)=*(15,180)=xsCombo:,64,32;__base_ctor::(15,181)=#(15,178),(0,6),(15,182)=*(15,178),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,181):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,183)=#(15,178),(0,6),(15,182),(15,184)=*(15,185)=k(15,180),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,183):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,186)=#(15,178),(0,6),(15,182),(15,187)=&(15,188)=k(15,178),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,186):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,189)=#(15,178),(0,6),(15,182),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,189):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEED1Ev;2A.;operator=::(15,190)=#(15,178),(15,191)=&(15,178),(15,182),(15,187),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEaSERKS5_;2A.;add::(15,192)=#(15,178),(0,6),(15,182),(15,193)=&(15,185),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3addERKS4_;2A.(15,183):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,194)=#(15,178),(0,6),(15,182),(15,179),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEPS4_;2A.(15,195)=#(15,178),(0,6),(15,182),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEi;2A.(15,196)=#(15,178),(0,6),(15,182),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEii;2A.;insert::(15,197)=#(15,178),(0,6),(15,182),(0,3),(15,180),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6insertEiS4_;2A.;size::(15,198)=#(15,178),(0,3),(15,199)=*(15,188),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE4sizeEv;2B.;resize::(15,195):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6resizeEi;2A.;reserve::(15,195):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7reserveEi;2A.;clear::(15,189):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5clearEv;2A.;empty::(15,200)=#(15,178),(0,4),(15,199),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5emptyEv;2B.;capacity::(15,198):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE8capacityEv;2B.;begin::(15,201)=#(15,178),(15,179),(15,182),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5beginEv;2A.;end::(15,201):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3endEv;2A.;begin::(15,202)=#(15,178),(15,184),(15,199),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5beginEv;2B.;end::(15,202):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3endEv;2B.;operator[]::(15,203)=#(15,178),(15,204)=&(15,180),(15,182),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEixEi;2A.(15,205)=#(15,178),(15,193),(15,199),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEixEi;2B.;pointer::(15,202):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7pointerEv;2B.(15,201):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::IdleListener>:Tt(15,206)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,178),32,96;__base_ctor::(15,207)=#(15,206),(0,6),(15,208)=*(15,206),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC2Eb;2A.;__comp_ctor::(15,207):_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC1Eb;2A.;begin::(15,209)=#(15,206),(15,210)=xsiterator:,(15,208),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE5beginEv;2A.;add::(15,211)=#(15,206),(0,6),(15,208),(15,212)=*(15,213)=xsIdleListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE3addEPS1_;2A.;remove::(15,211):_ZN6MAUtil11ListenerSetINS_12IdleListenerEE6removeEPS1_;2A.;contains::(15,214)=#(15,206),(0,4),(15,208),(15,212),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE8containsEPS1_;2A.;setRunning::(15,215)=#(15,206),(0,6),(15,208),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE10setRunningEb;2A.;size::(15,216)=#(15,206),(0,3),(15,217)=*(15,218)=k(15,206),(0,6);:_ZNK6MAUtil11ListenerSetINS_12IdleListenerEE4sizeEv;2B.;operator=::(15,219)=#(15,206),(15,220)=&(15,206),(15,208),(15,221)=&(15,218),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEaSERKS2_;2A.;__base_ctor::(15,222)=#(15,206),(0,6),(15,208),(15,221),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC2ERKS2_;2A.;__comp_ctor::(15,222):_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC1ERKS2_;2A.;__base_dtor::(15,223)=#(15,206),(0,6),(15,208),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEED2Ev;2A.;__comp_dtor::(15,223):_ZN6MAUtil11ListenerSetINS_12IdleListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::Environment::TimerEventInstance>::Combo>:Tt(15,224)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,225)=*(15,226)=xsCombo:,64,32;__base_ctor::(15,227)=#(15,224),(0,6),(15,228)=*(15,224),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2Ei;2A.;__comp_ctor::(15,227):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1Ei;2A.;__base_ctor::(15,229)=#(15,224),(0,6),(15,228),(15,230)=*(15,231)=k(15,226),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2EPKS5_i;2A.;__comp_ctor::(15,229):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1EPKS5_i;2A.;__base_ctor::(15,232)=#(15,224),(0,6),(15,228),(15,233)=&(15,234)=k(15,224),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2ERKS6_;2A.;__comp_ctor::(15,232):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1ERKS6_;2A.;__base_dtor::(15,235)=#(15,224),(0,6),(15,228),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEED2Ev;2A.;__comp_dtor::(15,235):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEED1Ev;2A.;operator=::(15,236)=#(15,224),(15,237)=&(15,224),(15,228),(15,233),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEaSERKS6_;2A.;add::(15,238)=#(15,224),(0,6),(15,228),(15,239)=&(15,231),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3addERKS5_;2A.(15,229):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3addEPKS5_i;2A.;remove::(15,240)=#(15,224),(0,6),(15,228),(15,225),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEPS5_;2A.(15,241)=#(15,224),(0,6),(15,228),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEi;2A.(15,242)=#(15,224),(0,6),(15,228),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEii;2A.;insert::(15,243)=#(15,224),(0,6),(15,228),(0,3),(15,226),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6insertEiS5_;2A.;size::(15,244)=#(15,224),(0,3),(15,245)=*(15,234),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE4sizeEv;2B.;resize::(15,241):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6resizeEi;2A.;reserve::(15,241):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7reserveEi;2A.;clear::(15,235):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5clearEv;2A.;empty::(15,246)=#(15,224),(0,4),(15,245),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5emptyEv;2B.;capacity::(15,244):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE8capacityEv;2B.;begin::(15,247)=#(15,224),(15,225),(15,228),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5beginEv;2A.;end::(15,247):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3endEv;2A.;begin::(15,248)=#(15,224),(15,230),(15,245),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5beginEv;2B.;end::(15,248):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3endEv;2B.;operator[]::(15,249)=#(15,224),(15,250)=&(15,226),(15,228),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEixEi;2A.(15,251)=#(15,224),(15,239),(15,245),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEixEi;2B.;pointer::(15,248):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7pointerEv;2B.(15,247):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::Environment::TimerEventInstance>:Tt(15,252)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,224),32,96;__base_ctor::(15,253)=#(15,252),(0,6),(15,254)=*(15,252),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC2Eb;2A.;__comp_ctor::(15,253):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC1Eb;2A.;begin::(15,255)=#(15,252),(15,256)=xsiterator:,(15,254),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE5beginEv;2A.;add::(15,257)=#(15,252),(0,6),(15,254),(15,5),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE3addEPS2_;2A.;remove::(15,257):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE6removeEPS2_;2A.;contains::(15,258)=#(15,252),(0,4),(15,254),(15,5),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE8containsEPS2_;2A.;setRunning::(15,259)=#(15,252),(0,6),(15,254),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE10setRunningEb;2A.;size::(15,260)=#(15,252),(0,3),(15,261)=*(15,262)=k(15,252),(0,6);:_ZNK6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE4sizeEv;2B.;operator=::(15,263)=#(15,252),(15,264)=&(15,252),(15,254),(15,265)=&(15,262),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEaSERKS3_;2A.;__base_ctor::(15,266)=#(15,252),(0,6),(15,254),(15,265),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC2ERKS3_;2A.;__comp_ctor::(15,266):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC1ERKS3_;2A.;__base_dtor::(15,267)=#(15,252),(0,6),(15,254),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEED2Ev;2A.;__comp_dtor::(15,267):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::FocusListener>::Combo>:Tt(15,268)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,269)=*(15,270)=xsCombo:,64,32;__base_ctor::(15,271)=#(15,268),(0,6),(15,272)=*(15,268),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,271):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,273)=#(15,268),(0,6),(15,272),(15,274)=*(15,275)=k(15,270),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,273):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,276)=#(15,268),(0,6),(15,272),(15,277)=&(15,278)=k(15,268),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,276):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,279)=#(15,268),(0,6),(15,272),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,279):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEED1Ev;2A.;operator=::(15,280)=#(15,268),(15,281)=&(15,268),(15,272),(15,277),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEaSERKS5_;2A.;add::(15,282)=#(15,268),(0,6),(15,272),(15,283)=&(15,275),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3addERKS4_;2A.(15,273):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,284)=#(15,268),(0,6),(15,272),(15,269),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEPS4_;2A.(15,285)=#(15,268),(0,6),(15,272),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEi;2A.(15,286)=#(15,268),(0,6),(15,272),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEii;2A.;insert::(15,287)=#(15,268),(0,6),(15,272),(0,3),(15,270),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6insertEiS4_;2A.;size::(15,288)=#(15,268),(0,3),(15,289)=*(15,278),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE4sizeEv;2B.;resize::(15,285):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6resizeEi;2A.;reserve::(15,285):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7reserveEi;2A.;clear::(15,279):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5clearEv;2A.;empty::(15,290)=#(15,268),(0,4),(15,289),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5emptyEv;2B.;capacity::(15,288):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE8capacityEv;2B.;begin::(15,291)=#(15,268),(15,269),(15,272),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5beginEv;2A.;end::(15,291):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3endEv;2A.;begin::(15,292)=#(15,268),(15,274),(15,289),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5beginEv;2B.;end::(15,292):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3endEv;2B.;operator[]::(15,293)=#(15,268),(15,294)=&(15,270),(15,272),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEixEi;2A.(15,295)=#(15,268),(15,283),(15,289),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEixEi;2B.;pointer::(15,292):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7pointerEv;2B.(15,291):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::FocusListener>:Tt(15,296)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,268),32,96;__base_ctor::(15,297)=#(15,296),(0,6),(15,298)=*(15,296),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC2Eb;2A.;__comp_ctor::(15,297):_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC1Eb;2A.;begin::(15,299)=#(15,296),(15,300)=xsiterator:,(15,298),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE5beginEv;2A.;add::(15,301)=#(15,296),(0,6),(15,298),(15,302)=*(15,303)=xsFocusListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE3addEPS1_;2A.;remove::(15,301):_ZN6MAUtil11ListenerSetINS_13FocusListenerEE6removeEPS1_;2A.;contains::(15,304)=#(15,296),(0,4),(15,298),(15,302),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE8containsEPS1_;2A.;setRunning::(15,305)=#(15,296),(0,6),(15,298),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE10setRunningEb;2A.;size::(15,306)=#(15,296),(0,3),(15,307)=*(15,308)=k(15,296),(0,6);:_ZNK6MAUtil11ListenerSetINS_13FocusListenerEE4sizeEv;2B.;operator=::(15,309)=#(15,296),(15,310)=&(15,296),(15,298),(15,311)=&(15,308),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEaSERKS2_;2A.;__base_ctor::(15,312)=#(15,296),(0,6),(15,298),(15,311),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC2ERKS2_;2A.;__comp_ctor::(15,312):_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC1ERKS2_;2A.;__base_dtor::(15,313)=#(15,296),(0,6),(15,298),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEED2Ev;2A.;__comp_dtor::(15,313):_ZN6MAUtil11ListenerSetINS_13FocusListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::CustomEventListener>::Combo>:Tt(15,314)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,315)=*(15,316)=xsCombo:,64,32;__base_ctor::(15,317)=#(15,314),(0,6),(15,318)=*(15,314),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,317):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,319)=#(15,314),(0,6),(15,318),(15,320)=*(15,321)=k(15,316),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,319):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,322)=#(15,314),(0,6),(15,318),(15,323)=&(15,324)=k(15,314),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,322):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,325)=#(15,314),(0,6),(15,318),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,325):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEED1Ev;2A.;operator=::(15,326)=#(15,314),(15,327)=&(15,314),(15,318),(15,323),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEaSERKS5_;2A.;add::(15,328)=#(15,314),(0,6),(15,318),(15,329)=&(15,321),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3addERKS4_;2A.(15,319):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,330)=#(15,314),(0,6),(15,318),(15,315),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEPS4_;2A.(15,331)=#(15,314),(0,6),(15,318),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEi;2A.(15,332)=#(15,314),(0,6),(15,318),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEii;2A.;insert::(15,333)=#(15,314),(0,6),(15,318),(0,3),(15,316),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6insertEiS4_;2A.;size::(15,334)=#(15,314),(0,3),(15,335)=*(15,324),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE4sizeEv;2B.;resize::(15,331):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6resizeEi;2A.;reserve::(15,331):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7reserveEi;2A.;clear::(15,325):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5clearEv;2A.;empty::(15,336)=#(15,314),(0,4),(15,335),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5emptyEv;2B.;capacity::(15,334):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE8capacityEv;2B.;begin::(15,337)=#(15,314),(15,315),(15,318),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5beginEv;2A.;end::(15,337):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3endEv;2A.;begin::(15,338)=#(15,314),(15,320),(15,335),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5beginEv;2B.;end::(15,338):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3endEv;2B.;operator[]::(15,339)=#(15,314),(15,340)=&(15,316),(15,318),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEixEi;2A.(15,341)=#(15,314),(15,329),(15,335),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEixEi;2B.;pointer::(15,338):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7pointerEv;2B.(15,337):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::CustomEventListener>:Tt(15,342)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,314),32,96;__base_ctor::(15,343)=#(15,342),(0,6),(15,344)=*(15,342),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC2Eb;2A.;__comp_ctor::(15,343):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC1Eb;2A.;begin::(15,345)=#(15,342),(15,346)=xsiterator:,(15,344),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE5beginEv;2A.;add::(15,347)=#(15,342),(0,6),(15,344),(15,348)=*(15,349)=xsCustomEventListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE3addEPS1_;2A.;remove::(15,347):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE6removeEPS1_;2A.;contains::(15,350)=#(15,342),(0,4),(15,344),(15,348),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE8containsEPS1_;2A.;setRunning::(15,351)=#(15,342),(0,6),(15,344),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE10setRunningEb;2A.;size::(15,352)=#(15,342),(0,3),(15,353)=*(15,354)=k(15,342),(0,6);:_ZNK6MAUtil11ListenerSetINS_19CustomEventListenerEE4sizeEv;2B.;operator=::(15,355)=#(15,342),(15,356)=&(15,342),(15,344),(15,357)=&(15,354),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEaSERKS2_;2A.;__base_ctor::(15,358)=#(15,342),(0,6),(15,344),(15,357),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC2ERKS2_;2A.;__comp_ctor::(15,358):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC1ERKS2_;2A.;__base_dtor::(15,359)=#(15,342),(0,6),(15,344),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEED2Ev;2A.;__comp_dtor::(15,359):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::TextBoxListener>::Combo>:Tt(15,360)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,361)=*(15,362)=xsCombo:,64,32;__base_ctor::(15,363)=#(15,360),(0,6),(15,364)=*(15,360),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,363):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,365)=#(15,360),(0,6),(15,364),(15,366)=*(15,367)=k(15,362),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,365):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,368)=#(15,360),(0,6),(15,364),(15,369)=&(15,370)=k(15,360),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,368):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,371)=#(15,360),(0,6),(15,364),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,371):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEED1Ev;2A.;operator=::(15,372)=#(15,360),(15,373)=&(15,360),(15,364),(15,369),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEaSERKS5_;2A.;add::(15,374)=#(15,360),(0,6),(15,364),(15,375)=&(15,367),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3addERKS4_;2A.(15,365):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,376)=#(15,360),(0,6),(15,364),(15,361),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEPS4_;2A.(15,377)=#(15,360),(0,6),(15,364),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEi;2A.(15,378)=#(15,360),(0,6),(15,364),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEii;2A.;insert::(15,379)=#(15,360),(0,6),(15,364),(0,3),(15,362),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6insertEiS4_;2A.;size::(15,380)=#(15,360),(0,3),(15,381)=*(15,370),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE4sizeEv;2B.;resize::(15,377):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6resizeEi;2A.;reserve::(15,377):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7reserveEi;2A.;clear::(15,371):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5clearEv;2A.;empty::(15,382)=#(15,360),(0,4),(15,381),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5emptyEv;2B.;capacity::(15,380):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE8capacityEv;2B.;begin::(15,383)=#(15,360),(15,361),(15,364),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5beginEv;2A.;end::(15,383):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3endEv;2A.;begin::(15,384)=#(15,360),(15,366),(15,381),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5beginEv;2B.;end::(15,384):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3endEv;2B.;operator[]::(15,385)=#(15,360),(15,386)=&(15,362),(15,364),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEixEi;2A.(15,387)=#(15,360),(15,375),(15,381),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEixEi;2B.;pointer::(15,384):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7pointerEv;2B.(15,383):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::TextBoxListener>:Tt(15,388)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,360),32,96;__base_ctor::(15,389)=#(15,388),(0,6),(15,390)=*(15,388),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC2Eb;2A.;__comp_ctor::(15,389):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC1Eb;2A.;begin::(15,391)=#(15,388),(15,392)=xsiterator:,(15,390),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE5beginEv;2A.;add::(15,393)=#(15,388),(0,6),(15,390),(15,394)=*(15,395)=xsTextBoxListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE3addEPS1_;2A.;remove::(15,393):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE6removeEPS1_;2A.;contains::(15,396)=#(15,388),(0,4),(15,390),(15,394),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE8containsEPS1_;2A.;setRunning::(15,397)=#(15,388),(0,6),(15,390),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE10setRunningEb;2A.;size::(15,398)=#(15,388),(0,3),(15,399)=*(15,400)=k(15,388),(0,6);:_ZNK6MAUtil11ListenerSetINS_15TextBoxListenerEE4sizeEv;2B.;operator=::(15,401)=#(15,388),(15,402)=&(15,388),(15,390),(15,403)=&(15,400),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEaSERKS2_;2A.;__base_ctor::(15,404)=#(15,388),(0,6),(15,390),(15,403),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC2ERKS2_;2A.;__comp_ctor::(15,404):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC1ERKS2_;2A.;__base_dtor::(15,405)=#(15,388),(0,6),(15,390),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEED2Ev;2A.;__comp_dtor::(15,405):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEED1Ev;2A.;;",128,0,46,0
-	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::SensorListener>::Combo>:Tt(15,406)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,407)=*(15,408)=xsCombo:,64,32;__base_ctor::(15,409)=#(15,406),(0,6),(15,410)=*(15,406),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,409):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,411)=#(15,406),(0,6),(15,410),(15,412)=*(15,413)=k(15,408),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,411):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,414)=#(15,406),(0,6),(15,410),(15,415)=&(15,416)=k(15,406),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,414):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,417)=#(15,406),(0,6),(15,410),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,417):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEED1Ev;2A.;operator=::(15,418)=#(15,406),(15,419)=&(15,406),(15,410),(15,415),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEaSERKS5_;2A.;add::(15,420)=#(15,406),(0,6),(15,410),(15,421)=&(15,413),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3addERKS4_;2A.(15,411):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,422)=#(15,406),(0,6),(15,410),(15,407),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEPS4_;2A.(15,423)=#(15,406),(0,6),(15,410),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEi;2A.(15,424)=#(15,406),(0,6),(15,410),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEii;2A.;insert::(15,425)=#(15,406),(0,6),(15,410),(0,3),(15,408),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6insertEiS4_;2A.;size::(15,426)=#(15,406),(0,3),(15,427)=*(15,416),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE4sizeEv;2B.;resize::(15,423):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6resizeEi;2A.;reserve::(15,423):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7reserveEi;2A.;clear::(15,417):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5clearEv;2A.;empty::(15,428)=#(15,406),(0,4),(15,427),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5emptyEv;2B.;capacity::(15,426):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE8capacityEv;2B.;begin::(15,429)=#(15,406),(15,407),(15,410),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5beginEv;2A.;end::(15,429):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3endEv;2A.;begin::(15,430)=#(15,406),(15,412),(15,427),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5beginEv;2B.;end::(15,430):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3endEv;2B.;operator[]::(15,431)=#(15,406),(15,432)=&(15,408),(15,410),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEixEi;2A.(15,433)=#(15,406),(15,421),(15,427),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEixEi;2B.;pointer::(15,430):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7pointerEv;2B.(15,429):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"ListenerSet<MAUtil::SensorListener>:Tt(15,434)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,406),32,96;__base_ctor::(15,435)=#(15,434),(0,6),(15,436)=*(15,434),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC2Eb;2A.;__comp_ctor::(15,435):_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC1Eb;2A.;begin::(15,437)=#(15,434),(15,438)=xsiterator:,(15,436),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE5beginEv;2A.;add::(15,439)=#(15,434),(0,6),(15,436),(15,440)=*(15,441)=xsSensorListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE3addEPS1_;2A.;remove::(15,439):_ZN6MAUtil11ListenerSetINS_14SensorListenerEE6removeEPS1_;2A.;contains::(15,442)=#(15,434),(0,4),(15,436),(15,440),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE8containsEPS1_;2A.;setRunning::(15,443)=#(15,434),(0,6),(15,436),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE10setRunningEb;2A.;size::(15,444)=#(15,434),(0,3),(15,445)=*(15,446)=k(15,434),(0,6);:_ZNK6MAUtil11ListenerSetINS_14SensorListenerEE4sizeEv;2B.;operator=::(15,447)=#(15,434),(15,448)=&(15,434),(15,436),(15,449)=&(15,446),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEaSERKS2_;2A.;__base_ctor::(15,450)=#(15,434),(0,6),(15,436),(15,449),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC2ERKS2_;2A.;__comp_ctor::(15,450):_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC1ERKS2_;2A.;__base_dtor::(15,451)=#(15,434),(0,6),(15,436),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEED2Ev;2A.;__comp_dtor::(15,451):_ZN6MAUtil11ListenerSetINS_14SensorListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"PLATFORM_TYPE:t(15,1)=eOS_IOS:0,OS_ANDROID:1,OS_WIN:2,OS_UNKNOWN:3,;",128,0,48,0
+	.stabs	"Environment::TimerEventInstance:Tt(15,2)=s20e:(15,3)=*(15,4)=xsTimerListener:,0,32;addTime:(0,3),32,32;period:(0,3),64,32;numTimes:(0,3),96,32;nextInvoke:(0,3),128,32;__base_ctor::(15,5)=#(15,2),(0,6),(15,6)=*(15,2),(15,3),(0,3),(0,3),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceC2EPNS_13TimerListenerEii;2A.;__comp_ctor::(15,5):_ZN6MAUtil11Environment18TimerEventInstanceC1EPNS_13TimerListenerEii;2A.;operator=::(15,7)=#(15,2),(15,8)=&(15,2),(15,6),(15,9)=&(15,10)=k(15,2),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceaSERKS1_;2A.;__base_ctor::(15,11)=#(15,2),(0,6),(15,6),(15,9),(0,6);:_ZN6MAUtil11Environment18TimerEventInstanceC2ERKS1_;2A.;__comp_ctor::(15,11):_ZN6MAUtil11Environment18TimerEventInstanceC1ERKS1_;2A.;;",128,0,546,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::KeyListener>::Combo>:Tt(15,12)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,13)=*(15,14)=xsCombo:,64,32;__base_ctor::(15,15)=#(15,12),(0,6),(15,16)=*(15,12),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,15):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,17)=#(15,12),(0,6),(15,16),(15,18)=*(15,19)=k(15,14),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,17):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,20)=#(15,12),(0,6),(15,16),(15,21)=&(15,22)=k(15,12),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,20):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,23)=#(15,12),(0,6),(15,16),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,23):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEED1Ev;2A.;operator=::(15,24)=#(15,12),(15,25)=&(15,12),(15,16),(15,21),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEaSERKS5_;2A.;add::(15,26)=#(15,12),(0,6),(15,16),(15,27)=&(15,19),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3addERKS4_;2A.(15,17):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,28)=#(15,12),(0,6),(15,16),(15,13),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEPS4_;2A.(15,29)=#(15,12),(0,6),(15,16),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEi;2A.(15,30)=#(15,12),(0,6),(15,16),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6removeEii;2A.;insert::(15,31)=#(15,12),(0,6),(15,16),(0,3),(15,14),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6insertEiS4_;2A.;size::(15,32)=#(15,12),(0,3),(15,33)=*(15,22),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE4sizeEv;2B.;resize::(15,29):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE6resizeEi;2A.;reserve::(15,29):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7reserveEi;2A.;clear::(15,23):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5clearEv;2A.;empty::(15,34)=#(15,12),(0,4),(15,33),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5emptyEv;2B.;capacity::(15,32):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE8capacityEv;2B.;begin::(15,35)=#(15,12),(15,13),(15,16),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5beginEv;2A.;end::(15,35):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3endEv;2A.;begin::(15,36)=#(15,12),(15,18),(15,33),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE5beginEv;2B.;end::(15,36):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE3endEv;2B.;operator[]::(15,37)=#(15,12),(15,38)=&(15,14),(15,16),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEixEi;2A.(15,39)=#(15,12),(15,27),(15,33),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEEixEi;2B.;pointer::(15,36):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7pointerEv;2B.(15,35):_ZN6MAUtil6VectorINS_11ListenerSetINS_11KeyListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::KeyListener>:Tt(15,40)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,12),32,96;__base_ctor::(15,41)=#(15,40),(0,6),(15,42)=*(15,40),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC2Eb;2A.;__comp_ctor::(15,41):_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC1Eb;2A.;begin::(15,43)=#(15,40),(15,44)=xsiterator:,(15,42),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE5beginEv;2A.;add::(15,45)=#(15,40),(0,6),(15,42),(15,46)=*(15,47)=xsKeyListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE3addEPS1_;2A.;remove::(15,45):_ZN6MAUtil11ListenerSetINS_11KeyListenerEE6removeEPS1_;2A.;contains::(15,48)=#(15,40),(0,4),(15,42),(15,46),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE8containsEPS1_;2A.;setRunning::(15,49)=#(15,40),(0,6),(15,42),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEE10setRunningEb;2A.;size::(15,50)=#(15,40),(0,3),(15,51)=*(15,52)=k(15,40),(0,6);:_ZNK6MAUtil11ListenerSetINS_11KeyListenerEE4sizeEv;2B.;operator=::(15,53)=#(15,40),(15,54)=&(15,40),(15,42),(15,55)=&(15,52),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEaSERKS2_;2A.;__base_ctor::(15,56)=#(15,40),(0,6),(15,42),(15,55),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC2ERKS2_;2A.;__comp_ctor::(15,56):_ZN6MAUtil11ListenerSetINS_11KeyListenerEEC1ERKS2_;2A.;__base_dtor::(15,57)=#(15,40),(0,6),(15,42),(0,6);:_ZN6MAUtil11ListenerSetINS_11KeyListenerEED2Ev;2A.;__comp_dtor::(15,57):_ZN6MAUtil11ListenerSetINS_11KeyListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::PointerListener>::Combo>:Tt(15,58)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,59)=*(15,60)=xsCombo:,64,32;__base_ctor::(15,61)=#(15,58),(0,6),(15,62)=*(15,58),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,61):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,63)=#(15,58),(0,6),(15,62),(15,64)=*(15,65)=k(15,60),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,63):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,66)=#(15,58),(0,6),(15,62),(15,67)=&(15,68)=k(15,58),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,66):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,69)=#(15,58),(0,6),(15,62),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,69):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEED1Ev;2A.;operator=::(15,70)=#(15,58),(15,71)=&(15,58),(15,62),(15,67),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEaSERKS5_;2A.;add::(15,72)=#(15,58),(0,6),(15,62),(15,73)=&(15,65),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3addERKS4_;2A.(15,63):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,74)=#(15,58),(0,6),(15,62),(15,59),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEPS4_;2A.(15,75)=#(15,58),(0,6),(15,62),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEi;2A.(15,76)=#(15,58),(0,6),(15,62),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6removeEii;2A.;insert::(15,77)=#(15,58),(0,6),(15,62),(0,3),(15,60),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6insertEiS4_;2A.;size::(15,78)=#(15,58),(0,3),(15,79)=*(15,68),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE4sizeEv;2B.;resize::(15,75):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE6resizeEi;2A.;reserve::(15,75):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7reserveEi;2A.;clear::(15,69):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5clearEv;2A.;empty::(15,80)=#(15,58),(0,4),(15,79),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5emptyEv;2B.;capacity::(15,78):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE8capacityEv;2B.;begin::(15,81)=#(15,58),(15,59),(15,62),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5beginEv;2A.;end::(15,81):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3endEv;2A.;begin::(15,82)=#(15,58),(15,64),(15,79),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE5beginEv;2B.;end::(15,82):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE3endEv;2B.;operator[]::(15,83)=#(15,58),(15,84)=&(15,60),(15,62),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEixEi;2A.(15,85)=#(15,58),(15,73),(15,79),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEEixEi;2B.;pointer::(15,82):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7pointerEv;2B.(15,81):_ZN6MAUtil6VectorINS_11ListenerSetINS_15PointerListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::PointerListener>:Tt(15,86)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,58),32,96;__base_ctor::(15,87)=#(15,86),(0,6),(15,88)=*(15,86),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC2Eb;2A.;__comp_ctor::(15,87):_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC1Eb;2A.;begin::(15,89)=#(15,86),(15,90)=xsiterator:,(15,88),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE5beginEv;2A.;add::(15,91)=#(15,86),(0,6),(15,88),(15,92)=*(15,93)=xsPointerListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE3addEPS1_;2A.;remove::(15,91):_ZN6MAUtil11ListenerSetINS_15PointerListenerEE6removeEPS1_;2A.;contains::(15,94)=#(15,86),(0,4),(15,88),(15,92),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE8containsEPS1_;2A.;setRunning::(15,95)=#(15,86),(0,6),(15,88),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEE10setRunningEb;2A.;size::(15,96)=#(15,86),(0,3),(15,97)=*(15,98)=k(15,86),(0,6);:_ZNK6MAUtil11ListenerSetINS_15PointerListenerEE4sizeEv;2B.;operator=::(15,99)=#(15,86),(15,100)=&(15,86),(15,88),(15,101)=&(15,98),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEaSERKS2_;2A.;__base_ctor::(15,102)=#(15,86),(0,6),(15,88),(15,101),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC2ERKS2_;2A.;__comp_ctor::(15,102):_ZN6MAUtil11ListenerSetINS_15PointerListenerEEC1ERKS2_;2A.;__base_dtor::(15,103)=#(15,86),(0,6),(15,88),(0,6);:_ZN6MAUtil11ListenerSetINS_15PointerListenerEED2Ev;2A.;__comp_dtor::(15,103):_ZN6MAUtil11ListenerSetINS_15PointerListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::CloseListener*>:Tt(15,104)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,105)=*(15,106)=*(15,107)=xsCloseListener:,64,32;__base_ctor::(15,108)=#(15,104),(0,6),(15,109)=*(15,104),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2Ei;2A.;__comp_ctor::(15,108):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1Ei;2A.;__base_ctor::(15,110)=#(15,104),(0,6),(15,109),(15,111)=*(15,112)=k(15,106),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2EPKS2_i;2A.;__comp_ctor::(15,110):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1EPKS2_i;2A.;__base_ctor::(15,113)=#(15,104),(0,6),(15,109),(15,114)=&(15,115)=k(15,104),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEC2ERKS3_;2A.;__comp_ctor::(15,113):_ZN6MAUtil6VectorIPNS_13CloseListenerEEC1ERKS3_;2A.;__base_dtor::(15,116)=#(15,104),(0,6),(15,109),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEED2Ev;2A.;__comp_dtor::(15,116):_ZN6MAUtil6VectorIPNS_13CloseListenerEED1Ev;2A.;operator=::(15,117)=#(15,104),(15,118)=&(15,104),(15,109),(15,114),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEaSERKS3_;2A.;add::(15,119)=#(15,104),(0,6),(15,109),(15,120)=&(15,112),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE3addERKS2_;2A.(15,110):_ZN6MAUtil6VectorIPNS_13CloseListenerEE3addEPKS2_i;2A.;remove::(15,121)=#(15,104),(0,6),(15,109),(15,105),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEPS2_;2A.(15,122)=#(15,104),(0,6),(15,109),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEi;2A.(15,123)=#(15,104),(0,6),(15,109),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6removeEii;2A.;insert::(15,124)=#(15,104),(0,6),(15,109),(0,3),(15,106),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE6insertEiS2_;2A.;size::(15,125)=#(15,104),(0,3),(15,126)=*(15,115),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE4sizeEv;2B.;resize::(15,122):_ZN6MAUtil6VectorIPNS_13CloseListenerEE6resizeEi;2A.;reserve::(15,122):_ZN6MAUtil6VectorIPNS_13CloseListenerEE7reserveEi;2A.;clear::(15,116):_ZN6MAUtil6VectorIPNS_13CloseListenerEE5clearEv;2A.;empty::(15,127)=#(15,104),(0,4),(15,126),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE5emptyEv;2B.;capacity::(15,125):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE8capacityEv;2B.;begin::(15,128)=#(15,104),(15,105),(15,109),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEE5beginEv;2A.;end::(15,128):_ZN6MAUtil6VectorIPNS_13CloseListenerEE3endEv;2A.;begin::(15,129)=#(15,104),(15,111),(15,126),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEE5beginEv;2B.;end::(15,129):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE3endEv;2B.;operator[]::(15,130)=#(15,104),(15,131)=&(15,106),(15,109),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_13CloseListenerEEixEi;2A.(15,132)=#(15,104),(15,120),(15,126),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_13CloseListenerEEixEi;2B.;pointer::(15,129):_ZNK6MAUtil6VectorIPNS_13CloseListenerEE7pointerEv;2B.(15,128):_ZN6MAUtil6VectorIPNS_13CloseListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::ConnListener>::Combo>:Tt(15,133)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,134)=*(15,135)=xsCombo:,64,32;__base_ctor::(15,136)=#(15,133),(0,6),(15,137)=*(15,133),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,136):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,138)=#(15,133),(0,6),(15,137),(15,139)=*(15,140)=k(15,135),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,138):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,141)=#(15,133),(0,6),(15,137),(15,142)=&(15,143)=k(15,133),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,141):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,144)=#(15,133),(0,6),(15,137),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,144):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEED1Ev;2A.;operator=::(15,145)=#(15,133),(15,146)=&(15,133),(15,137),(15,142),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEaSERKS5_;2A.;add::(15,147)=#(15,133),(0,6),(15,137),(15,148)=&(15,140),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3addERKS4_;2A.(15,138):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,149)=#(15,133),(0,6),(15,137),(15,134),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEPS4_;2A.(15,150)=#(15,133),(0,6),(15,137),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEi;2A.(15,151)=#(15,133),(0,6),(15,137),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6removeEii;2A.;insert::(15,152)=#(15,133),(0,6),(15,137),(0,3),(15,135),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6insertEiS4_;2A.;size::(15,153)=#(15,133),(0,3),(15,154)=*(15,143),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE4sizeEv;2B.;resize::(15,150):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE6resizeEi;2A.;reserve::(15,150):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7reserveEi;2A.;clear::(15,144):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5clearEv;2A.;empty::(15,155)=#(15,133),(0,4),(15,154),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5emptyEv;2B.;capacity::(15,153):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE8capacityEv;2B.;begin::(15,156)=#(15,133),(15,134),(15,137),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5beginEv;2A.;end::(15,156):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3endEv;2A.;begin::(15,157)=#(15,133),(15,139),(15,154),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE5beginEv;2B.;end::(15,157):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE3endEv;2B.;operator[]::(15,158)=#(15,133),(15,159)=&(15,135),(15,137),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEixEi;2A.(15,160)=#(15,133),(15,148),(15,154),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEEixEi;2B.;pointer::(15,157):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7pointerEv;2B.(15,156):_ZN6MAUtil6VectorINS_11ListenerSetINS_12ConnListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::ConnListener>:Tt(15,161)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,133),32,96;__base_ctor::(15,162)=#(15,161),(0,6),(15,163)=*(15,161),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC2Eb;2A.;__comp_ctor::(15,162):_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC1Eb;2A.;begin::(15,164)=#(15,161),(15,165)=xsiterator:,(15,163),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE5beginEv;2A.;add::(15,166)=#(15,161),(0,6),(15,163),(15,167)=*(15,168)=xsConnListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE3addEPS1_;2A.;remove::(15,166):_ZN6MAUtil11ListenerSetINS_12ConnListenerEE6removeEPS1_;2A.;contains::(15,169)=#(15,161),(0,4),(15,163),(15,167),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE8containsEPS1_;2A.;setRunning::(15,170)=#(15,161),(0,6),(15,163),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEE10setRunningEb;2A.;size::(15,171)=#(15,161),(0,3),(15,172)=*(15,173)=k(15,161),(0,6);:_ZNK6MAUtil11ListenerSetINS_12ConnListenerEE4sizeEv;2B.;operator=::(15,174)=#(15,161),(15,175)=&(15,161),(15,163),(15,176)=&(15,173),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEaSERKS2_;2A.;__base_ctor::(15,177)=#(15,161),(0,6),(15,163),(15,176),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC2ERKS2_;2A.;__comp_ctor::(15,177):_ZN6MAUtil11ListenerSetINS_12ConnListenerEEC1ERKS2_;2A.;__base_dtor::(15,178)=#(15,161),(0,6),(15,163),(0,6);:_ZN6MAUtil11ListenerSetINS_12ConnListenerEED2Ev;2A.;__comp_dtor::(15,178):_ZN6MAUtil11ListenerSetINS_12ConnListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::IdleListener>::Combo>:Tt(15,179)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,180)=*(15,181)=xsCombo:,64,32;__base_ctor::(15,182)=#(15,179),(0,6),(15,183)=*(15,179),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,182):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,184)=#(15,179),(0,6),(15,183),(15,185)=*(15,186)=k(15,181),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,184):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,187)=#(15,179),(0,6),(15,183),(15,188)=&(15,189)=k(15,179),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,187):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,190)=#(15,179),(0,6),(15,183),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,190):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEED1Ev;2A.;operator=::(15,191)=#(15,179),(15,192)=&(15,179),(15,183),(15,188),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEaSERKS5_;2A.;add::(15,193)=#(15,179),(0,6),(15,183),(15,194)=&(15,186),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3addERKS4_;2A.(15,184):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,195)=#(15,179),(0,6),(15,183),(15,180),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEPS4_;2A.(15,196)=#(15,179),(0,6),(15,183),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEi;2A.(15,197)=#(15,179),(0,6),(15,183),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6removeEii;2A.;insert::(15,198)=#(15,179),(0,6),(15,183),(0,3),(15,181),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6insertEiS4_;2A.;size::(15,199)=#(15,179),(0,3),(15,200)=*(15,189),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE4sizeEv;2B.;resize::(15,196):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE6resizeEi;2A.;reserve::(15,196):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7reserveEi;2A.;clear::(15,190):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5clearEv;2A.;empty::(15,201)=#(15,179),(0,4),(15,200),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5emptyEv;2B.;capacity::(15,199):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE8capacityEv;2B.;begin::(15,202)=#(15,179),(15,180),(15,183),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5beginEv;2A.;end::(15,202):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3endEv;2A.;begin::(15,203)=#(15,179),(15,185),(15,200),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE5beginEv;2B.;end::(15,203):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE3endEv;2B.;operator[]::(15,204)=#(15,179),(15,205)=&(15,181),(15,183),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEixEi;2A.(15,206)=#(15,179),(15,194),(15,200),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEEixEi;2B.;pointer::(15,203):_ZNK6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7pointerEv;2B.(15,202):_ZN6MAUtil6VectorINS_11ListenerSetINS_12IdleListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::IdleListener>:Tt(15,207)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,179),32,96;__base_ctor::(15,208)=#(15,207),(0,6),(15,209)=*(15,207),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC2Eb;2A.;__comp_ctor::(15,208):_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC1Eb;2A.;begin::(15,210)=#(15,207),(15,211)=xsiterator:,(15,209),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE5beginEv;2A.;add::(15,212)=#(15,207),(0,6),(15,209),(15,213)=*(15,214)=xsIdleListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE3addEPS1_;2A.;remove::(15,212):_ZN6MAUtil11ListenerSetINS_12IdleListenerEE6removeEPS1_;2A.;contains::(15,215)=#(15,207),(0,4),(15,209),(15,213),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE8containsEPS1_;2A.;setRunning::(15,216)=#(15,207),(0,6),(15,209),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEE10setRunningEb;2A.;size::(15,217)=#(15,207),(0,3),(15,218)=*(15,219)=k(15,207),(0,6);:_ZNK6MAUtil11ListenerSetINS_12IdleListenerEE4sizeEv;2B.;operator=::(15,220)=#(15,207),(15,221)=&(15,207),(15,209),(15,222)=&(15,219),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEaSERKS2_;2A.;__base_ctor::(15,223)=#(15,207),(0,6),(15,209),(15,222),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC2ERKS2_;2A.;__comp_ctor::(15,223):_ZN6MAUtil11ListenerSetINS_12IdleListenerEEC1ERKS2_;2A.;__base_dtor::(15,224)=#(15,207),(0,6),(15,209),(0,6);:_ZN6MAUtil11ListenerSetINS_12IdleListenerEED2Ev;2A.;__comp_dtor::(15,224):_ZN6MAUtil11ListenerSetINS_12IdleListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::Environment::TimerEventInstance>::Combo>:Tt(15,225)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,226)=*(15,227)=xsCombo:,64,32;__base_ctor::(15,228)=#(15,225),(0,6),(15,229)=*(15,225),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2Ei;2A.;__comp_ctor::(15,228):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1Ei;2A.;__base_ctor::(15,230)=#(15,225),(0,6),(15,229),(15,231)=*(15,232)=k(15,227),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2EPKS5_i;2A.;__comp_ctor::(15,230):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1EPKS5_i;2A.;__base_ctor::(15,233)=#(15,225),(0,6),(15,229),(15,234)=&(15,235)=k(15,225),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC2ERKS6_;2A.;__comp_ctor::(15,233):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEC1ERKS6_;2A.;__base_dtor::(15,236)=#(15,225),(0,6),(15,229),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEED2Ev;2A.;__comp_dtor::(15,236):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEED1Ev;2A.;operator=::(15,237)=#(15,225),(15,238)=&(15,225),(15,229),(15,234),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEaSERKS6_;2A.;add::(15,239)=#(15,225),(0,6),(15,229),(15,240)=&(15,232),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3addERKS5_;2A.(15,230):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3addEPKS5_i;2A.;remove::(15,241)=#(15,225),(0,6),(15,229),(15,226),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEPS5_;2A.(15,242)=#(15,225),(0,6),(15,229),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEi;2A.(15,243)=#(15,225),(0,6),(15,229),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6removeEii;2A.;insert::(15,244)=#(15,225),(0,6),(15,229),(0,3),(15,227),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6insertEiS5_;2A.;size::(15,245)=#(15,225),(0,3),(15,246)=*(15,235),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE4sizeEv;2B.;resize::(15,242):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE6resizeEi;2A.;reserve::(15,242):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7reserveEi;2A.;clear::(15,236):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5clearEv;2A.;empty::(15,247)=#(15,225),(0,4),(15,246),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5emptyEv;2B.;capacity::(15,245):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE8capacityEv;2B.;begin::(15,248)=#(15,225),(15,226),(15,229),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5beginEv;2A.;end::(15,248):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3endEv;2A.;begin::(15,249)=#(15,225),(15,231),(15,246),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE5beginEv;2B.;end::(15,249):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE3endEv;2B.;operator[]::(15,250)=#(15,225),(15,251)=&(15,227),(15,229),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEixEi;2A.(15,252)=#(15,225),(15,240),(15,246),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEEixEi;2B.;pointer::(15,249):_ZNK6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7pointerEv;2B.(15,248):_ZN6MAUtil6VectorINS_11ListenerSetINS_11Environment18TimerEventInstanceEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::Environment::TimerEventInstance>:Tt(15,253)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,225),32,96;__base_ctor::(15,254)=#(15,253),(0,6),(15,255)=*(15,253),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC2Eb;2A.;__comp_ctor::(15,254):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC1Eb;2A.;begin::(15,256)=#(15,253),(15,257)=xsiterator:,(15,255),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE5beginEv;2A.;add::(15,258)=#(15,253),(0,6),(15,255),(15,6),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE3addEPS2_;2A.;remove::(15,258):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE6removeEPS2_;2A.;contains::(15,259)=#(15,253),(0,4),(15,255),(15,6),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE8containsEPS2_;2A.;setRunning::(15,260)=#(15,253),(0,6),(15,255),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE10setRunningEb;2A.;size::(15,261)=#(15,253),(0,3),(15,262)=*(15,263)=k(15,253),(0,6);:_ZNK6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEE4sizeEv;2B.;operator=::(15,264)=#(15,253),(15,265)=&(15,253),(15,255),(15,266)=&(15,263),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEaSERKS3_;2A.;__base_ctor::(15,267)=#(15,253),(0,6),(15,255),(15,266),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC2ERKS3_;2A.;__comp_ctor::(15,267):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEEC1ERKS3_;2A.;__base_dtor::(15,268)=#(15,253),(0,6),(15,255),(0,6);:_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEED2Ev;2A.;__comp_dtor::(15,268):_ZN6MAUtil11ListenerSetINS_11Environment18TimerEventInstanceEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::FocusListener>::Combo>:Tt(15,269)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,270)=*(15,271)=xsCombo:,64,32;__base_ctor::(15,272)=#(15,269),(0,6),(15,273)=*(15,269),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,272):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,274)=#(15,269),(0,6),(15,273),(15,275)=*(15,276)=k(15,271),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,274):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,277)=#(15,269),(0,6),(15,273),(15,278)=&(15,279)=k(15,269),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,277):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,280)=#(15,269),(0,6),(15,273),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,280):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEED1Ev;2A.;operator=::(15,281)=#(15,269),(15,282)=&(15,269),(15,273),(15,278),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEaSERKS5_;2A.;add::(15,283)=#(15,269),(0,6),(15,273),(15,284)=&(15,276),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3addERKS4_;2A.(15,274):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,285)=#(15,269),(0,6),(15,273),(15,270),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEPS4_;2A.(15,286)=#(15,269),(0,6),(15,273),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEi;2A.(15,287)=#(15,269),(0,6),(15,273),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6removeEii;2A.;insert::(15,288)=#(15,269),(0,6),(15,273),(0,3),(15,271),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6insertEiS4_;2A.;size::(15,289)=#(15,269),(0,3),(15,290)=*(15,279),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE4sizeEv;2B.;resize::(15,286):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE6resizeEi;2A.;reserve::(15,286):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7reserveEi;2A.;clear::(15,280):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5clearEv;2A.;empty::(15,291)=#(15,269),(0,4),(15,290),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5emptyEv;2B.;capacity::(15,289):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE8capacityEv;2B.;begin::(15,292)=#(15,269),(15,270),(15,273),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5beginEv;2A.;end::(15,292):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3endEv;2A.;begin::(15,293)=#(15,269),(15,275),(15,290),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE5beginEv;2B.;end::(15,293):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE3endEv;2B.;operator[]::(15,294)=#(15,269),(15,295)=&(15,271),(15,273),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEixEi;2A.(15,296)=#(15,269),(15,284),(15,290),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEEixEi;2B.;pointer::(15,293):_ZNK6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7pointerEv;2B.(15,292):_ZN6MAUtil6VectorINS_11ListenerSetINS_13FocusListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::FocusListener>:Tt(15,297)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,269),32,96;__base_ctor::(15,298)=#(15,297),(0,6),(15,299)=*(15,297),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC2Eb;2A.;__comp_ctor::(15,298):_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC1Eb;2A.;begin::(15,300)=#(15,297),(15,301)=xsiterator:,(15,299),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE5beginEv;2A.;add::(15,302)=#(15,297),(0,6),(15,299),(15,303)=*(15,304)=xsFocusListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE3addEPS1_;2A.;remove::(15,302):_ZN6MAUtil11ListenerSetINS_13FocusListenerEE6removeEPS1_;2A.;contains::(15,305)=#(15,297),(0,4),(15,299),(15,303),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE8containsEPS1_;2A.;setRunning::(15,306)=#(15,297),(0,6),(15,299),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEE10setRunningEb;2A.;size::(15,307)=#(15,297),(0,3),(15,308)=*(15,309)=k(15,297),(0,6);:_ZNK6MAUtil11ListenerSetINS_13FocusListenerEE4sizeEv;2B.;operator=::(15,310)=#(15,297),(15,311)=&(15,297),(15,299),(15,312)=&(15,309),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEaSERKS2_;2A.;__base_ctor::(15,313)=#(15,297),(0,6),(15,299),(15,312),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC2ERKS2_;2A.;__comp_ctor::(15,313):_ZN6MAUtil11ListenerSetINS_13FocusListenerEEC1ERKS2_;2A.;__base_dtor::(15,314)=#(15,297),(0,6),(15,299),(0,6);:_ZN6MAUtil11ListenerSetINS_13FocusListenerEED2Ev;2A.;__comp_dtor::(15,314):_ZN6MAUtil11ListenerSetINS_13FocusListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::CustomEventListener>::Combo>:Tt(15,315)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,316)=*(15,317)=xsCombo:,64,32;__base_ctor::(15,318)=#(15,315),(0,6),(15,319)=*(15,315),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,318):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,320)=#(15,315),(0,6),(15,319),(15,321)=*(15,322)=k(15,317),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,320):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,323)=#(15,315),(0,6),(15,319),(15,324)=&(15,325)=k(15,315),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,323):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,326)=#(15,315),(0,6),(15,319),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,326):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEED1Ev;2A.;operator=::(15,327)=#(15,315),(15,328)=&(15,315),(15,319),(15,324),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEaSERKS5_;2A.;add::(15,329)=#(15,315),(0,6),(15,319),(15,330)=&(15,322),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3addERKS4_;2A.(15,320):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,331)=#(15,315),(0,6),(15,319),(15,316),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEPS4_;2A.(15,332)=#(15,315),(0,6),(15,319),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEi;2A.(15,333)=#(15,315),(0,6),(15,319),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6removeEii;2A.;insert::(15,334)=#(15,315),(0,6),(15,319),(0,3),(15,317),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6insertEiS4_;2A.;size::(15,335)=#(15,315),(0,3),(15,336)=*(15,325),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE4sizeEv;2B.;resize::(15,332):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE6resizeEi;2A.;reserve::(15,332):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7reserveEi;2A.;clear::(15,326):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5clearEv;2A.;empty::(15,337)=#(15,315),(0,4),(15,336),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5emptyEv;2B.;capacity::(15,335):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE8capacityEv;2B.;begin::(15,338)=#(15,315),(15,316),(15,319),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5beginEv;2A.;end::(15,338):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3endEv;2A.;begin::(15,339)=#(15,315),(15,321),(15,336),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE5beginEv;2B.;end::(15,339):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE3endEv;2B.;operator[]::(15,340)=#(15,315),(15,341)=&(15,317),(15,319),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEixEi;2A.(15,342)=#(15,315),(15,330),(15,336),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEEixEi;2B.;pointer::(15,339):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7pointerEv;2B.(15,338):_ZN6MAUtil6VectorINS_11ListenerSetINS_19CustomEventListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::CustomEventListener>:Tt(15,343)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,315),32,96;__base_ctor::(15,344)=#(15,343),(0,6),(15,345)=*(15,343),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC2Eb;2A.;__comp_ctor::(15,344):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC1Eb;2A.;begin::(15,346)=#(15,343),(15,347)=xsiterator:,(15,345),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE5beginEv;2A.;add::(15,348)=#(15,343),(0,6),(15,345),(15,349)=*(15,350)=xsCustomEventListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE3addEPS1_;2A.;remove::(15,348):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE6removeEPS1_;2A.;contains::(15,351)=#(15,343),(0,4),(15,345),(15,349),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE8containsEPS1_;2A.;setRunning::(15,352)=#(15,343),(0,6),(15,345),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEE10setRunningEb;2A.;size::(15,353)=#(15,343),(0,3),(15,354)=*(15,355)=k(15,343),(0,6);:_ZNK6MAUtil11ListenerSetINS_19CustomEventListenerEE4sizeEv;2B.;operator=::(15,356)=#(15,343),(15,357)=&(15,343),(15,345),(15,358)=&(15,355),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEaSERKS2_;2A.;__base_ctor::(15,359)=#(15,343),(0,6),(15,345),(15,358),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC2ERKS2_;2A.;__comp_ctor::(15,359):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEEC1ERKS2_;2A.;__base_dtor::(15,360)=#(15,343),(0,6),(15,345),(0,6);:_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEED2Ev;2A.;__comp_dtor::(15,360):_ZN6MAUtil11ListenerSetINS_19CustomEventListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::TextBoxListener>::Combo>:Tt(15,361)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,362)=*(15,363)=xsCombo:,64,32;__base_ctor::(15,364)=#(15,361),(0,6),(15,365)=*(15,361),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,364):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,366)=#(15,361),(0,6),(15,365),(15,367)=*(15,368)=k(15,363),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,366):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,369)=#(15,361),(0,6),(15,365),(15,370)=&(15,371)=k(15,361),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,369):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,372)=#(15,361),(0,6),(15,365),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,372):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEED1Ev;2A.;operator=::(15,373)=#(15,361),(15,374)=&(15,361),(15,365),(15,370),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEaSERKS5_;2A.;add::(15,375)=#(15,361),(0,6),(15,365),(15,376)=&(15,368),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3addERKS4_;2A.(15,366):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,377)=#(15,361),(0,6),(15,365),(15,362),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEPS4_;2A.(15,378)=#(15,361),(0,6),(15,365),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEi;2A.(15,379)=#(15,361),(0,6),(15,365),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6removeEii;2A.;insert::(15,380)=#(15,361),(0,6),(15,365),(0,3),(15,363),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6insertEiS4_;2A.;size::(15,381)=#(15,361),(0,3),(15,382)=*(15,371),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE4sizeEv;2B.;resize::(15,378):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE6resizeEi;2A.;reserve::(15,378):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7reserveEi;2A.;clear::(15,372):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5clearEv;2A.;empty::(15,383)=#(15,361),(0,4),(15,382),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5emptyEv;2B.;capacity::(15,381):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE8capacityEv;2B.;begin::(15,384)=#(15,361),(15,362),(15,365),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5beginEv;2A.;end::(15,384):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3endEv;2A.;begin::(15,385)=#(15,361),(15,367),(15,382),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE5beginEv;2B.;end::(15,385):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE3endEv;2B.;operator[]::(15,386)=#(15,361),(15,387)=&(15,363),(15,365),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEixEi;2A.(15,388)=#(15,361),(15,376),(15,382),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEEixEi;2B.;pointer::(15,385):_ZNK6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7pointerEv;2B.(15,384):_ZN6MAUtil6VectorINS_11ListenerSetINS_15TextBoxListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::TextBoxListener>:Tt(15,389)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,361),32,96;__base_ctor::(15,390)=#(15,389),(0,6),(15,391)=*(15,389),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC2Eb;2A.;__comp_ctor::(15,390):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC1Eb;2A.;begin::(15,392)=#(15,389),(15,393)=xsiterator:,(15,391),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE5beginEv;2A.;add::(15,394)=#(15,389),(0,6),(15,391),(15,395)=*(15,396)=xsTextBoxListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE3addEPS1_;2A.;remove::(15,394):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE6removeEPS1_;2A.;contains::(15,397)=#(15,389),(0,4),(15,391),(15,395),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE8containsEPS1_;2A.;setRunning::(15,398)=#(15,389),(0,6),(15,391),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEE10setRunningEb;2A.;size::(15,399)=#(15,389),(0,3),(15,400)=*(15,401)=k(15,389),(0,6);:_ZNK6MAUtil11ListenerSetINS_15TextBoxListenerEE4sizeEv;2B.;operator=::(15,402)=#(15,389),(15,403)=&(15,389),(15,391),(15,404)=&(15,401),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEaSERKS2_;2A.;__base_ctor::(15,405)=#(15,389),(0,6),(15,391),(15,404),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC2ERKS2_;2A.;__comp_ctor::(15,405):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEEC1ERKS2_;2A.;__base_dtor::(15,406)=#(15,389),(0,6),(15,391),(0,6);:_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEED2Ev;2A.;__comp_dtor::(15,406):_ZN6MAUtil11ListenerSetINS_15TextBoxListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::SensorListener>::Combo>:Tt(15,407)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,408)=*(15,409)=xsCombo:,64,32;__base_ctor::(15,410)=#(15,407),(0,6),(15,411)=*(15,407),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,410):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,412)=#(15,407),(0,6),(15,411),(15,413)=*(15,414)=k(15,409),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,412):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,415)=#(15,407),(0,6),(15,411),(15,416)=&(15,417)=k(15,407),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,415):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,418)=#(15,407),(0,6),(15,411),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,418):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEED1Ev;2A.;operator=::(15,419)=#(15,407),(15,420)=&(15,407),(15,411),(15,416),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEaSERKS5_;2A.;add::(15,421)=#(15,407),(0,6),(15,411),(15,422)=&(15,414),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3addERKS4_;2A.(15,412):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,423)=#(15,407),(0,6),(15,411),(15,408),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEPS4_;2A.(15,424)=#(15,407),(0,6),(15,411),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEi;2A.(15,425)=#(15,407),(0,6),(15,411),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6removeEii;2A.;insert::(15,426)=#(15,407),(0,6),(15,411),(0,3),(15,409),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6insertEiS4_;2A.;size::(15,427)=#(15,407),(0,3),(15,428)=*(15,417),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE4sizeEv;2B.;resize::(15,424):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE6resizeEi;2A.;reserve::(15,424):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7reserveEi;2A.;clear::(15,418):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5clearEv;2A.;empty::(15,429)=#(15,407),(0,4),(15,428),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5emptyEv;2B.;capacity::(15,427):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE8capacityEv;2B.;begin::(15,430)=#(15,407),(15,408),(15,411),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5beginEv;2A.;end::(15,430):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3endEv;2A.;begin::(15,431)=#(15,407),(15,413),(15,428),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE5beginEv;2B.;end::(15,431):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE3endEv;2B.;operator[]::(15,432)=#(15,407),(15,433)=&(15,409),(15,411),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEixEi;2A.(15,434)=#(15,407),(15,422),(15,428),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEEixEi;2B.;pointer::(15,431):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7pointerEv;2B.(15,430):_ZN6MAUtil6VectorINS_11ListenerSetINS_14SensorListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::SensorListener>:Tt(15,435)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,407),32,96;__base_ctor::(15,436)=#(15,435),(0,6),(15,437)=*(15,435),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC2Eb;2A.;__comp_ctor::(15,436):_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC1Eb;2A.;begin::(15,438)=#(15,435),(15,439)=xsiterator:,(15,437),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE5beginEv;2A.;add::(15,440)=#(15,435),(0,6),(15,437),(15,441)=*(15,442)=xsSensorListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE3addEPS1_;2A.;remove::(15,440):_ZN6MAUtil11ListenerSetINS_14SensorListenerEE6removeEPS1_;2A.;contains::(15,443)=#(15,435),(0,4),(15,437),(15,441),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE8containsEPS1_;2A.;setRunning::(15,444)=#(15,435),(0,6),(15,437),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEE10setRunningEb;2A.;size::(15,445)=#(15,435),(0,3),(15,446)=*(15,447)=k(15,435),(0,6);:_ZNK6MAUtil11ListenerSetINS_14SensorListenerEE4sizeEv;2B.;operator=::(15,448)=#(15,435),(15,449)=&(15,435),(15,437),(15,450)=&(15,447),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEaSERKS2_;2A.;__base_ctor::(15,451)=#(15,435),(0,6),(15,437),(15,450),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC2ERKS2_;2A.;__comp_ctor::(15,451):_ZN6MAUtil11ListenerSetINS_14SensorListenerEEC1ERKS2_;2A.;__base_dtor::(15,452)=#(15,435),(0,6),(15,437),(0,6);:_ZN6MAUtil11ListenerSetINS_14SensorListenerEED2Ev;2A.;__comp_dtor::(15,452):_ZN6MAUtil11ListenerSetINS_14SensorListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::OrientationListener>::Combo>:Tt(15,453)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,454)=*(15,455)=xsCombo:,64,32;__base_ctor::(15,456)=#(15,453),(0,6),(15,457)=*(15,453),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,456):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,458)=#(15,453),(0,6),(15,457),(15,459)=*(15,460)=k(15,455),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,458):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,461)=#(15,453),(0,6),(15,457),(15,462)=&(15,463)=k(15,453),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,461):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,464)=#(15,453),(0,6),(15,457),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,464):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEED1Ev;2A.;operator=::(15,465)=#(15,453),(15,466)=&(15,453),(15,457),(15,462),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEaSERKS5_;2A.;add::(15,467)=#(15,453),(0,6),(15,457),(15,468)=&(15,460),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE3addERKS4_;2A.(15,458):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,469)=#(15,453),(0,6),(15,457),(15,454),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE6removeEPS4_;2A.(15,470)=#(15,453),(0,6),(15,457),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE6removeEi;2A.(15,471)=#(15,453),(0,6),(15,457),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE6removeEii;2A.;insert::(15,472)=#(15,453),(0,6),(15,457),(0,3),(15,455),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE6insertEiS4_;2A.;size::(15,473)=#(15,453),(0,3),(15,474)=*(15,463),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE4sizeEv;2B.;resize::(15,470):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE6resizeEi;2A.;reserve::(15,470):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE7reserveEi;2A.;clear::(15,464):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE5clearEv;2A.;empty::(15,475)=#(15,453),(0,4),(15,474),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE5emptyEv;2B.;capacity::(15,473):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE8capacityEv;2B.;begin::(15,476)=#(15,453),(15,454),(15,457),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE5beginEv;2A.;end::(15,476):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE3endEv;2A.;begin::(15,477)=#(15,453),(15,459),(15,474),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE5beginEv;2B.;end::(15,477):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE3endEv;2B.;operator[]::(15,478)=#(15,453),(15,479)=&(15,455),(15,457),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEixEi;2A.(15,480)=#(15,453),(15,468),(15,474),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEEixEi;2B.;pointer::(15,477):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE7pointerEv;2B.(15,476):_ZN6MAUtil6VectorINS_11ListenerSetINS_19OrientationListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::OrientationListener>:Tt(15,481)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,453),32,96;__base_ctor::(15,482)=#(15,481),(0,6),(15,483)=*(15,481),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEEC2Eb;2A.;__comp_ctor::(15,482):_ZN6MAUtil11ListenerSetINS_19OrientationListenerEEC1Eb;2A.;begin::(15,484)=#(15,481),(15,485)=xsiterator:,(15,483),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEE5beginEv;2A.;add::(15,486)=#(15,481),(0,6),(15,483),(15,487)=*(15,488)=xsOrientationListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEE3addEPS1_;2A.;remove::(15,486):_ZN6MAUtil11ListenerSetINS_19OrientationListenerEE6removeEPS1_;2A.;contains::(15,489)=#(15,481),(0,4),(15,483),(15,487),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEE8containsEPS1_;2A.;setRunning::(15,490)=#(15,481),(0,6),(15,483),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEE10setRunningEb;2A.;size::(15,491)=#(15,481),(0,3),(15,492)=*(15,493)=k(15,481),(0,6);:_ZNK6MAUtil11ListenerSetINS_19OrientationListenerEE4sizeEv;2B.;operator=::(15,494)=#(15,481),(15,495)=&(15,481),(15,483),(15,496)=&(15,493),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEEaSERKS2_;2A.;__base_ctor::(15,497)=#(15,481),(0,6),(15,483),(15,496),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEEC2ERKS2_;2A.;__comp_ctor::(15,497):_ZN6MAUtil11ListenerSetINS_19OrientationListenerEEC1ERKS2_;2A.;__base_dtor::(15,498)=#(15,481),(0,6),(15,483),(0,6);:_ZN6MAUtil11ListenerSetINS_19OrientationListenerEED2Ev;2A.;__comp_dtor::(15,498):_ZN6MAUtil11ListenerSetINS_19OrientationListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::CameraListener>::Combo>:Tt(15,499)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,500)=*(15,501)=xsCombo:,64,32;__base_ctor::(15,502)=#(15,499),(0,6),(15,503)=*(15,499),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,502):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,504)=#(15,499),(0,6),(15,503),(15,505)=*(15,506)=k(15,501),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,504):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,507)=#(15,499),(0,6),(15,503),(15,508)=&(15,509)=k(15,499),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,507):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,510)=#(15,499),(0,6),(15,503),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,510):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEED1Ev;2A.;operator=::(15,511)=#(15,499),(15,512)=&(15,499),(15,503),(15,508),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEaSERKS5_;2A.;add::(15,513)=#(15,499),(0,6),(15,503),(15,514)=&(15,506),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE3addERKS4_;2A.(15,504):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,515)=#(15,499),(0,6),(15,503),(15,500),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE6removeEPS4_;2A.(15,516)=#(15,499),(0,6),(15,503),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE6removeEi;2A.(15,517)=#(15,499),(0,6),(15,503),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE6removeEii;2A.;insert::(15,518)=#(15,499),(0,6),(15,503),(0,3),(15,501),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE6insertEiS4_;2A.;size::(15,519)=#(15,499),(0,3),(15,520)=*(15,509),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE4sizeEv;2B.;resize::(15,516):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE6resizeEi;2A.;reserve::(15,516):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE7reserveEi;2A.;clear::(15,510):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE5clearEv;2A.;empty::(15,521)=#(15,499),(0,4),(15,520),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE5emptyEv;2B.;capacity::(15,519):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE8capacityEv;2B.;begin::(15,522)=#(15,499),(15,500),(15,503),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE5beginEv;2A.;end::(15,522):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE3endEv;2A.;begin::(15,523)=#(15,499),(15,505),(15,520),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE5beginEv;2B.;end::(15,523):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE3endEv;2B.;operator[]::(15,524)=#(15,499),(15,525)=&(15,501),(15,503),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEixEi;2A.(15,526)=#(15,499),(15,514),(15,520),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEEixEi;2B.;pointer::(15,523):_ZNK6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE7pointerEv;2B.(15,522):_ZN6MAUtil6VectorINS_11ListenerSetINS_14CameraListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::CameraListener>:Tt(15,527)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,499),32,96;__base_ctor::(15,528)=#(15,527),(0,6),(15,529)=*(15,527),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEEC2Eb;2A.;__comp_ctor::(15,528):_ZN6MAUtil11ListenerSetINS_14CameraListenerEEC1Eb;2A.;begin::(15,530)=#(15,527),(15,531)=xsiterator:,(15,529),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEE5beginEv;2A.;add::(15,532)=#(15,527),(0,6),(15,529),(15,533)=*(15,534)=xsCameraListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEE3addEPS1_;2A.;remove::(15,532):_ZN6MAUtil11ListenerSetINS_14CameraListenerEE6removeEPS1_;2A.;contains::(15,535)=#(15,527),(0,4),(15,529),(15,533),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEE8containsEPS1_;2A.;setRunning::(15,536)=#(15,527),(0,6),(15,529),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEE10setRunningEb;2A.;size::(15,537)=#(15,527),(0,3),(15,538)=*(15,539)=k(15,527),(0,6);:_ZNK6MAUtil11ListenerSetINS_14CameraListenerEE4sizeEv;2B.;operator=::(15,540)=#(15,527),(15,541)=&(15,527),(15,529),(15,542)=&(15,539),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEEaSERKS2_;2A.;__base_ctor::(15,543)=#(15,527),(0,6),(15,529),(15,542),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEEC2ERKS2_;2A.;__comp_ctor::(15,543):_ZN6MAUtil11ListenerSetINS_14CameraListenerEEC1ERKS2_;2A.;__base_dtor::(15,544)=#(15,527),(0,6),(15,529),(0,6);:_ZN6MAUtil11ListenerSetINS_14CameraListenerEED2Ev;2A.;__comp_dtor::(15,544):_ZN6MAUtil11ListenerSetINS_14CameraListenerEED1Ev;2A.;;",128,0,46,0
+	.stabs	"Vector<MAUtil::ListenerSet<MAUtil::MediaExportListener>::Combo>:Tt(15,545)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(15,546)=*(15,547)=xsCombo:,64,32;__base_ctor::(15,548)=#(15,545),(0,6),(15,549)=*(15,545),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC2Ei;2A.;__comp_ctor::(15,548):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC1Ei;2A.;__base_ctor::(15,550)=#(15,545),(0,6),(15,549),(15,551)=*(15,552)=k(15,547),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC2EPKS4_i;2A.;__comp_ctor::(15,550):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC1EPKS4_i;2A.;__base_ctor::(15,553)=#(15,545),(0,6),(15,549),(15,554)=&(15,555)=k(15,545),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC2ERKS5_;2A.;__comp_ctor::(15,553):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEC1ERKS5_;2A.;__base_dtor::(15,556)=#(15,545),(0,6),(15,549),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEED2Ev;2A.;__comp_dtor::(15,556):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEED1Ev;2A.;operator=::(15,557)=#(15,545),(15,558)=&(15,545),(15,549),(15,554),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEaSERKS5_;2A.;add::(15,559)=#(15,545),(0,6),(15,549),(15,560)=&(15,552),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE3addERKS4_;2A.(15,550):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE3addEPKS4_i;2A.;remove::(15,561)=#(15,545),(0,6),(15,549),(15,546),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE6removeEPS4_;2A.(15,562)=#(15,545),(0,6),(15,549),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE6removeEi;2A.(15,563)=#(15,545),(0,6),(15,549),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE6removeEii;2A.;insert::(15,564)=#(15,545),(0,6),(15,549),(0,3),(15,547),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE6insertEiS4_;2A.;size::(15,565)=#(15,545),(0,3),(15,566)=*(15,555),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE4sizeEv;2B.;resize::(15,562):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE6resizeEi;2A.;reserve::(15,562):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE7reserveEi;2A.;clear::(15,556):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE5clearEv;2A.;empty::(15,567)=#(15,545),(0,4),(15,566),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE5emptyEv;2B.;capacity::(15,565):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE8capacityEv;2B.;begin::(15,568)=#(15,545),(15,546),(15,549),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE5beginEv;2A.;end::(15,568):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE3endEv;2A.;begin::(15,569)=#(15,545),(15,551),(15,566),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE5beginEv;2B.;end::(15,569):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE3endEv;2B.;operator[]::(15,570)=#(15,545),(15,571)=&(15,547),(15,549),(0,3),(0,6);:_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEixEi;2A.(15,572)=#(15,545),(15,560),(15,566),(0,3),(0,6);:_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEEixEi;2B.;pointer::(15,569):_ZNK6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE7pointerEv;2B.(15,568):_ZN6MAUtil6VectorINS_11ListenerSetINS_19MediaExportListenerEE5ComboEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListenerSet<MAUtil::MediaExportListener>:Tt(15,573)=s16mRunning:/0(0,4),0,8;mUpdateRequired:/0(0,4),8,8;mShouldDelete:/0(0,4),16,8;mVec:/0(15,545),32,96;__base_ctor::(15,574)=#(15,573),(0,6),(15,575)=*(15,573),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEEC2Eb;2A.;__comp_ctor::(15,574):_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEEC1Eb;2A.;begin::(15,576)=#(15,573),(15,577)=xsiterator:,(15,575),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEE5beginEv;2A.;add::(15,578)=#(15,573),(0,6),(15,575),(15,579)=*(15,580)=xsMediaExportListener:,(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEE3addEPS1_;2A.;remove::(15,578):_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEE6removeEPS1_;2A.;contains::(15,581)=#(15,573),(0,4),(15,575),(15,579),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEE8containsEPS1_;2A.;setRunning::(15,582)=#(15,573),(0,6),(15,575),(0,4),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEE10setRunningEb;2A.;size::(15,583)=#(15,573),(0,3),(15,584)=*(15,585)=k(15,573),(0,6);:_ZNK6MAUtil11ListenerSetINS_19MediaExportListenerEE4sizeEv;2B.;operator=::(15,586)=#(15,573),(15,587)=&(15,573),(15,575),(15,588)=&(15,585),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEEaSERKS2_;2A.;__base_ctor::(15,589)=#(15,573),(0,6),(15,575),(15,588),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEEC2ERKS2_;2A.;__comp_ctor::(15,589):_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEEC1ERKS2_;2A.;__base_dtor::(15,590)=#(15,573),(0,6),(15,575),(0,6);:_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEED2Ev;2A.;__comp_dtor::(15,590):_ZN6MAUtil11ListenerSetINS_19MediaExportListenerEED1Ev;2A.;;",128,0,46,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/IX_WIDGET.h",130,0,0,0
 	.stabs	"MAWidgetHandle:t(16,1)=(0,3)",128,0,9,0
-	.stabs	"MAWidgetEventData:Tt(16,2)=s20eventType:(0,3),0,32;widgetHandle:(16,1),32,32;:(16,3)=u12listItemIndex:(0,3),0,32;:(16,4)=s8sectionIndex:(0,3),0,32;sectionItemIndex:(0,3),32,32;;,0,64;searchBarButton:(0,3),0,32;checked:(0,3),0,32;tabIndex:(0,3),0,32;status:(0,3),0,32;:(16,5)=s8hookType:(0,3),0,32;urlData:(6,10),32,32;;,0,64;:(16,6)=s8fromScreen:(16,1),0,32;toScreen:(16,1),32,32;;,0,64;sliderValue:(0,3),0,32;:(16,7)=s12dayOfMonth:(0,3),0,32;month:(0,3),32,32;year:(0,3),64,32;;,0,96;:(16,8)=s8hour:(0,3),0,32;minute:(0,3),32,32;;,0,64;numberPickerValue:(0,3),0,32;videoViewState:(0,3),0,32;optionDialogButtonIndex:(0,3),0,32;:(16,9)=s8value:(0,9),0,32;fromUser:(0,3),32,32;;,0,64;radioGroupItemHandle:(0,3),0,32;radioButtonState:(0,3),0,32;optionsMenuItem:(0,3),0,32;mapPinIndex:(0,3),0,32;;,64,96;operator=::(16,10)=#(16,2),(16,11)=&(16,2),(16,12)=*(16,2),(16,13)=&(16,14)=k(16,2),(0,6);:_ZN17MAWidgetEventDataaSERKS_;2A.;__base_ctor::(16,15)=#(16,2),(0,6),(16,12),(16,13),(0,6);:_ZN17MAWidgetEventDataC2ERKS_;2A.;__comp_ctor::(16,15):_ZN17MAWidgetEventDataC1ERKS_;2A.;__base_ctor::(16,16)=#(16,2),(0,6),(16,12),(0,6);:_ZN17MAWidgetEventDataC2Ev;2A.;__comp_ctor::(16,16):_ZN17MAWidgetEventDataC1Ev;2A.;;",128,0,4629,0
-	.stabs	"MAWidgetEventData:t(16,17)=(16,2)",128,0,4807,0
+	.stabs	"MAWScreenTransitionType:t(16,2)=(0,3)",128,0,11,0
+	.stabs	"MAWidgetEventData:Tt(16,3)=s20eventType:(0,3),0,32;widgetHandle:(16,1),32,32;:(16,4)=u12listItemIndex:(0,3),0,32;:(16,5)=s8sectionIndex:(0,3),0,32;sectionItemIndex:(0,3),32,32;;,0,64;searchBarButton:(0,3),0,32;checked:(0,3),0,32;tabIndex:(0,3),0,32;status:(0,3),0,32;:(16,6)=s8hookType:(0,3),0,32;urlData:(6,10),32,32;;,0,64;:(16,7)=s8fromScreen:(16,1),0,32;toScreen:(16,1),32,32;;,0,64;sliderValue:(0,3),0,32;:(16,8)=s12dayOfMonth:(0,3),0,32;month:(0,3),32,32;year:(0,3),64,32;;,0,96;:(16,9)=s8hour:(0,3),0,32;minute:(0,3),32,32;;,0,64;numberPickerValue:(0,3),0,32;videoViewState:(0,3),0,32;optionDialogButtonIndex:(0,3),0,32;:(16,10)=s8value:(0,9),0,32;fromUser:(0,3),32,32;;,0,64;radioGroupItemHandle:(0,3),0,32;radioButtonState:(0,3),0,32;optionsMenuItem:(0,3),0,32;actionBarMenuItem:(0,3),0,32;mapPinIndex:(0,3),0,32;screenOrientation:(0,3),0,32;customPickerItemIndex:(0,3),0,32;;,64,96;operator=::(16,11)=#(16,3),(16,12)=&(16,3),(16,13)=*(16,3),(16,14)=&(16,15)=k(16,3),(0,6);:_ZN17MAWidgetEventDataaSERKS_;2A.;__base_ctor::(16,16)=#(16,3),(0,6),(16,13),(16,14),(0,6);:_ZN17MAWidgetEventDataC2ERKS_;2A.;__comp_ctor::(16,16):_ZN17MAWidgetEventDataC1ERKS_;2A.;__base_ctor::(16,17)=#(16,3),(0,6),(16,13),(0,6);:_ZN17MAWidgetEventDataC2Ev;2A.;__comp_ctor::(16,17):_ZN17MAWidgetEventDataC1Ev;2A.;;",128,0,5161,0
+	.stabs	"MAWidgetEventData:t(16,18)=(16,3)",128,0,5357,0
 	.stabn	162,0,0,0
 	.stabs	"BasicString<char>:Tt(10,2)=s4sd:/1(4,1)=*(4,2)=xsStringData<char>:,0,32;__base_ctor::(4,3)=#(10,2),(0,6),(4,4)=*(10,2),(0,6);:_ZN6MAUtil11BasicStringIcEC2Ev;2A.;__comp_ctor::(4,3):_ZN6MAUtil11BasicStringIcEC1Ev;2A.;__base_ctor::(4,5)=#(10,2),(0,6),(4,4),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEC2Ei;2A.;__comp_ctor::(4,5):_ZN6MAUtil11BasicStringIcEC1Ei;2A.;__base_ctor::(4,6)=#(10,2),(0,6),(4,4),(4,7)=*(4,8)=k(0,19),(0,6);:_ZN6MAUtil11BasicStringIcEC2EPKc;2A.;__comp_ctor::(4,6):_ZN6MAUtil11BasicStringIcEC1EPKc;2A.;__base_ctor::(4,9)=#(10,2),(0,6),(4,4),(4,7),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEC2EPKci;2A.;__comp_ctor::(4,9):_ZN6MAUtil11BasicStringIcEC1EPKci;2A.;__base_ctor::(4,10)=#(10,2),(0,6),(4,4),(4,11)=&(4,12)=k(10,2),(0,6);:_ZN6MAUtil11BasicStringIcEC2ERKS1_;2A.;__comp_ctor::(4,10):_ZN6MAUtil11BasicStringIcEC1ERKS1_;2A.;c_str::(4,13)=#(10,2),(4,7),(4,14)=*(4,12),(0,6);:_ZNK6MAUtil11BasicStringIcE5c_strEv;2B.;operator=::(4,15)=#(10,2),(4,16)=&(10,2),(4,4),(4,11),(0,6);:_ZN6MAUtil11BasicStringIcEaSERKS1_;2A.;operator[]::(4,17)=#(10,2),(4,18)=&(0,19),(4,4),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcEixEi;2A.(4,19)=#(10,2),(4,20)=&(4,8),(4,14),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcEixEi;2B.;operator==::(4,21)=#(10,2),(0,4),(4,14),(4,11),(0,6);:_ZNK6MAUtil11BasicStringIcEeqERKS1_;2B.;operator!=::(4,21):_ZNK6MAUtil11BasicStringIcEneERKS1_;2B.;operator<::(4,21):_ZNK6MAUtil11BasicStringIcEltERKS1_;2B.;operator>::(4,21):_ZNK6MAUtil11BasicStringIcEgtERKS1_;2B.;operator<=::(4,21):_ZNK6MAUtil11BasicStringIcEleERKS1_;2B.;operator>=::(4,21):_ZNK6MAUtil11BasicStringIcEgeERKS1_;2B.;operator+::(4,22)=#(10,2),(10,2),(4,14),(4,11),(0,6);:_ZNK6MAUtil11BasicStringIcEplERKS1_;2B.;operator+=::(4,15):_ZN6MAUtil11BasicStringIcEpLERKS1_;2A.;operator+::(4,23)=#(10,2),(10,2),(4,14),(0,19),(0,6);:_ZNK6MAUtil11BasicStringIcEplEc;2B.;operator+=::(4,24)=#(10,2),(4,16),(4,4),(0,19),(0,6);:_ZN6MAUtil11BasicStringIcEpLEc;2A.;find::(4,25)=#(10,2),(0,3),(4,14),(4,11),(0,17),(0,6);:_ZNK6MAUtil11BasicStringIcE4findERKS1_j;2B.;findLastOf::(4,26)=#(10,2),(0,3),(4,14),(0,19),(0,6);:_ZNK6MAUtil11BasicStringIcE10findLastOfEc;2B.;findFirstOf::(4,27)=#(10,2),(0,3),(4,14),(0,19),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcE11findFirstOfEci;2B.;findFirstNotOf::(4,27):_ZNK6MAUtil11BasicStringIcE14findFirstNotOfEci;2B.;insert::(4,28)=#(10,2),(0,6),(4,4),(0,3),(4,11),(0,6);:_ZN6MAUtil11BasicStringIcE6insertEiRKS1_;2A.(4,29)=#(10,2),(0,6),(4,4),(0,3),(0,19),(0,6);:_ZN6MAUtil11BasicStringIcE6insertEic;2A.;remove::(4,30)=#(10,2),(0,6),(4,4),(0,3),(0,3),(0,6);:_ZN6MAUtil11BasicStringIcE6removeEii;2A.;substr::(4,31)=#(10,2),(10,2),(4,14),(0,3),(0,3),(0,6);:_ZNK6MAUtil11BasicStringIcE6substrEii;2B.;capacity::(4,32)=#(10,2),(0,3),(4,14),(0,6);:_ZNK6MAUtil11BasicStringIcE8capacityEv;2B.;size::(4,32):_ZNK6MAUtil11BasicStringIcE4sizeEv;2B.;length::(4,32):_ZNK6MAUtil11BasicStringIcE6lengthEv;2B.;resize::(4,5):_ZN6MAUtil11BasicStringIcE6resizeEi;2A.;reserve::(4,5):_ZN6MAUtil11BasicStringIcE7reserveEi;2A.;clear::(4,3):_ZN6MAUtil11BasicStringIcE5clearEv;2A.;append::(4,9):_ZN6MAUtil11BasicStringIcE6appendEPKci;2A.;setData::(4,33)=#(10,2),(0,6),(4,4),(4,1),(0,6);:_ZN6MAUtil11BasicStringIcE7setDataEPNS_10StringDataIcEE;2A.;pointer::(4,34)=#(10,2),(6,5),(4,4),(0,6);:_ZN6MAUtil11BasicStringIcE7pointerEv;2A.(4,13):_ZNK6MAUtil11BasicStringIcE7pointerEv;2B.;__base_dtor::(4,3):_ZN6MAUtil11BasicStringIcED2Ev;2A.;__comp_dtor::(4,3):_ZN6MAUtil11BasicStringIcED1Ev;2A.;allocStringData::(4,9):_ZN6MAUtil11BasicStringIcE15allocStringDataEPKci;1A.;;",128,0,104,0
 	.stabs	"LastError:Tt(4,35)=s8errorCause:(10,1),0,32;errorCode:(0,3),32,32;__base_ctor::(4,36)=#(4,35),(0,6),(4,37)=*(4,35),(4,38)=&(4,39)=k(10,1),(0,3),(0,6);:_ZN8NativeUI9LastErrorC2ERKN6MAUtil11BasicStringIcEEi;2A.;__comp_ctor::(4,36):_ZN8NativeUI9LastErrorC1ERKN6MAUtil11BasicStringIcEEi;2A.;__base_ctor::(4,40)=#(4,35),(0,6),(4,37),(0,6);:_ZN8NativeUI9LastErrorC2Ev;2A.;__comp_ctor::(4,40):_ZN8NativeUI9LastErrorC1Ev;2A.;operator=::(4,41)=#(4,35),(4,42)=&(4,35),(4,37),(4,43)=&(4,44)=k(4,35),(0,6);:_ZN8NativeUI9LastErroraSERKS0_;2A.;__base_ctor::(4,45)=#(4,35),(0,6),(4,37),(4,43),(0,6);:_ZN8NativeUI9LastErrorC2ERKS0_;2A.;__comp_ctor::(4,45):_ZN8NativeUI9LastErrorC1ERKS0_;2A.;__base_dtor::(4,40):_ZN8NativeUI9LastErrorD2Ev;2A.;__comp_dtor::(4,40):_ZN8NativeUI9LastErrorD1Ev;2A.;;",128,0,78,0
@@ -179,120 +189,135 @@
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/CameraPreview.h",130,0,0,0
 	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/NativeUI/Camera.h",130,0,0,0
+	.stabs	"CAMERA_FLASH_MODE:t(21,1)=eFLASH_AUTO:0,FLASH_ON:1,FLASH_OFF:2,FLASH_TORCH:3,FLASH_UNDEFINED:4,;",128,0,53,0
+	.stabs	"CAMERA_FOCUS_MODE:t(21,2)=eFOCUS_AUTO:10,FOCUS_INFINITY:11,FOCUS_MACRO:12,FOCUS_FIXED:13,FOCUS_UNDEFINED:14,;",128,0,64,0
+	.stabs	"CAMERA_SNAPSHOT_FORMAT:t(21,3)=eSNAPSHOT_RAW:100,SNAPSHOT_JPEG:101,SNAPSHOT_UNKNOWN:102,;",128,0,73,0
+	.stabs	"CameraSnapshotData:Tt(21,4)=s16dataHandle:(6,10),0,32;format:(21,3),32,32;imageSize:(0,17),64,32;resultCode:(0,3),96,32;makeFromEvent::(21,5)=f(21,6)=*(21,4):_ZN8NativeUI18CameraSnapshotData13makeFromEventERK7MAEvent;2A?;operator=::(21,7)=#(21,4),(21,8)=&(21,4),(21,6),(21,9)=&(21,10)=k(21,4),(0,6);:_ZN8NativeUI18CameraSnapshotDataaSERKS0_;2A.;__base_ctor::(21,11)=#(21,4),(0,6),(21,6),(21,9),(0,6);:_ZN8NativeUI18CameraSnapshotDataC2ERKS0_;2A.;__comp_ctor::(21,11):_ZN8NativeUI18CameraSnapshotDataC1ERKS0_;2A.;__base_ctor::(21,12)=#(21,4),(0,6),(21,6),(0,6);:_ZN8NativeUI18CameraSnapshotDataC2Ev;2A.;__comp_ctor::(21,12):_ZN8NativeUI18CameraSnapshotDataC1Ev;2A.;;",128,0,78,0
+	.stabs	"CameraSnapshotData:t(21,13)=(21,4)",128,0,107,0
+	.stabs	"CameraPreviewData:Tt(21,14)=s28frameBuffer:(21,15)=*(0,3),0,32;type:(0,3),32,32;rect:(6,36),64,128;resultCode:(0,3),192,32;operator=::(21,16)=#(21,14),(21,17)=&(21,14),(21,18)=*(21,14),(21,19)=&(21,20)=k(21,14),(0,6);:_ZN8NativeUI17CameraPreviewDataaSERKS0_;2A.;__base_ctor::(21,21)=#(21,14),(0,6),(21,18),(21,19),(0,6);:_ZN8NativeUI17CameraPreviewDataC2ERKS0_;2A.;__comp_ctor::(21,21):_ZN8NativeUI17CameraPreviewDataC1ERKS0_;2A.;__base_ctor::(21,22)=#(21,14),(0,6),(21,18),(0,6);:_ZN8NativeUI17CameraPreviewDataC2Ev;2A.;__comp_ctor::(21,22):_ZN8NativeUI17CameraPreviewDataC1Ev;2A.;;",128,0,112,0
+	.stabs	"CameraPreviewData:t(21,23)=(21,14)",128,0,140,0
+	.stabs	"Vector<NativeUI::CameraSnapshotListener*>:Tt(21,24)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(21,25)=*(21,26)=*(21,27)=xsCameraSnapshotListener:,64,32;__base_ctor::(21,28)=#(21,24),(0,6),(21,29)=*(21,24),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC2Ei;2A.;__comp_ctor::(21,28):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC1Ei;2A.;__base_ctor::(21,30)=#(21,24),(0,6),(21,29),(21,31)=*(21,32)=k(21,26),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC2EPKS3_i;2A.;__comp_ctor::(21,30):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC1EPKS3_i;2A.;__base_ctor::(21,33)=#(21,24),(0,6),(21,29),(21,34)=&(21,35)=k(21,24),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC2ERKS4_;2A.;__comp_ctor::(21,33):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEC1ERKS4_;2A.;__base_dtor::(21,36)=#(21,24),(0,6),(21,29),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEED2Ev;2A.;__comp_dtor::(21,36):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEED1Ev;2A.;operator=::(21,37)=#(21,24),(21,38)=&(21,24),(21,29),(21,34),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEaSERKS4_;2A.;add::(21,39)=#(21,24),(0,6),(21,29),(21,40)=&(21,32),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE3addERKS3_;2A.(21,30):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE3addEPKS3_i;2A.;remove::(21,41)=#(21,24),(0,6),(21,29),(21,25),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE6removeEPS3_;2A.(21,42)=#(21,24),(0,6),(21,29),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE6removeEi;2A.(21,43)=#(21,24),(0,6),(21,29),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE6removeEii;2A.;insert::(21,44)=#(21,24),(0,6),(21,29),(0,3),(21,26),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE6insertEiS3_;2A.;size::(21,45)=#(21,24),(0,3),(21,46)=*(21,35),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE4sizeEv;2B.;resize::(21,42):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE6resizeEi;2A.;reserve::(21,42):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE7reserveEi;2A.;clear::(21,36):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE5clearEv;2A.;empty::(21,47)=#(21,24),(0,4),(21,46),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE5emptyEv;2B.;capacity::(21,45):_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE8capacityEv;2B.;begin::(21,48)=#(21,24),(21,25),(21,29),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE5beginEv;2A.;end::(21,48):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE3endEv;2A.;begin::(21,49)=#(21,24),(21,31),(21,46),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE5beginEv;2B.;end::(21,49):_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE3endEv;2B.;operator[]::(21,50)=#(21,24),(21,51)=&(21,26),(21,29),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEixEi;2A.(21,52)=#(21,24),(21,40),(21,46),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEEixEi;2B.;pointer::(21,49):_ZNK6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE7pointerEv;2B.(21,48):_ZN6MAUtil6VectorIPN8NativeUI22CameraSnapshotListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<MAExtent>:Tt(21,53)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(21,54)=*(6,11),64,32;__base_ctor::(21,55)=#(21,53),(0,6),(21,56)=*(21,53),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2Ei;2A.;__comp_ctor::(21,55):_ZN6MAUtil6VectorIiEC1Ei;2A.;__base_ctor::(21,57)=#(21,53),(0,6),(21,56),(21,58)=*(21,59)=k(6,11),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2EPKii;2A.;__comp_ctor::(21,57):_ZN6MAUtil6VectorIiEC1EPKii;2A.;__base_ctor::(21,60)=#(21,53),(0,6),(21,56),(21,61)=&(21,62)=k(21,53),(0,6);:_ZN6MAUtil6VectorIiEC2ERKS1_;2A.;__comp_ctor::(21,60):_ZN6MAUtil6VectorIiEC1ERKS1_;2A.;__base_dtor::(21,63)=#(21,53),(0,6),(21,56),(0,6);:_ZN6MAUtil6VectorIiED2Ev;2A.;__comp_dtor::(21,63):_ZN6MAUtil6VectorIiED1Ev;2A.;operator=::(21,64)=#(21,53),(21,65)=&(21,53),(21,56),(21,61),(0,6);:_ZN6MAUtil6VectorIiEaSERKS1_;2A.;add::(21,66)=#(21,53),(0,6),(21,56),(21,67)=&(21,59),(0,6);:_ZN6MAUtil6VectorIiE3addERKi;2A.(21,57):_ZN6MAUtil6VectorIiE3addEPKii;2A.;remove::(21,68)=#(21,53),(0,6),(21,56),(21,54),(0,6);:_ZN6MAUtil6VectorIiE6removeEPi;2A.(21,69)=#(21,53),(0,6),(21,56),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEi;2A.(21,70)=#(21,53),(0,6),(21,56),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEii;2A.;insert::(21,70):_ZN6MAUtil6VectorIiE6insertEii;2A.;size::(21,71)=#(21,53),(0,3),(21,72)=*(21,62),(0,6);:_ZNK6MAUtil6VectorIiE4sizeEv;2B.;resize::(21,69):_ZN6MAUtil6VectorIiE6resizeEi;2A.;reserve::(21,69):_ZN6MAUtil6VectorIiE7reserveEi;2A.;clear::(21,63):_ZN6MAUtil6VectorIiE5clearEv;2A.;empty::(21,73)=#(21,53),(0,4),(21,72),(0,6);:_ZNK6MAUtil6VectorIiE5emptyEv;2B.;capacity::(21,71):_ZNK6MAUtil6VectorIiE8capacityEv;2B.;begin::(21,74)=#(21,53),(21,54),(21,56),(0,6);:_ZN6MAUtil6VectorIiE5beginEv;2A.;end::(21,74):_ZN6MAUtil6VectorIiE3endEv;2A.;begin::(21,75)=#(21,53),(21,58),(21,72),(0,6);:_ZNK6MAUtil6VectorIiE5beginEv;2B.;end::(21,75):_ZNK6MAUtil6VectorIiE3endEv;2B.;operator[]::(21,76)=#(21,53),(21,77)=&(6,11),(21,56),(0,3),(0,6);:_ZN6MAUtil6VectorIiEixEi;2A.(21,78)=#(21,53),(21,67),(21,72),(0,3),(0,6);:_ZNK6MAUtil6VectorIiEixEi;2B.;pointer::(21,75):_ZNK6MAUtil6VectorIiE7pointerEv;2B.(21,74):_ZN6MAUtil6VectorIiE7pointerEv;2A.;;",128,0,95,0
+	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/CheckBox.h",130,0,0,0
-	.stabs	"Vector<NativeUI::CheckBoxListener*>:Tt(21,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(21,2)=*(21,3)=*(21,4)=xsCheckBoxListener:,64,32;__base_ctor::(21,5)=#(21,1),(0,6),(21,6)=*(21,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2Ei;2A.;__comp_ctor::(21,5):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1Ei;2A.;__base_ctor::(21,7)=#(21,1),(0,6),(21,6),(21,8)=*(21,9)=k(21,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2EPKS3_i;2A.;__comp_ctor::(21,7):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1EPKS3_i;2A.;__base_ctor::(21,10)=#(21,1),(0,6),(21,6),(21,11)=&(21,12)=k(21,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2ERKS4_;2A.;__comp_ctor::(21,10):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1ERKS4_;2A.;__base_dtor::(21,13)=#(21,1),(0,6),(21,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEED2Ev;2A.;__comp_dtor::(21,13):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEED1Ev;2A.;operator=::(21,14)=#(21,1),(21,15)=&(21,1),(21,6),(21,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEaSERKS4_;2A.;add::(21,16)=#(21,1),(0,6),(21,6),(21,17)=&(21,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3addERKS3_;2A.(21,7):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3addEPKS3_i;2A.;remove::(21,18)=#(21,1),(0,6),(21,6),(21,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEPS3_;2A.(21,19)=#(21,1),(0,6),(21,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEi;2A.(21,20)=#(21,1),(0,6),(21,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEii;2A.;insert::(21,21)=#(21,1),(0,6),(21,6),(0,3),(21,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6insertEiS3_;2A.;size::(21,22)=#(21,1),(0,3),(21,23)=*(21,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE4sizeEv;2B.;resize::(21,19):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6resizeEi;2A.;reserve::(21,19):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7reserveEi;2A.;clear::(21,13):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5clearEv;2A.;empty::(21,24)=#(21,1),(0,4),(21,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5emptyEv;2B.;capacity::(21,22):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE8capacityEv;2B.;begin::(21,25)=#(21,1),(21,2),(21,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5beginEv;2A.;end::(21,25):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3endEv;2A.;begin::(21,26)=#(21,1),(21,8),(21,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5beginEv;2B.;end::(21,26):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3endEv;2B.;operator[]::(21,27)=#(21,1),(21,28)=&(21,3),(21,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEixEi;2A.(21,29)=#(21,1),(21,17),(21,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEixEi;2B.;pointer::(21,26):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7pointerEv;2B.(21,25):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::CheckBoxListener*>:Tt(22,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(22,2)=*(22,3)=*(22,4)=xsCheckBoxListener:,64,32;__base_ctor::(22,5)=#(22,1),(0,6),(22,6)=*(22,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2Ei;2A.;__comp_ctor::(22,5):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1Ei;2A.;__base_ctor::(22,7)=#(22,1),(0,6),(22,6),(22,8)=*(22,9)=k(22,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2EPKS3_i;2A.;__comp_ctor::(22,7):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1EPKS3_i;2A.;__base_ctor::(22,10)=#(22,1),(0,6),(22,6),(22,11)=&(22,12)=k(22,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC2ERKS4_;2A.;__comp_ctor::(22,10):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEC1ERKS4_;2A.;__base_dtor::(22,13)=#(22,1),(0,6),(22,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEED2Ev;2A.;__comp_dtor::(22,13):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEED1Ev;2A.;operator=::(22,14)=#(22,1),(22,15)=&(22,1),(22,6),(22,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEaSERKS4_;2A.;add::(22,16)=#(22,1),(0,6),(22,6),(22,17)=&(22,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3addERKS3_;2A.(22,7):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3addEPKS3_i;2A.;remove::(22,18)=#(22,1),(0,6),(22,6),(22,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEPS3_;2A.(22,19)=#(22,1),(0,6),(22,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEi;2A.(22,20)=#(22,1),(0,6),(22,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6removeEii;2A.;insert::(22,21)=#(22,1),(0,6),(22,6),(0,3),(22,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6insertEiS3_;2A.;size::(22,22)=#(22,1),(0,3),(22,23)=*(22,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE4sizeEv;2B.;resize::(22,19):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE6resizeEi;2A.;reserve::(22,19):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7reserveEi;2A.;clear::(22,13):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5clearEv;2A.;empty::(22,24)=#(22,1),(0,4),(22,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5emptyEv;2B.;capacity::(22,22):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE8capacityEv;2B.;begin::(22,25)=#(22,1),(22,2),(22,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5beginEv;2A.;end::(22,25):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3endEv;2A.;begin::(22,26)=#(22,1),(22,8),(22,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE5beginEv;2B.;end::(22,26):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE3endEv;2B.;operator[]::(22,27)=#(22,1),(22,28)=&(22,3),(22,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEixEi;2A.(22,29)=#(22,1),(22,17),(22,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEEixEi;2B.;pointer::(22,26):_ZNK6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7pointerEv;2B.(22,25):_ZN6MAUtil6VectorIPN8NativeUI16CheckBoxListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/CheckBoxListener.h",130,0,0,0
 	.stabn	162,0,0,0
+	.stabs	"c:/MoSync/include/NativeUI/CustomPicker.h",130,0,0,0
+	.stabs	"Vector<NativeUI::CustomPickerListener*>:Tt(24,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(24,2)=*(24,3)=*(24,4)=xsCustomPickerListener:,64,32;__base_ctor::(24,5)=#(24,1),(0,6),(24,6)=*(24,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC2Ei;2A.;__comp_ctor::(24,5):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC1Ei;2A.;__base_ctor::(24,7)=#(24,1),(0,6),(24,6),(24,8)=*(24,9)=k(24,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(24,7):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC1EPKS3_i;2A.;__base_ctor::(24,10)=#(24,1),(0,6),(24,6),(24,11)=&(24,12)=k(24,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC2ERKS4_;2A.;__comp_ctor::(24,10):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEC1ERKS4_;2A.;__base_dtor::(24,13)=#(24,1),(0,6),(24,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEED2Ev;2A.;__comp_dtor::(24,13):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEED1Ev;2A.;operator=::(24,14)=#(24,1),(24,15)=&(24,1),(24,6),(24,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEaSERKS4_;2A.;add::(24,16)=#(24,1),(0,6),(24,6),(24,17)=&(24,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE3addERKS3_;2A.(24,7):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE3addEPKS3_i;2A.;remove::(24,18)=#(24,1),(0,6),(24,6),(24,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE6removeEPS3_;2A.(24,19)=#(24,1),(0,6),(24,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE6removeEi;2A.(24,20)=#(24,1),(0,6),(24,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE6removeEii;2A.;insert::(24,21)=#(24,1),(0,6),(24,6),(0,3),(24,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE6insertEiS3_;2A.;size::(24,22)=#(24,1),(0,3),(24,23)=*(24,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE4sizeEv;2B.;resize::(24,19):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE6resizeEi;2A.;reserve::(24,19):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE7reserveEi;2A.;clear::(24,13):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE5clearEv;2A.;empty::(24,24)=#(24,1),(0,4),(24,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE5emptyEv;2B.;capacity::(24,22):_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE8capacityEv;2B.;begin::(24,25)=#(24,1),(24,2),(24,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE5beginEv;2A.;end::(24,25):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE3endEv;2A.;begin::(24,26)=#(24,1),(24,8),(24,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE5beginEv;2B.;end::(24,26):_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE3endEv;2B.;operator[]::(24,27)=#(24,1),(24,28)=&(24,3),(24,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEixEi;2A.(24,29)=#(24,1),(24,17),(24,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEEixEi;2B.;pointer::(24,26):_ZNK6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE7pointerEv;2B.(24,25):_ZN6MAUtil6VectorIPN8NativeUI20CustomPickerListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/DatePicker.h",130,0,0,0
-	.stabs	"Date:Tt(23,1)=s12day:(0,3),0,32;month:(0,3),32,32;year:(0,3),64,32;__base_ctor::(23,2)=#(23,1),(0,6),(23,3)=*(23,1),(0,3),(0,3),(0,3),(0,6);:_ZN8NativeUI4DateC2Eiii;2A.;__comp_ctor::(23,2):_ZN8NativeUI4DateC1Eiii;2A.;__base_ctor::(23,4)=#(23,1),(0,6),(23,3),(0,6);:_ZN8NativeUI4DateC2Ev;2A.;__comp_ctor::(23,4):_ZN8NativeUI4DateC1Ev;2A.;operator=::(23,5)=#(23,1),(23,6)=&(23,1),(23,3),(23,7)=&(23,8)=k(23,1),(0,6);:_ZN8NativeUI4DateaSERKS0_;2A.;__base_ctor::(23,9)=#(23,1),(0,6),(23,3),(23,7),(0,6);:_ZN8NativeUI4DateC2ERKS0_;2A.;__comp_ctor::(23,9):_ZN8NativeUI4DateC1ERKS0_;2A.;;",128,0,52,0
-	.stabs	"Vector<NativeUI::DatePickerListener*>:Tt(23,10)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(23,11)=*(23,12)=*(23,13)=xsDatePickerListener:,64,32;__base_ctor::(23,14)=#(23,10),(0,6),(23,15)=*(23,10),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2Ei;2A.;__comp_ctor::(23,14):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1Ei;2A.;__base_ctor::(23,16)=#(23,10),(0,6),(23,15),(23,17)=*(23,18)=k(23,12),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(23,16):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1EPKS3_i;2A.;__base_ctor::(23,19)=#(23,10),(0,6),(23,15),(23,20)=&(23,21)=k(23,10),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2ERKS4_;2A.;__comp_ctor::(23,19):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1ERKS4_;2A.;__base_dtor::(23,22)=#(23,10),(0,6),(23,15),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEED2Ev;2A.;__comp_dtor::(23,22):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEED1Ev;2A.;operator=::(23,23)=#(23,10),(23,24)=&(23,10),(23,15),(23,20),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEaSERKS4_;2A.;add::(23,25)=#(23,10),(0,6),(23,15),(23,26)=&(23,18),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3addERKS3_;2A.(23,16):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3addEPKS3_i;2A.;remove::(23,27)=#(23,10),(0,6),(23,15),(23,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEPS3_;2A.(23,28)=#(23,10),(0,6),(23,15),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEi;2A.(23,29)=#(23,10),(0,6),(23,15),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEii;2A.;insert::(23,30)=#(23,10),(0,6),(23,15),(0,3),(23,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6insertEiS3_;2A.;size::(23,31)=#(23,10),(0,3),(23,32)=*(23,21),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE4sizeEv;2B.;resize::(23,28):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6resizeEi;2A.;reserve::(23,28):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7reserveEi;2A.;clear::(23,22):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5clearEv;2A.;empty::(23,33)=#(23,10),(0,4),(23,32),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5emptyEv;2B.;capacity::(23,31):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE8capacityEv;2B.;begin::(23,34)=#(23,10),(23,11),(23,15),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5beginEv;2A.;end::(23,34):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3endEv;2A.;begin::(23,35)=#(23,10),(23,17),(23,32),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5beginEv;2B.;end::(23,35):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3endEv;2B.;operator[]::(23,36)=#(23,10),(23,37)=&(23,12),(23,15),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEixEi;2A.(23,38)=#(23,10),(23,26),(23,32),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEixEi;2B.;pointer::(23,35):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7pointerEv;2B.(23,34):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Date:Tt(25,1)=s12day:(0,3),0,32;month:(0,3),32,32;year:(0,3),64,32;__base_ctor::(25,2)=#(25,1),(0,6),(25,3)=*(25,1),(0,3),(0,3),(0,3),(0,6);:_ZN8NativeUI4DateC2Eiii;2A.;__comp_ctor::(25,2):_ZN8NativeUI4DateC1Eiii;2A.;__base_ctor::(25,4)=#(25,1),(0,6),(25,3),(0,6);:_ZN8NativeUI4DateC2Ev;2A.;__comp_ctor::(25,4):_ZN8NativeUI4DateC1Ev;2A.;operator=::(25,5)=#(25,1),(25,6)=&(25,1),(25,3),(25,7)=&(25,8)=k(25,1),(0,6);:_ZN8NativeUI4DateaSERKS0_;2A.;__base_ctor::(25,9)=#(25,1),(0,6),(25,3),(25,7),(0,6);:_ZN8NativeUI4DateC2ERKS0_;2A.;__comp_ctor::(25,9):_ZN8NativeUI4DateC1ERKS0_;2A.;;",128,0,52,0
+	.stabs	"Vector<NativeUI::DatePickerListener*>:Tt(25,10)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(25,11)=*(25,12)=*(25,13)=xsDatePickerListener:,64,32;__base_ctor::(25,14)=#(25,10),(0,6),(25,15)=*(25,10),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2Ei;2A.;__comp_ctor::(25,14):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1Ei;2A.;__base_ctor::(25,16)=#(25,10),(0,6),(25,15),(25,17)=*(25,18)=k(25,12),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(25,16):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1EPKS3_i;2A.;__base_ctor::(25,19)=#(25,10),(0,6),(25,15),(25,20)=&(25,21)=k(25,10),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC2ERKS4_;2A.;__comp_ctor::(25,19):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEC1ERKS4_;2A.;__base_dtor::(25,22)=#(25,10),(0,6),(25,15),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEED2Ev;2A.;__comp_dtor::(25,22):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEED1Ev;2A.;operator=::(25,23)=#(25,10),(25,24)=&(25,10),(25,15),(25,20),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEaSERKS4_;2A.;add::(25,25)=#(25,10),(0,6),(25,15),(25,26)=&(25,18),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3addERKS3_;2A.(25,16):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3addEPKS3_i;2A.;remove::(25,27)=#(25,10),(0,6),(25,15),(25,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEPS3_;2A.(25,28)=#(25,10),(0,6),(25,15),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEi;2A.(25,29)=#(25,10),(0,6),(25,15),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6removeEii;2A.;insert::(25,30)=#(25,10),(0,6),(25,15),(0,3),(25,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6insertEiS3_;2A.;size::(25,31)=#(25,10),(0,3),(25,32)=*(25,21),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE4sizeEv;2B.;resize::(25,28):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE6resizeEi;2A.;reserve::(25,28):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7reserveEi;2A.;clear::(25,22):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5clearEv;2A.;empty::(25,33)=#(25,10),(0,4),(25,32),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5emptyEv;2B.;capacity::(25,31):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE8capacityEv;2B.;begin::(25,34)=#(25,10),(25,11),(25,15),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5beginEv;2A.;end::(25,34):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3endEv;2A.;begin::(25,35)=#(25,10),(25,17),(25,32),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE5beginEv;2B.;end::(25,35):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE3endEv;2B.;operator[]::(25,36)=#(25,10),(25,37)=&(25,12),(25,15),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEixEi;2A.(25,38)=#(25,10),(25,26),(25,32),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEEixEi;2B.;pointer::(25,35):_ZNK6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7pointerEv;2B.(25,34):_ZN6MAUtil6VectorIPN8NativeUI18DatePickerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/DatePickerListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Dialog.h",130,0,0,0
-	.stabs	"Vector<NativeUI::DialogListener*>:Tt(25,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(25,2)=*(25,3)=*(25,4)=xsDialogListener:,64,32;__base_ctor::(25,5)=#(25,1),(0,6),(25,6)=*(25,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2Ei;2A.;__comp_ctor::(25,5):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1Ei;2A.;__base_ctor::(25,7)=#(25,1),(0,6),(25,6),(25,8)=*(25,9)=k(25,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2EPKS3_i;2A.;__comp_ctor::(25,7):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1EPKS3_i;2A.;__base_ctor::(25,10)=#(25,1),(0,6),(25,6),(25,11)=&(25,12)=k(25,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2ERKS4_;2A.;__comp_ctor::(25,10):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1ERKS4_;2A.;__base_dtor::(25,13)=#(25,1),(0,6),(25,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEED2Ev;2A.;__comp_dtor::(25,13):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEED1Ev;2A.;operator=::(25,14)=#(25,1),(25,15)=&(25,1),(25,6),(25,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEaSERKS4_;2A.;add::(25,16)=#(25,1),(0,6),(25,6),(25,17)=&(25,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3addERKS3_;2A.(25,7):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3addEPKS3_i;2A.;remove::(25,18)=#(25,1),(0,6),(25,6),(25,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEPS3_;2A.(25,19)=#(25,1),(0,6),(25,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEi;2A.(25,20)=#(25,1),(0,6),(25,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEii;2A.;insert::(25,21)=#(25,1),(0,6),(25,6),(0,3),(25,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6insertEiS3_;2A.;size::(25,22)=#(25,1),(0,3),(25,23)=*(25,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE4sizeEv;2B.;resize::(25,19):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6resizeEi;2A.;reserve::(25,19):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE7reserveEi;2A.;clear::(25,13):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE5clearEv;2A.;empty::(25,24)=#(25,1),(0,4),(25,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE5emptyEv;2B.;capacity::(25,22):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE8capacityEv;2B.;begin::(25,25)=#(25,1),(25,2),(25,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE5beginEv;2A.;end::(25,25):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3endEv;2A.;begin::(25,26)=#(25,1),(25,8),(25,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE5beginEv;2B.;end::(25,26):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE3endEv;2B.;operator[]::(25,27)=#(25,1),(25,28)=&(25,3),(25,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEixEi;2A.(25,29)=#(25,1),(25,17),(25,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEEixEi;2B.;pointer::(25,26):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE7pointerEv;2B.(25,25):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::DialogListener*>:Tt(27,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(27,2)=*(27,3)=*(27,4)=xsDialogListener:,64,32;__base_ctor::(27,5)=#(27,1),(0,6),(27,6)=*(27,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2Ei;2A.;__comp_ctor::(27,5):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1Ei;2A.;__base_ctor::(27,7)=#(27,1),(0,6),(27,6),(27,8)=*(27,9)=k(27,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2EPKS3_i;2A.;__comp_ctor::(27,7):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1EPKS3_i;2A.;__base_ctor::(27,10)=#(27,1),(0,6),(27,6),(27,11)=&(27,12)=k(27,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC2ERKS4_;2A.;__comp_ctor::(27,10):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEC1ERKS4_;2A.;__base_dtor::(27,13)=#(27,1),(0,6),(27,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEED2Ev;2A.;__comp_dtor::(27,13):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEED1Ev;2A.;operator=::(27,14)=#(27,1),(27,15)=&(27,1),(27,6),(27,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEaSERKS4_;2A.;add::(27,16)=#(27,1),(0,6),(27,6),(27,17)=&(27,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3addERKS3_;2A.(27,7):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3addEPKS3_i;2A.;remove::(27,18)=#(27,1),(0,6),(27,6),(27,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEPS3_;2A.(27,19)=#(27,1),(0,6),(27,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEi;2A.(27,20)=#(27,1),(0,6),(27,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6removeEii;2A.;insert::(27,21)=#(27,1),(0,6),(27,6),(0,3),(27,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6insertEiS3_;2A.;size::(27,22)=#(27,1),(0,3),(27,23)=*(27,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE4sizeEv;2B.;resize::(27,19):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE6resizeEi;2A.;reserve::(27,19):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE7reserveEi;2A.;clear::(27,13):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE5clearEv;2A.;empty::(27,24)=#(27,1),(0,4),(27,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE5emptyEv;2B.;capacity::(27,22):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE8capacityEv;2B.;begin::(27,25)=#(27,1),(27,2),(27,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE5beginEv;2A.;end::(27,25):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE3endEv;2A.;begin::(27,26)=#(27,1),(27,8),(27,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE5beginEv;2B.;end::(27,26):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE3endEv;2B.;operator[]::(27,27)=#(27,1),(27,28)=&(27,3),(27,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEEixEi;2A.(27,29)=#(27,1),(27,17),(27,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEEixEi;2B.;pointer::(27,26):_ZNK6MAUtil6VectorIPN8NativeUI14DialogListenerEE7pointerEv;2B.(27,25):_ZN6MAUtil6VectorIPN8NativeUI14DialogListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/DialogListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/EditBox.h",130,0,0,0
-	.stabs	"EditBoxMode:t(27,1)=eEDIT_BOX_MODE_TEXT:0,EDIT_BOX_MODE_PASSWORD:1,;",128,0,53,0
-	.stabs	"EditBoxInputMode:t(27,2)=eEDIT_BOX_INPUT_MODE_ANY:0,EDIT_BOX_INPUT_MODE_EMAILADDR:1,EDIT_BOX_INPUT_MODE_NUMERIC:2,EDIT_BOX_INPUT_MODE_PHONENUMBER:3,EDIT_BOX_INPUT_MODE_URL:4,EDIT_BOX_INPUT_MODE_DECIMAL:5,EDIT_BOX_INPUT_MODE_SINGLE_LINE:6,;",128,0,63,0
-	.stabs	"EditBoxInputFlag:t(27,3)=eEDIT_BOX_INPUT_FLAG_PASSWORD:0,EDIT_BOX_INPUT_FLAG_SENSITIVE:1,EDIT_BOX_INPUT_FLAG_INITIAL_CAPS_WORD:2,EDIT_BOX_INPUT_FLAG_INITIAL_CAPS_SENTENCE:3,EDIT_BOX_INPUT_GLAG_INITIAL_CAPS_ALL_CHARACTERS:4,;",128,0,99,0
-	.stabs	"EditBoxAutocorrectionType:t(27,4)=eEDIT_BOX_AUTOCORRECTION_TYPE_DEFAULT:0,EDIT_BOX_AUTOCORRECTION_TYPE_ENABLE:1,EDIT_BOX_AUTOCORRECTION_TYPE_DISABLE:2,;",128,0,133,0
-	.stabs	"EditBoxCategory:t(27,5)=eEDIT_BOX_SINGLE_LINE:0,EDIT_BOX_MULTI_LINE:1,;",128,0,157,0
-	.stabs	"Vector<NativeUI::EditBoxListener*>:Tt(27,6)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(27,7)=*(27,8)=*(27,9)=xsEditBoxListener:,64,32;__base_ctor::(27,10)=#(27,6),(0,6),(27,11)=*(27,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2Ei;2A.;__comp_ctor::(27,10):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1Ei;2A.;__base_ctor::(27,12)=#(27,6),(0,6),(27,11),(27,13)=*(27,14)=k(27,8),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2EPKS3_i;2A.;__comp_ctor::(27,12):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1EPKS3_i;2A.;__base_ctor::(27,15)=#(27,6),(0,6),(27,11),(27,16)=&(27,17)=k(27,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2ERKS4_;2A.;__comp_ctor::(27,15):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1ERKS4_;2A.;__base_dtor::(27,18)=#(27,6),(0,6),(27,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEED2Ev;2A.;__comp_dtor::(27,18):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEED1Ev;2A.;operator=::(27,19)=#(27,6),(27,20)=&(27,6),(27,11),(27,16),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEaSERKS4_;2A.;add::(27,21)=#(27,6),(0,6),(27,11),(27,22)=&(27,14),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3addERKS3_;2A.(27,12):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3addEPKS3_i;2A.;remove::(27,23)=#(27,6),(0,6),(27,11),(27,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEPS3_;2A.(27,24)=#(27,6),(0,6),(27,11),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEi;2A.(27,25)=#(27,6),(0,6),(27,11),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEii;2A.;insert::(27,26)=#(27,6),(0,6),(27,11),(0,3),(27,8),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6insertEiS3_;2A.;size::(27,27)=#(27,6),(0,3),(27,28)=*(27,17),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE4sizeEv;2B.;resize::(27,24):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6resizeEi;2A.;reserve::(27,24):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7reserveEi;2A.;clear::(27,18):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5clearEv;2A.;empty::(27,29)=#(27,6),(0,4),(27,28),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5emptyEv;2B.;capacity::(27,27):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE8capacityEv;2B.;begin::(27,30)=#(27,6),(27,7),(27,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5beginEv;2A.;end::(27,30):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3endEv;2A.;begin::(27,31)=#(27,6),(27,13),(27,28),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5beginEv;2B.;end::(27,31):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3endEv;2B.;operator[]::(27,32)=#(27,6),(27,33)=&(27,8),(27,11),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEixEi;2A.(27,34)=#(27,6),(27,22),(27,28),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEixEi;2B.;pointer::(27,31):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7pointerEv;2B.(27,30):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"EditBoxMode:t(29,1)=eEDIT_BOX_MODE_TEXT:0,EDIT_BOX_MODE_PASSWORD:1,;",128,0,53,0
+	.stabs	"EditBoxInputMode:t(29,2)=eEDIT_BOX_INPUT_MODE_ANY:0,EDIT_BOX_INPUT_MODE_EMAILADDR:1,EDIT_BOX_INPUT_MODE_NUMERIC:2,EDIT_BOX_INPUT_MODE_PHONENUMBER:3,EDIT_BOX_INPUT_MODE_URL:4,EDIT_BOX_INPUT_MODE_DECIMAL:5,EDIT_BOX_INPUT_MODE_SINGLE_LINE:6,;",128,0,63,0
+	.stabs	"EditBoxInputFlag:t(29,3)=eEDIT_BOX_INPUT_FLAG_PASSWORD:0,EDIT_BOX_INPUT_FLAG_SENSITIVE:1,EDIT_BOX_INPUT_FLAG_INITIAL_CAPS_WORD:2,EDIT_BOX_INPUT_FLAG_INITIAL_CAPS_SENTENCE:3,EDIT_BOX_INPUT_GLAG_INITIAL_CAPS_ALL_CHARACTERS:4,;",128,0,99,0
+	.stabs	"EditBoxAutocorrectionType:t(29,4)=eEDIT_BOX_AUTOCORRECTION_TYPE_DEFAULT:0,EDIT_BOX_AUTOCORRECTION_TYPE_ENABLE:1,EDIT_BOX_AUTOCORRECTION_TYPE_DISABLE:2,;",128,0,133,0
+	.stabs	"EditBoxCategory:t(29,5)=eEDIT_BOX_SINGLE_LINE:0,EDIT_BOX_MULTI_LINE:1,;",128,0,157,0
+	.stabs	"Vector<NativeUI::EditBoxListener*>:Tt(29,6)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(29,7)=*(29,8)=*(29,9)=xsEditBoxListener:,64,32;__base_ctor::(29,10)=#(29,6),(0,6),(29,11)=*(29,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2Ei;2A.;__comp_ctor::(29,10):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1Ei;2A.;__base_ctor::(29,12)=#(29,6),(0,6),(29,11),(29,13)=*(29,14)=k(29,8),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2EPKS3_i;2A.;__comp_ctor::(29,12):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1EPKS3_i;2A.;__base_ctor::(29,15)=#(29,6),(0,6),(29,11),(29,16)=&(29,17)=k(29,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC2ERKS4_;2A.;__comp_ctor::(29,15):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEC1ERKS4_;2A.;__base_dtor::(29,18)=#(29,6),(0,6),(29,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEED2Ev;2A.;__comp_dtor::(29,18):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEED1Ev;2A.;operator=::(29,19)=#(29,6),(29,20)=&(29,6),(29,11),(29,16),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEaSERKS4_;2A.;add::(29,21)=#(29,6),(0,6),(29,11),(29,22)=&(29,14),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3addERKS3_;2A.(29,12):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3addEPKS3_i;2A.;remove::(29,23)=#(29,6),(0,6),(29,11),(29,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEPS3_;2A.(29,24)=#(29,6),(0,6),(29,11),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEi;2A.(29,25)=#(29,6),(0,6),(29,11),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6removeEii;2A.;insert::(29,26)=#(29,6),(0,6),(29,11),(0,3),(29,8),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6insertEiS3_;2A.;size::(29,27)=#(29,6),(0,3),(29,28)=*(29,17),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE4sizeEv;2B.;resize::(29,24):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE6resizeEi;2A.;reserve::(29,24):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7reserveEi;2A.;clear::(29,18):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5clearEv;2A.;empty::(29,29)=#(29,6),(0,4),(29,28),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5emptyEv;2B.;capacity::(29,27):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE8capacityEv;2B.;begin::(29,30)=#(29,6),(29,7),(29,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5beginEv;2A.;end::(29,30):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3endEv;2A.;begin::(29,31)=#(29,6),(29,13),(29,28),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE5beginEv;2B.;end::(29,31):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE3endEv;2B.;operator[]::(29,32)=#(29,6),(29,33)=&(29,8),(29,11),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEixEi;2A.(29,34)=#(29,6),(29,22),(29,28),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEEixEi;2B.;pointer::(29,31):_ZNK6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7pointerEv;2B.(29,30):_ZN6MAUtil6VectorIPN8NativeUI15EditBoxListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/EditBoxListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/GLView.h",130,0,0,0
-	.stabs	"Vector<NativeUI::GLViewListener*>:Tt(29,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(29,2)=*(29,3)=*(29,4)=xsGLViewListener:,64,32;__base_ctor::(29,5)=#(29,1),(0,6),(29,6)=*(29,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2Ei;2A.;__comp_ctor::(29,5):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1Ei;2A.;__base_ctor::(29,7)=#(29,1),(0,6),(29,6),(29,8)=*(29,9)=k(29,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(29,7):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1EPKS3_i;2A.;__base_ctor::(29,10)=#(29,1),(0,6),(29,6),(29,11)=&(29,12)=k(29,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2ERKS4_;2A.;__comp_ctor::(29,10):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1ERKS4_;2A.;__base_dtor::(29,13)=#(29,1),(0,6),(29,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEED2Ev;2A.;__comp_dtor::(29,13):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEED1Ev;2A.;operator=::(29,14)=#(29,1),(29,15)=&(29,1),(29,6),(29,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEaSERKS4_;2A.;add::(29,16)=#(29,1),(0,6),(29,6),(29,17)=&(29,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3addERKS3_;2A.(29,7):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3addEPKS3_i;2A.;remove::(29,18)=#(29,1),(0,6),(29,6),(29,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEPS3_;2A.(29,19)=#(29,1),(0,6),(29,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEi;2A.(29,20)=#(29,1),(0,6),(29,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEii;2A.;insert::(29,21)=#(29,1),(0,6),(29,6),(0,3),(29,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6insertEiS3_;2A.;size::(29,22)=#(29,1),(0,3),(29,23)=*(29,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE4sizeEv;2B.;resize::(29,19):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6resizeEi;2A.;reserve::(29,19):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7reserveEi;2A.;clear::(29,13):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5clearEv;2A.;empty::(29,24)=#(29,1),(0,4),(29,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5emptyEv;2B.;capacity::(29,22):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE8capacityEv;2B.;begin::(29,25)=#(29,1),(29,2),(29,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5beginEv;2A.;end::(29,25):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3endEv;2A.;begin::(29,26)=#(29,1),(29,8),(29,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5beginEv;2B.;end::(29,26):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3endEv;2B.;operator[]::(29,27)=#(29,1),(29,28)=&(29,3),(29,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEixEi;2A.(29,29)=#(29,1),(29,17),(29,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEEixEi;2B.;pointer::(29,26):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7pointerEv;2B.(29,25):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::GLViewListener*>:Tt(31,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(31,2)=*(31,3)=*(31,4)=xsGLViewListener:,64,32;__base_ctor::(31,5)=#(31,1),(0,6),(31,6)=*(31,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2Ei;2A.;__comp_ctor::(31,5):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1Ei;2A.;__base_ctor::(31,7)=#(31,1),(0,6),(31,6),(31,8)=*(31,9)=k(31,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(31,7):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1EPKS3_i;2A.;__base_ctor::(31,10)=#(31,1),(0,6),(31,6),(31,11)=&(31,12)=k(31,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC2ERKS4_;2A.;__comp_ctor::(31,10):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEC1ERKS4_;2A.;__base_dtor::(31,13)=#(31,1),(0,6),(31,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEED2Ev;2A.;__comp_dtor::(31,13):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEED1Ev;2A.;operator=::(31,14)=#(31,1),(31,15)=&(31,1),(31,6),(31,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEaSERKS4_;2A.;add::(31,16)=#(31,1),(0,6),(31,6),(31,17)=&(31,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3addERKS3_;2A.(31,7):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3addEPKS3_i;2A.;remove::(31,18)=#(31,1),(0,6),(31,6),(31,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEPS3_;2A.(31,19)=#(31,1),(0,6),(31,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEi;2A.(31,20)=#(31,1),(0,6),(31,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6removeEii;2A.;insert::(31,21)=#(31,1),(0,6),(31,6),(0,3),(31,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6insertEiS3_;2A.;size::(31,22)=#(31,1),(0,3),(31,23)=*(31,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE4sizeEv;2B.;resize::(31,19):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE6resizeEi;2A.;reserve::(31,19):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7reserveEi;2A.;clear::(31,13):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5clearEv;2A.;empty::(31,24)=#(31,1),(0,4),(31,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5emptyEv;2B.;capacity::(31,22):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE8capacityEv;2B.;begin::(31,25)=#(31,1),(31,2),(31,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5beginEv;2A.;end::(31,25):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3endEv;2A.;begin::(31,26)=#(31,1),(31,8),(31,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE5beginEv;2B.;end::(31,26):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE3endEv;2B.;operator[]::(31,27)=#(31,1),(31,28)=&(31,3),(31,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEEixEi;2A.(31,29)=#(31,1),(31,17),(31,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEEixEi;2B.;pointer::(31,26):_ZNK6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7pointerEv;2B.(31,25):_ZN6MAUtil6VectorIPN8NativeUI14GLViewListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/GLViewListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/HorizontalLayout.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Layout.h",130,0,0,0
 	.stabs	"c:/MoSync/include/Ads/Banner.h",130,0,0,0
-	.stabs	"BannerSize:t(33,1)=eBANNER_SIZE_DEFAULT:0,BANNER_SIZE_RECT:1,BANNER_SIZE_IAB:2,BANNER_SIZE_LEADERBOARD:3,BANNER_SIZE_WP7_XLARGE:4,BANNER_SIZE_WP7_XXLARGE:5,;",128,0,62,0
+	.stabs	"BannerSize:t(35,1)=eBANNER_SIZE_DEFAULT:0,BANNER_SIZE_RECT:1,BANNER_SIZE_IAB:2,BANNER_SIZE_LEADERBOARD:3,BANNER_SIZE_WP7_XLARGE:4,BANNER_SIZE_WP7_XXLARGE:5,;",128,0,62,0
 	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
-	.stabs	"Vector<Ads::BannerListener*>:Tt(33,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(33,3)=*(33,4)=*(33,5)=xsBannerListener:,64,32;__base_ctor::(33,6)=#(33,2),(0,6),(33,7)=*(33,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2Ei;2A.;__comp_ctor::(33,6):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1Ei;2A.;__base_ctor::(33,8)=#(33,2),(0,6),(33,7),(33,9)=*(33,10)=k(33,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2EPKS3_i;2A.;__comp_ctor::(33,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1EPKS3_i;2A.;__base_ctor::(33,11)=#(33,2),(0,6),(33,7),(33,12)=&(33,13)=k(33,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2ERKS4_;2A.;__comp_ctor::(33,11):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1ERKS4_;2A.;__base_dtor::(33,14)=#(33,2),(0,6),(33,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED2Ev;2A.;__comp_dtor::(33,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED1Ev;2A.;operator=::(33,15)=#(33,2),(33,16)=&(33,2),(33,7),(33,12),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEaSERKS4_;2A.;add::(33,17)=#(33,2),(0,6),(33,7),(33,18)=&(33,10),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addERKS3_;2A.(33,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addEPKS3_i;2A.;remove::(33,19)=#(33,2),(0,6),(33,7),(33,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEPS3_;2A.(33,20)=#(33,2),(0,6),(33,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEi;2A.(33,21)=#(33,2),(0,6),(33,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEii;2A.;insert::(33,22)=#(33,2),(0,6),(33,7),(0,3),(33,4),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6insertEiS3_;2A.;size::(33,23)=#(33,2),(0,3),(33,24)=*(33,13),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE4sizeEv;2B.;resize::(33,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6resizeEi;2A.;reserve::(33,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7reserveEi;2A.;clear::(33,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5clearEv;2A.;empty::(33,25)=#(33,2),(0,4),(33,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5emptyEv;2B.;capacity::(33,23):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE8capacityEv;2B.;begin::(33,26)=#(33,2),(33,3),(33,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2A.;end::(33,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2A.;begin::(33,27)=#(33,2),(33,9),(33,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2B.;end::(33,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2B.;operator[]::(33,28)=#(33,2),(33,29)=&(33,4),(33,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2A.(33,30)=#(33,2),(33,18),(33,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2B.;pointer::(33,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2B.(33,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<Ads::BannerListener*>:Tt(35,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(35,3)=*(35,4)=*(35,5)=xsBannerListener:,64,32;__base_ctor::(35,6)=#(35,2),(0,6),(35,7)=*(35,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2Ei;2A.;__comp_ctor::(35,6):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1Ei;2A.;__base_ctor::(35,8)=#(35,2),(0,6),(35,7),(35,9)=*(35,10)=k(35,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2EPKS3_i;2A.;__comp_ctor::(35,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1EPKS3_i;2A.;__base_ctor::(35,11)=#(35,2),(0,6),(35,7),(35,12)=&(35,13)=k(35,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2ERKS4_;2A.;__comp_ctor::(35,11):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1ERKS4_;2A.;__base_dtor::(35,14)=#(35,2),(0,6),(35,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED2Ev;2A.;__comp_dtor::(35,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED1Ev;2A.;operator=::(35,15)=#(35,2),(35,16)=&(35,2),(35,7),(35,12),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEaSERKS4_;2A.;add::(35,17)=#(35,2),(0,6),(35,7),(35,18)=&(35,10),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addERKS3_;2A.(35,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addEPKS3_i;2A.;remove::(35,19)=#(35,2),(0,6),(35,7),(35,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEPS3_;2A.(35,20)=#(35,2),(0,6),(35,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEi;2A.(35,21)=#(35,2),(0,6),(35,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEii;2A.;insert::(35,22)=#(35,2),(0,6),(35,7),(0,3),(35,4),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6insertEiS3_;2A.;size::(35,23)=#(35,2),(0,3),(35,24)=*(35,13),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE4sizeEv;2B.;resize::(35,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6resizeEi;2A.;reserve::(35,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7reserveEi;2A.;clear::(35,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5clearEv;2A.;empty::(35,25)=#(35,2),(0,4),(35,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5emptyEv;2B.;capacity::(35,23):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE8capacityEv;2B.;begin::(35,26)=#(35,2),(35,3),(35,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2A.;end::(35,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2A.;begin::(35,27)=#(35,2),(35,9),(35,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2B.;end::(35,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2B.;operator[]::(35,28)=#(35,2),(35,29)=&(35,4),(35,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2A.(35,30)=#(35,2),(35,18),(35,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2B.;pointer::(35,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2B.(35,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
-	.stabs	"Vector<Ads::Banner*>:Tt(32,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(32,2)=*(32,3)=*(32,4)=xsBanner:,64,32;__base_ctor::(32,5)=#(32,1),(0,6),(32,6)=*(32,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2Ei;2A.;__comp_ctor::(32,5):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1Ei;2A.;__base_ctor::(32,7)=#(32,1),(0,6),(32,6),(32,8)=*(32,9)=k(32,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2EPKS3_i;2A.;__comp_ctor::(32,7):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1EPKS3_i;2A.;__base_ctor::(32,10)=#(32,1),(0,6),(32,6),(32,11)=&(32,12)=k(32,1),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2ERKS4_;2A.;__comp_ctor::(32,10):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1ERKS4_;2A.;__base_dtor::(32,13)=#(32,1),(0,6),(32,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEED2Ev;2A.;__comp_dtor::(32,13):_ZN6MAUtil6VectorIPN3Ads6BannerEED1Ev;2A.;operator=::(32,14)=#(32,1),(32,15)=&(32,1),(32,6),(32,11),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEaSERKS4_;2A.;add::(32,16)=#(32,1),(0,6),(32,6),(32,17)=&(32,9),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE3addERKS3_;2A.(32,7):_ZN6MAUtil6VectorIPN3Ads6BannerEE3addEPKS3_i;2A.;remove::(32,18)=#(32,1),(0,6),(32,6),(32,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEPS3_;2A.(32,19)=#(32,1),(0,6),(32,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEi;2A.(32,20)=#(32,1),(0,6),(32,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEii;2A.;insert::(32,21)=#(32,1),(0,6),(32,6),(0,3),(32,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6insertEiS3_;2A.;size::(32,22)=#(32,1),(0,3),(32,23)=*(32,12),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE4sizeEv;2B.;resize::(32,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE6resizeEi;2A.;reserve::(32,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE7reserveEi;2A.;clear::(32,13):_ZN6MAUtil6VectorIPN3Ads6BannerEE5clearEv;2A.;empty::(32,24)=#(32,1),(0,4),(32,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5emptyEv;2B.;capacity::(32,22):_ZNK6MAUtil6VectorIPN3Ads6BannerEE8capacityEv;2B.;begin::(32,25)=#(32,1),(32,2),(32,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2A.;end::(32,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE3endEv;2A.;begin::(32,26)=#(32,1),(32,8),(32,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2B.;end::(32,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE3endEv;2B.;operator[]::(32,27)=#(32,1),(32,28)=&(32,3),(32,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEixEi;2A.(32,29)=#(32,1),(32,17),(32,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEEixEi;2B.;pointer::(32,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2B.(32,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<Ads::Banner*>:Tt(34,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(34,2)=*(34,3)=*(34,4)=xsBanner:,64,32;__base_ctor::(34,5)=#(34,1),(0,6),(34,6)=*(34,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2Ei;2A.;__comp_ctor::(34,5):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1Ei;2A.;__base_ctor::(34,7)=#(34,1),(0,6),(34,6),(34,8)=*(34,9)=k(34,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2EPKS3_i;2A.;__comp_ctor::(34,7):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1EPKS3_i;2A.;__base_ctor::(34,10)=#(34,1),(0,6),(34,6),(34,11)=&(34,12)=k(34,1),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2ERKS4_;2A.;__comp_ctor::(34,10):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1ERKS4_;2A.;__base_dtor::(34,13)=#(34,1),(0,6),(34,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEED2Ev;2A.;__comp_dtor::(34,13):_ZN6MAUtil6VectorIPN3Ads6BannerEED1Ev;2A.;operator=::(34,14)=#(34,1),(34,15)=&(34,1),(34,6),(34,11),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEaSERKS4_;2A.;add::(34,16)=#(34,1),(0,6),(34,6),(34,17)=&(34,9),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE3addERKS3_;2A.(34,7):_ZN6MAUtil6VectorIPN3Ads6BannerEE3addEPKS3_i;2A.;remove::(34,18)=#(34,1),(0,6),(34,6),(34,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEPS3_;2A.(34,19)=#(34,1),(0,6),(34,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEi;2A.(34,20)=#(34,1),(0,6),(34,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEii;2A.;insert::(34,21)=#(34,1),(0,6),(34,6),(0,3),(34,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6insertEiS3_;2A.;size::(34,22)=#(34,1),(0,3),(34,23)=*(34,12),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE4sizeEv;2B.;resize::(34,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE6resizeEi;2A.;reserve::(34,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE7reserveEi;2A.;clear::(34,13):_ZN6MAUtil6VectorIPN3Ads6BannerEE5clearEv;2A.;empty::(34,24)=#(34,1),(0,4),(34,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5emptyEv;2B.;capacity::(34,22):_ZNK6MAUtil6VectorIPN3Ads6BannerEE8capacityEv;2B.;begin::(34,25)=#(34,1),(34,2),(34,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2A.;end::(34,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE3endEv;2A.;begin::(34,26)=#(34,1),(34,8),(34,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2B.;end::(34,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE3endEv;2B.;operator[]::(34,27)=#(34,1),(34,28)=&(34,3),(34,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEixEi;2A.(34,29)=#(34,1),(34,17),(34,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEEixEi;2B.;pointer::(34,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2B.(34,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Image.h",130,0,0,0
-	.stabs	"ImageScaleMode:t(34,1)=eIMAGE_SCALE_NONE:0,IMAGE_SCALE_XY:1,IMAGE_SCALE_PRESERVE_ASPECT:2,;",128,0,47,0
+	.stabs	"ImageScaleMode:t(36,1)=eIMAGE_SCALE_NONE:0,IMAGE_SCALE_XY:1,IMAGE_SCALE_PRESERVE_ASPECT:2,;",128,0,47,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ImageButton.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Label.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ListView.h",130,0,0,0
-	.stabs	"ListViewType:t(37,1)=eLIST_VIEW_TYPE_DEFAULT:0,LIST_VIEW_TYPE_ALPHABETICAL:1,LIST_VIEW_TYPE_SEGMENTED:2,;",128,0,49,0
-	.stabs	"ListViewMode:t(37,2)=eLIST_VIEW_MODE_DISPLAY:0,LIST_VIEW_MODE_EDIT:1,;",128,0,71,0
-	.stabs	"ListViewStyle:t(37,3)=eLIST_VIEW_STYLE_SUBTITLE:0,LIST_VIEW_STYLE_NO_SUBTITLE:1,;",128,0,88,0
-	.stabs	"Vector<NativeUI::ListViewListener*>:Tt(37,4)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(37,5)=*(37,6)=*(37,7)=xsListViewListener:,64,32;__base_ctor::(37,8)=#(37,4),(0,6),(37,9)=*(37,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2Ei;2A.;__comp_ctor::(37,8):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1Ei;2A.;__base_ctor::(37,10)=#(37,4),(0,6),(37,9),(37,11)=*(37,12)=k(37,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(37,10):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1EPKS3_i;2A.;__base_ctor::(37,13)=#(37,4),(0,6),(37,9),(37,14)=&(37,15)=k(37,4),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2ERKS4_;2A.;__comp_ctor::(37,13):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1ERKS4_;2A.;__base_dtor::(37,16)=#(37,4),(0,6),(37,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEED2Ev;2A.;__comp_dtor::(37,16):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEED1Ev;2A.;operator=::(37,17)=#(37,4),(37,18)=&(37,4),(37,9),(37,14),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEaSERKS4_;2A.;add::(37,19)=#(37,4),(0,6),(37,9),(37,20)=&(37,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3addERKS3_;2A.(37,10):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3addEPKS3_i;2A.;remove::(37,21)=#(37,4),(0,6),(37,9),(37,5),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEPS3_;2A.(37,22)=#(37,4),(0,6),(37,9),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEi;2A.(37,23)=#(37,4),(0,6),(37,9),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEii;2A.;insert::(37,24)=#(37,4),(0,6),(37,9),(0,3),(37,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6insertEiS3_;2A.;size::(37,25)=#(37,4),(0,3),(37,26)=*(37,15),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE4sizeEv;2B.;resize::(37,22):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6resizeEi;2A.;reserve::(37,22):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7reserveEi;2A.;clear::(37,16):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5clearEv;2A.;empty::(37,27)=#(37,4),(0,4),(37,26),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5emptyEv;2B.;capacity::(37,25):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE8capacityEv;2B.;begin::(37,28)=#(37,4),(37,5),(37,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5beginEv;2A.;end::(37,28):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3endEv;2A.;begin::(37,29)=#(37,4),(37,11),(37,26),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5beginEv;2B.;end::(37,29):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3endEv;2B.;operator[]::(37,30)=#(37,4),(37,31)=&(37,6),(37,9),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEixEi;2A.(37,32)=#(37,4),(37,20),(37,26),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEEixEi;2B.;pointer::(37,29):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7pointerEv;2B.(37,28):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ListViewType:t(39,1)=eLIST_VIEW_TYPE_DEFAULT:0,LIST_VIEW_TYPE_ALPHABETICAL:1,LIST_VIEW_TYPE_SEGMENTED:2,;",128,0,49,0
+	.stabs	"ListViewMode:t(39,2)=eLIST_VIEW_MODE_DISPLAY:0,LIST_VIEW_MODE_EDIT:1,;",128,0,71,0
+	.stabs	"ListViewStyle:t(39,3)=eLIST_VIEW_STYLE_SUBTITLE:0,LIST_VIEW_STYLE_NO_SUBTITLE:1,;",128,0,88,0
+	.stabs	"Vector<NativeUI::ListViewListener*>:Tt(39,4)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(39,5)=*(39,6)=*(39,7)=xsListViewListener:,64,32;__base_ctor::(39,8)=#(39,4),(0,6),(39,9)=*(39,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2Ei;2A.;__comp_ctor::(39,8):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1Ei;2A.;__base_ctor::(39,10)=#(39,4),(0,6),(39,9),(39,11)=*(39,12)=k(39,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(39,10):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1EPKS3_i;2A.;__base_ctor::(39,13)=#(39,4),(0,6),(39,9),(39,14)=&(39,15)=k(39,4),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC2ERKS4_;2A.;__comp_ctor::(39,13):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEC1ERKS4_;2A.;__base_dtor::(39,16)=#(39,4),(0,6),(39,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEED2Ev;2A.;__comp_dtor::(39,16):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEED1Ev;2A.;operator=::(39,17)=#(39,4),(39,18)=&(39,4),(39,9),(39,14),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEaSERKS4_;2A.;add::(39,19)=#(39,4),(0,6),(39,9),(39,20)=&(39,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3addERKS3_;2A.(39,10):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3addEPKS3_i;2A.;remove::(39,21)=#(39,4),(0,6),(39,9),(39,5),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEPS3_;2A.(39,22)=#(39,4),(0,6),(39,9),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEi;2A.(39,23)=#(39,4),(0,6),(39,9),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6removeEii;2A.;insert::(39,24)=#(39,4),(0,6),(39,9),(0,3),(39,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6insertEiS3_;2A.;size::(39,25)=#(39,4),(0,3),(39,26)=*(39,15),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE4sizeEv;2B.;resize::(39,22):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE6resizeEi;2A.;reserve::(39,22):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7reserveEi;2A.;clear::(39,16):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5clearEv;2A.;empty::(39,27)=#(39,4),(0,4),(39,26),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5emptyEv;2B.;capacity::(39,25):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE8capacityEv;2B.;begin::(39,28)=#(39,4),(39,5),(39,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5beginEv;2A.;end::(39,28):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3endEv;2A.;begin::(39,29)=#(39,4),(39,11),(39,26),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE5beginEv;2B.;end::(39,29):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE3endEv;2B.;operator[]::(39,30)=#(39,4),(39,31)=&(39,6),(39,9),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEEixEi;2A.(39,32)=#(39,4),(39,20),(39,26),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEEixEi;2B.;pointer::(39,29):_ZNK6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7pointerEv;2B.(39,28):_ZN6MAUtil6VectorIPN8NativeUI16ListViewListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ListViewItem.h",130,0,0,0
-	.stabs	"ListViewItemAccessory:t(38,1)=eLIST_VIEW_ITEM_ACCESSORY_NONE:0,LIST_VIEW_ITEM_ACCESSORY_DISCLOSURE:1,LIST_VIEW_ITEM_ACCESSORY_DETAIL:2,LIST_VIEW_ITEM_ACCESSORY_CHECKMARK:3,;",128,0,49,0
-	.stabs	"ListViewItemEditStyle:t(38,2)=eLIST_VIEW_ITEM_EDIT_STYLE_NONE:0,LIST_VIEW_ITEM_EDIT_STYLE_DELETE:1,LIST_VIEW_ITEM_EDIT_STYLE_INSERT:2,;",128,0,57,0
-	.stabs	"ListViewItemSelectionStyle:t(38,3)=eLIST_VIEW_ITEM_SELECTION_STYLE_NONE:0,LIST_VIEW_ITEM_SELECTION_STYLE_BLUE:1,LIST_VIEW_ITEM_SELECTION_STYLE_GRAY:2,;",128,0,79,0
+	.stabs	"ListViewItemAccessory:t(40,1)=eLIST_VIEW_ITEM_ACCESSORY_NONE:0,LIST_VIEW_ITEM_ACCESSORY_DISCLOSURE:1,LIST_VIEW_ITEM_ACCESSORY_DETAIL:2,LIST_VIEW_ITEM_ACCESSORY_CHECKMARK:3,;",128,0,49,0
+	.stabs	"ListViewItemEditStyle:t(40,2)=eLIST_VIEW_ITEM_EDIT_STYLE_NONE:0,LIST_VIEW_ITEM_EDIT_STYLE_DELETE:1,LIST_VIEW_ITEM_EDIT_STYLE_INSERT:2,;",128,0,57,0
+	.stabs	"ListViewItemSelectionStyle:t(40,3)=eLIST_VIEW_ITEM_SELECTION_STYLE_NONE:0,LIST_VIEW_ITEM_SELECTION_STYLE_BLUE:1,LIST_VIEW_ITEM_SELECTION_STYLE_GRAY:2,;",128,0,79,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ListViewSection.h",130,0,0,0
-	.stabs	"ListViewSectionType:t(39,1)=eLIST_VIEW_SECTION_TYPE_ALPHABETICAL:0,LIST_VIEW_SECTION_TYPE_SEGMENTED:1,;",128,0,50,0
+	.stabs	"ListViewSectionType:t(41,1)=eLIST_VIEW_SECTION_TYPE_ALPHABETICAL:0,LIST_VIEW_SECTION_TYPE_SEGMENTED:1,;",128,0,50,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ListViewListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Map.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/MapLocation.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Location.h",130,0,0,0
-	.stabs	"Location:Tt(43,1)=s16mLatitude:/1(0,8),0,64;mLongitude:/1(0,8),64,64;__base_ctor::(43,2)=#(43,1),(0,6),(43,3)=*(43,1),(0,6);:_ZN8NativeUI8LocationC2Ev;2A.;__comp_ctor::(43,2):_ZN8NativeUI8LocationC1Ev;2A.;__base_ctor::(43,4)=#(43,1),(0,6),(43,3),(0,8),(0,8),(0,6);:_ZN8NativeUI8LocationC2Edd;2A.;__comp_ctor::(43,4):_ZN8NativeUI8LocationC1Edd;2A.;__base_dtor::(43,2):_ZN8NativeUI8LocationD2Ev;2A.;__comp_dtor::(43,2):_ZN8NativeUI8LocationD1Ev;2A.;setLatitude::(43,5)=#(43,1),(0,6),(43,3),(0,8),(0,6);:_ZN8NativeUI8Location11setLatitudeEd;2A.;getLatitude::(43,6)=#(43,1),(0,8),(43,7)=*(43,8)=k(43,1),(0,6);:_ZNK8NativeUI8Location11getLatitudeEv;2B.;setLongitude::(43,5):_ZN8NativeUI8Location12setLongitudeEd;2A.;getLongitude::(43,6):_ZNK8NativeUI8Location12getLongitudeEv;2B.;operator=::(43,9)=#(43,1),(43,10)=&(43,1),(43,3),(43,11)=&(43,8),(0,6);:_ZN8NativeUI8LocationaSERKS0_;2A.;__base_ctor::(43,12)=#(43,1),(0,6),(43,3),(43,11),(0,6);:_ZN8NativeUI8LocationC2ERKS0_;2A.;__comp_ctor::(43,12):_ZN8NativeUI8LocationC1ERKS0_;2A.;;",128,0,41,0
+	.stabs	"Location:Tt(45,1)=s16mLatitude:/1(0,8),0,64;mLongitude:/1(0,8),64,64;__base_ctor::(45,2)=#(45,1),(0,6),(45,3)=*(45,1),(0,6);:_ZN8NativeUI8LocationC2Ev;2A.;__comp_ctor::(45,2):_ZN8NativeUI8LocationC1Ev;2A.;__base_ctor::(45,4)=#(45,1),(0,6),(45,3),(0,8),(0,8),(0,6);:_ZN8NativeUI8LocationC2Edd;2A.;__comp_ctor::(45,4):_ZN8NativeUI8LocationC1Edd;2A.;__base_dtor::(45,2):_ZN8NativeUI8LocationD2Ev;2A.;__comp_dtor::(45,2):_ZN8NativeUI8LocationD1Ev;2A.;setLatitude::(45,5)=#(45,1),(0,6),(45,3),(0,8),(0,6);:_ZN8NativeUI8Location11setLatitudeEd;2A.;getLatitude::(45,6)=#(45,1),(0,8),(45,7)=*(45,8)=k(45,1),(0,6);:_ZNK8NativeUI8Location11getLatitudeEv;2B.;setLongitude::(45,5):_ZN8NativeUI8Location12setLongitudeEd;2A.;getLongitude::(45,6):_ZNK8NativeUI8Location12getLongitudeEv;2B.;operator=::(45,9)=#(45,1),(45,10)=&(45,1),(45,3),(45,11)=&(45,8),(0,6);:_ZN8NativeUI8LocationaSERKS0_;2A.;__base_ctor::(45,12)=#(45,1),(0,6),(45,3),(45,11),(0,6);:_ZN8NativeUI8LocationC2ERKS0_;2A.;__comp_ctor::(45,12):_ZN8NativeUI8LocationC1ERKS0_;2A.;;",128,0,41,0
 	.stabn	162,0,0,0
-	.stabs	"MapLocation:Tt(42,1)=s20!1,020,(43,1);mZoomLevel:/0(0,3),128,32;__base_ctor::(42,2)=#(42,1),(0,6),(42,3)=*(42,1),(0,6);:_ZN8NativeUI11MapLocationC2Ev;2A.;__comp_ctor::(42,2):_ZN8NativeUI11MapLocationC1Ev;2A.;__base_ctor::(42,4)=#(42,1),(0,6),(42,3),(0,8),(0,8),(0,6);:_ZN8NativeUI11MapLocationC2Edd;2A.;__comp_ctor::(42,4):_ZN8NativeUI11MapLocationC1Edd;2A.;__base_ctor::(42,5)=#(42,1),(0,6),(42,3),(0,8),(0,8),(0,3),(0,6);:_ZN8NativeUI11MapLocationC2Eddi;2A.;__comp_ctor::(42,5):_ZN8NativeUI11MapLocationC1Eddi;2A.;__base_dtor::(42,2):_ZN8NativeUI11MapLocationD2Ev;2A.;__comp_dtor::(42,2):_ZN8NativeUI11MapLocationD1Ev;2A.;setZoomLevel::(42,6)=#(42,1),(0,6),(42,3),(0,3),(0,6);:_ZN8NativeUI11MapLocation12setZoomLevelEi;2A.;getZoomLevel::(42,7)=#(42,1),(0,3),(42,8)=*(42,9)=k(42,1),(0,6);:_ZNK8NativeUI11MapLocation12getZoomLevelEv;2B.;setLocation::(42,10)=#(42,1),(0,6),(42,3),(43,3),(0,6);:_ZN8NativeUI11MapLocation11setLocationEPNS_8LocationE;2A.;operator=::(42,11)=#(42,1),(42,12)=&(42,1),(42,3),(42,13)=&(42,9),(0,6);:_ZN8NativeUI11MapLocationaSERKS0_;2A.;__base_ctor::(42,14)=#(42,1),(0,6),(42,3),(42,13),(0,6);:_ZN8NativeUI11MapLocationC2ERKS0_;2A.;__comp_ctor::(42,14):_ZN8NativeUI11MapLocationC1ERKS0_;2A.;;",128,0,43,0
+	.stabs	"MapLocation:Tt(44,1)=s20!1,020,(45,1);mZoomLevel:/0(0,3),128,32;__base_ctor::(44,2)=#(44,1),(0,6),(44,3)=*(44,1),(0,6);:_ZN8NativeUI11MapLocationC2Ev;2A.;__comp_ctor::(44,2):_ZN8NativeUI11MapLocationC1Ev;2A.;__base_ctor::(44,4)=#(44,1),(0,6),(44,3),(0,8),(0,8),(0,6);:_ZN8NativeUI11MapLocationC2Edd;2A.;__comp_ctor::(44,4):_ZN8NativeUI11MapLocationC1Edd;2A.;__base_ctor::(44,5)=#(44,1),(0,6),(44,3),(0,8),(0,8),(0,3),(0,6);:_ZN8NativeUI11MapLocationC2Eddi;2A.;__comp_ctor::(44,5):_ZN8NativeUI11MapLocationC1Eddi;2A.;__base_dtor::(44,2):_ZN8NativeUI11MapLocationD2Ev;2A.;__comp_dtor::(44,2):_ZN8NativeUI11MapLocationD1Ev;2A.;setZoomLevel::(44,6)=#(44,1),(0,6),(44,3),(0,3),(0,6);:_ZN8NativeUI11MapLocation12setZoomLevelEi;2A.;getZoomLevel::(44,7)=#(44,1),(0,3),(44,8)=*(44,9)=k(44,1),(0,6);:_ZNK8NativeUI11MapLocation12getZoomLevelEv;2B.;setLocation::(44,10)=#(44,1),(0,6),(44,3),(45,3),(0,6);:_ZN8NativeUI11MapLocation11setLocationEPNS_8LocationE;2A.;operator=::(44,11)=#(44,1),(44,12)=&(44,1),(44,3),(44,13)=&(44,9),(0,6);:_ZN8NativeUI11MapLocationaSERKS0_;2A.;__base_ctor::(44,14)=#(44,1),(0,6),(44,3),(44,13),(0,6);:_ZN8NativeUI11MapLocationC2ERKS0_;2A.;__comp_ctor::(44,14):_ZN8NativeUI11MapLocationC1ERKS0_;2A.;;",128,0,43,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/MapPin.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/MapPinListener.h",130,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"Vector<NativeUI::MapPinListener*>:Tt(44,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(44,2)=*(44,3)=*(44,4)=xsMapPinListener:,64,32;__base_ctor::(44,5)=#(44,1),(0,6),(44,6)=*(44,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2Ei;2A.;__comp_ctor::(44,5):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1Ei;2A.;__base_ctor::(44,7)=#(44,1),(0,6),(44,6),(44,8)=*(44,9)=k(44,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2EPKS3_i;2A.;__comp_ctor::(44,7):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1EPKS3_i;2A.;__base_ctor::(44,10)=#(44,1),(0,6),(44,6),(44,11)=&(44,12)=k(44,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2ERKS4_;2A.;__comp_ctor::(44,10):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1ERKS4_;2A.;__base_dtor::(44,13)=#(44,1),(0,6),(44,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEED2Ev;2A.;__comp_dtor::(44,13):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEED1Ev;2A.;operator=::(44,14)=#(44,1),(44,15)=&(44,1),(44,6),(44,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEaSERKS4_;2A.;add::(44,16)=#(44,1),(0,6),(44,6),(44,17)=&(44,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3addERKS3_;2A.(44,7):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3addEPKS3_i;2A.;remove::(44,18)=#(44,1),(0,6),(44,6),(44,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEPS3_;2A.(44,19)=#(44,1),(0,6),(44,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEi;2A.(44,20)=#(44,1),(0,6),(44,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEii;2A.;insert::(44,21)=#(44,1),(0,6),(44,6),(0,3),(44,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6insertEiS3_;2A.;size::(44,22)=#(44,1),(0,3),(44,23)=*(44,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE4sizeEv;2B.;resize::(44,19):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6resizeEi;2A.;reserve::(44,19):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7reserveEi;2A.;clear::(44,13):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5clearEv;2A.;empty::(44,24)=#(44,1),(0,4),(44,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5emptyEv;2B.;capacity::(44,22):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE8capacityEv;2B.;begin::(44,25)=#(44,1),(44,2),(44,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5beginEv;2A.;end::(44,25):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3endEv;2A.;begin::(44,26)=#(44,1),(44,8),(44,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5beginEv;2B.;end::(44,26):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3endEv;2B.;operator[]::(44,27)=#(44,1),(44,28)=&(44,3),(44,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEixEi;2A.(44,29)=#(44,1),(44,17),(44,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEEixEi;2B.;pointer::(44,26):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7pointerEv;2B.(44,25):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::MapPinListener*>:Tt(46,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(46,2)=*(46,3)=*(46,4)=xsMapPinListener:,64,32;__base_ctor::(46,5)=#(46,1),(0,6),(46,6)=*(46,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2Ei;2A.;__comp_ctor::(46,5):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1Ei;2A.;__base_ctor::(46,7)=#(46,1),(0,6),(46,6),(46,8)=*(46,9)=k(46,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2EPKS3_i;2A.;__comp_ctor::(46,7):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1EPKS3_i;2A.;__base_ctor::(46,10)=#(46,1),(0,6),(46,6),(46,11)=&(46,12)=k(46,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC2ERKS4_;2A.;__comp_ctor::(46,10):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEC1ERKS4_;2A.;__base_dtor::(46,13)=#(46,1),(0,6),(46,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEED2Ev;2A.;__comp_dtor::(46,13):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEED1Ev;2A.;operator=::(46,14)=#(46,1),(46,15)=&(46,1),(46,6),(46,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEaSERKS4_;2A.;add::(46,16)=#(46,1),(0,6),(46,6),(46,17)=&(46,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3addERKS3_;2A.(46,7):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3addEPKS3_i;2A.;remove::(46,18)=#(46,1),(0,6),(46,6),(46,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEPS3_;2A.(46,19)=#(46,1),(0,6),(46,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEi;2A.(46,20)=#(46,1),(0,6),(46,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6removeEii;2A.;insert::(46,21)=#(46,1),(0,6),(46,6),(0,3),(46,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6insertEiS3_;2A.;size::(46,22)=#(46,1),(0,3),(46,23)=*(46,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE4sizeEv;2B.;resize::(46,19):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE6resizeEi;2A.;reserve::(46,19):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7reserveEi;2A.;clear::(46,13):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5clearEv;2A.;empty::(46,24)=#(46,1),(0,4),(46,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5emptyEv;2B.;capacity::(46,22):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE8capacityEv;2B.;begin::(46,25)=#(46,1),(46,2),(46,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5beginEv;2A.;end::(46,25):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3endEv;2A.;begin::(46,26)=#(46,1),(46,8),(46,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE5beginEv;2B.;end::(46,26):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE3endEv;2B.;operator[]::(46,27)=#(46,1),(46,28)=&(46,3),(46,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEEixEi;2A.(46,29)=#(46,1),(46,17),(46,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEEixEi;2B.;pointer::(46,26):_ZNK6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7pointerEv;2B.(46,25):_ZN6MAUtil6VectorIPN8NativeUI14MapPinListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/MapRegion.h",130,0,0,0
-	.stabs	"MapRegion:Tt(46,1)=s8mUpperLeftCorner:/0(43,3),0,32;mLowerRightCorner:/0(43,3),32,32;__base_ctor::(46,2)=#(46,1),(0,6),(46,3)=*(46,1),(0,6);:_ZN8NativeUI9MapRegionC2Ev;2A.;__comp_ctor::(46,2):_ZN8NativeUI9MapRegionC1Ev;2A.;__base_ctor::(46,4)=#(46,1),(0,6),(46,3),(43,1),(43,1),(0,6);:_ZN8NativeUI9MapRegionC2ENS_8LocationES1_;2A.;__comp_ctor::(46,4):_ZN8NativeUI9MapRegionC1ENS_8LocationES1_;2A.;__base_dtor::(46,2):_ZN8NativeUI9MapRegionD2Ev;2A.;__comp_dtor::(46,2):_ZN8NativeUI9MapRegionD1Ev;2A.;setUpperLeftCorner::(46,5)=#(46,1),(0,6),(46,3),(43,3),(0,6);:_ZN8NativeUI9MapRegion18setUpperLeftCornerEPNS_8LocationE;2A.;getUpperLeftCorner::(46,6)=#(46,1),(43,10),(46,7)=*(46,8)=k(46,1),(0,6);:_ZNK8NativeUI9MapRegion18getUpperLeftCornerEv;2B.;setLowerRightCorner::(46,5):_ZN8NativeUI9MapRegion19setLowerRightCornerEPNS_8LocationE;2A.;getLowerRightCorner::(46,6):_ZNK8NativeUI9MapRegion19getLowerRightCornerEv;2B.;operator=::(46,9)=#(46,1),(46,10)=&(46,1),(46,3),(46,11)=&(46,8),(0,6);:_ZN8NativeUI9MapRegionaSERKS0_;2A.;__base_ctor::(46,12)=#(46,1),(0,6),(46,3),(46,11),(0,6);:_ZN8NativeUI9MapRegionC2ERKS0_;2A.;__comp_ctor::(46,12):_ZN8NativeUI9MapRegionC1ERKS0_;2A.;;",128,0,43,0
+	.stabs	"MapRegion:Tt(48,1)=s8mUpperLeftCorner:/0(45,3),0,32;mLowerRightCorner:/0(45,3),32,32;__base_ctor::(48,2)=#(48,1),(0,6),(48,3)=*(48,1),(0,6);:_ZN8NativeUI9MapRegionC2Ev;2A.;__comp_ctor::(48,2):_ZN8NativeUI9MapRegionC1Ev;2A.;__base_ctor::(48,4)=#(48,1),(0,6),(48,3),(45,1),(45,1),(0,6);:_ZN8NativeUI9MapRegionC2ENS_8LocationES1_;2A.;__comp_ctor::(48,4):_ZN8NativeUI9MapRegionC1ENS_8LocationES1_;2A.;__base_dtor::(48,2):_ZN8NativeUI9MapRegionD2Ev;2A.;__comp_dtor::(48,2):_ZN8NativeUI9MapRegionD1Ev;2A.;setUpperLeftCorner::(48,5)=#(48,1),(0,6),(48,3),(45,3),(0,6);:_ZN8NativeUI9MapRegion18setUpperLeftCornerEPNS_8LocationE;2A.;getUpperLeftCorner::(48,6)=#(48,1),(45,10),(48,7)=*(48,8)=k(48,1),(0,6);:_ZNK8NativeUI9MapRegion18getUpperLeftCornerEv;2B.;setLowerRightCorner::(48,5):_ZN8NativeUI9MapRegion19setLowerRightCornerEPNS_8LocationE;2A.;getLowerRightCorner::(48,6):_ZNK8NativeUI9MapRegion19getLowerRightCornerEv;2B.;operator=::(48,9)=#(48,1),(48,10)=&(48,1),(48,3),(48,11)=&(48,8),(0,6);:_ZN8NativeUI9MapRegionaSERKS0_;2A.;__base_ctor::(48,12)=#(48,1),(0,6),(48,3),(48,11),(0,6);:_ZN8NativeUI9MapRegionC2ERKS0_;2A.;__comp_ctor::(48,12):_ZN8NativeUI9MapRegionC1ERKS0_;2A.;;",128,0,43,0
 	.stabn	162,0,0,0
-	.stabs	"MapType:t(41,1)=eMAP_TYPE_ROAD:0,MAP_TYPE_SATELLITE:1,;",128,0,60,0
-	.stabs	"Vector<NativeUI::MapListener*>:Tt(41,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(41,3)=*(41,4)=*(41,5)=xsMapListener:,64,32;__base_ctor::(41,6)=#(41,2),(0,6),(41,7)=*(41,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2Ei;2A.;__comp_ctor::(41,6):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1Ei;2A.;__base_ctor::(41,8)=#(41,2),(0,6),(41,7),(41,9)=*(41,10)=k(41,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2EPKS3_i;2A.;__comp_ctor::(41,8):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1EPKS3_i;2A.;__base_ctor::(41,11)=#(41,2),(0,6),(41,7),(41,12)=&(41,13)=k(41,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2ERKS4_;2A.;__comp_ctor::(41,11):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1ERKS4_;2A.;__base_dtor::(41,14)=#(41,2),(0,6),(41,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEED2Ev;2A.;__comp_dtor::(41,14):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEED1Ev;2A.;operator=::(41,15)=#(41,2),(41,16)=&(41,2),(41,7),(41,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEaSERKS4_;2A.;add::(41,17)=#(41,2),(0,6),(41,7),(41,18)=&(41,10),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3addERKS3_;2A.(41,8):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3addEPKS3_i;2A.;remove::(41,19)=#(41,2),(0,6),(41,7),(41,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEPS3_;2A.(41,20)=#(41,2),(0,6),(41,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEi;2A.(41,21)=#(41,2),(0,6),(41,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEii;2A.;insert::(41,22)=#(41,2),(0,6),(41,7),(0,3),(41,4),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6insertEiS3_;2A.;size::(41,23)=#(41,2),(0,3),(41,24)=*(41,13),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE4sizeEv;2B.;resize::(41,20):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6resizeEi;2A.;reserve::(41,20):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE7reserveEi;2A.;clear::(41,14):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE5clearEv;2A.;empty::(41,25)=#(41,2),(0,4),(41,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE5emptyEv;2B.;capacity::(41,23):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE8capacityEv;2B.;begin::(41,26)=#(41,2),(41,3),(41,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE5beginEv;2A.;end::(41,26):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3endEv;2A.;begin::(41,27)=#(41,2),(41,9),(41,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE5beginEv;2B.;end::(41,27):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE3endEv;2B.;operator[]::(41,28)=#(41,2),(41,29)=&(41,4),(41,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEixEi;2A.(41,30)=#(41,2),(41,18),(41,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEEixEi;2B.;pointer::(41,27):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE7pointerEv;2B.(41,26):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"MapType:t(43,1)=eMAP_TYPE_ROAD:0,MAP_TYPE_SATELLITE:1,;",128,0,60,0
+	.stabs	"Vector<NativeUI::MapListener*>:Tt(43,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(43,3)=*(43,4)=*(43,5)=xsMapListener:,64,32;__base_ctor::(43,6)=#(43,2),(0,6),(43,7)=*(43,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2Ei;2A.;__comp_ctor::(43,6):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1Ei;2A.;__base_ctor::(43,8)=#(43,2),(0,6),(43,7),(43,9)=*(43,10)=k(43,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2EPKS3_i;2A.;__comp_ctor::(43,8):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1EPKS3_i;2A.;__base_ctor::(43,11)=#(43,2),(0,6),(43,7),(43,12)=&(43,13)=k(43,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC2ERKS4_;2A.;__comp_ctor::(43,11):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEC1ERKS4_;2A.;__base_dtor::(43,14)=#(43,2),(0,6),(43,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEED2Ev;2A.;__comp_dtor::(43,14):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEED1Ev;2A.;operator=::(43,15)=#(43,2),(43,16)=&(43,2),(43,7),(43,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEaSERKS4_;2A.;add::(43,17)=#(43,2),(0,6),(43,7),(43,18)=&(43,10),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3addERKS3_;2A.(43,8):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3addEPKS3_i;2A.;remove::(43,19)=#(43,2),(0,6),(43,7),(43,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEPS3_;2A.(43,20)=#(43,2),(0,6),(43,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEi;2A.(43,21)=#(43,2),(0,6),(43,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6removeEii;2A.;insert::(43,22)=#(43,2),(0,6),(43,7),(0,3),(43,4),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6insertEiS3_;2A.;size::(43,23)=#(43,2),(0,3),(43,24)=*(43,13),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE4sizeEv;2B.;resize::(43,20):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE6resizeEi;2A.;reserve::(43,20):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE7reserveEi;2A.;clear::(43,14):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE5clearEv;2A.;empty::(43,25)=#(43,2),(0,4),(43,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE5emptyEv;2B.;capacity::(43,23):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE8capacityEv;2B.;begin::(43,26)=#(43,2),(43,3),(43,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE5beginEv;2A.;end::(43,26):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE3endEv;2A.;begin::(43,27)=#(43,2),(43,9),(43,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE5beginEv;2B.;end::(43,27):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE3endEv;2B.;operator[]::(43,28)=#(43,2),(43,29)=&(43,4),(43,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEEixEi;2A.(43,30)=#(43,2),(43,18),(43,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEEixEi;2B.;pointer::(43,27):_ZNK6MAUtil6VectorIPN8NativeUI11MapListenerEE7pointerEv;2B.(43,26):_ZN6MAUtil6VectorIPN8NativeUI11MapListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/MapListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/NavigationBar.h",130,0,0,0
-	.stabs	"Vector<NativeUI::NavigationBarListener*>:Tt(48,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(48,2)=*(48,3)=*(48,4)=xsNavigationBarListener:,64,32;__base_ctor::(48,5)=#(48,1),(0,6),(48,6)=*(48,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2Ei;2A.;__comp_ctor::(48,5):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1Ei;2A.;__base_ctor::(48,7)=#(48,1),(0,6),(48,6),(48,8)=*(48,9)=k(48,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(48,7):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1EPKS3_i;2A.;__base_ctor::(48,10)=#(48,1),(0,6),(48,6),(48,11)=&(48,12)=k(48,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2ERKS4_;2A.;__comp_ctor::(48,10):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1ERKS4_;2A.;__base_dtor::(48,13)=#(48,1),(0,6),(48,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEED2Ev;2A.;__comp_dtor::(48,13):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEED1Ev;2A.;operator=::(48,14)=#(48,1),(48,15)=&(48,1),(48,6),(48,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEaSERKS4_;2A.;add::(48,16)=#(48,1),(0,6),(48,6),(48,17)=&(48,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3addERKS3_;2A.(48,7):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3addEPKS3_i;2A.;remove::(48,18)=#(48,1),(0,6),(48,6),(48,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEPS3_;2A.(48,19)=#(48,1),(0,6),(48,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEi;2A.(48,20)=#(48,1),(0,6),(48,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEii;2A.;insert::(48,21)=#(48,1),(0,6),(48,6),(0,3),(48,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6insertEiS3_;2A.;size::(48,22)=#(48,1),(0,3),(48,23)=*(48,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE4sizeEv;2B.;resize::(48,19):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6resizeEi;2A.;reserve::(48,19):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7reserveEi;2A.;clear::(48,13):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5clearEv;2A.;empty::(48,24)=#(48,1),(0,4),(48,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5emptyEv;2B.;capacity::(48,22):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE8capacityEv;2B.;begin::(48,25)=#(48,1),(48,2),(48,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5beginEv;2A.;end::(48,25):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3endEv;2A.;begin::(48,26)=#(48,1),(48,8),(48,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5beginEv;2B.;end::(48,26):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3endEv;2B.;operator[]::(48,27)=#(48,1),(48,28)=&(48,3),(48,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEixEi;2A.(48,29)=#(48,1),(48,17),(48,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEixEi;2B.;pointer::(48,26):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7pointerEv;2B.(48,25):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::NavigationBarListener*>:Tt(50,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(50,2)=*(50,3)=*(50,4)=xsNavigationBarListener:,64,32;__base_ctor::(50,5)=#(50,1),(0,6),(50,6)=*(50,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2Ei;2A.;__comp_ctor::(50,5):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1Ei;2A.;__base_ctor::(50,7)=#(50,1),(0,6),(50,6),(50,8)=*(50,9)=k(50,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(50,7):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1EPKS3_i;2A.;__base_ctor::(50,10)=#(50,1),(0,6),(50,6),(50,11)=&(50,12)=k(50,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC2ERKS4_;2A.;__comp_ctor::(50,10):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEC1ERKS4_;2A.;__base_dtor::(50,13)=#(50,1),(0,6),(50,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEED2Ev;2A.;__comp_dtor::(50,13):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEED1Ev;2A.;operator=::(50,14)=#(50,1),(50,15)=&(50,1),(50,6),(50,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEaSERKS4_;2A.;add::(50,16)=#(50,1),(0,6),(50,6),(50,17)=&(50,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3addERKS3_;2A.(50,7):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3addEPKS3_i;2A.;remove::(50,18)=#(50,1),(0,6),(50,6),(50,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEPS3_;2A.(50,19)=#(50,1),(0,6),(50,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEi;2A.(50,20)=#(50,1),(0,6),(50,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6removeEii;2A.;insert::(50,21)=#(50,1),(0,6),(50,6),(0,3),(50,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6insertEiS3_;2A.;size::(50,22)=#(50,1),(0,3),(50,23)=*(50,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE4sizeEv;2B.;resize::(50,19):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE6resizeEi;2A.;reserve::(50,19):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7reserveEi;2A.;clear::(50,13):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5clearEv;2A.;empty::(50,24)=#(50,1),(0,4),(50,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5emptyEv;2B.;capacity::(50,22):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE8capacityEv;2B.;begin::(50,25)=#(50,1),(50,2),(50,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5beginEv;2A.;end::(50,25):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3endEv;2A.;begin::(50,26)=#(50,1),(50,8),(50,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE5beginEv;2B.;end::(50,26):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE3endEv;2B.;operator[]::(50,27)=#(50,1),(50,28)=&(50,3),(50,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEixEi;2A.(50,29)=#(50,1),(50,17),(50,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEEixEi;2B.;pointer::(50,26):_ZNK6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7pointerEv;2B.(50,25):_ZN6MAUtil6VectorIPN8NativeUI21NavigationBarListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/NavigationBarListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/NumberPicker.h",130,0,0,0
-	.stabs	"Vector<NativeUI::NumberPickerListener*>:Tt(50,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(50,2)=*(50,3)=*(50,4)=xsNumberPickerListener:,64,32;__base_ctor::(50,5)=#(50,1),(0,6),(50,6)=*(50,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2Ei;2A.;__comp_ctor::(50,5):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1Ei;2A.;__base_ctor::(50,7)=#(50,1),(0,6),(50,6),(50,8)=*(50,9)=k(50,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(50,7):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1EPKS3_i;2A.;__base_ctor::(50,10)=#(50,1),(0,6),(50,6),(50,11)=&(50,12)=k(50,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2ERKS4_;2A.;__comp_ctor::(50,10):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1ERKS4_;2A.;__base_dtor::(50,13)=#(50,1),(0,6),(50,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEED2Ev;2A.;__comp_dtor::(50,13):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEED1Ev;2A.;operator=::(50,14)=#(50,1),(50,15)=&(50,1),(50,6),(50,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEaSERKS4_;2A.;add::(50,16)=#(50,1),(0,6),(50,6),(50,17)=&(50,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3addERKS3_;2A.(50,7):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3addEPKS3_i;2A.;remove::(50,18)=#(50,1),(0,6),(50,6),(50,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEPS3_;2A.(50,19)=#(50,1),(0,6),(50,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEi;2A.(50,20)=#(50,1),(0,6),(50,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEii;2A.;insert::(50,21)=#(50,1),(0,6),(50,6),(0,3),(50,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6insertEiS3_;2A.;size::(50,22)=#(50,1),(0,3),(50,23)=*(50,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE4sizeEv;2B.;resize::(50,19):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6resizeEi;2A.;reserve::(50,19):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7reserveEi;2A.;clear::(50,13):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5clearEv;2A.;empty::(50,24)=#(50,1),(0,4),(50,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5emptyEv;2B.;capacity::(50,22):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE8capacityEv;2B.;begin::(50,25)=#(50,1),(50,2),(50,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5beginEv;2A.;end::(50,25):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3endEv;2A.;begin::(50,26)=#(50,1),(50,8),(50,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5beginEv;2B.;end::(50,26):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3endEv;2B.;operator[]::(50,27)=#(50,1),(50,28)=&(50,3),(50,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEixEi;2A.(50,29)=#(50,1),(50,17),(50,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEixEi;2B.;pointer::(50,26):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7pointerEv;2B.(50,25):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::NumberPickerListener*>:Tt(52,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(52,2)=*(52,3)=*(52,4)=xsNumberPickerListener:,64,32;__base_ctor::(52,5)=#(52,1),(0,6),(52,6)=*(52,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2Ei;2A.;__comp_ctor::(52,5):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1Ei;2A.;__base_ctor::(52,7)=#(52,1),(0,6),(52,6),(52,8)=*(52,9)=k(52,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(52,7):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1EPKS3_i;2A.;__base_ctor::(52,10)=#(52,1),(0,6),(52,6),(52,11)=&(52,12)=k(52,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC2ERKS4_;2A.;__comp_ctor::(52,10):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEC1ERKS4_;2A.;__base_dtor::(52,13)=#(52,1),(0,6),(52,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEED2Ev;2A.;__comp_dtor::(52,13):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEED1Ev;2A.;operator=::(52,14)=#(52,1),(52,15)=&(52,1),(52,6),(52,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEaSERKS4_;2A.;add::(52,16)=#(52,1),(0,6),(52,6),(52,17)=&(52,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3addERKS3_;2A.(52,7):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3addEPKS3_i;2A.;remove::(52,18)=#(52,1),(0,6),(52,6),(52,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEPS3_;2A.(52,19)=#(52,1),(0,6),(52,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEi;2A.(52,20)=#(52,1),(0,6),(52,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6removeEii;2A.;insert::(52,21)=#(52,1),(0,6),(52,6),(0,3),(52,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6insertEiS3_;2A.;size::(52,22)=#(52,1),(0,3),(52,23)=*(52,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE4sizeEv;2B.;resize::(52,19):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE6resizeEi;2A.;reserve::(52,19):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7reserveEi;2A.;clear::(52,13):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5clearEv;2A.;empty::(52,24)=#(52,1),(0,4),(52,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5emptyEv;2B.;capacity::(52,22):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE8capacityEv;2B.;begin::(52,25)=#(52,1),(52,2),(52,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5beginEv;2A.;end::(52,25):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3endEv;2A.;begin::(52,26)=#(52,1),(52,8),(52,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE5beginEv;2B.;end::(52,26):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE3endEv;2B.;operator[]::(52,27)=#(52,1),(52,28)=&(52,3),(52,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEixEi;2A.(52,29)=#(52,1),(52,17),(52,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEEixEi;2B.;pointer::(52,26):_ZNK6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7pointerEv;2B.(52,25):_ZN6MAUtil6VectorIPN8NativeUI20NumberPickerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/NumberPickerListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/PanoramaView.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Screen.h",130,0,0,0
-	.stabs	"Vector<NativeUI::ScreenListener*>:Tt(53,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(53,2)=*(53,3)=*(53,4)=xsScreenListener:,64,32;__base_ctor::(53,5)=#(53,1),(0,6),(53,6)=*(53,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2Ei;2A.;__comp_ctor::(53,5):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1Ei;2A.;__base_ctor::(53,7)=#(53,1),(0,6),(53,6),(53,8)=*(53,9)=k(53,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(53,7):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(53,10)=#(53,1),(0,6),(53,6),(53,11)=&(53,12)=k(53,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(53,10):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1ERKS4_;2A.;__base_dtor::(53,13)=#(53,1),(0,6),(53,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEED2Ev;2A.;__comp_dtor::(53,13):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEED1Ev;2A.;operator=::(53,14)=#(53,1),(53,15)=&(53,1),(53,6),(53,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEaSERKS4_;2A.;add::(53,16)=#(53,1),(0,6),(53,6),(53,17)=&(53,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3addERKS3_;2A.(53,7):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3addEPKS3_i;2A.;remove::(53,18)=#(53,1),(0,6),(53,6),(53,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEPS3_;2A.(53,19)=#(53,1),(0,6),(53,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEi;2A.(53,20)=#(53,1),(0,6),(53,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEii;2A.;insert::(53,21)=#(53,1),(0,6),(53,6),(0,3),(53,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6insertEiS3_;2A.;size::(53,22)=#(53,1),(0,3),(53,23)=*(53,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE4sizeEv;2B.;resize::(53,19):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6resizeEi;2A.;reserve::(53,19):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7reserveEi;2A.;clear::(53,13):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5clearEv;2A.;empty::(53,24)=#(53,1),(0,4),(53,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5emptyEv;2B.;capacity::(53,22):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE8capacityEv;2B.;begin::(53,25)=#(53,1),(53,2),(53,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5beginEv;2A.;end::(53,25):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3endEv;2A.;begin::(53,26)=#(53,1),(53,8),(53,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5beginEv;2B.;end::(53,26):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3endEv;2B.;operator[]::(53,27)=#(53,1),(53,28)=&(53,3),(53,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEixEi;2A.(53,29)=#(53,1),(53,17),(53,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEEixEi;2B.;pointer::(53,26):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7pointerEv;2B.(53,25):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"ActionBarMenuItemDisplayFlag:t(55,1)=eSHOW_IF_ROOM:1,SHOW_ALWAYS:2,SHOW_WITH_TEXT:4,SHOW_COLLAPSE_ACTION_VIEW:8,;",128,0,51,0
+	.stabs	"Vector<NativeUI::ScreenListener*>:Tt(55,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(55,3)=*(55,4)=*(55,5)=xsScreenListener:,64,32;__base_ctor::(55,6)=#(55,2),(0,6),(55,7)=*(55,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2Ei;2A.;__comp_ctor::(55,6):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1Ei;2A.;__base_ctor::(55,8)=#(55,2),(0,6),(55,7),(55,9)=*(55,10)=k(55,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(55,8):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(55,11)=#(55,2),(0,6),(55,7),(55,12)=&(55,13)=k(55,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(55,11):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEC1ERKS4_;2A.;__base_dtor::(55,14)=#(55,2),(0,6),(55,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEED2Ev;2A.;__comp_dtor::(55,14):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEED1Ev;2A.;operator=::(55,15)=#(55,2),(55,16)=&(55,2),(55,7),(55,12),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEaSERKS4_;2A.;add::(55,17)=#(55,2),(0,6),(55,7),(55,18)=&(55,10),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3addERKS3_;2A.(55,8):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3addEPKS3_i;2A.;remove::(55,19)=#(55,2),(0,6),(55,7),(55,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEPS3_;2A.(55,20)=#(55,2),(0,6),(55,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEi;2A.(55,21)=#(55,2),(0,6),(55,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6removeEii;2A.;insert::(55,22)=#(55,2),(0,6),(55,7),(0,3),(55,4),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6insertEiS3_;2A.;size::(55,23)=#(55,2),(0,3),(55,24)=*(55,13),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE4sizeEv;2B.;resize::(55,20):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE6resizeEi;2A.;reserve::(55,20):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7reserveEi;2A.;clear::(55,14):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5clearEv;2A.;empty::(55,25)=#(55,2),(0,4),(55,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5emptyEv;2B.;capacity::(55,23):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE8capacityEv;2B.;begin::(55,26)=#(55,2),(55,3),(55,7),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5beginEv;2A.;end::(55,26):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3endEv;2A.;begin::(55,27)=#(55,2),(55,9),(55,24),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE5beginEv;2B.;end::(55,27):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE3endEv;2B.;operator[]::(55,28)=#(55,2),(55,29)=&(55,4),(55,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEEixEi;2A.(55,30)=#(55,2),(55,18),(55,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEEixEi;2B.;pointer::(55,27):_ZNK6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7pointerEv;2B.(55,26):_ZN6MAUtil6VectorIPN8NativeUI14ScreenListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ProgressBar.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RadioButton.h",130,0,0,0
-	.stabs	"Vector<NativeUI::RadioButtonListener*>:Tt(55,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(55,2)=*(55,3)=*(55,4)=xsRadioButtonListener:,64,32;__base_ctor::(55,5)=#(55,1),(0,6),(55,6)=*(55,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2Ei;2A.;__comp_ctor::(55,5):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1Ei;2A.;__base_ctor::(55,7)=#(55,1),(0,6),(55,6),(55,8)=*(55,9)=k(55,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2EPKS3_i;2A.;__comp_ctor::(55,7):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1EPKS3_i;2A.;__base_ctor::(55,10)=#(55,1),(0,6),(55,6),(55,11)=&(55,12)=k(55,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2ERKS4_;2A.;__comp_ctor::(55,10):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1ERKS4_;2A.;__base_dtor::(55,13)=#(55,1),(0,6),(55,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEED2Ev;2A.;__comp_dtor::(55,13):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEED1Ev;2A.;operator=::(55,14)=#(55,1),(55,15)=&(55,1),(55,6),(55,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEaSERKS4_;2A.;add::(55,16)=#(55,1),(0,6),(55,6),(55,17)=&(55,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3addERKS3_;2A.(55,7):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3addEPKS3_i;2A.;remove::(55,18)=#(55,1),(0,6),(55,6),(55,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEPS3_;2A.(55,19)=#(55,1),(0,6),(55,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEi;2A.(55,20)=#(55,1),(0,6),(55,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEii;2A.;insert::(55,21)=#(55,1),(0,6),(55,6),(0,3),(55,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6insertEiS3_;2A.;size::(55,22)=#(55,1),(0,3),(55,23)=*(55,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE4sizeEv;2B.;resize::(55,19):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6resizeEi;2A.;reserve::(55,19):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7reserveEi;2A.;clear::(55,13):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5clearEv;2A.;empty::(55,24)=#(55,1),(0,4),(55,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5emptyEv;2B.;capacity::(55,22):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE8capacityEv;2B.;begin::(55,25)=#(55,1),(55,2),(55,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5beginEv;2A.;end::(55,25):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3endEv;2A.;begin::(55,26)=#(55,1),(55,8),(55,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5beginEv;2B.;end::(55,26):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3endEv;2B.;operator[]::(55,27)=#(55,1),(55,28)=&(55,3),(55,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEixEi;2A.(55,29)=#(55,1),(55,17),(55,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEixEi;2B.;pointer::(55,26):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7pointerEv;2B.(55,25):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::RadioButtonListener*>:Tt(57,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(57,2)=*(57,3)=*(57,4)=xsRadioButtonListener:,64,32;__base_ctor::(57,5)=#(57,1),(0,6),(57,6)=*(57,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2Ei;2A.;__comp_ctor::(57,5):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1Ei;2A.;__base_ctor::(57,7)=#(57,1),(0,6),(57,6),(57,8)=*(57,9)=k(57,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2EPKS3_i;2A.;__comp_ctor::(57,7):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1EPKS3_i;2A.;__base_ctor::(57,10)=#(57,1),(0,6),(57,6),(57,11)=&(57,12)=k(57,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC2ERKS4_;2A.;__comp_ctor::(57,10):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEC1ERKS4_;2A.;__base_dtor::(57,13)=#(57,1),(0,6),(57,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEED2Ev;2A.;__comp_dtor::(57,13):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEED1Ev;2A.;operator=::(57,14)=#(57,1),(57,15)=&(57,1),(57,6),(57,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEaSERKS4_;2A.;add::(57,16)=#(57,1),(0,6),(57,6),(57,17)=&(57,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3addERKS3_;2A.(57,7):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3addEPKS3_i;2A.;remove::(57,18)=#(57,1),(0,6),(57,6),(57,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEPS3_;2A.(57,19)=#(57,1),(0,6),(57,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEi;2A.(57,20)=#(57,1),(0,6),(57,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6removeEii;2A.;insert::(57,21)=#(57,1),(0,6),(57,6),(0,3),(57,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6insertEiS3_;2A.;size::(57,22)=#(57,1),(0,3),(57,23)=*(57,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE4sizeEv;2B.;resize::(57,19):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE6resizeEi;2A.;reserve::(57,19):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7reserveEi;2A.;clear::(57,13):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5clearEv;2A.;empty::(57,24)=#(57,1),(0,4),(57,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5emptyEv;2B.;capacity::(57,22):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE8capacityEv;2B.;begin::(57,25)=#(57,1),(57,2),(57,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5beginEv;2A.;end::(57,25):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3endEv;2A.;begin::(57,26)=#(57,1),(57,8),(57,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE5beginEv;2B.;end::(57,26):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE3endEv;2B.;operator[]::(57,27)=#(57,1),(57,28)=&(57,3),(57,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEixEi;2A.(57,29)=#(57,1),(57,17),(57,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEEixEi;2B.;pointer::(57,26):_ZNK6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7pointerEv;2B.(57,25):_ZN6MAUtil6VectorIPN8NativeUI19RadioButtonListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RadioButtonListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RadioGroup.h",130,0,0,0
-	.stabs	"Vector<NativeUI::RadioGroupListener*>:Tt(57,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(57,2)=*(57,3)=*(57,4)=xsRadioGroupListener:,64,32;__base_ctor::(57,5)=#(57,1),(0,6),(57,6)=*(57,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2Ei;2A.;__comp_ctor::(57,5):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1Ei;2A.;__base_ctor::(57,7)=#(57,1),(0,6),(57,6),(57,8)=*(57,9)=k(57,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2EPKS3_i;2A.;__comp_ctor::(57,7):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1EPKS3_i;2A.;__base_ctor::(57,10)=#(57,1),(0,6),(57,6),(57,11)=&(57,12)=k(57,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2ERKS4_;2A.;__comp_ctor::(57,10):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1ERKS4_;2A.;__base_dtor::(57,13)=#(57,1),(0,6),(57,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEED2Ev;2A.;__comp_dtor::(57,13):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEED1Ev;2A.;operator=::(57,14)=#(57,1),(57,15)=&(57,1),(57,6),(57,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEaSERKS4_;2A.;add::(57,16)=#(57,1),(0,6),(57,6),(57,17)=&(57,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3addERKS3_;2A.(57,7):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3addEPKS3_i;2A.;remove::(57,18)=#(57,1),(0,6),(57,6),(57,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEPS3_;2A.(57,19)=#(57,1),(0,6),(57,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEi;2A.(57,20)=#(57,1),(0,6),(57,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEii;2A.;insert::(57,21)=#(57,1),(0,6),(57,6),(0,3),(57,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6insertEiS3_;2A.;size::(57,22)=#(57,1),(0,3),(57,23)=*(57,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE4sizeEv;2B.;resize::(57,19):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6resizeEi;2A.;reserve::(57,19):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7reserveEi;2A.;clear::(57,13):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5clearEv;2A.;empty::(57,24)=#(57,1),(0,4),(57,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5emptyEv;2B.;capacity::(57,22):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE8capacityEv;2B.;begin::(57,25)=#(57,1),(57,2),(57,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5beginEv;2A.;end::(57,25):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3endEv;2A.;begin::(57,26)=#(57,1),(57,8),(57,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5beginEv;2B.;end::(57,26):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3endEv;2B.;operator[]::(57,27)=#(57,1),(57,28)=&(57,3),(57,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEixEi;2A.(57,29)=#(57,1),(57,17),(57,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEixEi;2B.;pointer::(57,26):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7pointerEv;2B.(57,25):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"Vector<NativeUI::RadioButton*>:Tt(57,30)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(57,31)=*(57,32)=*(57,33)=xsRadioButton:,64,32;__base_ctor::(57,34)=#(57,30),(0,6),(57,35)=*(57,30),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2Ei;2A.;__comp_ctor::(57,34):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1Ei;2A.;__base_ctor::(57,36)=#(57,30),(0,6),(57,35),(57,37)=*(57,38)=k(57,32),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2EPKS3_i;2A.;__comp_ctor::(57,36):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1EPKS3_i;2A.;__base_ctor::(57,39)=#(57,30),(0,6),(57,35),(57,40)=&(57,41)=k(57,30),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2ERKS4_;2A.;__comp_ctor::(57,39):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1ERKS4_;2A.;__base_dtor::(57,42)=#(57,30),(0,6),(57,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEED2Ev;2A.;__comp_dtor::(57,42):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEED1Ev;2A.;operator=::(57,43)=#(57,30),(57,44)=&(57,30),(57,35),(57,40),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEaSERKS4_;2A.;add::(57,45)=#(57,30),(0,6),(57,35),(57,46)=&(57,38),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3addERKS3_;2A.(57,36):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3addEPKS3_i;2A.;remove::(57,47)=#(57,30),(0,6),(57,35),(57,31),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEPS3_;2A.(57,48)=#(57,30),(0,6),(57,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEi;2A.(57,49)=#(57,30),(0,6),(57,35),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEii;2A.;insert::(57,50)=#(57,30),(0,6),(57,35),(0,3),(57,32),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6insertEiS3_;2A.;size::(57,51)=#(57,30),(0,3),(57,52)=*(57,41),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE4sizeEv;2B.;resize::(57,48):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6resizeEi;2A.;reserve::(57,48):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE7reserveEi;2A.;clear::(57,42):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE5clearEv;2A.;empty::(57,53)=#(57,30),(0,4),(57,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE5emptyEv;2B.;capacity::(57,51):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE8capacityEv;2B.;begin::(57,54)=#(57,30),(57,31),(57,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE5beginEv;2A.;end::(57,54):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3endEv;2A.;begin::(57,55)=#(57,30),(57,37),(57,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE5beginEv;2B.;end::(57,55):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE3endEv;2B.;operator[]::(57,56)=#(57,30),(57,57)=&(57,32),(57,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEixEi;2A.(57,58)=#(57,30),(57,46),(57,52),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEEixEi;2B.;pointer::(57,55):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE7pointerEv;2B.(57,54):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::RadioGroupListener*>:Tt(59,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(59,2)=*(59,3)=*(59,4)=xsRadioGroupListener:,64,32;__base_ctor::(59,5)=#(59,1),(0,6),(59,6)=*(59,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2Ei;2A.;__comp_ctor::(59,5):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1Ei;2A.;__base_ctor::(59,7)=#(59,1),(0,6),(59,6),(59,8)=*(59,9)=k(59,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2EPKS3_i;2A.;__comp_ctor::(59,7):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1EPKS3_i;2A.;__base_ctor::(59,10)=#(59,1),(0,6),(59,6),(59,11)=&(59,12)=k(59,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC2ERKS4_;2A.;__comp_ctor::(59,10):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEC1ERKS4_;2A.;__base_dtor::(59,13)=#(59,1),(0,6),(59,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEED2Ev;2A.;__comp_dtor::(59,13):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEED1Ev;2A.;operator=::(59,14)=#(59,1),(59,15)=&(59,1),(59,6),(59,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEaSERKS4_;2A.;add::(59,16)=#(59,1),(0,6),(59,6),(59,17)=&(59,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3addERKS3_;2A.(59,7):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3addEPKS3_i;2A.;remove::(59,18)=#(59,1),(0,6),(59,6),(59,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEPS3_;2A.(59,19)=#(59,1),(0,6),(59,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEi;2A.(59,20)=#(59,1),(0,6),(59,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6removeEii;2A.;insert::(59,21)=#(59,1),(0,6),(59,6),(0,3),(59,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6insertEiS3_;2A.;size::(59,22)=#(59,1),(0,3),(59,23)=*(59,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE4sizeEv;2B.;resize::(59,19):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE6resizeEi;2A.;reserve::(59,19):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7reserveEi;2A.;clear::(59,13):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5clearEv;2A.;empty::(59,24)=#(59,1),(0,4),(59,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5emptyEv;2B.;capacity::(59,22):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE8capacityEv;2B.;begin::(59,25)=#(59,1),(59,2),(59,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5beginEv;2A.;end::(59,25):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3endEv;2A.;begin::(59,26)=#(59,1),(59,8),(59,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE5beginEv;2B.;end::(59,26):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE3endEv;2B.;operator[]::(59,27)=#(59,1),(59,28)=&(59,3),(59,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEixEi;2A.(59,29)=#(59,1),(59,17),(59,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEEixEi;2B.;pointer::(59,26):_ZNK6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7pointerEv;2B.(59,25):_ZN6MAUtil6VectorIPN8NativeUI18RadioGroupListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::RadioButton*>:Tt(59,30)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(59,31)=*(59,32)=*(59,33)=xsRadioButton:,64,32;__base_ctor::(59,34)=#(59,30),(0,6),(59,35)=*(59,30),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2Ei;2A.;__comp_ctor::(59,34):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1Ei;2A.;__base_ctor::(59,36)=#(59,30),(0,6),(59,35),(59,37)=*(59,38)=k(59,32),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2EPKS3_i;2A.;__comp_ctor::(59,36):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1EPKS3_i;2A.;__base_ctor::(59,39)=#(59,30),(0,6),(59,35),(59,40)=&(59,41)=k(59,30),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC2ERKS4_;2A.;__comp_ctor::(59,39):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEC1ERKS4_;2A.;__base_dtor::(59,42)=#(59,30),(0,6),(59,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEED2Ev;2A.;__comp_dtor::(59,42):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEED1Ev;2A.;operator=::(59,43)=#(59,30),(59,44)=&(59,30),(59,35),(59,40),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEaSERKS4_;2A.;add::(59,45)=#(59,30),(0,6),(59,35),(59,46)=&(59,38),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3addERKS3_;2A.(59,36):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3addEPKS3_i;2A.;remove::(59,47)=#(59,30),(0,6),(59,35),(59,31),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEPS3_;2A.(59,48)=#(59,30),(0,6),(59,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEi;2A.(59,49)=#(59,30),(0,6),(59,35),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6removeEii;2A.;insert::(59,50)=#(59,30),(0,6),(59,35),(0,3),(59,32),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6insertEiS3_;2A.;size::(59,51)=#(59,30),(0,3),(59,52)=*(59,41),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE4sizeEv;2B.;resize::(59,48):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE6resizeEi;2A.;reserve::(59,48):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE7reserveEi;2A.;clear::(59,42):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE5clearEv;2A.;empty::(59,53)=#(59,30),(0,4),(59,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE5emptyEv;2B.;capacity::(59,51):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE8capacityEv;2B.;begin::(59,54)=#(59,30),(59,31),(59,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE5beginEv;2A.;end::(59,54):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE3endEv;2A.;begin::(59,55)=#(59,30),(59,37),(59,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE5beginEv;2B.;end::(59,55):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE3endEv;2B.;operator[]::(59,56)=#(59,30),(59,57)=&(59,32),(59,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEEixEi;2A.(59,58)=#(59,30),(59,46),(59,52),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEEixEi;2B.;pointer::(59,55):_ZNK6MAUtil6VectorIPN8NativeUI11RadioButtonEE7pointerEv;2B.(59,54):_ZN6MAUtil6VectorIPN8NativeUI11RadioButtonEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RadioGroupListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RatingBar.h",130,0,0,0
-	.stabs	"Vector<NativeUI::RatingBarListener*>:Tt(59,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(59,2)=*(59,3)=*(59,4)=xsRatingBarListener:,64,32;__base_ctor::(59,5)=#(59,1),(0,6),(59,6)=*(59,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2Ei;2A.;__comp_ctor::(59,5):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1Ei;2A.;__base_ctor::(59,7)=#(59,1),(0,6),(59,6),(59,8)=*(59,9)=k(59,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(59,7):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1EPKS3_i;2A.;__base_ctor::(59,10)=#(59,1),(0,6),(59,6),(59,11)=&(59,12)=k(59,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2ERKS4_;2A.;__comp_ctor::(59,10):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1ERKS4_;2A.;__base_dtor::(59,13)=#(59,1),(0,6),(59,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEED2Ev;2A.;__comp_dtor::(59,13):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEED1Ev;2A.;operator=::(59,14)=#(59,1),(59,15)=&(59,1),(59,6),(59,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEaSERKS4_;2A.;add::(59,16)=#(59,1),(0,6),(59,6),(59,17)=&(59,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3addERKS3_;2A.(59,7):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3addEPKS3_i;2A.;remove::(59,18)=#(59,1),(0,6),(59,6),(59,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEPS3_;2A.(59,19)=#(59,1),(0,6),(59,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEi;2A.(59,20)=#(59,1),(0,6),(59,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEii;2A.;insert::(59,21)=#(59,1),(0,6),(59,6),(0,3),(59,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6insertEiS3_;2A.;size::(59,22)=#(59,1),(0,3),(59,23)=*(59,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE4sizeEv;2B.;resize::(59,19):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6resizeEi;2A.;reserve::(59,19):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7reserveEi;2A.;clear::(59,13):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5clearEv;2A.;empty::(59,24)=#(59,1),(0,4),(59,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5emptyEv;2B.;capacity::(59,22):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE8capacityEv;2B.;begin::(59,25)=#(59,1),(59,2),(59,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5beginEv;2A.;end::(59,25):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3endEv;2A.;begin::(59,26)=#(59,1),(59,8),(59,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5beginEv;2B.;end::(59,26):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3endEv;2B.;operator[]::(59,27)=#(59,1),(59,28)=&(59,3),(59,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEixEi;2A.(59,29)=#(59,1),(59,17),(59,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEixEi;2B.;pointer::(59,26):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7pointerEv;2B.(59,25):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::RatingBarListener*>:Tt(61,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(61,2)=*(61,3)=*(61,4)=xsRatingBarListener:,64,32;__base_ctor::(61,5)=#(61,1),(0,6),(61,6)=*(61,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2Ei;2A.;__comp_ctor::(61,5):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1Ei;2A.;__base_ctor::(61,7)=#(61,1),(0,6),(61,6),(61,8)=*(61,9)=k(61,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(61,7):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1EPKS3_i;2A.;__base_ctor::(61,10)=#(61,1),(0,6),(61,6),(61,11)=&(61,12)=k(61,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC2ERKS4_;2A.;__comp_ctor::(61,10):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEC1ERKS4_;2A.;__base_dtor::(61,13)=#(61,1),(0,6),(61,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEED2Ev;2A.;__comp_dtor::(61,13):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEED1Ev;2A.;operator=::(61,14)=#(61,1),(61,15)=&(61,1),(61,6),(61,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEaSERKS4_;2A.;add::(61,16)=#(61,1),(0,6),(61,6),(61,17)=&(61,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3addERKS3_;2A.(61,7):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3addEPKS3_i;2A.;remove::(61,18)=#(61,1),(0,6),(61,6),(61,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEPS3_;2A.(61,19)=#(61,1),(0,6),(61,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEi;2A.(61,20)=#(61,1),(0,6),(61,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6removeEii;2A.;insert::(61,21)=#(61,1),(0,6),(61,6),(0,3),(61,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6insertEiS3_;2A.;size::(61,22)=#(61,1),(0,3),(61,23)=*(61,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE4sizeEv;2B.;resize::(61,19):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE6resizeEi;2A.;reserve::(61,19):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7reserveEi;2A.;clear::(61,13):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5clearEv;2A.;empty::(61,24)=#(61,1),(0,4),(61,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5emptyEv;2B.;capacity::(61,22):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE8capacityEv;2B.;begin::(61,25)=#(61,1),(61,2),(61,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5beginEv;2A.;end::(61,25):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3endEv;2A.;begin::(61,26)=#(61,1),(61,8),(61,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE5beginEv;2B.;end::(61,26):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE3endEv;2B.;operator[]::(61,27)=#(61,1),(61,28)=&(61,3),(61,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEixEi;2A.(61,29)=#(61,1),(61,17),(61,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEEixEi;2B.;pointer::(61,26):_ZNK6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7pointerEv;2B.(61,25):_ZN6MAUtil6VectorIPN8NativeUI17RatingBarListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/RatingBarListener.h",130,0,0,0
 	.stabn	162,0,0,0
@@ -301,112 +326,112 @@
 	.stabs	"c:/MoSync/include/NativeUI/ScreenListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/SearchBar.h",130,0,0,0
-	.stabs	"Vector<NativeUI::SearchBarListener*>:Tt(63,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(63,2)=*(63,3)=*(63,4)=xsSearchBarListener:,64,32;__base_ctor::(63,5)=#(63,1),(0,6),(63,6)=*(63,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2Ei;2A.;__comp_ctor::(63,5):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1Ei;2A.;__base_ctor::(63,7)=#(63,1),(0,6),(63,6),(63,8)=*(63,9)=k(63,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(63,7):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1EPKS3_i;2A.;__base_ctor::(63,10)=#(63,1),(0,6),(63,6),(63,11)=&(63,12)=k(63,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2ERKS4_;2A.;__comp_ctor::(63,10):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1ERKS4_;2A.;__base_dtor::(63,13)=#(63,1),(0,6),(63,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEED2Ev;2A.;__comp_dtor::(63,13):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEED1Ev;2A.;operator=::(63,14)=#(63,1),(63,15)=&(63,1),(63,6),(63,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEaSERKS4_;2A.;add::(63,16)=#(63,1),(0,6),(63,6),(63,17)=&(63,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3addERKS3_;2A.(63,7):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3addEPKS3_i;2A.;remove::(63,18)=#(63,1),(0,6),(63,6),(63,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEPS3_;2A.(63,19)=#(63,1),(0,6),(63,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEi;2A.(63,20)=#(63,1),(0,6),(63,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEii;2A.;insert::(63,21)=#(63,1),(0,6),(63,6),(0,3),(63,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6insertEiS3_;2A.;size::(63,22)=#(63,1),(0,3),(63,23)=*(63,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE4sizeEv;2B.;resize::(63,19):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6resizeEi;2A.;reserve::(63,19):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7reserveEi;2A.;clear::(63,13):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5clearEv;2A.;empty::(63,24)=#(63,1),(0,4),(63,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5emptyEv;2B.;capacity::(63,22):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE8capacityEv;2B.;begin::(63,25)=#(63,1),(63,2),(63,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5beginEv;2A.;end::(63,25):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3endEv;2A.;begin::(63,26)=#(63,1),(63,8),(63,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5beginEv;2B.;end::(63,26):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3endEv;2B.;operator[]::(63,27)=#(63,1),(63,28)=&(63,3),(63,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEixEi;2A.(63,29)=#(63,1),(63,17),(63,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEixEi;2B.;pointer::(63,26):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7pointerEv;2B.(63,25):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::SearchBarListener*>:Tt(65,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(65,2)=*(65,3)=*(65,4)=xsSearchBarListener:,64,32;__base_ctor::(65,5)=#(65,1),(0,6),(65,6)=*(65,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2Ei;2A.;__comp_ctor::(65,5):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1Ei;2A.;__base_ctor::(65,7)=#(65,1),(0,6),(65,6),(65,8)=*(65,9)=k(65,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2EPKS3_i;2A.;__comp_ctor::(65,7):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1EPKS3_i;2A.;__base_ctor::(65,10)=#(65,1),(0,6),(65,6),(65,11)=&(65,12)=k(65,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC2ERKS4_;2A.;__comp_ctor::(65,10):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEC1ERKS4_;2A.;__base_dtor::(65,13)=#(65,1),(0,6),(65,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEED2Ev;2A.;__comp_dtor::(65,13):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEED1Ev;2A.;operator=::(65,14)=#(65,1),(65,15)=&(65,1),(65,6),(65,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEaSERKS4_;2A.;add::(65,16)=#(65,1),(0,6),(65,6),(65,17)=&(65,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3addERKS3_;2A.(65,7):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3addEPKS3_i;2A.;remove::(65,18)=#(65,1),(0,6),(65,6),(65,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEPS3_;2A.(65,19)=#(65,1),(0,6),(65,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEi;2A.(65,20)=#(65,1),(0,6),(65,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6removeEii;2A.;insert::(65,21)=#(65,1),(0,6),(65,6),(0,3),(65,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6insertEiS3_;2A.;size::(65,22)=#(65,1),(0,3),(65,23)=*(65,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE4sizeEv;2B.;resize::(65,19):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE6resizeEi;2A.;reserve::(65,19):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7reserveEi;2A.;clear::(65,13):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5clearEv;2A.;empty::(65,24)=#(65,1),(0,4),(65,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5emptyEv;2B.;capacity::(65,22):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE8capacityEv;2B.;begin::(65,25)=#(65,1),(65,2),(65,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5beginEv;2A.;end::(65,25):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3endEv;2A.;begin::(65,26)=#(65,1),(65,8),(65,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE5beginEv;2B.;end::(65,26):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE3endEv;2B.;operator[]::(65,27)=#(65,1),(65,28)=&(65,3),(65,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEixEi;2A.(65,29)=#(65,1),(65,17),(65,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEEixEi;2B.;pointer::(65,26):_ZNK6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7pointerEv;2B.(65,25):_ZN6MAUtil6VectorIPN8NativeUI17SearchBarListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/SearchBarListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/Slider.h",130,0,0,0
-	.stabs	"Vector<NativeUI::SliderListener*>:Tt(65,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(65,2)=*(65,3)=*(65,4)=xsSliderListener:,64,32;__base_ctor::(65,5)=#(65,1),(0,6),(65,6)=*(65,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2Ei;2A.;__comp_ctor::(65,5):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1Ei;2A.;__base_ctor::(65,7)=#(65,1),(0,6),(65,6),(65,8)=*(65,9)=k(65,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2EPKS3_i;2A.;__comp_ctor::(65,7):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1EPKS3_i;2A.;__base_ctor::(65,10)=#(65,1),(0,6),(65,6),(65,11)=&(65,12)=k(65,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2ERKS4_;2A.;__comp_ctor::(65,10):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1ERKS4_;2A.;__base_dtor::(65,13)=#(65,1),(0,6),(65,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEED2Ev;2A.;__comp_dtor::(65,13):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEED1Ev;2A.;operator=::(65,14)=#(65,1),(65,15)=&(65,1),(65,6),(65,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEaSERKS4_;2A.;add::(65,16)=#(65,1),(0,6),(65,6),(65,17)=&(65,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3addERKS3_;2A.(65,7):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3addEPKS3_i;2A.;remove::(65,18)=#(65,1),(0,6),(65,6),(65,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEPS3_;2A.(65,19)=#(65,1),(0,6),(65,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEi;2A.(65,20)=#(65,1),(0,6),(65,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEii;2A.;insert::(65,21)=#(65,1),(0,6),(65,6),(0,3),(65,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6insertEiS3_;2A.;size::(65,22)=#(65,1),(0,3),(65,23)=*(65,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE4sizeEv;2B.;resize::(65,19):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6resizeEi;2A.;reserve::(65,19):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE7reserveEi;2A.;clear::(65,13):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE5clearEv;2A.;empty::(65,24)=#(65,1),(0,4),(65,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE5emptyEv;2B.;capacity::(65,22):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE8capacityEv;2B.;begin::(65,25)=#(65,1),(65,2),(65,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE5beginEv;2A.;end::(65,25):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3endEv;2A.;begin::(65,26)=#(65,1),(65,8),(65,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE5beginEv;2B.;end::(65,26):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE3endEv;2B.;operator[]::(65,27)=#(65,1),(65,28)=&(65,3),(65,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEixEi;2A.(65,29)=#(65,1),(65,17),(65,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEEixEi;2B.;pointer::(65,26):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE7pointerEv;2B.(65,25):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::SliderListener*>:Tt(67,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(67,2)=*(67,3)=*(67,4)=xsSliderListener:,64,32;__base_ctor::(67,5)=#(67,1),(0,6),(67,6)=*(67,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2Ei;2A.;__comp_ctor::(67,5):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1Ei;2A.;__base_ctor::(67,7)=#(67,1),(0,6),(67,6),(67,8)=*(67,9)=k(67,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2EPKS3_i;2A.;__comp_ctor::(67,7):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1EPKS3_i;2A.;__base_ctor::(67,10)=#(67,1),(0,6),(67,6),(67,11)=&(67,12)=k(67,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC2ERKS4_;2A.;__comp_ctor::(67,10):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEC1ERKS4_;2A.;__base_dtor::(67,13)=#(67,1),(0,6),(67,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEED2Ev;2A.;__comp_dtor::(67,13):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEED1Ev;2A.;operator=::(67,14)=#(67,1),(67,15)=&(67,1),(67,6),(67,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEaSERKS4_;2A.;add::(67,16)=#(67,1),(0,6),(67,6),(67,17)=&(67,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3addERKS3_;2A.(67,7):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3addEPKS3_i;2A.;remove::(67,18)=#(67,1),(0,6),(67,6),(67,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEPS3_;2A.(67,19)=#(67,1),(0,6),(67,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEi;2A.(67,20)=#(67,1),(0,6),(67,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6removeEii;2A.;insert::(67,21)=#(67,1),(0,6),(67,6),(0,3),(67,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6insertEiS3_;2A.;size::(67,22)=#(67,1),(0,3),(67,23)=*(67,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE4sizeEv;2B.;resize::(67,19):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE6resizeEi;2A.;reserve::(67,19):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE7reserveEi;2A.;clear::(67,13):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE5clearEv;2A.;empty::(67,24)=#(67,1),(0,4),(67,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE5emptyEv;2B.;capacity::(67,22):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE8capacityEv;2B.;begin::(67,25)=#(67,1),(67,2),(67,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE5beginEv;2A.;end::(67,25):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE3endEv;2A.;begin::(67,26)=#(67,1),(67,8),(67,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE5beginEv;2B.;end::(67,26):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE3endEv;2B.;operator[]::(67,27)=#(67,1),(67,28)=&(67,3),(67,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEEixEi;2A.(67,29)=#(67,1),(67,17),(67,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEEixEi;2B.;pointer::(67,26):_ZNK6MAUtil6VectorIPN8NativeUI14SliderListenerEE7pointerEv;2B.(67,25):_ZN6MAUtil6VectorIPN8NativeUI14SliderListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/SliderListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/StackScreen.h",130,0,0,0
-	.stabs	"Vector<NativeUI::StackScreenListener*>:Tt(67,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(67,2)=*(67,3)=*(67,4)=xsStackScreenListener:,64,32;__base_ctor::(67,5)=#(67,1),(0,6),(67,6)=*(67,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2Ei;2A.;__comp_ctor::(67,5):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1Ei;2A.;__base_ctor::(67,7)=#(67,1),(0,6),(67,6),(67,8)=*(67,9)=k(67,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(67,7):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(67,10)=#(67,1),(0,6),(67,6),(67,11)=&(67,12)=k(67,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(67,10):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1ERKS4_;2A.;__base_dtor::(67,13)=#(67,1),(0,6),(67,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEED2Ev;2A.;__comp_dtor::(67,13):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEED1Ev;2A.;operator=::(67,14)=#(67,1),(67,15)=&(67,1),(67,6),(67,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEaSERKS4_;2A.;add::(67,16)=#(67,1),(0,6),(67,6),(67,17)=&(67,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3addERKS3_;2A.(67,7):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3addEPKS3_i;2A.;remove::(67,18)=#(67,1),(0,6),(67,6),(67,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEPS3_;2A.(67,19)=#(67,1),(0,6),(67,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEi;2A.(67,20)=#(67,1),(0,6),(67,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEii;2A.;insert::(67,21)=#(67,1),(0,6),(67,6),(0,3),(67,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6insertEiS3_;2A.;size::(67,22)=#(67,1),(0,3),(67,23)=*(67,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE4sizeEv;2B.;resize::(67,19):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6resizeEi;2A.;reserve::(67,19):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7reserveEi;2A.;clear::(67,13):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5clearEv;2A.;empty::(67,24)=#(67,1),(0,4),(67,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5emptyEv;2B.;capacity::(67,22):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE8capacityEv;2B.;begin::(67,25)=#(67,1),(67,2),(67,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5beginEv;2A.;end::(67,25):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3endEv;2A.;begin::(67,26)=#(67,1),(67,8),(67,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5beginEv;2B.;end::(67,26):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3endEv;2B.;operator[]::(67,27)=#(67,1),(67,28)=&(67,3),(67,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEixEi;2A.(67,29)=#(67,1),(67,17),(67,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEixEi;2B.;pointer::(67,26):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7pointerEv;2B.(67,25):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"Vector<NativeUI::Screen*>:Tt(67,30)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(67,31)=*(67,32)=*(67,33)=xsScreen:,64,32;__base_ctor::(67,34)=#(67,30),(0,6),(67,35)=*(67,30),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2Ei;2A.;__comp_ctor::(67,34):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1Ei;2A.;__base_ctor::(67,36)=#(67,30),(0,6),(67,35),(67,37)=*(67,38)=k(67,32),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2EPKS3_i;2A.;__comp_ctor::(67,36):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1EPKS3_i;2A.;__base_ctor::(67,39)=#(67,30),(0,6),(67,35),(67,40)=&(67,41)=k(67,30),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2ERKS4_;2A.;__comp_ctor::(67,39):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1ERKS4_;2A.;__base_dtor::(67,42)=#(67,30),(0,6),(67,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEED2Ev;2A.;__comp_dtor::(67,42):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEED1Ev;2A.;operator=::(67,43)=#(67,30),(67,44)=&(67,30),(67,35),(67,40),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEaSERKS4_;2A.;add::(67,45)=#(67,30),(0,6),(67,35),(67,46)=&(67,38),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3addERKS3_;2A.(67,36):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3addEPKS3_i;2A.;remove::(67,47)=#(67,30),(0,6),(67,35),(67,31),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEPS3_;2A.(67,48)=#(67,30),(0,6),(67,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEi;2A.(67,49)=#(67,30),(0,6),(67,35),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEii;2A.;insert::(67,50)=#(67,30),(0,6),(67,35),(0,3),(67,32),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6insertEiS3_;2A.;size::(67,51)=#(67,30),(0,3),(67,52)=*(67,41),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE4sizeEv;2B.;resize::(67,48):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6resizeEi;2A.;reserve::(67,48):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE7reserveEi;2A.;clear::(67,42):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE5clearEv;2A.;empty::(67,53)=#(67,30),(0,4),(67,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE5emptyEv;2B.;capacity::(67,51):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE8capacityEv;2B.;begin::(67,54)=#(67,30),(67,31),(67,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE5beginEv;2A.;end::(67,54):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3endEv;2A.;begin::(67,55)=#(67,30),(67,37),(67,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE5beginEv;2B.;end::(67,55):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE3endEv;2B.;operator[]::(67,56)=#(67,30),(67,57)=&(67,32),(67,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEixEi;2A.(67,58)=#(67,30),(67,46),(67,52),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEEixEi;2B.;pointer::(67,55):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE7pointerEv;2B.(67,54):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::StackScreenListener*>:Tt(69,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(69,2)=*(69,3)=*(69,4)=xsStackScreenListener:,64,32;__base_ctor::(69,5)=#(69,1),(0,6),(69,6)=*(69,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2Ei;2A.;__comp_ctor::(69,5):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1Ei;2A.;__base_ctor::(69,7)=#(69,1),(0,6),(69,6),(69,8)=*(69,9)=k(69,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(69,7):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(69,10)=#(69,1),(0,6),(69,6),(69,11)=&(69,12)=k(69,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(69,10):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEC1ERKS4_;2A.;__base_dtor::(69,13)=#(69,1),(0,6),(69,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEED2Ev;2A.;__comp_dtor::(69,13):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEED1Ev;2A.;operator=::(69,14)=#(69,1),(69,15)=&(69,1),(69,6),(69,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEaSERKS4_;2A.;add::(69,16)=#(69,1),(0,6),(69,6),(69,17)=&(69,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3addERKS3_;2A.(69,7):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3addEPKS3_i;2A.;remove::(69,18)=#(69,1),(0,6),(69,6),(69,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEPS3_;2A.(69,19)=#(69,1),(0,6),(69,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEi;2A.(69,20)=#(69,1),(0,6),(69,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6removeEii;2A.;insert::(69,21)=#(69,1),(0,6),(69,6),(0,3),(69,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6insertEiS3_;2A.;size::(69,22)=#(69,1),(0,3),(69,23)=*(69,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE4sizeEv;2B.;resize::(69,19):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE6resizeEi;2A.;reserve::(69,19):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7reserveEi;2A.;clear::(69,13):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5clearEv;2A.;empty::(69,24)=#(69,1),(0,4),(69,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5emptyEv;2B.;capacity::(69,22):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE8capacityEv;2B.;begin::(69,25)=#(69,1),(69,2),(69,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5beginEv;2A.;end::(69,25):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3endEv;2A.;begin::(69,26)=#(69,1),(69,8),(69,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE5beginEv;2B.;end::(69,26):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE3endEv;2B.;operator[]::(69,27)=#(69,1),(69,28)=&(69,3),(69,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEixEi;2A.(69,29)=#(69,1),(69,17),(69,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEEixEi;2B.;pointer::(69,26):_ZNK6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7pointerEv;2B.(69,25):_ZN6MAUtil6VectorIPN8NativeUI19StackScreenListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::Screen*>:Tt(69,30)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(69,31)=*(69,32)=*(69,33)=xsScreen:,64,32;__base_ctor::(69,34)=#(69,30),(0,6),(69,35)=*(69,30),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2Ei;2A.;__comp_ctor::(69,34):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1Ei;2A.;__base_ctor::(69,36)=#(69,30),(0,6),(69,35),(69,37)=*(69,38)=k(69,32),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2EPKS3_i;2A.;__comp_ctor::(69,36):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1EPKS3_i;2A.;__base_ctor::(69,39)=#(69,30),(0,6),(69,35),(69,40)=&(69,41)=k(69,30),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC2ERKS4_;2A.;__comp_ctor::(69,39):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEC1ERKS4_;2A.;__base_dtor::(69,42)=#(69,30),(0,6),(69,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEED2Ev;2A.;__comp_dtor::(69,42):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEED1Ev;2A.;operator=::(69,43)=#(69,30),(69,44)=&(69,30),(69,35),(69,40),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEaSERKS4_;2A.;add::(69,45)=#(69,30),(0,6),(69,35),(69,46)=&(69,38),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3addERKS3_;2A.(69,36):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3addEPKS3_i;2A.;remove::(69,47)=#(69,30),(0,6),(69,35),(69,31),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEPS3_;2A.(69,48)=#(69,30),(0,6),(69,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEi;2A.(69,49)=#(69,30),(0,6),(69,35),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6removeEii;2A.;insert::(69,50)=#(69,30),(0,6),(69,35),(0,3),(69,32),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6insertEiS3_;2A.;size::(69,51)=#(69,30),(0,3),(69,52)=*(69,41),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE4sizeEv;2B.;resize::(69,48):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE6resizeEi;2A.;reserve::(69,48):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE7reserveEi;2A.;clear::(69,42):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE5clearEv;2A.;empty::(69,53)=#(69,30),(0,4),(69,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE5emptyEv;2B.;capacity::(69,51):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE8capacityEv;2B.;begin::(69,54)=#(69,30),(69,31),(69,35),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE5beginEv;2A.;end::(69,54):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE3endEv;2A.;begin::(69,55)=#(69,30),(69,37),(69,52),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE5beginEv;2B.;end::(69,55):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE3endEv;2B.;operator[]::(69,56)=#(69,30),(69,57)=&(69,32),(69,35),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI6ScreenEEixEi;2A.(69,58)=#(69,30),(69,46),(69,52),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEEixEi;2B.;pointer::(69,55):_ZNK6MAUtil6VectorIPN8NativeUI6ScreenEE7pointerEv;2B.(69,54):_ZN6MAUtil6VectorIPN8NativeUI6ScreenEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/StackScreenListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/TabScreen.h",130,0,0,0
-	.stabs	"Vector<NativeUI::TabScreenListener*>:Tt(69,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(69,2)=*(69,3)=*(69,4)=xsTabScreenListener:,64,32;__base_ctor::(69,5)=#(69,1),(0,6),(69,6)=*(69,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2Ei;2A.;__comp_ctor::(69,5):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1Ei;2A.;__base_ctor::(69,7)=#(69,1),(0,6),(69,6),(69,8)=*(69,9)=k(69,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(69,7):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(69,10)=#(69,1),(0,6),(69,6),(69,11)=&(69,12)=k(69,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(69,10):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1ERKS4_;2A.;__base_dtor::(69,13)=#(69,1),(0,6),(69,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEED2Ev;2A.;__comp_dtor::(69,13):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEED1Ev;2A.;operator=::(69,14)=#(69,1),(69,15)=&(69,1),(69,6),(69,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEaSERKS4_;2A.;add::(69,16)=#(69,1),(0,6),(69,6),(69,17)=&(69,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3addERKS3_;2A.(69,7):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3addEPKS3_i;2A.;remove::(69,18)=#(69,1),(0,6),(69,6),(69,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEPS3_;2A.(69,19)=#(69,1),(0,6),(69,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEi;2A.(69,20)=#(69,1),(0,6),(69,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEii;2A.;insert::(69,21)=#(69,1),(0,6),(69,6),(0,3),(69,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6insertEiS3_;2A.;size::(69,22)=#(69,1),(0,3),(69,23)=*(69,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE4sizeEv;2B.;resize::(69,19):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6resizeEi;2A.;reserve::(69,19):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7reserveEi;2A.;clear::(69,13):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5clearEv;2A.;empty::(69,24)=#(69,1),(0,4),(69,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5emptyEv;2B.;capacity::(69,22):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE8capacityEv;2B.;begin::(69,25)=#(69,1),(69,2),(69,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5beginEv;2A.;end::(69,25):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3endEv;2A.;begin::(69,26)=#(69,1),(69,8),(69,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5beginEv;2B.;end::(69,26):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3endEv;2B.;operator[]::(69,27)=#(69,1),(69,28)=&(69,3),(69,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEixEi;2A.(69,29)=#(69,1),(69,17),(69,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEixEi;2B.;pointer::(69,26):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7pointerEv;2B.(69,25):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::TabScreenListener*>:Tt(71,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(71,2)=*(71,3)=*(71,4)=xsTabScreenListener:,64,32;__base_ctor::(71,5)=#(71,1),(0,6),(71,6)=*(71,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2Ei;2A.;__comp_ctor::(71,5):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1Ei;2A.;__base_ctor::(71,7)=#(71,1),(0,6),(71,6),(71,8)=*(71,9)=k(71,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2EPKS3_i;2A.;__comp_ctor::(71,7):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1EPKS3_i;2A.;__base_ctor::(71,10)=#(71,1),(0,6),(71,6),(71,11)=&(71,12)=k(71,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC2ERKS4_;2A.;__comp_ctor::(71,10):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEC1ERKS4_;2A.;__base_dtor::(71,13)=#(71,1),(0,6),(71,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEED2Ev;2A.;__comp_dtor::(71,13):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEED1Ev;2A.;operator=::(71,14)=#(71,1),(71,15)=&(71,1),(71,6),(71,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEaSERKS4_;2A.;add::(71,16)=#(71,1),(0,6),(71,6),(71,17)=&(71,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3addERKS3_;2A.(71,7):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3addEPKS3_i;2A.;remove::(71,18)=#(71,1),(0,6),(71,6),(71,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEPS3_;2A.(71,19)=#(71,1),(0,6),(71,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEi;2A.(71,20)=#(71,1),(0,6),(71,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6removeEii;2A.;insert::(71,21)=#(71,1),(0,6),(71,6),(0,3),(71,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6insertEiS3_;2A.;size::(71,22)=#(71,1),(0,3),(71,23)=*(71,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE4sizeEv;2B.;resize::(71,19):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE6resizeEi;2A.;reserve::(71,19):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7reserveEi;2A.;clear::(71,13):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5clearEv;2A.;empty::(71,24)=#(71,1),(0,4),(71,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5emptyEv;2B.;capacity::(71,22):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE8capacityEv;2B.;begin::(71,25)=#(71,1),(71,2),(71,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5beginEv;2A.;end::(71,25):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3endEv;2A.;begin::(71,26)=#(71,1),(71,8),(71,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE5beginEv;2B.;end::(71,26):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE3endEv;2B.;operator[]::(71,27)=#(71,1),(71,28)=&(71,3),(71,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEixEi;2A.(71,29)=#(71,1),(71,17),(71,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEEixEi;2B.;pointer::(71,26):_ZNK6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7pointerEv;2B.(71,25):_ZN6MAUtil6VectorIPN8NativeUI17TabScreenListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/TabScreenListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/TimePicker.h",130,0,0,0
-	.stabs	"Vector<NativeUI::TimePickerListener*>:Tt(71,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(71,2)=*(71,3)=*(71,4)=xsTimePickerListener:,64,32;__base_ctor::(71,5)=#(71,1),(0,6),(71,6)=*(71,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2Ei;2A.;__comp_ctor::(71,5):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1Ei;2A.;__base_ctor::(71,7)=#(71,1),(0,6),(71,6),(71,8)=*(71,9)=k(71,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(71,7):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1EPKS3_i;2A.;__base_ctor::(71,10)=#(71,1),(0,6),(71,6),(71,11)=&(71,12)=k(71,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2ERKS4_;2A.;__comp_ctor::(71,10):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1ERKS4_;2A.;__base_dtor::(71,13)=#(71,1),(0,6),(71,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEED2Ev;2A.;__comp_dtor::(71,13):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEED1Ev;2A.;operator=::(71,14)=#(71,1),(71,15)=&(71,1),(71,6),(71,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEaSERKS4_;2A.;add::(71,16)=#(71,1),(0,6),(71,6),(71,17)=&(71,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3addERKS3_;2A.(71,7):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3addEPKS3_i;2A.;remove::(71,18)=#(71,1),(0,6),(71,6),(71,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEPS3_;2A.(71,19)=#(71,1),(0,6),(71,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEi;2A.(71,20)=#(71,1),(0,6),(71,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEii;2A.;insert::(71,21)=#(71,1),(0,6),(71,6),(0,3),(71,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6insertEiS3_;2A.;size::(71,22)=#(71,1),(0,3),(71,23)=*(71,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE4sizeEv;2B.;resize::(71,19):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6resizeEi;2A.;reserve::(71,19):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7reserveEi;2A.;clear::(71,13):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5clearEv;2A.;empty::(71,24)=#(71,1),(0,4),(71,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5emptyEv;2B.;capacity::(71,22):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE8capacityEv;2B.;begin::(71,25)=#(71,1),(71,2),(71,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5beginEv;2A.;end::(71,25):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3endEv;2A.;begin::(71,26)=#(71,1),(71,8),(71,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5beginEv;2B.;end::(71,26):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3endEv;2B.;operator[]::(71,27)=#(71,1),(71,28)=&(71,3),(71,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEixEi;2A.(71,29)=#(71,1),(71,17),(71,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEixEi;2B.;pointer::(71,26):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7pointerEv;2B.(71,25):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::TimePickerListener*>:Tt(73,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(73,2)=*(73,3)=*(73,4)=xsTimePickerListener:,64,32;__base_ctor::(73,5)=#(73,1),(0,6),(73,6)=*(73,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2Ei;2A.;__comp_ctor::(73,5):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1Ei;2A.;__base_ctor::(73,7)=#(73,1),(0,6),(73,6),(73,8)=*(73,9)=k(73,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2EPKS3_i;2A.;__comp_ctor::(73,7):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1EPKS3_i;2A.;__base_ctor::(73,10)=#(73,1),(0,6),(73,6),(73,11)=&(73,12)=k(73,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC2ERKS4_;2A.;__comp_ctor::(73,10):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEC1ERKS4_;2A.;__base_dtor::(73,13)=#(73,1),(0,6),(73,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEED2Ev;2A.;__comp_dtor::(73,13):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEED1Ev;2A.;operator=::(73,14)=#(73,1),(73,15)=&(73,1),(73,6),(73,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEaSERKS4_;2A.;add::(73,16)=#(73,1),(0,6),(73,6),(73,17)=&(73,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3addERKS3_;2A.(73,7):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3addEPKS3_i;2A.;remove::(73,18)=#(73,1),(0,6),(73,6),(73,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEPS3_;2A.(73,19)=#(73,1),(0,6),(73,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEi;2A.(73,20)=#(73,1),(0,6),(73,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6removeEii;2A.;insert::(73,21)=#(73,1),(0,6),(73,6),(0,3),(73,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6insertEiS3_;2A.;size::(73,22)=#(73,1),(0,3),(73,23)=*(73,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE4sizeEv;2B.;resize::(73,19):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE6resizeEi;2A.;reserve::(73,19):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7reserveEi;2A.;clear::(73,13):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5clearEv;2A.;empty::(73,24)=#(73,1),(0,4),(73,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5emptyEv;2B.;capacity::(73,22):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE8capacityEv;2B.;begin::(73,25)=#(73,1),(73,2),(73,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5beginEv;2A.;end::(73,25):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3endEv;2A.;begin::(73,26)=#(73,1),(73,8),(73,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE5beginEv;2B.;end::(73,26):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE3endEv;2B.;operator[]::(73,27)=#(73,1),(73,28)=&(73,3),(73,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEixEi;2A.(73,29)=#(73,1),(73,17),(73,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEEixEi;2B.;pointer::(73,26):_ZNK6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7pointerEv;2B.(73,25):_ZN6MAUtil6VectorIPN8NativeUI18TimePickerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/TimePickerListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ToggleButton.h",130,0,0,0
-	.stabs	"Vector<NativeUI::ToggleButtonListener*>:Tt(73,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(73,2)=*(73,3)=*(73,4)=xsToggleButtonListener:,64,32;__base_ctor::(73,5)=#(73,1),(0,6),(73,6)=*(73,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2Ei;2A.;__comp_ctor::(73,5):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1Ei;2A.;__base_ctor::(73,7)=#(73,1),(0,6),(73,6),(73,8)=*(73,9)=k(73,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2EPKS3_i;2A.;__comp_ctor::(73,7):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1EPKS3_i;2A.;__base_ctor::(73,10)=#(73,1),(0,6),(73,6),(73,11)=&(73,12)=k(73,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2ERKS4_;2A.;__comp_ctor::(73,10):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1ERKS4_;2A.;__base_dtor::(73,13)=#(73,1),(0,6),(73,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEED2Ev;2A.;__comp_dtor::(73,13):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEED1Ev;2A.;operator=::(73,14)=#(73,1),(73,15)=&(73,1),(73,6),(73,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEaSERKS4_;2A.;add::(73,16)=#(73,1),(0,6),(73,6),(73,17)=&(73,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3addERKS3_;2A.(73,7):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3addEPKS3_i;2A.;remove::(73,18)=#(73,1),(0,6),(73,6),(73,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEPS3_;2A.(73,19)=#(73,1),(0,6),(73,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEi;2A.(73,20)=#(73,1),(0,6),(73,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEii;2A.;insert::(73,21)=#(73,1),(0,6),(73,6),(0,3),(73,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6insertEiS3_;2A.;size::(73,22)=#(73,1),(0,3),(73,23)=*(73,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE4sizeEv;2B.;resize::(73,19):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6resizeEi;2A.;reserve::(73,19):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7reserveEi;2A.;clear::(73,13):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5clearEv;2A.;empty::(73,24)=#(73,1),(0,4),(73,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5emptyEv;2B.;capacity::(73,22):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE8capacityEv;2B.;begin::(73,25)=#(73,1),(73,2),(73,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5beginEv;2A.;end::(73,25):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3endEv;2A.;begin::(73,26)=#(73,1),(73,8),(73,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5beginEv;2B.;end::(73,26):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3endEv;2B.;operator[]::(73,27)=#(73,1),(73,28)=&(73,3),(73,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEixEi;2A.(73,29)=#(73,1),(73,17),(73,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEixEi;2B.;pointer::(73,26):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7pointerEv;2B.(73,25):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::ToggleButtonListener*>:Tt(75,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(75,2)=*(75,3)=*(75,4)=xsToggleButtonListener:,64,32;__base_ctor::(75,5)=#(75,1),(0,6),(75,6)=*(75,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2Ei;2A.;__comp_ctor::(75,5):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1Ei;2A.;__base_ctor::(75,7)=#(75,1),(0,6),(75,6),(75,8)=*(75,9)=k(75,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2EPKS3_i;2A.;__comp_ctor::(75,7):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1EPKS3_i;2A.;__base_ctor::(75,10)=#(75,1),(0,6),(75,6),(75,11)=&(75,12)=k(75,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC2ERKS4_;2A.;__comp_ctor::(75,10):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEC1ERKS4_;2A.;__base_dtor::(75,13)=#(75,1),(0,6),(75,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEED2Ev;2A.;__comp_dtor::(75,13):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEED1Ev;2A.;operator=::(75,14)=#(75,1),(75,15)=&(75,1),(75,6),(75,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEaSERKS4_;2A.;add::(75,16)=#(75,1),(0,6),(75,6),(75,17)=&(75,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3addERKS3_;2A.(75,7):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3addEPKS3_i;2A.;remove::(75,18)=#(75,1),(0,6),(75,6),(75,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEPS3_;2A.(75,19)=#(75,1),(0,6),(75,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEi;2A.(75,20)=#(75,1),(0,6),(75,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6removeEii;2A.;insert::(75,21)=#(75,1),(0,6),(75,6),(0,3),(75,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6insertEiS3_;2A.;size::(75,22)=#(75,1),(0,3),(75,23)=*(75,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE4sizeEv;2B.;resize::(75,19):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE6resizeEi;2A.;reserve::(75,19):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7reserveEi;2A.;clear::(75,13):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5clearEv;2A.;empty::(75,24)=#(75,1),(0,4),(75,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5emptyEv;2B.;capacity::(75,22):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE8capacityEv;2B.;begin::(75,25)=#(75,1),(75,2),(75,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5beginEv;2A.;end::(75,25):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3endEv;2A.;begin::(75,26)=#(75,1),(75,8),(75,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE5beginEv;2B.;end::(75,26):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE3endEv;2B.;operator[]::(75,27)=#(75,1),(75,28)=&(75,3),(75,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEixEi;2A.(75,29)=#(75,1),(75,17),(75,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEEixEi;2B.;pointer::(75,26):_ZNK6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7pointerEv;2B.(75,25):_ZN6MAUtil6VectorIPN8NativeUI20ToggleButtonListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/ToggleButtonListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/VerticalLayout.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/VideoView.h",130,0,0,0
-	.stabs	"Vector<NativeUI::VideoViewListener*>:Tt(76,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(76,2)=*(76,3)=*(76,4)=xsVideoViewListener:,64,32;__base_ctor::(76,5)=#(76,1),(0,6),(76,6)=*(76,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2Ei;2A.;__comp_ctor::(76,5):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1Ei;2A.;__base_ctor::(76,7)=#(76,1),(0,6),(76,6),(76,8)=*(76,9)=k(76,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(76,7):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1EPKS3_i;2A.;__base_ctor::(76,10)=#(76,1),(0,6),(76,6),(76,11)=&(76,12)=k(76,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2ERKS4_;2A.;__comp_ctor::(76,10):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1ERKS4_;2A.;__base_dtor::(76,13)=#(76,1),(0,6),(76,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEED2Ev;2A.;__comp_dtor::(76,13):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEED1Ev;2A.;operator=::(76,14)=#(76,1),(76,15)=&(76,1),(76,6),(76,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEaSERKS4_;2A.;add::(76,16)=#(76,1),(0,6),(76,6),(76,17)=&(76,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3addERKS3_;2A.(76,7):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3addEPKS3_i;2A.;remove::(76,18)=#(76,1),(0,6),(76,6),(76,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEPS3_;2A.(76,19)=#(76,1),(0,6),(76,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEi;2A.(76,20)=#(76,1),(0,6),(76,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEii;2A.;insert::(76,21)=#(76,1),(0,6),(76,6),(0,3),(76,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6insertEiS3_;2A.;size::(76,22)=#(76,1),(0,3),(76,23)=*(76,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE4sizeEv;2B.;resize::(76,19):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6resizeEi;2A.;reserve::(76,19):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7reserveEi;2A.;clear::(76,13):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5clearEv;2A.;empty::(76,24)=#(76,1),(0,4),(76,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5emptyEv;2B.;capacity::(76,22):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE8capacityEv;2B.;begin::(76,25)=#(76,1),(76,2),(76,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5beginEv;2A.;end::(76,25):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3endEv;2A.;begin::(76,26)=#(76,1),(76,8),(76,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5beginEv;2B.;end::(76,26):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3endEv;2B.;operator[]::(76,27)=#(76,1),(76,28)=&(76,3),(76,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEixEi;2A.(76,29)=#(76,1),(76,17),(76,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEixEi;2B.;pointer::(76,26):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7pointerEv;2B.(76,25):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::VideoViewListener*>:Tt(78,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(78,2)=*(78,3)=*(78,4)=xsVideoViewListener:,64,32;__base_ctor::(78,5)=#(78,1),(0,6),(78,6)=*(78,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2Ei;2A.;__comp_ctor::(78,5):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1Ei;2A.;__base_ctor::(78,7)=#(78,1),(0,6),(78,6),(78,8)=*(78,9)=k(78,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(78,7):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1EPKS3_i;2A.;__base_ctor::(78,10)=#(78,1),(0,6),(78,6),(78,11)=&(78,12)=k(78,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC2ERKS4_;2A.;__comp_ctor::(78,10):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEC1ERKS4_;2A.;__base_dtor::(78,13)=#(78,1),(0,6),(78,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEED2Ev;2A.;__comp_dtor::(78,13):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEED1Ev;2A.;operator=::(78,14)=#(78,1),(78,15)=&(78,1),(78,6),(78,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEaSERKS4_;2A.;add::(78,16)=#(78,1),(0,6),(78,6),(78,17)=&(78,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3addERKS3_;2A.(78,7):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3addEPKS3_i;2A.;remove::(78,18)=#(78,1),(0,6),(78,6),(78,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEPS3_;2A.(78,19)=#(78,1),(0,6),(78,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEi;2A.(78,20)=#(78,1),(0,6),(78,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6removeEii;2A.;insert::(78,21)=#(78,1),(0,6),(78,6),(0,3),(78,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6insertEiS3_;2A.;size::(78,22)=#(78,1),(0,3),(78,23)=*(78,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE4sizeEv;2B.;resize::(78,19):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE6resizeEi;2A.;reserve::(78,19):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7reserveEi;2A.;clear::(78,13):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5clearEv;2A.;empty::(78,24)=#(78,1),(0,4),(78,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5emptyEv;2B.;capacity::(78,22):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE8capacityEv;2B.;begin::(78,25)=#(78,1),(78,2),(78,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5beginEv;2A.;end::(78,25):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3endEv;2A.;begin::(78,26)=#(78,1),(78,8),(78,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE5beginEv;2B.;end::(78,26):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE3endEv;2B.;operator[]::(78,27)=#(78,1),(78,28)=&(78,3),(78,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEixEi;2A.(78,29)=#(78,1),(78,17),(78,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEEixEi;2B.;pointer::(78,26):_ZNK6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7pointerEv;2B.(78,25):_ZN6MAUtil6VectorIPN8NativeUI17VideoViewListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/VideoViewListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/WebView.h",130,0,0,0
-	.stabs	"Vector<NativeUI::WebViewListener*>:Tt(78,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(78,2)=*(78,3)=*(78,4)=xsWebViewListener:,64,32;__base_ctor::(78,5)=#(78,1),(0,6),(78,6)=*(78,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2Ei;2A.;__comp_ctor::(78,5):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1Ei;2A.;__base_ctor::(78,7)=#(78,1),(0,6),(78,6),(78,8)=*(78,9)=k(78,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(78,7):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1EPKS3_i;2A.;__base_ctor::(78,10)=#(78,1),(0,6),(78,6),(78,11)=&(78,12)=k(78,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2ERKS4_;2A.;__comp_ctor::(78,10):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1ERKS4_;2A.;__base_dtor::(78,13)=#(78,1),(0,6),(78,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEED2Ev;2A.;__comp_dtor::(78,13):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEED1Ev;2A.;operator=::(78,14)=#(78,1),(78,15)=&(78,1),(78,6),(78,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEaSERKS4_;2A.;add::(78,16)=#(78,1),(0,6),(78,6),(78,17)=&(78,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3addERKS3_;2A.(78,7):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3addEPKS3_i;2A.;remove::(78,18)=#(78,1),(0,6),(78,6),(78,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEPS3_;2A.(78,19)=#(78,1),(0,6),(78,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEi;2A.(78,20)=#(78,1),(0,6),(78,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEii;2A.;insert::(78,21)=#(78,1),(0,6),(78,6),(0,3),(78,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6insertEiS3_;2A.;size::(78,22)=#(78,1),(0,3),(78,23)=*(78,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE4sizeEv;2B.;resize::(78,19):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6resizeEi;2A.;reserve::(78,19):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7reserveEi;2A.;clear::(78,13):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5clearEv;2A.;empty::(78,24)=#(78,1),(0,4),(78,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5emptyEv;2B.;capacity::(78,22):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE8capacityEv;2B.;begin::(78,25)=#(78,1),(78,2),(78,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5beginEv;2A.;end::(78,25):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3endEv;2A.;begin::(78,26)=#(78,1),(78,8),(78,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5beginEv;2B.;end::(78,26):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3endEv;2B.;operator[]::(78,27)=#(78,1),(78,28)=&(78,3),(78,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEixEi;2A.(78,29)=#(78,1),(78,17),(78,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEEixEi;2B.;pointer::(78,26):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7pointerEv;2B.(78,25):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<NativeUI::WebViewListener*>:Tt(80,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(80,2)=*(80,3)=*(80,4)=xsWebViewListener:,64,32;__base_ctor::(80,5)=#(80,1),(0,6),(80,6)=*(80,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2Ei;2A.;__comp_ctor::(80,5):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1Ei;2A.;__base_ctor::(80,7)=#(80,1),(0,6),(80,6),(80,8)=*(80,9)=k(80,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2EPKS3_i;2A.;__comp_ctor::(80,7):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1EPKS3_i;2A.;__base_ctor::(80,10)=#(80,1),(0,6),(80,6),(80,11)=&(80,12)=k(80,1),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC2ERKS4_;2A.;__comp_ctor::(80,10):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEC1ERKS4_;2A.;__base_dtor::(80,13)=#(80,1),(0,6),(80,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEED2Ev;2A.;__comp_dtor::(80,13):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEED1Ev;2A.;operator=::(80,14)=#(80,1),(80,15)=&(80,1),(80,6),(80,11),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEaSERKS4_;2A.;add::(80,16)=#(80,1),(0,6),(80,6),(80,17)=&(80,9),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3addERKS3_;2A.(80,7):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3addEPKS3_i;2A.;remove::(80,18)=#(80,1),(0,6),(80,6),(80,2),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEPS3_;2A.(80,19)=#(80,1),(0,6),(80,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEi;2A.(80,20)=#(80,1),(0,6),(80,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6removeEii;2A.;insert::(80,21)=#(80,1),(0,6),(80,6),(0,3),(80,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6insertEiS3_;2A.;size::(80,22)=#(80,1),(0,3),(80,23)=*(80,12),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE4sizeEv;2B.;resize::(80,19):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE6resizeEi;2A.;reserve::(80,19):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7reserveEi;2A.;clear::(80,13):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5clearEv;2A.;empty::(80,24)=#(80,1),(0,4),(80,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5emptyEv;2B.;capacity::(80,22):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE8capacityEv;2B.;begin::(80,25)=#(80,1),(80,2),(80,6),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5beginEv;2A.;end::(80,25):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3endEv;2A.;begin::(80,26)=#(80,1),(80,8),(80,23),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE5beginEv;2B.;end::(80,26):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE3endEv;2B.;operator[]::(80,27)=#(80,1),(80,28)=&(80,3),(80,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEEixEi;2A.(80,29)=#(80,1),(80,17),(80,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEEixEi;2B.;pointer::(80,26):_ZNK6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7pointerEv;2B.(80,25):_ZN6MAUtil6VectorIPN8NativeUI15WebViewListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/WebViewListener.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/WidgetManager.h",130,0,0,0
 	.stabs	"c:/MoSync/include/NativeUI/WidgetEventListener.h",130,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, NativeUI::Widget*> >:Tt(80,1)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(80,2)=#(80,1),(0,6),(80,3)=*(80,1),(80,4)=&(80,5)=k(80,1),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC2ERKS7_;2A.;__comp_ctor::(80,2):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC1ERKS7_;2A.;operator=::(80,6)=#(80,1),(80,7)=&(80,1),(80,3),(80,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEaSERKS7_;2A.;__base_dtor::(80,8)=#(80,1),(0,6),(80,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEED2Ev;2A.;__comp_dtor::(80,8):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEED1Ev;2A.;find::(80,9)=#(80,1),(80,10)=xsIterator:,(80,3),(80,11)=&(80,12)=k(6,10),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4findERS1_;2A.(80,13)=#(80,1),(80,14)=xsConstIterator:,(80,15)=*(80,5),(80,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4findERS1_;2B.;erase::(80,16)=#(80,1),(0,4),(80,3),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5eraseERS1_;2A.(80,17)=#(80,1),(0,6),(80,3),(80,10),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5eraseENS7_8IteratorE;2A.;begin::(80,18)=#(80,1),(80,10),(80,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5beginEv;2A.(80,19)=#(80,1),(80,14),(80,15),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5beginEv;2B.;end::(80,18):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE3endEv;2A.(80,19):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE3endEv;2B.;size::(80,20)=#(80,1),(5,1),(80,15),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4sizeEv;2B.;clear::(80,8):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5clearEv;2A.;init::(80,21)=#(80,1),(0,6),(80,3),(80,22)=*(80,23)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(80,24)=#(80,1),(0,6),(80,3),(80,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(80,24):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC1EPFiRS1_S8_Ei;1A.;insert::(80,25)=#(80,1),(80,26)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, NativeUI::Widget*> >::Iterator,bool>:,(80,3),(80,27)=&(80,28)=k(80,29)=xsPair<const MAHandle,NativeUI::Widget*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<MAHandle,NativeUI::Widget*>:Tt(80,30)=s56!1,020,(80,1);__base_ctor::(80,31)=#(80,30),(0,6),(80,32)=*(80,30),(80,22),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2EPFiRKiS6_E;2A.;__comp_ctor::(80,31):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1EPFiRKiS6_E;2A.;insert::(80,33)=#(80,30),(80,26),(80,32),(80,11),(4,91),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKiRKS3_;2A.(80,34)=#(80,30),(80,26),(80,32),(80,35)=&(80,36)=k(80,37)=xsPair<MAHandle,NativeUI::Widget*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(80,38)=#(80,30),(4,102),(80,32),(80,11),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEixERKi;2A.;operator=::(80,39)=#(80,30),(80,40)=&(80,30),(80,32),(80,41)=&(80,42)=k(80,30),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEaSERKS4_;2A.;__base_ctor::(80,43)=#(80,30),(0,6),(80,32),(80,41),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2ERKS4_;2A.;__comp_ctor::(80,43):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1ERKS4_;2A.;__base_dtor::(80,44)=#(80,30),(0,6),(80,32),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED2Ev;2A.;__comp_dtor::(80,44):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, NativeUI::Widget*> >:Tt(82,1)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(82,2)=#(82,1),(0,6),(82,3)=*(82,1),(82,4)=&(82,5)=k(82,1),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC2ERKS7_;2A.;__comp_ctor::(82,2):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC1ERKS7_;2A.;operator=::(82,6)=#(82,1),(82,7)=&(82,1),(82,3),(82,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEaSERKS7_;2A.;__base_dtor::(82,8)=#(82,1),(0,6),(82,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEED2Ev;2A.;__comp_dtor::(82,8):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEED1Ev;2A.;find::(82,9)=#(82,1),(82,10)=xsIterator:,(82,3),(82,11)=&(82,12)=k(6,10),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4findERS1_;2A.(82,13)=#(82,1),(82,14)=xsConstIterator:,(82,15)=*(82,5),(82,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4findERS1_;2B.;erase::(82,16)=#(82,1),(0,4),(82,3),(82,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5eraseERS1_;2A.(82,17)=#(82,1),(0,6),(82,3),(82,10),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5eraseENS7_8IteratorE;2A.;begin::(82,18)=#(82,1),(82,10),(82,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5beginEv;2A.(82,19)=#(82,1),(82,14),(82,15),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5beginEv;2B.;end::(82,18):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE3endEv;2A.(82,19):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE3endEv;2B.;size::(82,20)=#(82,1),(5,1),(82,15),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4sizeEv;2B.;clear::(82,8):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5clearEv;2A.;init::(82,21)=#(82,1),(0,6),(82,3),(82,22)=*(82,23)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(82,24)=#(82,1),(0,6),(82,3),(82,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(82,24):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEEC1EPFiRS1_S8_Ei;1A.;insert::(82,25)=#(82,1),(82,26)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, NativeUI::Widget*> >::Iterator,bool>:,(82,3),(82,27)=&(82,28)=k(82,29)=xsPair<const MAHandle,NativeUI::Widget*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI6WidgetEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<MAHandle,NativeUI::Widget*>:Tt(82,30)=s56!1,020,(82,1);__base_ctor::(82,31)=#(82,30),(0,6),(82,32)=*(82,30),(82,22),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2EPFiRKiS6_E;2A.;__comp_ctor::(82,31):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1EPFiRKiS6_E;2A.;insert::(82,33)=#(82,30),(82,26),(82,32),(82,11),(4,91),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKiRKS3_;2A.(82,34)=#(82,30),(82,26),(82,32),(82,35)=&(82,36)=k(82,37)=xsPair<MAHandle,NativeUI::Widget*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(82,38)=#(82,30),(4,102),(82,32),(82,11),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEixERKi;2A.;operator=::(82,39)=#(82,30),(82,40)=&(82,30),(82,32),(82,41)=&(82,42)=k(82,30),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEaSERKS4_;2A.;__base_ctor::(82,43)=#(82,30),(0,6),(82,32),(82,41),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC2ERKS4_;2A.;__comp_ctor::(82,43):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEEC1ERKS4_;2A.;__base_dtor::(82,44)=#(82,30),(0,6),(82,32),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED2Ev;2A.;__comp_dtor::(82,44):_ZN6MAUtil3MapIiPN8NativeUI6WidgetEED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/Wormhole/HighLevelHttpConnection.h",130,0,0,0
 	.stabs	"c:/MoSync/include/maheap.h",130,0,0,0
-	.stabs	"malloc_handler:t(83,1)=(83,2)=*(83,3)=f(0,6)",128,0,108,0
-	.stabs	"malloc_hook:t(83,4)=(83,5)=*(83,6)=f(6,9)",128,0,109,0
-	.stabs	"free_hook:t(83,7)=(83,8)=*(83,9)=f(0,6)",128,0,110,0
-	.stabs	"realloc_hook:t(83,10)=(83,11)=*(83,12)=f(6,9)",128,0,111,0
-	.stabs	"block_size_hook:t(83,13)=(83,14)=*(83,15)=f(0,3)",128,0,112,0
+	.stabs	"malloc_handler:t(85,1)=(85,2)=*(85,3)=f(0,6)",128,0,108,0
+	.stabs	"malloc_hook:t(85,4)=(85,5)=*(85,6)=f(6,9)",128,0,109,0
+	.stabs	"free_hook:t(85,7)=(85,8)=*(85,9)=f(0,6)",128,0,110,0
+	.stabs	"realloc_hook:t(85,10)=(85,11)=*(85,12)=f(6,9)",128,0,111,0
+	.stabs	"block_size_hook:t(85,13)=(85,14)=*(85,15)=f(0,3)",128,0,112,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/Connection.h",130,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"Vector<MAHandle>:Tt(82,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(82,2)=*(6,10),64,32;__base_ctor::(82,3)=#(82,1),(0,6),(82,4)=*(82,1),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2Ei;2A.;__comp_ctor::(82,3):_ZN6MAUtil6VectorIiEC1Ei;2A.;__base_ctor::(82,5)=#(82,1),(0,6),(82,4),(82,6)=*(80,12),(0,3),(0,6);:_ZN6MAUtil6VectorIiEC2EPKii;2A.;__comp_ctor::(82,5):_ZN6MAUtil6VectorIiEC1EPKii;2A.;__base_ctor::(82,7)=#(82,1),(0,6),(82,4),(82,8)=&(82,9)=k(82,1),(0,6);:_ZN6MAUtil6VectorIiEC2ERKS1_;2A.;__comp_ctor::(82,7):_ZN6MAUtil6VectorIiEC1ERKS1_;2A.;__base_dtor::(82,10)=#(82,1),(0,6),(82,4),(0,6);:_ZN6MAUtil6VectorIiED2Ev;2A.;__comp_dtor::(82,10):_ZN6MAUtil6VectorIiED1Ev;2A.;operator=::(82,11)=#(82,1),(82,12)=&(82,1),(82,4),(82,8),(0,6);:_ZN6MAUtil6VectorIiEaSERKS1_;2A.;add::(82,13)=#(82,1),(0,6),(82,4),(80,11),(0,6);:_ZN6MAUtil6VectorIiE3addERKi;2A.(82,5):_ZN6MAUtil6VectorIiE3addEPKii;2A.;remove::(82,14)=#(82,1),(0,6),(82,4),(82,2),(0,6);:_ZN6MAUtil6VectorIiE6removeEPi;2A.(82,15)=#(82,1),(0,6),(82,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEi;2A.(82,16)=#(82,1),(0,6),(82,4),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIiE6removeEii;2A.;insert::(82,16):_ZN6MAUtil6VectorIiE6insertEii;2A.;size::(82,17)=#(82,1),(0,3),(82,18)=*(82,9),(0,6);:_ZNK6MAUtil6VectorIiE4sizeEv;2B.;resize::(82,15):_ZN6MAUtil6VectorIiE6resizeEi;2A.;reserve::(82,15):_ZN6MAUtil6VectorIiE7reserveEi;2A.;clear::(82,10):_ZN6MAUtil6VectorIiE5clearEv;2A.;empty::(82,19)=#(82,1),(0,4),(82,18),(0,6);:_ZNK6MAUtil6VectorIiE5emptyEv;2B.;capacity::(82,17):_ZNK6MAUtil6VectorIiE8capacityEv;2B.;begin::(82,20)=#(82,1),(82,2),(82,4),(0,6);:_ZN6MAUtil6VectorIiE5beginEv;2A.;end::(82,20):_ZN6MAUtil6VectorIiE3endEv;2A.;begin::(82,21)=#(82,1),(82,6),(82,18),(0,6);:_ZNK6MAUtil6VectorIiE5beginEv;2B.;end::(82,21):_ZNK6MAUtil6VectorIiE3endEv;2B.;operator[]::(82,22)=#(82,1),(82,23)=&(6,10),(82,4),(0,3),(0,6);:_ZN6MAUtil6VectorIiEixEi;2A.(82,24)=#(82,1),(80,11),(82,18),(0,3),(0,6);:_ZNK6MAUtil6VectorIiEixEi;2B.;pointer::(82,21):_ZNK6MAUtil6VectorIiE7pointerEv;2B.(82,20):_ZN6MAUtil6VectorIiE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/Wormhole/MessageStreamJSON.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/HashMap.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/HashDict.h",130,0,0,0
 	.stabs	"c:/MoSync/include/kazlib/hash.h",130,0,0,0
-	.stabs	"hashcount_t:t(88,1)=(0,16)",128,0,37,0
-	.stabs	"hash_val_t:t(88,2)=(0,16)",128,0,40,0
-	.stabs	"hnode_t:Tt(88,3)=s16hash_next:(88,4)=*(88,3),0,32;hash_key:(14,5),32,32;hash_data:(6,9),64,32;hash_hkey:(88,2),96,32;operator=::(88,5)=#(88,3),(88,6)=&(88,3),(88,4),(88,7)=&(88,8)=k(88,3),(0,6);:_ZN7hnode_taSERKS_;2A.;__base_ctor::(88,9)=#(88,3),(0,6),(88,4),(88,7),(0,6);:_ZN7hnode_tC2ERKS_;2A.;__comp_ctor::(88,9):_ZN7hnode_tC1ERKS_;2A.;__base_ctor::(88,10)=#(88,3),(0,6),(88,4),(0,6);:_ZN7hnode_tC2Ev;2A.;__comp_ctor::(88,10):_ZN7hnode_tC1Ev;2A.;;",128,0,73,0
-	.stabs	"hnode_t:t(88,11)=(88,3)",128,0,82,0
-	.stabs	"hash_comp_t:t(88,12)=(14,15)",128,0,91,0
-	.stabs	"hash_fun_t:t(88,13)=(88,14)=*(88,15)=f(88,2)",128,0,105,0
-	.stabs	"hnode_alloc_t:t(88,16)=(88,17)=*(88,18)=f(88,19)=*(88,11)",128,0,111,0
-	.stabs	"hnode_free_t:t(88,20)=(88,21)=*(88,22)=f(0,6)",128,0,112,0
-	.stabs	"hash_t:Tt(88,23)=s52hash_table:(88,24)=*(88,4),0,32;hash_nchains:(88,1),32,32;hash_nodecount:(88,1),64,32;hash_maxcount:(88,1),96,32;hash_highmark:(88,1),128,32;hash_lowmark:(88,1),160,32;hash_compare:(88,12),192,32;hash_function:(88,13),224,32;hash_allocnode:(88,16),256,32;hash_freenode:(88,20),288,32;hash_context:(6,9),320,32;hash_mask:(88,2),352,32;hash_dynamic:(0,3),384,32;operator=::(88,25)=#(88,23),(88,26)=&(88,23),(88,27)=*(88,23),(88,28)=&(88,29)=k(88,23),(0,6);:_ZN6hash_taSERKS_;2A.;__base_ctor::(88,30)=#(88,23),(0,6),(88,27),(88,28),(0,6);:_ZN6hash_tC2ERKS_;2A.;__comp_ctor::(88,30):_ZN6hash_tC1ERKS_;2A.;__base_ctor::(88,31)=#(88,23),(0,6),(88,27),(0,6);:_ZN6hash_tC2Ev;2A.;__comp_ctor::(88,31):_ZN6hash_tC1Ev;2A.;;",128,0,149,0
-	.stabs	"hash_t:t(88,32)=(88,23)",128,0,167,0
-	.stabs	"hscan_t:Tt(88,33)=s12hash_table:(88,34)=*(88,32),0,32;hash_chain:(88,2),32,32;hash_next:(88,19),64,32;operator=::(88,35)=#(88,33),(88,36)=&(88,33),(88,37)=*(88,33),(88,38)=&(88,39)=k(88,33),(0,6);:_ZN7hscan_taSERKS_;2A.;__base_ctor::(88,40)=#(88,33),(0,6),(88,37),(88,38),(0,6);:_ZN7hscan_tC2ERKS_;2A.;__comp_ctor::(88,40):_ZN7hscan_tC1ERKS_;2A.;__base_ctor::(88,41)=#(88,33),(0,6),(88,37),(0,6);:_ZN7hscan_tC2Ev;2A.;__comp_ctor::(88,41):_ZN7hscan_tC1Ev;2A.;;",128,0,179,0
-	.stabs	"hscan_t:t(88,42)=(88,33)",128,0,187,0
+	.stabs	"hashcount_t:t(90,1)=(0,16)",128,0,37,0
+	.stabs	"hash_val_t:t(90,2)=(0,16)",128,0,40,0
+	.stabs	"hnode_t:Tt(90,3)=s16hash_next:(90,4)=*(90,3),0,32;hash_key:(14,5),32,32;hash_data:(6,9),64,32;hash_hkey:(90,2),96,32;operator=::(90,5)=#(90,3),(90,6)=&(90,3),(90,4),(90,7)=&(90,8)=k(90,3),(0,6);:_ZN7hnode_taSERKS_;2A.;__base_ctor::(90,9)=#(90,3),(0,6),(90,4),(90,7),(0,6);:_ZN7hnode_tC2ERKS_;2A.;__comp_ctor::(90,9):_ZN7hnode_tC1ERKS_;2A.;__base_ctor::(90,10)=#(90,3),(0,6),(90,4),(0,6);:_ZN7hnode_tC2Ev;2A.;__comp_ctor::(90,10):_ZN7hnode_tC1Ev;2A.;;",128,0,73,0
+	.stabs	"hnode_t:t(90,11)=(90,3)",128,0,82,0
+	.stabs	"hash_comp_t:t(90,12)=(14,15)",128,0,91,0
+	.stabs	"hash_fun_t:t(90,13)=(90,14)=*(90,15)=f(90,2)",128,0,105,0
+	.stabs	"hnode_alloc_t:t(90,16)=(90,17)=*(90,18)=f(90,19)=*(90,11)",128,0,111,0
+	.stabs	"hnode_free_t:t(90,20)=(90,21)=*(90,22)=f(0,6)",128,0,112,0
+	.stabs	"hash_t:Tt(90,23)=s52hash_table:(90,24)=*(90,4),0,32;hash_nchains:(90,1),32,32;hash_nodecount:(90,1),64,32;hash_maxcount:(90,1),96,32;hash_highmark:(90,1),128,32;hash_lowmark:(90,1),160,32;hash_compare:(90,12),192,32;hash_function:(90,13),224,32;hash_allocnode:(90,16),256,32;hash_freenode:(90,20),288,32;hash_context:(6,9),320,32;hash_mask:(90,2),352,32;hash_dynamic:(0,3),384,32;operator=::(90,25)=#(90,23),(90,26)=&(90,23),(90,27)=*(90,23),(90,28)=&(90,29)=k(90,23),(0,6);:_ZN6hash_taSERKS_;2A.;__base_ctor::(90,30)=#(90,23),(0,6),(90,27),(90,28),(0,6);:_ZN6hash_tC2ERKS_;2A.;__comp_ctor::(90,30):_ZN6hash_tC1ERKS_;2A.;__base_ctor::(90,31)=#(90,23),(0,6),(90,27),(0,6);:_ZN6hash_tC2Ev;2A.;__comp_ctor::(90,31):_ZN6hash_tC1Ev;2A.;;",128,0,149,0
+	.stabs	"hash_t:t(90,32)=(90,23)",128,0,167,0
+	.stabs	"hscan_t:Tt(90,33)=s12hash_table:(90,34)=*(90,32),0,32;hash_chain:(90,2),32,32;hash_next:(90,19),64,32;operator=::(90,35)=#(90,33),(90,36)=&(90,33),(90,37)=*(90,33),(90,38)=&(90,39)=k(90,33),(0,6);:_ZN7hscan_taSERKS_;2A.;__base_ctor::(90,40)=#(90,33),(0,6),(90,37),(90,38),(0,6);:_ZN7hscan_tC2ERKS_;2A.;__comp_ctor::(90,40):_ZN7hscan_tC1ERKS_;2A.;__base_ctor::(90,41)=#(90,33),(0,6),(90,37),(0,6);:_ZN7hscan_tC2Ev;2A.;__comp_ctor::(90,41):_ZN7hscan_tC1Ev;2A.;;",128,0,179,0
+	.stabs	"hscan_t:t(90,42)=(90,33)",128,0,187,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/yajl/YAJLDom.h",130,0,0,0
-	.stabs	"Value::Type:t(89,1)=eNUL:0,BOOLEAN:1,NUMBER:2,ARRAY:3,MAP:4,STRING:5,;",128,0,37,0
-	.stabs	"Dictionary<const MAUtil::BasicString<char>,MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >:Tt(89,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(89,3)=#(89,2),(0,6),(89,4)=*(89,2),(89,5)=&(89,6)=k(89,2),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2ERKS9_;2A.;__comp_ctor::(89,3):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1ERKS9_;2A.;operator=::(89,7)=#(89,2),(89,8)=&(89,2),(89,4),(89,5),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEaSERKS9_;2A.;__base_dtor::(89,9)=#(89,2),(0,6),(89,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED2Ev;2A.;__comp_dtor::(89,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED1Ev;2A.;find::(89,10)=#(89,2),(89,11)=xsIterator:,(89,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2A.(89,12)=#(89,2),(89,13)=xsConstIterator:,(89,14)=*(89,6),(4,38),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2B.;erase::(89,15)=#(89,2),(0,4),(89,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseERS3_;2A.(89,16)=#(89,2),(0,6),(89,4),(89,11),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseENS9_8IteratorE;2A.;begin::(89,17)=#(89,2),(89,11),(89,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2A.(89,18)=#(89,2),(89,13),(89,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2B.;end::(89,17):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2A.(89,18):_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2B.;size::(89,19)=#(89,2),(5,1),(89,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4sizeEv;2B.;clear::(89,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5clearEv;2A.;init::(89,20)=#(89,2),(0,6),(89,4),(89,21)=*(89,22)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4initEPFiRS3_SA_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(89,23)=#(89,2),(0,6),(89,4),(89,21),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2EPFiRS3_SA_Ei;1A.;__comp_ctor::(89,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1EPFiRS3_SA_Ei;1A.;insert::(89,24)=#(89,2),(89,25)=xsPair<MAUtil::Dictionary<const MAUtil::BasicString<char>, MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >::Iterator,bool>:,(89,4),(89,26)=&(89,27)=k(89,28)=xsPair<const MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE6insertERKS8_;1A.;;",128,0,57,0
-	.stabs	"Map<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:Tt(89,29)=s56!1,020,(89,2);__base_ctor::(89,30)=#(89,29),(0,6),(89,31)=*(89,29),(89,21),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2EPFiRKS2_S8_E;2A.;__comp_ctor::(89,30):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1EPFiRKS2_S8_E;2A.;insert::(89,32)=#(89,29),(89,25),(89,31),(4,38),(89,33)=&(89,34)=k(89,35)=*(89,36)=xsValue:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKS2_RKS5_;2A.(89,37)=#(89,29),(89,25),(89,31),(89,38)=&(89,39)=k(89,40)=xsPair<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKNS_4PairIS2_S5_EE;2A.;operator[]::(89,41)=#(89,29),(89,42)=&(89,35),(89,31),(4,38),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEixERKS2_;2A.;operator=::(89,43)=#(89,29),(89,44)=&(89,29),(89,31),(89,45)=&(89,46)=k(89,29),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEaSERKS6_;2A.;__base_ctor::(89,47)=#(89,29),(0,6),(89,31),(89,45),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2ERKS6_;2A.;__comp_ctor::(89,47):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1ERKS6_;2A.;__base_dtor::(89,48)=#(89,29),(0,6),(89,31),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(89,48):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Vector<MAUtil::YAJLDom::Value*>:Tt(89,49)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(89,50)=*(89,35),64,32;__base_ctor::(89,51)=#(89,49),(0,6),(89,52)=*(89,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2Ei;2A.;__comp_ctor::(89,51):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1Ei;2A.;__base_ctor::(89,53)=#(89,49),(0,6),(89,52),(89,54)=*(89,34),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2EPKS3_i;2A.;__comp_ctor::(89,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1EPKS3_i;2A.;__base_ctor::(89,55)=#(89,49),(0,6),(89,52),(89,56)=&(89,57)=k(89,49),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2ERKS4_;2A.;__comp_ctor::(89,55):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1ERKS4_;2A.;__base_dtor::(89,58)=#(89,49),(0,6),(89,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(89,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED1Ev;2A.;operator=::(89,59)=#(89,49),(89,60)=&(89,49),(89,52),(89,56),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEaSERKS4_;2A.;add::(89,61)=#(89,49),(0,6),(89,52),(89,33),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addERKS3_;2A.(89,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addEPKS3_i;2A.;remove::(89,62)=#(89,49),(0,6),(89,52),(89,50),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEPS3_;2A.(89,63)=#(89,49),(0,6),(89,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEi;2A.(89,64)=#(89,49),(0,6),(89,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEii;2A.;insert::(89,65)=#(89,49),(0,6),(89,52),(0,3),(89,35),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6insertEiS3_;2A.;size::(89,66)=#(89,49),(0,3),(89,67)=*(89,57),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE4sizeEv;2B.;resize::(89,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6resizeEi;2A.;reserve::(89,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7reserveEi;2A.;clear::(89,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5clearEv;2A.;empty::(89,68)=#(89,49),(0,4),(89,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5emptyEv;2B.;capacity::(89,66):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE8capacityEv;2B.;begin::(89,69)=#(89,49),(89,50),(89,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2A.;end::(89,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2A.;begin::(89,70)=#(89,49),(89,54),(89,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2B.;end::(89,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2B.;operator[]::(89,71)=#(89,49),(89,42),(89,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2A.(89,72)=#(89,49),(89,33),(89,67),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2B.;pointer::(89,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2B.(89,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Value::Type:t(91,1)=eNUL:0,BOOLEAN:1,NUMBER:2,ARRAY:3,MAP:4,STRING:5,;",128,0,37,0
+	.stabs	"Dictionary<const MAUtil::BasicString<char>,MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >:Tt(91,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(91,3)=#(91,2),(0,6),(91,4)=*(91,2),(91,5)=&(91,6)=k(91,2),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2ERKS9_;2A.;__comp_ctor::(91,3):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1ERKS9_;2A.;operator=::(91,7)=#(91,2),(91,8)=&(91,2),(91,4),(91,5),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEaSERKS9_;2A.;__base_dtor::(91,9)=#(91,2),(0,6),(91,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED2Ev;2A.;__comp_dtor::(91,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEED1Ev;2A.;find::(91,10)=#(91,2),(91,11)=xsIterator:,(91,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2A.(91,12)=#(91,2),(91,13)=xsConstIterator:,(91,14)=*(91,6),(4,38),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4findERS3_;2B.;erase::(91,15)=#(91,2),(0,4),(91,4),(4,38),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseERS3_;2A.(91,16)=#(91,2),(0,6),(91,4),(91,11),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5eraseENS9_8IteratorE;2A.;begin::(91,17)=#(91,2),(91,11),(91,4),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2A.(91,18)=#(91,2),(91,13),(91,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5beginEv;2B.;end::(91,17):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2A.(91,18):_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE3endEv;2B.;size::(91,19)=#(91,2),(5,1),(91,14),(0,6);:_ZNK6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4sizeEv;2B.;clear::(91,9):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5clearEv;2A.;init::(91,20)=#(91,2),(0,6),(91,4),(91,21)=*(91,22)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4initEPFiRS3_SA_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(91,23)=#(91,2),(0,6),(91,4),(91,21),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC2EPFiRS3_SA_Ei;1A.;__comp_ctor::(91,23):_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEEC1EPFiRS3_SA_Ei;1A.;insert::(91,24)=#(91,2),(91,25)=xsPair<MAUtil::Dictionary<const MAUtil::BasicString<char>, MAUtil::Pair<const MAUtil::BasicString<char>, MAUtil::YAJLDom::Value*> >::Iterator,bool>:,(91,4),(91,26)=&(91,27)=k(91,28)=xsPair<const MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil10DictionaryIKNS_11BasicStringIcEENS_4PairIS3_PNS_7YAJLDom5ValueEEEE6insertERKS8_;1A.;;",128,0,57,0
+	.stabs	"Map<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:Tt(91,29)=s56!1,020,(91,2);__base_ctor::(91,30)=#(91,29),(0,6),(91,31)=*(91,29),(91,21),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2EPFiRKS2_S8_E;2A.;__comp_ctor::(91,30):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1EPFiRKS2_S8_E;2A.;insert::(91,32)=#(91,29),(91,25),(91,31),(4,38),(91,33)=&(91,34)=k(91,35)=*(91,36)=xsValue:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKS2_RKS5_;2A.(91,37)=#(91,29),(91,25),(91,31),(91,38)=&(91,39)=k(91,40)=xsPair<MAUtil::BasicString<char>,MAUtil::YAJLDom::Value*>:,(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEE6insertERKNS_4PairIS2_S5_EE;2A.;operator[]::(91,41)=#(91,29),(91,42)=&(91,35),(91,31),(4,38),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEixERKS2_;2A.;operator=::(91,43)=#(91,29),(91,44)=&(91,29),(91,31),(91,45)=&(91,46)=k(91,29),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEaSERKS6_;2A.;__base_ctor::(91,47)=#(91,29),(0,6),(91,31),(91,45),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC2ERKS6_;2A.;__comp_ctor::(91,47):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEEC1ERKS6_;2A.;__base_dtor::(91,48)=#(91,29),(0,6),(91,31),(0,6);:_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(91,48):_ZN6MAUtil3MapINS_11BasicStringIcEEPNS_7YAJLDom5ValueEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Vector<MAUtil::YAJLDom::Value*>:Tt(91,49)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(91,50)=*(91,35),64,32;__base_ctor::(91,51)=#(91,49),(0,6),(91,52)=*(91,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2Ei;2A.;__comp_ctor::(91,51):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1Ei;2A.;__base_ctor::(91,53)=#(91,49),(0,6),(91,52),(91,54)=*(91,34),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2EPKS3_i;2A.;__comp_ctor::(91,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1EPKS3_i;2A.;__base_ctor::(91,55)=#(91,49),(0,6),(91,52),(91,56)=&(91,57)=k(91,49),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC2ERKS4_;2A.;__comp_ctor::(91,55):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEC1ERKS4_;2A.;__base_dtor::(91,58)=#(91,49),(0,6),(91,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED2Ev;2A.;__comp_dtor::(91,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEED1Ev;2A.;operator=::(91,59)=#(91,49),(91,60)=&(91,49),(91,52),(91,56),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEaSERKS4_;2A.;add::(91,61)=#(91,49),(0,6),(91,52),(91,33),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addERKS3_;2A.(91,53):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3addEPKS3_i;2A.;remove::(91,62)=#(91,49),(0,6),(91,52),(91,50),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEPS3_;2A.(91,63)=#(91,49),(0,6),(91,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEi;2A.(91,64)=#(91,49),(0,6),(91,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6removeEii;2A.;insert::(91,65)=#(91,49),(0,6),(91,52),(0,3),(91,35),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6insertEiS3_;2A.;size::(91,66)=#(91,49),(0,3),(91,67)=*(91,57),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE4sizeEv;2B.;resize::(91,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE6resizeEi;2A.;reserve::(91,63):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7reserveEi;2A.;clear::(91,58):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5clearEv;2A.;empty::(91,68)=#(91,49),(0,4),(91,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5emptyEv;2B.;capacity::(91,66):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE8capacityEv;2B.;begin::(91,69)=#(91,49),(91,50),(91,52),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2A.;end::(91,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2A.;begin::(91,70)=#(91,49),(91,54),(91,67),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE5beginEv;2B.;end::(91,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE3endEv;2B.;operator[]::(91,71)=#(91,49),(91,42),(91,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2A.(91,72)=#(91,49),(91,33),(91,67),(0,3),(0,6);:_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEEixEi;2B.;pointer::(91,70):_ZNK6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2B.(91,69):_ZN6MAUtil6VectorIPNS_7YAJLDom5ValueEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/mastdlib.h",130,0,0,0
-	.stabs	"div_t:Tt(90,1)=s8quot:(0,3),0,32;rem:(0,3),32,32;operator=::(90,2)=#(90,1),(90,3)=&(90,1),(90,4)=*(90,1),(90,5)=&(90,6)=k(90,1),(0,6);:_ZN5div_taSERKS_;2A.;__base_ctor::(90,7)=#(90,1),(0,6),(90,4),(90,5),(0,6);:_ZN5div_tC2ERKS_;2A.;__comp_ctor::(90,7):_ZN5div_tC1ERKS_;2A.;__base_ctor::(90,8)=#(90,1),(0,6),(90,4),(0,6);:_ZN5div_tC2Ev;2A.;__comp_ctor::(90,8):_ZN5div_tC1Ev;2A.;;",128,0,58,0
-	.stabs	"div_t:t(90,9)=(90,1)",128,0,60,0
+	.stabs	"div_t:Tt(92,1)=s8quot:(0,3),0,32;rem:(0,3),32,32;operator=::(92,2)=#(92,1),(92,3)=&(92,1),(92,4)=*(92,1),(92,5)=&(92,6)=k(92,1),(0,6);:_ZN5div_taSERKS_;2A.;__base_ctor::(92,7)=#(92,1),(0,6),(92,4),(92,5),(0,6);:_ZN5div_tC2ERKS_;2A.;__comp_ctor::(92,7):_ZN5div_tC1ERKS_;2A.;__base_ctor::(92,8)=#(92,1),(0,6),(92,4),(0,6);:_ZN5div_tC2Ev;2A.;__comp_ctor::(92,8):_ZN5div_tC1Ev;2A.;;",128,0,58,0
+	.stabs	"div_t:t(92,9)=(92,1)",128,0,60,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/resource/Convert.h",130,0,0,0
 	.stabs	"c:/MoSync/include/matime.h",130,0,0,0
-	.stabs	"time_t:t(92,1)=(0,3)",128,0,41,0
-	.stabs	"tm:Tt(92,2)=s36tm_sec:(0,3),0,32;tm_min:(0,3),32,32;tm_hour:(0,3),64,32;tm_mday:(0,3),96,32;tm_mon:(0,3),128,32;tm_year:(0,3),160,32;tm_wday:(0,3),192,32;tm_yday:(0,3),224,32;tm_isdst:(0,3),256,32;operator=::(92,3)=#(92,2),(92,4)=&(92,2),(92,5)=*(92,2),(92,6)=&(92,7)=k(92,2),(0,6);:_ZN2tmaSERKS_;2A.;__base_ctor::(92,8)=#(92,2),(0,6),(92,5),(92,6),(0,6);:_ZN2tmC2ERKS_;2A.;__comp_ctor::(92,8):_ZN2tmC1ERKS_;2A.;__base_ctor::(92,9)=#(92,2),(0,6),(92,5),(0,6);:_ZN2tmC2Ev;2A.;__comp_ctor::(92,9):_ZN2tmC1Ev;2A.;;",128,0,47,0
+	.stabs	"time_t:t(94,1)=(0,3)",128,0,41,0
+	.stabs	"tm:Tt(94,2)=s36tm_sec:(0,3),0,32;tm_min:(0,3),32,32;tm_hour:(0,3),64,32;tm_mday:(0,3),96,32;tm_mon:(0,3),128,32;tm_year:(0,3),160,32;tm_wday:(0,3),192,32;tm_yday:(0,3),224,32;tm_isdst:(0,3),256,32;operator=::(94,3)=#(94,2),(94,4)=&(94,2),(94,5)=*(94,2),(94,6)=&(94,7)=k(94,2),(0,6);:_ZN2tmaSERKS_;2A.;__base_ctor::(94,8)=#(94,2),(0,6),(94,5),(94,6),(0,6);:_ZN2tmC2ERKS_;2A.;__comp_ctor::(94,8):_ZN2tmC1ERKS_;2A.;__base_ctor::(94,9)=#(94,2),(0,6),(94,5),(0,6);:_ZN2tmC2Ev;2A.;__comp_ctor::(94,9):_ZN2tmC1Ev;2A.;;",128,0,47,0
 	.stabn	162,0,0,0
-	.stabs	"STime:Tt(91,1)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(10,1),160,32;year:(0,3),192,32;operator=::(91,2)=#(91,1),(91,3)=&(91,1),(91,4)=*(91,1),(91,5)=&(91,6)=k(91,1),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(91,7)=#(91,1),(0,6),(91,4),(91,5),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(91,7):_ZN5STimeC1ERKS_;2A.;__base_ctor::(91,8)=#(91,1),(0,6),(91,4),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(91,8):_ZN5STimeC1Ev;2A.;__base_dtor::(91,8):_ZN5STimeD2Ev;2A.;__comp_dtor::(91,8):_ZN5STimeD1Ev;2A.;;",128,0,19,0
-	.stabs	"Convert:Tt(91,9)=s1__base_ctor::(91,10)=#(91,9),(0,6),(91,11)=*(91,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(91,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(91,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(91,10):_ZN7ConvertD1Ev;2A.;toSTime::(91,12)=f(91,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(91,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(91,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(91,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(91,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(91,17)=f(92,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(91,18)=f(10,1):_ZN7Convert8toStringEi;2A?(91,19)=f(10,1):_ZN7Convert8toStringEd;2A?(91,20)=f(10,1):_ZN7Convert8toStringEx;2A?(91,21)=f(10,1):_ZN7Convert8toStringEPKhm;2A?(91,22)=f(10,1):_ZN7Convert8toStringEb;2A?;hexToInt::(91,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(91,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(91,24)=f(6,5):_ZN7Convert2trEi;2A?;URLencode::(91,25)=f(10,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(91,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(91,26)=f(0,6):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(91,27)=#(91,9),(91,28)=&(91,9),(91,11),(91,29)=&(91,30)=k(91,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(91,31)=#(91,9),(0,6),(91,11),(91,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(91,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
+	.stabs	"STime:Tt(93,1)=s28sec:(0,3),0,32;min:(0,3),32,32;hour:(0,3),64,32;day:(0,3),96,32;mon:(0,3),128,32;sMon:(10,1),160,32;year:(0,3),192,32;operator=::(93,2)=#(93,1),(93,3)=&(93,1),(93,4)=*(93,1),(93,5)=&(93,6)=k(93,1),(0,6);:_ZN5STimeaSERKS_;2A.;__base_ctor::(93,7)=#(93,1),(0,6),(93,4),(93,5),(0,6);:_ZN5STimeC2ERKS_;2A.;__comp_ctor::(93,7):_ZN5STimeC1ERKS_;2A.;__base_ctor::(93,8)=#(93,1),(0,6),(93,4),(0,6);:_ZN5STimeC2Ev;2A.;__comp_ctor::(93,8):_ZN5STimeC1Ev;2A.;__base_dtor::(93,8):_ZN5STimeD2Ev;2A.;__comp_dtor::(93,8):_ZN5STimeD1Ev;2A.;;",128,0,19,0
+	.stabs	"Convert:Tt(93,9)=s1__base_ctor::(93,10)=#(93,9),(0,6),(93,11)=*(93,9),(0,6);:_ZN7ConvertC2Ev;2A.;__comp_ctor::(93,10):_ZN7ConvertC1Ev;2A.;__base_dtor::(93,10):_ZN7ConvertD2Ev;2A.;__comp_dtor::(93,10):_ZN7ConvertD1Ev;2A.;toSTime::(93,12)=f(93,1):_ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE;2A?;toInt::(93,13)=f(0,3):_ZN7Convert5toIntERN6MAUtil11BasicStringIcEE;2A?(93,14)=f(0,3):_ZN7Convert5toIntEPKc;2A?;toDouble::(93,15)=f(0,8):_ZN7Convert8toDoubleERN6MAUtil11BasicStringIcEE;2A?(93,16)=f(0,8):_ZN7Convert8toDoubleEPKc;2A?;toDateTime::(93,17)=f(94,1):_ZN7Convert10toDateTimeERN6MAUtil11BasicStringIcEE;2A?;toString::(93,18)=f(10,1):_ZN7Convert8toStringEi;2A?(93,19)=f(10,1):_ZN7Convert8toStringEd;2A?(93,20)=f(10,1):_ZN7Convert8toStringEx;2A?(93,21)=f(10,1):_ZN7Convert8toStringEPKhm;2A?(93,22)=f(10,1):_ZN7Convert8toStringEb;2A?;hexToInt::(93,14):_ZN7Convert8hexToIntEPKc;2A?;formatJSONBeforeParse::(93,23)=f(0,6):_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi;2A?;tr::(93,24)=f(6,5):_ZN7Convert2trEi;2A?;URLencode::(93,25)=f(10,1):_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE;2A?;URLdecode::(93,25):_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE;2A?;HTMLdecode::(93,26)=f(0,6):_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE;2A?;operator=::(93,27)=#(93,9),(93,28)=&(93,9),(93,11),(93,29)=&(93,30)=k(93,9),(0,6);:_ZN7ConvertaSERKS_;2A.;__base_ctor::(93,31)=#(93,9),(0,6),(93,11),(93,29),(0,6);:_ZN7ConvertC2ERKS_;2A.;__comp_ctor::(93,31):_ZN7ConvertC1ERKS_;2A.;;",128,0,32,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",130,0,0,0
-	.stabs	"FileLister:Tt(94,1)=s4mList:/0(6,10),0,32;__base_ctor::(94,2)=#(94,1),(0,6),(94,3)=*(94,1),(0,6);:_ZN10FileListerC2Ev;2A.;__comp_ctor::(94,2):_ZN10FileListerC1Ev;2A.;__base_dtor::(94,2):_ZN10FileListerD2Ev;2A.;__comp_dtor::(94,2):_ZN10FileListerD1Ev;2A.;start::(94,4)=#(94,1),(0,3),(94,3),(4,7),(4,7),(0,3),(0,6);:_ZN10FileLister5startEPKcS1_i;2A.;next::(94,5)=#(94,1),(0,3),(94,3),(94,6)=&(10,1),(0,6);:_ZN10FileLister4nextERN6MAUtil11BasicStringIcEE;2A.;close::(94,2):_ZN10FileLister5closeEv;2A.;operator=::(94,7)=#(94,1),(94,8)=&(94,1),(94,3),(94,9)=&(94,10)=k(94,1),(0,6);:_ZN10FileListeraSERKS_;2A.;__base_ctor::(94,11)=#(94,1),(0,6),(94,3),(94,9),(0,6);:_ZN10FileListerC2ERKS_;2A.;__comp_ctor::(94,11):_ZN10FileListerC1ERKS_;2A.;;",128,0,34,0
+	.stabs	"FileLister:Tt(96,1)=s4mList:/0(6,10),0,32;__base_ctor::(96,2)=#(96,1),(0,6),(96,3)=*(96,1),(0,6);:_ZN10FileListerC2Ev;2A.;__comp_ctor::(96,2):_ZN10FileListerC1Ev;2A.;__base_dtor::(96,2):_ZN10FileListerD2Ev;2A.;__comp_dtor::(96,2):_ZN10FileListerD1Ev;2A.;start::(96,4)=#(96,1),(0,3),(96,3),(4,7),(4,7),(0,3),(0,6);:_ZN10FileLister5startEPKcS1_i;2A.;next::(96,5)=#(96,1),(0,3),(96,3),(96,6)=&(10,1),(0,6);:_ZN10FileLister4nextERN6MAUtil11BasicStringIcEE;2A.;close::(96,2):_ZN10FileLister5closeEv;2A.;operator=::(96,7)=#(96,1),(96,8)=&(96,1),(96,3),(96,9)=&(96,10)=k(96,1),(0,6);:_ZN10FileListeraSERKS_;2A.;__base_ctor::(96,11)=#(96,1),(0,6),(96,3),(96,9),(0,6);:_ZN10FileListerC2ERKS_;2A.;__comp_ctor::(96,11):_ZN10FileListerC1ERKS_;2A.;;",128,0,34,0
 	.stabn	162,0,0,0
-	.stabs	"platform_code:t(93,1)=eANDROID:0,IOS:1,WINDOWSPHONE7:2,;",128,0,43,0
-	.stabs	"eHttp:t(93,2)=eGET:0,POST:1,;",128,0,49,0
-	.stabs	"eFile:t(93,3)=eFILE_OPEN_ERROR:0,FILE_NOT_EXIST:1,FILE_CLOSE:2,;",128,0,54,0
+	.stabs	"platform_code:t(95,1)=eANDROID:0,IOS:1,WINDOWSPHONE7:2,;",128,0,43,0
+	.stabs	"eHttp:t(95,2)=eGET:0,POST:1,;",128,0,49,0
+	.stabs	"eFile:t(95,3)=eFILE_OPEN_ERROR:0,FILE_NOT_EXIST:1,FILE_CLOSE:2,;",128,0,54,0
+	.stabs	"eScreenResolution:t(95,4)=eLARGE_SCREEN_RESOLUTION:0,SMALL_SCREEN_RESOLUTION:1,;",128,0,60,0
 .data
 LC0:
 	.ascii "mosync.device.OS\0"
@@ -415,26 +440,26 @@ LC1:
 LC2:
 	.ascii "iPhone OS\0"
 .code
-	.stabs	"_Z11getPlatformv:f(0,3)",36,0,65,__Z11getPlatformv
+	.stabs	"_Z11getPlatformv:f(0,3)",36,0,70,__Z11getPlatformv
 
 .func __Z11getPlatformv, 0, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext1
 Ltext1:
-	.line 65
+	.line 70
 	push rt,fr
 	sub  sp,#0x104
 	ld   fr,sp
 	add  fr,#0x10c
 	.dlab LBB2
 	.dlab LBB3
-	.line 67
+	.line 72
 	ld   r14,fr
 	add  r14,#0xfffffef8
 	ld   i0,#LC0
 	ld   i1,r14
 	ld   i2,#0x100
 	call &_maGetSystemProperty
-	.line 69
+	.line 74
 	ld   r14,fr
 	add  r14,#0xfffffef8
 	ld   i0,r14
@@ -443,12 +468,12 @@ Ltext1:
 	ld   r0,r14
 	ld   r14,#0x0
 	jc   ne,r0,r14,#L2
-	.line 71
+	.line 76
 	ld   r14,#0x0
 	ld   [fr,-268],r14
 	jp   #L1
 L2:
-	.line 75
+	.line 80
 	ld   r14,fr
 	add  r14,#0xfffffef8
 	ld   i0,r14
@@ -457,35 +482,35 @@ L2:
 	ld   r0,r14
 	ld   r14,#0x0
 	jc   ne,r0,r14,#L3
-	.line 76
+	.line 81
 	ld   r14,#0x1
 	ld   [fr,-268],r14
 	jp   #L1
 L3:
-	.line 78
+	.line 83
 	ld   r14,#0x2
 	ld   [fr,-268],r14
 L1:
 	.dlab LBE3
 	.dlab LBE2
-	.line 79
+	.line 84
 	ld   r14,[fr,-268]
 	add  sp,#0x104
 	pop  rt,fr
 	ret
-	.stabs	"platform:(93,4)=ar(6,57);0;255;(0,19)",128,0,66,-264
+	.stabs	"platform:(95,5)=ar(6,57);0;255;(0,19)",128,0,71,-264
 	.stabn	192,0,0,LBB3-__Z11getPlatformv
 	.stabn	224,0,0,LBE3-__Z11getPlatformv
 Lscope0:
-	.stabs	"maGetSystemProperty:f(0,3)",36,0,6017,_maGetSystemProperty
-	.stabs	"key:p(4,7)",160,0,6017,-12
-	.stabs	"buf:p(6,5)",160,0,6017,-16
-	.stabs	"size:p(0,3)",160,0,6017,-20
+	.stabs	"maGetSystemProperty:f(0,3)",36,0,6598,_maGetSystemProperty
+	.stabs	"key:p(4,7)",160,0,6598,-12
+	.stabs	"buf:p(6,5)",160,0,6598,-16
+	.stabs	"size:p(0,3)",160,0,6598,-20
 
 .func _maGetSystemProperty, 3, int
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext2
 Ltext2:
-	.line 6017
+	.line 6598
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -494,14 +519,14 @@ Ltext2:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	.dlab LBB4
-	.line 6018
-	ld   i0,#0x59
+	.line 6599
+	ld   i0,#0x5a
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
 	.dlab LBE4
-	.line 6019
+	.line 6600
 	add  sp,#0xc
 	pop  rt,fr
 	ret
@@ -519,19 +544,19 @@ LC6:
 LC7:
 	.ascii "No connection detected\0"
 .code
-	.stabs	"_Z19getSystemConnectionv:f(0,3)",36,0,82,__Z19getSystemConnectionv
+	.stabs	"_Z19getSystemConnectionv:f(0,3)",36,0,87,__Z19getSystemConnectionv
 
 .func __Z19getSystemConnectionv, 0, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext3
 Ltext3:
-	.line 82
+	.line 87
 	push rt,d0
 	sub  sp,#0x54
 	ld   fr,sp
 	add  fr,#0x60
 	.dlab LBB5
 	.dlab LBB6
-	.line 83
+	.line 88
 	ld.b r14,[&LC3]
 	ld.b [fr,-76],r14
 	ld   r14,fr
@@ -541,7 +566,7 @@ Ltext3:
 	ld   i1,#0x0
 	ld   i2,r0
 	call &_memset
-	.line 85
+	.line 90
 	ld   r14,fr
 	add  r14,#0xffffffb4
 	ld   i0,#LC4
@@ -549,7 +574,7 @@ Ltext3:
 	ld   i2,#0x40
 	call &_maGetSystemProperty
 	ld   [fr,-80],r14
-	.line 86
+	.line 91
 	ld   r14,[fr,-80]
 	ld   [sp],r14
 	ld   r14,fr
@@ -557,7 +582,7 @@ Ltext3:
 	ld   [sp,4],r14
 	ld   i0,#LC5
 	call &_lprintfln
-	.line 87
+	.line 92
 	ld   r14,fr
 	add  r14,#0xffffffac
 	ld   r0,fr
@@ -565,7 +590,7 @@ Ltext3:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 88
+	.line 93
 	ld   r14,fr
 	add  r14,#0xffffffa8
 	ld   i0,r14
@@ -587,12 +612,12 @@ Ltext3:
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L7
-	.line 90
+	.line 95
 	ld   i0,#0x1
 	ld   i1,#LC7
 	call &_maPanic
 L7:
-	.line 93
+	.line 98
 	ld   d0,[fr,-80]
 	.dlab LBB7
 	ld   r14,fr
@@ -603,13 +628,13 @@ L7:
 	ld   r14,d0
 	.dlab LBE6
 	.dlab LBE5
-	.line 95
+	.line 100
 	add  sp,#0x54
 	pop  rt,d0
 	ret
-	.stabs	"buf:(93,5)=ar(6,57);0;63;(0,19)",128,0,83,-76
-	.stabs	"res:(0,3)",128,0,85,-80
-	.stabs	"tmp:(10,1)",128,0,87,-84
+	.stabs	"buf:(95,6)=ar(6,57);0;63;(0,19)",128,0,88,-76
+	.stabs	"res:(0,3)",128,0,90,-80
+	.stabs	"tmp:(10,1)",128,0,92,-84
 	.stabn	192,0,0,LBB6-__Z19getSystemConnectionv
 	.stabn	224,0,0,LBE6-__Z19getSystemConnectionv
 Lscope2:
@@ -623,20 +648,20 @@ LC10:
 LC11:
 	.ascii " DAns LANGUAGE : %i: %s\12\0"
 .code
-	.stabs	"_Z17getSystemLanguagev:f(0,3)",36,0,99,__Z17getSystemLanguagev
+	.stabs	"_Z17getSystemLanguagev:f(0,3)",36,0,104,__Z17getSystemLanguagev
 
 .func __Z17getSystemLanguagev, 0, int
-	.line 99
+	.line 104
 	push rt,d0
 	sub  sp,#0x58
 	ld   fr,sp
 	add  fr,#0x64
 	.dlab LBB8
 	.dlab LBB9
-	.line 100
+	.line 105
 	ld   r14,#0x0
 	ld   [fr,-16],r14
-	.line 101
+	.line 106
 	ld.b r14,[&LC3]
 	ld.b [fr,-80],r14
 	ld   r14,fr
@@ -646,7 +671,7 @@ LC11:
 	ld   i1,#0x0
 	ld   i2,r0
 	call &_memset
-	.line 102
+	.line 107
 	ld   r14,fr
 	add  r14,#0xffffffb0
 	ld   i0,#LC8
@@ -654,7 +679,7 @@ LC11:
 	ld   i2,#0x40
 	call &_maGetSystemProperty
 	ld   [fr,-84],r14
-	.line 103
+	.line 108
 	ld   r14,[fr,-84]
 	ld   [sp],r14
 	ld   r14,fr
@@ -662,7 +687,7 @@ LC11:
 	ld   [sp,4],r14
 	ld   i0,#LC9
 	call &_lprintfln
-	.line 104
+	.line 109
 	ld   r14,fr
 	add  r14,#0xffffffa8
 	ld   r0,fr
@@ -670,7 +695,7 @@ LC11:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 105
+	.line 110
 	ld   r14,fr
 	add  r14,#0xffffffa4
 	ld   i0,r14
@@ -692,7 +717,7 @@ LC11:
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L9
-	.line 107
+	.line 112
 	ld   r14,[fr,-84]
 	ld   [sp],r14
 	ld   r14,fr
@@ -700,11 +725,11 @@ LC11:
 	ld   [sp,4],r14
 	ld   i0,#LC11
 	call &_lprintfln
-	.line 108
+	.line 113
 	ld   r14,#0x1
 	ld   [fr,-16],r14
 L9:
-	.line 110
+	.line 115
 	ld   d0,[fr,-16]
 	.dlab LBB10
 	ld   r14,fr
@@ -715,23 +740,23 @@ L9:
 	ld   r14,d0
 	.dlab LBE9
 	.dlab LBE8
-	.line 111
+	.line 116
 	add  sp,#0x58
 	pop  rt,d0
 	ret
-	.stabs	"language:(0,3)",128,0,100,-16
-	.stabs	"buf:(93,5)",128,0,101,-80
-	.stabs	"res:(0,3)",128,0,102,-84
-	.stabs	"tmp:(10,1)",128,0,104,-88
+	.stabs	"language:(0,3)",128,0,105,-16
+	.stabs	"buf:(95,6)",128,0,106,-80
+	.stabs	"res:(0,3)",128,0,107,-84
+	.stabs	"tmp:(10,1)",128,0,109,-88
 	.stabn	192,0,0,LBB9-__Z17getSystemLanguagev
 	.stabn	224,0,0,LBE9-__Z17getSystemLanguagev
 Lscope3:
-	.stabs	"_Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,113,__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
-	.stabs	"key:p(4,7)",160,0,113,-12
-	.stabs	"dst:p(94,6)",160,0,113,-16
+	.stabs	"_Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,118,__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
+	.stabs	"key:p(4,7)",160,0,118,-12
+	.stabs	"dst:p(96,6)",160,0,118,-16
 
 .func __Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE, 2, int
-	.line 113
+	.line 118
 	push rt,fr
 	sub  sp,#0x10
 	ld   fr,sp
@@ -740,46 +765,46 @@ Lscope3:
 	ld   [fr,-16],i1
 	.dlab LBB11
 	.dlab LBB12
-	.line 114
+	.line 119
 	ld   i0,[fr,-12]
 	ld   i1,#0x0
 	ld   i2,#0x0
 	call &_maGetSystemProperty
 	ld   [fr,-20],r14
-	.line 115
+	.line 120
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L11
-	.line 116
+	.line 121
 	ld   r14,[fr,-20]
 	ld   [fr,-24],r14
 	jp   #L10
 L11:
-	.line 117
+	.line 122
 	ld   r14,[fr,-20]
 	add  r14,#0xffffffff
 	ld   i0,[fr,-16]
 	ld   i1,r14
 	call &__ZN6MAUtil11BasicStringIcE6resizeEi
-	.line 118
+	.line 123
 	ld   i0,[fr,-16]
 	call &__ZN6MAUtil11BasicStringIcE7pointerEv
 	ld   i0,[fr,-12]
 	ld   i1,r14
 	ld   i2,[fr,-20]
 	call &_maGetSystemProperty
-	.line 119
+	.line 124
 	ld   r14,[fr,-20]
 	ld   [fr,-24],r14
 L10:
 	.dlab LBE12
 	.dlab LBE11
-	.line 120
+	.line 125
 	ld   r14,[fr,-24]
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-	.stabs	"size:(0,3)",128,0,114,-20
+	.stabs	"size:(0,3)",128,0,119,-20
 	.stabn	192,0,0,LBB12-__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE12-__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
 Lscope4:
@@ -795,10 +820,10 @@ LC15:
 LC16:
 	.ascii "C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h\0"
 .code
-	.stabs	"_Z12getLocalPathv:f(10,1)",36,0,122,__Z12getLocalPathv
+	.stabs	"_Z12getLocalPathv:f(10,1)",36,0,127,__Z12getLocalPathv
 
 .func __Z12getLocalPathv, 1, int
-	.line 122
+	.line 127
 	push rt,fr
 	sub  sp,#0x14
 	ld   fr,sp
@@ -806,12 +831,12 @@ LC16:
 	ld   [fr,-28],i0
 	.dlab LBB13
 	.dlab LBB14
-	.line 124
+	.line 129
 	ld   r14,fr
 	add  r14,#0xfffffff4
 	ld   i0,r14
 	call &__ZN10FileListerC1Ev
-	.line 125
+	.line 130
 	ld   r14,fr
 	add  r14,#0xfffffff4
 	ld   i0,r14
@@ -819,23 +844,23 @@ LC16:
 	ld   i2,#LC13
 	ld   i3,#0x0
 	call &__ZN10FileLister5startEPKcS1_i
-	.line 127
+	.line 132
 	ld   r14,fr
 	add  r14,#0xfffffff0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 129
+	.line 134
 	ld   r14,fr
 	add  r14,#0xfffffff0
 	ld   i0,#LC14
 	ld   i1,r14
 	call &__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
 	ld   [fr,-20],r14
-	.line 131
+	.line 136
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
 	jc   le,r0,r14,#L13
-	.line 133
+	.line 138
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -865,7 +890,7 @@ LC16:
 	.dlab LBE15
 	jp   #L12
 L13:
-	.line 137
+	.line 142
 	ld   r14,fr
 	add  r14,#0xfffffff4
 	ld   i0,r14
@@ -873,7 +898,7 @@ L13:
 	ld   i2,#LC13
 	ld   i3,#0x0
 	call &__ZN10FileLister5startEPKcS1_i
-	.line 138
+	.line 143
 	ld   r14,fr
 	add  r14,#0xfffffff4
 	ld   r0,fr
@@ -882,7 +907,7 @@ L13:
 	ld   i1,r0
 	call &__ZN10FileLister4nextERN6MAUtil11BasicStringIcEE
 	ld   [fr,-20],r14
-	.line 139
+	.line 144
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
 	jc   gt,r0,r14,#L14
@@ -890,10 +915,10 @@ L13:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0x8b
+	ld   i2,#0x90
 	call &_bfeHandler
 L14:
-	.line 140
+	.line 145
 	ld   r14,fr
 	add  r14,#0xfffffff0
 	ld   i0,[fr,-28]
@@ -912,19 +937,19 @@ L12:
 	.dlab LBE16
 	.dlab LBE14
 	.dlab LBE13
-	.line 141
+	.line 146
 	ld   r14,[fr,-28]
 	add  sp,#0x14
 	pop  rt,fr
 	ret
-	.stabs	"fl:(94,1)",128,0,124,-12
-	.stabs	"path:(10,1)",128,0,127,-16
-	.stabs	"result:(0,3)",128,0,129,-20
+	.stabs	"fl:(96,1)",128,0,129,-12
+	.stabs	"path:(10,1)",128,0,132,-16
+	.stabs	"result:(0,3)",128,0,134,-20
 	.stabn	192,0,0,LBB14-__Z12getLocalPathv
 	.stabn	224,0,0,LBE14-__Z12getLocalPathv
 Lscope5:
 	.stabs	"_ZN10FileListerD1Ev:f(0,6)",36,0,37,__ZN10FileListerD1Ev
-	.stabs	"this:p(93,6)=k(94,3)",160,0,37,-12
+	.stabs	"this:p(95,7)=k(96,3)",160,0,37,-12
 
 .func __ZN10FileListerD1Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext4
@@ -945,7 +970,7 @@ Ltext4:
 	ret
 Lscope6:
 	.stabs	"_ZN10FileListerC1Ev:f(0,6)",36,0,36,__ZN10FileListerC1Ev
-	.stabs	"this:p(93,6)",160,0,36,-12
+	.stabs	"this:p(95,7)",160,0,36,-12
 
 .func __ZN10FileListerC1Ev, 1, void
 	.line 36
@@ -979,13 +1004,13 @@ LC21:
 LC22:
 	.ascii "Done.\12\0"
 .code
-	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(93,3)",36,0,143,__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabs	"config:p(94,6)",160,0,143,-20
+	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(95,3)",36,0,148,__Z9tryToReadRN6MAUtil11BasicStringIcEE
+	.stabs	"config:p(96,6)",160,0,148,-20
 
 .func __Z9tryToReadRN6MAUtil11BasicStringIcEE, 1, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext5
 Ltext5:
-	.line 143
+	.line 148
 	push rt,d1
 	sub  sp,#0x24
 	ld   fr,sp
@@ -993,7 +1018,7 @@ Ltext5:
 	ld   [fr,-20],i0
 	.dlab LBB19
 	.dlab LBB20
-	.line 145
+	.line 150
 	ld   d0,fr
 	add  d0,#0xffffffe8
 	ld   r14,fr
@@ -1021,7 +1046,7 @@ Ltext5:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 148
+	.line 153
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1029,7 +1054,7 @@ Ltext5:
 	ld   [sp],r14
 	ld   i0,#LC18
 	call &_lprintfln
-	.line 149
+	.line 154
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1038,12 +1063,12 @@ Ltext5:
 	ld   i1,#0x1
 	call &_maFileOpen
 	ld   [fr,-36],r14
-	.line 150
+	.line 155
 	ld   r0,[fr,-36]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L21
 	.dlab LBB21
-	.line 152
+	.line 157
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1053,11 +1078,11 @@ Ltext5:
 	ld   [fr,-48],r14
 	jp   #L20
 L21:
-	.line 156
+	.line 161
 	ld   i0,[fr,-36]
 	call &_maFileExists
 	ld   [fr,-40],r14
-	.line 157
+	.line 162
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L22
@@ -1065,18 +1090,18 @@ L21:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0x9d
+	ld   i2,#0xa2
 	call &_bfeHandler
 L22:
-	.line 158
+	.line 163
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
 	jc   ne,r0,r14,#L24
-	.line 160
+	.line 165
 	ld   i0,[fr,-36]
 	call &_maFileClose
 	.dlab LBB22
-	.line 161
+	.line 166
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1086,16 +1111,16 @@ L22:
 	ld   [fr,-48],r14
 	jp   #L20
 L24:
-	.line 165
+	.line 170
 	ld   i0,[fr,-36]
 	call &_maFileSize
 	ld   [fr,-44],r14
-	.line 166
+	.line 171
 	ld   r14,[fr,-44]
 	ld   [sp],r14
 	ld   i0,#LC19
 	call &_lprintfln
-	.line 167
+	.line 172
 	ld   r0,[fr,-44]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L25
@@ -1103,10 +1128,10 @@ L24:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xa7
+	ld   i2,#0xac
 	call &_bfeHandler
 L25:
-	.line 171
+	.line 176
 	ld   r0,[fr,-44]
 	ld   r14,#0x257
 	jc   le,r0,r14,#L27
@@ -1114,16 +1139,16 @@ L25:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xab
+	ld   i2,#0xb0
 	call &_bfeHandler
 L27:
-	.line 172
+	.line 177
 	ld   i0,[fr,-36]
 	ld   i1,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
 	ld   i2,[fr,-44]
 	call &_maFileRead
 	ld   [fr,-40],r14
-	.line 173
+	.line 178
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L29
@@ -1131,10 +1156,10 @@ L27:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xad
+	ld   i2,#0xb2
 	call &_bfeHandler
 L29:
-	.line 174
+	.line 179
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
@@ -1149,22 +1174,22 @@ L29:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 176
+	.line 181
 	ld   r14,#0x0
 	ld.b [&_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data+300],r14
-	.line 177
+	.line 182
 	ld   r14,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
 	ld   [sp],r14
 	ld   i0,#LC20
 	call &_lprintfln
-	.line 180
+	.line 185
 	ld   i0,#LC21
 	call &_lprintfln
-	.line 181
+	.line 186
 	ld   i0,[fr,-36]
 	call &_maFileClose
 	ld   [fr,-40],r14
-	.line 182
+	.line 187
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L31
@@ -1172,14 +1197,14 @@ L29:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xb6
+	ld   i2,#0xbb
 	call &_bfeHandler
 L31:
-	.line 184
+	.line 189
 	ld   i0,#LC22
 	call &_lprintfln
 	.dlab LBB23
-	.line 185
+	.line 190
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1190,28 +1215,28 @@ L31:
 L20:
 	.dlab LBE20
 	.dlab LBE19
-	.line 186
+	.line 191
 	ld   r14,[fr,-48]
 	add  sp,#0x24
 	pop  rt,d1
 	ret
-	.stabs	"filename:(10,1)",128,0,145,-24
-	.stabs	"file:(6,10)",128,0,149,-36
-	.stabs	"res:(0,3)",128,0,156,-40
-	.stabs	"size:(0,3)",128,0,165,-44
-	.stabs	"data:V(93,7)=ar(6,57);0;599;(0,19)",40,0,170,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
+	.stabs	"filename:(10,1)",128,0,150,-24
+	.stabs	"file:(6,10)",128,0,154,-36
+	.stabs	"res:(0,3)",128,0,161,-40
+	.stabs	"size:(0,3)",128,0,170,-44
+	.stabs	"data:V(95,8)=ar(6,57);0;599;(0,19)",40,0,175,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
 	.stabn	192,0,0,LBB20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
 Lscope8:
-	.stabs	"maFileRead:f(0,3)",36,0,5792,_maFileRead
-	.stabs	"file:p(6,10)",160,0,5792,-12
-	.stabs	"dst:p(6,9)",160,0,5792,-16
-	.stabs	"len:p(0,3)",160,0,5792,-20
+	.stabs	"maFileRead:f(0,3)",36,0,6355,_maFileRead
+	.stabs	"file:p(6,10)",160,0,6355,-12
+	.stabs	"dst:p(6,9)",160,0,6355,-16
+	.stabs	"len:p(0,3)",160,0,6355,-20
 
 .func _maFileRead, 3, int
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext6
 Ltext6:
-	.line 5792
+	.line 6355
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -1220,93 +1245,93 @@ Ltext6:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	.dlab LBB24
-	.line 5793
+	.line 6356
 	ld   i0,#0x35
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
 	.dlab LBE24
-	.line 5794
+	.line 6357
 	add  sp,#0xc
 	pop  rt,fr
 	ret
 Lscope9:
-	.stabs	"maFileSize:f(0,3)",36,0,5691,_maFileSize
-	.stabs	"file:p(6,10)",160,0,5691,-12
+	.stabs	"maFileSize:f(0,3)",36,0,6254,_maFileSize
+	.stabs	"file:p(6,10)",160,0,6254,-12
 
 .func _maFileSize, 1, int
-	.line 5691
+	.line 6254
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
 	.dlab LBB25
-	.line 5692
+	.line 6255
 	ld   i0,#0x2d
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE25
-	.line 5693
+	.line 6256
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope10:
-	.stabs	"maFileClose:f(0,3)",36,0,5662,_maFileClose
-	.stabs	"file:p(6,10)",160,0,5662,-12
+	.stabs	"maFileClose:f(0,3)",36,0,6225,_maFileClose
+	.stabs	"file:p(6,10)",160,0,6225,-12
 
 .func _maFileClose, 1, int
-	.line 5662
+	.line 6225
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
 	.dlab LBB26
-	.line 5663
+	.line 6226
 	ld   i0,#0x2a
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE26
-	.line 5664
+	.line 6227
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope11:
-	.stabs	"maFileExists:f(0,3)",36,0,5655,_maFileExists
-	.stabs	"file:p(6,10)",160,0,5655,-12
+	.stabs	"maFileExists:f(0,3)",36,0,6218,_maFileExists
+	.stabs	"file:p(6,10)",160,0,6218,-12
 
 .func _maFileExists, 1, int
-	.line 5655
+	.line 6218
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
 	.dlab LBB27
-	.line 5656
+	.line 6219
 	ld   i0,#0x29
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE27
-	.line 5657
+	.line 6220
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope12:
-	.stabs	"maFileOpen:f(6,10)",36,0,5648,_maFileOpen
-	.stabs	"path:p(4,7)",160,0,5648,-12
-	.stabs	"mode:p(0,3)",160,0,5648,-16
+	.stabs	"maFileOpen:f(6,10)",36,0,6211,_maFileOpen
+	.stabs	"path:p(4,7)",160,0,6211,-12
+	.stabs	"mode:p(0,3)",160,0,6211,-16
 
 .func _maFileOpen, 2, int
-	.line 5648
+	.line 6211
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
@@ -1314,14 +1339,14 @@ Lscope12:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	.dlab LBB28
-	.line 5649
+	.line 6212
 	ld   i0,#0x28
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE28
-	.line 5650
+	.line 6213
 	add  sp,#0x8
 	pop  rt,fr
 	ret
@@ -1340,17 +1365,17 @@ LC27:
 LC28:
 	.ascii "}\0"
 .code
-	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx:f(93,3)",36,0,188,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.stabs	"login:p(94,6)",160,0,188,-44
-	.stabs	"tokenMobile:p(94,6)",160,0,188,-48
-	.stabs	"tokenAuthent:p(94,6)",160,0,188,-52
-	.stabs	"mode:p(94,6)",160,0,188,-56
-	.stabs	"idMedia:p(93,8)=&(0,15)",160,0,188,0
+	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx:f(95,3)",36,0,193,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
+	.stabs	"login:p(96,6)",160,0,193,-44
+	.stabs	"tokenMobile:p(96,6)",160,0,193,-48
+	.stabs	"tokenAuthent:p(96,6)",160,0,193,-52
+	.stabs	"mode:p(96,6)",160,0,193,-56
+	.stabs	"idMedia:p(95,9)=&(0,15)",160,0,193,0
 
 .func __Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx, 5, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext7
 Ltext7:
-	.line 188
+	.line 193
 	push rt,d7
 	sub  sp,#0x68
 	ld   fr,sp
@@ -1361,7 +1386,7 @@ Ltext7:
 	ld   [fr,-56],i3
 	.dlab LBB29
 	.dlab LBB30
-	.line 190
+	.line 195
 	ld   d0,fr
 	add  d0,#0xffffffc4
 	ld   r14,fr
@@ -1389,7 +1414,7 @@ Ltext7:
 	add  r14,#0xffffffc0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 194
+	.line 199
 	ld   r14,fr
 	add  r14,#0xffffffc4
 	ld   i0,r14
@@ -1398,12 +1423,12 @@ Ltext7:
 	ld   i1,#0x3
 	call &_maFileOpen
 	ld   [fr,-72],r14
-	.line 195
+	.line 200
 	ld   r0,[fr,-72]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L39
 	.dlab LBB31
-	.line 197
+	.line 202
 	ld   r14,fr
 	add  r14,#0xffffffc4
 	ld   i0,r14
@@ -1413,11 +1438,11 @@ Ltext7:
 	ld   [fr,-136],r14
 	jp   #L38
 L39:
-	.line 201
+	.line 206
 	ld   i0,[fr,-72]
 	call &_maFileExists
 	ld   [fr,-76],r14
-	.line 202
+	.line 207
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L40
@@ -1425,19 +1450,19 @@ L39:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xca
+	ld   i2,#0xcf
 	call &_bfeHandler
 L40:
-	.line 203
+	.line 208
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L42
-	.line 206
+	.line 211
 	ld   i0,[fr,-72]
 	ld   i1,#0x0
 	call &_maFileTruncate
 	ld   [fr,-76],r14
-	.line 207
+	.line 212
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L45
@@ -1445,14 +1470,14 @@ L40:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xcf
+	ld   i2,#0xd4
 	call &_bfeHandler
 L42:
-	.line 211
+	.line 216
 	ld   i0,[fr,-72]
 	call &_maFileCreate
 	ld   [fr,-76],r14
-	.line 212
+	.line 217
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   ge,r0,r14,#L45
@@ -1460,10 +1485,10 @@ L42:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xd4
+	ld   i2,#0xd9
 	call &_bfeHandler
 L45:
-	.line 217
+	.line 222
 	ld   d1,fr
 	add  d1,#0xffffffbc
 	ld   d2,fr
@@ -1648,7 +1673,7 @@ L45:
 	add  r14,#0xffffff94
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 219
+	.line 224
 	ld   r14,fr
 	add  r14,#0xffffffbc
 	ld   i0,r14
@@ -1663,7 +1688,7 @@ L45:
 	ld   i2,r14
 	call &_maFileWrite
 	ld   [fr,-76],r14
-	.line 221
+	.line 226
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L48
@@ -1671,14 +1696,14 @@ L45:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xdd
+	ld   i2,#0xe2
 	call &_bfeHandler
 L48:
-	.line 225
+	.line 230
 	ld   i0,[fr,-72]
 	call &_maFileClose
 	ld   [fr,-76],r14
-	.line 226
+	.line 231
 	ld   r0,[fr,-76]
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L50
@@ -1686,11 +1711,11 @@ L48:
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xe2
+	ld   i2,#0xe7
 	call &_bfeHandler
 L50:
 	.dlab LBB32
-	.line 229
+	.line 234
 	ld   r14,fr
 	add  r14,#0xffffffbc
 	ld   i0,r14
@@ -1705,27 +1730,27 @@ L50:
 L38:
 	.dlab LBE30
 	.dlab LBE29
-	.line 230
+	.line 235
 	ld   r14,[fr,-136]
 	add  sp,#0x68
 	pop  rt,d7
 	ret
-	.stabs	"filename:(10,1)",128,0,190,-60
-	.stabs	"file:(6,10)",128,0,194,-72
-	.stabs	"res:(0,3)",128,0,201,-76
-	.stabs	"tmp:(10,1)",128,0,217,-68
+	.stabs	"filename:(10,1)",128,0,195,-60
+	.stabs	"file:(6,10)",128,0,199,-72
+	.stabs	"res:(0,3)",128,0,206,-76
+	.stabs	"tmp:(10,1)",128,0,222,-68
 	.stabn	192,0,0,LBB30-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
 	.stabn	224,0,0,LBE30-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
 Lscope14:
-	.stabs	"maFileWrite:f(0,3)",36,0,5769,_maFileWrite
-	.stabs	"file:p(6,10)",160,0,5769,-12
-	.stabs	"src:p(14,5)",160,0,5769,-16
-	.stabs	"len:p(0,3)",160,0,5769,-20
+	.stabs	"maFileWrite:f(0,3)",36,0,6332,_maFileWrite
+	.stabs	"file:p(6,10)",160,0,6332,-12
+	.stabs	"src:p(14,5)",160,0,6332,-16
+	.stabs	"len:p(0,3)",160,0,6332,-20
 
 .func _maFileWrite, 3, int
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext8
 Ltext8:
-	.line 5769
+	.line 6332
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -1734,47 +1759,47 @@ Ltext8:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	.dlab LBB33
-	.line 5770
+	.line 6333
 	ld   i0,#0x33
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
 	.dlab LBE33
-	.line 5771
+	.line 6334
 	add  sp,#0xc
 	pop  rt,fr
 	ret
 Lscope15:
-	.stabs	"maFileCreate:f(0,3)",36,0,5672,_maFileCreate
-	.stabs	"file:p(6,10)",160,0,5672,-12
+	.stabs	"maFileCreate:f(0,3)",36,0,6235,_maFileCreate
+	.stabs	"file:p(6,10)",160,0,6235,-12
 
 .func _maFileCreate, 1, int
-	.line 5672
+	.line 6235
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
 	.dlab LBB34
-	.line 5673
+	.line 6236
 	ld   i0,#0x2b
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE34
-	.line 5674
+	.line 6237
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope16:
-	.stabs	"maFileTruncate:f(0,3)",36,0,5758,_maFileTruncate
-	.stabs	"file:p(6,10)",160,0,5758,-12
-	.stabs	"offset:p(0,3)",160,0,5758,-16
+	.stabs	"maFileTruncate:f(0,3)",36,0,6321,_maFileTruncate
+	.stabs	"file:p(6,10)",160,0,6321,-12
+	.stabs	"offset:p(0,3)",160,0,6321,-16
 
 .func _maFileTruncate, 2, int
-	.line 5758
+	.line 6321
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
@@ -1782,14 +1807,14 @@ Lscope16:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	.dlab LBB35
-	.line 5759
+	.line 6322
 	ld   i0,#0x32
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,#0x0
 	call &_maIOCtl
 	.dlab LBE35
-	.line 5760
+	.line 6323
 	add  sp,#0x8
 	pop  rt,fr
 	ret
@@ -1801,58 +1826,58 @@ Lscope17:
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/MAP/DateTime.h",130,0,0,0
 	.stabs	"c:/MoSync/include/MAP/TimeSpan.h",130,0,0,0
-	.stabs	"TimeSpan:Tt(99,1)=s4mTicks:/0(92,1),0,32;__base_ctor::(99,2)=#(99,1),(0,6),(99,3)=*(99,1),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Ei;2A.;__comp_ctor::(99,2):_ZN7MAPUtil8TimeSpanC1Ei;2A.;__base_ctor::(99,4)=#(99,1),(0,6),(99,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiii;2A.;__comp_ctor::(99,4):_ZN7MAPUtil8TimeSpanC1Eiii;2A.;__base_ctor::(99,5)=#(99,1),(0,6),(99,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiiii;2A.;__comp_ctor::(99,5):_ZN7MAPUtil8TimeSpanC1Eiiii;2A.;maxValue::(99,6)=f(99,1):_ZN7MAPUtil8TimeSpan8maxValueEv;2A?;minValue::(99,6):_ZN7MAPUtil8TimeSpan8minValueEv;2A?;zero::(99,6):_ZN7MAPUtil8TimeSpan4zeroEv;2A?;getTicks::(99,7)=#(99,1),(92,1),(99,8)=*(99,9)=k(99,1),(0,6);:_ZNK7MAPUtil8TimeSpan8getTicksEv;2B.;getDays::(99,10)=#(99,1),(0,3),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan7getDaysEv;2B.;getHours::(99,10):_ZNK7MAPUtil8TimeSpan8getHoursEv;2B.;getMinutes::(99,10):_ZNK7MAPUtil8TimeSpan10getMinutesEv;2B.;getSeconds::(99,10):_ZNK7MAPUtil8TimeSpan10getSecondsEv;2B.;getTotalDays::(99,11)=#(99,1),(0,8),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan12getTotalDaysEv;2B.;getTotalHours::(99,11):_ZNK7MAPUtil8TimeSpan13getTotalHoursEv;2B.;getTotalMinutes::(99,11):_ZNK7MAPUtil8TimeSpan15getTotalMinutesEv;2B.;getTotalSeconds::(99,11):_ZNK7MAPUtil8TimeSpan15getTotalSecondsEv;2B.;add::(99,12)=#(99,1),(99,1),(99,8),(99,1),(0,6);:_ZNK7MAPUtil8TimeSpan3addES0_;2B.;duration::(99,13)=#(99,1),(99,1),(99,8),(0,6);:_ZNK7MAPUtil8TimeSpan8durationEv;2B.;negate::(99,13):_ZNK7MAPUtil8TimeSpan6negateEv;2B.;subtract::(99,12):_ZNK7MAPUtil8TimeSpan8subtractES0_;2B.;fromDays::(99,14)=f(99,1):_ZN7MAPUtil8TimeSpan8fromDaysEd;2A?;fromHours::(99,14):_ZN7MAPUtil8TimeSpan9fromHoursEd;2A?;fromMinutes::(99,14):_ZN7MAPUtil8TimeSpan11fromMinutesEd;2A?;fromSeconds::(99,14):_ZN7MAPUtil8TimeSpan11fromSecondsEd;2A?;operator=::(99,15)=#(99,1),(99,16)=&(99,1),(99,3),(99,17)=&(99,9),(0,6);:_ZN7MAPUtil8TimeSpanaSERKS0_;2A.;__base_ctor::(99,18)=#(99,1),(0,6),(99,3),(99,17),(0,6);:_ZN7MAPUtil8TimeSpanC2ERKS0_;2A.;__comp_ctor::(99,18):_ZN7MAPUtil8TimeSpanC1ERKS0_;2A.;;",128,0,37,0
+	.stabs	"TimeSpan:Tt(101,1)=s4mTicks:/0(94,1),0,32;__base_ctor::(101,2)=#(101,1),(0,6),(101,3)=*(101,1),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Ei;2A.;__comp_ctor::(101,2):_ZN7MAPUtil8TimeSpanC1Ei;2A.;__base_ctor::(101,4)=#(101,1),(0,6),(101,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiii;2A.;__comp_ctor::(101,4):_ZN7MAPUtil8TimeSpanC1Eiii;2A.;__base_ctor::(101,5)=#(101,1),(0,6),(101,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8TimeSpanC2Eiiii;2A.;__comp_ctor::(101,5):_ZN7MAPUtil8TimeSpanC1Eiiii;2A.;maxValue::(101,6)=f(101,1):_ZN7MAPUtil8TimeSpan8maxValueEv;2A?;minValue::(101,6):_ZN7MAPUtil8TimeSpan8minValueEv;2A?;zero::(101,6):_ZN7MAPUtil8TimeSpan4zeroEv;2A?;getTicks::(101,7)=#(101,1),(94,1),(101,8)=*(101,9)=k(101,1),(0,6);:_ZNK7MAPUtil8TimeSpan8getTicksEv;2B.;getDays::(101,10)=#(101,1),(0,3),(101,8),(0,6);:_ZNK7MAPUtil8TimeSpan7getDaysEv;2B.;getHours::(101,10):_ZNK7MAPUtil8TimeSpan8getHoursEv;2B.;getMinutes::(101,10):_ZNK7MAPUtil8TimeSpan10getMinutesEv;2B.;getSeconds::(101,10):_ZNK7MAPUtil8TimeSpan10getSecondsEv;2B.;getTotalDays::(101,11)=#(101,1),(0,8),(101,8),(0,6);:_ZNK7MAPUtil8TimeSpan12getTotalDaysEv;2B.;getTotalHours::(101,11):_ZNK7MAPUtil8TimeSpan13getTotalHoursEv;2B.;getTotalMinutes::(101,11):_ZNK7MAPUtil8TimeSpan15getTotalMinutesEv;2B.;getTotalSeconds::(101,11):_ZNK7MAPUtil8TimeSpan15getTotalSecondsEv;2B.;add::(101,12)=#(101,1),(101,1),(101,8),(101,1),(0,6);:_ZNK7MAPUtil8TimeSpan3addES0_;2B.;duration::(101,13)=#(101,1),(101,1),(101,8),(0,6);:_ZNK7MAPUtil8TimeSpan8durationEv;2B.;negate::(101,13):_ZNK7MAPUtil8TimeSpan6negateEv;2B.;subtract::(101,12):_ZNK7MAPUtil8TimeSpan8subtractES0_;2B.;fromDays::(101,14)=f(101,1):_ZN7MAPUtil8TimeSpan8fromDaysEd;2A?;fromHours::(101,14):_ZN7MAPUtil8TimeSpan9fromHoursEd;2A?;fromMinutes::(101,14):_ZN7MAPUtil8TimeSpan11fromMinutesEd;2A?;fromSeconds::(101,14):_ZN7MAPUtil8TimeSpan11fromSecondsEd;2A?;operator=::(101,15)=#(101,1),(101,16)=&(101,1),(101,3),(101,17)=&(101,9),(0,6);:_ZN7MAPUtil8TimeSpanaSERKS0_;2A.;__base_ctor::(101,18)=#(101,1),(0,6),(101,3),(101,17),(0,6);:_ZN7MAPUtil8TimeSpanC2ERKS0_;2A.;__comp_ctor::(101,18):_ZN7MAPUtil8TimeSpanC1ERKS0_;2A.;;",128,0,37,0
 	.stabn	162,0,0,0
-	.stabs	"DateTime:Tt(98,1)=s4mTicks:/0(92,1),0,32;__base_ctor::(98,2)=#(98,1),(0,6),(98,3)=*(98,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ev;2A.;__comp_ctor::(98,2):_ZN7MAPUtil8DateTimeC1Ev;2A.;__base_ctor::(98,4)=#(98,1),(0,6),(98,3),(92,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ei;2A.;__comp_ctor::(98,4):_ZN7MAPUtil8DateTimeC1Ei;2A.;__base_ctor::(98,5)=#(98,1),(0,6),(98,3),(92,5),(0,6);:_ZN7MAPUtil8DateTimeC2EP2tm;2A.;__comp_ctor::(98,5):_ZN7MAPUtil8DateTimeC1EP2tm;2A.;__base_ctor::(98,6)=#(98,1),(0,6),(98,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiii;2A.;__comp_ctor::(98,6):_ZN7MAPUtil8DateTimeC1Eiii;2A.;__base_ctor::(98,7)=#(98,1),(0,6),(98,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiiiiii;2A.;__comp_ctor::(98,7):_ZN7MAPUtil8DateTimeC1Eiiiiii;2A.;__base_ctor::(98,8)=#(98,1),(0,6),(98,3),(4,7),(0,6);:_ZN7MAPUtil8DateTimeC2EPKc;2A.;__comp_ctor::(98,8):_ZN7MAPUtil8DateTimeC1EPKc;2A.;__base_dtor::(98,2):_ZN7MAPUtil8DateTimeD2Ev;2A.;__comp_dtor::(98,2):_ZN7MAPUtil8DateTimeD1Ev;2A.;maxValue::(98,9)=f(98,1):_ZN7MAPUtil8DateTime8maxValueEv;2A?;minValue::(98,9):_ZN7MAPUtil8DateTime8minValueEv;2A?;now::(98,9):_ZN7MAPUtil8DateTime3nowEv;2A?;today::(98,9):_ZN7MAPUtil8DateTime5todayEv;2A?;timeOfDay::(98,10)=#(98,1),(99,1),(98,11)=*(98,12)=k(98,1),(0,6);:_ZNK7MAPUtil8DateTime9timeOfDayEv;2B.;getTicks::(98,13)=#(98,1),(92,1),(98,11),(0,6);:_ZNK7MAPUtil8DateTime8getTicksEv;2B.;getYear::(98,14)=#(98,1),(0,3),(98,11),(0,6);:_ZNK7MAPUtil8DateTime7getYearEv;2B.;getMonth::(98,14):_ZNK7MAPUtil8DateTime8getMonthEv;2B.;getWeekday::(98,14):_ZNK7MAPUtil8DateTime10getWeekdayEv;2B.;getDay::(98,14):_ZNK7MAPUtil8DateTime6getDayEv;2B.;getHour::(98,14):_ZNK7MAPUtil8DateTime7getHourEv;2B.;getMinute::(98,14):_ZNK7MAPUtil8DateTime9getMinuteEv;2B.;getSecond::(98,14):_ZNK7MAPUtil8DateTime9getSecondEv;2B.;add::(98,15)=#(98,1),(98,1),(98,11),(99,1),(0,6);:_ZNK7MAPUtil8DateTime3addENS_8TimeSpanE;2B.;addYears::(98,16)=#(98,1),(98,1),(98,11),(0,3),(0,6);:_ZNK7MAPUtil8DateTime8addYearsEi;2B.;addMonths::(98,16):_ZNK7MAPUtil8DateTime9addMonthsEi;2B.;addDays::(98,17)=#(98,1),(98,1),(98,11),(0,8),(0,6);:_ZNK7MAPUtil8DateTime7addDaysEd;2B.;addHours::(98,17):_ZNK7MAPUtil8DateTime8addHoursEd;2B.;addMinutes::(98,17):_ZNK7MAPUtil8DateTime10addMinutesEd;2B.;addSeconds::(98,17):_ZNK7MAPUtil8DateTime10addSecondsEd;2B.;addTicks::(98,16):_ZNK7MAPUtil8DateTime8addTicksEi;2B.;subtract::(98,18)=#(98,1),(99,1),(98,11),(98,1),(0,6);:_ZNK7MAPUtil8DateTime8subtractES0_;2B.(98,15):_ZNK7MAPUtil8DateTime8subtractENS_8TimeSpanE;2B.;operator=::(98,19)=#(98,1),(98,20)=&(98,1),(98,3),(98,21)=&(98,12),(0,6);:_ZN7MAPUtil8DateTimeaSERKS0_;2A.;__base_ctor::(98,22)=#(98,1),(0,6),(98,3),(98,21),(0,6);:_ZN7MAPUtil8DateTimeC2ERKS0_;2A.;__comp_ctor::(98,22):_ZN7MAPUtil8DateTimeC1ERKS0_;2A.;;",128,0,41,0
+	.stabs	"DateTime:Tt(100,1)=s4mTicks:/0(94,1),0,32;__base_ctor::(100,2)=#(100,1),(0,6),(100,3)=*(100,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ev;2A.;__comp_ctor::(100,2):_ZN7MAPUtil8DateTimeC1Ev;2A.;__base_ctor::(100,4)=#(100,1),(0,6),(100,3),(94,1),(0,6);:_ZN7MAPUtil8DateTimeC2Ei;2A.;__comp_ctor::(100,4):_ZN7MAPUtil8DateTimeC1Ei;2A.;__base_ctor::(100,5)=#(100,1),(0,6),(100,3),(94,5),(0,6);:_ZN7MAPUtil8DateTimeC2EP2tm;2A.;__comp_ctor::(100,5):_ZN7MAPUtil8DateTimeC1EP2tm;2A.;__base_ctor::(100,6)=#(100,1),(0,6),(100,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiii;2A.;__comp_ctor::(100,6):_ZN7MAPUtil8DateTimeC1Eiii;2A.;__base_ctor::(100,7)=#(100,1),(0,6),(100,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,3),(0,6);:_ZN7MAPUtil8DateTimeC2Eiiiiii;2A.;__comp_ctor::(100,7):_ZN7MAPUtil8DateTimeC1Eiiiiii;2A.;__base_ctor::(100,8)=#(100,1),(0,6),(100,3),(4,7),(0,6);:_ZN7MAPUtil8DateTimeC2EPKc;2A.;__comp_ctor::(100,8):_ZN7MAPUtil8DateTimeC1EPKc;2A.;__base_dtor::(100,2):_ZN7MAPUtil8DateTimeD2Ev;2A.;__comp_dtor::(100,2):_ZN7MAPUtil8DateTimeD1Ev;2A.;maxValue::(100,9)=f(100,1):_ZN7MAPUtil8DateTime8maxValueEv;2A?;minValue::(100,9):_ZN7MAPUtil8DateTime8minValueEv;2A?;now::(100,9):_ZN7MAPUtil8DateTime3nowEv;2A?;today::(100,9):_ZN7MAPUtil8DateTime5todayEv;2A?;timeOfDay::(100,10)=#(100,1),(101,1),(100,11)=*(100,12)=k(100,1),(0,6);:_ZNK7MAPUtil8DateTime9timeOfDayEv;2B.;getTicks::(100,13)=#(100,1),(94,1),(100,11),(0,6);:_ZNK7MAPUtil8DateTime8getTicksEv;2B.;getYear::(100,14)=#(100,1),(0,3),(100,11),(0,6);:_ZNK7MAPUtil8DateTime7getYearEv;2B.;getMonth::(100,14):_ZNK7MAPUtil8DateTime8getMonthEv;2B.;getWeekday::(100,14):_ZNK7MAPUtil8DateTime10getWeekdayEv;2B.;getDay::(100,14):_ZNK7MAPUtil8DateTime6getDayEv;2B.;getHour::(100,14):_ZNK7MAPUtil8DateTime7getHourEv;2B.;getMinute::(100,14):_ZNK7MAPUtil8DateTime9getMinuteEv;2B.;getSecond::(100,14):_ZNK7MAPUtil8DateTime9getSecondEv;2B.;add::(100,15)=#(100,1),(100,1),(100,11),(101,1),(0,6);:_ZNK7MAPUtil8DateTime3addENS_8TimeSpanE;2B.;addYears::(100,16)=#(100,1),(100,1),(100,11),(0,3),(0,6);:_ZNK7MAPUtil8DateTime8addYearsEi;2B.;addMonths::(100,16):_ZNK7MAPUtil8DateTime9addMonthsEi;2B.;addDays::(100,17)=#(100,1),(100,1),(100,11),(0,8),(0,6);:_ZNK7MAPUtil8DateTime7addDaysEd;2B.;addHours::(100,17):_ZNK7MAPUtil8DateTime8addHoursEd;2B.;addMinutes::(100,17):_ZNK7MAPUtil8DateTime10addMinutesEd;2B.;addSeconds::(100,17):_ZNK7MAPUtil8DateTime10addSecondsEd;2B.;addTicks::(100,16):_ZNK7MAPUtil8DateTime8addTicksEi;2B.;subtract::(100,18)=#(100,1),(101,1),(100,11),(100,1),(0,6);:_ZNK7MAPUtil8DateTime8subtractES0_;2B.(100,15):_ZNK7MAPUtil8DateTime8subtractENS_8TimeSpanE;2B.;operator=::(100,19)=#(100,1),(100,20)=&(100,1),(100,3),(100,21)=&(100,12),(0,6);:_ZN7MAPUtil8DateTimeaSERKS0_;2A.;__base_ctor::(100,22)=#(100,1),(0,6),(100,3),(100,21),(0,6);:_ZN7MAPUtil8DateTimeC2ERKS0_;2A.;__comp_ctor::(100,22):_ZN7MAPUtil8DateTimeC1ERKS0_;2A.;;",128,0,41,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/notification/LocalNotification.h",130,0,0,0
-	.stabs	"NotificationFlag:t(100,1)=eNOTIFICATION_FLAG_INSISTENT:4,NOTIFICATION_FLAG_NO_CLEAR:32,NOTIFICATION_FLAG_HIGH_PRIORITY:128,NOTIFICATION_FLAG_AUTO_CANCEL:16,;",128,0,59,0
-	.stabs	"NotificationDisplayFlag:t(100,2)=eNOTIFICATION_DISPLAY_DEFAULT:0,NOTIFICATION_DISPLAY_ANYTIME:1,;",128,0,91,0
-	.stabs	"NotificationFlashLights:Tt(100,3)=s12ledARGB:(0,3),0,32;ledOnMS:(0,3),32,32;ledOffMS:(0,3),64,32;__base_ctor::(100,4)=#(100,3),(0,6),(100,5)=*(100,3),(0,3),(0,3),(0,3),(0,6);:_ZN12Notification23NotificationFlashLightsC2Eiii;2A.;__comp_ctor::(100,4):_ZN12Notification23NotificationFlashLightsC1Eiii;2A.;__base_ctor::(100,6)=#(100,3),(0,6),(100,5),(0,6);:_ZN12Notification23NotificationFlashLightsC2Ev;2A.;__comp_ctor::(100,6):_ZN12Notification23NotificationFlashLightsC1Ev;2A.;operator=::(100,7)=#(100,3),(100,8)=&(100,3),(100,5),(100,9)=&(100,10)=k(100,3),(0,6);:_ZN12Notification23NotificationFlashLightsaSERKS0_;2A.;__base_ctor::(100,11)=#(100,3),(0,6),(100,5),(100,9),(0,6);:_ZN12Notification23NotificationFlashLightsC2ERKS0_;2A.;__comp_ctor::(100,11):_ZN12Notification23NotificationFlashLightsC1ERKS0_;2A.;;",128,0,115,0
+	.stabs	"NotificationFlag:t(102,1)=eNOTIFICATION_FLAG_INSISTENT:4,NOTIFICATION_FLAG_NO_CLEAR:32,NOTIFICATION_FLAG_HIGH_PRIORITY:128,NOTIFICATION_FLAG_AUTO_CANCEL:16,;",128,0,59,0
+	.stabs	"NotificationDisplayFlag:t(102,2)=eNOTIFICATION_DISPLAY_DEFAULT:0,NOTIFICATION_DISPLAY_ANYTIME:1,;",128,0,91,0
+	.stabs	"NotificationFlashLights:Tt(102,3)=s12ledARGB:(0,3),0,32;ledOnMS:(0,3),32,32;ledOffMS:(0,3),64,32;__base_ctor::(102,4)=#(102,3),(0,6),(102,5)=*(102,3),(0,3),(0,3),(0,3),(0,6);:_ZN12Notification23NotificationFlashLightsC2Eiii;2A.;__comp_ctor::(102,4):_ZN12Notification23NotificationFlashLightsC1Eiii;2A.;__base_ctor::(102,6)=#(102,3),(0,6),(102,5),(0,6);:_ZN12Notification23NotificationFlashLightsC2Ev;2A.;__comp_ctor::(102,6):_ZN12Notification23NotificationFlashLightsC1Ev;2A.;operator=::(102,7)=#(102,3),(102,8)=&(102,3),(102,5),(102,9)=&(102,10)=k(102,3),(0,6);:_ZN12Notification23NotificationFlashLightsaSERKS0_;2A.;__base_ctor::(102,11)=#(102,3),(0,6),(102,5),(102,9),(0,6);:_ZN12Notification23NotificationFlashLightsC2ERKS0_;2A.;__comp_ctor::(102,11):_ZN12Notification23NotificationFlashLightsC1ERKS0_;2A.;;",128,0,115,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/notification/NotificationManager.h",130,0,0,0
-	.stabs	"PushNotificationType:t(101,1)=ePUSH_NOTIFICATION_TYPE_BADGE:1,PUSH_NOTIFICATION_TYPE_SOUND:2,PUSH_NOTIFICATION_TYPE_ALERT:4,;",128,0,60,0
+	.stabs	"PushNotificationType:t(103,1)=ePUSH_NOTIFICATION_TYPE_BADGE:1,PUSH_NOTIFICATION_TYPE_SOUND:2,PUSH_NOTIFICATION_TYPE_ALERT:4,;",128,0,60,0
 	.lcomm	__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE, 4 ; size=4
 	.lcomm	__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE, 4 ; size=4
 	.lcomm	__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE, 4 ; size=4
 	.lcomm	__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE, 4 ; size=4
 	.lcomm	__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE, 4 ; size=4
-	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >:Tt(101,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(101,3)=#(101,2),(0,6),(101,4)=*(101,2),(101,5)=&(101,6)=k(101,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2ERKS7_;2A.;__comp_ctor::(101,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1ERKS7_;2A.;operator=::(101,7)=#(101,2),(101,8)=&(101,2),(101,4),(101,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEaSERKS7_;2A.;__base_dtor::(101,9)=#(101,2),(0,6),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED2Ev;2A.;__comp_dtor::(101,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED1Ev;2A.;find::(101,10)=#(101,2),(101,11)=xsIterator:,(101,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2A.(101,12)=#(101,2),(101,13)=xsConstIterator:,(101,14)=*(101,6),(80,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2B.;erase::(101,15)=#(101,2),(0,4),(101,4),(80,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseERS1_;2A.(101,16)=#(101,2),(0,6),(101,4),(101,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseENS7_8IteratorE;2A.;begin::(101,17)=#(101,2),(101,11),(101,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2A.(101,18)=#(101,2),(101,13),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2B.;end::(101,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2A.(101,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2B.;size::(101,19)=#(101,2),(5,1),(101,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4sizeEv;2B.;clear::(101,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5clearEv;2A.;init::(101,20)=#(101,2),(0,6),(101,4),(80,22),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(101,21)=#(101,2),(0,6),(101,4),(80,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(101,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1EPFiRS1_S8_Ei;1A.;insert::(101,22)=#(101,2),(101,23)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >::Iterator,bool>:,(101,4),(101,24)=&(101,25)=k(101,26)=xsPair<const MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<MAHandle,Notification::LocalNotification*>:Tt(101,27)=s56!1,020,(101,2);__base_ctor::(101,28)=#(101,27),(0,6),(101,29)=*(101,27),(80,22),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2EPFiRKiS6_E;2A.;__comp_ctor::(101,28):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1EPFiRKiS6_E;2A.;insert::(101,30)=#(101,27),(101,23),(101,29),(80,11),(101,31)=&(101,32)=k(101,33)=*(101,34)=xsLocalNotification:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKiRKS3_;2A.(101,35)=#(101,27),(101,23),(101,29),(101,36)=&(101,37)=k(101,38)=xsPair<MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(101,39)=#(101,27),(101,40)=&(101,33),(101,29),(80,11),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEixERKi;2A.;operator=::(101,41)=#(101,27),(101,42)=&(101,27),(101,29),(101,43)=&(101,44)=k(101,27),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEaSERKS4_;2A.;__base_ctor::(101,45)=#(101,27),(0,6),(101,29),(101,43),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2ERKS4_;2A.;__comp_ctor::(101,45):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1ERKS4_;2A.;__base_dtor::(101,46)=#(101,27),(0,6),(101,29),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED2Ev;2A.;__comp_dtor::(101,46):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Vector<Notification::LocalNotificationListener*>:Tt(101,47)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(101,48)=*(101,49)=*(101,50)=xsLocalNotificationListener:,64,32;__base_ctor::(101,51)=#(101,47),(0,6),(101,52)=*(101,47),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2Ei;2A.;__comp_ctor::(101,51):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1Ei;2A.;__base_ctor::(101,53)=#(101,47),(0,6),(101,52),(101,54)=*(101,55)=k(101,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(101,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(101,56)=#(101,47),(0,6),(101,52),(101,57)=&(101,58)=k(101,47),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(101,56):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(101,59)=#(101,47),(0,6),(101,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED2Ev;2A.;__comp_dtor::(101,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED1Ev;2A.;operator=::(101,60)=#(101,47),(101,61)=&(101,47),(101,52),(101,57),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEaSERKS4_;2A.;add::(101,62)=#(101,47),(0,6),(101,52),(101,63)=&(101,55),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addERKS3_;2A.(101,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addEPKS3_i;2A.;remove::(101,64)=#(101,47),(0,6),(101,52),(101,48),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEPS3_;2A.(101,65)=#(101,47),(0,6),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEi;2A.(101,66)=#(101,47),(0,6),(101,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEii;2A.;insert::(101,67)=#(101,47),(0,6),(101,52),(0,3),(101,49),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6insertEiS3_;2A.;size::(101,68)=#(101,47),(0,3),(101,69)=*(101,58),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE4sizeEv;2B.;resize::(101,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6resizeEi;2A.;reserve::(101,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7reserveEi;2A.;clear::(101,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5clearEv;2A.;empty::(101,70)=#(101,47),(0,4),(101,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5emptyEv;2B.;capacity::(101,68):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE8capacityEv;2B.;begin::(101,71)=#(101,47),(101,48),(101,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2A.;end::(101,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2A.;begin::(101,72)=#(101,47),(101,54),(101,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2B.;end::(101,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2B.;operator[]::(101,73)=#(101,47),(101,74)=&(101,49),(101,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2A.(101,75)=#(101,47),(101,63),(101,69),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2B.;pointer::(101,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2B.(101,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
-	.stabs	"Vector<Notification::PushNotificationListener*>:Tt(101,76)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(101,77)=*(101,78)=*(101,79)=xsPushNotificationListener:,64,32;__base_ctor::(101,80)=#(101,76),(0,6),(101,81)=*(101,76),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2Ei;2A.;__comp_ctor::(101,80):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1Ei;2A.;__base_ctor::(101,82)=#(101,76),(0,6),(101,81),(101,83)=*(101,84)=k(101,78),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(101,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(101,85)=#(101,76),(0,6),(101,81),(101,86)=&(101,87)=k(101,76),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(101,85):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(101,88)=#(101,76),(0,6),(101,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED2Ev;2A.;__comp_dtor::(101,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED1Ev;2A.;operator=::(101,89)=#(101,76),(101,90)=&(101,76),(101,81),(101,86),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEaSERKS4_;2A.;add::(101,91)=#(101,76),(0,6),(101,81),(101,92)=&(101,84),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addERKS3_;2A.(101,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addEPKS3_i;2A.;remove::(101,93)=#(101,76),(0,6),(101,81),(101,77),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEPS3_;2A.(101,94)=#(101,76),(0,6),(101,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEi;2A.(101,95)=#(101,76),(0,6),(101,81),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEii;2A.;insert::(101,96)=#(101,76),(0,6),(101,81),(0,3),(101,78),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6insertEiS3_;2A.;size::(101,97)=#(101,76),(0,3),(101,98)=*(101,87),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE4sizeEv;2B.;resize::(101,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6resizeEi;2A.;reserve::(101,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7reserveEi;2A.;clear::(101,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5clearEv;2A.;empty::(101,99)=#(101,76),(0,4),(101,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5emptyEv;2B.;capacity::(101,97):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE8capacityEv;2B.;begin::(101,100)=#(101,76),(101,77),(101,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2A.;end::(101,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2A.;begin::(101,101)=#(101,76),(101,83),(101,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2B.;end::(101,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2B.;operator[]::(101,102)=#(101,76),(101,103)=&(101,78),(101,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2A.(101,104)=#(101,76),(101,92),(101,98),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2B.;pointer::(101,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2B.(101,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Dictionary<const MAHandle,MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >:Tt(103,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(103,3)=#(103,2),(0,6),(103,4)=*(103,2),(103,5)=&(103,6)=k(103,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2ERKS7_;2A.;__comp_ctor::(103,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1ERKS7_;2A.;operator=::(103,7)=#(103,2),(103,8)=&(103,2),(103,4),(103,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEaSERKS7_;2A.;__base_dtor::(103,9)=#(103,2),(0,6),(103,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED2Ev;2A.;__comp_dtor::(103,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEED1Ev;2A.;find::(103,10)=#(103,2),(103,11)=xsIterator:,(103,4),(82,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2A.(103,12)=#(103,2),(103,13)=xsConstIterator:,(103,14)=*(103,6),(82,11),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4findERS1_;2B.;erase::(103,15)=#(103,2),(0,4),(103,4),(82,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseERS1_;2A.(103,16)=#(103,2),(0,6),(103,4),(103,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5eraseENS7_8IteratorE;2A.;begin::(103,17)=#(103,2),(103,11),(103,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2A.(103,18)=#(103,2),(103,13),(103,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5beginEv;2B.;end::(103,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2A.(103,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE3endEv;2B.;size::(103,19)=#(103,2),(5,1),(103,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4sizeEv;2B.;clear::(103,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5clearEv;2A.;init::(103,20)=#(103,2),(0,6),(103,4),(82,22),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(103,21)=#(103,2),(0,6),(103,4),(82,22),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(103,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEEC1EPFiRS1_S8_Ei;1A.;insert::(103,22)=#(103,2),(103,23)=xsPair<MAUtil::Dictionary<const MAHandle, MAUtil::Pair<const MAHandle, Notification::LocalNotification*> >::Iterator,bool>:,(103,4),(103,24)=&(103,25)=k(103,26)=xsPair<const MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN12Notification17LocalNotificationEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<MAHandle,Notification::LocalNotification*>:Tt(103,27)=s56!1,020,(103,2);__base_ctor::(103,28)=#(103,27),(0,6),(103,29)=*(103,27),(82,22),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2EPFiRKiS6_E;2A.;__comp_ctor::(103,28):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1EPFiRKiS6_E;2A.;insert::(103,30)=#(103,27),(103,23),(103,29),(82,11),(103,31)=&(103,32)=k(103,33)=*(103,34)=xsLocalNotification:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKiRKS3_;2A.(103,35)=#(103,27),(103,23),(103,29),(103,36)=&(103,37)=k(103,38)=xsPair<MAHandle,Notification::LocalNotification*>:,(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(103,39)=#(103,27),(103,40)=&(103,33),(103,29),(82,11),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEixERKi;2A.;operator=::(103,41)=#(103,27),(103,42)=&(103,27),(103,29),(103,43)=&(103,44)=k(103,27),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEaSERKS4_;2A.;__base_ctor::(103,45)=#(103,27),(0,6),(103,29),(103,43),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC2ERKS4_;2A.;__comp_ctor::(103,45):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEEC1ERKS4_;2A.;__base_dtor::(103,46)=#(103,27),(0,6),(103,29),(0,6);:_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED2Ev;2A.;__comp_dtor::(103,46):_ZN6MAUtil3MapIiPN12Notification17LocalNotificationEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Vector<Notification::LocalNotificationListener*>:Tt(103,47)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(103,48)=*(103,49)=*(103,50)=xsLocalNotificationListener:,64,32;__base_ctor::(103,51)=#(103,47),(0,6),(103,52)=*(103,47),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2Ei;2A.;__comp_ctor::(103,51):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1Ei;2A.;__base_ctor::(103,53)=#(103,47),(0,6),(103,52),(103,54)=*(103,55)=k(103,49),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(103,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(103,56)=#(103,47),(0,6),(103,52),(103,57)=&(103,58)=k(103,47),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(103,56):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(103,59)=#(103,47),(0,6),(103,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED2Ev;2A.;__comp_dtor::(103,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEED1Ev;2A.;operator=::(103,60)=#(103,47),(103,61)=&(103,47),(103,52),(103,57),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEaSERKS4_;2A.;add::(103,62)=#(103,47),(0,6),(103,52),(103,63)=&(103,55),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addERKS3_;2A.(103,53):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3addEPKS3_i;2A.;remove::(103,64)=#(103,47),(0,6),(103,52),(103,48),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEPS3_;2A.(103,65)=#(103,47),(0,6),(103,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEi;2A.(103,66)=#(103,47),(0,6),(103,52),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6removeEii;2A.;insert::(103,67)=#(103,47),(0,6),(103,52),(0,3),(103,49),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6insertEiS3_;2A.;size::(103,68)=#(103,47),(0,3),(103,69)=*(103,58),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE4sizeEv;2B.;resize::(103,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE6resizeEi;2A.;reserve::(103,65):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7reserveEi;2A.;clear::(103,59):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5clearEv;2A.;empty::(103,70)=#(103,47),(0,4),(103,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5emptyEv;2B.;capacity::(103,68):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE8capacityEv;2B.;begin::(103,71)=#(103,47),(103,48),(103,52),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2A.;end::(103,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2A.;begin::(103,72)=#(103,47),(103,54),(103,69),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE5beginEv;2B.;end::(103,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE3endEv;2B.;operator[]::(103,73)=#(103,47),(103,74)=&(103,49),(103,52),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2A.(103,75)=#(103,47),(103,63),(103,69),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEEixEi;2B.;pointer::(103,72):_ZNK6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2B.(103,71):_ZN6MAUtil6VectorIPN12Notification25LocalNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
+	.stabs	"Vector<Notification::PushNotificationListener*>:Tt(103,76)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(103,77)=*(103,78)=*(103,79)=xsPushNotificationListener:,64,32;__base_ctor::(103,80)=#(103,76),(0,6),(103,81)=*(103,76),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2Ei;2A.;__comp_ctor::(103,80):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1Ei;2A.;__base_ctor::(103,82)=#(103,76),(0,6),(103,81),(103,83)=*(103,84)=k(103,78),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2EPKS3_i;2A.;__comp_ctor::(103,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1EPKS3_i;2A.;__base_ctor::(103,85)=#(103,76),(0,6),(103,81),(103,86)=&(103,87)=k(103,76),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC2ERKS4_;2A.;__comp_ctor::(103,85):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEC1ERKS4_;2A.;__base_dtor::(103,88)=#(103,76),(0,6),(103,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED2Ev;2A.;__comp_dtor::(103,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEED1Ev;2A.;operator=::(103,89)=#(103,76),(103,90)=&(103,76),(103,81),(103,86),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEaSERKS4_;2A.;add::(103,91)=#(103,76),(0,6),(103,81),(103,92)=&(103,84),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addERKS3_;2A.(103,82):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3addEPKS3_i;2A.;remove::(103,93)=#(103,76),(0,6),(103,81),(103,77),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEPS3_;2A.(103,94)=#(103,76),(0,6),(103,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEi;2A.(103,95)=#(103,76),(0,6),(103,81),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6removeEii;2A.;insert::(103,96)=#(103,76),(0,6),(103,81),(0,3),(103,78),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6insertEiS3_;2A.;size::(103,97)=#(103,76),(0,3),(103,98)=*(103,87),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE4sizeEv;2B.;resize::(103,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE6resizeEi;2A.;reserve::(103,94):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7reserveEi;2A.;clear::(103,88):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5clearEv;2A.;empty::(103,99)=#(103,76),(0,4),(103,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5emptyEv;2B.;capacity::(103,97):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE8capacityEv;2B.;begin::(103,100)=#(103,76),(103,77),(103,81),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2A.;end::(103,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2A.;begin::(103,101)=#(103,76),(103,83),(103,98),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE5beginEv;2B.;end::(103,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE3endEv;2B.;operator[]::(103,102)=#(103,76),(103,103)=&(103,78),(103,81),(0,3),(0,6);:_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2A.(103,104)=#(103,76),(103,92),(103,98),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEEixEi;2B.;pointer::(103,101):_ZNK6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2B.(103,100):_ZN6MAUtil6VectorIPN12Notification24PushNotificationListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/IX_CELLID.h",130,0,0,0
-	.stabs	"MACellInfo:Tt(102,1)=s20mcc:(102,2)=ar(6,57);0;3;(0,19),0,32;mnc:(102,3)=ar(6,57);0;7;(0,19),32,64;lac:(0,3),96,32;cellId:(0,3),128,32;operator=::(102,4)=#(102,1),(102,5)=&(102,1),(102,6)=*(102,1),(102,7)=&(102,8)=k(102,1),(0,6);:_ZN10MACellInfoaSERKS_;2A.;__base_ctor::(102,9)=#(102,1),(0,6),(102,6),(102,7),(0,6);:_ZN10MACellInfoC2ERKS_;2A.;__comp_ctor::(102,9):_ZN10MACellInfoC1ERKS_;2A.;__base_ctor::(102,10)=#(102,1),(0,6),(102,6),(0,6);:_ZN10MACellInfoC2Ev;2A.;__comp_ctor::(102,10):_ZN10MACellInfoC1Ev;2A.;;",128,0,20,0
-	.stabs	"MACellInfo:t(102,11)=(102,1)",128,0,47,0
+	.stabs	"MACellInfo:Tt(104,1)=s20mcc:(104,2)=ar(6,57);0;3;(0,19),0,32;mnc:(104,3)=ar(6,57);0;7;(0,19),32,64;lac:(0,3),96,32;cellId:(0,3),128,32;operator=::(104,4)=#(104,1),(104,5)=&(104,1),(104,6)=*(104,1),(104,7)=&(104,8)=k(104,1),(0,6);:_ZN10MACellInfoaSERKS_;2A.;__base_ctor::(104,9)=#(104,1),(0,6),(104,6),(104,7),(0,6);:_ZN10MACellInfoC2ERKS_;2A.;__comp_ctor::(104,9):_ZN10MACellInfoC1ERKS_;2A.;__base_ctor::(104,10)=#(104,1),(0,6),(104,6),(0,6);:_ZN10MACellInfoC2Ev;2A.;__comp_ctor::(104,10):_ZN10MACellInfoC1Ev;2A.;;",128,0,20,0
+	.stabs	"MACellInfo:t(104,11)=(104,1)",128,0,47,0
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/MTXml/MTXml.h",130,0,0,0
-	.stabs	"MTXContext:t(103,1)=(103,2)=xsMTXContext:",128,0,82,0
-	.stabs	"MTXContext:Tt(103,2)=s52encoding:(103,3)=*(103,4)=f(0,6),0,32;tagStart:(103,5)=*(103,6)=f(0,6),32,32;tagAttr:(103,7)=*(103,8)=f(0,6),64,32;tagStartEnd:(103,9)=*(103,10)=f(0,6),96,32;tagData:(103,5),128,32;tagEnd:(103,5),160,32;emptyTagEnd:(103,9),192,32;dataRemains:(103,11)=*(103,12)=f(0,6),224,32;parseError:(103,13)=*(103,14)=f(0,6),256,32;unicodeCharacter:(103,15)=*(103,16)=f(0,10),288,32;userData:(6,9),320,32;iState:(0,3),352,32;iUtf8:(0,3),384,32;operator=::(103,17)=#(103,2),(103,18)=&(103,2),(103,19)=*(103,2),(103,20)=&(103,21)=k(103,2),(0,6);:_ZN10MTXContextaSERKS_;2A.;__base_ctor::(103,22)=#(103,2),(0,6),(103,19),(103,20),(0,6);:_ZN10MTXContextC2ERKS_;2A.;__comp_ctor::(103,22):_ZN10MTXContextC1ERKS_;2A.;__base_ctor::(103,23)=#(103,2),(0,6),(103,19),(0,6);:_ZN10MTXContextC2Ev;2A.;__comp_ctor::(103,23):_ZN10MTXContextC1Ev;2A.;;",128,0,101,0
-	.stabs	"ContextBase:Tt(103,24)=s56mContext:/1(103,1),0,416;mMtx:/1(103,25)=*(103,26)=xsMtxListener:,416,32;stop::(103,27)=#(103,24),(0,6),(103,28)=*(103,24),(0,6);:_ZN3Mtx11ContextBase4stopEv;2A.;initBase::(103,27):_ZN3Mtx11ContextBase8initBaseEv;1A.;operator=::(103,29)=#(103,24),(103,30)=&(103,24),(103,28),(103,31)=&(103,32)=k(103,24),(0,6);:_ZN3Mtx11ContextBaseaSERKS0_;2A.;__base_ctor::(103,33)=#(103,24),(0,6),(103,28),(103,31),(0,6);:_ZN3Mtx11ContextBaseC2ERKS0_;2A.;__comp_ctor::(103,33):_ZN3Mtx11ContextBaseC1ERKS0_;2A.;__base_ctor::(103,34)=#(103,24),(0,6),(103,28),(0,6);:_ZN3Mtx11ContextBaseC2Ev;2A.;__comp_ctor::(103,34):_ZN3Mtx11ContextBaseC1Ev;2A.;;",128,0,365,0
-	.stabs	"ContextW:Tt(103,35)=s60!1,020,(103,24);mXml:/0(103,36)=*(103,37)=xsXmlListenerW:,448,32;init::(103,38)=#(103,35),(0,6),(103,39)=*(103,35),(103,25),(103,36),(0,6);:_ZN3Mtx8ContextW4initEPNS_11MtxListenerEPNS_12XmlListenerWE;2A.;feed::(103,40)=#(103,35),(0,4),(103,39),(6,5),(103,41)=*(0,5),(0,6);:_ZN3Mtx8ContextW4feedEPcPw;2A.;operator=::(103,42)=#(103,35),(103,43)=&(103,35),(103,39),(103,44)=&(103,45)=k(103,35),(0,6);:_ZN3Mtx8ContextWaSERKS0_;2A.;__base_ctor::(103,46)=#(103,35),(0,6),(103,39),(103,44),(0,6);:_ZN3Mtx8ContextWC2ERKS0_;2A.;__comp_ctor::(103,46):_ZN3Mtx8ContextWC1ERKS0_;2A.;__base_ctor::(103,47)=#(103,35),(0,6),(103,39),(0,6);:_ZN3Mtx8ContextWC2Ev;2A.;__comp_ctor::(103,47):_ZN3Mtx8ContextWC1Ev;2A.;;",128,0,380,0
-	.stabs	"Context:Tt(103,48)=s60!1,020,(103,24);mXml:/0(103,49)=*(103,50)=xsXmlListener:,448,32;init::(103,51)=#(103,48),(0,6),(103,52)=*(103,48),(103,25),(103,49),(0,6);:_ZN3Mtx7Context4initEPNS_11MtxListenerEPNS_11XmlListenerE;2A.;feed::(103,53)=#(103,48),(0,4),(103,52),(6,5),(0,6);:_ZN3Mtx7Context4feedEPc;2A.;feedProcess::(103,53):_ZN3Mtx7Context11feedProcessEPc;2A.;process::(103,54)=#(103,48),(0,3),(103,52),(6,5),(0,6);:_ZN3Mtx7Context7processEPc;2A.;operator=::(103,55)=#(103,48),(103,56)=&(103,48),(103,52),(103,57)=&(103,58)=k(103,48),(0,6);:_ZN3Mtx7ContextaSERKS0_;2A.;__base_ctor::(103,59)=#(103,48),(0,6),(103,52),(103,57),(0,6);:_ZN3Mtx7ContextC2ERKS0_;2A.;__comp_ctor::(103,59):_ZN3Mtx7ContextC1ERKS0_;2A.;__base_ctor::(103,60)=#(103,48),(0,6),(103,52),(0,6);:_ZN3Mtx7ContextC2Ev;2A.;__comp_ctor::(103,60):_ZN3Mtx7ContextC1Ev;2A.;;",128,0,397,0
+	.stabs	"MTXContext:t(105,1)=(105,2)=xsMTXContext:",128,0,82,0
+	.stabs	"MTXContext:Tt(105,2)=s52encoding:(105,3)=*(105,4)=f(0,6),0,32;tagStart:(105,5)=*(105,6)=f(0,6),32,32;tagAttr:(105,7)=*(105,8)=f(0,6),64,32;tagStartEnd:(105,9)=*(105,10)=f(0,6),96,32;tagData:(105,5),128,32;tagEnd:(105,5),160,32;emptyTagEnd:(105,9),192,32;dataRemains:(105,11)=*(105,12)=f(0,6),224,32;parseError:(105,13)=*(105,14)=f(0,6),256,32;unicodeCharacter:(105,15)=*(105,16)=f(0,10),288,32;userData:(6,9),320,32;iState:(0,3),352,32;iUtf8:(0,3),384,32;operator=::(105,17)=#(105,2),(105,18)=&(105,2),(105,19)=*(105,2),(105,20)=&(105,21)=k(105,2),(0,6);:_ZN10MTXContextaSERKS_;2A.;__base_ctor::(105,22)=#(105,2),(0,6),(105,19),(105,20),(0,6);:_ZN10MTXContextC2ERKS_;2A.;__comp_ctor::(105,22):_ZN10MTXContextC1ERKS_;2A.;__base_ctor::(105,23)=#(105,2),(0,6),(105,19),(0,6);:_ZN10MTXContextC2Ev;2A.;__comp_ctor::(105,23):_ZN10MTXContextC1Ev;2A.;;",128,0,101,0
+	.stabs	"ContextBase:Tt(105,24)=s56mContext:/1(105,1),0,416;mMtx:/1(105,25)=*(105,26)=xsMtxListener:,416,32;stop::(105,27)=#(105,24),(0,6),(105,28)=*(105,24),(0,6);:_ZN3Mtx11ContextBase4stopEv;2A.;initBase::(105,27):_ZN3Mtx11ContextBase8initBaseEv;1A.;operator=::(105,29)=#(105,24),(105,30)=&(105,24),(105,28),(105,31)=&(105,32)=k(105,24),(0,6);:_ZN3Mtx11ContextBaseaSERKS0_;2A.;__base_ctor::(105,33)=#(105,24),(0,6),(105,28),(105,31),(0,6);:_ZN3Mtx11ContextBaseC2ERKS0_;2A.;__comp_ctor::(105,33):_ZN3Mtx11ContextBaseC1ERKS0_;2A.;__base_ctor::(105,34)=#(105,24),(0,6),(105,28),(0,6);:_ZN3Mtx11ContextBaseC2Ev;2A.;__comp_ctor::(105,34):_ZN3Mtx11ContextBaseC1Ev;2A.;;",128,0,365,0
+	.stabs	"ContextW:Tt(105,35)=s60!1,020,(105,24);mXml:/0(105,36)=*(105,37)=xsXmlListenerW:,448,32;init::(105,38)=#(105,35),(0,6),(105,39)=*(105,35),(105,25),(105,36),(0,6);:_ZN3Mtx8ContextW4initEPNS_11MtxListenerEPNS_12XmlListenerWE;2A.;feed::(105,40)=#(105,35),(0,4),(105,39),(6,5),(105,41)=*(0,5),(0,6);:_ZN3Mtx8ContextW4feedEPcPw;2A.;operator=::(105,42)=#(105,35),(105,43)=&(105,35),(105,39),(105,44)=&(105,45)=k(105,35),(0,6);:_ZN3Mtx8ContextWaSERKS0_;2A.;__base_ctor::(105,46)=#(105,35),(0,6),(105,39),(105,44),(0,6);:_ZN3Mtx8ContextWC2ERKS0_;2A.;__comp_ctor::(105,46):_ZN3Mtx8ContextWC1ERKS0_;2A.;__base_ctor::(105,47)=#(105,35),(0,6),(105,39),(0,6);:_ZN3Mtx8ContextWC2Ev;2A.;__comp_ctor::(105,47):_ZN3Mtx8ContextWC1Ev;2A.;;",128,0,380,0
+	.stabs	"Context:Tt(105,48)=s60!1,020,(105,24);mXml:/0(105,49)=*(105,50)=xsXmlListener:,448,32;init::(105,51)=#(105,48),(0,6),(105,52)=*(105,48),(105,25),(105,49),(0,6);:_ZN3Mtx7Context4initEPNS_11MtxListenerEPNS_11XmlListenerE;2A.;feed::(105,53)=#(105,48),(0,4),(105,52),(6,5),(0,6);:_ZN3Mtx7Context4feedEPc;2A.;feedProcess::(105,53):_ZN3Mtx7Context11feedProcessEPc;2A.;process::(105,54)=#(105,48),(0,3),(105,52),(6,5),(0,6);:_ZN3Mtx7Context7processEPc;2A.;operator=::(105,55)=#(105,48),(105,56)=&(105,48),(105,52),(105,57)=&(105,58)=k(105,48),(0,6);:_ZN3Mtx7ContextaSERKS0_;2A.;__base_ctor::(105,59)=#(105,48),(0,6),(105,52),(105,57),(0,6);:_ZN3Mtx7ContextC2ERKS0_;2A.;__comp_ctor::(105,59):_ZN3Mtx7ContextC1ERKS0_;2A.;__base_ctor::(105,60)=#(105,48),(0,6),(105,52),(0,6);:_ZN3Mtx7ContextC2Ev;2A.;__comp_ctor::(105,60):_ZN3Mtx7ContextC1Ev;2A.;;",128,0,397,0
 	.stabn	162,0,0,0
-	.stabs	"TrackingTab::eTrakingTab:t(96,1)=eTRACKING_LIST:0,;",128,0,46,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >:Tt(96,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,3)=#(96,2),(0,6),(96,4)=*(96,2),(96,5)=&(96,6)=k(96,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2ERKS6_;2A.;__comp_ctor::(96,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1ERKS6_;2A.;operator=::(96,7)=#(96,2),(96,8)=&(96,2),(96,4),(96,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEaSERKS6_;2A.;__base_dtor::(96,9)=#(96,2),(0,6),(96,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev;2A.;__comp_dtor::(96,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED1Ev;2A.;find::(96,10)=#(96,2),(96,11)=xsIterator:,(96,4),(96,12)=&(96,13)=k(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2A.(96,14)=#(96,2),(96,15)=xsConstIterator:,(96,16)=*(96,6),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2B.;erase::(96,17)=#(96,2),(0,4),(96,4),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseERS1_;2A.(96,18)=#(96,2),(0,6),(96,4),(96,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseENS6_8IteratorE;2A.;begin::(96,19)=#(96,2),(96,11),(96,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2A.(96,20)=#(96,2),(96,15),(96,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2B.;end::(96,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2A.(96,20):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2B.;size::(96,21)=#(96,2),(5,1),(96,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4sizeEv;2B.;clear::(96,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv;2A.;init::(96,22)=#(96,2),(0,6),(96,4),(96,23)=*(96,24)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,25)=#(96,2),(0,6),(96,4),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei;1A.;__comp_ctor::(96,25):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1EPFiRS1_S7_Ei;1A.;insert::(96,26)=#(96,2),(96,27)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, MAUtil::BasicString<char> > >::Iterator,bool>:,(96,4),(96,28)=&(96,29)=k(96,30)=xsPair<const int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE6insertERKS5_;1A.;;",128,0,57,0
-	.stabs	"Map<int,MAUtil::BasicString<char> >:Tt(96,31)=s56!1,020,(96,2);__base_ctor::(96,32)=#(96,31),(0,6),(96,33)=*(96,31),(96,23),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2EPFiRKiS5_E;2A.;__comp_ctor::(96,32):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E;2A.;insert::(96,34)=#(96,31),(96,27),(96,33),(96,12),(4,38),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKiRKS2_;2A.(96,35)=#(96,31),(96,27),(96,33),(96,36)=&(96,37)=k(96,38)=xsPair<int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKNS_4PairIiS2_EE;2A.;operator[]::(96,39)=#(96,31),(94,6),(96,33),(96,12),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi;2A.;operator=::(96,40)=#(96,31),(96,41)=&(96,31),(96,33),(96,42)=&(96,43)=k(96,31),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEaSERKS3_;2A.;__base_ctor::(96,44)=#(96,31),(0,6),(96,33),(96,42),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2ERKS3_;2A.;__comp_ctor::(96,44):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1ERKS3_;2A.;__base_dtor::(96,45)=#(96,31),(0,6),(96,33),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(96,45):_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >:Tt(96,46)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,47)=#(96,46),(0,6),(96,48)=*(96,46),(96,49)=&(96,50)=k(96,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2ERKS7_;2A.;__comp_ctor::(96,47):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1ERKS7_;2A.;operator=::(96,51)=#(96,46),(96,52)=&(96,46),(96,48),(96,49),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEaSERKS7_;2A.;__base_dtor::(96,53)=#(96,46),(0,6),(96,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev;2A.;__comp_dtor::(96,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED1Ev;2A.;find::(96,54)=#(96,46),(96,55)=xsIterator:,(96,48),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2A.(96,56)=#(96,46),(96,57)=xsConstIterator:,(96,58)=*(96,50),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2B.;erase::(96,59)=#(96,46),(0,4),(96,48),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseERS1_;2A.(96,60)=#(96,46),(0,6),(96,48),(96,55),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseENS7_8IteratorE;2A.;begin::(96,61)=#(96,46),(96,55),(96,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2A.(96,62)=#(96,46),(96,57),(96,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2B.;end::(96,61):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2A.(96,62):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2B.;size::(96,63)=#(96,46),(5,1),(96,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4sizeEv;2B.;clear::(96,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv;2A.;init::(96,64)=#(96,46),(0,6),(96,48),(96,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,65)=#(96,46),(0,6),(96,48),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(96,65):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1EPFiRS1_S8_Ei;1A.;insert::(96,66)=#(96,46),(96,67)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >::Iterator,bool>:,(96,48),(96,68)=&(96,69)=k(96,70)=xsPair<const int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::HorizontalLayout*>:Tt(96,71)=s56!1,020,(96,46);__base_ctor::(96,72)=#(96,71),(0,6),(96,73)=*(96,71),(96,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2EPFiRKiS6_E;2A.;__comp_ctor::(96,72):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E;2A.;insert::(96,74)=#(96,71),(96,67),(96,73),(96,12),(96,75)=&(96,76)=k(96,77)=*(96,78)=xsHorizontalLayout:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKiRKS3_;2A.(96,79)=#(96,71),(96,67),(96,73),(96,80)=&(96,81)=k(96,82)=xsPair<int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(96,83)=#(96,71),(96,84)=&(96,77),(96,73),(96,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi;2A.;operator=::(96,85)=#(96,71),(96,86)=&(96,71),(96,73),(96,87)=&(96,88)=k(96,71),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEaSERKS4_;2A.;__base_ctor::(96,89)=#(96,71),(0,6),(96,73),(96,87),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2ERKS4_;2A.;__comp_ctor::(96,89):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1ERKS4_;2A.;__base_dtor::(96,90)=#(96,71),(0,6),(96,73),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED2Ev;2A.;__comp_dtor::(96,90):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >:Tt(96,91)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,92)=#(96,91),(0,6),(96,93)=*(96,91),(96,94)=&(96,95)=k(96,91),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2ERKS7_;2A.;__comp_ctor::(96,92):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1ERKS7_;2A.;operator=::(96,96)=#(96,91),(96,97)=&(96,91),(96,93),(96,94),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEaSERKS7_;2A.;__base_dtor::(96,98)=#(96,91),(0,6),(96,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev;2A.;__comp_dtor::(96,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED1Ev;2A.;find::(96,99)=#(96,91),(96,100)=xsIterator:,(96,93),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2A.(96,101)=#(96,91),(96,102)=xsConstIterator:,(96,103)=*(96,95),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2B.;erase::(96,104)=#(96,91),(0,4),(96,93),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseERS1_;2A.(96,105)=#(96,91),(0,6),(96,93),(96,100),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseENS7_8IteratorE;2A.;begin::(96,106)=#(96,91),(96,100),(96,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2A.(96,107)=#(96,91),(96,102),(96,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2B.;end::(96,106):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2A.(96,107):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2B.;size::(96,108)=#(96,91),(5,1),(96,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv;2B.;clear::(96,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv;2A.;init::(96,109)=#(96,91),(0,6),(96,93),(96,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,110)=#(96,91),(0,6),(96,93),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(96,110):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1EPFiRS1_S8_Ei;1A.;insert::(96,111)=#(96,91),(96,112)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::ListViewItem*> >::Iterator,bool>:,(96,93),(96,113)=&(96,114)=k(96,115)=xsPair<const int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::ListViewItem*>:Tt(96,116)=s56!1,020,(96,91);__base_ctor::(96,117)=#(96,116),(0,6),(96,118)=*(96,116),(96,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2EPFiRKiS6_E;2A.;__comp_ctor::(96,117):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E;2A.;insert::(96,119)=#(96,116),(96,112),(96,118),(96,12),(96,120)=&(96,121)=k(96,122)=*(96,123)=xsListViewItem:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKiRKS3_;2A.(96,124)=#(96,116),(96,112),(96,118),(96,125)=&(96,126)=k(96,127)=xsPair<int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(96,128)=#(96,116),(96,129)=&(96,122),(96,118),(96,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi;2A.;operator=::(96,130)=#(96,116),(96,131)=&(96,116),(96,118),(96,132)=&(96,133)=k(96,116),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEaSERKS4_;2A.;__base_ctor::(96,134)=#(96,116),(0,6),(96,118),(96,132),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2ERKS4_;2A.;__comp_ctor::(96,134):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1ERKS4_;2A.;__base_dtor::(96,135)=#(96,116),(0,6),(96,118),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED2Ev;2A.;__comp_dtor::(96,135):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >:Tt(96,136)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(96,137)=#(96,136),(0,6),(96,138)=*(96,136),(96,139)=&(96,140)=k(96,136),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2ERKS7_;2A.;__comp_ctor::(96,137):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1ERKS7_;2A.;operator=::(96,141)=#(96,136),(96,142)=&(96,136),(96,138),(96,139),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEaSERKS7_;2A.;__base_dtor::(96,143)=#(96,136),(0,6),(96,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev;2A.;__comp_dtor::(96,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED1Ev;2A.;find::(96,144)=#(96,136),(96,145)=xsIterator:,(96,138),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2A.(96,146)=#(96,136),(96,147)=xsConstIterator:,(96,148)=*(96,140),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2B.;erase::(96,149)=#(96,136),(0,4),(96,138),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseERS1_;2A.(96,150)=#(96,136),(0,6),(96,138),(96,145),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseENS7_8IteratorE;2A.;begin::(96,151)=#(96,136),(96,145),(96,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2A.(96,152)=#(96,136),(96,147),(96,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2B.;end::(96,151):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2A.(96,152):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2B.;size::(96,153)=#(96,136),(5,1),(96,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4sizeEv;2B.;clear::(96,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv;2A.;init::(96,154)=#(96,136),(0,6),(96,138),(96,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(96,155)=#(96,136),(0,6),(96,138),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(96,155):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1EPFiRS1_S8_Ei;1A.;insert::(96,156)=#(96,136),(96,157)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::Label*> >::Iterator,bool>:,(96,138),(96,158)=&(96,159)=k(96,160)=xsPair<const int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE6insertERKS6_;1A.;;",128,0,57,0
-	.stabs	"Map<int,NativeUI::Label*>:Tt(96,161)=s56!1,020,(96,136);__base_ctor::(96,162)=#(96,161),(0,6),(96,163)=*(96,161),(96,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2EPFiRKiS6_E;2A.;__comp_ctor::(96,162):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E;2A.;insert::(96,164)=#(96,161),(96,157),(96,163),(96,12),(96,165)=&(96,166)=k(96,167)=*(96,168)=xsLabel:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKiRKS3_;2A.(96,169)=#(96,161),(96,157),(96,163),(96,170)=&(96,171)=k(96,172)=xsPair<int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(96,173)=#(96,161),(96,174)=&(96,167),(96,163),(96,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi;2A.;operator=::(96,175)=#(96,161),(96,176)=&(96,161),(96,163),(96,177)=&(96,178)=k(96,161),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEaSERKS4_;2A.;__base_ctor::(96,179)=#(96,161),(0,6),(96,163),(96,177),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2ERKS4_;2A.;__comp_ctor::(96,179):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1ERKS4_;2A.;__base_dtor::(96,180)=#(96,161),(0,6),(96,163),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEED2Ev;2A.;__comp_dtor::(96,180):_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev;2A.;;",128,0,33,0
+	.stabs	"TrackingTab::eTrakingTab:t(98,1)=eTRACKING_LIST:0,;",128,0,46,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >:Tt(98,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(98,3)=#(98,2),(0,6),(98,4)=*(98,2),(98,5)=&(98,6)=k(98,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2ERKS6_;2A.;__comp_ctor::(98,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1ERKS6_;2A.;operator=::(98,7)=#(98,2),(98,8)=&(98,2),(98,4),(98,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEaSERKS6_;2A.;__base_dtor::(98,9)=#(98,2),(0,6),(98,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev;2A.;__comp_dtor::(98,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED1Ev;2A.;find::(98,10)=#(98,2),(98,11)=xsIterator:,(98,4),(98,12)=&(98,13)=k(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2A.(98,14)=#(98,2),(98,15)=xsConstIterator:,(98,16)=*(98,6),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4findERS1_;2B.;erase::(98,17)=#(98,2),(0,4),(98,4),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseERS1_;2A.(98,18)=#(98,2),(0,6),(98,4),(98,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5eraseENS6_8IteratorE;2A.;begin::(98,19)=#(98,2),(98,11),(98,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2A.(98,20)=#(98,2),(98,15),(98,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5beginEv;2B.;end::(98,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2A.(98,20):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE3endEv;2B.;size::(98,21)=#(98,2),(5,1),(98,16),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4sizeEv;2B.;clear::(98,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv;2A.;init::(98,22)=#(98,2),(0,6),(98,4),(98,23)=*(98,24)=f(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(98,25)=#(98,2),(0,6),(98,4),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei;1A.;__comp_ctor::(98,25):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC1EPFiRS1_S7_Ei;1A.;insert::(98,26)=#(98,2),(98,27)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, MAUtil::BasicString<char> > >::Iterator,bool>:,(98,4),(98,28)=&(98,29)=k(98,30)=xsPair<const int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE6insertERKS5_;1A.;;",128,0,57,0
+	.stabs	"Map<int,MAUtil::BasicString<char> >:Tt(98,31)=s56!1,020,(98,2);__base_ctor::(98,32)=#(98,31),(0,6),(98,33)=*(98,31),(98,23),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2EPFiRKiS5_E;2A.;__comp_ctor::(98,32):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E;2A.;insert::(98,34)=#(98,31),(98,27),(98,33),(98,12),(4,38),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKiRKS2_;2A.(98,35)=#(98,31),(98,27),(98,33),(98,36)=&(98,37)=k(98,38)=xsPair<int,MAUtil::BasicString<char> >:,(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEE6insertERKNS_4PairIiS2_EE;2A.;operator[]::(98,39)=#(98,31),(96,6),(98,33),(98,12),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi;2A.;operator=::(98,40)=#(98,31),(98,41)=&(98,31),(98,33),(98,42)=&(98,43)=k(98,31),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEaSERKS3_;2A.;__base_ctor::(98,44)=#(98,31),(0,6),(98,33),(98,42),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC2ERKS3_;2A.;__comp_ctor::(98,44):_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1ERKS3_;2A.;__base_dtor::(98,45)=#(98,31),(0,6),(98,33),(0,6);:_ZN6MAUtil3MapIiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(98,45):_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >:Tt(98,46)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(98,47)=#(98,46),(0,6),(98,48)=*(98,46),(98,49)=&(98,50)=k(98,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2ERKS7_;2A.;__comp_ctor::(98,47):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1ERKS7_;2A.;operator=::(98,51)=#(98,46),(98,52)=&(98,46),(98,48),(98,49),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEaSERKS7_;2A.;__base_dtor::(98,53)=#(98,46),(0,6),(98,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev;2A.;__comp_dtor::(98,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED1Ev;2A.;find::(98,54)=#(98,46),(98,55)=xsIterator:,(98,48),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2A.(98,56)=#(98,46),(98,57)=xsConstIterator:,(98,58)=*(98,50),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4findERS1_;2B.;erase::(98,59)=#(98,46),(0,4),(98,48),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseERS1_;2A.(98,60)=#(98,46),(0,6),(98,48),(98,55),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5eraseENS7_8IteratorE;2A.;begin::(98,61)=#(98,46),(98,55),(98,48),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2A.(98,62)=#(98,46),(98,57),(98,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5beginEv;2B.;end::(98,61):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2A.(98,62):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE3endEv;2B.;size::(98,63)=#(98,46),(5,1),(98,58),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4sizeEv;2B.;clear::(98,53):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv;2A.;init::(98,64)=#(98,46),(0,6),(98,48),(98,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(98,65)=#(98,46),(0,6),(98,48),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(98,65):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC1EPFiRS1_S8_Ei;1A.;insert::(98,66)=#(98,46),(98,67)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >::Iterator,bool>:,(98,48),(98,68)=&(98,69)=k(98,70)=xsPair<const int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::HorizontalLayout*>:Tt(98,71)=s56!1,020,(98,46);__base_ctor::(98,72)=#(98,71),(0,6),(98,73)=*(98,71),(98,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2EPFiRKiS6_E;2A.;__comp_ctor::(98,72):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E;2A.;insert::(98,74)=#(98,71),(98,67),(98,73),(98,12),(98,75)=&(98,76)=k(98,77)=*(98,78)=xsHorizontalLayout:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKiRKS3_;2A.(98,79)=#(98,71),(98,67),(98,73),(98,80)=&(98,81)=k(98,82)=xsPair<int,NativeUI::HorizontalLayout*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(98,83)=#(98,71),(98,84)=&(98,77),(98,73),(98,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi;2A.;operator=::(98,85)=#(98,71),(98,86)=&(98,71),(98,73),(98,87)=&(98,88)=k(98,71),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEaSERKS4_;2A.;__base_ctor::(98,89)=#(98,71),(0,6),(98,73),(98,87),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC2ERKS4_;2A.;__comp_ctor::(98,89):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1ERKS4_;2A.;__base_dtor::(98,90)=#(98,71),(0,6),(98,73),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED2Ev;2A.;__comp_dtor::(98,90):_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >:Tt(98,91)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(98,92)=#(98,91),(0,6),(98,93)=*(98,91),(98,94)=&(98,95)=k(98,91),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2ERKS7_;2A.;__comp_ctor::(98,92):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1ERKS7_;2A.;operator=::(98,96)=#(98,91),(98,97)=&(98,91),(98,93),(98,94),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEaSERKS7_;2A.;__base_dtor::(98,98)=#(98,91),(0,6),(98,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev;2A.;__comp_dtor::(98,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED1Ev;2A.;find::(98,99)=#(98,91),(98,100)=xsIterator:,(98,93),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2A.(98,101)=#(98,91),(98,102)=xsConstIterator:,(98,103)=*(98,95),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4findERS1_;2B.;erase::(98,104)=#(98,91),(0,4),(98,93),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseERS1_;2A.(98,105)=#(98,91),(0,6),(98,93),(98,100),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5eraseENS7_8IteratorE;2A.;begin::(98,106)=#(98,91),(98,100),(98,93),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2A.(98,107)=#(98,91),(98,102),(98,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5beginEv;2B.;end::(98,106):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2A.(98,107):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE3endEv;2B.;size::(98,108)=#(98,91),(5,1),(98,103),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv;2B.;clear::(98,98):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv;2A.;init::(98,109)=#(98,91),(0,6),(98,93),(98,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(98,110)=#(98,91),(0,6),(98,93),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(98,110):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC1EPFiRS1_S8_Ei;1A.;insert::(98,111)=#(98,91),(98,112)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::ListViewItem*> >::Iterator,bool>:,(98,93),(98,113)=&(98,114)=k(98,115)=xsPair<const int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::ListViewItem*>:Tt(98,116)=s56!1,020,(98,91);__base_ctor::(98,117)=#(98,116),(0,6),(98,118)=*(98,116),(98,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2EPFiRKiS6_E;2A.;__comp_ctor::(98,117):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E;2A.;insert::(98,119)=#(98,116),(98,112),(98,118),(98,12),(98,120)=&(98,121)=k(98,122)=*(98,123)=xsListViewItem:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKiRKS3_;2A.(98,124)=#(98,116),(98,112),(98,118),(98,125)=&(98,126)=k(98,127)=xsPair<int,NativeUI::ListViewItem*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(98,128)=#(98,116),(98,129)=&(98,122),(98,118),(98,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi;2A.;operator=::(98,130)=#(98,116),(98,131)=&(98,116),(98,118),(98,132)=&(98,133)=k(98,116),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEaSERKS4_;2A.;__base_ctor::(98,134)=#(98,116),(0,6),(98,118),(98,132),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC2ERKS4_;2A.;__comp_ctor::(98,134):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1ERKS4_;2A.;__base_dtor::(98,135)=#(98,116),(0,6),(98,118),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED2Ev;2A.;__comp_dtor::(98,135):_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >:Tt(98,136)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(98,137)=#(98,136),(0,6),(98,138)=*(98,136),(98,139)=&(98,140)=k(98,136),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2ERKS7_;2A.;__comp_ctor::(98,137):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1ERKS7_;2A.;operator=::(98,141)=#(98,136),(98,142)=&(98,136),(98,138),(98,139),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEaSERKS7_;2A.;__base_dtor::(98,143)=#(98,136),(0,6),(98,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev;2A.;__comp_dtor::(98,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED1Ev;2A.;find::(98,144)=#(98,136),(98,145)=xsIterator:,(98,138),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2A.(98,146)=#(98,136),(98,147)=xsConstIterator:,(98,148)=*(98,140),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4findERS1_;2B.;erase::(98,149)=#(98,136),(0,4),(98,138),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseERS1_;2A.(98,150)=#(98,136),(0,6),(98,138),(98,145),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5eraseENS7_8IteratorE;2A.;begin::(98,151)=#(98,136),(98,145),(98,138),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2A.(98,152)=#(98,136),(98,147),(98,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5beginEv;2B.;end::(98,151):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2A.(98,152):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE3endEv;2B.;size::(98,153)=#(98,136),(5,1),(98,148),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4sizeEv;2B.;clear::(98,143):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv;2A.;init::(98,154)=#(98,136),(0,6),(98,138),(98,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv;1A?;__base_ctor::(98,155)=#(98,136),(0,6),(98,138),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei;1A.;__comp_ctor::(98,155):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC1EPFiRS1_S8_Ei;1A.;insert::(98,156)=#(98,136),(98,157)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, NativeUI::Label*> >::Iterator,bool>:,(98,138),(98,158)=&(98,159)=k(98,160)=xsPair<const int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE6insertERKS6_;1A.;;",128,0,57,0
+	.stabs	"Map<int,NativeUI::Label*>:Tt(98,161)=s56!1,020,(98,136);__base_ctor::(98,162)=#(98,161),(0,6),(98,163)=*(98,161),(98,23),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2EPFiRKiS6_E;2A.;__comp_ctor::(98,162):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E;2A.;insert::(98,164)=#(98,161),(98,157),(98,163),(98,12),(98,165)=&(98,166)=k(98,167)=*(98,168)=xsLabel:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKiRKS3_;2A.(98,169)=#(98,161),(98,157),(98,163),(98,170)=&(98,171)=k(98,172)=xsPair<int,NativeUI::Label*>:,(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEE6insertERKNS_4PairIiS3_EE;2A.;operator[]::(98,173)=#(98,161),(98,174)=&(98,167),(98,163),(98,12),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi;2A.;operator=::(98,175)=#(98,161),(98,176)=&(98,161),(98,163),(98,177)=&(98,178)=k(98,161),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEaSERKS4_;2A.;__base_ctor::(98,179)=#(98,161),(0,6),(98,163),(98,177),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC2ERKS4_;2A.;__comp_ctor::(98,179):_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1ERKS4_;2A.;__base_dtor::(98,180)=#(98,161),(0,6),(98,163),(0,6);:_ZN6MAUtil3MapIiPN8NativeUI5LabelEED2Ev;2A.;__comp_dtor::(98,180):_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/HomeTab.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",130,0,0,0
-	.stabs	"AlertTab::eAlertTab:t(106,1)=ePLUGIN_LIST:0,INFORMATION_LIST:1,ALERT_LIST:2,ASSET_LIST:3,OPERATOR_LIST:4,UNIT_INFO:5,SUB_UNIT_INFO:6,USER_LIST:7,MEDIA_VALUE_LIST:8,MEDIA_TYPE:9,POST_MEDIA_SPE:10,POST_ALERT:11,SEARCH_INFO:12,ALERT_INFO:13,ALERT_RECIPIENT_LIST:14,UNITS_TYPES:15,;",128,0,36,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >:Tt(106,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(106,3)=#(106,2),(0,6),(106,4)=*(106,2),(106,5)=&(106,6)=k(106,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2ERKS4_;2A.;__comp_ctor::(106,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1ERKS4_;2A.;operator=::(106,7)=#(106,2),(106,8)=&(106,2),(106,4),(106,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEaSERKS4_;2A.;__base_dtor::(106,9)=#(106,2),(0,6),(106,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev;2A.;__comp_dtor::(106,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED1Ev;2A.;find::(106,10)=#(106,2),(106,11)=xsIterator:,(106,4),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2A.(106,12)=#(106,2),(106,13)=xsConstIterator:,(106,14)=*(106,6),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2B.;erase::(106,15)=#(106,2),(0,4),(106,4),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseERS1_;2A.(106,16)=#(106,2),(0,6),(106,4),(106,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseENS4_8IteratorE;2A.;begin::(106,17)=#(106,2),(106,11),(106,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2A.(106,18)=#(106,2),(106,13),(106,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2B.;end::(106,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2A.(106,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2B.;size::(106,19)=#(106,2),(5,1),(106,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv;2B.;clear::(106,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv;2A.;init::(106,20)=#(106,2),(0,6),(106,4),(96,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv;1A?;__base_ctor::(106,21)=#(106,2),(0,6),(106,4),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(106,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1EPFiRS1_S5_Ei;1A.;insert::(106,22)=#(106,2),(106,23)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, long long int> >::Iterator,bool>:,(106,4),(106,24)=&(106,25)=k(106,26)=xsPair<const int,long long int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE6insertERKS3_;1A.;;",128,0,57,0
-	.stabs	"Map<int,long long int>:Tt(106,27)=s56!1,020,(106,2);__base_ctor::(106,28)=#(106,27),(0,6),(106,29)=*(106,27),(96,23),(0,6);:_ZN6MAUtil3MapIixEC2EPFiRKiS3_E;2A.;__comp_ctor::(106,28):_ZN6MAUtil3MapIixEC1EPFiRKiS3_E;2A.;insert::(106,30)=#(106,27),(106,23),(106,29),(96,12),(106,31)=&(106,32)=k(0,15),(0,6);:_ZN6MAUtil3MapIixE6insertERKiRKx;2A.(106,33)=#(106,27),(106,23),(106,29),(106,34)=&(106,35)=k(106,36)=xsPair<int,long long int>:,(0,6);:_ZN6MAUtil3MapIixE6insertERKNS_4PairIixEE;2A.;operator[]::(106,37)=#(106,27),(93,8),(106,29),(96,12),(0,6);:_ZN6MAUtil3MapIixEixERKi;2A.;operator=::(106,38)=#(106,27),(106,39)=&(106,27),(106,29),(106,40)=&(106,41)=k(106,27),(0,6);:_ZN6MAUtil3MapIixEaSERKS1_;2A.;__base_ctor::(106,42)=#(106,27),(0,6),(106,29),(106,40),(0,6);:_ZN6MAUtil3MapIixEC2ERKS1_;2A.;__comp_ctor::(106,42):_ZN6MAUtil3MapIixEC1ERKS1_;2A.;__base_dtor::(106,43)=#(106,27),(0,6),(106,29),(0,6);:_ZN6MAUtil3MapIixED2Ev;2A.;__comp_dtor::(106,43):_ZN6MAUtil3MapIixED1Ev;2A.;;",128,0,33,0
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, int> >:Tt(106,44)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(106,45)=#(106,44),(0,6),(106,46)=*(106,44),(106,47)=&(106,48)=k(106,44),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2ERKS4_;2A.;__comp_ctor::(106,45):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1ERKS4_;2A.;operator=::(106,49)=#(106,44),(106,50)=&(106,44),(106,46),(106,47),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEaSERKS4_;2A.;__base_dtor::(106,51)=#(106,44),(0,6),(106,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED2Ev;2A.;__comp_dtor::(106,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED1Ev;2A.;find::(106,52)=#(106,44),(106,53)=xsIterator:,(106,46),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2A.(106,54)=#(106,44),(106,55)=xsConstIterator:,(106,56)=*(106,48),(96,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2B.;erase::(106,57)=#(106,44),(0,4),(106,46),(96,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseERS1_;2A.(106,58)=#(106,44),(0,6),(106,46),(106,53),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseENS4_8IteratorE;2A.;begin::(106,59)=#(106,44),(106,53),(106,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2A.(106,60)=#(106,44),(106,55),(106,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2B.;end::(106,59):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2A.(106,60):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2B.;size::(106,61)=#(106,44),(5,1),(106,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4sizeEv;2B.;clear::(106,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5clearEv;2A.;init::(106,62)=#(106,44),(0,6),(106,46),(96,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4freeEP7dnode_tPv;1A?;__base_ctor::(106,63)=#(106,44),(0,6),(106,46),(96,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(106,63):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1EPFiRS1_S5_Ei;1A.;insert::(106,64)=#(106,44),(106,65)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, int> >::Iterator,bool>:,(106,46),(106,66)=&(106,67)=k(106,68)=xsPair<const int,int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE6insertERKS3_;1A.;;",128,0,57,0
-	.stabs	"Map<int,int>:Tt(106,69)=s56!1,020,(106,44);__base_ctor::(106,70)=#(106,69),(0,6),(106,71)=*(106,69),(96,23),(0,6);:_ZN6MAUtil3MapIiiEC2EPFiRKiS3_E;2A.;__comp_ctor::(106,70):_ZN6MAUtil3MapIiiEC1EPFiRKiS3_E;2A.;insert::(106,72)=#(106,69),(106,65),(106,71),(96,12),(96,12),(0,6);:_ZN6MAUtil3MapIiiE6insertERKiS3_;2A.(106,73)=#(106,69),(106,65),(106,71),(106,74)=&(106,75)=k(106,76)=xsPair<int,int>:,(0,6);:_ZN6MAUtil3MapIiiE6insertERKNS_4PairIiiEE;2A.;operator[]::(106,77)=#(106,69),(106,78)=&(0,3),(106,71),(96,12),(0,6);:_ZN6MAUtil3MapIiiEixERKi;2A.;operator=::(106,79)=#(106,69),(106,80)=&(106,69),(106,71),(106,81)=&(106,82)=k(106,69),(0,6);:_ZN6MAUtil3MapIiiEaSERKS1_;2A.;__base_ctor::(106,83)=#(106,69),(0,6),(106,71),(106,81),(0,6);:_ZN6MAUtil3MapIiiEC2ERKS1_;2A.;__comp_ctor::(106,83):_ZN6MAUtil3MapIiiEC1ERKS1_;2A.;__base_dtor::(106,84)=#(106,69),(0,6),(106,71),(0,6);:_ZN6MAUtil3MapIiiED2Ev;2A.;__comp_dtor::(106,84):_ZN6MAUtil3MapIiiED1Ev;2A.;;",128,0,33,0
+	.stabs	"AlertTab::eAlertTab:t(108,1)=ePLUGIN_LIST:0,INFORMATION_LIST:1,ALERT_LIST:2,ASSET_LIST:3,OPERATOR_LIST:4,UNIT_INFO:5,SUB_UNIT_INFO:6,USER_LIST:7,MEDIA_VALUE_LIST:8,MEDIA_TYPE:9,POST_MEDIA_SPE:10,POST_ALERT:11,SEARCH_INFO:12,ALERT_INFO:13,ALERT_RECIPIENT_LIST:14,UNITS_TYPES:15,;",128,0,36,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >:Tt(108,2)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(108,3)=#(108,2),(0,6),(108,4)=*(108,2),(108,5)=&(108,6)=k(108,2),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2ERKS4_;2A.;__comp_ctor::(108,3):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1ERKS4_;2A.;operator=::(108,7)=#(108,2),(108,8)=&(108,2),(108,4),(108,5),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEaSERKS4_;2A.;__base_dtor::(108,9)=#(108,2),(0,6),(108,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev;2A.;__comp_dtor::(108,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED1Ev;2A.;find::(108,10)=#(108,2),(108,11)=xsIterator:,(108,4),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2A.(108,12)=#(108,2),(108,13)=xsConstIterator:,(108,14)=*(108,6),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4findERS1_;2B.;erase::(108,15)=#(108,2),(0,4),(108,4),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseERS1_;2A.(108,16)=#(108,2),(0,6),(108,4),(108,11),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5eraseENS4_8IteratorE;2A.;begin::(108,17)=#(108,2),(108,11),(108,4),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2A.(108,18)=#(108,2),(108,13),(108,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5beginEv;2B.;end::(108,17):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2A.(108,18):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE3endEv;2B.;size::(108,19)=#(108,2),(5,1),(108,14),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv;2B.;clear::(108,9):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv;2A.;init::(108,20)=#(108,2),(0,6),(108,4),(98,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv;1A?;__base_ctor::(108,21)=#(108,2),(0,6),(108,4),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(108,21):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC1EPFiRS1_S5_Ei;1A.;insert::(108,22)=#(108,2),(108,23)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, long long int> >::Iterator,bool>:,(108,4),(108,24)=&(108,25)=k(108,26)=xsPair<const int,long long int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE6insertERKS3_;1A.;;",128,0,57,0
+	.stabs	"Map<int,long long int>:Tt(108,27)=s56!1,020,(108,2);__base_ctor::(108,28)=#(108,27),(0,6),(108,29)=*(108,27),(98,23),(0,6);:_ZN6MAUtil3MapIixEC2EPFiRKiS3_E;2A.;__comp_ctor::(108,28):_ZN6MAUtil3MapIixEC1EPFiRKiS3_E;2A.;insert::(108,30)=#(108,27),(108,23),(108,29),(98,12),(108,31)=&(108,32)=k(0,15),(0,6);:_ZN6MAUtil3MapIixE6insertERKiRKx;2A.(108,33)=#(108,27),(108,23),(108,29),(108,34)=&(108,35)=k(108,36)=xsPair<int,long long int>:,(0,6);:_ZN6MAUtil3MapIixE6insertERKNS_4PairIixEE;2A.;operator[]::(108,37)=#(108,27),(95,9),(108,29),(98,12),(0,6);:_ZN6MAUtil3MapIixEixERKi;2A.;operator=::(108,38)=#(108,27),(108,39)=&(108,27),(108,29),(108,40)=&(108,41)=k(108,27),(0,6);:_ZN6MAUtil3MapIixEaSERKS1_;2A.;__base_ctor::(108,42)=#(108,27),(0,6),(108,29),(108,40),(0,6);:_ZN6MAUtil3MapIixEC2ERKS1_;2A.;__comp_ctor::(108,42):_ZN6MAUtil3MapIixEC1ERKS1_;2A.;__base_dtor::(108,43)=#(108,27),(0,6),(108,29),(0,6);:_ZN6MAUtil3MapIixED2Ev;2A.;__comp_dtor::(108,43):_ZN6MAUtil3MapIixED1Ev;2A.;;",128,0,33,0
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, int> >:Tt(108,44)=s56mDict:/1(14,32),0,416;mKeyOffset:/1(0,3),416,32;__base_ctor::(108,45)=#(108,44),(0,6),(108,46)=*(108,44),(108,47)=&(108,48)=k(108,44),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2ERKS4_;2A.;__comp_ctor::(108,45):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1ERKS4_;2A.;operator=::(108,49)=#(108,44),(108,50)=&(108,44),(108,46),(108,47),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEaSERKS4_;2A.;__base_dtor::(108,51)=#(108,44),(0,6),(108,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED2Ev;2A.;__comp_dtor::(108,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEED1Ev;2A.;find::(108,52)=#(108,44),(108,53)=xsIterator:,(108,46),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2A.(108,54)=#(108,44),(108,55)=xsConstIterator:,(108,56)=*(108,48),(98,12),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4findERS1_;2B.;erase::(108,57)=#(108,44),(0,4),(108,46),(98,12),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseERS1_;2A.(108,58)=#(108,44),(0,6),(108,46),(108,53),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5eraseENS4_8IteratorE;2A.;begin::(108,59)=#(108,44),(108,53),(108,46),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2A.(108,60)=#(108,44),(108,55),(108,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5beginEv;2B.;end::(108,59):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2A.(108,60):_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE3endEv;2B.;size::(108,61)=#(108,44),(5,1),(108,56),(0,6);:_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4sizeEv;2B.;clear::(108,51):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5clearEv;2A.;init::(108,62)=#(108,44),(0,6),(108,46),(98,23),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4initEPFiRS1_S5_E;1A.;alloc::(14,19):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE5allocEPv;1A?;free::(14,23):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE4freeEP7dnode_tPv;1A?;__base_ctor::(108,63)=#(108,44),(0,6),(108,46),(98,23),(0,3),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC2EPFiRS1_S5_Ei;1A.;__comp_ctor::(108,63):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEEC1EPFiRS1_S5_Ei;1A.;insert::(108,64)=#(108,44),(108,65)=xsPair<MAUtil::Dictionary<const int, MAUtil::Pair<const int, int> >::Iterator,bool>:,(108,46),(108,66)=&(108,67)=k(108,68)=xsPair<const int,int>:,(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_iEEE6insertERKS3_;1A.;;",128,0,57,0
+	.stabs	"Map<int,int>:Tt(108,69)=s56!1,020,(108,44);__base_ctor::(108,70)=#(108,69),(0,6),(108,71)=*(108,69),(98,23),(0,6);:_ZN6MAUtil3MapIiiEC2EPFiRKiS3_E;2A.;__comp_ctor::(108,70):_ZN6MAUtil3MapIiiEC1EPFiRKiS3_E;2A.;insert::(108,72)=#(108,69),(108,65),(108,71),(98,12),(98,12),(0,6);:_ZN6MAUtil3MapIiiE6insertERKiS3_;2A.(108,73)=#(108,69),(108,65),(108,71),(108,74)=&(108,75)=k(108,76)=xsPair<int,int>:,(0,6);:_ZN6MAUtil3MapIiiE6insertERKNS_4PairIiiEE;2A.;operator[]::(108,77)=#(108,69),(108,78)=&(0,3),(108,71),(98,12),(0,6);:_ZN6MAUtil3MapIiiEixERKi;2A.;operator=::(108,79)=#(108,69),(108,80)=&(108,69),(108,71),(108,81)=&(108,82)=k(108,69),(0,6);:_ZN6MAUtil3MapIiiEaSERKS1_;2A.;__base_ctor::(108,83)=#(108,69),(0,6),(108,71),(108,81),(0,6);:_ZN6MAUtil3MapIiiEC2ERKS1_;2A.;__comp_ctor::(108,83):_ZN6MAUtil3MapIiiEC1ERKS1_;2A.;__base_dtor::(108,84)=#(108,69),(0,6),(108,71),(0,6);:_ZN6MAUtil3MapIiiED2Ev;2A.;__comp_dtor::(108,84):_ZN6MAUtil3MapIiiED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"Authentication::eAuthenticationTab:t(1,1)=eUSER_TOKEN:0,MEDIAS_LIST:1,POST_MEDIA_VALUE:2,POST_MEDIA_VALUE_VALIDATION:3,AUTHENTICATION_VALIDATION:4,;",128,0,31,0
@@ -1903,61 +1928,57 @@ Ltext9:
 	ld   i0,[fr,-24]
 	call &__ZN8NativeUI6ScreenC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x6c
+	add  r14,#0x78
 	ld   i0,r14
 	call &__ZN8NativeUI14ButtonListenerC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x70
+	add  r14,#0x7c
 	ld   i0,r14
 	call &__ZN8NativeUI16ListViewListenerC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x74
+	add  r14,#0x80
 	ld   i0,r14
 	call &__ZN8NativeUI18RadioGroupListenerC2Ev
+	ld   r14,[fr,-24]
+	add  r14,#0x84
+	ld   i0,r14
+	call &__ZN8NativeUI15EditBoxListenerC2Ev
 	ld   r14,[fr,-24]
 	ld   r0,#__ZTV14Authentication+8
 	ld   [r14],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x3c
-	ld   r0,#__ZTV14Authentication+216
-	ld   [r14],r0
-	ld   r14,[fr,-24]
-	add  r14,#0x64
-	ld   r0,#__ZTV14Authentication+256
-	ld   [r14],r0
-	ld   r14,[fr,-24]
-	add  r14,#0x6c
-	ld   r0,#__ZTV14Authentication+284
+	add  r14,#0x48
+	ld   r0,#__ZTV14Authentication+236
 	ld   [r14],r0
 	ld   r14,[fr,-24]
 	add  r14,#0x70
+	ld   r0,#__ZTV14Authentication+276
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x78
 	ld   r0,#__ZTV14Authentication+304
 	ld   [r14],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x74
-	ld   r0,#__ZTV14Authentication+336
+	add  r14,#0x7c
+	ld   r0,#__ZTV14Authentication+324
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x80
+	ld   r0,#__ZTV14Authentication+356
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x84
+	ld   r0,#__ZTV14Authentication+368
 	ld   [r14],r0
 	ld   r14,[fr,-24]
 	ld   r0,[fr,-28]
-	ld   [r14,120],r0
+	ld   [r14,140],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x94
+	add  r14,#0x9c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
 	ld   r14,[fr,-24]
@@ -1965,31 +1986,59 @@ Ltext9:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
 	ld   r14,[fr,-24]
-	add  r14,#0xe8
+	add  r14,#0xa4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xa8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xfc
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E
 	ld   r14,[fr,-24]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIixEC1EPFiRKiS3_E
 	ld   r14,[fr,-24]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E
 	ld   r14,[fr,-24]
-	add  r14,#0x190
+	add  r14,#0x1a4
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E
 	.dlab LBB37
+	.line 13
+	ld   d1,[fr,-24]
+	ld   i0,#0x30
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev
+	ld   [d1,136],d0
 	.line 14
 	ld   r14,[fr,-24]
-	ld   r0,#0x0
-	ld.b [r14,128],r0
+	ld   i0,[fr,-24]
+	ld   i1,[r14,136]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
 	.line 15
+	ld   i0,[fr,-24]
+	call &__ZN8NativeUI6Screen4showEv
+	.line 18
+	ld   r14,[fr,-24]
+	ld   r0,#0x0
+	ld.b [r14,148],r0
+	.line 19
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -1998,6 +2047,63 @@ Ltext9:
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   r14,[fr,-24]
+	add  r14,#0xb4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 20
+	ld   r14,[fr,-24]
+	ld   r0,#0x0
+	ld   [r14,172],r0
+	ld   r0,#0x0
+	ld   [r14,176],r0
+	.line 21
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
+	add  r14,#0xa4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 22
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
+	add  r14,#0xa8
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 23
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
 	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
@@ -2006,97 +2112,40 @@ Ltext9:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 16
-	ld   r14,[fr,-24]
-	ld   r0,#0x0
-	ld   [r14,152],r0
-	ld   r0,#0x0
-	ld   [r14,156],r0
-	.line 17
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x90
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 18
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x94
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 19
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x8c
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 21
+	.line 25
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 22
+	.line 26
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__Z9tryToReadRN6MAUtil11BasicStringIcEE
 	ld   [fr,-40],r14
 	.dlab LBB38
-	.line 23
+	.line 27
 	ld   r0,[fr,-40]
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L56
-	.line 25
+	.line 28
 	ld   i0,[fr,-24]
 	call &__ZN14Authentication8createUIEv
 	jp   #L57
 L56:
 	.dlab LBB39
 	.dlab LBB40
-	.line 27
+	.line 29
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
 	jc   ne,r0,r14,#L58
-	.line 29
+	.line 30
 	ld   i0,#0x1
 	ld   i1,#LC30
 	call &_maPanic
 L58:
 	.dlab LBB41
-	.line 33
+	.line 32
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -2143,7 +2192,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-24]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2182,8 +2231,8 @@ L58:
 	sra  r1,#0x1f
 	ld   r14,r0
 	ld   r15,r1
-	ld   [d0,152],r14
-	ld   [d0,156],r15
+	ld   [d0,172],r14
+	ld   [d0,176],r15
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   i0,r14
@@ -2215,7 +2264,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2254,7 +2303,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2293,7 +2342,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x8c
+	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2315,7 +2364,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -2329,7 +2378,7 @@ L58:
 	ld   r14,#0x0
 	jc   eq,r0,r14,#L60
 	.dlab LBB43
-	.line 44
+	.line 43
 	ld   d1,fr
 	add  d1,#0xffffffd0
 	ld   d2,fr
@@ -2337,7 +2386,7 @@ L58:
 	ld   r14,fr
 	add  r14,#0xffffffc4
 	ld   r0,[fr,-24]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   i0,r14
 	ld   i1,#LC36
 	ld   i2,r0
@@ -2358,7 +2407,7 @@ L58:
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   r0,[fr,-24]
-	add  r0,#0x90
+	add  r0,#0xa4
 	ld   i0,d1
 	ld   i1,r14
 	ld   i2,r0
@@ -2366,7 +2415,7 @@ L58:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-24]
-	add  r14,#0x88
+	add  r14,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2386,13 +2435,13 @@ L58:
 	add  r14,#0xffffffc4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 45
+	.line 44
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 46
+	.line 45
 	ld   r14,fr
 	add  r14,#0xffffffc0
 	ld   i0,r14
@@ -2409,15 +2458,15 @@ L58:
 	add  r14,#0xffffffc0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 47
+	.line 46
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   r0,[fr,-24]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 48
+	.line 47
 	ld   r14,fr
 	add  r14,#0xffffffc0
 	ld   r0,fr
@@ -2455,7 +2504,7 @@ L58:
 	.dlab LBE43
 	jp   #L57
 L60:
-	.line 52
+	.line 49
 	ld   i0,[fr,-24]
 	call &__ZN14Authentication8createUIEv
 L57:
@@ -2464,35 +2513,35 @@ L57:
 	.dlab LBE40
 	.dlab LBE39
 	.dlab LBE38
-	.line 62
+	.line 58
 	ld   r14,[fr,-24]
 	ld   r0,[fr,-32]
-	ld   [r14,164],r0
+	ld   [r14,184],r0
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.dlab LBE37
 	.dlab LBE36
-	.line 64
+	.line 60
 	add  sp,#0x30
 	pop  rt,d2
 	ret
-	.stabs	"config:(10,1)",128,0,21,-36
-	.stabs	"eFileTmp:(93,3)",128,0,22,-40
+	.stabs	"config:(10,1)",128,0,25,-36
+	.stabs	"eFileTmp:(95,3)",128,0,26,-40
 	.stabn	192,0,0,LBB37-__ZN14AuthenticationC2EiP10ScreenMain
-	.stabs	"root:(89,35)",128,0,34,-44
+	.stabs	"root:(91,35)",128,0,33,-44
 	.stabn	192,0,0,LBB41-__ZN14AuthenticationC2EiP10ScreenMain
-	.stabs	"urlTmp:(10,1)",128,0,45,-48
+	.stabs	"urlTmp:(10,1)",128,0,44,-48
 	.stabn	192,0,0,LBB43-__ZN14AuthenticationC2EiP10ScreenMain
 	.stabn	224,0,0,LBE43-__ZN14AuthenticationC2EiP10ScreenMain
 	.stabn	224,0,0,LBE41-__ZN14AuthenticationC2EiP10ScreenMain
 	.stabn	224,0,0,LBE37-__ZN14AuthenticationC2EiP10ScreenMain
 Lscope18:
-	.stabs	"_ZN8NativeUI18RadioGroupListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI18RadioGroupListenerC2Ev
-	.stabs	"this:p(57,9)",160,0,47,-12
+	.stabs	"_ZN8NativeUI15EditBoxListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI15EditBoxListenerC2Ev
+	.stabs	"this:p(29,14)",160,0,48,-12
 
-.func __ZN8NativeUI18RadioGroupListenerC2Ev, 1, void
+.func __ZN8NativeUI15EditBoxListenerC2Ev, 1, void
 	.line 12
 	push rt,fr
 	sub  sp,#0x4
@@ -2502,17 +2551,17 @@ Lscope18:
 	.dlab LBB44
 	.line 12
 	ld   r14,[fr,-12]
-	ld   r0,#__ZTVN8NativeUI18RadioGroupListenerE+8
+	ld   r0,#__ZTVN8NativeUI15EditBoxListenerE+8
 	ld   [r14],r0
 	.dlab LBE44
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope19:
-	.stabs	"_ZN8NativeUI16ListViewListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI16ListViewListenerC2Ev
-	.stabs	"this:p(37,12)",160,0,50,-12
+	.stabs	"_ZN8NativeUI18RadioGroupListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI18RadioGroupListenerC2Ev
+	.stabs	"this:p(59,9)",160,0,47,-12
 
-.func __ZN8NativeUI16ListViewListenerC2Ev, 1, void
+.func __ZN8NativeUI18RadioGroupListenerC2Ev, 1, void
 	.line 12
 	push rt,fr
 	sub  sp,#0x4
@@ -2522,13 +2571,33 @@ Lscope19:
 	.dlab LBB45
 	.line 12
 	ld   r14,[fr,-12]
-	ld   r0,#__ZTVN8NativeUI16ListViewListenerE+8
+	ld   r0,#__ZTVN8NativeUI18RadioGroupListenerE+8
 	ld   [r14],r0
 	.dlab LBE45
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope20:
+	.stabs	"_ZN8NativeUI16ListViewListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI16ListViewListenerC2Ev
+	.stabs	"this:p(39,12)",160,0,50,-12
+
+.func __ZN8NativeUI16ListViewListenerC2Ev, 1, void
+	.line 12
+	push rt,fr
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0xc
+	ld   [fr,-12],i0
+	.dlab LBB46
+	.line 12
+	ld   r14,[fr,-12]
+	ld   r0,#__ZTVN8NativeUI16ListViewListenerE+8
+	ld   [r14],r0
+	.dlab LBE46
+	add  sp,#0x4
+	pop  rt,fr
+	ret
+Lscope21:
 	.stabs	"_ZN8NativeUI14ButtonListenerC2Ev:f(0,6)",36,0,12,__ZN8NativeUI14ButtonListenerC2Ev
 	.stabs	"this:p(17,9)",160,0,48,-12
 
@@ -2539,16 +2608,16 @@ Lscope20:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB46
+	.dlab LBB47
 	.line 12
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTVN8NativeUI14ButtonListenerE+8
 	ld   [r14],r0
-	.dlab LBE46
+	.dlab LBE47
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope21:
+Lscope22:
 	.stabs	"_ZN14AuthenticationC1EiP10ScreenMain:F(0,6)",36,0,11,__ZN14AuthenticationC1EiP10ScreenMain
 	.stabs	"this:p(0,25)",160,0,11,-24
 	.stabs	"language:p(0,3)",160,0,11,-28
@@ -2564,66 +2633,62 @@ Lscope21:
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
 	ld   [fr,-32],i2
-	.dlab LBB47
+	.dlab LBB48
 	.line 12
 	ld   i0,[fr,-24]
 	call &__ZN8NativeUI6ScreenC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x6c
+	add  r14,#0x78
 	ld   i0,r14
 	call &__ZN8NativeUI14ButtonListenerC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x70
+	add  r14,#0x7c
 	ld   i0,r14
 	call &__ZN8NativeUI16ListViewListenerC2Ev
 	ld   r14,[fr,-24]
-	add  r14,#0x74
+	add  r14,#0x80
 	ld   i0,r14
 	call &__ZN8NativeUI18RadioGroupListenerC2Ev
+	ld   r14,[fr,-24]
+	add  r14,#0x84
+	ld   i0,r14
+	call &__ZN8NativeUI15EditBoxListenerC2Ev
 	ld   r14,[fr,-24]
 	ld   r0,#__ZTV14Authentication+8
 	ld   [r14],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x3c
-	ld   r0,#__ZTV14Authentication+216
-	ld   [r14],r0
-	ld   r14,[fr,-24]
-	add  r14,#0x64
-	ld   r0,#__ZTV14Authentication+256
-	ld   [r14],r0
-	ld   r14,[fr,-24]
-	add  r14,#0x6c
-	ld   r0,#__ZTV14Authentication+284
+	add  r14,#0x48
+	ld   r0,#__ZTV14Authentication+236
 	ld   [r14],r0
 	ld   r14,[fr,-24]
 	add  r14,#0x70
+	ld   r0,#__ZTV14Authentication+276
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x78
 	ld   r0,#__ZTV14Authentication+304
 	ld   [r14],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x74
-	ld   r0,#__ZTV14Authentication+336
+	add  r14,#0x7c
+	ld   r0,#__ZTV14Authentication+324
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x80
+	ld   r0,#__ZTV14Authentication+356
+	ld   [r14],r0
+	ld   r14,[fr,-24]
+	add  r14,#0x84
+	ld   r0,#__ZTV14Authentication+368
 	ld   [r14],r0
 	ld   r14,[fr,-24]
 	ld   r0,[fr,-28]
-	ld   [r14,120],r0
+	ld   [r14,140],r0
 	ld   r14,[fr,-24]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-24]
-	add  r14,#0x94
+	add  r14,#0x9c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
 	ld   r14,[fr,-24]
@@ -2631,31 +2696,59 @@ Lscope21:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
 	ld   r14,[fr,-24]
-	add  r14,#0xe8
+	add  r14,#0xa4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xa8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcEC1Ev
+	ld   r14,[fr,-24]
+	add  r14,#0xfc
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E
 	ld   r14,[fr,-24]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIixEC1EPFiRKiS3_E
 	ld   r14,[fr,-24]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E
 	ld   r14,[fr,-24]
-	add  r14,#0x190
+	add  r14,#0x1a4
 	ld   i0,r14
 	ld   i1,#__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E
-	.dlab LBB48
+	.dlab LBB49
+	.line 13
+	ld   d1,[fr,-24]
+	ld   i0,#0x30
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev
+	ld   [d1,136],d0
 	.line 14
 	ld   r14,[fr,-24]
-	ld   r0,#0x0
-	ld.b [r14,128],r0
+	ld   i0,[fr,-24]
+	ld   i1,[r14,136]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
 	.line 15
+	ld   i0,[fr,-24]
+	call &__ZN8NativeUI6Screen4showEv
+	.line 18
+	ld   r14,[fr,-24]
+	ld   r0,#0x0
+	ld.b [r14,148],r0
+	.line 19
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -2664,6 +2757,63 @@ Lscope21:
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   r14,[fr,-24]
+	add  r14,#0xb4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 20
+	ld   r14,[fr,-24]
+	ld   r0,#0x0
+	ld   [r14,172],r0
+	ld   r0,#0x0
+	ld   [r14,176],r0
+	.line 21
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
+	add  r14,#0xa4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 22
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
+	add  r14,#0xa8
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 23
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-24]
 	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
@@ -2672,97 +2822,40 @@ Lscope21:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 16
-	ld   r14,[fr,-24]
-	ld   r0,#0x0
-	ld   [r14,152],r0
-	ld   r0,#0x0
-	ld   [r14,156],r0
-	.line 17
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x90
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 18
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x94
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 19
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-24]
-	add  r14,#0x8c
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 21
+	.line 25
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 22
+	.line 26
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__Z9tryToReadRN6MAUtil11BasicStringIcEE
 	ld   [fr,-40],r14
-	.dlab LBB49
-	.line 23
-	ld   r0,[fr,-40]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L66
-	.line 25
-	ld   i0,[fr,-24]
-	call &__ZN14Authentication8createUIEv
-	jp   #L67
-L66:
 	.dlab LBB50
-	.dlab LBB51
 	.line 27
 	ld   r0,[fr,-40]
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L68
+	ld   r14,#0x1
+	jc   ne,r0,r14,#L67
+	.line 28
+	ld   i0,[fr,-24]
+	call &__ZN14Authentication8createUIEv
+	jp   #L68
+L67:
+	.dlab LBB51
+	.dlab LBB52
 	.line 29
+	ld   r0,[fr,-40]
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L69
+	.line 30
 	ld   i0,#0x1
 	ld   i1,#LC30
 	call &_maPanic
-L68:
-	.dlab LBB52
-	.line 33
+L69:
+	.dlab LBB53
+	.line 32
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -2809,7 +2902,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-24]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2848,8 +2941,8 @@ L68:
 	sra  r1,#0x1f
 	ld   r14,r0
 	ld   r15,r1
-	ld   [d0,152],r14
-	ld   [d0,156],r15
+	ld   [d0,172],r14
+	ld   [d0,176],r15
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   i0,r14
@@ -2881,7 +2974,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2920,7 +3013,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2959,7 +3052,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0x8c
+	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -2971,7 +3064,7 @@ L68:
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBB53
+	.dlab LBB54
 	.line 41
 	ld   r14,fr
 	add  r14,#0xffffffcc
@@ -2981,7 +3074,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-24]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -2993,9 +3086,9 @@ L68:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L70
-	.dlab LBB54
-	.line 44
+	jc   eq,r0,r14,#L71
+	.dlab LBB55
+	.line 43
 	ld   d1,fr
 	add  d1,#0xffffffd0
 	ld   d2,fr
@@ -3003,7 +3096,7 @@ L68:
 	ld   r14,fr
 	add  r14,#0xffffffc4
 	ld   r0,[fr,-24]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   i0,r14
 	ld   i1,#LC36
 	ld   i2,r0
@@ -3024,7 +3117,7 @@ L68:
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   r0,[fr,-24]
-	add  r0,#0x90
+	add  r0,#0xa4
 	ld   i0,d1
 	ld   i1,r14
 	ld   i2,r0
@@ -3032,7 +3125,7 @@ L68:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-24]
-	add  r14,#0x88
+	add  r14,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -3052,13 +3145,13 @@ L68:
 	add  r14,#0xffffffc4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 45
+	.line 44
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 46
+	.line 45
 	ld   r14,fr
 	add  r14,#0xffffffc0
 	ld   i0,r14
@@ -3075,15 +3168,15 @@ L68:
 	add  r14,#0xffffffc0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 47
+	.line 46
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   r0,[fr,-24]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 48
+	.line 47
 	ld   r14,fr
 	add  r14,#0xffffffc0
 	ld   r0,fr
@@ -3118,159 +3211,144 @@ L68:
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE54
-	jp   #L67
-L70:
-	.line 52
+	.dlab LBE55
+	jp   #L68
+L71:
+	.line 49
 	ld   i0,[fr,-24]
 	call &__ZN14Authentication8createUIEv
-L67:
+L68:
+	.dlab LBE54
 	.dlab LBE53
 	.dlab LBE52
 	.dlab LBE51
 	.dlab LBE50
-	.dlab LBE49
-	.line 62
+	.line 58
 	ld   r14,[fr,-24]
 	ld   r0,[fr,-32]
-	ld   [r14,164],r0
+	ld   [r14,184],r0
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE49
 	.dlab LBE48
-	.dlab LBE47
-	.line 64
+	.line 60
 	add  sp,#0x30
 	pop  rt,d2
 	ret
-	.stabs	"config:(10,1)",128,0,21,-36
-	.stabs	"eFileTmp:(93,3)",128,0,22,-40
-	.stabn	192,0,0,LBB48-__ZN14AuthenticationC1EiP10ScreenMain
-	.stabs	"root:(89,35)",128,0,34,-44
-	.stabn	192,0,0,LBB52-__ZN14AuthenticationC1EiP10ScreenMain
-	.stabs	"urlTmp:(10,1)",128,0,45,-48
-	.stabn	192,0,0,LBB54-__ZN14AuthenticationC1EiP10ScreenMain
-	.stabn	224,0,0,LBE54-__ZN14AuthenticationC1EiP10ScreenMain
-	.stabn	224,0,0,LBE52-__ZN14AuthenticationC1EiP10ScreenMain
-	.stabn	224,0,0,LBE48-__ZN14AuthenticationC1EiP10ScreenMain
-Lscope22:
-	.stabs	"_ZN14AuthenticationD2Ev:F(0,6)",36,0,69,__ZN14AuthenticationD2Ev
-	.stabs	"this:p(0,25)",160,0,69,-12
+	.stabs	"config:(10,1)",128,0,25,-36
+	.stabs	"eFileTmp:(95,3)",128,0,26,-40
+	.stabn	192,0,0,LBB49-__ZN14AuthenticationC1EiP10ScreenMain
+	.stabs	"root:(91,35)",128,0,33,-44
+	.stabn	192,0,0,LBB53-__ZN14AuthenticationC1EiP10ScreenMain
+	.stabs	"urlTmp:(10,1)",128,0,44,-48
+	.stabn	192,0,0,LBB55-__ZN14AuthenticationC1EiP10ScreenMain
+	.stabn	224,0,0,LBE55-__ZN14AuthenticationC1EiP10ScreenMain
+	.stabn	224,0,0,LBE53-__ZN14AuthenticationC1EiP10ScreenMain
+	.stabn	224,0,0,LBE49-__ZN14AuthenticationC1EiP10ScreenMain
+Lscope23:
+	.stabs	"_ZN14AuthenticationD2Ev:F(0,6)",36,0,65,__ZN14AuthenticationD2Ev
+	.stabs	"this:p(0,25)",160,0,65,-12
 	.global	__ZN14AuthenticationD2Ev
 
 .func __ZN14AuthenticationD2Ev, 1, void
-	.line 69
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB55
-	.line 69
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV14Authentication+8
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x3c
-	ld   r0,#__ZTV14Authentication+216
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x64
-	ld   r0,#__ZTV14Authentication+256
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x6c
-	ld   r0,#__ZTV14Authentication+284
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x70
-	ld   r0,#__ZTV14Authentication+304
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x74
-	ld   r0,#__ZTV14Authentication+336
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x190
-	ld   i0,r14
-	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x158
-	ld   i0,r14
-	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x120
-	ld   i0,r14
-	call &__ZN6MAUtil3MapIixED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0xe8
-	ld   i0,r14
-	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0xa0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x3c
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE55
-	.line 71
-	ld   r14,#0x1
-	and  r14,#0x0
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L72
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L72:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope23:
-	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
-	.stabs	"this:p(0,30)=k(96,118)",160,0,33,-12
-
-.func __ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev, 1, void
-	.line 12
+	.line 65
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
 	.dlab LBB56
-	.line 12
+	.line 65
+	ld   r14,[fr,-12]
+	ld   r0,#__ZTV14Authentication+8
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x48
+	ld   r0,#__ZTV14Authentication+236
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x70
+	ld   r0,#__ZTV14Authentication+276
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x78
+	ld   r0,#__ZTV14Authentication+304
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x7c
+	ld   r0,#__ZTV14Authentication+324
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x80
+	ld   r0,#__ZTV14Authentication+356
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x84
+	ld   r0,#__ZTV14Authentication+368
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x1a4
+	ld   i0,r14
+	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0x16c
+	ld   i0,r14
+	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0x134
+	ld   i0,r14
+	call &__ZN6MAUtil3MapIixED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xfc
+	ld   i0,r14
+	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa0
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0x9c
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0x48
+	ld   i0,r14
+	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
 	ld   i0,[fr,-12]
-	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev
+	call &__ZN8NativeUI6ScreenD2Ev
 	.dlab LBE56
+	.line 67
+	ld   r14,#0x1
+	and  r14,#0x0
+	ld   r0,r14
+	and  r0,#0xff  ; zero extend
+	ld   r14,#0x0
+	jc   eq,r0,r14,#L73
+	ld   i0,[fr,-12]
+	call &__ZdlPv
+L73:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope24:
-	.stabs	"_ZN6MAUtil3MapIixED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIixED1Ev
-	.stabs	"this:p(0,31)=k(106,29)",160,0,33,-12
+	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
+	.stabs	"this:p(0,30)=k(98,118)",160,0,33,-12
 
-.func __ZN6MAUtil3MapIixED1Ev, 1, void
+.func __ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev, 1, void
 	.line 12
 	push rt,fr
 	sub  sp,#0x4
@@ -3280,16 +3358,16 @@ Lscope24:
 	.dlab LBB57
 	.line 12
 	ld   i0,[fr,-12]
-	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev
+	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev
 	.dlab LBE57
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope25:
-	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
-	.stabs	"this:p(0,32)=k(96,33)",160,0,33,-12
+	.stabs	"_ZN6MAUtil3MapIixED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIixED1Ev
+	.stabs	"this:p(0,31)=k(108,29)",160,0,33,-12
 
-.func __ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev, 1, void
+.func __ZN6MAUtil3MapIixED1Ev, 1, void
 	.line 12
 	push rt,fr
 	sub  sp,#0x4
@@ -3299,16 +3377,16 @@ Lscope25:
 	.dlab LBB58
 	.line 12
 	ld   i0,[fr,-12]
-	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev
+	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev
 	.dlab LBE58
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope26:
-	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
-	.stabs	"this:p(0,33)=k(96,163)",160,0,33,-12
+	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
+	.stabs	"this:p(0,32)=k(98,33)",160,0,33,-12
 
-.func __ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev, 1, void
+.func __ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev, 1, void
 	.line 12
 	push rt,fr
 	sub  sp,#0x4
@@ -3318,17 +3396,36 @@ Lscope26:
 	.dlab LBB59
 	.line 12
 	ld   i0,[fr,-12]
-	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev
+	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev
 	.dlab LBE59
 	add  sp,#0x4
 	pop  rt,fr
 	ret
 Lscope27:
-	.set	%0=__ZN14AuthenticationD1Ev
-	.stabs	"this:p(0,25)",160,0,69,-12
-	.global	__ZThn60_N14AuthenticationD1Ev
+	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev:f(0,6)",36,0,12,__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
+	.stabs	"this:p(0,33)=k(98,163)",160,0,33,-12
 
-.func __ZThn60_N14AuthenticationD1Ev, 1, void
+.func __ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev, 1, void
+	.line 12
+	push rt,fr
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0xc
+	ld   [fr,-12],i0
+	.dlab LBB60
+	.line 12
+	ld   i0,[fr,-12]
+	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev
+	.dlab LBE60
+	add  sp,#0x4
+	pop  rt,fr
+	ret
+Lscope28:
+	.set	%0=__ZN14AuthenticationD1Ev
+	.stabs	"this:p(0,25)",160,0,65,-12
+	.global	__ZThn72_N14AuthenticationD1Ev
+
+.func __ZThn72_N14AuthenticationD1Ev, 1, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext10
 Ltext10:
 	.line 28
@@ -3339,113 +3436,117 @@ Ltext10:
 	ld   [fr,-12],i0
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffb8
 	ld   i0,r14
 	call &%0
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope28:
-	.stabs	"_ZN14AuthenticationD1Ev:F(0,6)",36,0,69,__ZN14AuthenticationD1Ev
-	.stabs	"this:p(0,25)",160,0,69,-12
+Lscope29:
+	.stabs	"_ZN14AuthenticationD1Ev:F(0,6)",36,0,65,__ZN14AuthenticationD1Ev
+	.stabs	"this:p(0,25)",160,0,65,-12
 	.global	__ZN14AuthenticationD1Ev
 
 .func __ZN14AuthenticationD1Ev, 1, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext11
 Ltext11:
-	.line 69
+	.line 65
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB60
-	.line 69
+	.dlab LBB61
+	.line 65
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV14Authentication+8
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x3c
-	ld   r0,#__ZTV14Authentication+216
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x64
-	ld   r0,#__ZTV14Authentication+256
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x6c
-	ld   r0,#__ZTV14Authentication+284
+	add  r14,#0x48
+	ld   r0,#__ZTV14Authentication+236
 	ld   [r14],r0
 	ld   r14,[fr,-12]
 	add  r14,#0x70
+	ld   r0,#__ZTV14Authentication+276
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x78
 	ld   r0,#__ZTV14Authentication+304
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x74
-	ld   r0,#__ZTV14Authentication+336
+	add  r14,#0x7c
+	ld   r0,#__ZTV14Authentication+324
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x190
+	add  r14,#0x80
+	ld   r0,#__ZTV14Authentication+356
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x84
+	ld   r0,#__ZTV14Authentication+368
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x1a4
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIixED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
 	add  r14,#0xa0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x94
+	add  r14,#0x9c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE60
-	.line 71
+	.dlab LBE61
+	.line 67
 	ld   r14,#0x1
 	and  r14,#0x2
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L89
+	jc   eq,r0,r14,#L90
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-L89:
+L90:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope29:
+Lscope30:
 	.set	%1=__ZN14AuthenticationD0Ev
-	.stabs	"this:p(0,25)",160,0,69,-12
-	.global	__ZThn60_N14AuthenticationD0Ev
+	.stabs	"this:p(0,25)",160,0,65,-12
+	.global	__ZThn72_N14AuthenticationD0Ev
 
-.func __ZThn60_N14AuthenticationD0Ev, 1, void
+.func __ZThn72_N14AuthenticationD0Ev, 1, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext12
 Ltext12:
 	.line 28
@@ -3456,115 +3557,119 @@ Ltext12:
 	ld   [fr,-12],i0
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffb8
 	ld   i0,r14
 	call &%1
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope30:
-	.stabs	"_ZN14AuthenticationD0Ev:F(0,6)",36,0,69,__ZN14AuthenticationD0Ev
-	.stabs	"this:p(0,25)",160,0,69,-12
+Lscope31:
+	.stabs	"_ZN14AuthenticationD0Ev:F(0,6)",36,0,65,__ZN14AuthenticationD0Ev
+	.stabs	"this:p(0,25)",160,0,65,-12
 	.global	__ZN14AuthenticationD0Ev
 
 .func __ZN14AuthenticationD0Ev, 1, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext13
 Ltext13:
-	.line 69
+	.line 65
 	push rt,fr
 	sub  sp,#0x4
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB61
-	.line 69
+	.dlab LBB62
+	.line 65
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV14Authentication+8
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x3c
-	ld   r0,#__ZTV14Authentication+216
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x64
-	ld   r0,#__ZTV14Authentication+256
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x6c
-	ld   r0,#__ZTV14Authentication+284
+	add  r14,#0x48
+	ld   r0,#__ZTV14Authentication+236
 	ld   [r14],r0
 	ld   r14,[fr,-12]
 	add  r14,#0x70
+	ld   r0,#__ZTV14Authentication+276
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x78
 	ld   r0,#__ZTV14Authentication+304
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x74
-	ld   r0,#__ZTV14Authentication+336
+	add  r14,#0x7c
+	ld   r0,#__ZTV14Authentication+324
 	ld   [r14],r0
 	ld   r14,[fr,-12]
-	add  r14,#0x190
+	add  r14,#0x80
+	ld   r0,#__ZTV14Authentication+356
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x84
+	ld   r0,#__ZTV14Authentication+368
+	ld   [r14],r0
+	ld   r14,[fr,-12]
+	add  r14,#0x1a4
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIixED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   i0,r14
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,[fr,-12]
+	add  r14,#0xa4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
 	add  r14,#0xa0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x94
+	add  r14,#0x9c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,[fr,-12]
-	add  r14,#0x90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE61
-	.line 71
+	.dlab LBE62
+	.line 67
 	ld   r14,#0x1
 	and  r14,#0x3
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L94
+	jc   eq,r0,r14,#L95
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-L94:
+L95:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope31:
+Lscope32:
 	.set	%2=__ZN14Authentication14dataDownloadedEii
-	.stabs	"this:p(0,25)",160,0,73,-12
-	.stabs	"data:p(6,10)",160,0,73,-16
-	.stabs	"result:p(0,3)",160,0,73,-20
-	.global	__ZThn60_N14Authentication14dataDownloadedEii
+	.stabs	"this:p(0,25)",160,0,69,-12
+	.stabs	"data:p(6,10)",160,0,69,-16
+	.stabs	"result:p(0,3)",160,0,69,-20
+	.global	__ZThn72_N14Authentication14dataDownloadedEii
 
-.func __ZThn60_N14Authentication14dataDownloadedEii, 3, void
+.func __ZThn72_N14Authentication14dataDownloadedEii, 3, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext14
 Ltext14:
 	.line 28
@@ -3577,7 +3682,7 @@ Ltext14:
 	ld   [fr,-20],i2
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffb8
 	ld   i0,r14
 	ld   i1,[fr,-16]
 	ld   i2,[fr,-20]
@@ -3585,7 +3690,7 @@ Ltext14:
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope32:
+Lscope33:
 .data
 LC40:
 	.ascii "dataDownloaded Authentication\0"
@@ -3604,16 +3709,16 @@ LC46:
 LC47:
 	.ascii "Connection Error\0"
 .code
-	.stabs	"_ZN14Authentication14dataDownloadedEii:F(0,6)",36,0,73,__ZN14Authentication14dataDownloadedEii
-	.stabs	"this:p(0,25)",160,0,73,-16
-	.stabs	"data:p(6,10)",160,0,73,-20
-	.stabs	"result:p(0,3)",160,0,73,-24
+	.stabs	"_ZN14Authentication14dataDownloadedEii:F(0,6)",36,0,69,__ZN14Authentication14dataDownloadedEii
+	.stabs	"this:p(0,25)",160,0,69,-16
+	.stabs	"data:p(6,10)",160,0,69,-20
+	.stabs	"result:p(0,3)",160,0,69,-24
 	.global	__ZN14Authentication14dataDownloadedEii
 
 .func __ZN14Authentication14dataDownloadedEii, 3, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext15
 Ltext15:
-	.line 73
+	.line 69
 	push rt,d0
 	sub  sp,#0x20
 	ld   fr,sp
@@ -3621,44 +3726,44 @@ Ltext15:
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
 	ld   [fr,-24],i2
-	.dlab LBB62
 	.dlab LBB63
-	.line 74
+	.dlab LBB64
+	.line 70
 	ld   i0,#LC40
 	call &_lprintfln
-	.line 75
+	.line 71
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld.b [r14,128],r0
-	.line 76
+	ld.b [r14,148],r0
+	.line 72
 	ld   r14,[fr,-16]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	call &__ZN6MAUtil10Connection5closeEv
-	.line 77
+	.line 73
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	ld   i1,#LC15
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.dlab LBB64
-	.line 79
+	.dlab LBB65
+	.line 75
 	ld   r0,[fr,-24]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L100
-	.dlab LBB65
-	.line 80
+	jc   ne,r0,r14,#L101
+	.dlab LBB66
+	.line 76
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld   [r14,132],r0
-	.line 81
+	ld   [r14,152],r0
+	.line 77
 	ld   i0,[fr,-20]
 	call &_maGetDataSize
 	add  r14,#0x1
 	ld   i0,r14
 	call &__Znam
 	ld   [fr,-32],r14
-	.line 82
+	.line 78
 	ld   i0,[fr,-20]
 	call &_maGetDataSize
 	ld   i0,[fr,-20]
@@ -3666,22 +3771,22 @@ Ltext15:
 	ld   i2,#0x0
 	ld   i3,r14
 	call &_maReadData
-	.line 83
+	.line 79
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	ld   i1,[fr,-32]
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 84
+	.line 80
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	ld   i1,#0x1
 	call &__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
-	.line 85
+	.line 81
 	ld   i0,#LC41
 	call &_lprintfln
-	.line 87
+	.line 83
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -3693,97 +3798,102 @@ Ltext15:
 	ld   i1,r14
 	call &__ZN6MAUtil7YAJLDom5parseEPKhm
 	ld   [fr,-40],r14
-	.line 88
+	.line 84
 	ld   i0,#LC42
 	call &_lprintfln
-	.line 89
+	.line 85
 	ld   r14,[fr,-16]
-	ld   r14,[r14,124]
-	case r14,#0x0,#0x4,#L108,#L101
+	ld   r14,[r14,144]
+	case r14,#0x0,#0x4,#L109,#L102
 .data
 	.align 4
-L108:
-	.word L102
+L109:
 	.word L103
 	.word L104
 	.word L105
 	.word L106
+	.word L107
 .code
-L102:
-	.line 91
+L103:
+	.line 87
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-40]
 	call &__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
-	.line 92
-	jp   #L101
-L103:
-	.line 94
+	.line 88
+	jp   #L102
+L104:
+	.line 90
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-40]
 	call &__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-	.line 95
-	jp   #L101
-L104:
-	.line 97
+	.line 91
+	jp   #L102
+L105:
+	.line 93
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-40]
 	call &__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
-	.line 98
-	jp   #L101
-L105:
-	.line 100
+	.line 94
+	jp   #L102
+L106:
+	.line 96
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-40]
 	call &__ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE
-	.line 101
-	jp   #L101
-L106:
-	.line 103
+	.line 97
+	jp   #L102
+L107:
+	.line 99
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-40]
 	call &__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-L101:
-	.line 105
+L102:
+	.line 101
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE65
-	jp   #L109
-L100:
-	.line 110
+	.dlab LBE66
+	jp   #L110
+L101:
+	.line 106
 	ld   r0,[fr,-24]
 	ld   r14,#0xfffffffc
-	jc   ne,r0,r14,#L110
-	.line 111
-	ld   r14,[fr,-16]
+	jc   ne,r0,r14,#L111
+	.line 107
 	ld   r0,[fr,-16]
-	ld   r0,[r0,132]
-	add  r0,#0x1
-	ld   [r14,132],r0
-	.line 112
+	ld   r14,[fr,-16]
+	ld   r14,[r14,152]
+	add  r14,#0x1
+	ld   [r0,152],r14
+	.line 108
 	ld   r14,[fr,-24]
 	ld   [sp],r14
 	ld   i0,#LC43
 	call &_lprintfln
-	.line 113
+	.line 109
 	ld   i0,#LC44
 	call &_lprintfln
-	jp   #L109
-L110:
-	.line 114
+	.line 110
+	ld   r14,[fr,-16]
+	ld   i0,[fr,-16]
+	ld   i1,[r14,188]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	jp   #L110
+L111:
+	.line 111
 	ld   r0,[fr,-24]
 	ld   r14,#0xfffffffe
-	jc   ne,r0,r14,#L112
+	jc   ne,r0,r14,#L113
 	ld   r14,[fr,-16]
-	ld   r0,[r14,124]
+	ld   r0,[r14,144]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L112
-	.line 115
+	jc   ne,r0,r14,#L113
+	.line 112
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld   [r14,132],r0
-	.line 116
+	ld   [r14,152],r0
+	.line 113
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -3792,56 +3902,61 @@ L110:
 	ld   r1,fr
 	add  r1,#0xffffffdc
 	ld   r14,[fr,-16]
-	ld   r14,[r14,184]
+	ld   r14,[r14,204]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-16]
 	ld   r14,[r14]
-	ld   i0,[r0,184]
+	ld   i0,[r0,204]
 	ld   i1,r1
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L109
-L112:
-	.line 118
-	ld   r0,[fr,-24]
-	ld   r14,#0x194
-	jc   ne,r0,r14,#L114
+	.line 115
 	ld   r14,[fr,-16]
-	ld   r0,[r14,124]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L114
-	.line 119
-	ld   r14,[fr,-16]
-	ld   r0,#0x0
-	ld   [r14,132],r0
-	.line 120
 	ld   i0,[fr,-16]
-	call &__ZN14Authentication22createPageMobileChoiceEv
-	jp   #L109
-L114:
-	.line 121
+	ld   i1,[r14,188]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	jp   #L110
+L113:
+	.line 116
 	ld   r0,[fr,-24]
 	ld   r14,#0x194
-	jc   ne,r0,r14,#L116
+	jc   ne,r0,r14,#L115
 	ld   r14,[fr,-16]
-	ld   r0,[r14,124]
-	ld   r14,#0x4
-	jc   ne,r0,r14,#L116
-	.line 122
-	ld   r14,[fr,-16]
-	ld   r0,#0x0
-	ld   [r14,132],r0
-	.line 123
+	ld   r0,[r14,144]
+	ld   r14,#0x1
+	jc   ne,r0,r14,#L115
+	.line 117
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
 	ld   [r14,152],r0
+	.line 118
+	ld   i0,[fr,-16]
+	call &__ZN14Authentication22createPageMobileChoiceEv
+	jp   #L110
+L115:
+	.line 119
+	ld   r0,[fr,-24]
+	ld   r14,#0x194
+	jc   ne,r0,r14,#L117
+	ld   r14,[fr,-16]
+	ld   r0,[r14,144]
+	ld   r14,#0x4
+	jc   ne,r0,r14,#L117
+	.line 120
+	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld   [r14,156],r0
-	.line 124
+	ld   [r14,152],r0
+	.line 121
+	ld   r14,[fr,-16]
+	ld   r0,#0x0
+	ld   [r14,172],r0
+	ld   r0,#0x0
+	ld   [r14,176],r0
+	.line 122
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -3850,7 +3965,7 @@ L114:
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   r14,[fr,-16]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -3858,23 +3973,40 @@ L114:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 125
+	.line 123
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication8createUIEv
-	jp   #L109
-L116:
-	.line 131
+	jp   #L110
+L117:
+	.line 129
 	ld   r0,[fr,-24]
 	ld   r14,#0xfffffffe
-	jc   ne,r0,r14,#L118
+	jc   ne,r0,r14,#L119
 	ld   r14,[fr,-16]
-	ld   r0,[r14,124]
+	ld   r0,[r14,144]
 	ld   r14,#0x4
-	jc   ne,r0,r14,#L118
-	.line 132
+	jc   ne,r0,r14,#L119
+	.line 131
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld   [r14,132],r0
+	ld   [r14,152],r0
+	.line 132
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffdc
+	ld   r14,[fr,-16]
+	add  r14,#0xa4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.line 133
 	ld   r14,fr
 	add  r14,#0xffffffdc
@@ -3884,7 +4016,7 @@ L116:
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   r14,[fr,-16]
-	add  r14,#0x90
+	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -3893,45 +4025,33 @@ L116:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.line 134
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffdc
-	ld   r14,[fr,-16]
-	add  r14,#0x8c
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffdc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 135
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication8createUIEv
-	jp   #L109
-L118:
-	.line 139
-	ld   r14,[fr,-16]
+	jp   #L110
+L119:
+	.line 138
 	ld   r0,[fr,-16]
-	ld   r0,[r0,132]
-	add  r0,#0x1
-	ld   [r14,132],r0
-	.line 140
+	ld   r14,[fr,-16]
+	ld   r14,[r14,152]
+	add  r14,#0x1
+	ld   [r0,152],r14
+	.line 139
 	ld   r14,[fr,-24]
 	ld   [sp],r14
 	ld   i0,#LC43
 	call &_lprintfln
-L109:
-	.dlab LBE64
+	.line 140
+	ld   r14,[fr,-16]
+	ld   i0,[fr,-16]
+	ld   i1,[r14,188]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+L110:
+	.dlab LBE65
 	.line 142
 	ld   r14,[fr,-16]
-	ld   r0,[r14,132]
-	ld   r14,#0x2
-	jc   le,r0,r14,#L120
+	ld   r0,[r14,152]
+	ld   r14,#0x0
+	jc   le,r0,r14,#L121
 	.line 143
 	ld   r14,fr
 	add  r14,#0xffffffdc
@@ -3976,53 +4096,53 @@ L109:
 	call &_maMessageBox
 	.line 146
 	call &__Z19getSystemConnectionv
-L120:
+L121:
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE64
 	.dlab LBE63
-	.dlab LBE62
 	.line 149
 	add  sp,#0x20
 	pop  rt,d0
 	ret
-	.stabs	"sMessage:(10,1)",128,0,77,-28
-	.stabn	192,0,0,LBB63-__ZN14Authentication14dataDownloadedEii
-	.stabs	"jsonData:(6,5)",128,0,81,-32
-	.stabs	"jsonTmp:(10,1)",128,0,83,-36
-	.stabs	"root:(89,35)",128,0,86,-40
-	.stabn	192,0,0,LBB65-__ZN14Authentication14dataDownloadedEii
-	.stabn	224,0,0,LBE65-__ZN14Authentication14dataDownloadedEii
-	.stabn	224,0,0,LBE63-__ZN14Authentication14dataDownloadedEii
-Lscope33:
-	.stabs	"maMessageBox:f(0,6)",36,0,6514,_maMessageBox
-	.stabs	"title:p(4,7)",160,0,6514,-12
-	.stabs	"message:p(4,7)",160,0,6514,-16
+	.stabs	"sMessage:(10,1)",128,0,73,-28
+	.stabn	192,0,0,LBB64-__ZN14Authentication14dataDownloadedEii
+	.stabs	"jsonData:(6,5)",128,0,77,-32
+	.stabs	"jsonTmp:(10,1)",128,0,79,-36
+	.stabs	"root:(91,35)",128,0,82,-40
+	.stabn	192,0,0,LBB66-__ZN14Authentication14dataDownloadedEii
+	.stabn	224,0,0,LBE66-__ZN14Authentication14dataDownloadedEii
+	.stabn	224,0,0,LBE64-__ZN14Authentication14dataDownloadedEii
+Lscope34:
+	.stabs	"maMessageBox:f(0,6)",36,0,7067,_maMessageBox
+	.stabs	"title:p(4,7)",160,0,7067,-12
+	.stabs	"message:p(4,7)",160,0,7067,-16
 
 .func _maMessageBox, 2, void
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext16
 Ltext16:
-	.line 6514
+	.line 7067
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB66
-	.line 6515
-	ld   i0,#0x19b
+	.dlab LBB67
+	.line 7068
+	ld   i0,#0x19a
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE66
-	.line 6516
+	.dlab LBE67
+	.line 7069
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope34:
+Lscope35:
 .data
 LC48:
 	.ascii "parseJSONAuthenticationValidation\0"
@@ -4043,7 +4163,7 @@ LC55:
 .code
 	.stabs	"_ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,152,__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"this:p(0,25)",160,0,152,-16
-	.stabs	"root:p(89,35)",160,0,152,-20
+	.stabs	"root:p(91,35)",160,0,152,-20
 	.global	__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
 
 .func __ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE, 2, void
@@ -4056,34 +4176,34 @@ Ltext17:
 	add  fr,#0x50
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
-	.dlab LBB67
 	.dlab LBB68
+	.dlab LBB69
 	.line 153
 	ld   i0,#LC48
 	call &_lprintfln
-	.dlab LBB69
+	.dlab LBB70
 	.line 154
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L124
+	jc   eq,r0,r14,#L125
 	ld   i0,[fr,-20]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L124
+	jc   eq,r0,r14,#L125
 	ld   i0,[fr,-20]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   ne,r0,r14,#L124
-	jp   #L123
-L124:
+	jc   ne,r0,r14,#L125
+	jp   #L124
+L125:
 	.line 156
 	ld   i0,#LC49
 	call &_lprintfln
-	jp   #L122
-L123:
-	.dlab LBB70
+	jp   #L123
+L124:
+	.dlab LBB71
 	.line 158
 	ld   i0,#LC50
 	call &_lprintfln
@@ -4098,11 +4218,11 @@ L123:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.dlab LBB71
+	.dlab LBB72
 	.line 162
 	ld   r0,#0x0
 	ld   [fr,-32],r0
-L126:
+L127:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	add  r14,#0x28
@@ -4112,9 +4232,9 @@ L126:
 	ld   r0,r14
 	add  r0,#0xffffffff
 	ld   r14,[fr,-32]
-	jc   lt,r0,r14,#L127
-	.dlab LBB72
+	jc   lt,r0,r14,#L128
 	.dlab LBB73
+	.dlab LBB74
 	.line 163
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
@@ -4152,19 +4272,19 @@ L126:
 	ld   [fr,-68],r14
 	ld   [fr,-64],r0
 	ld   r14,[fr,-16]
-	ld   r0,[r14,152]
+	ld   r0,[r14,172]
 	ld   [fr,-76],r0
-	ld   r14,[r14,156]
+	ld   r14,[r14,176]
 	ld   [fr,-72],r14
 	ld   r14,[fr,-68]
 	ld   r0,[fr,-76]
-	jc   ne,r14,r0,#L130
+	jc   ne,r14,r0,#L131
 	ld   r14,[fr,-64]
 	ld   r0,[fr,-72]
-	jc   ne,r14,r0,#L130
+	jc   ne,r14,r0,#L131
 	ld   r14,#0x1
 	ld.b [fr,-57],r14
-L130:
+L131:
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
@@ -4172,7 +4292,7 @@ L130:
 	ld.b r0,[fr,-57]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L128
+	jc   eq,r0,r14,#L129
 	.line 166
 	ld   d0,fr
 	add  d0,#0xffffffd4
@@ -4225,11 +4345,11 @@ L130:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L131
+	jc   eq,r0,r14,#L132
 	.line 168
 	ld   r0,#0x1
 	ld.b [fr,-22],r0
-L131:
+L132:
 	.line 170
 	ld   d0,fr
 	add  d0,#0xffffffcc
@@ -4257,7 +4377,7 @@ L131:
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   r0,[fr,-16]
-	add  r0,#0x94
+	add  r0,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -4273,11 +4393,11 @@ L131:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L132
+	jc   eq,r0,r14,#L133
 	.line 172
 	ld   r14,#0x1
 	ld.b [fr,-21],r14
-L132:
+L133:
 	.line 174
 	ld   d0,fr
 	add  d0,#0xffffffcc
@@ -4317,59 +4437,59 @@ L132:
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L128:
+L129:
+	.dlab LBE74
 	.dlab LBE73
-	.dlab LBE72
 	.line 162
 	ld   r14,[fr,-32]
 	add  r14,#0x1
 	ld   [fr,-32],r14
-	jp   #L126
-L127:
-	.dlab LBE71
-	.dlab LBB74
+	jp   #L127
+L128:
+	.dlab LBE72
+	.dlab LBB75
 	.line 178
 	ld.b r0,[fr,-21]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L133
+	jc   eq,r0,r14,#L134
 	ld.b r0,[fr,-22]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L133
+	jc   eq,r0,r14,#L134
 	.line 179
 	ld   r0,[fr,-16]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-16]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-16]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-16]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-16]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.line 180
+	.line 181
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication22authenticationAcceptedEv
-	jp   #L134
-L133:
-	.dlab LBB75
+	jp   #L135
+L134:
 	.dlab LBB76
-	.line 181
+	.dlab LBB77
+	.line 182
 	ld.b r0,[fr,-21]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L135
+	jc   eq,r0,r14,#L136
 	ld.b r0,[fr,-22]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L135
+	jc   ne,r0,r14,#L136
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   i0,r14
@@ -4378,7 +4498,7 @@ L133:
 	ld   r0,fr
 	add  r0,#0xffffffcc
 	ld   r14,[fr,-16]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEneERKS1_
@@ -4390,58 +4510,24 @@ L133:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L135
-	.line 182
+	jc   eq,r0,r14,#L136
+	.line 183
 	ld   r0,[fr,-16]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-16]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-16]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-16]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-16]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.line 183
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-16]
-	add  r14,#0x94
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 184
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC15
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-16]
-	add  r14,#0x90
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.line 185
 	ld   r14,fr
 	add  r14,#0xffffffd0
@@ -4451,7 +4537,7 @@ L133:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-16]
-	add  r14,#0x8c
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -4460,21 +4546,55 @@ L133:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.line 186
+	ld   r14,fr
+	add  r14,#0xffffffd0
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffd0
+	ld   r14,[fr,-16]
+	add  r14,#0xa4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffd0
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 187
+	ld   r14,fr
+	add  r14,#0xffffffd0
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffd0
+	ld   r14,[fr,-16]
+	add  r14,#0xa0
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffd0
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 188
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication8createUIEv
-	jp   #L134
-L135:
-	.dlab LBB77
+	jp   #L135
+L136:
 	.dlab LBB78
-	.line 187
+	.dlab LBB79
+	.line 189
 	ld.b r0,[fr,-21]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L137
+	jc   ne,r0,r14,#L138
 	ld.b r0,[fr,-22]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L137
+	jc   eq,r0,r14,#L138
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
@@ -4483,7 +4603,7 @@ L135:
 	ld   r0,fr
 	add  r0,#0xffffffd0
 	ld   r14,[fr,-16]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -4495,16 +4615,16 @@ L135:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L137
-	.line 188
+	jc   eq,r0,r14,#L138
+	.line 190
 	ld   r14,[fr,-16]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	.line 189
+	.line 191
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
@@ -4513,7 +4633,7 @@ L135:
 	ld   r0,fr
 	add  r0,#0xffffffd4
 	ld   r14,[fr,-16]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -4521,48 +4641,48 @@ L135:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 190
+	.line 192
 	ld   r0,[fr,-16]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-16]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-16]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-16]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-16]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.line 191
+	.line 194
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication22authenticationAcceptedEv
-	jp   #L134
-L137:
-	.dlab LBB79
+	jp   #L135
+L138:
 	.dlab LBB80
-	.line 192
+	.dlab LBB81
+	.line 195
 	ld.b r0,[fr,-21]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L139
+	jc   ne,r0,r14,#L140
 	ld.b r0,[fr,-22]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L139
-	.line 193
+	jc   eq,r0,r14,#L140
+	.line 196
 	ld   r14,[fr,-16]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	.line 194
+	.line 197
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
@@ -4571,7 +4691,7 @@ L137:
 	ld   r0,fr
 	add  r0,#0xffffffd4
 	ld   r14,[fr,-16]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -4579,36 +4699,36 @@ L137:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 195
+	.line 198
 	ld   r0,[fr,-16]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-16]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-16]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-16]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-16]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.line 196
+	.line 200
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication8createUIEv
-	jp   #L134
-L139:
-	.dlab LBB81
-	.line 199
+	jp   #L135
+L140:
+	.dlab LBB82
+	.line 202
 	ld   r14,[fr,-16]
 	ld   r0,#0x0
-	ld   [r14,152],r0
+	ld   [r14,172],r0
 	ld   r0,#0x0
-	ld   [r14,156],r0
-	.line 200
+	ld   [r14,176],r0
+	.line 203
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
@@ -4617,7 +4737,7 @@ L139:
 	ld   r0,fr
 	add  r0,#0xffffffd4
 	ld   r14,[fr,-16]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -4625,13 +4745,13 @@ L139:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 201
+	.line 204
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 202
+	.line 205
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
@@ -4648,15 +4768,15 @@ L139:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 203
+	.line 206
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   r0,[fr,-16]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 204
+	.line 207
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   r0,fr
@@ -4691,7 +4811,8 @@ L139:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L134:
+L135:
+	.dlab LBE82
 	.dlab LBE81
 	.dlab LBE80
 	.dlab LBE79
@@ -4699,81 +4820,80 @@ L134:
 	.dlab LBE77
 	.dlab LBE76
 	.dlab LBE75
-	.dlab LBE74
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L122:
+L123:
+	.dlab LBE71
 	.dlab LBE70
 	.dlab LBE69
 	.dlab LBE68
-	.dlab LBE67
-	.line 207
+	.line 210
 	add  sp,#0x44
 	pop  rt,d0
 	ret
 	.stabs	"isAuth:(0,4)",128,0,159,-21
 	.stabs	"isConfirmed:(0,4)",128,0,160,-22
 	.stabs	"tmpMobiletoken:(10,1)",128,0,161,-28
-	.stabn	192,0,0,LBB70-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"idx:(0,3)",128,0,162,-32
 	.stabn	192,0,0,LBB71-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"valueTmp:(89,35)",128,0,163,-36
-	.stabn	192,0,0,LBB73-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE73-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"idx:(0,3)",128,0,162,-32
+	.stabn	192,0,0,LBB72-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"valueTmp:(91,35)",128,0,163,-36
+	.stabn	192,0,0,LBB74-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE74-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE72-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"urlTmp:(10,1)",128,0,204,-44
+	.stabn	192,0,0,LBB82-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE82-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
 	.stabn	224,0,0,LBE71-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"urlTmp:(10,1)",128,0,201,-44
-	.stabn	192,0,0,LBB81-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE81-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE70-__ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE
-Lscope35:
+Lscope36:
 .data
 LC56:
 	.ascii "parseJSONPostMediaValueValidation\0"
 .code
-	.stabs	"_ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,210,__ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"this:p(0,25)",160,0,210,-16
-	.stabs	"root:p(89,35)",160,0,210,-20
+	.stabs	"_ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,213,__ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"this:p(0,25)",160,0,213,-16
+	.stabs	"root:p(91,35)",160,0,213,-20
 	.global	__ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE
 
 .func __ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE, 2, void
-	.line 210
+	.line 213
 	push rt,d0
 	sub  sp,#0x18
 	ld   fr,sp
 	add  fr,#0x24
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
-	.dlab LBB82
-	.line 211
+	.dlab LBB83
+	.line 214
 	ld   i0,#LC56
 	call &_lprintfln
-	.line 212
+	.line 215
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L143
+	jc   eq,r0,r14,#L144
 	ld   i0,[fr,-20]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L143
+	jc   eq,r0,r14,#L144
 	ld   i0,[fr,-20]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   eq,r0,r14,#L143
-	jp   #L142
-L143:
-	.line 214
+	jc   eq,r0,r14,#L144
+	jp   #L143
+L144:
+	.line 217
 	ld   i0,#LC49
 	call &_lprintfln
-	jp   #L141
-L142:
-	.line 216
+	jp   #L142
+L143:
+	.line 219
 	ld   i0,#LC50
 	call &_lprintfln
-	.line 218
+	.line 221
 	ld   d0,fr
 	add  d0,#0xffffffe8
 	ld   r14,fr
@@ -4825,34 +4945,34 @@ L142:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L141
-	.line 219
+	jc   eq,r0,r14,#L142
+	.line 222
 	ld   r0,[fr,-16]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-16]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-16]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-16]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-16]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.line 220
+	.line 224
 	ld   i0,[fr,-16]
 	call &__ZN14Authentication22authenticationAcceptedEv
-L141:
-	.dlab LBE82
-	.line 224
+L142:
+	.dlab LBE83
+	.line 228
 	add  sp,#0x18
 	pop  rt,d0
 	ret
-Lscope36:
+Lscope37:
 .data
 LC57:
 	.ascii "parseJSONPostMediaValue\0"
@@ -4861,53 +4981,53 @@ LC58:
 LC59:
 	.ascii "/validate/\0"
 LC60:
-	.ascii "{\"mev_validation\": true ,\"mev_token\" : \"\0"
+	.ascii "                  {\"mev_validation\": true ,\"mev_token\" : \"\0"
 LC61:
 	.ascii "\"}\0"
 .code
-	.stabs	"_ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,226,__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"this:p(0,25)",160,0,226,-20
-	.stabs	"root:p(89,35)",160,0,226,-24
+	.stabs	"_ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,230,__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"this:p(0,25)",160,0,230,-20
+	.stabs	"root:p(91,35)",160,0,230,-24
 	.global	__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
 
 .func __ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE, 2, void
-	.line 226
+	.line 230
 	push rt,d1
 	sub  sp,#0x20
 	ld   fr,sp
 	add  fr,#0x30
 	ld   [fr,-20],i0
 	ld   [fr,-24],i1
-	.dlab LBB83
 	.dlab LBB84
-	.line 227
+	.dlab LBB85
+	.line 231
 	ld   i0,#LC57
 	call &_lprintfln
-	.line 228
+	.line 232
 	ld   r0,[fr,-24]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L148
+	jc   eq,r0,r14,#L149
 	ld   i0,[fr,-24]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L148
+	jc   eq,r0,r14,#L149
 	ld   i0,[fr,-24]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   eq,r0,r14,#L148
-	jp   #L147
-L148:
-	.line 230
+	jc   eq,r0,r14,#L149
+	jp   #L148
+L149:
+	.line 234
 	ld   i0,#LC49
 	call &_lprintfln
-	jp   #L149
-L147:
-	.line 232
+	jp   #L150
+L148:
+	.line 236
 	ld   i0,#LC50
 	call &_lprintfln
-	.line 234
+	.line 238
 	ld   d0,fr
 	add  d0,#0xffffffe4
 	ld   r14,fr
@@ -4934,7 +5054,7 @@ L147:
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   r14,[fr,-20]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -4946,7 +5066,7 @@ L147:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 235
+	.line 239
 	ld   d0,[fr,-20]
 	ld   r14,fr
 	add  r14,#0xffffffe0
@@ -4973,20 +5093,20 @@ L147:
 	sra  r1,#0x1f
 	ld   r14,r0
 	ld   r15,r1
-	ld   [d0,152],r14
-	ld   [d0,156],r15
+	ld   [d0,172],r14
+	ld   [d0,176],r15
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L149:
-	.line 237
+L150:
+	.line 241
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 238
+	.line 242
 	ld   d1,fr
 	add  d1,#0xffffffe4
 	ld   d0,fr
@@ -4994,8 +5114,8 @@ L149:
 	ld   r1,fr
 	add  r1,#0xffffffd8
 	ld   r0,[fr,-20]
-	ld   r14,[r0,152]
-	ld   r15,[r0,156]
+	ld   r14,[r0,172]
+	ld   r15,[r0,176]
 	ld   i0,r1
 	ld   i1,r14
 	ld   i2,r15
@@ -5042,47 +5162,69 @@ L149:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 239
+	.line 244
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   r0,[fr,-20]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 240
-	ld   d1,fr
-	add  d1,#0xffffffe4
+	.line 245
 	ld   r14,fr
-	add  r14,#0xffffffd4
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	.line 246
+	ld   r14,fr
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcE5clearEv
+	.line 247
+	ld   d1,fr
+	add  d1,#0xffffffd4
+	ld   r14,fr
+	add  r14,#0xffffffd8
 	ld   r0,[fr,-20]
-	add  r0,#0x94
+	add  r0,#0xa8
 	ld   i0,r14
 	ld   i1,#LC60
 	ld   i2,r0
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
-	add  d0,#0xffffffd4
+	add  d0,#0xffffffd8
 	ld   r14,fr
-	add  r14,#0xffffffd8
+	add  r14,#0xffffffdc
 	ld   i0,r14
 	ld   i1,#LC61
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffffd8
+	add  r14,#0xffffffdc
 	ld   i0,d1
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
+	ld   r0,fr
+	add  r0,#0xffffffd4
 	ld   r14,fr
-	add  r14,#0xffffffd8
+	add  r14,#0xffffffe4
 	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 241
+	ld   r14,fr
+	add  r14,#0xffffffdc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffd8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 248
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   r0,fr
@@ -5123,72 +5265,72 @@ L149:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE85
 	.dlab LBE84
-	.dlab LBE83
-	.line 242
+	.line 249
 	add  sp,#0x20
 	pop  rt,d1
 	ret
-	.stabs	"urlTmp:(10,1)",128,0,237,-32
-	.stabs	"message:(10,1)",128,0,240,-28
-	.stabn	192,0,0,LBB84-__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE84-__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
-Lscope37:
+	.stabs	"urlTmp:(10,1)",128,0,241,-32
+	.stabs	"message:(10,1)",128,0,245,-28
+	.stabn	192,0,0,LBB85-__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE85-__ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE
+Lscope38:
 .data
 LC62:
 	.ascii "parseJSONMediasList\0"
 LC63:
 	.ascii "value\0"
 .code
-	.stabs	"_ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,244,__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"this:p(0,25)",160,0,244,-24
-	.stabs	"root:p(89,35)",160,0,244,-28
+	.stabs	"_ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,251,__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"this:p(0,25)",160,0,251,-24
+	.stabs	"root:p(91,35)",160,0,251,-28
 	.global	__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
 
 .func __ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE, 2, void
-	.line 244
+	.line 251
 	push rt,d2
 	sub  sp,#0x18
 	ld   fr,sp
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB85
 	.dlab LBB86
-	.line 245
+	.dlab LBB87
+	.line 252
 	ld   i0,#LC62
 	call &_lprintfln
-	.dlab LBB87
-	.line 246
+	.dlab LBB88
+	.line 253
 	ld   r0,[fr,-28]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L152
+	jc   eq,r0,r14,#L153
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L152
+	jc   eq,r0,r14,#L153
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   ne,r0,r14,#L152
-	jp   #L151
-L152:
-	.line 248
+	jc   ne,r0,r14,#L153
+	jp   #L152
+L153:
+	.line 255
 	ld   i0,#LC49
 	call &_lprintfln
-	jp   #L150
-L151:
-	.dlab LBB88
-	.line 250
+	jp   #L151
+L152:
+	.dlab LBB89
+	.line 257
 	ld   i0,#LC50
 	call &_lprintfln
-	.dlab LBB89
-	.line 251
+	.dlab LBB90
+	.line 258
 	ld   r14,#0x0
 	ld   [fr,-32],r14
-L154:
+L155:
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0x28
@@ -5198,10 +5340,10 @@ L154:
 	ld   r0,r14
 	add  r0,#0xffffffff
 	ld   r14,[fr,-32]
-	jc   lt,r0,r14,#L155
-	.dlab LBB90
+	jc   lt,r0,r14,#L156
 	.dlab LBB91
-	.line 252
+	.dlab LBB92
+	.line 259
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0x1c
@@ -5210,9 +5352,9 @@ L154:
 	ld   i1,[fr,-32]
 	call r14
 	ld   [fr,-36],r14
-	.line 254
+	.line 261
 	ld   r14,[fr,-24]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
@@ -5246,9 +5388,9 @@ L154:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 255
+	.line 262
 	ld   r14,[fr,-24]
-	add  r14,#0x190
+	add  r14,#0x1a4
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
@@ -5295,9 +5437,9 @@ L154:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 256
+	.line 264
 	ld   r14,[fr,-24]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
@@ -5340,83 +5482,83 @@ L154:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE92
 	.dlab LBE91
-	.dlab LBE90
-	.line 251
+	.line 258
 	ld   r14,[fr,-32]
 	add  r14,#0x1
 	ld   [fr,-32],r14
-	jp   #L154
-L155:
-	.dlab LBE89
-	.line 258
+	jp   #L155
+L156:
+	.dlab LBE90
+	.line 266
 	ld   i0,[fr,-24]
 	call &__ZN14Authentication22createPageMobileChoiceEv
-L150:
+L151:
+	.dlab LBE89
 	.dlab LBE88
 	.dlab LBE87
 	.dlab LBE86
-	.dlab LBE85
-	.line 260
+	.line 268
 	add  sp,#0x18
 	pop  rt,d2
 	ret
-	.stabs	"idx:(0,3)",128,0,251,-32
-	.stabn	192,0,0,LBB89-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"valueTmp:(89,35)",128,0,252,-36
-	.stabn	192,0,0,LBB91-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE91-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE89-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
-Lscope38:
+	.stabs	"idx:(0,3)",128,0,258,-32
+	.stabn	192,0,0,LBB90-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"valueTmp:(91,35)",128,0,259,-36
+	.stabn	192,0,0,LBB92-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE92-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE90-__ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE
+Lscope39:
 .data
 LC64:
 	.ascii "parseJSONUserToken\0"
 .code
-	.stabs	"_ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,264,__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"this:p(0,25)",160,0,264,-24
-	.stabs	"root:p(89,35)",160,0,264,-28
+	.stabs	"_ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,270,__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
+	.stabs	"this:p(0,25)",160,0,270,-24
+	.stabs	"root:p(91,35)",160,0,270,-28
 	.global	__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
 
 .func __ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE, 2, void
-	.line 264
+	.line 270
 	push rt,d2
 	sub  sp,#0x1c
 	ld   fr,sp
 	add  fr,#0x30
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB92
 	.dlab LBB93
-	.line 265
+	.dlab LBB94
+	.line 271
 	ld   i0,#LC64
 	call &_lprintfln
-	.dlab LBB94
-	.line 266
+	.dlab LBB95
+	.line 272
 	ld   r0,[fr,-28]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L159
+	jc   eq,r0,r14,#L160
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L159
+	jc   eq,r0,r14,#L160
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   eq,r0,r14,#L159
-	jp   #L158
-L159:
-	.line 268
+	jc   eq,r0,r14,#L160
+	jp   #L159
+L160:
+	.line 274
 	ld   i0,#LC49
 	call &_lprintfln
-	jp   #L157
-L158:
-	.dlab LBB95
-	.line 270
+	jp   #L158
+L159:
+	.dlab LBB96
+	.line 276
 	ld   i0,#LC50
 	call &_lprintfln
-	.line 271
+	.line 277
 	ld   d0,fr
 	add  d0,#0xffffffe0
 	ld   r14,fr
@@ -5443,7 +5585,7 @@ L158:
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   r14,[fr,-24]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -5455,14 +5597,14 @@ L158:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 272
+	.line 278
 	ld   r14,[fr,-24]
-	add  r14,#0x90
+	add  r14,#0xa4
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.line 273
+	.line 279
 	ld   d1,fr
 	add  d1,#0xffffffdc
 	ld   d2,fr
@@ -5470,7 +5612,7 @@ L158:
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   r0,[fr,-24]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   i0,r14
 	ld   i1,#LC36
 	ld   i2,r0
@@ -5491,7 +5633,7 @@ L158:
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   r0,[fr,-24]
-	add  r0,#0x90
+	add  r0,#0xa4
 	ld   i0,d1
 	ld   i1,r14
 	ld   i2,r0
@@ -5499,7 +5641,7 @@ L158:
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   r14,[fr,-24]
-	add  r14,#0x88
+	add  r14,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -5519,8 +5661,8 @@ L158:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBB96
-	.line 275
+	.dlab LBB97
+	.line 281
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
@@ -5529,7 +5671,7 @@ L158:
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   r14,[fr,-24]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -5541,15 +5683,15 @@ L158:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L161
-	.dlab LBB97
-	.line 277
+	jc   eq,r0,r14,#L162
+	.dlab LBB98
+	.line 282
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 278
+	.line 283
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
@@ -5566,15 +5708,15 @@ L158:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 279
+	.line 284
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   r0,[fr,-24]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 280
+	.line 285
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   r0,fr
@@ -5609,17 +5751,17 @@ L158:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE97
-	jp   #L157
-L161:
-	.dlab LBB98
-	.line 284
+	.dlab LBE98
+	jp   #L158
+L162:
+	.dlab LBB99
+	.line 287
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 285
+	.line 288
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
@@ -5636,15 +5778,15 @@ L161:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 286
+	.line 289
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   r0,[fr,-24]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 287
+	.line 290
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   r0,fr
@@ -5679,41 +5821,41 @@ L161:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L157:
-	.dlab LBE98
+L158:
+	.dlab LBE99
+	.dlab LBE97
 	.dlab LBE96
 	.dlab LBE95
 	.dlab LBE94
 	.dlab LBE93
-	.dlab LBE92
-	.line 291
+	.line 294
 	add  sp,#0x1c
 	pop  rt,d2
 	ret
-	.stabs	"urlTmp:(10,1)",128,0,277,-44
-	.stabn	192,0,0,LBB97-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE97-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
-	.stabs	"urlTmp:(10,1)",128,0,284,-44
+	.stabs	"urlTmp:(10,1)",128,0,282,-44
 	.stabn	192,0,0,LBB98-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
 	.stabn	224,0,0,LBE98-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
-Lscope39:
-	.stabs	"_ZN14Authentication22authenticationAcceptedEv:F(0,6)",36,0,293,__ZN14Authentication22authenticationAcceptedEv
-	.stabs	"this:p(0,25)",160,0,293,-12
+	.stabs	"urlTmp:(10,1)",128,0,287,-44
+	.stabn	192,0,0,LBB99-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE99-__ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE
+Lscope40:
+	.stabs	"_ZN14Authentication22authenticationAcceptedEv:F(0,6)",36,0,296,__ZN14Authentication22authenticationAcceptedEv
+	.stabs	"this:p(0,25)",160,0,296,-12
 	.global	__ZN14Authentication22authenticationAcceptedEv
 
 .func __ZN14Authentication22authenticationAcceptedEv, 1, void
-	.line 293
+	.line 296
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x10
 	ld   [fr,-12],i0
-	.dlab LBB99
-	.line 294
+	.dlab LBB100
+	.line 297
 	ld   r14,fr
 	add  r14,#0xfffffff0
 	ld   r0,[fr,-12]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
@@ -5721,9 +5863,9 @@ Lscope39:
 	add  r2,#0xfffffff0
 	ld   r1,[fr,-12]
 	ld   r0,[fr,-12]
-	ld   r14,[r0,152]
-	ld   r15,[r0,156]
-	ld   i0,[r1,164]
+	ld   r14,[r0,172]
+	ld   r15,[r0,176]
+	ld   i0,[r1,184]
 	ld   i1,r2
 	ld   i2,r14
 	ld   i3,r15
@@ -5732,12 +5874,12 @@ Lscope39:
 	add  r14,#0xfffffff0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE99
-	.line 295
+	.dlab LBE100
+	.line 298
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope40:
+Lscope41:
 .data
 LC65:
 	.ascii "connectUrl\0"
@@ -5748,20 +5890,20 @@ LC67:
 LC68:
 	.ascii "POST\0"
 LC69:
-	.ascii "POST send = %d\0"
+	.ascii "jsonMessage.size() : %d \0"
 LC70:
 	.ascii "D\303\251j\303\240 connect\303\251: %d\0"
 .code
-	.stabs	"_ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_:F(0,6)",36,0,298,__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
-	.stabs	"this:p(0,25)",160,0,298,-16
-	.stabs	"url:v(10,1)",160,0,298,-32
-	.stabs	"fct:p(1,1)",160,0,298,-20
-	.stabs	"verb:p(0,3)",160,0,298,-24
-	.stabs	"jsonMessage:p(94,6)",160,0,298,0
+	.stabs	"_ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_:F(0,6)",36,0,301,__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
+	.stabs	"this:p(0,25)",160,0,301,-16
+	.stabs	"url:v(10,1)",160,0,301,-32
+	.stabs	"fct:p(1,1)",160,0,301,-20
+	.stabs	"verb:p(0,3)",160,0,301,-24
+	.stabs	"jsonMessage:p(96,6)",160,0,301,0
 	.global	__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
 
 .func __ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_, 5, void
-	.line 298
+	.line 301
 	push rt,d0
 	sub  sp,#0x18
 	ld   fr,sp
@@ -5770,79 +5912,85 @@ LC70:
 	ld   [fr,-32],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.dlab LBB100
 	.dlab LBB101
-	.line 299
+	.dlab LBB102
+	.line 303
 	ld   i0,#LC65
 	call &_lprintfln
-	.line 300
+	.line 304
 	ld   i0,[fr,-32]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.dlab LBB102
-	.line 302
+	.dlab LBB103
+	.line 306
 	ld   r14,[fr,-16]
-	ld.b r0,[r14,128]
+	ld.b r0,[r14,148]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L165
-	.dlab LBB103
-	.line 303
+	jc   ne,r0,r14,#L166
+	.dlab LBB104
+	.line 307
 	ld   r14,[fr,-16]
 	ld   r0,#0x1
-	ld.b [r14,128],r0
-	.line 304
+	ld.b [r14,148],r0
+	.line 308
 	ld   r14,[fr,-16]
 	ld   r0,[fr,-20]
-	ld   [r14,124],r0
-	.line 305
+	ld   [r14,144],r0
+	.line 309
 	ld   i0,[fr,-32]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.dlab LBB104
-	.line 306
+	.dlab LBB105
+	.line 310
 	ld   r0,[fr,-24]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L166
-	.dlab LBB105
-	.line 307
+	jc   ne,r0,r14,#L167
+	.dlab LBB106
+	.line 311
 	ld   i0,#LC66
 	call &_lprintfln
-	.line 308
+	.line 312
 	ld   i0,[fr,-32]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   r0,[fr,-16]
-	add  r0,#0x3c
+	add  r0,#0x48
 	ld   i0,r0
 	ld   i1,r14
 	call &__ZN8Wormhole23HighLevelHttpConnection3getEPKc
 	ld   [fr,-28],r14
-	.line 309
+	.line 313
 	ld   r14,[fr,-28]
 	ld   [sp],r14
 	ld   i0,#LC67
 	call &_lprintfln
-	.dlab LBE105
-	jp   #L164
-L166:
-	.dlab LBB106
+	.dlab LBE106
+	jp   #L165
+L167:
 	.dlab LBB107
-	.line 310
+	.dlab LBB108
+	.line 314
 	ld   r0,[fr,-24]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L164
-	.dlab LBB108
-	.line 311
+	jc   ne,r0,r14,#L165
+	.dlab LBB109
+	.line 315
 	ld   i0,#LC68
 	call &_lprintfln
-	.line 312
+	.line 316
 	ld   i0,[fr]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.line 313
+	.line 317
+	ld   i0,[fr]
+	call &__ZNK6MAUtil11BasicStringIcE4sizeEv
+	ld   [sp],r14
+	ld   i0,#LC69
+	call &_lprintfln
+	.line 318
 	ld   i0,[fr,-32]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   d0,r14
@@ -5850,94 +5998,89 @@ L166:
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   r0,r14
 	ld   r14,[fr,-16]
-	add  r14,#0x3c
+	add  r14,#0x48
 	ld   i0,r14
 	ld   i1,d0
 	ld   i2,r0
 	call &__ZN8Wormhole23HighLevelHttpConnection15postJsonRequestEPKcS2_
 	ld   [fr,-28],r14
-	.line 314
-	ld   r0,[fr,-28]
-	ld   [sp],r0
-	ld   i0,#LC69
-	call &_lprintfln
+	.dlab LBE109
 	.dlab LBE108
 	.dlab LBE107
-	.dlab LBE106
+	.dlab LBE105
 	.dlab LBE104
-	.dlab LBE103
-	jp   #L164
-L165:
-	.line 317
+	jp   #L165
+L166:
+	.line 333
 	ld   r14,[fr,-16]
-	ld   r14,[r14,124]
+	ld   r14,[r14,144]
 	ld   [sp],r14
 	ld   i0,#LC70
 	call &_lprintfln
-L164:
+L165:
+	.dlab LBE103
 	.dlab LBE102
 	.dlab LBE101
-	.dlab LBE100
-	.line 319
+	.line 335
 	add  sp,#0x18
 	pop  rt,d0
 	ret
-	.stabs	"jsonMessage:(0,34)=*(10,1)",128,0,298,0
-	.stabs	"tmp:(0,3)",128,0,308,-28
-	.stabn	192,0,0,LBB105-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
-	.stabn	224,0,0,LBE105-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
-	.stabs	"tmp:(0,3)",128,0,313,-28
-	.stabn	192,0,0,LBB108-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
-	.stabn	224,0,0,LBE108-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
-Lscope41:
+	.stabs	"jsonMessage:(0,34)=*(10,1)",128,0,301,0
+	.stabs	"tmp:(0,3)",128,0,312,-28
+	.stabn	192,0,0,LBB106-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
+	.stabn	224,0,0,LBE106-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
+	.stabs	"tmp:(0,3)",128,0,318,-28
+	.stabn	192,0,0,LBB109-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
+	.stabn	224,0,0,LBE109-__ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_
+Lscope42:
 .data
 LC71:
 	.ascii "Name : \0"
 .code
-	.stabs	"_ZN14Authentication22createPageMobileChoiceEv:F(0,6)",36,0,321,__ZN14Authentication22createPageMobileChoiceEv
-	.stabs	"this:p(0,25)",160,0,321,-24
+	.stabs	"_ZN14Authentication22createPageMobileChoiceEv:F(0,6)",36,0,337,__ZN14Authentication22createPageMobileChoiceEv
+	.stabs	"this:p(0,25)",160,0,337,-24
 	.global	__ZN14Authentication22createPageMobileChoiceEv
 
 .func __ZN14Authentication22createPageMobileChoiceEv, 1, void
-	.line 321
+	.line 337
 	push rt,d2
 	sub  sp,#0x10
 	ld   fr,sp
 	add  fr,#0x24
 	ld   [fr,-24],i0
-	.dlab LBB109
 	.dlab LBB110
-	.line 322
+	.dlab LBB111
+	.line 338
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI14VerticalLayoutC1Ev
-	ld   [d1,224],d0
-	.line 323
+	ld   [d1,244],d0
+	.line 339
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
+	ld   i0,[r0,244]
 	call r14
-	.line 324
+	.line 340
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x6c
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
+	ld   i0,[r0,244]
 	call r14
-	.line 326
+	.line 342
 	ld   d2,[fr,-24]
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x51
+	ld   r14,[r14,140]
+	add  r14,#0x5c
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -5954,71 +6097,61 @@ LC71:
 	ld   i0,d0
 	ld   i1,d1
 	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,456],d0
+	ld   [d2,476],d0
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 327
+	.line 345
 	ld   r14,[fr,-24]
-	ld   r14,[r14,456]
-	ld   r14,[r14]
-	add  r14,#0x64
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,456]
-	ld   i1,#0x64
-	call r14
-	.line 328
-	ld   r14,[fr,-24]
-	ld   r14,[r14,456]
+	ld   r14,[r14,476]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,456]
+	ld   i0,[r0,476]
 	call r14
-	.line 329
+	.line 346
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
-	ld   i1,[r1,456]
+	ld   i0,[r0,244]
+	ld   i1,[r1,476]
 	call r14
-	.line 331
+	.line 348
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI16HorizontalLayoutC1Ev
-	ld   [d1,460],d0
-	.line 332
+	ld   [d1,480],d0
+	.line 349
 	ld   r14,[fr,-24]
-	ld   r14,[r14,460]
+	ld   r14,[r14,480]
 	ld   r14,[r14]
 	add  r14,#0x64
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,460]
+	ld   i0,[r0,480]
 	ld   i1,#0x46
 	call r14
-	.line 333
+	.line 350
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
-	ld   i1,[r1,460]
+	ld   i0,[r0,244]
+	ld   i1,[r1,480]
 	call r14
-	.line 334
+	.line 351
 	ld   d2,[fr,-24]
 	ld   r14,fr
 	add  r14,#0xffffffe4
@@ -6033,23 +6166,23 @@ LC71:
 	ld   i0,d0
 	ld   i1,d1
 	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,464],d0
+	ld   [d2,484],d0
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 335
+	.line 352
 	ld   r14,[fr,-24]
-	ld   r14,[r14,460]
+	ld   r14,[r14,480]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,460]
-	ld   i1,[r1,464]
+	ld   i0,[r0,480]
+	ld   i1,[r1,484]
 	call r14
-	.line 336
+	.line 353
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
@@ -6057,51 +6190,63 @@ LC71:
 	ld   i0,d0
 	ld   i1,#0x0
 	call &__ZN8NativeUI7EditBoxC1ENS_15EditBoxCategoryE
-	ld   [d1,468],d0
-	.line 337
+	ld   [d1,488],d0
+	.line 354
 	ld   r14,[fr,-24]
-	ld   r14,[r14,468]
+	ld   r14,[r14,488]
+	ld   r14,[r14]
+	add  r14,#0xc8
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	add  r1,#0x84
+	ld   r14,[r14]
+	ld   i0,[r0,488]
+	ld   i1,r1
+	call r14
+	.line 355
+	ld   r14,[fr,-24]
+	ld   r14,[r14,488]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,468]
+	ld   i0,[r0,488]
 	call r14
-	.line 338
+	.line 356
 	ld   r14,[fr,-24]
-	ld   r14,[r14,460]
+	ld   r14,[r14,480]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,460]
-	ld   i1,[r1,468]
+	ld   i0,[r0,480]
+	ld   i1,[r1,488]
 	call r14
-	.line 339
+	.line 357
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI6ButtonC1Ev
-	ld   [d1,472],d0
-	.line 340
+	ld   [d1,492],d0
+	.line 358
 	ld   r14,[fr,-24]
-	ld   r14,[r14,472]
+	ld   r14,[r14,492]
 	ld   r14,[r14]
 	add  r14,#0xbc
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
-	add  r1,#0x6c
+	add  r1,#0x78
 	ld   r14,[r14]
-	ld   i0,[r0,472]
+	ld   i0,[r0,492]
 	ld   i1,r1
 	call r14
-	.line 341
+	.line 359
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x53
+	ld   r14,[r14,140]
+	add  r14,#0x5e
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6113,43 +6258,43 @@ LC71:
 	ld   r1,fr
 	add  r1,#0xffffffe4
 	ld   r14,[fr,-24]
-	ld   r14,[r14,472]
+	ld   r14,[r14,492]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,472]
+	ld   i0,[r0,492]
 	ld   i1,r1
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 342
+	.line 361
 	ld   r14,[fr,-24]
-	ld   r14,[r14,460]
+	ld   r14,[r14,480]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,460]
-	ld   i1,[r1,472]
+	ld   i0,[r0,480]
+	ld   i1,[r1,492]
 	call r14
-	.dlab LBB111
-	.line 345
+	.dlab LBB112
+	.line 363
 	ld   r14,[fr,-24]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	call &__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L171
-	.dlab LBB112
-	.line 346
+	jc   eq,r0,r14,#L172
+	.dlab LBB113
+	.line 365
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x55
+	ld   r14,[r14,140]
+	add  r14,#0x60
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6171,14 +6316,14 @@ LC71:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 347
+	.line 366
 	ld   r14,[fr,-32]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r14,[r14]
 	ld   i0,[fr,-32]
 	call r14
-	.line 348
+	.line 367
 	ld   r14,[fr,-32]
 	ld   r14,[r14]
 	add  r14,#0x64
@@ -6186,17 +6331,17 @@ LC71:
 	ld   i0,[fr,-32]
 	ld   i1,#0x64
 	call r14
-	.line 349
+	.line 368
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
+	ld   i0,[r0,244]
 	ld   i1,[fr,-32]
 	call r14
-	.line 350
+	.line 369
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
@@ -6205,54 +6350,54 @@ LC71:
 	ld   i1,#0x0
 	ld   i2,#0x0
 	call &__ZN8NativeUI8ListViewC1ENS_12ListViewTypeENS_13ListViewStyleE
-	ld   [d1,228],d0
-	.line 351
+	ld   [d1,248],d0
+	.line 370
 	ld   r14,[fr,-24]
-	ld   r14,[r14,228]
+	ld   r14,[r14,248]
 	ld   r14,[r14]
 	add  r14,#0x6c
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,228]
+	ld   i0,[r0,248]
 	call r14
-	.line 352
+	.line 371
 	ld   r14,[fr,-24]
-	ld   r14,[r14,228]
+	ld   r14,[r14,248]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
-	add  r1,#0x70
+	add  r1,#0x7c
 	ld   r14,[r14]
-	ld   i0,[r0,228]
+	ld   i0,[r0,248]
 	ld   i1,r1
 	call r14
-	.line 353
+	.line 372
 	ld   r14,[fr,-24]
-	ld   r14,[r14,224]
+	ld   r14,[r14,244]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,224]
-	ld   i1,[r1,228]
+	ld   i0,[r0,244]
+	ld   i1,[r1,248]
 	call r14
-	.dlab LBB113
-	.line 354
+	.dlab LBB114
+	.line 373
 	ld   r14,#0x0
 	ld   [fr,-36],r14
-L172:
+L173:
 	ld   r14,[fr,-24]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   i0,r14
 	call &__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv
 	ld   r0,r14
 	ld   r14,[fr,-36]
-	jc   geu,r14,r0,#L171
-	.line 356
+	jc   geu,r14,r0,#L172
+	.line 374
 	ld   r14,[fr,-24]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   i0,r14
@@ -6265,9 +6410,9 @@ L172:
 	ld   i0,d0
 	call &__ZN8NativeUI12ListViewItemC1Ev
 	ld   [d1],d0
-	.line 357
+	.line 375
 	ld   r14,[fr,-24]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   i0,r14
@@ -6275,7 +6420,7 @@ L172:
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	ld   d0,[r14]
 	ld   r14,[fr,-24]
-	add  r14,#0x190
+	add  r14,#0x1a4
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   i0,r14
@@ -6288,9 +6433,9 @@ L172:
 	ld   i0,d0
 	ld   i1,r0
 	call r14
-	.line 358
+	.line 376
 	ld   r14,[fr,-24]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   r0,fr
 	add  r0,#0xffffffdc
 	ld   i0,r14
@@ -6298,288 +6443,137 @@ L172:
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	ld   r1,[r14]
 	ld   r14,[fr,-24]
-	ld   r14,[r14,228]
+	ld   r14,[r14,248]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,228]
+	ld   i0,[r0,248]
 	ld   i1,r1
 	call r14
-	.line 354
+	.line 373
 	ld   r14,[fr,-36]
 	add  r14,#0x1
 	ld   [fr,-36],r14
-	jp   #L172
-L171:
+	jp   #L173
+L172:
+	.dlab LBE114
 	.dlab LBE113
 	.dlab LBE112
-	.dlab LBE111
-	.line 362
+	.line 380
 	ld   r14,[fr,-24]
 	ld   i0,[fr,-24]
-	ld   i1,[r14,224]
+	ld   i1,[r14,244]
 	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	.dlab LBE111
 	.dlab LBE110
-	.dlab LBE109
-	.line 364
+	.line 382
 	add  sp,#0x10
 	pop  rt,d2
 	ret
-	.stabs	"oldMediaTitle:(96,167)",128,0,346,-32
-	.stabn	192,0,0,LBB112-__ZN14Authentication22createPageMobileChoiceEv
-	.stabs	"idx:(0,3)",128,0,354,-36
+	.stabs	"oldMediaTitle:(98,167)",128,0,364,-32
 	.stabn	192,0,0,LBB113-__ZN14Authentication22createPageMobileChoiceEv
+	.stabs	"idx:(0,3)",128,0,373,-36
+	.stabn	192,0,0,LBB114-__ZN14Authentication22createPageMobileChoiceEv
+	.stabn	224,0,0,LBE114-__ZN14Authentication22createPageMobileChoiceEv
 	.stabn	224,0,0,LBE113-__ZN14Authentication22createPageMobileChoiceEv
-	.stabn	224,0,0,LBE112-__ZN14Authentication22createPageMobileChoiceEv
-Lscope42:
-	.stabs	"_ZN14Authentication8createUIEv:F(0,6)",36,0,393,__ZN14Authentication8createUIEv
-	.stabs	"this:p(0,25)",160,0,393,-24
+Lscope43:
+	.stabs	"_ZN14Authentication8createUIEv:F(0,6)",36,0,411,__ZN14Authentication8createUIEv
+	.stabs	"this:p(0,25)",160,0,411,-24
 	.global	__ZN14Authentication8createUIEv
 
 .func __ZN14Authentication8createUIEv, 1, void
-	.line 393
+	.line 411
 	push rt,d2
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x1c
 	ld   [fr,-24],i0
-	.dlab LBB114
-	.line 394
+	.dlab LBB115
+	.line 412
 	ld   r14,[fr,-24]
-	ld   r0,[r14,168]
+	ld   r0,[r14,188]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L176
-	.line 396
+	jc   ne,r0,r14,#L177
+	.line 413
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI14VerticalLayoutC1Ev
-	ld   [d1,168],d0
-	.line 397
+	ld   [d1,188],d0
+	.line 414
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
+	ld   i0,[r0,188]
 	call r14
-	.line 398
+	.line 415
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x6c
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
+	ld   i0,[r0,188]
 	call r14
-	.line 399
+	.line 416
+	ld   r14,[fr,-24]
+	ld   r14,[r14,188]
+	ld   r14,[r14]
+	add  r14,#0xa0
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,188]
+	ld   i1,#0x1
+	call r14
+	.line 417
 	ld   d1,[fr,-24]
 	ld   i0,#0x30
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI5ImageC1Ev
-	ld   [d1,180],d0
-	.line 401
+	ld   [d1,200],d0
+	.line 418
 	ld   r14,[fr,-24]
-	ld   r14,[r14,180]
+	ld   r14,[r14,200]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,180]
+	ld   i0,[r0,200]
 	ld   i1,#0x1
-	call r14
-	.line 402
-	ld   r14,[fr,-24]
-	ld   r14,[r14,180]
-	ld   r14,[r14]
-	add  r14,#0x68
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,180]
-	call r14
-	.line 404
-	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,180]
-	call r14
-	.line 405
-	ld   d2,[fr,-24]
-	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x5d
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffe4
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,184],d0
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 406
-	ld   r14,[fr,-24]
-	ld   r14,[r14,184]
-	ld   r14,[r14]
-	add  r14,#0x64
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,184]
-	ld   i1,#0x64
-	call r14
-	.line 407
-	ld   r14,[fr,-24]
-	ld   r14,[r14,184]
-	ld   r14,[r14]
-	add  r14,#0x68
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,184]
-	call r14
-	.line 409
-	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,184]
-	call r14
-	.line 410
-	ld   d2,[fr,-24]
-	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x5f
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffe4
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,188],d0
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 412
-	ld   d1,[fr,-24]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,#0x0
-	call &__ZN8NativeUI7EditBoxC1ENS_15EditBoxCategoryE
-	ld   [d1,196],d0
-	.line 413
-	ld   r14,[fr,-24]
-	ld   r14,[r14,196]
-	ld   r14,[r14]
-	add  r14,#0xc0
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,196]
-	ld   i1,#0x4
-	call r14
-	.line 414
-	ld   r14,[fr,-24]
-	ld   r14,[r14,196]
-	ld   r14,[r14]
-	add  r14,#0x68
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,196]
-	call r14
-	.line 415
-	ld   d1,[fr,-24]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI16HorizontalLayoutC1Ev
-	ld   [d1,172],d0
-	.line 416
-	ld   r14,[fr,-24]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0x64
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,#0x46
-	call r14
-	.line 417
-	ld   r14,[fr,-24]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,188]
-	call r14
-	.line 418
-	ld   r14,[fr,-24]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,196]
 	call r14
 	.line 419
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,200]
+	ld   r14,[r14]
+	add  r14,#0x68
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,200]
+	call r14
+	.line 421
+	ld   r14,[fr,-24]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,172]
+	ld   i0,[r0,188]
+	ld   i1,[r1,200]
 	call r14
-	.line 421
+	.line 422
 	ld   d2,[fr,-24]
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x61
+	ld   r14,[r14,140]
+	add  r14,#0x68
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6596,95 +6590,36 @@ Lscope42:
 	ld   i0,d0
 	ld   i1,d1
 	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,192],d0
+	ld   [d2,204],d0
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 422
-	ld   d1,[fr,-24]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,#0x0
-	call &__ZN8NativeUI7EditBoxC1ENS_15EditBoxCategoryE
-	ld   [d1,200],d0
-	.line 423
+	.line 425
 	ld   r14,[fr,-24]
-	ld   r14,[r14,200]
-	ld   r14,[r14]
-	add  r14,#0xbc
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,200]
-	ld   i1,#0x1
-	call r14
-	.line 424
-	ld   r14,[fr,-24]
-	ld   r14,[r14,200]
+	ld   r14,[r14,204]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,200]
-	call r14
-	.line 425
-	ld   d1,[fr,-24]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI16HorizontalLayoutC1Ev
-	ld   [d1,176],d0
-	.line 426
-	ld   r14,[fr,-24]
-	ld   r14,[r14,176]
-	ld   r14,[r14]
-	add  r14,#0x64
-	ld   r0,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,176]
-	ld   i1,#0x46
+	ld   i0,[r0,204]
 	call r14
 	.line 427
 	ld   r14,[fr,-24]
-	ld   r14,[r14,176]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,176]
-	ld   i1,[r1,192]
+	ld   i0,[r0,188]
+	ld   i1,[r1,204]
 	call r14
 	.line 428
-	ld   r14,[fr,-24]
-	ld   r14,[r14,176]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,176]
-	ld   i1,[r1,200]
-	call r14
-	.line 430
-	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,176]
-	call r14
-	.line 432
 	ld   d2,[fr,-24]
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x57
+	ld   r14,[r14,140]
+	add  r14,#0x6a
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6706,60 +6641,272 @@ Lscope42:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 431
+	ld   d1,[fr,-24]
+	ld   i0,#0x3c
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	ld   i1,#0x0
+	call &__ZN8NativeUI7EditBoxC1ENS_15EditBoxCategoryE
+	ld   [d1,216],d0
 	.line 433
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,216]
+	ld   r14,[r14]
+	add  r14,#0xc0
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,216]
+	ld   i1,#0x4
+	call r14
+	.line 434
+	ld   r14,[fr,-24]
+	ld   r14,[r14,216]
+	ld   r14,[r14]
+	add  r14,#0x68
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,216]
+	call r14
+	.line 435
+	ld   d1,[fr,-24]
+	ld   i0,#0x3c
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	call &__ZN8NativeUI16HorizontalLayoutC1Ev
+	ld   [d1,192],d0
+	.line 437
+	ld   r14,[fr,-24]
+	ld   r14,[r14,192]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
+	ld   i0,[r0,192]
 	ld   i1,[r1,208]
 	call r14
-	.line 435
+	.line 438
+	ld   r14,[fr,-24]
+	ld   r14,[r14,192]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,192]
+	ld   i1,[r1,216]
+	call r14
+	.line 439
+	ld   r14,[fr,-24]
+	ld   r14,[r14,188]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,188]
+	ld   i1,[r1,192]
+	call r14
+	.line 441
+	ld   d2,[fr,-24]
+	ld   r14,[fr,-24]
+	ld   r14,[r14,140]
+	add  r14,#0x6c
+	ld   i0,r14
+	call &__ZN7Convert2trEi
+	ld   r0,r14
+	ld   r14,fr
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   d1,fr
+	add  d1,#0xffffffe4
+	ld   i0,#0x30
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	ld   i1,d1
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
+	ld   [d2,212],d0
+	ld   r14,fr
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 443
+	ld   d1,[fr,-24]
+	ld   i0,#0x3c
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	ld   i1,#0x0
+	call &__ZN8NativeUI7EditBoxC1ENS_15EditBoxCategoryE
+	ld   [d1,220],d0
+	.line 444
+	ld   r14,[fr,-24]
+	ld   r14,[r14,220]
+	ld   r14,[r14]
+	add  r14,#0xc8
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	add  r1,#0x84
+	ld   r14,[r14]
+	ld   i0,[r0,220]
+	ld   i1,r1
+	call r14
+	.line 445
+	ld   r14,[fr,-24]
+	ld   r14,[r14,220]
+	ld   r14,[r14]
+	add  r14,#0xbc
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,220]
+	ld   i1,#0x1
+	call r14
+	.line 446
+	ld   r14,[fr,-24]
+	ld   r14,[r14,220]
+	ld   r14,[r14]
+	add  r14,#0x68
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,220]
+	call r14
+	.line 447
+	ld   d1,[fr,-24]
+	ld   i0,#0x3c
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	call &__ZN8NativeUI16HorizontalLayoutC1Ev
+	ld   [d1,196],d0
+	.line 448
+	ld   r14,[fr,-24]
+	ld   r14,[r14,196]
+	ld   r14,[r14]
+	add  r14,#0x64
+	ld   r0,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,196]
+	ld   i1,#0x46
+	call r14
+	.line 449
+	ld   r14,[fr,-24]
+	ld   r14,[r14,196]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,196]
+	ld   i1,[r1,212]
+	call r14
+	.line 450
+	ld   r14,[fr,-24]
+	ld   r14,[r14,196]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,196]
+	ld   i1,[r1,220]
+	call r14
+	.line 452
+	ld   r14,[fr,-24]
+	ld   r14,[r14,188]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,188]
+	ld   i1,[r1,196]
+	call r14
+	.line 454
+	ld   d2,[fr,-24]
+	ld   r14,[fr,-24]
+	ld   r14,[r14,140]
+	add  r14,#0x62
+	ld   i0,r14
+	call &__ZN7Convert2trEi
+	ld   r0,r14
+	ld   r14,fr
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   d1,fr
+	add  d1,#0xffffffe4
+	ld   i0,#0x30
+	call &__Znwm
+	ld   d0,r14
+	ld   i0,d0
+	ld   i1,d1
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
+	ld   [d2,228],d0
+	ld   r14,fr
+	add  r14,#0xffffffe4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 456
+	ld   r14,[fr,-24]
+	ld   r14,[r14,188]
+	ld   r14,[r14]
+	add  r14,#0x34
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,188]
+	ld   i1,[r1,228]
+	call r14
+	.line 458
 	ld   d1,[fr,-24]
 	ld   i0,#0x48
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI10RadioGroupC1Ev
-	ld   [d1,212],d0
-	.line 436
+	ld   [d1,232],d0
+	.line 459
 	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
+	ld   r14,[r14,232]
 	ld   r14,[r14]
 	add  r14,#0xb0
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
-	add  r1,#0x74
+	add  r1,#0x80
 	ld   r14,[r14]
-	ld   i0,[r0,212]
+	ld   i0,[r0,232]
 	ld   i1,r1
 	call r14
-	.line 437
+	.line 460
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,212]
+	ld   i0,[r0,188]
+	ld   i1,[r1,232]
 	call r14
-	.line 439
+	.line 462
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI11RadioButtonC1Ev
-	ld   [d1,216],d0
-	.line 440
+	ld   [d1,236],d0
+	.line 463
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x59
+	ld   r14,[r14,140]
+	add  r14,#0x64
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6771,41 +6918,41 @@ Lscope42:
 	ld   r1,fr
 	add  r1,#0xffffffe4
 	ld   r14,[fr,-24]
-	ld   r14,[r14,216]
+	ld   r14,[r14,236]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,216]
+	ld   i0,[r0,236]
 	ld   i1,r1
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 441
+	.line 465
 	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
+	ld   r14,[r14,232]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,212]
-	ld   i1,[r1,216]
+	ld   i0,[r0,232]
+	ld   i1,[r1,236]
 	call r14
-	.line 442
+	.line 466
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI11RadioButtonC1Ev
-	ld   [d1,220],d0
-	.line 443
+	ld   [d1,240],d0
+	.line 467
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x5b
+	ld   r14,[r14,140]
+	add  r14,#0x66
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6817,30 +6964,30 @@ Lscope42:
 	ld   r1,fr
 	add  r1,#0xffffffe4
 	ld   r14,[fr,-24]
-	ld   r14,[r14,220]
+	ld   r14,[r14,240]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,220]
+	ld   i0,[r0,240]
 	ld   i1,r1
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 446
+	.line 470
 	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
+	ld   r14,[r14,232]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,212]
-	ld   i1,[r1,220]
+	ld   i0,[r0,232]
+	ld   i1,[r1,240]
 	call r14
-	.line 447
+	.line 471
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
@@ -6849,7 +6996,7 @@ Lscope42:
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   r14,[fr,-24]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
@@ -6861,53 +7008,53 @@ Lscope42:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L177
-	.line 449
+	jc   eq,r0,r14,#L178
+	.line 472
 	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
+	ld   r14,[r14,232]
 	ld   r14,[r14]
 	add  r14,#0xa8
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,212]
-	ld   i1,[r1,220]
+	ld   i0,[r0,232]
+	ld   i1,[r1,240]
 	call r14
-	jp   #L178
-L177:
-	.line 452
-	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
-	ld   r14,[r14]
-	add  r14,#0xa8
-	ld   r0,[fr,-24]
-	ld   r1,[fr,-24]
-	ld   r14,[r14]
-	ld   i0,[r0,212]
-	ld   i1,[r1,216]
-	call r14
+	jp   #L179
 L178:
-	.line 454
+	.line 474
 	ld   r14,[fr,-24]
-	ld   r14,[r14,212]
+	ld   r14,[r14,232]
+	ld   r14,[r14]
+	add  r14,#0xa8
+	ld   r0,[fr,-24]
+	ld   r1,[fr,-24]
+	ld   r14,[r14]
+	ld   i0,[r0,232]
+	ld   i1,[r1,236]
+	call r14
+L179:
+	.line 476
+	ld   r14,[fr,-24]
+	ld   r14,[r14,232]
 	ld   r14,[r14]
 	add  r14,#0x6c
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,212]
+	ld   i0,[r0,232]
 	call r14
-	.line 457
+	.line 478
 	ld   d1,[fr,-24]
 	ld   i0,#0x3c
 	call &__Znwm
 	ld   d0,r14
 	ld   i0,d0
 	call &__ZN8NativeUI6ButtonC1Ev
-	ld   [d1,204],d0
-	.line 458
+	ld   [d1,224],d0
+	.line 479
 	ld   r14,[fr,-24]
-	ld   r14,[r14,120]
-	add  r14,#0x63
+	ld   r14,[r14,140]
+	add  r14,#0x6e
 	ld   i0,r14
 	call &__ZN7Convert2trEi
 	ld   r0,r14
@@ -6919,68 +7066,68 @@ L178:
 	ld   r1,fr
 	add  r1,#0xffffffe4
 	ld   r14,[fr,-24]
-	ld   r14,[r14,204]
+	ld   r14,[r14,224]
 	ld   r14,[r14]
 	add  r14,#0xa0
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,204]
+	ld   i0,[r0,224]
 	ld   i1,r1
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 459
+	.line 482
 	ld   r14,[fr,-24]
-	ld   r14,[r14,204]
+	ld   r14,[r14,224]
 	ld   r14,[r14]
 	add  r14,#0xbc
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
-	add  r1,#0x6c
+	add  r1,#0x78
 	ld   r14,[r14]
-	ld   i0,[r0,204]
+	ld   i0,[r0,224]
 	ld   i1,r1
 	call r14
-	.line 460
+	.line 483
 	ld   r14,[fr,-24]
-	ld   r14,[r14,204]
+	ld   r14,[r14,224]
 	ld   r14,[r14]
 	add  r14,#0x68
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,204]
+	ld   i0,[r0,224]
 	call r14
-L176:
-	.line 462
+L177:
+	.line 485
 	ld   r14,[fr,-24]
-	ld   r14,[r14,168]
+	ld   r14,[r14,188]
 	ld   r14,[r14]
 	add  r14,#0x34
 	ld   r0,[fr,-24]
 	ld   r1,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,168]
-	ld   i1,[r1,204]
+	ld   i0,[r0,188]
+	ld   i1,[r1,224]
 	call r14
-	.line 463
+	.line 486
 	ld   r14,[fr,-24]
 	ld   i0,[fr,-24]
-	ld   i1,[r14,168]
+	ld   i1,[r14,188]
 	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
-	.dlab LBE114
-	.line 464
+	.dlab LBE115
+	.line 487
 	add  sp,#0x8
 	pop  rt,d2
 	ret
-Lscope43:
+Lscope44:
 	.set	%3=__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.stabs	"this:p(0,25)",160,0,466,-12
-	.stabs	"button:p(4,77)",160,0,466,-16
-	.global	__ZThn108_N14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.stabs	"this:p(0,25)",160,0,489,-12
+	.stabs	"button:p(4,77)",160,0,489,-16
+	.global	__ZThn120_N14Authentication13buttonClickedEPN8NativeUI6WidgetE
 
-.func __ZThn108_N14Authentication13buttonClickedEPN8NativeUI6WidgetE, 2, void
+.func __ZThn120_N14Authentication13buttonClickedEPN8NativeUI6WidgetE, 2, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext18
 Ltext18:
 	.line 28
@@ -6992,14 +7139,14 @@ Ltext18:
 	ld   [fr,-16],i1
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffff94
+	add  r14,#0xffffff88
 	ld   i0,r14
 	ld   i1,[fr,-16]
 	call &%3
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope44:
+Lscope45:
 .data
 LC72:
 	.ascii "bouton click\0"
@@ -7014,53 +7161,56 @@ LC76:
 LC77:
 	.ascii "/medias/\0"
 LC78:
-	.ascii "{\"med_id\": 3\0"
-LC79:
-	.ascii ",\"mev_value\" : \"\0"
+	.ascii "                  {\"med_id\": 3 ,\"mev_value\" : \"\0"
 .code
-	.stabs	"_ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE:F(0,6)",36,0,466,__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.stabs	"this:p(0,25)",160,0,466,-24
-	.stabs	"button:p(4,77)",160,0,466,-28
+	.stabs	"_ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE:F(0,6)",36,0,489,__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.stabs	"this:p(0,25)",160,0,489,-24
+	.stabs	"button:p(4,77)",160,0,489,-28
 	.global	__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
 
 .func __ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE, 2, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext19
 Ltext19:
-	.line 466
+	.line 489
 	push rt,d2
 	sub  sp,#0x28
 	ld   fr,sp
 	add  fr,#0x3c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB115
 	.dlab LBB116
-	.line 467
+	.dlab LBB117
+	.line 490
 	ld   i0,#LC72
 	call &_lprintfln
-	.dlab LBB117
-	.line 468
-	ld   r14,[fr,-24]
-	ld   r0,[r14,204]
-	ld   r14,[fr,-28]
-	jc   ne,r0,r14,#L181
 	.dlab LBB118
-	.line 469
+	.line 491
+	ld   r14,[fr,-24]
+	ld   r0,[r14,224]
+	ld   r14,[fr,-28]
+	jc   ne,r0,r14,#L182
+	.dlab LBB119
+	.line 492
+	ld   r14,[fr,-24]
+	ld   i0,[fr,-24]
+	ld   i1,[r14,136]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	.line 493
 	ld   r1,fr
 	add  r1,#0xffffffe0
 	ld   r14,[fr,-24]
-	ld   r14,[r14,196]
+	ld   r14,[r14,216]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
 	ld   i0,r1
-	ld   i1,[r0,196]
+	ld   i1,[r0,216]
 	call r14
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   r14,[fr,-24]
-	add  r14,#0x8c
+	add  r14,#0xa0
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -7068,13 +7218,13 @@ Ltext19:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 471
+	.line 495
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 472
+	.line 496
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
@@ -7091,7 +7241,7 @@ Ltext19:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 473
+	.line 497
 	ld   d1,fr
 	add  d1,#0xffffffdc
 	ld   d2,fr
@@ -7099,7 +7249,7 @@ Ltext19:
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   r0,[fr,-24]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   i0,r14
 	ld   i1,#LC36
 	ld   i2,r0
@@ -7124,13 +7274,13 @@ Ltext19:
 	ld   r1,fr
 	add  r1,#0xffffffc8
 	ld   r14,[fr,-24]
-	ld   r14,[r14,200]
+	ld   r14,[r14,220]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
 	ld   i0,r1
-	ld   i1,[r0,200]
+	ld   i1,[r0,220]
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffc8
@@ -7174,7 +7324,7 @@ Ltext19:
 	add  r14,#0xffffffd4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 474
+	.line 499
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   r0,fr
@@ -7205,27 +7355,27 @@ Ltext19:
 	add  r14,#0xffffffc8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 475
+	.line 500
 	ld   r14,[fr,-24]
-	ld   r14,[r14,196]
+	ld   r14,[r14,216]
 	ld   r14,[r14]
 	add  r14,#0xc
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,196]
+	ld   i0,[r0,216]
 	call r14
 	ld   i0,r14
 	ld   i1,#LC75
 	ld   i2,#LC76
 	call &_maWidgetSetProperty
-	.line 477
+	.line 502
 	ld   r14,[fr,-24]
-	ld   r14,[r14,200]
+	ld   r14,[r14,220]
 	ld   r14,[r14]
 	add  r14,#0xc
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,200]
+	ld   i0,[r0,220]
 	call r14
 	ld   i0,r14
 	ld   i1,#LC75
@@ -7235,46 +7385,51 @@ Ltext19:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE118
-	jp   #L180
-L181:
-	.dlab LBB119
+	.dlab LBE119
+	jp   #L181
+L182:
 	.dlab LBB120
-	.line 479
-	ld   r14,[fr,-24]
-	ld   r0,[r14,472]
-	ld   r14,[fr,-28]
-	jc   ne,r0,r14,#L180
 	.dlab LBB121
+	.line 504
+	ld   r14,[fr,-24]
+	ld   r0,[r14,492]
+	ld   r14,[fr,-28]
+	jc   ne,r0,r14,#L181
 	.dlab LBB122
-	.line 480
+	.dlab LBB123
+	.line 505
 	ld   i0,[fr,-24]
 	call &__ZN14Authentication17newMediaNameValidEv
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L180
-	.dlab LBB123
-	.line 482
+	jc   eq,r0,r14,#L181
+	.dlab LBB124
+	.line 506
 	ld   r14,[fr,-24]
-	ld   r14,[r14,468]
+	ld   i0,[fr,-24]
+	ld   i1,[r14,136]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	.line 507
+	ld   r14,[fr,-24]
+	ld   r14,[r14,488]
 	ld   r14,[r14]
 	add  r14,#0xc
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
-	ld   i0,[r0,468]
+	ld   i0,[r0,488]
 	call r14
 	ld   i0,r14
 	ld   i1,#LC75
 	ld   i2,#LC76
 	call &_maWidgetSetProperty
-	.line 484
+	.line 509
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 485
+	.line 510
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   i0,r14
@@ -7291,21 +7446,26 @@ L181:
 	add  r14,#0xffffffcc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 486
+	.line 511
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   r0,[fr,-24]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 487
+	.line 512
 	ld   r14,fr
 	add  r14,#0xffffffcc
 	ld   i0,r14
-	ld   i1,#LC78
+	ld   i1,#LC15
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 488
+	.line 513
+	ld   r14,fr
+	add  r14,#0xffffffcc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcE5clearEv
+	.line 514
 	ld   d1,fr
 	add  d1,#0xffffffd0
 	ld   d0,fr
@@ -7313,18 +7473,18 @@ L181:
 	ld   r1,fr
 	add  r1,#0xffffffd8
 	ld   r14,[fr,-24]
-	ld   r14,[r14,468]
+	ld   r14,[r14,488]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-24]
 	ld   r14,[r14]
 	ld   i0,r1
-	ld   i1,[r0,468]
+	ld   i1,[r0,488]
 	call r14
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,d0
-	ld   i1,#LC79
+	ld   i1,#LC78
 	ld   i2,r14
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
@@ -7346,7 +7506,7 @@ L181:
 	add  r14,#0xffffffcc
 	ld   i0,r14
 	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
@@ -7363,7 +7523,7 @@ L181:
 	add  r14,#0xffffffd8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 489
+	.line 515
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   r0,fr
@@ -7404,36 +7564,36 @@ L181:
 	add  r14,#0xffffffc8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L180:
+L181:
+	.dlab LBE124
 	.dlab LBE123
 	.dlab LBE122
 	.dlab LBE121
 	.dlab LBE120
-	.dlab LBE119
+	.dlab LBE118
 	.dlab LBE117
 	.dlab LBE116
-	.dlab LBE115
-	.line 493
+	.line 519
 	add  sp,#0x28
 	pop  rt,d2
 	ret
-	.stabs	"urlTmp:(10,1)",128,0,471,-32
-	.stabn	192,0,0,LBB118-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.stabn	224,0,0,LBE118-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.stabs	"urlTmp:(10,1)",128,0,484,-56
-	.stabs	"message:(10,1)",128,0,487,-52
-	.stabn	192,0,0,LBB123-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.stabn	224,0,0,LBE123-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
-Lscope45:
-	.stabs	"maWidgetSetProperty:f(0,3)",36,0,5002,_maWidgetSetProperty
-	.stabs	"widget:p(16,1)",160,0,5002,-12
-	.stabs	"property:p(4,7)",160,0,5002,-16
-	.stabs	"value:p(4,7)",160,0,5002,-20
+	.stabs	"urlTmp:(10,1)",128,0,495,-32
+	.stabn	192,0,0,LBB119-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.stabn	224,0,0,LBE119-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.stabs	"urlTmp:(10,1)",128,0,509,-56
+	.stabs	"message:(10,1)",128,0,512,-52
+	.stabn	192,0,0,LBB124-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.stabn	224,0,0,LBE124-__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
+Lscope46:
+	.stabs	"maWidgetSetProperty:f(0,3)",36,0,5578,_maWidgetSetProperty
+	.stabs	"widget:p(16,1)",160,0,5578,-12
+	.stabs	"property:p(4,7)",160,0,5578,-16
+	.stabs	"value:p(4,7)",160,0,5578,-20
 
 .func _maWidgetSetProperty, 3, int
 	.stabs	"c:/MoSync/include/IX_WIDGET.h",132,0,0,Ltext20
 Ltext20:
-	.line 5002
+	.line 5578
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
@@ -7441,26 +7601,26 @@ Ltext20:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB124
-	.line 5003
-	ld   i0,#0x7c
+	.dlab LBB125
+	.line 5579
+	ld   i0,#0x7e
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
-	.dlab LBE124
-	.line 5004
+	.dlab LBE125
+	.line 5580
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope46:
+Lscope47:
 	.set	%4=__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-	.stabs	"this:p(0,25)",160,0,496,-12
-	.stabs	"listView:p(0,35)=*(0,36)=xsListView:",160,0,496,-16
-	.stabs	"listViewItem:p(96,122)",160,0,496,-20
-	.global	__ZThn112_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.stabs	"this:p(0,25)",160,0,522,-12
+	.stabs	"listView:p(0,35)=*(0,36)=xsListView:",160,0,522,-16
+	.stabs	"listViewItem:p(98,122)",160,0,522,-20
+	.global	__ZThn124_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
 
-.func __ZThn112_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE, 3, void
+.func __ZThn124_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE, 3, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext21
 Ltext21:
 	.line 28
@@ -7473,7 +7633,7 @@ Ltext21:
 	ld   [fr,-20],i2
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffff90
+	add  r14,#0xffffff84
 	ld   i0,r14
 	ld   i1,[fr,-16]
 	ld   i2,[fr,-20]
@@ -7481,21 +7641,21 @@ Ltext21:
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope47:
+Lscope48:
 .data
-LC80:
+LC79:
 	.ascii "Clicked\0"
 .code
-	.stabs	"_ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE:F(0,6)",36,0,496,__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-	.stabs	"this:p(0,25)",160,0,496,-20
-	.stabs	"listView:p(0,35)",160,0,496,-24
-	.stabs	"listViewItem:p(96,122)",160,0,496,-28
+	.stabs	"_ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE:F(0,6)",36,0,522,__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.stabs	"this:p(0,25)",160,0,522,-20
+	.stabs	"listView:p(0,35)",160,0,522,-24
+	.stabs	"listViewItem:p(98,122)",160,0,522,-28
 	.global	__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
 
 .func __ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE, 3, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext22
 Ltext22:
-	.line 496
+	.line 522
 	push rt,d1
 	sub  sp,#0x28
 	ld   fr,sp
@@ -7503,36 +7663,36 @@ Ltext22:
 	ld   [fr,-20],i0
 	ld   [fr,-24],i1
 	ld   [fr,-28],i2
-	.dlab LBB125
 	.dlab LBB126
-	.line 497
-	ld   i0,#LC80
-	call &_lprintfln
 	.dlab LBB127
-	.line 509
-	ld   r14,[fr,-20]
-	ld   r0,[r14,228]
-	ld   r14,[fr,-24]
-	jc   ne,r0,r14,#L187
+	.line 523
+	ld   i0,#LC79
+	call &_lprintfln
 	.dlab LBB128
+	.line 535
+	ld   r14,[fr,-20]
+	ld   r0,[r14,248]
+	ld   r14,[fr,-24]
+	jc   ne,r0,r14,#L188
 	.dlab LBB129
-	.line 510
+	.dlab LBB130
+	.line 536
 	ld   r0,#0x0
 	ld   [fr,-32],r0
-L189:
+L190:
 	ld   r14,[fr,-20]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   i0,r14
 	call &__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv
 	ld   r0,r14
 	ld   r14,[fr,-32]
-	jc   geu,r14,r0,#L187
-	.dlab LBB130
+	jc   geu,r14,r0,#L188
 	.dlab LBB131
 	.dlab LBB132
-	.line 511
+	.dlab LBB133
+	.line 537
 	ld   r14,[fr,-20]
-	add  r14,#0xe8
+	add  r14,#0xfc
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
@@ -7540,24 +7700,29 @@ L189:
 	call &__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	ld   r0,[r14]
 	ld   r14,[fr,-28]
-	jc   ne,r0,r14,#L191
-	.dlab LBB133
-	.line 512
+	jc   ne,r0,r14,#L192
+	.dlab LBB134
+	.line 538
+	ld   r14,[fr,-20]
+	ld   i0,[fr,-20]
+	ld   i1,[r14,136]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
+	.line 539
 	ld   d0,[fr,-20]
 	ld   r14,[fr,-20]
-	add  r14,#0x120
+	add  r14,#0x134
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil3MapIixEixERKi
 	ld   r0,[r14]
-	ld   [d0,152],r0
+	ld   [d0,172],r0
 	ld   r14,[r14,4]
-	ld   [d0,156],r14
-	.line 513
+	ld   [d0,176],r14
+	.line 540
 	ld   r14,[fr,-20]
-	add  r14,#0x158
+	add  r14,#0x16c
 	ld   r0,fr
 	add  r0,#0xffffffe0
 	ld   i0,r14
@@ -7565,17 +7730,17 @@ L189:
 	call &__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
 	ld   r0,r14
 	ld   r14,[fr,-20]
-	add  r14,#0x94
+	add  r14,#0xa8
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	.line 514
+	.line 541
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 515
+	.line 542
 	ld   d1,fr
 	add  d1,#0xffffffd8
 	ld   d0,fr
@@ -7583,8 +7748,8 @@ L189:
 	ld   r1,fr
 	add  r1,#0xffffffd0
 	ld   r0,[fr,-20]
-	ld   r14,[r0,152]
-	ld   r15,[r0,156]
+	ld   r14,[r0,172]
+	ld   r15,[r0,176]
 	ld   i0,r1
 	ld   i1,r14
 	ld   i2,r15
@@ -7631,47 +7796,69 @@ L189:
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 517
+	.line 544
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   r0,[fr,-20]
-	add  r0,#0x88
+	add  r0,#0x9c
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEpLERKS1_
-	.line 519
-	ld   d1,fr
-	add  d1,#0xffffffcc
+	.line 545
 	ld   r14,fr
-	add  r14,#0xffffffd0
+	add  r14,#0xffffffcc
+	ld   i0,r14
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	.line 546
+	ld   r14,fr
+	add  r14,#0xffffffcc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcE5clearEv
+	.line 547
+	ld   d1,fr
+	add  d1,#0xffffffd0
+	ld   r14,fr
+	add  r14,#0xffffffd4
 	ld   r0,[fr,-20]
-	add  r0,#0x94
+	add  r0,#0xa8
 	ld   i0,r14
 	ld   i1,#LC60
 	ld   i2,r0
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
-	add  d0,#0xffffffd0
+	add  d0,#0xffffffd4
 	ld   r14,fr
-	add  r14,#0xffffffd4
+	add  r14,#0xffffffd8
 	ld   i0,r14
 	ld   i1,#LC61
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffffd4
+	add  r14,#0xffffffd8
 	ld   i0,d1
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
+	ld   r0,fr
+	add  r0,#0xffffffd0
 	ld   r14,fr
-	add  r14,#0xffffffd4
+	add  r14,#0xffffffcc
 	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 520
+	ld   r14,fr
+	add  r14,#0xffffffd8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffd4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 548
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   r0,fr
@@ -7712,40 +7899,40 @@ L189:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L191:
+L192:
+	.dlab LBE134
 	.dlab LBE133
 	.dlab LBE132
 	.dlab LBE131
-	.dlab LBE130
-	.line 510
+	.line 536
 	ld   r14,[fr,-32]
 	add  r14,#0x1
 	ld   [fr,-32],r14
-	jp   #L189
-L187:
+	jp   #L190
+L188:
+	.dlab LBE130
 	.dlab LBE129
 	.dlab LBE128
 	.dlab LBE127
 	.dlab LBE126
-	.dlab LBE125
-	.line 524
+	.line 552
 	add  sp,#0x28
 	pop  rt,d1
 	ret
-	.stabs	"i:(0,3)",128,0,510,-32
-	.stabn	192,0,0,LBB129-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-	.stabs	"urlTmp:(10,1)",128,0,514,-36
-	.stabs	"message:(10,1)",128,0,518,-52
-	.stabn	192,0,0,LBB133-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-	.stabn	224,0,0,LBE133-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-	.stabn	224,0,0,LBE129-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
-Lscope48:
+	.stabs	"i:(0,3)",128,0,536,-32
+	.stabn	192,0,0,LBB130-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.stabs	"urlTmp:(10,1)",128,0,541,-36
+	.stabs	"message:(10,1)",128,0,545,-52
+	.stabn	192,0,0,LBB134-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.stabn	224,0,0,LBE134-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.stabn	224,0,0,LBE130-__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+Lscope49:
 	.set	%5=__ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.stabs	"this:p(0,25)",160,0,527,-12
-	.stabs	"rB:p(57,32)",160,0,527,-24
-	.global	__ZThn116_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+	.stabs	"this:p(0,25)",160,0,555,-12
+	.stabs	"rB:p(59,32)",160,0,555,-24
+	.global	__ZThn128_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
 
-.func __ZThn116_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
+.func __ZThn128_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext23
 Ltext23:
 	.line 28
@@ -7759,7 +7946,7 @@ Ltext23:
 	ld   [fr,-24],i3
 	.line 28
 	ld   r14,[fr,-12]
-	add  r14,#0xffffff8c
+	add  r14,#0xffffff80
 	ld   i0,r14
 	ld   i1,[fr,-16]
 	ld   i2,[fr,-20]
@@ -7768,16 +7955,16 @@ Ltext23:
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope49:
-	.stabs	"_ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE:F(0,6)",36,0,527,__ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.stabs	"this:p(0,25)",160,0,527,-12
-	.stabs	"rB:p(57,32)",160,0,527,-24
+Lscope50:
+	.stabs	"_ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE:F(0,6)",36,0,555,__ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+	.stabs	"this:p(0,25)",160,0,555,-12
+	.stabs	"rB:p(59,32)",160,0,555,-24
 	.global	__ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
 
 .func __ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext24
 Ltext24:
-	.line 527
+	.line 555
 	push rt,fr
 	sub  sp,#0x18
 	ld   fr,sp
@@ -7786,13 +7973,13 @@ Ltext24:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.dlab LBB134
-	.line 528
+	.dlab LBB135
+	.line 556
 	ld   r14,[fr,-12]
-	ld   r0,[r14,216]
+	ld   r0,[r14,236]
 	ld   r14,[fr,-24]
-	jc   ne,r0,r14,#L195
-	.line 530
+	jc   ne,r0,r14,#L196
+	.line 557
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
@@ -7801,7 +7988,7 @@ Ltext24:
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   r14,[fr,-12]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -7809,14 +7996,14 @@ Ltext24:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L196
-L195:
-	.line 532
+	jp   #L197
+L196:
+	.line 558
 	ld   r14,[fr,-12]
-	ld   r0,[r14,220]
+	ld   r0,[r14,240]
 	ld   r14,[fr,-24]
-	jc   ne,r0,r14,#L196
-	.line 534
+	jc   ne,r0,r14,#L197
+	.line 559
 	ld   r14,fr
 	add  r14,#0xffffffe4
 	ld   i0,r14
@@ -7825,7 +8012,7 @@ L195:
 	ld   r0,fr
 	add  r0,#0xffffffe4
 	ld   r14,[fr,-12]
-	add  r14,#0xa0
+	add  r14,#0xb4
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
@@ -7833,59 +8020,59 @@ L195:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L196:
-	.line 536
+L197:
+	.line 561
 	ld   r0,[fr,-12]
-	add  r0,#0x8c
+	add  r0,#0xa0
 	ld   r1,[fr,-12]
-	add  r1,#0x94
+	add  r1,#0xa8
 	ld   r2,[fr,-12]
-	add  r2,#0x90
+	add  r2,#0xa4
 	ld   r3,[fr,-12]
-	add  r3,#0xa0
+	add  r3,#0xb4
 	ld   r14,[fr,-12]
-	add  r14,#0x98
+	add  r14,#0xac
 	ld   [sp],r14
 	ld   i0,r0
 	ld   i1,r1
 	ld   i2,r2
 	ld   i3,r3
 	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rx
-	.dlab LBE134
-	.line 537
+	.dlab LBE135
+	.line 562
 	add  sp,#0x18
 	pop  rt,fr
 	ret
-Lscope50:
+Lscope51:
 .data
-LC81:
+LC80:
 	.ascii "Warning\0"
-LC82:
+LC81:
 	.ascii "Field name can not be empty\0"
 .code
-	.stabs	"_ZN14Authentication17newMediaNameValidEv:F(0,4)",36,0,539,__ZN14Authentication17newMediaNameValidEv
-	.stabs	"this:p(0,25)",160,0,539,-16
+	.stabs	"_ZN14Authentication17newMediaNameValidEv:F(0,4)",36,0,564,__ZN14Authentication17newMediaNameValidEv
+	.stabs	"this:p(0,25)",160,0,564,-16
 	.global	__ZN14Authentication17newMediaNameValidEv
 
 .func __ZN14Authentication17newMediaNameValidEv, 1, int
-	.line 539
+	.line 564
 	push rt,d0
 	sub  sp,#0x10
 	ld   fr,sp
 	add  fr,#0x1c
 	ld   [fr,-16],i0
-	.dlab LBB135
-	.line 540
+	.dlab LBB136
+	.line 565
 	ld   r1,fr
 	add  r1,#0xffffffec
 	ld   r14,[fr,-16]
-	ld   r14,[r14,468]
+	ld   r14,[r14,488]
 	ld   r14,[r14]
 	add  r14,#0xa4
 	ld   r0,[fr,-16]
 	ld   r14,[r14]
 	ld   i0,r1
-	ld   i1,[r0,468]
+	ld   i1,[r0,488]
 	call r14
 	ld   d0,fr
 	add  d0,#0xffffffec
@@ -7911,27 +8098,27 @@ LC82:
 	ld   r0,d0
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L199
-	.line 541
-	ld   i0,#LC81
-	ld   i1,#LC82
+	jc   eq,r0,r14,#L200
+	.line 566
+	ld   i0,#LC80
+	ld   i1,#LC81
 	call &_maMessageBox
-	.line 542
+	.line 567
 	ld   r14,#0x0
 	ld   [fr,-28],r14
-	jp   #L198
-L199:
-	.line 544
+	jp   #L199
+L200:
+	.line 569
 	ld   r14,#0x1
 	ld   [fr,-28],r14
-L198:
-	.dlab LBE135
-	.line 545
+L199:
+	.dlab LBE136
+	.line 570
 	ld   r14,[fr,-28]
 	add  sp,#0x10
 	pop  rt,d0
 	ret
-Lscope51:
+Lscope52:
 	.stabs	"_ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_:f(10,2)",36,0,395,__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	.stabs	"c:p(4,7)",160,0,395,-16
 	.stabs	"s:p(4,11)",160,0,395,-20
@@ -7947,7 +8134,7 @@ Ltext25:
 	ld   d0,i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB136
+	.dlab LBB137
 	.line 396
 	ld   r14,fr
 	add  r14,#0xffffffe8
@@ -7960,21 +8147,21 @@ Ltext25:
 	ld   i1,r14
 	ld   i2,[fr,-20]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB137
+	.dlab LBB138
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE138
 	.dlab LBE137
-	.dlab LBE136
 	ld   r14,d0
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope52:
+Lscope53:
 	.stabs	"_ZN6MAUtil7CompareIKiEEiRKT_S4_:f(0,3)",36,0,47,__ZN6MAUtil7CompareIKiEEiRKT_S4_
-	.stabs	"a:p(96,12)",160,0,47,-12
-	.stabs	"b:p(96,12)",160,0,47,-16
+	.stabs	"a:p(98,12)",160,0,47,-12
+	.stabs	"b:p(98,12)",160,0,47,-16
 
 .func __ZN6MAUtil7CompareIKiEEiRKT_S4_, 2, int
 	.stabs	"c:/MoSync/include/MAUtil/collection_common.h",132,0,0,Ltext26
@@ -7986,43 +8173,43 @@ Ltext26:
 	add  fr,#0x14
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB138
+	.dlab LBB139
 	.line 48
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
 	ld   r1,[r14]
 	ld   r14,[r0]
-	jc   ge,r1,r14,#L202
+	jc   ge,r1,r14,#L203
 	.line 49
 	ld   r14,#0xffffffff
 	ld   [fr,-20],r14
-	jp   #L201
-L202:
+	jp   #L202
+L203:
 	.line 50
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
 	ld   r1,[r14]
 	ld   r14,[r0]
-	jc   ne,r1,r14,#L204
+	jc   ne,r1,r14,#L205
 	.line 51
 	ld   r14,#0x0
 	ld   [fr,-20],r14
-	jp   #L201
-L204:
+	jp   #L202
+L205:
 	.line 53
 	ld   r14,#0x1
 	ld   [fr,-20],r14
-L201:
-	.dlab LBE138
+L202:
+	.dlab LBE139
 	ld   r14,[fr,-20]
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope53:
-	.stabs	"Pair<const int,NativeUI::ListViewItem*>:Tt(96,115)=s8first:(96,13),0,32;second:(96,122),32,32;__base_ctor::(0,37)=#(96,115),(0,6),(0,38)=*(96,115),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2Ev;2A.;__comp_ctor::(0,37):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1Ev;2A.;__base_ctor::(0,39)=#(96,115),(0,6),(0,38),(96,12),(96,120),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,39):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_;2A.;operator=::(0,40)=#(96,115),(0,41)=&(96,115),(0,38),(96,113),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEaSERKS5_;2A.;__base_ctor::(0,42)=#(96,115),(0,6),(0,38),(96,113),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERKS5_;2A.;__comp_ctor::(0,42):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERKS5_;2A.;;",128,0,61,0
+Lscope54:
+	.stabs	"Pair<const int,NativeUI::ListViewItem*>:Tt(98,115)=s8first:(98,13),0,32;second:(98,122),32,32;__base_ctor::(0,37)=#(98,115),(0,6),(0,38)=*(98,115),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2Ev;2A.;__comp_ctor::(0,37):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1Ev;2A.;__base_ctor::(0,39)=#(98,115),(0,6),(0,38),(98,12),(98,120),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,39):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_;2A.;operator=::(0,40)=#(98,115),(0,41)=&(98,115),(0,38),(98,113),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEaSERKS5_;2A.;__base_ctor::(0,42)=#(98,115),(0,6),(0,38),(98,113),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERKS5_;2A.;__comp_ctor::(0,42):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERKS5_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E
 	.stabs	"this:p(0,30)",160,0,43,-12
-	.stabs	"cf:p(96,23)",160,0,43,-16
+	.stabs	"cf:p(98,23)",160,0,43,-16
 
 .func __ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E, 2, void
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext27
@@ -8034,19 +8221,19 @@ Ltext27:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB139
+	.dlab LBB140
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei
-	.dlab LBE139
+	.dlab LBE140
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope54:
+Lscope55:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev
-	.stabs	"this:p(0,43)=k(96,93)",160,0,74,-12
+	.stabs	"this:p(0,43)=k(98,93)",160,0,74,-12
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext28
@@ -8057,19 +8244,19 @@ Ltext28:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB140
+	.dlab LBB141
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv
-	.dlab LBE140
+	.dlab LBE141
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope55:
-	.stabs	"Pair<const int,long long int>:Tt(106,26)=s12first:(96,13),0,32;second:(0,15),32,64;__base_ctor::(0,44)=#(106,26),(0,6),(0,45)=*(106,26),(0,6);:_ZN6MAUtil4PairIKixEC2Ev;2A.;__comp_ctor::(0,44):_ZN6MAUtil4PairIKixEC1Ev;2A.;__base_ctor::(0,46)=#(106,26),(0,6),(0,45),(96,12),(106,31),(0,6);:_ZN6MAUtil4PairIKixEC2ERS1_RKx;2A.;__comp_ctor::(0,46):_ZN6MAUtil4PairIKixEC1ERS1_RKx;2A.;operator=::(0,47)=#(106,26),(0,48)=&(106,26),(0,45),(106,24),(0,6);:_ZN6MAUtil4PairIKixEaSERKS2_;2A.;__base_ctor::(0,49)=#(106,26),(0,6),(0,45),(106,24),(0,6);:_ZN6MAUtil4PairIKixEC2ERKS2_;2A.;__comp_ctor::(0,49):_ZN6MAUtil4PairIKixEC1ERKS2_;2A.;;",128,0,61,0
+Lscope56:
+	.stabs	"Pair<const int,long long int>:Tt(108,26)=s12first:(98,13),0,32;second:(0,15),32,64;__base_ctor::(0,44)=#(108,26),(0,6),(0,45)=*(108,26),(0,6);:_ZN6MAUtil4PairIKixEC2Ev;2A.;__comp_ctor::(0,44):_ZN6MAUtil4PairIKixEC1Ev;2A.;__base_ctor::(0,46)=#(108,26),(0,6),(0,45),(98,12),(108,31),(0,6);:_ZN6MAUtil4PairIKixEC2ERS1_RKx;2A.;__comp_ctor::(0,46):_ZN6MAUtil4PairIKixEC1ERS1_RKx;2A.;operator=::(0,47)=#(108,26),(0,48)=&(108,26),(0,45),(108,24),(0,6);:_ZN6MAUtil4PairIKixEaSERKS2_;2A.;__base_ctor::(0,49)=#(108,26),(0,6),(0,45),(108,24),(0,6);:_ZN6MAUtil4PairIKixEC2ERKS2_;2A.;__comp_ctor::(0,49):_ZN6MAUtil4PairIKixEC1ERKS2_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIixEC1EPFiRKiS3_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIixEC1EPFiRKiS3_E
 	.stabs	"this:p(0,31)",160,0,43,-12
-	.stabs	"cf:p(96,23)",160,0,43,-16
+	.stabs	"cf:p(98,23)",160,0,43,-16
 
 .func __ZN6MAUtil3MapIixEC1EPFiRKiS3_E, 2, void
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext29
@@ -8081,19 +8268,19 @@ Ltext29:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB141
+	.dlab LBB142
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei
-	.dlab LBE141
+	.dlab LBE142
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope56:
+Lscope57:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev
-	.stabs	"this:p(0,50)=k(106,4)",160,0,74,-12
+	.stabs	"this:p(0,50)=k(108,4)",160,0,74,-12
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEED2Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext30
@@ -8104,19 +8291,19 @@ Ltext30:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB142
+	.dlab LBB143
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv
-	.dlab LBE142
+	.dlab LBE143
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope57:
-	.stabs	"Pair<const int,MAUtil::BasicString<char> >:Tt(96,30)=s8first:(96,13),0,32;second:(10,1),32,32;__base_ctor::(0,51)=#(96,30),(0,6),(0,52)=*(96,30),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2Ev;2A.;__comp_ctor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1Ev;2A.;__base_ctor::(0,53)=#(96,30),(0,6),(0,52),(96,12),(4,38),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERS1_RKS3_;2A.;__comp_ctor::(0,53):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_;2A.;operator=::(0,54)=#(96,30),(0,55)=&(96,30),(0,52),(96,28),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEaSERKS4_;2A.;__base_ctor::(0,56)=#(96,30),(0,6),(0,52),(96,28),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERKS4_;2A.;__comp_ctor::(0,56):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_;2A.;__base_dtor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,61,0
+Lscope58:
+	.stabs	"Pair<const int,MAUtil::BasicString<char> >:Tt(98,30)=s8first:(98,13),0,32;second:(10,1),32,32;__base_ctor::(0,51)=#(98,30),(0,6),(0,52)=*(98,30),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2Ev;2A.;__comp_ctor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1Ev;2A.;__base_ctor::(0,53)=#(98,30),(0,6),(0,52),(98,12),(4,38),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERS1_RKS3_;2A.;__comp_ctor::(0,53):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_;2A.;operator=::(0,54)=#(98,30),(0,55)=&(98,30),(0,52),(98,28),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEaSERKS4_;2A.;__base_ctor::(0,56)=#(98,30),(0,6),(0,52),(98,28),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERKS4_;2A.;__comp_ctor::(0,56):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_;2A.;__base_dtor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(0,51):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E
 	.stabs	"this:p(0,32)",160,0,43,-12
-	.stabs	"cf:p(96,23)",160,0,43,-16
+	.stabs	"cf:p(98,23)",160,0,43,-16
 
 .func __ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E, 2, void
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext31
@@ -8128,19 +8315,19 @@ Ltext31:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB143
+	.dlab LBB144
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei
-	.dlab LBE143
+	.dlab LBE144
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope58:
+Lscope59:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev
-	.stabs	"this:p(0,57)=k(96,4)",160,0,74,-12
+	.stabs	"this:p(0,57)=k(98,4)",160,0,74,-12
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext32
@@ -8151,19 +8338,19 @@ Ltext32:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB144
+	.dlab LBB145
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv
-	.dlab LBE144
+	.dlab LBE145
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope59:
-	.stabs	"Pair<const int,NativeUI::Label*>:Tt(96,160)=s8first:(96,13),0,32;second:(96,167),32,32;__base_ctor::(0,58)=#(96,160),(0,6),(0,59)=*(96,160),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2Ev;2A.;__comp_ctor::(0,58):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1Ev;2A.;__base_ctor::(0,60)=#(96,160),(0,6),(0,59),(96,12),(96,165),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,60):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_;2A.;operator=::(0,61)=#(96,160),(0,62)=&(96,160),(0,59),(96,158),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEaSERKS5_;2A.;__base_ctor::(0,63)=#(96,160),(0,6),(0,59),(96,158),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERKS5_;2A.;__comp_ctor::(0,63):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERKS5_;2A.;;",128,0,61,0
+Lscope60:
+	.stabs	"Pair<const int,NativeUI::Label*>:Tt(98,160)=s8first:(98,13),0,32;second:(98,167),32,32;__base_ctor::(0,58)=#(98,160),(0,6),(0,59)=*(98,160),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2Ev;2A.;__comp_ctor::(0,58):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1Ev;2A.;__base_ctor::(0,60)=#(98,160),(0,6),(0,59),(98,12),(98,165),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,60):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_;2A.;operator=::(0,61)=#(98,160),(0,62)=&(98,160),(0,59),(98,158),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEaSERKS5_;2A.;__base_ctor::(0,63)=#(98,160),(0,6),(0,59),(98,158),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERKS5_;2A.;__comp_ctor::(0,63):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERKS5_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E
 	.stabs	"this:p(0,33)",160,0,43,-12
-	.stabs	"cf:p(96,23)",160,0,43,-16
+	.stabs	"cf:p(98,23)",160,0,43,-16
 
 .func __ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E, 2, void
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext33
@@ -8175,19 +8362,19 @@ Ltext33:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB145
+	.dlab LBB146
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei
-	.dlab LBE145
+	.dlab LBE146
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope60:
+Lscope61:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev
-	.stabs	"this:p(0,64)=k(96,138)",160,0,74,-12
+	.stabs	"this:p(0,64)=k(98,138)",160,0,74,-12
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev, 1, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext34
@@ -8198,19 +8385,19 @@ Ltext34:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB146
+	.dlab LBB147
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv
-	.dlab LBE146
+	.dlab LBE147
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope61:
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >::DictNode:Tt(0,65)=s36!1,020,(14,3);data:(106,26),192,96;__base_ctor::(0,66)=#(0,65),(0,6),(0,67)=*(0,65),(106,26),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC2ES3_;2A.;__comp_ctor::(0,66):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ES3_;2A.;operator=::(0,68)=#(0,65),(0,69)=&(0,65),(0,67),(0,70)=&(0,71)=k(0,65),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeaSERKS5_;2A.;__base_ctor::(0,72)=#(0,65),(0,6),(0,67),(0,70),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC2ERKS5_;2A.;__comp_ctor::(0,72):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ERKS5_;2A.;;",128,0,60,0
-	.stabs	"_ZN6MAUtil3MapIixEixERKi:f(93,8)",36,0,51,__ZN6MAUtil3MapIixEixERKi
+Lscope62:
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, long long int> >::DictNode:Tt(0,65)=s36!1,020,(14,3);data:(108,26),192,96;__base_ctor::(0,66)=#(0,65),(0,6),(0,67)=*(0,65),(108,26),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC2ES3_;2A.;__comp_ctor::(0,66):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ES3_;2A.;operator=::(0,68)=#(0,65),(0,69)=&(0,65),(0,67),(0,70)=&(0,71)=k(0,65),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeaSERKS5_;2A.;__base_ctor::(0,72)=#(0,65),(0,6),(0,67),(0,70),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC2ERKS5_;2A.;__comp_ctor::(0,72):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ERKS5_;2A.;;",128,0,60,0
+	.stabs	"_ZN6MAUtil3MapIixEixERKi:f(95,9)",36,0,51,__ZN6MAUtil3MapIixEixERKi
 	.stabs	"this:p(0,31)",160,0,51,-16
-	.stabs	"key:p(96,12)",160,0,51,-20
+	.stabs	"key:p(98,12)",160,0,51,-20
 
 .func __ZN6MAUtil3MapIixEixERKi, 2, int
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext35
@@ -8222,19 +8409,19 @@ Ltext35:
 	add  fr,#0x38
 	ld   [fr,-16],i0
 	ld   [fr,-20],i1
-	.dlab LBB147
 	.dlab LBB148
+	.dlab LBB149
 	.line 52
 	ld   i0,[fr,-16]
 	ld   i1,[fr,-20]
 	call &_dict_lookup
 	ld   [fr,-24],r14
-	.dlab LBB149
+	.dlab LBB150
 	.line 53
 	ld   r0,[fr,-24]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L223
-	.dlab LBB150
+	jc   ne,r0,r14,#L224
+	.dlab LBB151
 	.line 54
 	ld   r0,fr
 	add  r0,#0xffffffdc
@@ -8274,28 +8461,28 @@ Ltext35:
 	ld   i1,[fr,-24]
 	ld   i2,r14
 	call &_dict_insert
-L223:
+L224:
+	.dlab LBE151
 	.dlab LBE150
-	.dlab LBE149
 	.line 58
 	ld   r14,[fr,-24]
 	add  r14,#0x1c
+	.dlab LBE149
 	.dlab LBE148
-	.dlab LBE147
 	add  sp,#0x2c
 	pop  rt,d0
 	ret
 	.stabs	"node:(0,67)",128,0,52,-24
-	.stabn	192,0,0,LBB148-__ZN6MAUtil3MapIixEixERKi
-	.stabs	"p:(106,26)",128,0,54,-36
-	.stabn	192,0,0,LBB150-__ZN6MAUtil3MapIixEixERKi
-	.stabn	224,0,0,LBE150-__ZN6MAUtil3MapIixEixERKi
-	.stabn	224,0,0,LBE148-__ZN6MAUtil3MapIixEixERKi
-Lscope62:
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >::DictNode:Tt(0,73)=s32!1,020,(14,3);data:(96,160),192,64;__base_ctor::(0,74)=#(0,73),(0,6),(0,75)=*(0,73),(96,160),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,74):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_;2A.;operator=::(0,76)=#(0,73),(0,77)=&(0,73),(0,75),(0,78)=&(0,79)=k(0,73),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,80)=#(0,73),(0,6),(0,75),(0,78),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,80):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
-	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi:f(96,174)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	192,0,0,LBB149-__ZN6MAUtil3MapIixEixERKi
+	.stabs	"p:(108,26)",128,0,54,-36
+	.stabn	192,0,0,LBB151-__ZN6MAUtil3MapIixEixERKi
+	.stabn	224,0,0,LBE151-__ZN6MAUtil3MapIixEixERKi
+	.stabn	224,0,0,LBE149-__ZN6MAUtil3MapIixEixERKi
+Lscope63:
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >::DictNode:Tt(0,73)=s32!1,020,(14,3);data:(98,160),192,64;__base_ctor::(0,74)=#(0,73),(0,6),(0,75)=*(0,73),(98,160),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,74):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_;2A.;operator=::(0,76)=#(0,73),(0,77)=&(0,73),(0,75),(0,78)=&(0,79)=k(0,73),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,80)=#(0,73),(0,6),(0,75),(0,78),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,80):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
+	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi:f(98,174)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
 	.stabs	"this:p(0,33)",160,0,51,-24
-	.stabs	"key:p(96,12)",160,0,51,-28
+	.stabs	"key:p(98,12)",160,0,51,-28
 
 .func __ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi, 2, int
 	.line 51
@@ -8305,19 +8492,19 @@ Lscope62:
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB151
 	.dlab LBB152
+	.dlab LBB153
 	.line 52
 	ld   i0,[fr,-24]
 	ld   i1,[fr,-28]
 	call &_dict_lookup
 	ld   [fr,-32],r14
-	.dlab LBB153
+	.dlab LBB154
 	.line 53
 	ld   r0,[fr,-32]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L225
-	.dlab LBB154
+	jc   ne,r0,r14,#L226
+	.dlab LBB155
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -8347,28 +8534,28 @@ Lscope62:
 	ld   i1,[fr,-32]
 	ld   i2,r14
 	call &_dict_insert
-L225:
+L226:
+	.dlab LBE155
 	.dlab LBE154
-	.dlab LBE153
 	.line 58
 	ld   r14,[fr,-32]
 	add  r14,#0x1c
+	.dlab LBE153
 	.dlab LBE152
-	.dlab LBE151
 	add  sp,#0x18
 	pop  rt,d2
 	ret
 	.stabs	"node:(0,75)",128,0,52,-32
-	.stabn	192,0,0,LBB152-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-	.stabs	"p:(96,160)",128,0,54,-40
-	.stabn	192,0,0,LBB154-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-	.stabn	224,0,0,LBE154-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-	.stabn	224,0,0,LBE152-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-Lscope63:
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >::DictNode:Tt(0,81)=s32!1,020,(14,3);data:(96,30),192,64;__base_ctor::(0,82)=#(0,81),(0,6),(0,83)=*(0,81),(96,30),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ES5_;2A.;__comp_ctor::(0,82):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_;2A.;operator=::(0,84)=#(0,81),(0,85)=&(0,81),(0,83),(0,86)=&(0,87)=k(0,81),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeaSERKS7_;2A.;__base_ctor::(0,88)=#(0,81),(0,6),(0,83),(0,86),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ERKS7_;2A.;__comp_ctor::(0,88):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ERKS7_;2A.;__base_dtor::(0,89)=#(0,81),(0,6),(0,83),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD2Ev;2A.;__comp_dtor::(0,89):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev;2A.;;",128,0,60,0
-	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi:f(94,6)",36,0,51,__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	192,0,0,LBB153-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabs	"p:(98,160)",128,0,54,-40
+	.stabn	192,0,0,LBB155-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	224,0,0,LBE155-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	224,0,0,LBE153-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+Lscope64:
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >::DictNode:Tt(0,81)=s32!1,020,(14,3);data:(98,30),192,64;__base_ctor::(0,82)=#(0,81),(0,6),(0,83)=*(0,81),(98,30),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ES5_;2A.;__comp_ctor::(0,82):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_;2A.;operator=::(0,84)=#(0,81),(0,85)=&(0,81),(0,83),(0,86)=&(0,87)=k(0,81),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeaSERKS7_;2A.;__base_ctor::(0,88)=#(0,81),(0,6),(0,83),(0,86),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ERKS7_;2A.;__comp_ctor::(0,88):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ERKS7_;2A.;__base_dtor::(0,89)=#(0,81),(0,6),(0,83),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD2Ev;2A.;__comp_dtor::(0,89):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev;2A.;;",128,0,60,0
+	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi:f(96,6)",36,0,51,__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
 	.stabs	"this:p(0,32)",160,0,51,-20
-	.stabs	"key:p(96,12)",160,0,51,-24
+	.stabs	"key:p(98,12)",160,0,51,-24
 
 .func __ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi, 2, int
 	.line 51
@@ -8378,19 +8565,19 @@ Lscope63:
 	add  fr,#0x30
 	ld   [fr,-20],i0
 	ld   [fr,-24],i1
-	.dlab LBB155
 	.dlab LBB156
+	.dlab LBB157
 	.line 52
 	ld   i0,[fr,-20]
 	ld   i1,[fr,-24]
 	call &_dict_lookup
 	ld   [fr,-28],r14
-	.dlab LBB157
+	.dlab LBB158
 	.line 53
 	ld   r0,[fr,-28]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L227
-	.dlab LBB158
+	jc   ne,r0,r14,#L228
+	.dlab LBB159
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -8440,24 +8627,24 @@ Lscope63:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
-L227:
+L228:
+	.dlab LBE159
 	.dlab LBE158
-	.dlab LBE157
 	.line 58
 	ld   r14,[fr,-28]
 	add  r14,#0x1c
+	.dlab LBE157
 	.dlab LBE156
-	.dlab LBE155
 	add  sp,#0x20
 	pop  rt,d1
 	ret
 	.stabs	"node:(0,83)",128,0,52,-28
-	.stabn	192,0,0,LBB156-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-	.stabs	"p:(96,30)",128,0,54,-36
-	.stabn	192,0,0,LBB158-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-	.stabn	224,0,0,LBE158-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-	.stabn	224,0,0,LBE156-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-Lscope64:
+	.stabn	192,0,0,LBB157-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabs	"p:(98,30)",128,0,54,-36
+	.stabn	192,0,0,LBB159-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	224,0,0,LBE159-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	224,0,0,LBE157-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+Lscope65:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev:f(0,6)",36,0,54,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
 	.stabs	"this:p(0,90)=k(0,52)",160,0,61,-12
 
@@ -8468,20 +8655,20 @@ Lscope64:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB159
+	.dlab LBB160
 	.line 54
 	ld   r14,[fr,-12]
 	add  r14,#0x4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE159
+	.dlab LBE160
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope65:
+Lscope66:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_:f(0,6)",36,0,55,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_
 	.stabs	"this:p(0,90)",160,0,61,-12
-	.stabs	"_ctor_arg:p(96,28)",160,0,61,-16
+	.stabs	"_ctor_arg:p(98,28)",160,0,61,-16
 
 .func __ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_, 2, void
 	.line 55
@@ -8491,7 +8678,7 @@ Lscope65:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB160
+	.dlab LBB161
 	.line 55
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -8504,13 +8691,13 @@ Lscope65:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	.dlab LBE160
+	.dlab LBE161
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope66:
+Lscope67:
 	.stabs	"_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv:f(5,1)",36,0,136,__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv
-	.stabs	"this:p(0,91)=k(106,14)",160,0,136,-12
+	.stabs	"this:p(0,91)=k(108,14)",160,0,136,-12
 
 .func __ZNK6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4sizeEv, 1, int
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext36
@@ -8521,19 +8708,19 @@ Ltext36:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB161
+	.dlab LBB162
 	.line 137
 	ld   r14,[fr,-12]
 	ld   r14,[r14,24]
-	.dlab LBE161
+	.dlab LBE162
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope67:
-	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >::DictNode:Tt(0,92)=s32!1,020,(14,3);data:(96,115),192,64;__base_ctor::(0,93)=#(0,92),(0,6),(0,94)=*(0,92),(96,115),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,93):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_;2A.;operator=::(0,95)=#(0,92),(0,96)=&(0,92),(0,94),(0,97)=&(0,98)=k(0,92),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,99)=#(0,92),(0,6),(0,94),(0,97),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,99):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
-	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi:f(96,129)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+Lscope68:
+	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >::DictNode:Tt(0,92)=s32!1,020,(14,3);data:(98,115),192,64;__base_ctor::(0,93)=#(0,92),(0,6),(0,94)=*(0,92),(98,115),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,93):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_;2A.;operator=::(0,95)=#(0,92),(0,96)=&(0,92),(0,94),(0,97)=&(0,98)=k(0,92),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,99)=#(0,92),(0,6),(0,94),(0,97),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,99):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
+	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi:f(98,129)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	.stabs	"this:p(0,30)",160,0,51,-24
-	.stabs	"key:p(96,12)",160,0,51,-28
+	.stabs	"key:p(98,12)",160,0,51,-28
 
 .func __ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi, 2, int
 	.stabs	"c:/MoSync/include/MAUtil/Map.h",132,0,0,Ltext37
@@ -8545,19 +8732,19 @@ Ltext37:
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB162
 	.dlab LBB163
+	.dlab LBB164
 	.line 52
 	ld   i0,[fr,-24]
 	ld   i1,[fr,-28]
 	call &_dict_lookup
 	ld   [fr,-32],r14
-	.dlab LBB164
+	.dlab LBB165
 	.line 53
 	ld   r0,[fr,-32]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L234
-	.dlab LBB165
+	jc   ne,r0,r14,#L235
+	.dlab LBB166
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -8587,26 +8774,26 @@ Ltext37:
 	ld   i1,[fr,-32]
 	ld   i2,r14
 	call &_dict_insert
-L234:
+L235:
+	.dlab LBE166
 	.dlab LBE165
-	.dlab LBE164
 	.line 58
 	ld   r14,[fr,-32]
 	add  r14,#0x1c
+	.dlab LBE164
 	.dlab LBE163
-	.dlab LBE162
 	add  sp,#0x18
 	pop  rt,d2
 	ret
 	.stabs	"node:(0,94)",128,0,52,-32
-	.stabn	192,0,0,LBB163-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-	.stabs	"p:(96,115)",128,0,54,-40
-	.stabn	192,0,0,LBB165-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-	.stabn	224,0,0,LBE165-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-	.stabn	224,0,0,LBE163-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-Lscope68:
+	.stabn	192,0,0,LBB164-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabs	"p:(98,115)",128,0,54,-40
+	.stabn	192,0,0,LBB166-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabn	224,0,0,LBE166-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabn	224,0,0,LBE164-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+Lscope69:
 	.stabs	"_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv:f(5,1)",36,0,136,__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv
-	.stabs	"this:p(0,100)=k(96,103)",160,0,136,-12
+	.stabs	"this:p(0,100)=k(98,103)",160,0,136,-12
 
 .func __ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv, 1, int
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext38
@@ -8617,18 +8804,18 @@ Ltext38:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB166
+	.dlab LBB167
 	.line 137
 	ld   r14,[fr,-12]
 	ld   r14,[r14,24]
-	.dlab LBE166
+	.dlab LBE167
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope69:
+Lscope70:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei
 	.stabs	"this:p(0,43)",160,0,44,-12
-	.stabs	"cf:p(96,23)",160,0,44,-16
+	.stabs	"cf:p(98,23)",160,0,44,-16
 	.stabs	"keyOffset:p(0,3)",160,0,44,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei, 3, void
@@ -8640,7 +8827,7 @@ Lscope69:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB167
+	.dlab LBB168
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -8649,11 +8836,11 @@ Lscope69:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E
-	.dlab LBE167
+	.dlab LBE168
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope70:
+Lscope71:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv
 	.stabs	"this:p(0,43)",160,0,79,-12
 
@@ -8664,18 +8851,18 @@ Lscope70:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB168
+	.dlab LBB169
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE168
+	.dlab LBE169
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope71:
+Lscope72:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei
 	.stabs	"this:p(0,50)",160,0,44,-12
-	.stabs	"cf:p(96,23)",160,0,44,-16
+	.stabs	"cf:p(98,23)",160,0,44,-16
 	.stabs	"keyOffset:p(0,3)",160,0,44,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEEC2EPFiRS1_S5_Ei, 3, void
@@ -8687,7 +8874,7 @@ Lscope71:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB169
+	.dlab LBB170
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -8696,11 +8883,11 @@ Lscope71:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E
-	.dlab LBE169
+	.dlab LBE170
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope72:
+Lscope73:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5clearEv
 	.stabs	"this:p(0,50)",160,0,79,-12
 
@@ -8711,18 +8898,18 @@ Lscope72:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB170
+	.dlab LBB171
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE170
+	.dlab LBE171
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope73:
+Lscope74:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei
 	.stabs	"this:p(0,57)",160,0,44,-12
-	.stabs	"cf:p(96,23)",160,0,44,-16
+	.stabs	"cf:p(98,23)",160,0,44,-16
 	.stabs	"keyOffset:p(0,3)",160,0,44,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei, 3, void
@@ -8734,7 +8921,7 @@ Lscope73:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB171
+	.dlab LBB172
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -8743,11 +8930,11 @@ Lscope73:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E
-	.dlab LBE171
+	.dlab LBE172
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope74:
+Lscope75:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv
 	.stabs	"this:p(0,57)",160,0,79,-12
 
@@ -8758,18 +8945,18 @@ Lscope74:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB172
+	.dlab LBB173
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE172
+	.dlab LBE173
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope75:
+Lscope76:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei
 	.stabs	"this:p(0,64)",160,0,44,-12
-	.stabs	"cf:p(96,23)",160,0,44,-16
+	.stabs	"cf:p(98,23)",160,0,44,-16
 	.stabs	"keyOffset:p(0,3)",160,0,44,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei, 3, void
@@ -8781,7 +8968,7 @@ Lscope75:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB173
+	.dlab LBB174
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -8790,11 +8977,11 @@ Lscope75:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E
-	.dlab LBE173
+	.dlab LBE174
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope76:
+Lscope77:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv
 	.stabs	"this:p(0,64)",160,0,79,-12
 
@@ -8805,19 +8992,19 @@ Lscope76:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB174
+	.dlab LBB175
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE174
+	.dlab LBE175
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope77:
+Lscope78:
 	.stabs	"_ZN6MAUtil4PairIKixEC1ERS1_RKx:f(0,6)",36,0,66,__ZN6MAUtil4PairIKixEC1ERS1_RKx
 	.stabs	"this:p(0,101)=k(0,45)",160,0,66,-12
-	.stabs	"f:p(96,12)",160,0,66,-16
-	.stabs	"s:p(106,31)",160,0,66,-20
+	.stabs	"f:p(98,12)",160,0,66,-16
+	.stabs	"s:p(108,31)",160,0,66,-20
 
 .func __ZN6MAUtil4PairIKixEC1ERS1_RKx, 3, void
 	.stabs	"c:/MoSync/include/MAUtil/collection_common.h",132,0,0,Ltext39
@@ -8830,7 +9017,7 @@ Ltext39:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB175
+	.dlab LBB176
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -8842,14 +9029,14 @@ Ltext39:
 	ld   [r0,4],r1
 	ld   r14,[r14,4]
 	ld   [r0,8],r14
-	.dlab LBE175
+	.dlab LBE176
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope78:
+Lscope79:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ES3_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ES3_
 	.stabs	"this:p(0,102)=k(0,67)",160,0,32,-12
-	.stabs	"s:p(106,26)",160,0,32,-24
+	.stabs	"s:p(108,26)",160,0,32,-24
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE8DictNodeC1ES3_, 4, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext40
@@ -8863,7 +9050,7 @@ Ltext40:
 	ld   [fr,-24],i1
 	ld   [fr,-20],i2
 	ld   [fr,-16],i3
-	.dlab LBB176
+	.dlab LBB177
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -8882,11 +9069,11 @@ Ltext40:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE176
+	.dlab LBE177
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope79:
+Lscope80:
 	.stabs	"_ZN7dnode_tC2Ev:f(0,6)",36,0,33,__ZN7dnode_tC2Ev
 	.stabs	"this:p(0,103)=k(14,4)",160,0,48,-12
 
@@ -8901,11 +9088,11 @@ Lscope79:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope80:
+Lscope81:
 	.stabs	"_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_
 	.stabs	"this:p(0,104)=k(0,59)",160,0,66,-12
-	.stabs	"f:p(96,12)",160,0,66,-16
-	.stabs	"s:p(96,165)",160,0,66,-20
+	.stabs	"f:p(98,12)",160,0,66,-16
+	.stabs	"s:p(98,165)",160,0,66,-20
 
 .func __ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_, 3, void
 	.stabs	"c:/MoSync/include/MAUtil/collection_common.h",132,0,0,Ltext41
@@ -8918,7 +9105,7 @@ Ltext41:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB177
+	.dlab LBB178
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -8928,14 +9115,14 @@ Ltext41:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	ld   [r0,4],r14
-	.dlab LBE177
+	.dlab LBE178
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope81:
+Lscope82:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_
 	.stabs	"this:p(0,105)=k(0,75)",160,0,32,-12
-	.stabs	"s:p(96,160)",160,0,32,-20
+	.stabs	"s:p(98,160)",160,0,32,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_, 3, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext42
@@ -8948,7 +9135,7 @@ Ltext42:
 	ld   [fr,-12],i0
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
-	.dlab LBB178
+	.dlab LBB179
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -8963,14 +9150,14 @@ Ltext42:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE178
+	.dlab LBE179
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope82:
+Lscope83:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_
 	.stabs	"this:p(0,90)",160,0,66,-12
-	.stabs	"f:p(96,12)",160,0,66,-16
+	.stabs	"f:p(98,12)",160,0,66,-16
 	.stabs	"s:p(4,38)",160,0,66,-20
 
 .func __ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_, 3, void
@@ -8984,7 +9171,7 @@ Ltext43:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB179
+	.dlab LBB180
 	.line 66
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
@@ -8995,14 +9182,14 @@ Ltext43:
 	ld   i0,r14
 	ld   i1,[fr,-20]
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	.dlab LBE179
+	.dlab LBE180
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope83:
+Lscope84:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_
 	.stabs	"this:p(0,106)=k(0,83)",160,0,32,-16
-	.stabs	"s:a(96,30)",64,0,32,4
+	.stabs	"s:a(98,30)",64,0,32,4
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_, 2, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext44
@@ -9014,7 +9201,7 @@ Ltext44:
 	add  fr,#0x10
 	ld   [fr,-16],i0
 	ld   d0,i1
-	.dlab LBB180
+	.dlab LBB181
 	.line 33
 	ld   i0,[fr,-16]
 	call &__ZN7dnode_tC2Ev
@@ -9028,15 +9215,15 @@ Ltext44:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE180
+	.dlab LBE181
 	add  sp,#0x4
 	pop  rt,d0
 	ret
-Lscope84:
+Lscope85:
 	.stabs	"_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_
 	.stabs	"this:p(0,107)=k(0,38)",160,0,66,-12
-	.stabs	"f:p(96,12)",160,0,66,-16
-	.stabs	"s:p(96,120)",160,0,66,-20
+	.stabs	"f:p(98,12)",160,0,66,-16
+	.stabs	"s:p(98,120)",160,0,66,-20
 
 .func __ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_, 3, void
 	.stabs	"c:/MoSync/include/MAUtil/collection_common.h",132,0,0,Ltext45
@@ -9049,7 +9236,7 @@ Ltext45:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB181
+	.dlab LBB182
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -9059,14 +9246,14 @@ Ltext45:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	ld   [r0,4],r14
-	.dlab LBE181
+	.dlab LBE182
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope85:
+Lscope86:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_
 	.stabs	"this:p(0,108)=k(0,94)",160,0,32,-12
-	.stabs	"s:p(96,115)",160,0,32,-20
+	.stabs	"s:p(98,115)",160,0,32,-20
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_, 3, void
 	.stabs	"c:/MoSync/include/MAUtil/Dictionary_impl.h",132,0,0,Ltext46
@@ -9079,7 +9266,7 @@ Ltext46:
 	ld   [fr,-12],i0
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
-	.dlab LBB182
+	.dlab LBB183
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -9094,45 +9281,16 @@ Ltext46:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE182
+	.dlab LBE183
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope86:
+Lscope87:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E
 	.stabs	"this:p(0,43)",160,0,38,-12
-	.stabs	"cf:p(96,23)",160,0,38,-16
+	.stabs	"cf:p(98,23)",160,0,38,-16
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E, 2, void
-	.line 38
-	push rt,fr
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB183
-	.line 39
-	ld   i0,[fr,-12]
-	ld   i1,#0xffffffff
-	ld   i2,[fr,-16]
-	call &_dict_init
-	.line 40
-	ld   i0,[fr,-12]
-	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv
-	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv
-	ld   i3,[fr,-12]
-	call &_dict_set_allocator
-	.dlab LBE183
-	add  sp,#0x8
-	pop  rt,fr
-	ret
-Lscope87:
-	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E
-	.stabs	"this:p(0,50)",160,0,38,-12
-	.stabs	"cf:p(96,23)",160,0,38,-16
-
-.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E, 2, void
 	.line 38
 	push rt,fr
 	sub  sp,#0x8
@@ -9148,8 +9306,8 @@ Lscope87:
 	call &_dict_init
 	.line 40
 	ld   i0,[fr,-12]
-	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv
-	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv
+	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv
+	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
 	.dlab LBE184
@@ -9157,11 +9315,11 @@ Lscope87:
 	pop  rt,fr
 	ret
 Lscope88:
-	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E
-	.stabs	"this:p(0,57)",160,0,38,-12
-	.stabs	"cf:p(96,23)",160,0,38,-16
+	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E
+	.stabs	"this:p(0,50)",160,0,38,-12
+	.stabs	"cf:p(98,23)",160,0,38,-16
 
-.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E, 2, void
+.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4initEPFiRS1_S5_E, 2, void
 	.line 38
 	push rt,fr
 	sub  sp,#0x8
@@ -9177,8 +9335,8 @@ Lscope88:
 	call &_dict_init
 	.line 40
 	ld   i0,[fr,-12]
-	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv
-	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv
+	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv
+	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
 	.dlab LBE185
@@ -9186,11 +9344,11 @@ Lscope88:
 	pop  rt,fr
 	ret
 Lscope89:
-	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E
-	.stabs	"this:p(0,64)",160,0,38,-12
-	.stabs	"cf:p(96,23)",160,0,38,-16
+	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E
+	.stabs	"this:p(0,57)",160,0,38,-12
+	.stabs	"cf:p(98,23)",160,0,38,-16
 
-.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E, 2, void
+.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E, 2, void
 	.line 38
 	push rt,fr
 	sub  sp,#0x8
@@ -9206,8 +9364,8 @@ Lscope89:
 	call &_dict_init
 	.line 40
 	ld   i0,[fr,-12]
-	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv
-	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv
+	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv
+	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
 	.dlab LBE186
@@ -9215,8 +9373,37 @@ Lscope89:
 	pop  rt,fr
 	ret
 Lscope90:
+	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E
+	.stabs	"this:p(0,64)",160,0,38,-12
+	.stabs	"cf:p(98,23)",160,0,38,-16
+
+.func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E, 2, void
+	.line 38
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.dlab LBB187
+	.line 39
+	ld   i0,[fr,-12]
+	ld   i1,#0xffffffff
+	ld   i2,[fr,-16]
+	call &_dict_init
+	.line 40
+	ld   i0,[fr,-12]
+	ld   i1,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv
+	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv
+	ld   i3,[fr,-12]
+	call &_dict_set_allocator
+	.dlab LBE187
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope91:
 .data
-LC83:
+LC82:
 	.ascii "c:/MoSync/include/MAUtil/Dictionary.h\0"
 .code
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv
@@ -9230,16 +9417,16 @@ Ltext47:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB187
+	.dlab LBB188
 	.line 201
-	ld   i0,#LC83
+	ld   i0,#LC82
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE187
-Lscope91:
+	.dlab LBE188
+Lscope92:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -9251,15 +9438,15 @@ Lscope91:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB188
+	.dlab LBB189
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE188
+	.dlab LBE189
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope92:
+Lscope93:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE5allocEPv, 1, int
@@ -9269,16 +9456,16 @@ Lscope92:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB189
+	.dlab LBB190
 	.line 201
-	ld   i0,#LC83
+	ld   i0,#LC82
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE189
-Lscope93:
+	.dlab LBE190
+Lscope94:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_xEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -9290,15 +9477,15 @@ Lscope93:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB190
+	.dlab LBB191
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE190
+	.dlab LBE191
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope94:
+Lscope95:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv, 1, int
@@ -9308,16 +9495,16 @@ Lscope94:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB191
+	.dlab LBB192
 	.line 201
-	ld   i0,#LC83
+	ld   i0,#LC82
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE191
-Lscope95:
+	.dlab LBE192
+Lscope96:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -9329,23 +9516,23 @@ Lscope95:
 	add  fr,#0x14
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB192
+	.dlab LBB193
 	.line 202
 	ld   r0,[fr,-12]
 	ld   [fr,-20],r0
 	ld   r14,#0x0
 	ld   r0,[fr,-20]
-	jc   eq,r0,r14,#L262
+	jc   eq,r0,r14,#L263
 	ld   i0,[fr,-20]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev
 	ld   i0,[fr,-20]
 	call &__ZdlPv
-L262:
-	.dlab LBE192
+L263:
+	.dlab LBE193
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope96:
+Lscope97:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev
 	.stabs	"this:p(0,106)",160,0,60,-12
 
@@ -9356,17 +9543,17 @@ Lscope96:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB193
+	.dlab LBB194
 	.line 202
 	ld   r14,[fr,-12]
 	add  r14,#0x18
 	ld   i0,r14
 	call &__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
-	.dlab LBE193
+	.dlab LBE194
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope97:
+Lscope98:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv, 1, int
@@ -9376,16 +9563,16 @@ Lscope97:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB194
+	.dlab LBB195
 	.line 201
-	ld   i0,#LC83
+	ld   i0,#LC82
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE194
-Lscope98:
+	.dlab LBE195
+Lscope99:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -9397,15 +9584,15 @@ Lscope98:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB195
+	.dlab LBB196
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE195
+	.dlab LBE196
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope99:
+Lscope100:
 	.global	__ZTV14Authentication
 .data
 	.align 4
@@ -9453,56 +9640,67 @@ __ZTV14Authentication:
 	.long	__ZN8NativeUI6Widget19removeEventListenerEPNS_19WidgetEventListenerE
 	.long	__ZN8NativeUI6Screen17handleWidgetEventEP17MAWidgetEventData
 	.long	__ZN8NativeUI6Screen4showEv
+	.long	__ZN8NativeUI6Screen18showWithTransitionEii
 	.long	__ZN8NativeUI6Screen21orientationWillChangeEv
 	.long	__ZN8NativeUI6Screen20orientationDidChangeEv
 	.long	__ZN8NativeUI6Screen17removeOptionsMenuEv
+	.long	__ZN8NativeUI6Screen7isShownEv
 	.long	__ZN8NativeUI6Screen17addScreenListenerEPNS_14ScreenListenerE
 	.long	__ZN8NativeUI6Screen20removeScreenListenerEPNS_14ScreenListenerE
 	.long	__ZN14Authentication14dataDownloadedEii
 	.long	__ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
 	.long	__ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE
 	.long	__ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.long	-60
+	.long	__ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE
+	.long	__ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE
+	.long	__ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE
+	.long	-72
 	.long	0
 	.long	__ZN6MAUtil14HttpConnection9connEventERK15MAConnEventData
-	.long	__ZThn60_N14AuthenticationD1Ev
-	.long	__ZThn60_N14AuthenticationD0Ev
-	.long	__ZThn60_N14Authentication14dataDownloadedEii
+	.long	__ZThn72_N14AuthenticationD1Ev
+	.long	__ZThn72_N14AuthenticationD0Ev
+	.long	__ZThn72_N14Authentication14dataDownloadedEii
 	.long	__ZN8Wormhole23HighLevelHttpConnection12httpFinishedEPN6MAUtil14HttpConnectionEi
 	.long	__ZN8Wormhole23HighLevelHttpConnection17connWriteFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZN8Wormhole23HighLevelHttpConnection16connRecvFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZN8Wormhole23HighLevelHttpConnection16connReadFinishedEPN6MAUtil10ConnectionEi
-	.long	-100
+	.long	-112
 	.long	0
 	.long	__ZN6MAUtil18ConnectionListener15connectFinishedEPNS_10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection16connRecvFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection17connWriteFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection16connReadFinishedEPN6MAUtil10ConnectionEi
 	.long	__ZThn40_N8Wormhole23HighLevelHttpConnection12httpFinishedEPN6MAUtil14HttpConnectionEi
-	.long	-108
+	.long	-120
 	.long	0
 	.long	__ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE
 	.long	__ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE
-	.long	__ZThn108_N14Authentication13buttonClickedEPN8NativeUI6WidgetE
-	.long	-112
+	.long	__ZThn120_N14Authentication13buttonClickedEPN8NativeUI6WidgetE
+	.long	-124
 	.long	0
-	.long	__ZThn112_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
+	.long	__ZThn124_N14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE
 	.long	__ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEi
 	.long	__ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEii
 	.long	__ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
 	.long	__ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
 	.long	__ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
-	.long	-116
+	.long	-128
 	.long	0
-	.long	__ZThn116_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.stabs	"Authentication:Tt(0,27)=s476!5,020,(67,33);02480,(0,109)=xsHighLevelHttpConnection:;02864,(17,4);02896,(37,7);02928,(57,4);LANGUAGE:/0(0,3),960,32;fonction:/0(1,1),992,32;mIsConnected:/0(0,4),1024,8;connERR:/0(0,3),1056,32;_LOGINTOKEN:/0(10,1),1088,32;_login:/0(10,1),1120,32;_tokenConnection:/0(10,1),1152,32;_tokenMobile:/0(10,1),1184,32;_idMobile:/0(0,15),1216,64;_modeAuth:/0(10,1),1280,32;screenMain:/0(0,28),1312,32;vLAuthentication:/0(0,110)=*(0,111)=xsVerticalLayout:,1344,32;hLLogin:/0(96,77),1376,32;hLPassword:/0(96,77),1408,32;icon:/0(0,112)=*(0,113)=xsImage:,1440,32;presentation:/0(96,167),1472,32;login:/0(96,167),1504,32;password:/0(96,167),1536,32;eLogin:/0(0,114)=*(0,115)=xsEditBox:,1568,32;ePassword:/0(0,114),1600,32;bValidate:/0(0,116)=*(0,117)=xsButton:,1632,32;lAuthenticationMode:/0(96,167),1664,32;rGAuthenticationChoice:/0(0,118)=*(0,119)=xsRadioGroup:,1696,32;rBModeCredential:/0(57,32),1728,32;rBModeNone:/0(57,32),1760,32;vLMediaChoice:/0(0,110),1792,32;lVMedia:/0(0,35),1824,32;mapLVIMedia:/0(96,116),1856,448;mapMediaID:/0(106,27),2304,448;mapMediaToken:/0(96,31),2752,448;mapMediaName:/0(96,161),3200,448;newMediaTitle:/0(96,167),3648,32;hlNewMedia:/0(96,77),3680,32;lNewMediaName:/0(96,167),3712,32;ebNewMediaName:/0(0,114),3744,32;bAddNewMedia:/0(0,116),3776,32;__base_ctor::(0,120)=#(0,27),(0,6),(0,26),(0,3),(0,28),(0,6);:_ZN14AuthenticationC2EiP10ScreenMain;2A.;__comp_ctor::(0,120):_ZN14AuthenticationC1EiP10ScreenMain;2A.;__base_dtor::(0,121)=#(0,27),(0,6),(0,26),(0,6);:_ZN14AuthenticationD2Ev;2A.;__comp_dtor::(0,121):_ZN14AuthenticationD1Ev;2A*0;(0,27);;__deleting_dtor::(0,121):_ZN14AuthenticationD0Ev;2A*1;(0,27);;connectUrl::(0,122)=#(0,27),(0,6),(0,26),(10,1),(1,1),(0,3),(10,1),(0,6);:_ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_;2A.;dataDownloaded::(0,123)=#(0,27),(0,6),(0,26),(6,10),(0,3),(0,6);:_ZN14Authentication14dataDownloadedEii;2A*46;(0,27);;listViewItemClicked::(0,124)=#(0,27),(0,6),(0,26),(0,35),(96,122),(0,6);:_ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE;2A*47;(0,27);;buttonClicked::(0,125)=#(0,27),(0,6),(0,26),(4,77),(0,6);:_ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE;2A*48;(0,27);;radioButtonSelected::(0,126)=#(0,27),(0,6),(0,26),(0,118),(0,3),(57,32),(0,6);:_ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE;2A*49;(0,27);;parseJSONUserToken::(0,127)=#(0,27),(0,6),(0,26),(89,35),(0,6);:_ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONMediasList::(0,127):_ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONPostMediaValue::(0,127):_ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONPostMediaValueValidation::(0,127):_ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONAuthenticationValidation::(0,127):_ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE;2A.;createUI::(0,121):_ZN14Authentication8createUIEv;2A.;createPageMobileChoice::(0,121):_ZN14Authentication22createPageMobileChoiceEv;2A.;authenticationAccepted::(0,121):_ZN14Authentication22authenticationAcceptedEv;2A.;newMediaNameValid::(0,128)=#(0,27),(0,4),(0,26),(0,6);:_ZN14Authentication17newMediaNameValidEv;2A.;operator=::(0,129)=#(0,27),(0,130)=&(0,27),(0,26),(0,131)=&(0,132)=k(0,27),(0,6);:_ZN14AuthenticationaSERKS_;2A.;__base_ctor::(0,133)=#(0,27),(0,6),(0,26),(0,131),(0,6);:_ZN14AuthenticationC2ERKS_;2A.;__comp_ctor::(0,133):_ZN14AuthenticationC1ERKS_;2A.;;~%(4,78);",128,0,28,0
-	.stabs	"HttpConnectionListener:Tt(0,134)=s4!1,020,(0,135)=xsConnectionListener:;httpFinished::(0,136)=#(0,134),(0,6),(0,137)=*(0,134),(0,138)=*(0,139)=xsHttpConnection:,(0,3),(0,6);:_ZN6MAUtil22HttpConnectionListener12httpFinishedEPNS_14HttpConnectionEi;2A*4;(0,134);;operator=::(0,140)=#(0,134),(0,141)=&(0,134),(0,137),(0,142)=&(0,143)=k(0,134),(0,6);:_ZN6MAUtil22HttpConnectionListeneraSERKS0_;2A.;__base_ctor::(0,144)=#(0,134),(0,6),(0,137),(0,142),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2ERKS0_;2A.;__comp_ctor::(0,144):_ZN6MAUtil22HttpConnectionListenerC1ERKS0_;2A.;__base_ctor::(0,145)=#(0,134),(0,6),(0,137),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2Ev;2A.;__comp_ctor::(0,145):_ZN6MAUtil22HttpConnectionListenerC1Ev;2A.;;~%(0,135);",128,0,203,0
+	.long	__ZThn128_N14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+	.long	-132
+	.long	0
+	.long	__ZThn132_N14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE
+	.long	__ZThn132_N14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE
+	.long	__ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE
+	.long	__ZThn132_N14Authentication13editBoxReturnEPN8NativeUI7EditBoxE
+	.stabs	"Authentication:Tt(0,27)=s496!6,020,(69,33);02576,(0,109)=xsHighLevelHttpConnection:;02960,(17,4);02992,(39,7);021024,(59,4);021056,(29,9);activityIndicator:/0(0,110)=*(0,111)=xsActivityIndicator:,1088,32;LANGUAGE:/0(0,3),1120,32;fonction:/0(1,1),1152,32;mIsConnected:/0(0,4),1184,8;connERR:/0(0,3),1216,32;_LOGINTOKEN:/0(10,1),1248,32;_login:/0(10,1),1280,32;_tokenConnection:/0(10,1),1312,32;_tokenMobile:/0(10,1),1344,32;_idMobile:/0(0,15),1376,64;_modeAuth:/0(10,1),1440,32;screenMain:/0(0,28),1472,32;vLAuthentication:/0(0,112)=*(0,113)=xsVerticalLayout:,1504,32;hLLogin:/0(98,77),1536,32;hLPassword:/0(98,77),1568,32;icon:/0(0,114)=*(0,115)=xsImage:,1600,32;presentation:/0(98,167),1632,32;login:/0(98,167),1664,32;password:/0(98,167),1696,32;eLogin:/0(0,116)=*(0,117)=xsEditBox:,1728,32;ePassword:/0(0,116),1760,32;bValidate:/0(0,118)=*(0,119)=xsButton:,1792,32;lAuthenticationMode:/0(98,167),1824,32;rGAuthenticationChoice:/0(0,120)=*(0,121)=xsRadioGroup:,1856,32;rBModeCredential:/0(59,32),1888,32;rBModeNone:/0(59,32),1920,32;vLMediaChoice:/0(0,112),1952,32;lVMedia:/0(0,35),1984,32;mapLVIMedia:/0(98,116),2016,448;mapMediaID:/0(108,27),2464,448;mapMediaToken:/0(98,31),2912,448;mapMediaName:/0(98,161),3360,448;newMediaTitle:/0(98,167),3808,32;hlNewMedia:/0(98,77),3840,32;lNewMediaName:/0(98,167),3872,32;ebNewMediaName:/0(0,116),3904,32;bAddNewMedia:/0(0,118),3936,32;__base_ctor::(0,122)=#(0,27),(0,6),(0,26),(0,3),(0,28),(0,6);:_ZN14AuthenticationC2EiP10ScreenMain;2A.;__comp_ctor::(0,122):_ZN14AuthenticationC1EiP10ScreenMain;2A.;__base_dtor::(0,123)=#(0,27),(0,6),(0,26),(0,6);:_ZN14AuthenticationD2Ev;2A.;__comp_dtor::(0,123):_ZN14AuthenticationD1Ev;2A*0;(0,27);;__deleting_dtor::(0,123):_ZN14AuthenticationD0Ev;2A*1;(0,27);;connectUrl::(0,124)=#(0,27),(0,6),(0,26),(10,1),(1,1),(0,3),(10,1),(0,6);:_ZN14Authentication10connectUrlEN6MAUtil11BasicStringIcEENS_18eAuthenticationTabEiS2_;2A.;dataDownloaded::(0,125)=#(0,27),(0,6),(0,26),(6,10),(0,3),(0,6);:_ZN14Authentication14dataDownloadedEii;2A*48;(0,27);;listViewItemClicked::(0,126)=#(0,27),(0,6),(0,26),(0,35),(98,122),(0,6);:_ZN14Authentication19listViewItemClickedEPN8NativeUI8ListViewEPNS0_12ListViewItemE;2A*49;(0,27);;buttonClicked::(0,127)=#(0,27),(0,6),(0,26),(4,77),(0,6);:_ZN14Authentication13buttonClickedEPN8NativeUI6WidgetE;2A*50;(0,27);;radioButtonSelected::(0,128)=#(0,27),(0,6),(0,26),(0,120),(0,3),(59,32),(0,6);:_ZN14Authentication19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE;2A*51;(0,27);;editBoxEditingDidEnd::(0,129)=#(0,27),(0,6),(0,26),(0,116),(0,6);:_ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE;2A*52;(0,27);;editBoxReturn::(0,129):_ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE;2A*53;(0,27);;editBoxEditingDidBegin::(0,129):_ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE;2A*54;(0,27);;parseJSONUserToken::(0,130)=#(0,27),(0,6),(0,26),(91,35),(0,6);:_ZN14Authentication18parseJSONUserTokenEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONMediasList::(0,130):_ZN14Authentication19parseJSONMediasListEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONPostMediaValue::(0,130):_ZN14Authentication23parseJSONPostMediaValueEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONPostMediaValueValidation::(0,130):_ZN14Authentication33parseJSONPostMediaValueValidationEPN6MAUtil7YAJLDom5ValueE;2A.;parseJSONAuthenticationValidation::(0,130):_ZN14Authentication33parseJSONAuthenticationValidationEPN6MAUtil7YAJLDom5ValueE;2A.;createUI::(0,123):_ZN14Authentication8createUIEv;2A.;createPageMobileChoice::(0,123):_ZN14Authentication22createPageMobileChoiceEv;2A.;authenticationAccepted::(0,123):_ZN14Authentication22authenticationAcceptedEv;2A.;newMediaNameValid::(0,131)=#(0,27),(0,4),(0,26),(0,6);:_ZN14Authentication17newMediaNameValidEv;2A.;operator=::(0,132)=#(0,27),(0,133)=&(0,27),(0,26),(0,134)=&(0,135)=k(0,27),(0,6);:_ZN14AuthenticationaSERKS_;2A.;__base_ctor::(0,136)=#(0,27),(0,6),(0,26),(0,134),(0,6);:_ZN14AuthenticationC2ERKS_;2A.;__comp_ctor::(0,136):_ZN14AuthenticationC1ERKS_;2A.;;~%(4,78);",128,0,28,0
+	.stabs	"HttpConnectionListener:Tt(0,137)=s4!1,020,(0,138)=xsConnectionListener:;httpFinished::(0,139)=#(0,137),(0,6),(0,140)=*(0,137),(0,141)=*(0,142)=xsHttpConnection:,(0,3),(0,6);:_ZN6MAUtil22HttpConnectionListener12httpFinishedEPNS_14HttpConnectionEi;2A*4;(0,137);;operator=::(0,143)=#(0,137),(0,144)=&(0,137),(0,140),(0,145)=&(0,146)=k(0,137),(0,6);:_ZN6MAUtil22HttpConnectionListeneraSERKS0_;2A.;__base_ctor::(0,147)=#(0,137),(0,6),(0,140),(0,145),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2ERKS0_;2A.;__comp_ctor::(0,147):_ZN6MAUtil22HttpConnectionListenerC1ERKS0_;2A.;__base_ctor::(0,148)=#(0,137),(0,6),(0,140),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2Ev;2A.;__comp_ctor::(0,148):_ZN6MAUtil22HttpConnectionListenerC1Ev;2A.;;~%(0,138);",128,0,219,0
 	.align 4
 __ZTVN8NativeUI18RadioGroupListenerE:
 	.long	0
 	.long	0
 	.long	___cxa_pure_virtual
-	.stabs	"RadioGroupListener:Tt(57,4)=s4_vptr$RadioGroupListener:(0,146)=*(0,1),0,32;radioButtonSelected::(0,147)=#(57,4),(0,6),(57,3),(0,118),(0,3),(57,32),(0,6);:_ZN8NativeUI18RadioGroupListener19radioButtonSelectedEPNS_10RadioGroupEiPNS_11RadioButtonE;2A*0;(57,4);;operator=::(0,148)=#(57,4),(0,149)=&(57,4),(57,3),(0,150)=&(0,151)=k(57,4),(0,6);:_ZN8NativeUI18RadioGroupListeneraSERKS0_;2A.;__base_ctor::(0,152)=#(57,4),(0,6),(57,3),(0,150),(0,6);:_ZN8NativeUI18RadioGroupListenerC2ERKS0_;2A.;__comp_ctor::(0,152):_ZN8NativeUI18RadioGroupListenerC1ERKS0_;2A.;__base_ctor::(0,153)=#(57,4),(0,6),(57,3),(0,6);:_ZN8NativeUI18RadioGroupListenerC2Ev;2A.;__comp_ctor::(0,153):_ZN8NativeUI18RadioGroupListenerC1Ev;2A.;;~%(57,4);",128,0,47,0
+	.stabs	"RadioGroupListener:Tt(59,4)=s4_vptr$RadioGroupListener:(0,149)=*(0,1),0,32;radioButtonSelected::(0,150)=#(59,4),(0,6),(59,3),(0,120),(0,3),(59,32),(0,6);:_ZN8NativeUI18RadioGroupListener19radioButtonSelectedEPNS_10RadioGroupEiPNS_11RadioButtonE;2A*0;(59,4);;operator=::(0,151)=#(59,4),(0,152)=&(59,4),(59,3),(0,153)=&(0,154)=k(59,4),(0,6);:_ZN8NativeUI18RadioGroupListeneraSERKS0_;2A.;__base_ctor::(0,155)=#(59,4),(0,6),(59,3),(0,153),(0,6);:_ZN8NativeUI18RadioGroupListenerC2ERKS0_;2A.;__comp_ctor::(0,155):_ZN8NativeUI18RadioGroupListenerC1ERKS0_;2A.;__base_ctor::(0,156)=#(59,4),(0,6),(59,3),(0,6);:_ZN8NativeUI18RadioGroupListenerC2Ev;2A.;__comp_ctor::(0,156):_ZN8NativeUI18RadioGroupListenerC1Ev;2A.;;~%(59,4);",128,0,47,0
 	.align 4
 __ZTVN8NativeUI16ListViewListenerE:
 	.long	0
@@ -9513,7 +9711,16 @@ __ZTVN8NativeUI16ListViewListenerE:
 	.long	__ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
 	.long	__ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
 	.long	__ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
-	.stabs	"ListViewListener:Tt(37,7)=s4_vptr$ListViewListener:(0,146),0,32;listViewItemClicked::(0,154)=#(37,7),(0,6),(37,6),(0,35),(96,122),(0,6);:_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEPNS_12ListViewItemE;2A*0;(37,7);(0,155)=#(37,7),(0,6),(37,6),(0,35),(0,3),(0,6);:_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEi;2A*1;(37,7);;segmentedListViewItemClicked::(0,156)=#(37,7),(0,6),(37,6),(0,35),(0,3),(0,3),(0,6);:_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEii;2A*2;(37,7);(0,157)=#(37,7),(0,6),(37,6),(0,35),(0,158)=*(0,159)=xsListViewSection:,(96,122),(0,6);:_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*3;(37,7);;segmentedListViewItemInsert::(0,157):_ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*4;(37,7);;segmentedListViewItemDelete::(0,157):_ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*5;(37,7);;operator=::(0,160)=#(37,7),(0,161)=&(37,7),(37,6),(0,162)=&(0,163)=k(37,7),(0,6);:_ZN8NativeUI16ListViewListeneraSERKS0_;2A.;__base_ctor::(0,164)=#(37,7),(0,6),(37,6),(0,162),(0,6);:_ZN8NativeUI16ListViewListenerC2ERKS0_;2A.;__comp_ctor::(0,164):_ZN8NativeUI16ListViewListenerC1ERKS0_;2A.;__base_ctor::(0,165)=#(37,7),(0,6),(37,6),(0,6);:_ZN8NativeUI16ListViewListenerC2Ev;2A.;__comp_ctor::(0,165):_ZN8NativeUI16ListViewListenerC1Ev;2A.;;~%(37,7);",128,0,50,0
+	.stabs	"ListViewListener:Tt(39,7)=s4_vptr$ListViewListener:(0,149),0,32;listViewItemClicked::(0,157)=#(39,7),(0,6),(39,6),(0,35),(98,122),(0,6);:_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEPNS_12ListViewItemE;2A*0;(39,7);(0,158)=#(39,7),(0,6),(39,6),(0,35),(0,3),(0,6);:_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEi;2A*1;(39,7);;segmentedListViewItemClicked::(0,159)=#(39,7),(0,6),(39,6),(0,35),(0,3),(0,3),(0,6);:_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEii;2A*2;(39,7);(0,160)=#(39,7),(0,6),(39,6),(0,35),(0,161)=*(0,162)=xsListViewSection:,(98,122),(0,6);:_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*3;(39,7);;segmentedListViewItemInsert::(0,160):_ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*4;(39,7);;segmentedListViewItemDelete::(0,160):_ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE;2A*5;(39,7);;operator=::(0,163)=#(39,7),(0,164)=&(39,7),(39,6),(0,165)=&(0,166)=k(39,7),(0,6);:_ZN8NativeUI16ListViewListeneraSERKS0_;2A.;__base_ctor::(0,167)=#(39,7),(0,6),(39,6),(0,165),(0,6);:_ZN8NativeUI16ListViewListenerC2ERKS0_;2A.;__comp_ctor::(0,167):_ZN8NativeUI16ListViewListenerC1ERKS0_;2A.;__base_ctor::(0,168)=#(39,7),(0,6),(39,6),(0,6);:_ZN8NativeUI16ListViewListenerC2Ev;2A.;__comp_ctor::(0,168):_ZN8NativeUI16ListViewListenerC1Ev;2A.;;~%(39,7);",128,0,50,0
+	.align 4
+__ZTVN8NativeUI15EditBoxListenerE:
+	.long	0
+	.long	0
+	.long	__ZN8NativeUI15EditBoxListener22editBoxEditingDidBeginEPNS_7EditBoxE
+	.long	__ZN8NativeUI15EditBoxListener20editBoxEditingDidEndEPNS_7EditBoxE
+	.long	__ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE
+	.long	___cxa_pure_virtual
+	.stabs	"EditBoxListener:Tt(29,9)=s4_vptr$EditBoxListener:(0,149),0,32;editBoxEditingDidBegin::(0,169)=#(29,9),(0,6),(29,8),(0,116),(0,6);:_ZN8NativeUI15EditBoxListener22editBoxEditingDidBeginEPNS_7EditBoxE;2A*0;(29,9);;editBoxEditingDidEnd::(0,169):_ZN8NativeUI15EditBoxListener20editBoxEditingDidEndEPNS_7EditBoxE;2A*1;(29,9);;editBoxTextChanged::(0,170)=#(29,9),(0,6),(29,8),(0,116),(4,38),(0,6);:_ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE;2A*2;(29,9);;editBoxReturn::(0,169):_ZN8NativeUI15EditBoxListener13editBoxReturnEPNS_7EditBoxE;2A*3;(29,9);;operator=::(0,171)=#(29,9),(0,172)=&(29,9),(29,8),(0,173)=&(0,174)=k(29,9),(0,6);:_ZN8NativeUI15EditBoxListeneraSERKS0_;2A.;__base_ctor::(0,175)=#(29,9),(0,6),(29,8),(0,173),(0,6);:_ZN8NativeUI15EditBoxListenerC2ERKS0_;2A.;__comp_ctor::(0,175):_ZN8NativeUI15EditBoxListenerC1ERKS0_;2A.;__base_ctor::(0,176)=#(29,9),(0,6),(29,8),(0,6);:_ZN8NativeUI15EditBoxListenerC2Ev;2A.;__comp_ctor::(0,176):_ZN8NativeUI15EditBoxListenerC1Ev;2A.;;~%(29,9);",128,0,48,0
 	.align 4
 __ZTVN8NativeUI14ButtonListenerE:
 	.long	0
@@ -9521,29 +9728,29 @@ __ZTVN8NativeUI14ButtonListenerE:
 	.long	__ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE
 	.long	__ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE
 	.long	___cxa_pure_virtual
-	.stabs	"ButtonListener:Tt(17,4)=s4_vptr$ButtonListener:(0,146),0,32;buttonPressed::(0,166)=#(17,4),(0,6),(17,3),(4,77),(0,6);:_ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE;2A*0;(17,4);;buttonReleased::(0,166):_ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE;2A*1;(17,4);;buttonClicked::(0,166):_ZN8NativeUI14ButtonListener13buttonClickedEPNS_6WidgetE;2A*2;(17,4);;operator=::(0,167)=#(17,4),(0,168)=&(17,4),(17,3),(0,169)=&(0,170)=k(17,4),(0,6);:_ZN8NativeUI14ButtonListeneraSERKS0_;2A.;__base_ctor::(0,171)=#(17,4),(0,6),(17,3),(0,169),(0,6);:_ZN8NativeUI14ButtonListenerC2ERKS0_;2A.;__comp_ctor::(0,171):_ZN8NativeUI14ButtonListenerC1ERKS0_;2A.;__base_ctor::(0,172)=#(17,4),(0,6),(17,3),(0,6);:_ZN8NativeUI14ButtonListenerC2Ev;2A.;__comp_ctor::(0,172):_ZN8NativeUI14ButtonListenerC1Ev;2A.;;~%(17,4);",128,0,48,0
-	.stabs	"ConnListener:Tt(15,167)=s8_vptr$ConnListener:(0,146),0,32;_mConn:/0(6,10),32,32;connEvent::(0,173)=#(15,167),(0,6),(15,166),(0,174)=&(0,175)=k(6,93),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(15,167);;operator=::(0,176)=#(15,167),(0,177)=&(15,167),(15,166),(0,178)=&(0,179)=k(15,167),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,180)=#(15,167),(0,6),(15,166),(0,178),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,180):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,181)=#(15,167),(0,6),(15,166),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,181):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(15,167);",128,0,89,0
-LC84:
+	.stabs	"ButtonListener:Tt(17,4)=s4_vptr$ButtonListener:(0,149),0,32;buttonPressed::(0,177)=#(17,4),(0,6),(17,3),(4,77),(0,6);:_ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE;2A*0;(17,4);;buttonReleased::(0,177):_ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE;2A*1;(17,4);;buttonClicked::(0,177):_ZN8NativeUI14ButtonListener13buttonClickedEPNS_6WidgetE;2A*2;(17,4);;operator=::(0,178)=#(17,4),(0,179)=&(17,4),(17,3),(0,180)=&(0,181)=k(17,4),(0,6);:_ZN8NativeUI14ButtonListeneraSERKS0_;2A.;__base_ctor::(0,182)=#(17,4),(0,6),(17,3),(0,180),(0,6);:_ZN8NativeUI14ButtonListenerC2ERKS0_;2A.;__comp_ctor::(0,182):_ZN8NativeUI14ButtonListenerC1ERKS0_;2A.;__base_ctor::(0,183)=#(17,4),(0,6),(17,3),(0,6);:_ZN8NativeUI14ButtonListenerC2Ev;2A.;__comp_ctor::(0,183):_ZN8NativeUI14ButtonListenerC1Ev;2A.;;~%(17,4);",128,0,48,0
+	.stabs	"ConnListener:Tt(15,168)=s8_vptr$ConnListener:(0,149),0,32;_mConn:/0(6,10),32,32;connEvent::(0,184)=#(15,168),(0,6),(15,167),(0,185)=&(0,186)=k(6,103),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(15,168);;operator=::(0,187)=#(15,168),(0,188)=&(15,168),(15,167),(0,189)=&(0,190)=k(15,168),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,191)=#(15,168),(0,6),(15,167),(0,189),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,191):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,192)=#(15,168),(0,6),(15,167),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,192):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(15,168);",128,0,100,0
+LC83:
 	.ascii "TEST_EMULATOR\0"
-LC85:
+LC84:
 	.ascii "SERVICE_NOT_AVAILABLE\0"
-LC86:
+LC85:
 	.ascii "ACCOUNT_MISSING\0"
-LC87:
+LC86:
 	.ascii "AUTHENTICATION_FAILED\0"
-LC88:
+LC87:
 	.ascii "TOO_MANY_REGISTRATIONS\0"
-LC89:
+LC88:
 	.ascii "INVALID_SENDER\0"
 .code
-	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,545,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:p(0,3)",160,0,545,-12
-	.stabs	"__priority:p(0,3)",160,0,545,-16
+	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,570,__Z41__static_initialization_and_destruction_0ii
+	.stabs	"__initialize_p:p(0,3)",160,0,570,-12
+	.stabs	"__priority:p(0,3)",160,0,570,-16
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext48
 Ltext48:
-	.line 545
+	.line 570
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
@@ -9555,74 +9762,62 @@ Ltext49:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L271
+	jc   ne,r0,r14,#L272
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L271
+	jc   ne,r0,r14,#L272
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC84
+	ld   i1,#LC83
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L271:
+L272:
 	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext50
 Ltext50:
 	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L272
+	jc   ne,r0,r14,#L273
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L272
+	jc   ne,r0,r14,#L273
 	.line 88
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
-	ld   i1,#LC85
+	ld   i1,#LC84
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L272:
+L273:
 	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L273
+	jc   ne,r0,r14,#L274
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L273
+	jc   ne,r0,r14,#L274
 	.line 97
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
-	ld   i1,#LC86
+	ld   i1,#LC85
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L273:
+L274:
 	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L274
+	jc   ne,r0,r14,#L275
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L274
+	jc   ne,r0,r14,#L275
 	.line 106
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
-	ld   i1,#LC87
+	ld   i1,#LC86
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L274:
+L275:
 	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L275
+	jc   ne,r0,r14,#L276
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L275
+	jc   ne,r0,r14,#L276
 	.line 115
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
-	ld   i1,#LC88
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L275:
-	.line 121
-	ld   r0,[fr,-16]
-	ld   r14,#0xffff
-	jc   ne,r0,r14,#L276
-	ld   r0,[fr,-12]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L276
-	.line 122
-	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
-	ld   i1,#LC89
+	ld   i1,#LC87
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L276:
 	.line 121
@@ -9630,78 +9825,126 @@ L276:
 	ld   r14,#0xffff
 	jc   ne,r0,r14,#L277
 	ld   r0,[fr,-12]
-	ld   r14,#0x0
+	ld   r14,#0x1
 	jc   ne,r0,r14,#L277
+	.line 122
+	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
+	ld   i1,#LC88
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+L277:
+	.line 121
+	ld   r0,[fr,-16]
+	ld   r14,#0xffff
+	jc   ne,r0,r14,#L278
+	ld   r0,[fr,-12]
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L278
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L277:
+L278:
 	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L278
+	jc   ne,r0,r14,#L279
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L278
+	jc   ne,r0,r14,#L279
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L278:
+L279:
 	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L279
+	jc   ne,r0,r14,#L280
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L279
+	jc   ne,r0,r14,#L280
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L279:
+L280:
 	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L280
+	jc   ne,r0,r14,#L281
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L280
+	jc   ne,r0,r14,#L281
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L280:
+L281:
 	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L281
+	jc   ne,r0,r14,#L282
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L281
+	jc   ne,r0,r14,#L282
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L281:
+L282:
 	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext51
 Ltext51:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L270
+	jc   ne,r0,r14,#L271
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L270
+	jc   ne,r0,r14,#L271
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L270:
+L271:
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext52
 Ltext52:
-	.line 545
+	.line 570
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope100:
+Lscope101:
+	.stabs	"_ZN8NativeUI15EditBoxListener20editBoxEditingDidEndEPNS_7EditBoxE:f(0,6)",36,0,64,__ZN8NativeUI15EditBoxListener20editBoxEditingDidEndEPNS_7EditBoxE
+	.stabs	"this:p(29,14)",160,0,64,-12
+	.stabs	"editBox:p(0,116)",160,0,64,-16
+
+.func __ZN8NativeUI15EditBoxListener20editBoxEditingDidEndEPNS_7EditBoxE, 2, void
+	.stabs	"c:/MoSync/include/NativeUI/EditBoxListener.h",132,0,0,Ltext53
+Ltext53:
+	.line 64
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 64
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope102:
+	.stabs	"_ZN8NativeUI15EditBoxListener22editBoxEditingDidBeginEPNS_7EditBoxE:f(0,6)",36,0,56,__ZN8NativeUI15EditBoxListener22editBoxEditingDidBeginEPNS_7EditBoxE
+	.stabs	"this:p(29,14)",160,0,56,-12
+	.stabs	"editBox:p(0,116)",160,0,56,-16
+
+.func __ZN8NativeUI15EditBoxListener22editBoxEditingDidBeginEPNS_7EditBoxE, 2, void
+	.line 56
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 56
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope103:
 	.stabs	"_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEPNS_12ListViewItemE:f(0,6)",36,0,59,__ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEPNS_12ListViewItemE
-	.stabs	"this:p(37,12)",160,0,59,-12
+	.stabs	"this:p(39,12)",160,0,59,-12
 	.stabs	"listView:p(0,35)",160,0,59,-16
-	.stabs	"listViewItem:p(96,122)",160,0,59,-20
+	.stabs	"listViewItem:p(98,122)",160,0,59,-20
 
 .func __ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEPNS_12ListViewItemE, 3, void
-	.stabs	"c:/MoSync/include/NativeUI/ListViewListener.h",132,0,0,Ltext53
-Ltext53:
+	.stabs	"c:/MoSync/include/NativeUI/ListViewListener.h",132,0,0,Ltext54
+Ltext54:
 	.line 59
 	push rt,fr
 	sub  sp,#0xc
@@ -9714,15 +9957,38 @@ Ltext53:
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope101:
-	.stabs	"_ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE:f(0,6)",36,0,116,__ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
-	.stabs	"this:p(37,12)",160,0,116,-12
-	.stabs	"listView:p(0,35)",160,0,116,-16
-	.stabs	"listViewSection:p(0,158)",160,0,116,-20
-	.stabs	"listViewItem:p(96,122)",160,0,116,-24
+Lscope104:
+	.stabs	"_ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE:f(0,6)",36,0,73,__ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE
+	.stabs	"this:p(29,14)",160,0,73,-12
+	.stabs	"editBox:p(0,116)",160,0,73,-16
+	.stabs	"text:p(4,38)",160,0,73,-20
+
+.func __ZN8NativeUI15EditBoxListener18editBoxTextChangedEPNS_7EditBoxERKN6MAUtil11BasicStringIcEE, 3, void
+	.stabs	"c:/MoSync/include/NativeUI/EditBoxListener.h",132,0,0,Ltext55
+Ltext55:
+	.line 73
+	push rt,fr
+	sub  sp,#0xc
+	ld   fr,sp
+	add  fr,#0x14
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	ld   [fr,-20],i2
+	.line 73
+	add  sp,#0xc
+	pop  rt,fr
+	ret
+Lscope105:
+	.stabs	"_ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE:f(0,6)",36,0,118,__ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
+	.stabs	"this:p(39,12)",160,0,118,-12
+	.stabs	"listView:p(0,35)",160,0,118,-16
+	.stabs	"listViewSection:p(0,161)",160,0,118,-20
+	.stabs	"listViewItem:p(98,122)",160,0,118,-24
 
 .func __ZN8NativeUI16ListViewListener27segmentedListViewItemDeleteEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE, 4, void
-	.line 116
+	.stabs	"c:/MoSync/include/NativeUI/ListViewListener.h",132,0,0,Ltext56
+Ltext56:
+	.line 118
 	push rt,fr
 	sub  sp,#0x10
 	ld   fr,sp
@@ -9731,19 +9997,19 @@ Lscope101:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.line 116
+	.line 118
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope102:
-	.stabs	"_ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE:f(0,6)",36,0,103,__ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
-	.stabs	"this:p(37,12)",160,0,103,-12
-	.stabs	"listView:p(0,35)",160,0,103,-16
-	.stabs	"listViewSection:p(0,158)",160,0,103,-20
-	.stabs	"listViewItem:p(96,122)",160,0,103,-24
+Lscope106:
+	.stabs	"_ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE:f(0,6)",36,0,104,__ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
+	.stabs	"this:p(39,12)",160,0,104,-12
+	.stabs	"listView:p(0,35)",160,0,104,-16
+	.stabs	"listViewSection:p(0,161)",160,0,104,-20
+	.stabs	"listViewItem:p(98,122)",160,0,104,-24
 
 .func __ZN8NativeUI16ListViewListener27segmentedListViewItemInsertEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE, 4, void
-	.line 103
+	.line 104
 	push rt,fr
 	sub  sp,#0x10
 	ld   fr,sp
@@ -9752,16 +10018,16 @@ Lscope102:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.line 103
+	.line 104
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope103:
+Lscope107:
 	.stabs	"_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE:f(0,6)",36,0,90,__ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE
-	.stabs	"this:p(37,12)",160,0,90,-12
+	.stabs	"this:p(39,12)",160,0,90,-12
 	.stabs	"listView:p(0,35)",160,0,90,-16
-	.stabs	"listViewSection:p(0,158)",160,0,90,-20
-	.stabs	"listViewItem:p(96,122)",160,0,90,-24
+	.stabs	"listViewSection:p(0,161)",160,0,90,-20
+	.stabs	"listViewItem:p(98,122)",160,0,90,-24
 
 .func __ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEPNS_15ListViewSectionEPNS_12ListViewItemE, 4, void
 	.line 90
@@ -9777,9 +10043,9 @@ Lscope103:
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope104:
+Lscope108:
 	.stabs	"_ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEii:f(0,6)",36,0,79,__ZN8NativeUI16ListViewListener28segmentedListViewItemClickedEPNS_8ListViewEii
-	.stabs	"this:p(37,12)",160,0,79,-12
+	.stabs	"this:p(39,12)",160,0,79,-12
 	.stabs	"listView:p(0,35)",160,0,79,-16
 	.stabs	"sectionIndex:p(0,3)",160,0,79,-20
 	.stabs	"itemIndex:p(0,3)",160,0,79,-24
@@ -9798,9 +10064,9 @@ Lscope104:
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope105:
+Lscope109:
 	.stabs	"_ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEi:f(0,6)",36,0,68,__ZN8NativeUI16ListViewListener19listViewItemClickedEPNS_8ListViewEi
-	.stabs	"this:p(37,12)",160,0,68,-12
+	.stabs	"this:p(39,12)",160,0,68,-12
 	.stabs	"listView:p(0,35)",160,0,68,-16
 	.stabs	"index:p(0,3)",160,0,68,-20
 
@@ -9817,14 +10083,14 @@ Lscope105:
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope106:
+Lscope110:
 	.stabs	"_ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE:f(0,6)",36,0,64,__ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE
 	.stabs	"this:p(17,9)",160,0,64,-12
 	.stabs	"button:p(4,77)",160,0,64,-16
 
 .func __ZN8NativeUI14ButtonListener14buttonReleasedEPNS_6WidgetE, 2, void
-	.stabs	"c:/MoSync/include/NativeUI/ButtonListener.h",132,0,0,Ltext54
-Ltext54:
+	.stabs	"c:/MoSync/include/NativeUI/ButtonListener.h",132,0,0,Ltext57
+Ltext57:
 	.line 64
 	push rt,fr
 	sub  sp,#0x8
@@ -9836,7 +10102,7 @@ Ltext54:
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope107:
+Lscope111:
 	.stabs	"_ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE:f(0,6)",36,0,56,__ZN8NativeUI14ButtonListener13buttonPressedEPNS_6WidgetE
 	.stabs	"this:p(17,9)",160,0,56,-12
 	.stabs	"button:p(4,77)",160,0,56,-16
@@ -9853,7 +10119,150 @@ Lscope107:
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope108:
+Lscope112:
+	.set	%6=__ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,59,-12
+	.stabs	"editBox:p(0,116)",160,0,59,-16
+
+.func __ZThn132_N14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE, 2, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",132,0,0,Ltext58
+Ltext58:
+	.line 28
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 28
+	ld   r14,[fr,-12]
+	add  r14,#0xffffff7c
+	ld   i0,r14
+	ld   i1,[fr,-16]
+	call &%6
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope113:
+	.stabs	"_ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE:f(0,6)",36,0,59,__ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,59,-12
+	.stabs	"editBox:p(0,116)",160,0,59,-16
+
+.func __ZN14Authentication22editBoxEditingDidBeginEPN8NativeUI7EditBoxE, 2, void
+	.line 59
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.dlab LBB197
+	.line 59
+	ld   r14,[fr,-16]
+	ld   r14,[r14]
+	add  r14,#0xc
+	ld   r14,[r14]
+	ld   i0,[fr,-16]
+	call r14
+	ld   i0,r14
+	ld   i1,#LC75
+	ld   i2,#LC53
+	call &_maWidgetSetProperty
+	.dlab LBE197
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope114:
+	.set	%7=__ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,58,-12
+	.stabs	"editBox:p(0,116)",160,0,58,-16
+
+.func __ZThn132_N14Authentication13editBoxReturnEPN8NativeUI7EditBoxE, 2, void
+	.line 28
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 28
+	ld   r14,[fr,-12]
+	add  r14,#0xffffff7c
+	ld   i0,r14
+	ld   i1,[fr,-16]
+	call &%7
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope115:
+	.stabs	"_ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE:f(0,6)",36,0,58,__ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,58,-12
+	.stabs	"editBox:p(0,116)",160,0,58,-16
+
+.func __ZN14Authentication13editBoxReturnEPN8NativeUI7EditBoxE, 2, void
+	.line 58
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.dlab LBB198
+	.line 58
+	ld   r14,[fr,-16]
+	ld   r14,[r14]
+	add  r14,#0xc
+	ld   r14,[r14]
+	ld   i0,[fr,-16]
+	call r14
+	ld   i0,r14
+	ld   i1,#LC75
+	ld   i2,#LC76
+	call &_maWidgetSetProperty
+	.dlab LBE198
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope116:
+	.set	%8=__ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,57,-12
+	.stabs	"editBox:p(0,116)",160,0,57,-16
+
+.func __ZThn132_N14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE, 2, void
+	.line 28
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 28
+	ld   r14,[fr,-12]
+	add  r14,#0xffffff7c
+	ld   i0,r14
+	ld   i1,[fr,-16]
+	call &%8
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope117:
+	.stabs	"_ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE:f(0,6)",36,0,57,__ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE
+	.stabs	"this:p(0,25)",160,0,57,-12
+	.stabs	"editBox:p(0,116)",160,0,57,-16
+
+.func __ZN14Authentication20editBoxEditingDidEndEPN8NativeUI7EditBoxE, 2, void
+	.line 57
+	push rt,fr
+	sub  sp,#0x8
+	ld   fr,sp
+	add  fr,#0x10
+	ld   [fr,-12],i0
+	ld   [fr,-16],i1
+	.line 57
+	add  sp,#0x8
+	pop  rt,fr
+	ret
+Lscope118:
 .data
 	.align 4
 __ZN8NativeUI8BUF_SIZEE:
@@ -9862,37 +10271,37 @@ __ZN8NativeUI8BUF_SIZEE:
 __ZN8NativeUI12MAX_BUF_SIZEE:
 	.long	2048
 .code
-	.stabs	"_GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain:f(0,6)",36,0,546,__GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain
+	.stabs	"_GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain:f(0,6)",36,0,571,__GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain
 
 .func __GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain, 0, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext55
-Ltext55:
-	.line 546
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\Authentication.cpp",132,0,0,Ltext59
+Ltext59:
+	.line 571
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 546
+	.line 571
 	ld   i0,#0x1
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope109:
+Lscope119:
 	.ctor __GLOBAL__I__ZN14AuthenticationC2EiP10ScreenMain
-	.stabs	"_GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain:f(0,6)",36,0,547,__GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain
+	.stabs	"_GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain:f(0,6)",36,0,572,__GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain
 
 .func __GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain, 0, void
-	.line 547
+	.line 572
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 547
+	.line 572
 	ld   i0,#0x0
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope110:
+Lscope120:
 	.dtor __GLOBAL__D__ZN14AuthenticationC2EiP10ScreenMain
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE:S(4,39)",40,0,87,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	.stabs	"_ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE:S(4,39)",40,0,96,__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
@@ -9900,8 +10309,8 @@ Lscope110:
 	.stabs	"_ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE:S(4,39)",40,0,114,__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
 	.stabs	"_ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE:S(4,39)",40,0,121,__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	.stabs	"_ZN3Ads13TEST_EMULATORE:S(4,39)",40,0,99,__ZN3Ads13TEST_EMULATORE
-	.stabs	"_ZN8NativeUI8BUF_SIZEE:S(96,13)",38,0,44,__ZN8NativeUI8BUF_SIZEE
-	.stabs	"_ZN8NativeUI12MAX_BUF_SIZEE:S(96,13)",38,0,47,__ZN8NativeUI12MAX_BUF_SIZEE
+	.stabs	"_ZN8NativeUI8BUF_SIZEE:S(98,13)",38,0,44,__ZN8NativeUI8BUF_SIZEE
+	.stabs	"_ZN8NativeUI12MAX_BUF_SIZEE:S(98,13)",38,0,47,__ZN8NativeUI12MAX_BUF_SIZEE
 	.text
 	.stabs "",100,0,0,Letext
 Letext:

@@ -6,15 +6,16 @@
  */
 
 #include "TrackingTab.h"
-
+#include <ma.h>
 /**
  * Constructor.
  */
-TrackingTab::TrackingTab(int language, String loginToken, long long idMobile) :
+TrackingTab::TrackingTab(int language, String loginToken, eScreenResolution screenResolution, long long idMobile) :
 		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(idMobile) {
 
 	// Set title and icon of the stack screen.
-	setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
+	setIcon(ICON_TRACKING + screenResolution);
+//	setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
 //			setBackgroundColor(255,255,255);
 	createUI();
 }
@@ -121,13 +122,20 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
-
+		lTrackingTitle->setText(Convert::tr(traking_list_Label_title_alert + LANGUAGE));
 		mapTrackingAlertDate[idx] =
 				valueTmp->getValueForKey("send_date")->toString();
 		lprintfln(mapTrackingAlertDate[idx].c_str());
 		String convert = valueTmp->getValueForKey("content")->toString();
 		Convert::HTMLdecode(convert);
+
 		mapLTADesc[idx] = new Label(convert);
+		mapLTADesc[idx]->wrapContentHorizontally ();
+		mapLTADesc[idx]->wrapContentVertically ();
+//		mapLTADesc[idx]->setMaxNumberOfLines(10);
+//		mapLTADesc[idx] = new MAUI::Label();
+//		mapLTADesc[idx]->setEnabled(false);
+//		mapLTADesc[idx]->setText(convert);
 
 		if(!bCreateUI)
 		{
@@ -146,7 +154,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 					if (getPlatform() == ANDROID) {
 						// Set the vibration duration to 5seconds when an alert is displayed.
 						notification->setVibrate(true);
-						notification->setVibrateDuration(5);
+						notification->setVibrateDuration(1);
+						notification->setPlaySound(true);
 						// Set notification title and ticker.
 	//				    notification->setContentTitle("My message title");
 						notification->setTickerText("Nouvelle alerte");
@@ -163,6 +172,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 			mapHLTA[idx] = new HorizontalLayout();
 			mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));
+			mapLTAHeure[idx]->setFontSize(18);
+
 			mapLTAHeure[idx]->setBackgroundColor(0x666666);
 			mapLTAHeure[idx]->setWidth(110);
 			mapHLTA[idx]->addChild(mapLTAHeure[idx]);
@@ -195,6 +206,9 @@ void TrackingTab::createUI() {
 	// Make the layout fill the entire screen.
 	mainLayout->fillSpaceHorizontally();
 	mainLayout->fillSpaceVertically();
+	lTrackingTitle = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
+	lTrackingTitle->fillSpaceHorizontally();
+	mainLayout->addChild(lTrackingTitle);
 	// Add the layout as the root of the screen's widget tree.
 //	Screen::setMainWidget(new ActivityIndicator());
 		Screen::setMainWidget(mainLayout);
@@ -232,30 +246,15 @@ void TrackingTab::connectUrl(String url, eTrakingTab fct) {
 }
 
 
-//void TrackingTab::orientationChange(bool landscape) {
-//
-//	if (landscape) {
-//		lprintfln("Orientation paysage");
-//		Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
-//	} else // Portrait
-//	{
-//		lprintfln("Orientation Portrait");
-//		Screen::setTitle("");
-//		Screen::setIcon(LOGO2);
-//	}
-//}
-//void TrackingTab::orientationDidChange() {
-//	int width = Screen::getWidth();
-//	int height = Screen::getHeight();
-//	lprintfln("width %d", width);
-//	lprintfln("height %d", height);
-//	if (width < height) {
-//		lprintfln("Orientation paysage");
-//		Screen::setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-//	} else // Portrait
-//	{
-//		lprintfln("Orientation Portrait");
-//		Screen::setTitle("");
-//		Screen::setIcon(LOGO1);
-//	}
-//}
+void TrackingTab::orientationChange(int screenOrientation) {
+
+	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		lprintfln("Orientation paysage");
+		Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
+	} else // Portrait
+	{
+		lprintfln("Orientation Portrait");
+		Screen::setTitle("");
+//		Screen::setIcon(ICON_TRACKING);
+	}
+}

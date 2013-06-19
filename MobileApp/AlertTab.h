@@ -29,7 +29,7 @@ using namespace MAUtil;
 using namespace NativeUI;
 
 
-class AlertTab : public NativeUI::Screen, public ButtonListener, public HighLevelHttpConnection, public ListViewListener//, public EditBoxListener
+class AlertTab : public NativeUI::Screen, public ButtonListener, public HighLevelHttpConnection, public ListViewListener, public EditBoxListener
 {
 public:
 
@@ -55,7 +55,7 @@ public:
 	/**
 	 * Constructor.
 	 */
-	AlertTab(int language, String loginToken);
+	AlertTab(int language, String loginToken, eScreenResolution screenResolution);
 
 	/**
 	 * Destructor.
@@ -70,7 +70,11 @@ public:
 	virtual void buttonClicked(Widget* button);
 //	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
-	//virtual void editBoxReturn(EditBox* editBox){};
+
+	 virtual void editBoxEditingDidEnd(EditBox* editBox) {}
+		 virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
+		 virtual void editBoxEditingDidBegin(EditBox* editBox) {maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "true");}
+
 
 	void parseJSONPlugin(MAUtil::YAJLDom::Value* root);
 	void parseJSONInformation(MAUtil::YAJLDom::Value* root);
@@ -97,13 +101,15 @@ public:
 	void createDestListPage();
 	void createDetailAlertPage();
 
-//	void orientationChange(bool);
+	void orientationChange(int screenOrientation);
 
 	bool optionPageValid();
 	bool snoozePageValid();
 
 //	void drawChangeVerticalHorizontal(int width, int height);
 private:
+	ActivityIndicator* activityIndicator;
+
 	String _LOGINTOKEN;
 	int LANGUAGE;
 	int connERR;
@@ -164,6 +170,7 @@ private:
 	MAUtil::Map<int, Label*> mapLAssetName;
 
 	//View 3
+	Label* followAlertPlugin;
 	Label* pluginTitle;
 	ListView *lVPlugin;
 	MAUtil::Map<int, long long> mapPluginId;
@@ -172,6 +179,7 @@ private:
 	MAUtil::Map<int, Label*> mapLPluginName;
 
 	//View 4
+	Label* followAlertInformation;
 	Label* infoTitle;
 	ListView *lVInfo;
 	MAUtil::Map<int, long long> mapInfoIdSrc;
@@ -183,9 +191,11 @@ private:
 	MAUtil::Map<int, Label*> mapLInfoName;
 
 	//View 5
+	Label* followAlertOption;
 	Label* optionTitle;
 	VerticalLayout* mainLayoutOptionChoice;
 	ListView* lVOption;
+	ListView* lVCriteria;
 	MAUtil::Map<int, ListViewItem*> mapLVIOption;
 	Label* keyValue;
 	EditBox* eBKeyValue;
@@ -246,6 +256,7 @@ private:
 	Button* bAddToList;
 
 	//View 10
+	Label* followAlertlistDest;
 	Label* listDestTitle;
 	ListView *lVListDest;
 //	MAUtil::Map<int, long long> mapMediaValueId;

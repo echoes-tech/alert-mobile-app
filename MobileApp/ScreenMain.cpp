@@ -27,24 +27,42 @@ ScreenMain::~ScreenMain() {
 }
 
 void ScreenMain::createUI(String loginToken, long long idMobile) {
-	landscape = false;
-	alertTab = new AlertTab(LANGUAGE, loginToken);
-	trackingTab = new TrackingTab(LANGUAGE, loginToken, idMobile);
-//	homeTab = new HomeTab(LANGUAGE, loginToken);
-	optionTab = new OptionTab(LANGUAGE, loginToken);
+	MAExtent size = maGetScrSize();
+	int mScreenWidth = EXTENT_X(size);
+	int mScreenHeight = EXTENT_Y(size);
+	eScreenResolution screenResolution = LARGE_SCREEN_RESOLUTION;
+	lprintfln("resolution x %d, y %d",mScreenWidth , mScreenHeight);
+	if (mScreenWidth <= SMALL_RESOLUTION) {
+		screenResolution = SMALL_SCREEN_RESOLUTION;
+		lprintfln("resolution small");
+	}
+
+
+	alertTab = new AlertTab(LANGUAGE, loginToken, screenResolution);
+	trackingTab = new TrackingTab(LANGUAGE, loginToken, screenResolution, idMobile);
+//	homeTab = new HomeTab(LANGUAGE, loginToken, screenResolution);
+	optionTab = new OptionTab(LANGUAGE, loginToken, screenResolution);
 
 //	 Add them as tabs.
 //	this->addTab(homeTab); //tab index 0;
+	this->addTab(alertTab); //tab index 0;
 	this->addTab(trackingTab); //tab index 1;
-	this->addTab(alertTab); //tab index 2;
-	this->addTab(optionTab); //tab index 3;
 
-	Environment::getEnvironment().addCustomEventListener(this);
+	this->addTab(optionTab); //tab index 2;
 
-//	alertTab->addEventListener(this);
-//	trackingTab->addEventListener(this);
-//	homeTab->addEventListener(this);
-//	optionTab->addEventListener(this);
+	alertTab->addScreenListener(this);
+	trackingTab->addScreenListener(this);
+//	homeTab->addScreenListener(this);
+	optionTab->addScreenListener(this);
+
+////	maScreenSetOrientation(MA_SCREEN_ORIENTATION_DYNAMIC);
+//
+//	// iOS and Windows Phone.
+//	maScreenSetSupportedOrientations(
+//			MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
+//					| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
+//					| MA_SCREEN_ORIENTATION_PORTRAIT
+//					| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 
 	this->show();
 	uiCreated = true;
@@ -62,8 +80,9 @@ void ScreenMain::pullRequest() {
 void ScreenMain::handleKeyPress(int keyCode) {
 	lprintfln("test");
 	lprintfln("Tab Active : %d", this->getActiveTabIndex());
+	maAlertPrintFirstTime = true;
 	if (keyCode == MAK_BACK) {
-		if (this->getActiveTabIndex() == 1) {
+		if (this->getActiveTabIndex() == 0) {
 			alertTab->handleKeyPress(keyCode);
 		} else {
 			maAlert("", "",
@@ -89,6 +108,12 @@ void ScreenMain::customEvent(const MAEvent& event) {
 		} else if (3 == event.alertButtonIndex) {
 		}
 	}
+	else if (EVENT_TYPE_ALERT_DISMISSED == event.type && maAlertPrintFirstTime){ //lorsque l'on appuit sur le boutton BACK trop longtemps cet event est envoyer et supprime le chois.
+		maAlertPrintFirstTime = false;
+		maAlert("", "",Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
+									Convert::tr(Screen_Main_Button_home + LANGUAGE),
+									Convert::tr(Screen_Main_Button_cancel + LANGUAGE));
+			}
 //	else if (event.type == 28) {
 //		if (uiCreated) {
 //			lprintfln("ORIENTATION CHANGE");
@@ -135,24 +160,19 @@ void ScreenMain::handlePointerReleased(MAPoint2d point) {
 	lprintfln("test mainScreen 4");
 }
 
-//void ScreenMain::drawChangeVerticalHorizontal(int width, int height)
-//{lprintfln("drawChangeVerticalHorizontal");
-//	if (this->getActiveTabIndex() >= 0)
-//	{
-//		lprintfln("drawChangeVerticalHorizontal");
-//	if (width > height) // Landscape
-//				{
-//		lprintfln("drawChangeVerticalHorizontal Landscape");
-//		homeTab->setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-//		} else // Portrait
-//		{
-//			lprintfln("drawChangeVerticalHorizontal Portrait");
-//			homeTab->setTitle("");
-//			homeTab->setIcon(LOGO);
+
+void ScreenMain::orientationChanged(Screen* screen, int screenOrientation)
+{
+	lprintfln("screenOrientation : %d", screenOrientation);
+	if (screen == alertTab) {
+		alertTab->orientationChange(screenOrientation);
+	} else if (screen == optionTab) {
+		optionTab->orientationChange(screenOrientation);
+	} else if (screen == trackingTab) {
+		trackingTab->orientationChange(screenOrientation);
+	}
+//	else if (screen == homeTab) {
+//		homeTab->orientationChange(screenOrientation);
 //		}
-//	}
-////	alertTab->drawChangeVerticalHorizontal(width, height);
-////	trackingTab->drawChangeVerticalHorizontal(width, height);
-////	homeTab->drawChangeVerticalHorizontal(width, height);
-//}
+}
 

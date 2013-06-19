@@ -12,9 +12,10 @@
 	/**
 	 * Constructor.
 	 */
-	OptionTab::OptionTab(int language, String loginToken): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
+	OptionTab::OptionTab(int language, String loginToken, eScreenResolution screenResolution): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
 	{
-		setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
+		setIcon(ICON_OPTION + screenResolution);
+//		setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
 		createUI();
 	}
 
@@ -91,36 +92,21 @@ void OptionTab::radioButtonSelected(NativeUI::RadioGroup* , int, NativeUI::Radio
 		{
 			_modeAuth = "none";
 		}
+
 		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
 }
 
 
 
-//void OptionTab::orientationChange(bool landscape) {
-//
-//	if (landscape) {
-//		lprintfln("Orientation paysage");
-//		Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
-//	} else // Portrait
-//	{
-//		lprintfln("Orientation Portrait");
-//		Screen::setTitle("");
-//		Screen::setIcon(LOGO4);
-//	}
-//}
+void OptionTab::orientationChange(int screenOrientation) {
 
-//void OptionTab::orientationDidChange() {
-//	int width = Screen::getWidth();
-//	int height = Screen::getHeight();
-//	lprintfln("width %d", width);
-//	lprintfln("height %d", height);
-//	if (width < height) {
-//		lprintfln("Orientation paysage");
-//		Screen::setTitle(Convert::tr(HOME_TAB_EN + LANGUAGE));
-//	} else // Portrait
-//	{
-//		lprintfln("Orientation Portrait");
-//		Screen::setTitle("");
-//		Screen::setIcon(LOGO1);
-//	}
-//}
+	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		lprintfln("Orientation paysage");
+		Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
+	} else // Portrait
+	{
+		lprintfln("Orientation Portrait");
+		Screen::setTitle("");
+//		Screen::setIcon(ICON_OPTION);
+	}
+}
