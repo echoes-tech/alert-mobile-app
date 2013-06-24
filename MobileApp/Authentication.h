@@ -19,6 +19,8 @@
 #include "Util.h"
 #include "ScreenMain.h"
 
+#include "ActivityPage.h"
+
 using namespace Wormhole;
 using namespace MAUtil;
 using namespace NativeUI;
@@ -72,7 +74,8 @@ public:
 	bool newMediaNameValid();
 
 private:
-	ActivityIndicator* activityIndicator;
+	ActivityPage* mActivityPage;
+//	ActivityIndicator* activityIndicator;
 	int LANGUAGE;
 	eAuthenticationTab fonction;
 	bool mIsConnected;

@@ -6,6 +6,7 @@
 #include "ScreenMain.h"			// Main UI screen
 #include "Util.h"
 #include "Authentication.h"
+
 // How often the timer will be invoked
 #define TIMER_PERIOD 60000
 
@@ -53,7 +54,7 @@ public:
 	 */
 	void customEvent(const MAEvent& event) {
 
-		lprintfln("test event %d",event.type);
+//		lprintfln("test event %d",event.type);
 
 		// If the event type is screen changed we update the display.
 //		if (EVENT_TYPE_SCREEN_CHANGED == event.type) {
@@ -120,9 +121,9 @@ public:
 	 */
 	void keyPressEvent(int keyCode, int nativeCode) {
 
-		if (keyCode == MAK_MENU) {
-			lprintfln("maSendToBackground() = %d", maSendToBackground());
-		}
+//		if (keyCode == MAK_MENU) {
+//			lprintfln("maSendToBackground() = %d", maSendToBackground());
+//		}
 		// Let the screen handle the keypress.
 		mMainScreen->handleKeyPress(keyCode);
 	}
@@ -174,6 +175,7 @@ private:
 
 
 extern "C" int MAMain() {
+
 //		maSyscallPanicsDisable();
 		maAutostartOn();
 		Moblet::run(new NativeUIMoblet());

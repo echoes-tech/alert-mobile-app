@@ -27,6 +27,7 @@
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "IncludeFile.h"
+#include "Page.h"
 
 #include <MTXml/MTXml.h>
 
@@ -83,8 +84,9 @@ private:
 	int count;
 	String contentString;
 
-	Label *lTrackingTitle;
-
+	Page* mainLayout;
+//	Label *lTrackingTitle;
+	Label *lListNoAlert;
 	ListView *lValert;
 	MAPUtil::DateTime dateLastSend;
 
@@ -96,7 +98,7 @@ private:
 	 MAUtil::Map<int,Label*> mapLTADesc;
 	 MAUtil::Map<int,Label*> mapLTAHeure;
 
-	VerticalLayout* mainLayout;
+//	VerticalLayout* mainLayout;
 
 	STime lastSendAlert;
 	LocalNotification* notification;

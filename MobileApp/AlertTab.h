@@ -23,6 +23,10 @@
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 
+#include "Page.h"
+
+#include "ActivityPage.h"
+
 #define BUFSIZE 1024
 using namespace Wormhole;
 using namespace MAUtil;
@@ -108,7 +112,8 @@ public:
 
 //	void drawChangeVerticalHorizontal(int width, int height);
 private:
-	ActivityIndicator* activityIndicator;
+//	ActivityIndicator* activityIndicator;
+	ActivityPage* mActivityPage;
 
 	String _LOGINTOKEN;
 	int LANGUAGE;
@@ -131,9 +136,11 @@ private:
 	int selectedMediaValue;
 
 	//View 1
-	Label *lListTitle;
+
+	Page* mainLayoutAlertChoice;
+	Label *lListNoAlert;
 	ListView *lValert;
-	VerticalLayout *mainLayoutAlertChoice;
+//	VerticalLayout *mainLayoutAlertChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAlert;
 	MAUtil::Map<int, Label*> mapLAlertName;
 	MAUtil::Map<int, long long> mapAlertId;
@@ -145,8 +152,13 @@ private:
 	int posOptionAlert;
 
 	//View 1.1
-	VerticalLayout* mainLayoutAlertDetailChoice;
-	Label* lAlertName;
+	Page* mainLayoutAlertDetailChoice;
+//	VerticalLayout* mainLayoutAlertDetailChoice;
+//	Label* lAlertDetailTitle;
+//	Label* lAlertName;
+	Label* lAlertAsset;
+	Label* lAlertPlugin;
+	Label* lAlertInformation;
 	Label* lAlertOperator;
 	Label* lAlertValue;
 	Label* lAlertUnit;
@@ -162,38 +174,43 @@ private:
 
 
 	//View 2
-	Label* assetTitle;
+	Page* mainLayoutAssetChoice;
+//	Label* assetTitle;
 	ListView *lVAsset;
 	MAUtil::Map<int, long long> mapAssetId;
-	VerticalLayout* mainLayoutAssetChoice;
+//	VerticalLayout* mainLayoutAssetChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAsset;
-	MAUtil::Map<int, Label*> mapLAssetName;
+//	MAUtil::Map<int, Label*> mapLAssetName;
+	MAUtil::Map<int, String> mapLAssetName;
 
 	//View 3
-	Label* followAlertPlugin;
-	Label* pluginTitle;
+	Page* mainLayoutPluginChoice;
+//	Label* followAlertPlugin;
+//	Label* pluginTitle;
 	ListView *lVPlugin;
 	MAUtil::Map<int, long long> mapPluginId;
-	VerticalLayout* mainLayoutPluginChoice;
+//	VerticalLayout* mainLayoutPluginChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIPlugin;
 	MAUtil::Map<int, Label*> mapLPluginName;
 
 	//View 4
-	Label* followAlertInformation;
-	Label* infoTitle;
+	Page* mainLayoutInfoChoice;
+//	Label* followAlertInformation;
+//	Label* infoTitle;
 	ListView *lVInfo;
 	MAUtil::Map<int, long long> mapInfoIdSrc;
 	MAUtil::Map<int, long long> mapInfoIdSea;
 	MAUtil::Map<int, long long> mapInfoIdUnit;
 	MAUtil::Map<int, long long> mapInfoInfValueNum;
-	VerticalLayout* mainLayoutInfoChoice;
+//	VerticalLayout* mainLayoutInfoChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIInfo;
 	MAUtil::Map<int, Label*> mapLInfoName;
 
 	//View 5
-	Label* followAlertOption;
-	Label* optionTitle;
-	VerticalLayout* mainLayoutOptionChoice;
+	Page* mainLayoutOptionChoice;
+//	Label* followAlertOption;
+//	Label* optionTitle;
+//	VerticalLayout* mainLayoutOptionChoice;
 	ListView* lVOption;
 	ListView* lVCriteria;
 	MAUtil::Map<int, ListViewItem*> mapLVIOption;
@@ -207,60 +224,67 @@ private:
 	Button* bDest;
 
 	//view 5.2
-	Label* operatorTitle;
+	Page* mainLayoutOperatorChoice;
+//	Label* operatorTitle;
 	ListView *lVOperator;
 	MAUtil::Map<int, long long> mapOperatorId;
-	VerticalLayout* mainLayoutOperatorChoice;
+//	VerticalLayout* mainLayoutOperatorChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIOperator;
 	MAUtil::Map<int, Label*> mapLOperatorName;
 
 	//view 5.3
-	Label* unitTitle;
+	Page* mainLayoutUnitChoice;
+//	Label* unitTitle;
 	int nbOfSubUnits; //si > 0 alors on va chercher les sous unités.
 	ListView *lVUnit;
 	MAUtil::Map<int, long long> mapUnitId;
-	VerticalLayout* mainLayoutUnitChoice;
+//	VerticalLayout* mainLayoutUnitChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIUnit;
 	MAUtil::Map<int, Label*> mapLUnitName;
 
 	//View 6
-	Label* userTitle;
+	Page* mainLayoutUserChoice;
+//	Label* userTitle;
 	ListView *lVUser;
 	MAUtil::Map<int, long long> mapUserId;
-	VerticalLayout* mainLayoutUserChoice;
+//	VerticalLayout* mainLayoutUserChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIUser;
 	MAUtil::Map<int, Label*> mapLUserName;
 
 	//View 7
-	Label* mediaTitle;
+	Page* mainLayoutMediaChoice;
+//	Label* mediaTitle;
 	ListView *lVMedia;
 	MAUtil::Map<int, long long> mapMediaId;
-	VerticalLayout* mainLayoutMediaChoice;
+//	VerticalLayout* mainLayoutMediaChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIMedia;
 	MAUtil::Map<int, Label*> mapLMediaName;
 
 	//View 8
-	Label *mediaValueTitle;
+	Page* mainLayoutMediaValueChoice;
+//	Label *mediaValueTitle;
 	ListView *lVMediaValue;
 	MAUtil::Map<int, long long> mapMediaValueId;
-	VerticalLayout* mainLayoutMediaValueChoice;
+//	VerticalLayout* mainLayoutMediaValueChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIMediaValue;
 	MAUtil::Map<int, Label*> mapLMediaValueName;
 
 	//View 9
-	Label* snoozeTitle;
-	VerticalLayout* mainLayoutSnoozeChoice;
+	Page* mainLayoutSnoozeChoice;
+//	Label* snoozeTitle;
+//	VerticalLayout* mainLayoutSnoozeChoice;
 	Label* lSnooze;
 	EditBox* eBSnooze;
 	Label* lSecond;
 	Button* bAddToList;
 
 	//View 10
-	Label* followAlertlistDest;
-	Label* listDestTitle;
+	Page* mainLayoutListDestChoice;
+//	Label* followAlertlistDest;
+//	Label* listDestTitle;
 	ListView *lVListDest;
 //	MAUtil::Map<int, long long> mapMediaValueId;
-	VerticalLayout* mainLayoutListDestChoice;
+//	VerticalLayout* mainLayoutListDestChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIListDest;
 	MAUtil::Map<int, Label*> mapLListDestName;
 	Button* bAddOtherDest;

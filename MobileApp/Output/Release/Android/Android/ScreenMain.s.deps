@@ -123,7 +123,9 @@
   c:/MoSync/include/NativeUI/Label.h \
   c:/MoSync/include/NativeUI/ListView.h \
   c:/MoSync/include/NativeUI/ListViewItem.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h \
   c:/MoSync/include/MTXml/MTXml.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/HomeTab.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/OptionTab.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h

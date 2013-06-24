@@ -3,12 +3,13 @@
     <image id="LOGO" resource="icon.png"/>
 	 <image id="ICON_HOME" resource="home.png"/>
 	 <image id="ICON_HOME_SMALL" resource="home.png"/>
-	 <image id="ICON_TRACKING" resource="tracking.png"/>
-	 <image id="ICON_TRACKING_SMALL" resource="tracking-small.png"/>
+	 <image id="ICON_TRACKING" resource="alarme.png"/>
+	 <image id="ICON_TRACKING_SMALL" resource="alarme_small.png"/>
 	 <image id="ICON_ALERT" resource="alert.png"/>
 	 <image id="ICON_ALERT_SMALL" resource="alert-small.png"/>
 	 <image id="ICON_OPTION" resource="option.png"/>
 	 <image id="ICON_OPTION_SMALL" resource="option-small.png"/>
+	 <image id="ICON_SERVER_SMALL" resource="server_small1.png"/>
 	 
 
 <!-- ATTENTION POUR QUE LES TRADUCTIONS MARCHE IL FAUT ABSOLUMENT ECRIRE LA TRADUCTION ANGLAISE SUIVI DE LA FRANCAISE 
@@ -30,16 +31,16 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="OPTION_TAB_FR"> Options</string>
     
     <string id="alert_list_Label_title">Alerts list</string>
-    <string id="alert_list_Label_title_FR">Liste de vos alertes</string>
+    <string id="alert_list_Label_title_FR">Liste de vos alertes actives</string>
     
     <string id="alert_list_Label_title_no_alert">There is no scheduled alert</string>
     <string id="alert_list_Label_title_no_alert_FR">Il n'y a aucune alerte paramétrée pour le moment</string>
     
     <string id="traking_list_Label_title_no_alert">There is no received alert</string>
-    <string id="traking_list_Label_title_no_alert_FR">Il n'y a aucune remontée d'alerte pour le moment</string>
+    <string id="traking_list_Label_title_no_alert_FR">Aucune alerte n'a été reçue pour le moment</string>
     
     <string id="traking_list_Label_title_alert">List of the last alerts</string>
-    <string id="traking_list_Label_title_alert_FR">Liste des dernières alertes</string>
+    <string id="traking_list_Label_title_alert_FR">Liste de vos alertes reçues</string>
     
     <string id="alert_create_Label_asset_choice">Asset choice</string>
     <string id="alert_create_Label_asset_choice_FR">Choix du serveur</string>
@@ -72,7 +73,7 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_Label_snooze_choice_FR">Choix du snooze</string>
     
     <string id="alert_create_Label_list_dest_choice">Reicevers List</string>
-    <string id="alert_create_Label_list_dest_choice_FR">List des destinataires</string>
+    <string id="alert_create_Label_list_dest_choice_FR">Liste des destinataires</string>
     
     <string id="alert_create_String_Alert_Name">Alert name : </string>
     <string id="alert_create_String_Alert_Name_FR">Nom de l'alerte : </string>
@@ -89,14 +90,18 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_String_Key_Value">Key value : </string>
     <string id="alert_create_String_Key_Value_FR">Valeur cléf : </string>
     
+    <string id="alert_create_String_list_media_label">Medias for this alert : </string>
+    <string id="alert_create_String_list_media_label_FR">Média rattaché à cette alerte : </string>
+    ""
+    
     <string id="alert_create_Button_Delete_Alert">Delete</string>
     <string id="alert_create_Button_Delete_Alert_FR">Supprimer</string>
     
     <string id="alert_create_Button_Cancel_Alert">Cancel</string>
     <string id="alert_create_Button_Cancel_Alert_FR">Annuler</string>
     
-    <string id="alert_create_Button_Detail_Alert">Detail</string>
-    <string id="alert_create_Button_Detail_Alert_FR">Détail</string>
+    <string id="alert_create_Button_Detail_Alert">Details</string>
+    <string id="alert_create_Button_Detail_Alert_FR">Détails</string>
     
     <string id="alert_create_Button_Add_another_recipient">Add another recipient</string>
     <string id="alert_create_Button_Add_another_recipient_FR">Ajouter un autre destinataire</string>
@@ -114,25 +119,25 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_Button_add_list_FR">Ajouter à la liste</string>
     
     <string id="alert_create_Label_key_value">Choice of the key value : </string>
-    <string id="alert_create_Label_key_value_FR">Choix de la valeur clef : </string>
+    <string id="alert_create_Label_key_value_FR">Choix de la valeur clé : </string>
     
     <string id="alert_create_Label_operator">Choice of the operator : </string>
-    <string id="alert_create_Label_operator_FR">Choix de l'operateur : </string>
+    <string id="alert_create_Label_operator_FR">Choix de l'opérateur : </string>
     
     <string id="alert_create_Label_value">Choice of the value : </string>
-    <string id="alert_create_Label_value_FR">Choix de la valeur : </string>
+    <string id="alert_create_Label_value_FR">Choix du seuil : </string>
     
     <string id="alert_create_Button_Add_recipient">Add a recipient</string>
     <string id="alert_create_Button_Add_recipient_FR">Ajouter un destinataire</string>
     
     <string id="Screen_Main_close_app">Now, you can not receive alerts, this application is stopped</string>
-    <string id="Screen_Main_close_app_FR">Maintenant vous ne recevrez plus d'alert, l'application est arretée </string>
+    <string id="Screen_Main_close_app_FR">Maintenant vous ne recevrez plus d'alertes, l'application est arretée </string>
    
-    <string id="Screen_Main_Button_close_app">Close application</string>
-    <string id="Screen_Main_Button_close_app_FR">Fermer l'application</string>
+    <string id="Screen_Main_Button_close_app">Close</string>
+    <string id="Screen_Main_Button_close_app_FR">Quitter</string>
     
     <string id="Screen_Main_Button_home">Home</string>
-    <string id="Screen_Main_Button_home_FR">Accueil</string>
+    <string id="Screen_Main_Button_home_FR">Veille</string>
     
     <string id="Screen_Main_Button_cancel">Cancel</string>
     <string id="Screen_Main_Button_cancel_FR">Annuler</string>
@@ -140,7 +145,48 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_Button_add_alert">Add an alert</string>
     <string id="alert_create_Button_add_alert_FR">Ajouter une alerte</string>
     
+    <string id="alert_message_box_title_Information">Information</string>
+    <string id="alert_message_box_title_Information_FR">Information</string>
     
+    <string id="alert_message_box_title_Error">Error</string>
+    <string id="alert_message_box_title_Error_FR">Erreur</string>
+    
+    <string id="alert_message_box_create_alert_error">Creating alert aborted</string>
+    <string id="alert_message_box_create_alert_error_FR">La création d'alerte a échoué</string>
+    
+    <string id="alert_message_box_key_value">Key value can not be empty</string>
+    <string id="alert_message_box_key_value_FR">La valeur clé ne peux pas être vide</string>
+
+	<string id="alert_message_box_operator">Operator is not selected </string>
+    <string id="alert_message_box_operator_FR">Aucun opérateur n'est séléctionné </string>
+    
+    <string id="alert_message_box_value">Value can not be empty </string>
+    <string id="alert_message_box_value_FR">La valeur ne peux pas être vide </string>
+
+	<string id="alert_message_box_snooze">Snooze can not be empty</string>
+    <string id="alert_message_box_snooze_FR">Le snooze ne peux pas être vide</string>
+
+	<string id="alert_message_box_snooze_60">Snooze should be higher than 60</string>
+    <string id="alert_message_box_snooze_60_FR">Le snooze doit être suppérieur à 60</string>
+
+	<string id="alert_change_mode_auth_saved">Change saved </string>
+    <string id="alert_change_mode_auth_saved_FR">Changement effectué </string>
+    
+    <string id="alert_toast_no_media_found">No media found for this user </string>
+    <string id="alert_toast_no_media_found_FR">Aucun media trouvé pour cet utilisateur </string>
+ 
+ 	<string id="alert_detail_Label_title">Alert Detail</string>
+    <string id="alert_detail_Label_title_FR">Détail de l'alerte</string>
+ 	
+ 	<string id="alert_label_asset">Asset : </string>
+    <string id="alert_label_asset_FR">Serveur : </string>
+    
+    <string id="alert_label_plugin">Plugin : </string>
+    <string id="alert_label_plugin_FR">Application : </string>
+    
+    <string id="alert_label_information">Information : </string>
+    <string id="alert_label_information_FR">Information : </string>
+ 
   <!-- authentication (page choix des medias) -->
     <string id="authentication_new_media_title">New terminal ?</string>
     <string id="authentication_new_media_title_FR">Nouveau terminal ?</string>
@@ -153,15 +199,15 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     
     <!-- authentication (page choix du mode d'authent) -->
     <string id="authentication_mode_page_title">Choose your mode of authentication</string>
-    <string id="authentication_mode_page_title_FR">Quel mode d'authentification voulez vous choisr pour cette application ?</string>
+    <string id="authentication_mode_page_title_FR">Mode d'authentification</string>
     
     <string id="authentication_mode_credential">With credential</string>
-    <string id="authentication_mode_credential_FR">Avec les identifiants</string>
+    <string id="authentication_mode_credential_FR">Saisie des identifiants</string>
     
     <string id="authentication_mode_none">Remember me</string>
     <string id="authentication_mode_none_FR">Se souvenir de moi</string>
     
-    <!-- authent (pas de log) -->
+    <!-- authent (page de log) -->
     <string id="authentication_connection_title">Connexion</string>
     <string id="authentication_connection_title_FR">Connexion</string>
     

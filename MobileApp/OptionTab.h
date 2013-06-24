@@ -17,6 +17,7 @@
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "Util.h"
+#include "Page.h"
 
 #define BUFSIZE 1024
 
@@ -49,14 +50,15 @@ private:
 	String _LOGINTOKEN;
 	int LANGUAGE;
 
+	int icreateUI;
 	String _modeAuth;
 	long long _idMobile;
 	String _tokenConnection;
 	String _tokenMobile;
 	String _login;
 
-
-	VerticalLayout* vLOption;
+	Page* vLOption;
+//	VerticalLayout* vLOption;
 
 	Label* lAuthenticationMode;
 	RadioGroup* rGAuthenticationChoice;

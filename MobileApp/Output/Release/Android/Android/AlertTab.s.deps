@@ -105,7 +105,10 @@
   c:/MoSync/include/matime.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
   C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h \
   c:/MoSync/include/MAUI/Image.h c:/MoSync/include/MAUI/Widget.h \
   c:/MoSync/include/MAUtil/RefCounted.h \
   c:/MoSync/include/MAUtil/Geometry.h c:/MoSync/include/MAUI/WidgetSkin.h \
-  c:/MoSync/include/MAUI/InputManager.h
+  c:/MoSync/include/MAUI/InputManager.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h

@@ -145,6 +145,7 @@ static MAUtil::String getLocalPath() {
     return path;
 }
 
+
 static eFile tryToRead(MAUtil::String &config) {
     // Construct the filename.
     MAUtil::String filename = getLocalPath() + "EA_mobile_conf.txt";
@@ -178,8 +179,8 @@ static eFile tryToRead(MAUtil::String &config) {
     MAASSERT(res == 0);
     config = data;
     // Print some data.
-    data[300] = 0;
-    lprintfln("%s\n", data);
+//    data[300] = 0;
+//    lprintfln("%s\n", data);
 
     // Close the file.
     lprintfln("Closing...\n");
@@ -220,8 +221,9 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
 
     // Write some data.
     MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \"" + tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent + "\",\"authentication_mode\" : \"" + mode + "\",\"id_media_value\" : " + Convert::toString(idMedia) +"}";
-//    static const char data[] = tmp.c_str();
+    //    static const char data[] = tmp.c_str();
     res = maFileWrite(file, tmp.c_str(), tmp.size());
+
 //    res = maFileWrite(file, data, sizeof(data));
     MAASSERT(res == 0);
 
@@ -233,5 +235,39 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
 //    printf("Done.\n");
     return FILE_CLOSE;
 }
+
+
+
+//static void searchFileList(const char* path) {
+//    // The buffer is static to conserve stack space.
+//    static char buffer[1024];
+//
+//    MAHandle list = maFileListStart(path, "*", 0);
+//    if(list < 0) {
+//    	lprintfln("maFileListStart error %i", list);
+//        return;
+//    }
+//    int size;
+//    while((size = maFileListNext(list, buffer, sizeof(buffer))) > 0) {
+//        // Since the program can take so long to run, we check for
+//                // keypresses often.
+//
+//        if(size > (int)sizeof(buffer)) {
+//        	lprintfln("Buffer too small!\n");
+//            return;
+//        }
+//
+//        // Print the path and name of the file we found.
+//        lprintfln("%s%s\n", path, buffer);
+//        maMessageBox("test",buffer);
+//        // If we found a directory, print its contents.
+//        if(buffer[size-1] == '/') {
+//            MAUtil::String subDir(path);
+//            subDir += buffer;
+//            searchFileList(subDir.c_str());
+//        }
+//    }
+//    maFileListClose(list);
+//}
 
 #endif /* UTIL_H_ */

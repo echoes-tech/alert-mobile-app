@@ -7,9 +7,9 @@
 .res ICON_HOME_SMALL
 .image "home.png"
 .res ICON_TRACKING
-.image "tracking.png"
+.image "alarme.png"
 .res ICON_TRACKING_SMALL
-.image "tracking-small.png"
+.image "alarme_small.png"
 .res ICON_ALERT
 .image "alert.png"
 .res ICON_ALERT_SMALL
@@ -18,6 +18,8 @@
 .image "option.png"
 .res ICON_OPTION_SMALL
 .image "option-small.png"
+.res ICON_SERVER_SMALL
+.image "server_small1.png"
 .res HOME_TAB_EN
 .bin
 .string " Home"
@@ -49,7 +51,7 @@
 .string "Alerts list"
 .res alert_list_Label_title_FR
 .bin
-.string "Liste de vos alertes"
+.string "Liste de vos alertes actives"
 .res alert_list_Label_title_no_alert
 .bin
 .string "There is no scheduled alert"
@@ -65,17 +67,21 @@
 .string "There is no received alert"
 .res traking_list_Label_title_no_alert_FR
 .bin
-.string "Il n'y a aucune remont"
+.string "Aucune alerte n'a "
 .byte 0xc3,0xa9
-.string "e d'alerte pour le moment"
+.string "t"
+.byte 0xc3,0xa9
+.string " re"
+.byte 0xc3,0xa7
+.string "ue pour le moment"
 .res traking_list_Label_title_alert
 .bin
 .string "List of the last alerts"
 .res traking_list_Label_title_alert_FR
 .bin
-.string "Liste des derni"
-.byte 0xc3,0xa8
-.string "res alertes"
+.string "Liste de vos alertes re"
+.byte 0xc3,0xa7
+.string "ues"
 .res alert_create_Label_asset_choice
 .bin
 .string "Asset choice"
@@ -141,7 +147,7 @@
 .string "Reicevers List"
 .res alert_create_Label_list_dest_choice_FR
 .bin
-.string "List des destinataires"
+.string "Liste des destinataires"
 .res alert_create_String_Alert_Name
 .bin
 .string "Alert name : "
@@ -176,6 +182,18 @@
 .string "Valeur cl"
 .byte 0xc3,0xa9
 .string "f : "
+.res alert_create_String_list_media_label
+.bin
+.string "Medias for this alert : "
+.res alert_create_String_list_media_label_FR
+.bin
+.string "M"
+.byte 0xc3,0xa9
+.string "dia rattach"
+.byte 0xc3,0xa9
+.string " "
+.byte 0xc3,0xa0
+.string " cette alerte : "
 .res alert_create_Button_Delete_Alert
 .bin
 .string "Delete"
@@ -190,12 +208,12 @@
 .string "Annuler"
 .res alert_create_Button_Detail_Alert
 .bin
-.string "Detail"
+.string "Details"
 .res alert_create_Button_Detail_Alert_FR
 .bin
 .string "D"
 .byte 0xc3,0xa9
-.string "tail"
+.string "tails"
 .res alert_create_Button_Add_another_recipient
 .bin
 .string "Add another recipient"
@@ -235,19 +253,23 @@
 .string "Choice of the key value : "
 .res alert_create_Label_key_value_FR
 .bin
-.string "Choix de la valeur clef : "
+.string "Choix de la valeur cl"
+.byte 0xc3,0xa9
+.string " : "
 .res alert_create_Label_operator
 .bin
 .string "Choice of the operator : "
 .res alert_create_Label_operator_FR
 .bin
-.string "Choix de l'operateur : "
+.string "Choix de l'op"
+.byte 0xc3,0xa9
+.string "rateur : "
 .res alert_create_Label_value
 .bin
 .string "Choice of the value : "
 .res alert_create_Label_value_FR
 .bin
-.string "Choix de la valeur : "
+.string "Choix du seuil : "
 .res alert_create_Button_Add_recipient
 .bin
 .string "Add a recipient"
@@ -259,21 +281,21 @@
 .string "Now, you can not receive alerts, this application is stopped"
 .res Screen_Main_close_app_FR
 .bin
-.string "Maintenant vous ne recevrez plus d'alert, l'application est arret"
+.string "Maintenant vous ne recevrez plus d'alertes, l'application est arret"
 .byte 0xc3,0xa9
 .string "e "
 .res Screen_Main_Button_close_app
 .bin
-.string "Close application"
+.string "Close"
 .res Screen_Main_Button_close_app_FR
 .bin
-.string "Fermer l'application"
+.string "Quitter"
 .res Screen_Main_Button_home
 .bin
 .string "Home"
 .res Screen_Main_Button_home_FR
 .bin
-.string "Accueil"
+.string "Veille"
 .res Screen_Main_Button_cancel
 .bin
 .string "Cancel"
@@ -286,6 +308,122 @@
 .res alert_create_Button_add_alert_FR
 .bin
 .string "Ajouter une alerte"
+.res alert_message_box_title_Information
+.bin
+.string "Information"
+.res alert_message_box_title_Information_FR
+.bin
+.string "Information"
+.res alert_message_box_title_Error
+.bin
+.string "Error"
+.res alert_message_box_title_Error_FR
+.bin
+.string "Erreur"
+.res alert_message_box_create_alert_error
+.bin
+.string "Creating alert aborted"
+.res alert_message_box_create_alert_error_FR
+.bin
+.string "La cr"
+.byte 0xc3,0xa9
+.string "ation d'alerte a "
+.byte 0xc3,0xa9
+.string "chou"
+.res alert_message_box_key_value
+.bin
+.string "Key value can not be empty"
+.res alert_message_box_key_value_FR
+.bin
+.string "La valeur cl"
+.byte 0xc3,0xa9
+.string " ne peux pas "
+.byte 0xc3,0xaa
+.string "tre vide"
+.res alert_message_box_operator
+.bin
+.string "Operator is not selected "
+.res alert_message_box_operator_FR
+.bin
+.string "Aucun op"
+.byte 0xc3,0xa9
+.string "rateur n'est s"
+.byte 0xc3,0xa9
+.string "l"
+.byte 0xc3,0xa9
+.string "ctionn"
+.byte 0xc3,0xa9
+.string " "
+.res alert_message_box_value
+.bin
+.string "Value can not be empty "
+.res alert_message_box_value_FR
+.bin
+.string "La valeur ne peux pas "
+.byte 0xc3,0xaa
+.string "tre vide "
+.res alert_message_box_snooze
+.bin
+.string "Snooze can not be empty"
+.res alert_message_box_snooze_FR
+.bin
+.string "Le snooze ne peux pas "
+.byte 0xc3,0xaa
+.string "tre vide"
+.res alert_message_box_snooze_60
+.bin
+.string "Snooze should be higher than 60"
+.res alert_message_box_snooze_60_FR
+.bin
+.string "Le snooze doit "
+.byte 0xc3,0xaa
+.string "tre supp"
+.byte 0xc3,0xa9
+.string "rieur "
+.byte 0xc3,0xa0
+.string " 60"
+.res alert_change_mode_auth_saved
+.bin
+.string "Change saved "
+.res alert_change_mode_auth_saved_FR
+.bin
+.string "Changement effectu"
+.byte 0xc3,0xa9
+.string " "
+.res alert_toast_no_media_found
+.bin
+.string "No media found for this user "
+.res alert_toast_no_media_found_FR
+.bin
+.string "Aucun media trouv"
+.byte 0xc3,0xa9
+.string " pour cet utilisateur "
+.res alert_detail_Label_title
+.bin
+.string "Alert Detail"
+.res alert_detail_Label_title_FR
+.bin
+.string "D"
+.byte 0xc3,0xa9
+.string "tail de l'alerte"
+.res alert_label_asset
+.bin
+.string "Asset : "
+.res alert_label_asset_FR
+.bin
+.string "Serveur : "
+.res alert_label_plugin
+.bin
+.string "Plugin : "
+.res alert_label_plugin_FR
+.bin
+.string "Application : "
+.res alert_label_information
+.bin
+.string "Information : "
+.res alert_label_information_FR
+.bin
+.string "Information : "
 .res authentication_new_media_title
 .bin
 .string "New terminal ?"
@@ -313,13 +451,13 @@
 .string "Choose your mode of authentication"
 .res authentication_mode_page_title_FR
 .bin
-.string "Quel mode d'authentification voulez vous choisr pour cette application ?"
+.string "Mode d'authentification"
 .res authentication_mode_credential
 .bin
 .string "With credential"
 .res authentication_mode_credential_FR
 .bin
-.string "Avec les identifiants"
+.string "Saisie des identifiants"
 .res authentication_mode_none
 .bin
 .string "Remember me"
@@ -357,7 +495,7 @@
 .label "res-types"
 .res
 .bin
-.byte 0x6f,0x00,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x04
+.byte 0x8e,0x00,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02,0x02
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
@@ -366,4 +504,6 @@
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
 .byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
-.byte 0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04
+.byte 0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04,0x04

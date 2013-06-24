@@ -365,14 +365,17 @@ String Convert::URLdecode(const String& c)
 void Convert::HTMLdecode(String& input)
 {
 	int compt = 0;
+	int position;
 	    while( compt != -1)
 	    {
 //	    	lprintfln("avant le if");
 //	    	lprintfln("avant %d", input.find("<br />",compt));
-	        if(input.find("<br />",compt) < input.size() && input.find("<br />",compt) >= 0 )
+	    	position = input.find("<br />",compt);
+	        if(position < input.size() && position >= 0 )
 	        {
 //	        	lprintfln("dans le if");
 	            	input.remove(input.find("<br />", compt), 6);
+	            	input.insert(position, "    ");
 
 	        }
 	        else

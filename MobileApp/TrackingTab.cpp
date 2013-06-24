@@ -79,31 +79,29 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 	// Check that the root is valid.
 	// The root type should have type with above data ARRAY.
 
-
-
 	if (NULL == root || YAJLDom::Value::NUL == root->getType()
 			|| YAJLDom::Value::ARRAY != root->getType()) {
 		lprintfln("Root node is not valid\n");
 
 	} else {
 		lprintfln("Root node is valid :) \n");
-	lprintfln("%d\n", root->getNumChildValues());
+		lprintfln("%d\n", root->getNumChildValues());
+		lListNoAlert->setVisible(false);
+//		lTrackingTitle->setText(
+//								Convert::tr(traking_list_Label_title_alert + LANGUAGE));
+		STime lastSendAlertTmp;
+		if (root->getNumChildValues() > 0) {
+			MAUtil::YAJLDom::Value* valueTmp0 = root->getValueByIndex(0);
+			String dateTmp = valueTmp0->getValueForKey("send_date")->toString();
+			lastSendAlertTmp = Convert::toSTime(dateTmp);
+		}
 
-	STime lastSendAlertTmp;
-	if(root->getNumChildValues() > 0)
-	{
-		MAUtil::YAJLDom::Value* valueTmp0 = root->getValueByIndex(0);
-		String dateTmp = valueTmp0->getValueForKey("send_date")->toString();
-		lastSendAlertTmp = Convert::toSTime(dateTmp);
-	}
-
-
-	if (lastSendAlertTmp > lastSendAlert) {
+		if (lastSendAlertTmp > lastSendAlert) {
 //		Screen::setMainWidget(new ActivityIndicator());
-		Screen::removeChild(mainLayout);
+//			Screen::removeChild(mainLayout);
 
-		//////clean la memoire
-		int index = mapLVITA.size();
+			//////clean la memoire
+			int index = mapLVITA.size();
 			for (int idx1 = 0; idx1 < index; idx1++) {
 				mapHLTA[idx1]->removeChild(mapLTAHeure[idx1]);
 				mapHLTA[idx1]->removeChild(mapLTADesc[idx1]);
@@ -118,79 +116,79 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 			mapLTAHeure.clear();
 			mapLTADesc.clear();
 			mapLVITA.clear();
-		//////
+			//////
 
-	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
-		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
-		lTrackingTitle->setText(Convert::tr(traking_list_Label_title_alert + LANGUAGE));
-		mapTrackingAlertDate[idx] =
-				valueTmp->getValueForKey("send_date")->toString();
-		lprintfln(mapTrackingAlertDate[idx].c_str());
-		String convert = valueTmp->getValueForKey("content")->toString();
-		Convert::HTMLdecode(convert);
+			for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
+				MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
-		mapLTADesc[idx] = new Label(convert);
-		mapLTADesc[idx]->wrapContentHorizontally ();
-		mapLTADesc[idx]->wrapContentVertically ();
+				mapTrackingAlertDate[idx] = valueTmp->getValueForKey(
+						"send_date")->toString();
+				lprintfln(mapTrackingAlertDate[idx].c_str());
+				String convert = valueTmp->getValueForKey("content")->toString();
+				Convert::HTMLdecode(convert);
+
+				mapLTADesc[idx] = new Label(convert);
+				mapLTADesc[idx]->wrapContentHorizontally();
+				mapLTADesc[idx]->wrapContentVertically();
 //		mapLTADesc[idx]->setMaxNumberOfLines(10);
 //		mapLTADesc[idx] = new MAUI::Label();
 //		mapLTADesc[idx]->setEnabled(false);
 //		mapLTADesc[idx]->setText(convert);
 
-		if(!bCreateUI)
-		{
-			String dateTmp1 = valueTmp->getValueForKey("send_date")->toString();
-			STime lastSendAlertTmp1 = Convert::toSTime(dateTmp1);
+				if (!bCreateUI) {
+					String dateTmp1 =
+							valueTmp->getValueForKey("send_date")->toString();
+					STime lastSendAlertTmp1 = Convert::toSTime(dateTmp1);
 //			lprintfln("%d %d %d %d %d %d", lastSendAlertTmp1.year,lastSendAlertTmp1.mon,lastSendAlertTmp1.day,lastSendAlertTmp1.hour,lastSendAlertTmp1.min,lastSendAlertTmp1.sec);
-			if(lastSendAlertTmp1>lastSendAlert)
-			{
+					if (lastSendAlertTmp1 > lastSendAlert) {
 //				lprintfln("%d %d %d %d %d %d", lastSendAlertTmp1.year,lastSendAlertTmp1.mon,lastSendAlertTmp1.day,lastSendAlertTmp1.hour,lastSendAlertTmp1.min,lastSendAlertTmp1.sec);
 //				lprintfln("%d %d %d %d %d %d", lastSendAlert.year,lastSendAlert.mon,lastSendAlert.day,lastSendAlert.hour,lastSendAlert.min,lastSendAlert.sec);
-				notification = new LocalNotification();
-				notification->setContentBody(mapLTADesc[idx]->getText());
+						notification = new LocalNotification();
+						notification->setContentBody(
+								mapLTADesc[idx]->getText());
 //				lprintfln(valueTmp->getValueForKey("content")->toString().c_str());
-					// Set some platform specific values.
+						// Set some platform specific values.
 
-					if (getPlatform() == ANDROID) {
-						// Set the vibration duration to 5seconds when an alert is displayed.
-						notification->setVibrate(true);
-						notification->setVibrateDuration(1);
-						notification->setPlaySound(true);
-						// Set notification title and ticker.
-	//				    notification->setContentTitle("My message title");
-						notification->setTickerText("Nouvelle alerte");
-					} else {
-						// Set a badge number.
-						notification->setBadgeNumber(6);
-						// Set the title of the action button or slider.
-						notification->setAlertAction("ok");
+						if (getPlatform() == ANDROID) {
+							notification->setVibrate(true);
+							notification->setVibrateDuration(1);
+							notification->setPlaySound(true);
+							// Set notification title and ticker.
+							//				    notification->setContentTitle("My message title");
+							notification->setTickerText("Nouvelle alerte");
+						} else {
+							// Set a badge number.
+							notification->setBadgeNumber(6);
+							// Set the title of the action button or slider.
+							notification->setAlertAction("ok");
+						}
+//						NotificationManager::getInstance()->unscheduleLocalNotification(
+//								notification);
+						NotificationManager::getInstance()->scheduleLocalNotification(
+								notification);
 					}
-					NotificationManager::getInstance()->unscheduleLocalNotification(notification);
-					NotificationManager::getInstance()->scheduleLocalNotification(notification);
+				}
+
+				mapHLTA[idx] = new HorizontalLayout();
+				mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));
+//				mapLTAHeure[idx]->setFontSize(18);
+
+				mapLTAHeure[idx]->setBackgroundColor(0x666666);
+				MAExtent size = maGetScrSize();
+				int mScreenWidth = EXTENT_X(size);
+				mapLTAHeure[idx]->setWidth(mScreenWidth/4);
+				mapHLTA[idx]->addChild(mapLTAHeure[idx]);
+
+				mapHLTA[idx]->addChild(mapLTADesc[idx]);
+				mapLVITA[idx] = new ListViewItem();
+				mapLVITA[idx]->addChild(mapHLTA[idx]);
+
+				lValert->addChild(mapLVITA[idx]);
 			}
+
+			lastSendAlert = lastSendAlertTmp;
+//			Screen::setMainWidget(mainLayout);
 		}
-
-			mapHLTA[idx] = new HorizontalLayout();
-			mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));
-			mapLTAHeure[idx]->setFontSize(18);
-
-			mapLTAHeure[idx]->setBackgroundColor(0x666666);
-			mapLTAHeure[idx]->setWidth(110);
-			mapHLTA[idx]->addChild(mapLTAHeure[idx]);
-
-			mapHLTA[idx]->addChild(mapLTADesc[idx]);
-			mapLVITA[idx] = new ListViewItem();
-			mapLVITA[idx]->addChild(mapHLTA[idx]);
-
-			lValert->addChild(mapLVITA[idx]);
-		}
-
-		lastSendAlert = lastSendAlertTmp;
-		if (bCreateUI) {
-			bCreateUI = false;
-		}
-		Screen::setMainWidget(mainLayout);
-	}
 	}
 }
 
@@ -202,13 +200,17 @@ void TrackingTab::createUI() {
 	lprintfln(urlTmp.c_str());
 
 	connectUrl(urlTmp, TRACKING_LIST);
-	mainLayout = new VerticalLayout();
-	// Make the layout fill the entire screen.
-	mainLayout->fillSpaceHorizontally();
-	mainLayout->fillSpaceVertically();
-	lTrackingTitle = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
-	lTrackingTitle->fillSpaceHorizontally();
-	mainLayout->addChild(lTrackingTitle);
+	mainLayout = new Page(Convert::tr(traking_list_Label_title_alert + LANGUAGE));
+	lListNoAlert = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
+	mainLayout->addChild(lListNoAlert);
+//	mainLayout = new VerticalLayout();
+//	// Make the layout fill the entire screen.
+//	mainLayout->fillSpaceHorizontally();
+//	mainLayout->fillSpaceVertically();
+
+//	lTrackingTitle = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
+//	lTrackingTitle->fillSpaceHorizontally();
+//	mainLayout->addChild(lTrackingTitle);
 	// Add the layout as the root of the screen's widget tree.
 //	Screen::setMainWidget(new ActivityIndicator());
 		Screen::setMainWidget(mainLayout);
@@ -226,7 +228,7 @@ void TrackingTab::createUI() {
 
 void TrackingTab::connectUrl(String url, eTrakingTab fct) {
 	//verifie si on est connecté
-//		MACellInfo ci;
+		MACellInfo ci;
 //		int res;
 //		res = maGetCellInfo(&ci);
 //		lprintfln("maGetCellInfo: %i\n", res);

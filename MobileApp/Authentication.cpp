@@ -10,8 +10,10 @@
 
 Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		Screen(), LANGUAGE(language) {
-	activityIndicator = new ActivityIndicator();
-	Screen::setMainWidget(activityIndicator);
+	mActivityPage = new ActivityPage();
+//	activityIndicator = new ActivityIndicator();
+//	Screen::setMainWidget(activityIndicator);
+	Screen::setMainWidget(mActivityPage);
 	this->show();
 //	Environment::getEnvironment().addKeyListener(this);
 //	authenticationAccepted = false;
@@ -21,7 +23,7 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	_tokenConnection = "";
 	_tokenMobile = "";
 	_login = "";
-
+//	tryToWrite(_login,_login,_login,_login,_idMobile);
 	String config;
 	eFile eFileTmp = tryToRead(config);
 	if (eFileTmp == FILE_NOT_EXIST) {
@@ -29,9 +31,10 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	} else if (eFileTmp == FILE_OPEN_ERROR) {
 		maPanic(1, "ERROR FILE STRORAGE");
 	} else {
-		Convert::formatJSONBeforeParse(config);
-		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
-				(const unsigned char*) config.c_str(), config.size());
+			Convert::formatJSONBeforeParse(config);
+					MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+							(const unsigned char*) config.c_str(), config.size());
+
 		_modeAuth = root->getValueForKey("authentication_mode")->toString();
 		_idMobile = root->getValueForKey("id_media_value")->toInt();
 		_tokenConnection = root->getValueForKey("token_authent")->toString();
@@ -78,10 +81,8 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		maReadData(data, jsonData, 0, maGetDataSize(data));
 		String jsonTmp = jsonData;
 		Convert::formatJSONBeforeParse(jsonTmp);
-		lprintfln("début parse");
 		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
 				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
-		lprintfln("fin parse");
 		switch (fonction) {
 		case USER_TOKEN:
 			parseJSONUserToken(root);
@@ -275,7 +276,7 @@ void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root) {
 	} else {
 		lprintfln("Root node is valid :) \n");
 		_tokenConnection = root->getValueForKey("token")->toString();
-		lprintfln(_tokenConnection.c_str());
+//		lprintfln(_tokenConnection.c_str());
 		_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
 		//tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
 		if (_tokenMobile == "") {
@@ -299,22 +300,22 @@ void Authentication::authenticationAccepted() {
 
 void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
 		String jsonMessage) {
-
+	Screen::setMainWidget(mActivityPage);
 	lprintfln("connectUrl");
 	lprintfln(url.c_str());
 
 	if (mIsConnected == false) {
 		mIsConnected = true;
 		fonction = fct;
-		lprintfln(url.c_str());
+//		lprintfln(url.c_str());
 		if (verb == GET) {
-			lprintfln("GET");
+//			lprintfln("GET");
 			int tmp = this->get(url.c_str());
 			lprintfln("GET send = %d", tmp);
 		} else if (verb == POST) {
-			lprintfln("POST");
+//			lprintfln("POST");
 			lprintfln(jsonMessage.c_str());
-			lprintfln("jsonMessage.size() : %d ", jsonMessage.size());
+//			lprintfln("jsonMessage.size() : %d ", jsonMessage.size());
 			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
 //			Vector<String> test; test.clear();
 
@@ -487,9 +488,10 @@ void Authentication::createUI() {
 }
 
 void Authentication::buttonClicked(Widget* button) {
-	lprintfln("bouton click");
+//	lprintfln("bouton click");
 	if (button == bValidate) {
-		Screen::setMainWidget(activityIndicator);
+//		Screen::setMainWidget(activityIndicator);
+//		Screen::setMainWidget(mActivityPage);
 		_login = eLogin->getText();
 
 		String urlTmp = HOST;
@@ -503,7 +505,8 @@ void Authentication::buttonClicked(Widget* button) {
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 	} else if (button == bAddNewMedia) {
 		if (newMediaNameValid()) {
-			Screen::setMainWidget(activityIndicator);
+//			Screen::setMainWidget(activityIndicator);
+//			Screen::setMainWidget(mActivityPage);
 			maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
 					MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 			String urlTmp = HOST;
@@ -520,7 +523,7 @@ void Authentication::buttonClicked(Widget* button) {
 
 void Authentication::listViewItemClicked(ListView* listView,
 		ListViewItem* listViewItem) {
-	lprintfln("Clicked");
+//	lprintfln("Clicked");
 //	if (listView == lVAuthenticationMode) {
 //		if (listViewItem == lVIModeNone) {
 //			_modeAuth = "none";
@@ -535,7 +538,8 @@ void Authentication::listViewItemClicked(ListView* listView,
 	if (listView == lVMedia) {
 		for (int i = 0; i < mapLVIMedia.size(); i++) {
 			if (mapLVIMedia[i] == listViewItem) {
-				Screen::setMainWidget(activityIndicator);
+//				Screen::setMainWidget(activityIndicator);
+//				Screen::setMainWidget(mActivityPage);
 				_idMobile = mapMediaID[i];
 				_tokenMobile = mapMediaToken[i];
 				String urlTmp = HOST;

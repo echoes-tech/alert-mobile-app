@@ -35,6 +35,7 @@
 		}
 
 void OptionTab::createUI() {
+	icreateUI = 0;
 	String config;
 	eFile eFileTmp = tryToRead(config);
 	if (eFileTmp == FILE_NOT_EXIST) {
@@ -51,16 +52,27 @@ void OptionTab::createUI() {
 		_tokenMobile = root->getValueForKey("token_mobile")->toString();
 		_login = root->getValueForKey("login")->toString();
 
-		vLOption = new VerticalLayout();
-		vLOption->fillSpaceHorizontally();
-		vLOption->fillSpaceVertically();
+		vLOption = new Page("Gestion du compte");
+//		vLOption = new VerticalLayout();
+//		vLOption->fillSpaceHorizontally();
+//		vLOption->fillSpaceVertically();
+//
+//		Label* title = new Label("Gestion du compte");
+//		title->fillSpaceHorizontally();
+//		vLOption->addChild(title);
+//
+//		Label* line = new Label();
+//		line->setHeight(2);
+//		line->fillSpaceHorizontally();
+//		line->setBackgroundColor(0xFFFFFF);
+//		vLOption->addChild(line);
 
 		lAuthenticationMode = new Label(
 				Convert::tr(authentication_mode_page_title + LANGUAGE));
 		vLOption->addChild(lAuthenticationMode);
 
 		rGAuthenticationChoice = new RadioGroup();
-		rGAuthenticationChoice->addRadioGroupListener(this);
+
 		vLOption->addChild(rGAuthenticationChoice);
 
 		rBModeCredential = new RadioButton();
@@ -75,25 +87,33 @@ void OptionTab::createUI() {
 		} else {
 			rGAuthenticationChoice->setChecked(rBModeCredential);
 		}
-		rGAuthenticationChoice->fillSpaceVertically();
+//		rGAuthenticationChoice->fillSpaceVertically();
+		rGAuthenticationChoice->addRadioGroupListener(this);
+
+		vLOption->setBreakLine();
 
 		Screen::setMainWidget(vLOption);
 	}
 }
 
 
-void OptionTab::radioButtonSelected(NativeUI::RadioGroup* , int, NativeUI::RadioButton* rB)
-{
-	if(rB == rBModeCredential)
-		{
-			_modeAuth = "credential";
-		}
-		else if (rB == rBModeNone)
-		{
-			_modeAuth = "none";
-		}
+void OptionTab::radioButtonSelected(NativeUI::RadioGroup*, int,
+		NativeUI::RadioButton* rB) {
 
-		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
+	lprintfln("radioButtonSelected");
+	if (rB == rBModeCredential) {
+		_modeAuth = "credential";
+	} else if (rB == rBModeNone) {
+		_modeAuth = "none";
+	}
+	if (icreateUI > 1) {
+		if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+				_idMobile) == FILE_CLOSE) {
+			maToast(Convert::tr(alert_change_mode_auth_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
+		}
+	} else {
+		icreateUI++;
+	}
 }
 
 
@@ -101,12 +121,13 @@ void OptionTab::radioButtonSelected(NativeUI::RadioGroup* , int, NativeUI::Radio
 void OptionTab::orientationChange(int screenOrientation) {
 
 	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
-		lprintfln("Orientation paysage");
+//		lprintfln("Orientation paysage");
 		Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
 	} else // Portrait
 	{
-		lprintfln("Orientation Portrait");
+//		lprintfln("Orientation Portrait");
 		Screen::setTitle("");
 //		Screen::setIcon(ICON_OPTION);
 	}
 }
+

@@ -15,10 +15,11 @@
 <property key="build.prefs:additional.libraries/Release" value="mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajl.lib,  MAP.lib, MAUI.lib"/>
 <property key="build.prefs:additional.library.paths/Debug" value="%mosync-home%/lib/pipe"/>
 <property key="build.prefs:additional.library.paths/Release" value="%mosync-home%/lib/pipe"/>
-<property key="build.prefs:app.name/Debug" value="ECHOES Alert App"/>
+<property key="build.prefs:app.name/Debug" value="ECHOES Alert"/>
 <property key="build.prefs:app.name/Release" value="ECHOES Alert App"/>
 <property key="build.prefs:app.output.path/Debug" value="Release/"/>
 <property key="build.prefs:app.permissions" value="Autostart File\ Storage Internet\ Access Push\ Notifications Vibration"/>
+<property key="build.prefs:app.version/Debug" value="0.1"/>
 <property key="build.prefs:extra.link.sw/Debug" value=""/>
 <property key="build.prefs:extra.link.sw/Release" value=""/>
 <property key="build.prefs:extra.res.sw/Debug" value=""/>
