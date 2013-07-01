@@ -27,6 +27,7 @@ ScreenMain::~ScreenMain() {
 }
 
 void ScreenMain::createUI(String loginToken, long long idMobile) {
+	maScreenSetOrientation(MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 	MAExtent size = maGetScrSize();
 	int mScreenWidth = EXTENT_X(size);
 	int mScreenHeight = EXTENT_Y(size);
@@ -46,9 +47,7 @@ void ScreenMain::createUI(String loginToken, long long idMobile) {
 //	 Add them as tabs.
 //	this->addTab(homeTab); //tab index 0;
 	this->addTab(trackingTab); //tab index 0;
-
 	this->addTab(alertTab); //tab index 1;
-
 	this->addTab(optionTab); //tab index 2;
 
 	alertTab->addScreenListener(this);
@@ -58,6 +57,12 @@ void ScreenMain::createUI(String loginToken, long long idMobile) {
 
 	this->show();
 	uiCreated = true;
+	// iOS and Windows Phone.
+	maScreenSetSupportedOrientations(
+			MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
+					| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
+					| MA_SCREEN_ORIENTATION_PORTRAIT
+					| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 }
 
 void ScreenMain::pullRequest() {
@@ -95,7 +100,6 @@ void ScreenMain::handleKeyPress(int keyCode) {
  * event handling method.
  */
 void ScreenMain::customEvent(const MAEvent& event) {
-//	lprintfln("TTTTTTTT test event1 %d", event.type);
 	if (EVENT_TYPE_ALERT == event.type) {
 		if (1 == event.alertButtonIndex) {
 			maPanic(1, Convert::tr(Screen_Main_close_app + LANGUAGE));
@@ -105,7 +109,7 @@ void ScreenMain::customEvent(const MAEvent& event) {
 		} else if (3 == event.alertButtonIndex) {
 		}
 	} else if (EVENT_TYPE_ALERT_DISMISSED == event.type
-			&& maAlertPrintFirstTime) { //lorsque l'on appuit sur le boutton BACK trop longtemps cet event est envoyer et supprime le chois.
+			&& maAlertPrintFirstTime) { //lorsqu'on appuit sur le boutton BACK trop longtemps cet event est envoyer et supprime le choix.
 		maAlertPrintFirstTime = false;
 		maAlert("", "", Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
 				Convert::tr(Screen_Main_Button_home + LANGUAGE),

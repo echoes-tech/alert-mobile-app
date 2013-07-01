@@ -26,13 +26,13 @@ public:
 		getSystemConnection();
 
 		//	maScreenSetOrientation(MA_SCREEN_ORIENTATION_DYNAMIC);
-
-			// iOS and Windows Phone.
-			maScreenSetSupportedOrientations(
-					MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
-							| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
-							| MA_SCREEN_ORIENTATION_PORTRAIT
-							| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
+//maScreenSetOrientation(MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
+//			// iOS and Windows Phone.
+//			maScreenSetSupportedOrientations(
+//					MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
+//							| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
+//							| MA_SCREEN_ORIENTATION_PORTRAIT
+//							| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 
 		mMainScreen = new ScreenMain();
 		addTimer(this, TIMER_PERIOD, 0);
@@ -47,6 +47,7 @@ public:
 	// send timer event to trackingTabObject
 	void runTimerEvent() {
 		mMainScreen->pullRequest();
+//		maToast("timer", MA_TOAST_DURATION_LONG); // TODO a supprimer juste pour test
 	}
 
 	/**
@@ -156,17 +157,14 @@ public:
 
 	virtual void focusLost() {
 		lprintfln("focus lost");
-		toto = 1;
 	}
 
 	virtual void focusGained() {
 		lprintfln("focus gained");
-		toto = 0;
 	}
 
 private:
 	ScreenMain* mMainScreen;
-	int toto;
 };
 
 /**

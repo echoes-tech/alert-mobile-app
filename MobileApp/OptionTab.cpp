@@ -35,7 +35,7 @@
 		}
 
 void OptionTab::createUI() {
-	icreateUI = 0;
+//	icreateUI = 0;
 	String config;
 	eFile eFileTmp = tryToRead(config);
 	if (eFileTmp == FILE_NOT_EXIST) {
@@ -51,21 +51,10 @@ void OptionTab::createUI() {
 		_tokenConnection = root->getValueForKey("token_authent")->toString();
 		_tokenMobile = root->getValueForKey("token_mobile")->toString();
 		_login = root->getValueForKey("login")->toString();
+		_vibrate = root->getValueForKey("vibrate")->toBoolean();
+		_notification = root->getValueForKey("notification")->toBoolean();
 
 		vLOption = new Page("Gestion du compte");
-//		vLOption = new VerticalLayout();
-//		vLOption->fillSpaceHorizontally();
-//		vLOption->fillSpaceVertically();
-//
-//		Label* title = new Label("Gestion du compte");
-//		title->fillSpaceHorizontally();
-//		vLOption->addChild(title);
-//
-//		Label* line = new Label();
-//		line->setHeight(2);
-//		line->fillSpaceHorizontally();
-//		line->setBackgroundColor(0xFFFFFF);
-//		vLOption->addChild(line);
 
 		lAuthenticationMode = new Label(
 				Convert::tr(authentication_mode_page_title + LANGUAGE));
@@ -88,10 +77,37 @@ void OptionTab::createUI() {
 			rGAuthenticationChoice->setChecked(rBModeCredential);
 		}
 //		rGAuthenticationChoice->fillSpaceVertically();
-		rGAuthenticationChoice->addRadioGroupListener(this);
+
 
 		vLOption->setBreakLine();
 
+		lNotificationOption = new Label(Convert::tr(alert_notification_option_sub_title + LANGUAGE));
+		vLOption->addChild(lNotificationOption);
+
+		hlSetNotification = new HorizontalLayout();
+		hlSetNotification->wrapContentVertically();
+		lSetNotification = new Label(Convert::tr(alert_notification_display + LANGUAGE));
+		cBSetNotification = new CheckBox();
+		cBSetNotification->setState(_notification);
+		cBSetNotification->addCheckBoxListener(this);
+		hlSetNotification->addChild(cBSetNotification);
+		hlSetNotification->addChild(lSetNotification);
+
+		vLOption->addChild(hlSetNotification);
+
+		hlSetVibration = new HorizontalLayout();
+		hlSetVibration->wrapContentVertically();
+		lSetVibration = new Label(Convert::tr(alert_notification_option_vibrate + LANGUAGE));
+		cBSetVibration = new CheckBox();
+		cBSetVibration->setState(_vibrate);
+		cBSetVibration->addCheckBoxListener(this);
+		hlSetVibration->addChild(cBSetVibration);
+		hlSetVibration->addChild(lSetVibration);
+		vLOption->addChild(hlSetVibration);
+
+		vLOption->setBreakLine();
+
+		rGAuthenticationChoice->addRadioGroupListener(this);
 		Screen::setMainWidget(vLOption);
 	}
 }
@@ -106,17 +122,45 @@ void OptionTab::radioButtonSelected(NativeUI::RadioGroup*, int,
 	} else if (rB == rBModeNone) {
 		_modeAuth = "none";
 	}
-	if (icreateUI > 1) {
-		if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-				_idMobile) == FILE_CLOSE) {
-			maToast(Convert::tr(alert_change_mode_auth_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
+
+//	if (icreateUI > 1) {
+		if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification) != FILE_CLOSE) {
+			maToast(Convert::tr(alert_change_mode_auth_no_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
 		}
-	} else {
-		icreateUI++;
-	}
+//	} else {
+//		icreateUI++;
+//	}
 }
 
-
+void OptionTab::checkBoxStateChanged(NativeUI::CheckBox* cB, bool b)
+{
+	lprintfln("bool %s",b);
+	if(cB == cBSetNotification)
+	{
+		_notification = cBSetNotification->isChecked();
+		if(_notification)
+		{
+		lprintfln("_notification %s", _notification);
+		}
+	}
+	else if (cB == cBSetVibration)
+	{
+		_vibrate = cBSetVibration->isChecked();
+		if(_vibrate)
+				{
+				lprintfln("_vibrate %s", _vibrate);
+				}
+	}
+//	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
+	if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification) != FILE_CLOSE) {
+				maToast(Convert::tr(alert_change_mode_auth_no_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
+			}
+//	if (icreateUI > 1) {
+//			if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification) == FILE_CLOSE) {
+//				maToast(Convert::tr(alert_change_mode_auth_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
+//			}
+//	}
+}
 
 void OptionTab::orientationChange(int screenOrientation) {
 

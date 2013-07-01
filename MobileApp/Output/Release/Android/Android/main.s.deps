@@ -99,6 +99,7 @@
   c:/MoSync/include/notification/LocalNotification.h \
   c:/MoSync/include/notification/NotificationManager.h \
   c:/MoSync/include/notification/LocalNotification.h \
+  c:/MoSync/include/Notification/LocalNotificationListener.h \
   c:/MoSync/include/IX_CELLID.h \
   C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
@@ -123,11 +124,10 @@
   c:/MoSync/include/NativeUI/ListView.h \
   c:/MoSync/include/NativeUI/ListViewItem.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h \
-  c:/MoSync/include/MTXml/MTXml.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/HomeTab.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/OptionTab.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Authentication.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ScreenMain.h

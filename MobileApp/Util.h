@@ -148,7 +148,7 @@ static MAUtil::String getLocalPath() {
 
 static eFile tryToRead(MAUtil::String &config) {
     // Construct the filename.
-    MAUtil::String filename = getLocalPath() + "EA_mobile_conf.txt";
+    MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
     // Open the file handle.
     lprintfln("Open '%s'\n", filename.c_str());
@@ -178,6 +178,8 @@ static eFile tryToRead(MAUtil::String &config) {
     res = maFileRead(file, data, size);
     MAASSERT(res == 0);
     config = data;
+    lprintfln(config.c_str());
+//    maToast(data,MA_TOAST_DURATION_LONG);
     // Print some data.
 //    data[300] = 0;
 //    lprintfln("%s\n", data);
@@ -187,13 +189,13 @@ static eFile tryToRead(MAUtil::String &config) {
     res = maFileClose(file);
     MAASSERT(res == 0);
 
-    lprintfln("Done.\n");
+//    lprintfln("Done.\n");
     return FILE_CLOSE;
 }
 
-static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUtil::String &tokenAuthent, MAUtil::String &mode, long long &idMedia) {
+static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUtil::String &tokenAuthent, MAUtil::String &mode, long long &idMedia, bool vibrate, bool notification) {
     // Construct the filename.
-    MAUtil::String filename = getLocalPath() + "EA_mobile_conf.txt";
+    MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
     // Open the file handle.
 //    printf("Open '%s'\n", filename.c_str());
@@ -219,11 +221,21 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
     }
     // In either case, we now have an empty file at our disposal.
 
-    // Write some data.
-    MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \"" + tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent + "\",\"authentication_mode\" : \"" + mode + "\",\"id_media_value\" : " + Convert::toString(idMedia) +"}";
+    // Write data.
+    String sVibrate = "true";
+    String sNotification = "true";
+    if(vibrate == false){
+    	sVibrate = "false";
+    }
+    if(notification == false){
+    	sNotification = "false";
+    }
+
+    MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \"" + tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent + "\",\"authentication_mode\" : \"" + mode + "\",\"id_media_value\" : " + Convert::toString(idMedia)  + ",\"notification\" : " + sNotification + ",\"vibrate\" : " + sVibrate + "}";
     //    static const char data[] = tmp.c_str();
     res = maFileWrite(file, tmp.c_str(), tmp.size());
-
+    lprintfln(tmp.c_str());
+//    maToast(tmp.c_str(),MA_TOAST_DURATION_LONG);
 //    res = maFileWrite(file, data, sizeof(data));
     MAASSERT(res == 0);
 

@@ -9,7 +9,7 @@
 #define AUTHENTICATION_H_
 
 #include <NativeUI/Widgets.h>// Include all widgets
-#include <NativeUI/Screen.h>
+//#include <NativeUI/Screen.h>
 #include <Wormhole/HighLevelHttpConnection.h>
 #include <Wormhole/MessageStreamJSON.h>
 #include <mastdlib.h>
@@ -22,11 +22,11 @@
 #include "ActivityPage.h"
 
 using namespace Wormhole;
-using namespace MAUtil;
+//using namespace MAUtil;
 using namespace NativeUI;
 
 
-class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener
+class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener, public ScreenListener
 {
 public:
 
@@ -60,6 +60,8 @@ public:
 	 virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
 	 virtual void editBoxEditingDidBegin(EditBox* editBox) {maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "true");}
 
+	 virtual void orientationChanged(Screen* screen, int screenOrientation);
+
 	void parseJSONUserToken(MAUtil::YAJLDom::Value* root);
 	void parseJSONMediasList(MAUtil::YAJLDom::Value* root);
 	void parseJSONPostMediaValue(MAUtil::YAJLDom::Value* root);
@@ -68,7 +70,6 @@ public:
 
 	void createUI();
 	void createPageMobileChoice();
-//	void createPageAuthenticationMode();
 	void authenticationAccepted();
 
 	bool newMediaNameValid();
@@ -81,6 +82,8 @@ private:
 	bool mIsConnected;
 	int connERR;
 
+	bool _vibrate;
+	bool _notification;
 	String _LOGINTOKEN;
 	String _login;
 	String _tokenConnection;
@@ -119,18 +122,6 @@ private:
 	Label* lNewMediaName;
 	EditBox* ebNewMediaName;
 	Button* bAddNewMedia;
-
-	//	View 3
-//	VerticalLayout *vLAuthenticationModeChoice;
-//	Label* authenticationModeTitle;
-//
-//	ListView* lVAuthenticationMode;
-//	ListViewItem* lVIModeCredential;
-//	Label* lModeCredential;
-//	ListViewItem* lVIModeNone;
-//	Label* lModeNone;
-////	ListViewItem* lVIModePin;
-
 
 };
 

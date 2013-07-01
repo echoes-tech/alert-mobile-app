@@ -27,7 +27,7 @@ public:
 
 	String getMemo();
 
-	void setBreakLine();
+	void setBreakLine(int height = 2, int color = 0xFFFFFF);
 	/**
 	 * Destructor.
 	 */

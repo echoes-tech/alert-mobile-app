@@ -8,11 +8,11 @@
 #ifndef TRACKINGTAB_H_
 #define TRACKINGTAB_H_
 
-#include <ma.h>
-#include <MAUtil/String.h>		// C++ String class
-#include <MAUtil/Moblet.h>		// Moblet class
+//#include <ma.h>
+//#include <MAUtil/String.h>		// C++ String class
+//#include <MAUtil/Moblet.h>		// Moblet class
 
-#include <conprint.h>			// lprintfln for logging
+//#include <conprint.h>			// lprintfln for logging
 
 #include <NativeUI/Widgets.h>// Include all widgets
 #include <MAP/DateTime.h>
@@ -21,26 +21,29 @@
 #include "Util.h"
 #include "notification/LocalNotification.h"
 #include "notification/NotificationManager.h"
-
+#include "Notification/LocalNotificationListener.h"
 #include <IX_CELLID.h>
 
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "IncludeFile.h"
 #include "Page.h"
+#include "ActivityPage.h"
 
-#include <MTXml/MTXml.h>
+//#include <MTXml/MTXml.h>
 
-#define BUFSIZE 1024
+//#define BUFSIZE 1024
 
 using namespace Wormhole;
-using namespace MAUtil;
+//using namespace MAUtil;
 using namespace NativeUI;
 using namespace MAPUtil;
+using namespace Notification;
+
 using Notification::NotificationManager;
 using Notification::LocalNotification;
 
-class TrackingTab : public NativeUI::Screen, public HighLevelHttpConnection
+class TrackingTab : public NativeUI::Screen, public HighLevelHttpConnection, public LocalNotificationListener
 {
 public:
 
@@ -62,22 +65,25 @@ public:
 
 	void connectUrl(String url, eTrakingTab fct);
 	void dataDownloaded(MAHandle , int );
+	virtual void didReceiveLocalNotification(Notification::LocalNotification& mNotif){lprintfln("LOCALE notif"); LocalNotification test = mNotif;maNotificationLocalUnschedule(test.getHandle()); maNotificationLocalDestroy(test.getHandle());};
 
 	void createUI();
 
 	void orientationChange(int screenOrientation);
 
 	void runTimerEvent();
-//	void drawChangeVerticalHorizontal(int width, int height);
 
 private:
+	ActivityPage* activityPage;
+
+	MAHandle notificationHandle; //test
 	String _LOGINTOKEN;
 	long long _IDMOBILE;
 	int LANGUAGE;
 	int connERR;
 
 	eTrakingTab fonction;
-	char mBuffer[BUFSIZE];
+//	char mBuffer[BUFSIZE];
 	bool mIsConnected;
 	bool bCreateUI;
 
@@ -85,6 +91,7 @@ private:
 	String contentString;
 
 	Page* mainLayout;
+	int nbNewAlert;
 //	Label *lTrackingTitle;
 	Label *lListNoAlert;
 	ListView *lValert;
@@ -98,9 +105,8 @@ private:
 	 MAUtil::Map<int,Label*> mapLTADesc;
 	 MAUtil::Map<int,Label*> mapLTAHeure;
 
-//	VerticalLayout* mainLayout;
-
 	STime lastSendAlert;
+
 	LocalNotification* notification;
 };
 

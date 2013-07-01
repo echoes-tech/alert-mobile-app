@@ -16,10 +16,11 @@
 <property key="build.prefs:additional.library.paths/Debug" value="%mosync-home%/lib/pipe"/>
 <property key="build.prefs:additional.library.paths/Release" value="%mosync-home%/lib/pipe"/>
 <property key="build.prefs:app.name/Debug" value="ECHOES Alert"/>
-<property key="build.prefs:app.name/Release" value="ECHOES Alert App"/>
+<property key="build.prefs:app.name/Release" value="ECHOES Alert"/>
 <property key="build.prefs:app.output.path/Debug" value="Release/"/>
 <property key="build.prefs:app.permissions" value="Autostart File\ Storage Internet\ Access Push\ Notifications Vibration"/>
 <property key="build.prefs:app.version/Debug" value="0.1"/>
+<property key="build.prefs:app.version/Release" value="0.1"/>
 <property key="build.prefs:extra.link.sw/Debug" value=""/>
 <property key="build.prefs:extra.link.sw/Release" value=""/>
 <property key="build.prefs:extra.res.sw/Debug" value=""/>
@@ -43,6 +44,9 @@
 <property key="excludes/Debug" value=""/>
 <property key="excludes/Release" value=""/>
 <property key="profile.mgr.type" value="0"/>
+<property key="symbian.uids:uid.s60v2uid" value="0x08cd582f"/>
+<property key="symbian.uids:uid.s60v3uid" value="0xeba43acc"/>
 <property key="template.id" value="project.nativeuicpp"/>
+<property key="winmobilecs:guid" value="3b5ef9f0-c221-1030-8070-51f0c31494bf"/>
 </properties>
 </project>

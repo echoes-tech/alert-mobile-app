@@ -6,12 +6,14 @@
  */
 
 #include "TrackingTab.h"
-#include <ma.h>
+
 /**
  * Constructor.
  */
-TrackingTab::TrackingTab(int language, String loginToken, eScreenResolution screenResolution, long long idMobile) :
-		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(idMobile) {
+TrackingTab::TrackingTab(int language, String loginToken,
+		eScreenResolution screenResolution, long long idMobile) :
+		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(
+				idMobile) {
 
 	// Set title and icon of the stack screen.
 	setIcon(ICON_TRACKING + screenResolution);
@@ -30,7 +32,8 @@ TrackingTab::~TrackingTab() {
 void TrackingTab::runTimerEvent() {
 	bCreateUI = false;
 	String urlTmp = HOST;
-	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
+	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE)
+			+ "/trackings/";
 	//		urlTmp += "/plugins/1/informations";
 	urlTmp += _LOGINTOKEN;
 	lprintfln(urlTmp.c_str());
@@ -46,12 +49,12 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 	if (result == RES_OK) {
 		connERR = 0;
 		char * jsonData = new char[maGetDataSize(data) + 1];
-								maReadData(data, jsonData, 0, maGetDataSize(data));
-				String jsonTmp = jsonData;
-				Convert::formatJSONBeforeParse(jsonTmp);
+		maReadData(data, jsonData, 0, maGetDataSize(data));
+		String jsonTmp = jsonData;
+		Convert::formatJSONBeforeParse(jsonTmp);
 
-				MAUtil::YAJLDom::Value* root = YAJLDom::parse((const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
-
+		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
 
 		parseJSONTrackingAlert(root);
 		delete jsonData;
@@ -61,16 +64,15 @@ void TrackingTab::dataDownloaded(MAHandle data, int result) {
 		connERR++;
 		lprintfln("AlertTab DataDownload result = %d", result);
 		lprintfln("DNS resolution error.");
-	}  else if (result != 404) {
+	} else if (result != 404) {
 		connERR++;
 		lprintfln("TrackingTab DataDownload result = %d", result);
 	}
-	if(connERR >= 3)
-	{
+	if (connERR >= 3) {
 		getSystemConnection();
 		String sMessage = "Connection ERROR. ERREUR:";
 		sMessage += Convert::toString(result);
-		maMessageBox("Connection Error", sMessage.c_str() );
+		maMessageBox("Connection Error", sMessage.c_str());
 	}
 }
 
@@ -86,9 +88,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 	} else {
 		lprintfln("Root node is valid :) \n");
 		lprintfln("%d\n", root->getNumChildValues());
-		lListNoAlert->setVisible(false);
-//		lTrackingTitle->setText(
-//								Convert::tr(traking_list_Label_title_alert + LANGUAGE));
+		lListNoAlert->setHeight(0);
+
 		STime lastSendAlertTmp;
 		if (root->getNumChildValues() > 0) {
 			MAUtil::YAJLDom::Value* valueTmp0 = root->getValueByIndex(0);
@@ -97,9 +98,8 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 		}
 
 		if (lastSendAlertTmp > lastSendAlert) {
-//		Screen::setMainWidget(new ActivityIndicator());
-//			Screen::removeChild(mainLayout);
 
+			Screen::setMainWidget(activityPage);
 			//////clean la memoire
 			int index = mapLVITA.size();
 			for (int idx1 = 0; idx1 < index; idx1++) {
@@ -117,55 +117,144 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 			mapLTADesc.clear();
 			mapLVITA.clear();
 			//////
-
+			Screen::setMainWidget(mainLayout);
 			for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
 				MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
 				mapTrackingAlertDate[idx] = valueTmp->getValueForKey(
 						"send_date")->toString();
 				lprintfln(mapTrackingAlertDate[idx].c_str());
-				String convert = valueTmp->getValueForKey("content")->toString();
+				String convert =
+						valueTmp->getValueForKey("content")->toString();
 				Convert::HTMLdecode(convert);
 
 				mapLTADesc[idx] = new Label(convert);
 				mapLTADesc[idx]->wrapContentHorizontally();
 				mapLTADesc[idx]->wrapContentVertically();
-//		mapLTADesc[idx]->setMaxNumberOfLines(10);
-//		mapLTADesc[idx] = new MAUI::Label();
-//		mapLTADesc[idx]->setEnabled(false);
-//		mapLTADesc[idx]->setText(convert);
 
 				if (!bCreateUI) {
 					String dateTmp1 =
 							valueTmp->getValueForKey("send_date")->toString();
 					STime lastSendAlertTmp1 = Convert::toSTime(dateTmp1);
-//			lprintfln("%d %d %d %d %d %d", lastSendAlertTmp1.year,lastSendAlertTmp1.mon,lastSendAlertTmp1.day,lastSendAlertTmp1.hour,lastSendAlertTmp1.min,lastSendAlertTmp1.sec);
+
 					if (lastSendAlertTmp1 > lastSendAlert) {
+						String config;
+						tryToRead(config);
+						Convert::formatJSONBeforeParse(config);
+						MAUtil::YAJLDom::Value* root = YAJLDom::parse((const unsigned char*) config.c_str(),config.size());
+						bool _vibrate = root->getValueForKey("vibrate")->toBoolean();
+						bool _notification = root->getValueForKey("notification")->toBoolean();
+						if(_notification)
+						{
+							lprintfln("_notification");
+//							maToast("_notification", MA_TOAST_DURATION_SHORT);
+						}
+						else
+						{
+							lprintfln("!_notification");
+//							maToast("!_notification", MA_TOAST_DURATION_SHORT);
+						}
+						if(_vibrate)
+						{
+							lprintfln("_vibrate");
+//							maToast("_vibrate", MA_TOAST_DURATION_SHORT);
+						} else {
+							lprintfln("!_vibrate");
+//							maToast("!_vibrate", MA_TOAST_DURATION_SHORT);
+						}
+						if (_notification) {
+							//TODO gdr : http://jira.mosync.com/browse/MOSYNC-3332 bug pour les notifications elles ne sont pas supprimées de la bar des
+			//					notifications correction lors de la sortie de la vesion 3.3.1
 //				lprintfln("%d %d %d %d %d %d", lastSendAlertTmp1.year,lastSendAlertTmp1.mon,lastSendAlertTmp1.day,lastSendAlertTmp1.hour,lastSendAlertTmp1.min,lastSendAlertTmp1.sec);
 //				lprintfln("%d %d %d %d %d %d", lastSendAlert.year,lastSendAlert.mon,lastSendAlert.day,lastSendAlert.hour,lastSendAlert.min,lastSendAlert.sec);
-						notification = new LocalNotification();
-						notification->setContentBody(
-								mapLTADesc[idx]->getText());
+
+//						lprintfln("maNotificationLocalDestroy(notification->getHandle() %d" , maNotificationLocalDestroy(notification->getHandle()));
+						maNotificationLocalUnschedule(notification->getHandle()); lprintfln("maNotificationLocalUnschedule(notification->getHandle() : %d" , maNotificationLocalUnschedule(notification->getHandle()));
+//						if (notification == NULL) {
+//						if(maNotificationLocalDestroy(notification->getHandle()) == -1)
+//						{
+//							nbNewAlert = 0;
+//						}
+//						if(notification != NULL)
+//						{
+//							delete notification;
+//							lprintfln("notif delete");
+//						}
+
+
+//							notification->setFlag(Notification::NOTIFICATION_FLAG_AUTO_CANCEL);
+//							notification->setDisplayFlag(NOTIFICATION_DISPLAY_DEFAULT);
+
+//						}
+//						nbNewAlert ++;
+//						notification->setContentBody("Vous avez " + Convert::toString(nbNewAlert) + " nouvelle(s) alerte(s)");
+							int res;
+//							res = maNotificationRemove(150260);
+//							lprintfln("Destroy1 %d", res);
+//							if (/*toto != 0*/toto == 0) {
+//								toto = 1;
+//
+//							maNotificationLocalDestroy(toto);
+//							lprintfln("Destroy %d", toto);
+//							}
+//							else{
+//								toto ++;
+//								maNotificationAdd(NOTIFICATION_TYPE_APPLICATION_LAUNCHER, 150260, "test Notificvation", Convert::toString(toto).c_str());
+							notificationHandle = maNotificationLocalCreate();
+							lprintfln("%d", notificationHandle);
+//							}
+							res = maNotificationLocalSetProperty(notificationHandle, MA_NOTIFICATION_LOCAL_CONTENT_BODY, valueTmp->getValueForKey("content")->toString().c_str());
+							lprintfln("%d", res);
+//						notification->setContentBody(valueTmp->getValueForKey("content")->toString().c_str());//// test
 //				lprintfln(valueTmp->getValueForKey("content")->toString().c_str());
 						// Set some platform specific values.
 
 						if (getPlatform() == ANDROID) {
-							notification->setVibrate(true);
-							notification->setVibrateDuration(1);
-							notification->setPlaySound(true);
+
+//							notification->setVibrate(_vibrate);//// test
+
+							if(_vibrate)
+							{
+								res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_VIBRATE,"true");lprintfln("%d", res);
+								res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_VIBRATE_DURATION, "1000");lprintfln("%d", res);
+//							notification->setVibrateDuration(1);//// test
+							}
+							else
+							{
+								res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_VIBRATE, "false");lprintfln("%d", res);
+								res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_VIBRATE_DURATION, "0");lprintfln("%d", res);
+//							notification->setVibrateDuration(0);//// test
+							}
 							// Set notification title and ticker.
-							//				    notification->setContentTitle("My message title");
-							notification->setTickerText("Nouvelle alerte");
+							res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_FLAG, "MA_NOTIFICATION_FLAG_AUTO_CANCEL");lprintfln("%d", res);
+//							lprintfln("notification->setFlag(NOTIFICATION_FLAG_AUTO_CANCEL) %d",notification->setFlag(NOTIFICATION_FLAG_AUTO_CANCEL));//// test
+							res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_CONTENT_TITLE, "Nouvelle alerte");lprintfln("%d", res);
+//							notification->setContentTitle("Nouvelle alerte");//// test
+							res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_TICKER_TEXT, "Nouvelle alerte");lprintfln("%d", res);
+//							notification->setTickerText("Nouvelle alerte");//// test
 						} else {
 							// Set a badge number.
-							notification->setBadgeNumber(6);
+							res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_BADGE_NUMBER, "6");lprintfln("%d", res);
+//							notification->setBadgeNumber(6);//// test
 							// Set the title of the action button or slider.
-							notification->setAlertAction("ok");
+							res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_ALERT_ACTION, "Ok");lprintfln("%d", res);
+
+//							notification->setAlertAction("ok");//// test
 						}
-//						NotificationManager::getInstance()->unscheduleLocalNotification(
-//								notification);
-						NotificationManager::getInstance()->scheduleLocalNotification(
-								notification);
+						res = maNotificationLocalSetProperty(notificationHandle,MA_NOTIFICATION_LOCAL_PLAY_SOUND, "true");lprintfln("%d", res);
+//						notification->setPlaySound(true);//// test
+
+						res = maNotificationLocalSchedule(notificationHandle);lprintfln("%d", res);
+
+
+
+//						NotificationManager::getInstance()->unscheduleLocalNotification(notification);
+//						NotificationManager::getInstance()->scheduleLocalNotification(notification);//test
+//						lprintfln("maNotificationLocalSchedule(notification->getHandle() %d" , maNotificationLocalSchedule(notification->getHandle()));
+//						maNotificationLocalSchedule(notification->getHandle());
+//						NotificationManager::getInstance()->scheduleLocalNotification(notification);
+
+					}
 					}
 				}
 
@@ -176,7 +265,7 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 				mapLTAHeure[idx]->setBackgroundColor(0x666666);
 				MAExtent size = maGetScrSize();
 				int mScreenWidth = EXTENT_X(size);
-				mapLTAHeure[idx]->setWidth(mScreenWidth/4);
+				mapLTAHeure[idx]->setWidth(mScreenWidth / 4);
 				mapHLTA[idx]->addChild(mapLTAHeure[idx]);
 
 				mapHLTA[idx]->addChild(mapLTADesc[idx]);
@@ -193,50 +282,33 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 }
 
 void TrackingTab::createUI() {
+	activityPage = new ActivityPage();
+	notificationHandle = 0;
+//	notification = new LocalNotification();
+	NotificationManager::getInstance()->addLocalNotificationListener(this);
 	bCreateUI = true;
 	String urlTmp = HOST;
-	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE) + "/trackings/";
+	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE)
+			+ "/trackings/";
 	urlTmp += _LOGINTOKEN;
 	lprintfln(urlTmp.c_str());
 
 	connectUrl(urlTmp, TRACKING_LIST);
-	mainLayout = new Page(Convert::tr(traking_list_Label_title_alert + LANGUAGE));
-	lListNoAlert = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
+	mainLayout = new Page(
+			Convert::tr(traking_list_Label_title_alert + LANGUAGE));
+	lListNoAlert = new Label(
+			Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
 	mainLayout->addChild(lListNoAlert);
-//	mainLayout = new VerticalLayout();
-//	// Make the layout fill the entire screen.
-//	mainLayout->fillSpaceHorizontally();
-//	mainLayout->fillSpaceVertically();
 
-//	lTrackingTitle = new Label(Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
-//	lTrackingTitle->fillSpaceHorizontally();
-//	mainLayout->addChild(lTrackingTitle);
-	// Add the layout as the root of the screen's widget tree.
-//	Screen::setMainWidget(new ActivityIndicator());
-		Screen::setMainWidget(mainLayout);
-//	VerticalLayout* vl = new VerticalLayout();
-//
-//	        vl->addChild(new ActivityIndicator());
-//
-//
-//	        vl->setChildHorizontalAlignment("center");
-//	        vl->setChildVerticalAlignment("center");
+	Screen::setMainWidget(mainLayout);
 
 	lValert = new ListView();
 	mainLayout->addChild(lValert);
 }
 
 void TrackingTab::connectUrl(String url, eTrakingTab fct) {
-	//verifie si on est connecté
-		MACellInfo ci;
-//		int res;
-//		res = maGetCellInfo(&ci);
-//		lprintfln("maGetCellInfo: %i\n", res);
-//		lprintfln("MCC: %s\n", ci.mcc);
-//		lprintfln("MNC: %s\n", ci.mnc);
-//		lprintfln("LAC: %i\n", ci.lac);
-//		lprintfln("CellId: %i\n", ci.cellId);
-//		lprintfln("connecter ou pas ? %d ", maNetworkStatus());
+	Screen::setMainWidget(activityPage);
+
 	lprintfln("connectUrl");
 	if (mIsConnected == false) {
 		mIsConnected = true;
@@ -246,7 +318,6 @@ void TrackingTab::connectUrl(String url, eTrakingTab fct) {
 		lprintfln("Déjà connecté: %d", fonction);
 	}
 }
-
 
 void TrackingTab::orientationChange(int screenOrientation) {
 

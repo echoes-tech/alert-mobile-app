@@ -8,7 +8,6 @@
 #ifndef OPTIONTAB_H_
 #define OPTIONTAB_H_
 
-#include <NativeUI/Screen.h>
 #include <Wormhole/HighLevelHttpConnection.h>
 #include <Wormhole/MessageStreamJSON.h>
 #include <mastdlib.h>
@@ -19,14 +18,14 @@
 #include "Util.h"
 #include "Page.h"
 
-#define BUFSIZE 1024
+//#define BUFSIZE 1024
 
 using namespace Wormhole;
-using namespace MAUtil;
+//using namespace MAUtil;
 using namespace NativeUI;
 
 
-class OptionTab : public NativeUI::Screen, public HighLevelHttpConnection, public RadioGroupListener
+class OptionTab : public NativeUI::Screen, public HighLevelHttpConnection, public RadioGroupListener, public CheckBoxListener
 {
 public:
 	/**
@@ -41,6 +40,8 @@ public:
 
 	void dataDownloaded(MAHandle , int );
 	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
+	virtual void checkBoxStateChanged(NativeUI::CheckBox*, bool);
+
 
 	void orientationChange(int screenOrientation);
 
@@ -56,14 +57,23 @@ private:
 	String _tokenConnection;
 	String _tokenMobile;
 	String _login;
+	bool _vibrate;
+	bool _notification;
 
 	Page* vLOption;
-//	VerticalLayout* vLOption;
 
 	Label* lAuthenticationMode;
 	RadioGroup* rGAuthenticationChoice;
 	RadioButton* rBModeCredential;
 	RadioButton* rBModeNone;
+
+	Label* lNotificationOption;
+	HorizontalLayout* hlSetNotification;
+	Label* lSetNotification;
+	CheckBox* cBSetNotification;
+	HorizontalLayout* hlSetVibration;
+	Label* lSetVibration;
+	CheckBox* cBSetVibration;
 
 };
 

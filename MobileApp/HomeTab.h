@@ -17,10 +17,10 @@
 #include "MAHeaders.h"
 #include "Util.h"
 
-#define BUFSIZE 1024
+//#define BUFSIZE 1024
 
 using namespace Wormhole;
-using namespace MAUtil;
+//using namespace MAUtil;
 using namespace NativeUI;
 
 

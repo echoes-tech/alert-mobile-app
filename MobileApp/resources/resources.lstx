@@ -42,44 +42,44 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="traking_list_Label_title_alert">List of the last alerts</string>
     <string id="traking_list_Label_title_alert_FR">Liste de vos alertes reçues</string>
     
-    <string id="alert_create_Label_asset_choice">Asset choice</string>
-    <string id="alert_create_Label_asset_choice_FR">Choix du serveur</string>
+    <string id="alert_create_Label_asset_choice">Asset choice </string>
+    <string id="alert_create_Label_asset_choice_FR">Choix du serveur </string>
     
-    <string id="alert_create_Label_plugin_choice">Plugin choice</string>
-    <string id="alert_create_Label_plugin_choice_FR">Choix de l'application</string>
+    <string id="alert_create_Label_plugin_choice">Plugin choice </string>
+    <string id="alert_create_Label_plugin_choice_FR">Choix de l'application </string>
     
-    <string id="alert_create_Label_info_choice">Information choice</string>
-    <string id="alert_create_Label_info_choice_FR">Choix de l'information</string>
+    <string id="alert_create_Label_info_choice">Information choice </string>
+    <string id="alert_create_Label_info_choice_FR">Choix de l'information </string>
     
-    <string id="alert_create_Label_option_choice">Option choice</string>
-    <string id="alert_create_Label_option_choice_FR">Choix des options</string>
+    <string id="alert_create_Label_option_choice">Option choice </string>
+    <string id="alert_create_Label_option_choice_FR">Choix des options </string>
     
-    <string id="alert_create_Label_operator_choice">Operator choice</string>
-    <string id="alert_create_Label_operator_choice_FR">Choix de l'operateur</string>
+    <string id="alert_create_Label_operator_choice">Operator choice </string>
+    <string id="alert_create_Label_operator_choice_FR">Choix de l'opérateur </string>
     
-    <string id="alert_create_Label_unit_choice">Unit choice</string>
-    <string id="alert_create_Label_unit_choice_FR">Choix de l'unité</string>
+    <string id="alert_create_Label_unit_choice">Unit choice </string>
+    <string id="alert_create_Label_unit_choice_FR">Choix de l'unité </string>
     
-     <string id="alert_create_Label_user_choice">User choice</string>
-    <string id="alert_create_Label_user_choice_FR">Choix de l'utilisateur</string>
+     <string id="alert_create_Label_user_choice">User choice </string>
+    <string id="alert_create_Label_user_choice_FR">Choix de l'utilisateur </string>
     
-     <string id="alert_create_Label_media_choice">Media choice</string>
-    <string id="alert_create_Label_media_choice_FR">Choix du media</string>
+     <string id="alert_create_Label_media_choice">Media choice </string>
+    <string id="alert_create_Label_media_choice_FR">Choix du media </string>
     
-     <string id="alert_create_Label_media_value_choice">Recipient choice</string>
-    <string id="alert_create_Label_media_value_choice_FR">Choix du media</string>
+     <string id="alert_create_Label_media_value_choice">Recipient choice </string>
+    <string id="alert_create_Label_media_value_choice_FR">Choix du media </string>
     
-    <string id="alert_create_Label_snooze_choice">Snooze choice</string>
-    <string id="alert_create_Label_snooze_choice_FR">Choix du snooze</string>
+    <string id="alert_create_Label_snooze_choice">Snooze choice (min 60 sec) </string>
+    <string id="alert_create_Label_snooze_choice_FR">Choix du snooze (min 60 sec) </string>
     
-    <string id="alert_create_Label_list_dest_choice">Reicevers List</string>
-    <string id="alert_create_Label_list_dest_choice_FR">Liste des destinataires</string>
+    <string id="alert_create_Label_list_dest_choice">Reicevers List </string>
+    <string id="alert_create_Label_list_dest_choice_FR">Liste des destinataires </string>
     
     <string id="alert_create_String_Alert_Name">Alert name : </string>
     <string id="alert_create_String_Alert_Name_FR">Nom de l'alerte : </string>
     
     <string id="alert_create_String_Operator_Name">Operator : </string>
-    <string id="alert_create_String_Operator_Name_FR">Operateur : </string>
+    <string id="alert_create_String_Operator_Name_FR">Opérateur : </string>
     
     <string id="alert_create_String_Threshold_Value">Threshold value : </string>
     <string id="alert_create_String_Threshold_Value_FR">Valeur du seuil : </string>
@@ -88,7 +88,7 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_String_Unit_FR">Unité : </string>
     
     <string id="alert_create_String_Key_Value">Key value : </string>
-    <string id="alert_create_String_Key_Value_FR">Valeur cléf : </string>
+    <string id="alert_create_String_Key_Value_FR">Valeur clé : </string>
     
     <string id="alert_create_String_list_media_label">Medias for this alert : </string>
     <string id="alert_create_String_list_media_label_FR">Média rattaché à cette alerte : </string>
@@ -103,8 +103,8 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_Button_Detail_Alert">Details</string>
     <string id="alert_create_Button_Detail_Alert_FR">Détails</string>
     
-    <string id="alert_create_Button_Add_another_recipient">Add another recipient</string>
-    <string id="alert_create_Button_Add_another_recipient_FR">Ajouter un autre destinataire</string>
+    <string id="alert_create_Button_Add_another_recipient">Add another recipient </string>
+    <string id="alert_create_Button_Add_another_recipient_FR">Ajouter un autre destinataire </string>
     
     <string id="alert_create_Button_Create_alert">Create alert</string>
     <string id="alert_create_Button_Create_alert_FR">Créer l'alerte</string>
@@ -112,11 +112,11 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_create_Label_Snooze">Choice of the snooze value : </string>
     <string id="alert_create_Label_Snooze_FR">Choix du snooze : </string>
 
-	<string id="alert_create_Label_Seconde">sec</string>
-    <string id="alert_create_Label_Seconde_FR">sec</string>
+	<string id="alert_create_Label_Seconde">sec </string>
+    <string id="alert_create_Label_Seconde_FR">sec </string>
     
-    <string id="alert_create_Button_add_list">Add to the list</string>
-    <string id="alert_create_Button_add_list_FR">Ajouter à la liste</string>
+    <string id="alert_create_Button_add_list">Add to the list </string>
+    <string id="alert_create_Button_add_list_FR">Ajouter à la liste </string>
     
     <string id="alert_create_Label_key_value">Choice of the key value : </string>
     <string id="alert_create_Label_key_value_FR">Choix de la valeur clé : </string>
@@ -166,11 +166,11 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
 	<string id="alert_message_box_snooze">Snooze can not be empty</string>
     <string id="alert_message_box_snooze_FR">Le snooze ne peux pas être vide</string>
 
-	<string id="alert_message_box_snooze_60">Snooze should be higher than 60</string>
-    <string id="alert_message_box_snooze_60_FR">Le snooze doit être suppérieur à 60</string>
+	<string id="alert_message_box_snooze_60">Snooze should be higher than 60 seconds</string>
+    <string id="alert_message_box_snooze_60_FR">Le snooze doit être supérieur à 60 secondes</string>
 
-	<string id="alert_change_mode_auth_saved">Change saved </string>
-    <string id="alert_change_mode_auth_saved_FR">Changement effectué </string>
+	<string id="alert_change_mode_auth_no_saved">Error can not be saved </string>
+    <string id="alert_change_mode_auth_no_saved_FR">Erreur le changement n'est pas sauvegardé </string>
     
     <string id="alert_toast_no_media_found">No media found for this user </string>
     <string id="alert_toast_no_media_found_FR">Aucun media trouvé pour cet utilisateur </string>
@@ -186,6 +186,15 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     
     <string id="alert_label_information">Information : </string>
     <string id="alert_label_information_FR">Information : </string>
+ 
+ 	<string id="alert_notification_option_sub_title">Notifications tools </string>
+    <string id="alert_notification_option_sub_title_FR">Gestion des notifications </string>
+    
+    <string id="alert_notification_display">Display notifications </string>
+    <string id="alert_notification_display_FR">Afficher les notifications </string>
+    
+    <string id="alert_notification_option_vibrate">with vibrate </string>
+    <string id="alert_notification_option_vibrate_FR">Avec vibreur </string>
  
   <!-- authentication (page choix des medias) -->
     <string id="authentication_new_media_title">New terminal ?</string>

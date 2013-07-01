@@ -27,7 +27,7 @@
 
 #include "ActivityPage.h"
 
-#define BUFSIZE 1024
+//#define BUFSIZE 1024
 using namespace Wormhole;
 using namespace MAUtil;
 using namespace NativeUI;
@@ -72,12 +72,11 @@ public:
 	void dataDownloaded(MAHandle , int );
 
 	virtual void buttonClicked(Widget* button);
-//	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
 
-	 virtual void editBoxEditingDidEnd(EditBox* editBox) {}
-		 virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
-		 virtual void editBoxEditingDidBegin(EditBox* editBox) {maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "true");}
+	virtual void editBoxEditingDidEnd(EditBox* editBox) {}
+	virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
+	virtual void editBoxEditingDidBegin(EditBox* editBox) {maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "true");}
 
 
 	void parseJSONPlugin(MAUtil::YAJLDom::Value* root);
@@ -110,9 +109,8 @@ public:
 	bool optionPageValid();
 	bool snoozePageValid();
 
-//	void drawChangeVerticalHorizontal(int width, int height);
 private:
-//	ActivityIndicator* activityIndicator;
+	int activateKeyBoard;
 	ActivityPage* mActivityPage;
 
 	String _LOGINTOKEN;
@@ -120,7 +118,7 @@ private:
 	int connERR;
 
 	eAlertTab fonction;
-	char mBuffer[BUFSIZE];
+//	char mBuffer[BUFSIZE];
 	bool mIsConnected;
 	int count;
 	String contentString;
@@ -140,7 +138,6 @@ private:
 	Page* mainLayoutAlertChoice;
 	Label *lListNoAlert;
 	ListView *lValert;
-//	VerticalLayout *mainLayoutAlertChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAlert;
 	MAUtil::Map<int, Label*> mapLAlertName;
 	MAUtil::Map<int, long long> mapAlertId;
@@ -153,9 +150,6 @@ private:
 
 	//View 1.1
 	Page* mainLayoutAlertDetailChoice;
-//	VerticalLayout* mainLayoutAlertDetailChoice;
-//	Label* lAlertDetailTitle;
-//	Label* lAlertName;
 	Label* lAlertAsset;
 	Label* lAlertPlugin;
 	Label* lAlertInformation;
@@ -175,42 +169,30 @@ private:
 
 	//View 2
 	Page* mainLayoutAssetChoice;
-//	Label* assetTitle;
 	ListView *lVAsset;
 	MAUtil::Map<int, long long> mapAssetId;
-//	VerticalLayout* mainLayoutAssetChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIAsset;
-//	MAUtil::Map<int, Label*> mapLAssetName;
 	MAUtil::Map<int, String> mapLAssetName;
 
 	//View 3
 	Page* mainLayoutPluginChoice;
-//	Label* followAlertPlugin;
-//	Label* pluginTitle;
 	ListView *lVPlugin;
 	MAUtil::Map<int, long long> mapPluginId;
-//	VerticalLayout* mainLayoutPluginChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIPlugin;
 	MAUtil::Map<int, Label*> mapLPluginName;
 
 	//View 4
 	Page* mainLayoutInfoChoice;
-//	Label* followAlertInformation;
-//	Label* infoTitle;
 	ListView *lVInfo;
 	MAUtil::Map<int, long long> mapInfoIdSrc;
 	MAUtil::Map<int, long long> mapInfoIdSea;
 	MAUtil::Map<int, long long> mapInfoIdUnit;
 	MAUtil::Map<int, long long> mapInfoInfValueNum;
-//	VerticalLayout* mainLayoutInfoChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIInfo;
 	MAUtil::Map<int, Label*> mapLInfoName;
 
 	//View 5
 	Page* mainLayoutOptionChoice;
-//	Label* followAlertOption;
-//	Label* optionTitle;
-//	VerticalLayout* mainLayoutOptionChoice;
 	ListView* lVOption;
 	ListView* lVCriteria;
 	MAUtil::Map<int, ListViewItem*> mapLVIOption;
@@ -225,54 +207,42 @@ private:
 
 	//view 5.2
 	Page* mainLayoutOperatorChoice;
-//	Label* operatorTitle;
 	ListView *lVOperator;
 	MAUtil::Map<int, long long> mapOperatorId;
-//	VerticalLayout* mainLayoutOperatorChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIOperator;
 	MAUtil::Map<int, Label*> mapLOperatorName;
 
 	//view 5.3
 	Page* mainLayoutUnitChoice;
-//	Label* unitTitle;
 	int nbOfSubUnits; //si > 0 alors on va chercher les sous unités.
 	ListView *lVUnit;
 	MAUtil::Map<int, long long> mapUnitId;
-//	VerticalLayout* mainLayoutUnitChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIUnit;
 	MAUtil::Map<int, Label*> mapLUnitName;
 
 	//View 6
 	Page* mainLayoutUserChoice;
-//	Label* userTitle;
 	ListView *lVUser;
 	MAUtil::Map<int, long long> mapUserId;
-//	VerticalLayout* mainLayoutUserChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIUser;
 	MAUtil::Map<int, Label*> mapLUserName;
 
 	//View 7
 	Page* mainLayoutMediaChoice;
-//	Label* mediaTitle;
 	ListView *lVMedia;
 	MAUtil::Map<int, long long> mapMediaId;
-//	VerticalLayout* mainLayoutMediaChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIMedia;
 	MAUtil::Map<int, Label*> mapLMediaName;
 
 	//View 8
 	Page* mainLayoutMediaValueChoice;
-//	Label *mediaValueTitle;
 	ListView *lVMediaValue;
 	MAUtil::Map<int, long long> mapMediaValueId;
-//	VerticalLayout* mainLayoutMediaValueChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIMediaValue;
 	MAUtil::Map<int, Label*> mapLMediaValueName;
 
 	//View 9
-	Page* mainLayoutSnoozeChoice;
-//	Label* snoozeTitle;
-//	VerticalLayout* mainLayoutSnoozeChoice;
+	Page* mainLayoutSnoozeChoice;;
 	Label* lSnooze;
 	EditBox* eBSnooze;
 	Label* lSecond;
@@ -280,11 +250,7 @@ private:
 
 	//View 10
 	Page* mainLayoutListDestChoice;
-//	Label* followAlertlistDest;
-//	Label* listDestTitle;
 	ListView *lVListDest;
-//	MAUtil::Map<int, long long> mapMediaValueId;
-//	VerticalLayout* mainLayoutListDestChoice;
 	MAUtil::Map<int, ListViewItem*> mapLVIListDest;
 	MAUtil::Map<int, Label*> mapLListDestName;
 	Button* bAddOtherDest;
@@ -297,7 +263,6 @@ private:
 	//Create Alert
 	MAUtil::Map<int, long long>mapAMSId;
 	int currentAMS;
-//HTTPConnect* httpConnect;
 
 };
 

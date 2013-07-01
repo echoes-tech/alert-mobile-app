@@ -10,6 +10,8 @@
 
 Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		Screen(), LANGUAGE(language) {
+	maScreenSetOrientation(MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
+	this->addScreenListener(this);
 	mActivityPage = new ActivityPage();
 //	activityIndicator = new ActivityIndicator();
 //	Screen::setMainWidget(activityIndicator);
@@ -23,7 +25,9 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	_tokenConnection = "";
 	_tokenMobile = "";
 	_login = "";
-//	tryToWrite(_login,_login,_login,_login,_idMobile);
+	_vibrate = true;
+	_notification = true;
+//	tryToWrite(_login,_login,_login,_login,_idMobile,_vibrate,_notification);
 	String config;
 	eFile eFileTmp = tryToRead(config);
 	if (eFileTmp == FILE_NOT_EXIST) {
@@ -40,6 +44,8 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		_tokenConnection = root->getValueForKey("token_authent")->toString();
 		_tokenMobile = root->getValueForKey("token_mobile")->toString();
 		_login = root->getValueForKey("login")->toString();
+		_vibrate = root->getValueForKey("vibrate")->toBoolean();
+		_notification = root->getValueForKey("notification")->toBoolean();
 
 		if (_modeAuth == "none") {
 //			TODO : va voir toute les appmobile du compte, il faudrait utilisé get /medias/3/media_values/id (pas encore creer dans l'API) AUTHENTICATION_VALIDATION
@@ -59,7 +65,12 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 
 	}
 	screenMain = mScreenMain;
-
+	// iOS and Windows Phone.
+					maScreenSetSupportedOrientations(
+							MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
+									| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
+									| MA_SCREEN_ORIENTATION_PORTRAIT
+									| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 }
 
 /**
@@ -178,11 +189,11 @@ void Authentication::parseJSONAuthenticationValidation(
 		}
 		if (isAuth && isConfirmed) {
 			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-					_idMobile); ////////////
+					_idMobile, _vibrate, _notification); ////////////
 			authenticationAccepted();
 		} else if (isAuth && !isConfirmed && _modeAuth != "credential") {
 			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-					_idMobile); ////////////
+					_idMobile, _vibrate, _notification); ////////////
 			_tokenMobile = "";
 			_tokenConnection = "";
 			_login = "";
@@ -190,14 +201,12 @@ void Authentication::parseJSONAuthenticationValidation(
 		} else if (!isAuth && isConfirmed && _modeAuth == "credential") {
 			_tokenMobile = tmpMobiletoken;
 			_tokenConnection = "";
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-					_idMobile);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 			authenticationAccepted();
 		} else if (!isAuth && isConfirmed) {
 			_tokenMobile = tmpMobiletoken;
 			_tokenConnection = "";
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-					_idMobile);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 			createUI();
 		} else {
 			_idMobile = 0;
@@ -220,8 +229,7 @@ void Authentication::parseJSONPostMediaValueValidation(
 		lprintfln("Root node is valid :) \n");
 
 		if (root->getValueForKey("is_confirmed")->toString() == "true") {
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-					_idMobile);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 			authenticationAccepted();
 //			createPageAuthenticationMode();
 		}
@@ -382,41 +390,17 @@ void Authentication::createPageMobileChoice() {
 
 }
 
-//void Authentication::createPageAuthenticationMode()
-//{
-//	vLAuthenticationModeChoice = new VerticalLayout();
-//	vLAuthenticationModeChoice->fillSpaceHorizontally();
-//	vLAuthenticationModeChoice->fillSpaceVertically();
-//
-//	authenticationModeTitle = new Label(Convert::tr(authentication_mode_page_title + LANGUAGE));
-//	authenticationModeTitle->fillSpaceHorizontally();
-//	vLAuthenticationModeChoice->addChild(authenticationModeTitle);
-//
-//	lVAuthenticationMode = new ListView() ;
-//	lVAuthenticationMode->fillSpaceHorizontally();
-//	lVAuthenticationMode->addListViewListener(this);
-//	vLAuthenticationModeChoice->addChild(lVAuthenticationMode);
-//
-//	lVIModeCredential = new ListViewItem();
-//	lModeCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
-//	lVIModeCredential->addChild(lModeCredential);
-//	lVAuthenticationMode->addChild(lVIModeCredential);
-//
-//	lVIModeNone = new ListViewItem();
-//	lModeNone = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
-//	lVIModeNone->addChild(lModeNone);
-//	lVAuthenticationMode->addChild(lVIModeNone);
-//	Screen::setMainWidget(vLAuthenticationModeChoice);
-//}
 
 void Authentication::createUI() {
 	if (vLAuthentication == NULL) {
 		vLAuthentication = new VerticalLayout();
 		vLAuthentication->fillSpaceHorizontally();
 		vLAuthentication->fillSpaceVertically();
-		vLAuthentication->setScrollable(true);
+//		vLAuthentication->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
+//		vLAuthentication->setScrollable(true);
 		icon = new Image();
 		icon->setImage(LOGO);
+//		icon->fillSpaceVertically();
 		icon->fillSpaceHorizontally();
 
 		vLAuthentication->addChild(icon);
@@ -424,7 +408,7 @@ void Authentication::createUI() {
 				Convert::tr(authentication_connection_title + LANGUAGE));
 //		presentation->setHeight(100);
 		presentation->fillSpaceHorizontally();
-
+		presentation->fillSpaceVertically();
 		vLAuthentication->addChild(presentation);
 		login = new Label(
 				Convert::tr(authentication_connection_login + LANGUAGE));
@@ -433,7 +417,9 @@ void Authentication::createUI() {
 //		eLogin->addEditBoxListener(this);
 		eLogin->setInputMode(EDIT_BOX_INPUT_MODE_URL);
 		eLogin->fillSpaceHorizontally();
+
 		hLLogin = new HorizontalLayout();
+		hLLogin->wrapContentVertically();
 //		hLLogin->setHeight(70);
 		hLLogin->addChild(login);
 		hLLogin->addChild(eLogin);
@@ -441,11 +427,14 @@ void Authentication::createUI() {
 
 		password = new Label(
 				Convert::tr(authentication_connection_password + LANGUAGE));
+		password->fillSpaceVertically();
 		ePassword = new EditBox();
 		ePassword->addEditBoxListener(this);
 		ePassword->setEditMode(EDIT_BOX_MODE_PASSWORD);
 		ePassword->fillSpaceHorizontally();
 		hLPassword = new HorizontalLayout();
+
+//		hLPassword->wrapContentVertically();
 		hLPassword->setHeight(70);
 		hLPassword->addChild(password);
 		hLPassword->addChild(ePassword);
@@ -562,7 +551,7 @@ void Authentication::radioButtonSelected(NativeUI::RadioGroup*, int,
 	} else if (rB == rBModeNone) {
 		_modeAuth = "none";
 	}
-	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth, _idMobile);
+	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 }
 
 bool Authentication::newMediaNameValid() {
@@ -571,4 +560,14 @@ bool Authentication::newMediaNameValid() {
 		return false;
 	}
 	return true;
+}
+
+void Authentication::orientationChanged(Screen* screen, int screenOrientation)
+{
+	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		vLAuthentication->setScrollable(true);
+	} else // Portrait
+	{
+		vLAuthentication->setScrollable(false);
+	}
 }
