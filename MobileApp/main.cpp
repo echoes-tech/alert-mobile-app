@@ -7,6 +7,7 @@
 #include "Util.h"
 #include "Authentication.h"
 
+
 // How often the timer will be invoked
 #define TIMER_PERIOD 60000
 
@@ -46,6 +47,7 @@ public:
 
 	// send timer event to trackingTabObject
 	void runTimerEvent() {
+		maReportResourceInformation();
 		mMainScreen->pullRequest();
 //		maToast("timer", MA_TOAST_DURATION_LONG); // TODO a supprimer juste pour test
 	}
@@ -160,6 +162,7 @@ public:
 	}
 
 	virtual void focusGained() {
+		mMainScreen->setActiveTab(0);
 		lprintfln("focus gained");
 	}
 
@@ -174,7 +177,7 @@ private:
 
 extern "C" int MAMain() {
 
-//		maSyscallPanicsDisable();
+		maSyscallPanicsDisable();
 		maAutostartOn();
 		Moblet::run(new NativeUIMoblet());
 }

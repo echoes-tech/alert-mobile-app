@@ -16,6 +16,8 @@ ScreenMain::ScreenMain() :
 	LANGUAGE = getSystemLanguage();
 	lprintfln("test mainscreen %s", getLocalPath().c_str());
 
+	//Rappel CreateUI() est appelé dans l'objet Authentication. lorsque l'utilisateur est bien authentifié.
+
 	// Create child screens.
 
 }
@@ -141,6 +143,7 @@ void ScreenMain::handlePointerReleased(MAPoint2d point) {
 
 void ScreenMain::orientationChanged(Screen* screen, int screenOrientation)
 {
+
 	lprintfln("screenOrientation : %d", screenOrientation);
 	if (screen == alertTab) {
 		alertTab->orientationChange(screenOrientation);

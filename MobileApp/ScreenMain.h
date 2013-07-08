@@ -57,7 +57,6 @@ public:
 
 	virtual void orientationChanged(Screen* screen, int screenOrientation);
 
-
 	private:
 	int LANGUAGE;
 

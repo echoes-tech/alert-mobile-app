@@ -13,12 +13,8 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	maScreenSetOrientation(MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 	this->addScreenListener(this);
 	mActivityPage = new ActivityPage();
-//	activityIndicator = new ActivityIndicator();
-//	Screen::setMainWidget(activityIndicator);
 	Screen::setMainWidget(mActivityPage);
 	this->show();
-//	Environment::getEnvironment().addKeyListener(this);
-//	authenticationAccepted = false;
 	mIsConnected = false;
 	_modeAuth = "credential";
 	_idMobile = 0;
@@ -57,20 +53,13 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 		} else {
 			createUI();
 		}
-//		lprintfln(_tokenMobile.c_str());
-//		lprintfln(_modeAuth.c_str());
-//		lprintfln("%d", _idMobile);
-//		lprintfln(_tokenConnection.c_str());
-//		lprintfln(_login.c_str());
-
 	}
 	screenMain = mScreenMain;
-	// iOS and Windows Phone.
-					maScreenSetSupportedOrientations(
-							MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
-									| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
-									| MA_SCREEN_ORIENTATION_PORTRAIT
-									| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
+	maScreenSetSupportedOrientations(
+			MA_SCREEN_ORIENTATION_LANDSCAPE_LEFT
+					| MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT
+					| MA_SCREEN_ORIENTATION_PORTRAIT
+					| MA_SCREEN_ORIENTATION_PORTRAIT_UPSIDE_DOWN);
 }
 
 /**
@@ -86,6 +75,7 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 	this->close();
 	String sMessage = "";
 
+//	TODO verifier pour les réponses du style 300 pour savoir si elle passe dans le res_ok ou non.
 	if (result == RES_OK) {
 		connERR = 0;
 		char * jsonData = new char[maGetDataSize(data) + 1];
@@ -122,8 +112,7 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 		Screen::setMainWidget(vLAuthentication);
 	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
 		connERR = 0;
-		presentation->setText(
-				"erreur d'authentification verifier votre login et password");
+		presentation->setText( Convert::tr(Alert_authentication_faillure + LANGUAGE));
 		Screen::setMainWidget(vLAuthentication);
 	} else if (result == 404 && fonction == MEDIAS_LIST) {
 		connERR = 0;
@@ -139,7 +128,7 @@ void Authentication::dataDownloaded(MAHandle data, int result) {
 //		connectUrl(urlTmp, MEDIAS_LIST);
 
 	} else if (result == CONNERR_GENERIC
-			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credential.
+			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
 		connERR = 0;
 		_tokenConnection = "";
 		_login = "";
@@ -231,7 +220,6 @@ void Authentication::parseJSONPostMediaValueValidation(
 		if (root->getValueForKey("is_confirmed")->toString() == "true") {
 			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 			authenticationAccepted();
-//			createPageAuthenticationMode();
 		}
 	}
 }
@@ -284,7 +272,6 @@ void Authentication::parseJSONUserToken(MAUtil::YAJLDom::Value* root) {
 	} else {
 		lprintfln("Root node is valid :) \n");
 		_tokenConnection = root->getValueForKey("token")->toString();
-//		lprintfln(_tokenConnection.c_str());
 		_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
 		//tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth , _idMobile);
 		if (_tokenMobile == "") {
@@ -315,28 +302,14 @@ void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
 	if (mIsConnected == false) {
 		mIsConnected = true;
 		fonction = fct;
-//		lprintfln(url.c_str());
 		if (verb == GET) {
-//			lprintfln("GET");
 			int tmp = this->get(url.c_str());
 			lprintfln("GET send = %d", tmp);
 		} else if (verb == POST) {
-//			lprintfln("POST");
 			lprintfln(jsonMessage.c_str());
-//			lprintfln("jsonMessage.size() : %d ", jsonMessage.size());
 			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
-//			Vector<String> test; test.clear();
 
-//			int tmp = this->postRequest(url.c_str(), test, jsonMessage.c_str(), jsonMessage.size());
-//			this->create(url.c_str(), HTTP_POST);
-//			this->setRequestHeader("Content-Length", Convert::toString(jsonMessage.size()).c_str());
-//			this->write(jsonMessage.c_str(), jsonMessage.size());
-//			maWait(0);
-//			this->finish();
-
-
-
-//			lprintfln("POST send = %d", tmp);
+			lprintfln("POST send = %d", tmp);
 		}
 	} else {
 		lprintfln("Déjà connecté: %d", fonction);
@@ -452,9 +425,11 @@ void Authentication::createUI() {
 		rBModeCredential = new RadioButton();
 		rBModeCredential->setText(
 				Convert::tr(authentication_mode_credential + LANGUAGE));
+		rBModeCredential->setTextColor(0xC0C0C0);
 		rGAuthenticationChoice->addView(rBModeCredential);
 		rBModeNone = new RadioButton();
 		rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
+		rBModeNone->setTextColor(0xC0C0C0);
 //	rBModeNone->setProperty("fontSize", "50");
 //	lprintfln("TEEEESSt %d",maWidgetSetProperty(rBModeNone->getWidgetHandle(), MAW_BUTTON_FONT_SIZE, "30.0"));
 		rGAuthenticationChoice->addView(rBModeNone);
@@ -477,10 +452,7 @@ void Authentication::createUI() {
 }
 
 void Authentication::buttonClicked(Widget* button) {
-//	lprintfln("bouton click");
 	if (button == bValidate) {
-//		Screen::setMainWidget(activityIndicator);
-//		Screen::setMainWidget(mActivityPage);
 		_login = eLogin->getText();
 
 		String urlTmp = HOST;
@@ -494,8 +466,6 @@ void Authentication::buttonClicked(Widget* button) {
 				MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 	} else if (button == bAddNewMedia) {
 		if (newMediaNameValid()) {
-//			Screen::setMainWidget(activityIndicator);
-//			Screen::setMainWidget(mActivityPage);
 			maWidgetSetProperty(ebNewMediaName->getWidgetHandle(),
 					MAW_EDIT_BOX_SHOW_KEYBOARD, "false");
 			String urlTmp = HOST;
@@ -512,23 +482,9 @@ void Authentication::buttonClicked(Widget* button) {
 
 void Authentication::listViewItemClicked(ListView* listView,
 		ListViewItem* listViewItem) {
-//	lprintfln("Clicked");
-//	if (listView == lVAuthenticationMode) {
-//		if (listViewItem == lVIModeNone) {
-//			_modeAuth = "none";
-//		} else {
-//			_modeAuth = "credential";
-//			_tokenMobile = "";
-//		}
-//		tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
-//				_idMobile);
-//		authenticationAccepted();
-//	} else
 	if (listView == lVMedia) {
 		for (int i = 0; i < mapLVIMedia.size(); i++) {
 			if (mapLVIMedia[i] == listViewItem) {
-//				Screen::setMainWidget(activityIndicator);
-//				Screen::setMainWidget(mActivityPage);
 				_idMobile = mapMediaID[i];
 				_tokenMobile = mapMediaToken[i];
 				String urlTmp = HOST;
@@ -563,11 +519,13 @@ bool Authentication::newMediaNameValid() {
 }
 
 void Authentication::orientationChanged(Screen* screen, int screenOrientation)
-{
-	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
-		vLAuthentication->setScrollable(true);
-	} else // Portrait
-	{
-		vLAuthentication->setScrollable(false);
+ {
+	if (vLAuthentication != NULL) {
+		if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+			vLAuthentication->setScrollable(true);
+		} else // Portrait
+		{
+			vLAuthentication->setScrollable(false);
+		}
 	}
 }

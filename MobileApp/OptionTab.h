@@ -8,11 +8,12 @@
 #ifndef OPTIONTAB_H_
 #define OPTIONTAB_H_
 
-#include <Wormhole/HighLevelHttpConnection.h>
-#include <Wormhole/MessageStreamJSON.h>
-#include <mastdlib.h>
-#include <NativeUI/Widgets.h>
+//#include <Wormhole/HighLevelHttpConnection.h>
+//#include <Wormhole/MessageStreamJSON.h>
+//#include <mastdlib.h>
+//#include <NativeUI/Widgets.h>
 
+#include "IncludeFile.h"
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "Util.h"

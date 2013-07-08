@@ -65,11 +65,15 @@ void OptionTab::createUI() {
 		vLOption->addChild(rGAuthenticationChoice);
 
 		rBModeCredential = new RadioButton();
-		rBModeCredential->setText(
-				Convert::tr(authentication_mode_credential + LANGUAGE));
+//		HorizontalLayout *hlCredential = new HorizontalLayout();
+//		Label *lCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
+//		hlCredential->addChild(rBModeCredential);
+		rBModeCredential->setText(Convert::tr(authentication_mode_credential + LANGUAGE));
+		rBModeCredential->setTextColor(0xC0C0C0);
 		rGAuthenticationChoice->addView(rBModeCredential);
 		rBModeNone = new RadioButton();
 		rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
+		rBModeNone->setTextColor(0xC0C0C0);
 		rGAuthenticationChoice->addView(rBModeNone);
 		if (_modeAuth == "none") {
 			rGAuthenticationChoice->setChecked(rBModeNone);

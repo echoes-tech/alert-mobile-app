@@ -8,11 +8,12 @@
 #ifndef HOMETAB_H_
 #define HOMETAB_H_
 
-#include <NativeUI/Screen.h>
-#include <Wormhole/HighLevelHttpConnection.h>
-#include <Wormhole/MessageStreamJSON.h>
-#include <mastdlib.h>
+//#include <NativeUI/Screen.h>
+//#include <Wormhole/HighLevelHttpConnection.h>
+//#include <Wormhole/MessageStreamJSON.h>
+//#include <mastdlib.h>
 
+#include "IncludeFile.h"
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "Util.h"

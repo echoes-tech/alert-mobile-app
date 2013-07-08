@@ -9,15 +9,16 @@
 #define ALERTTAB_H_
 
 //#include "HTTPConnect.h"
-#include <NativeUI/Screen.h>
-#include <MAUtil/Map.h>
+//#include <NativeUI/Screen.h>
+//#include <MAUtil/Map.h>
+//
+//#include <NativeUI/Widgets.h>// Include all widgets
+//
+//#include <Wormhole/HighLevelHttpConnection.h>
+//#include <Wormhole/MessageStreamJSON.h>
+//#include <mastdlib.h>
 
-#include <NativeUI/Widgets.h>// Include all widgets
-
-#include <Wormhole/HighLevelHttpConnection.h>
-#include <Wormhole/MessageStreamJSON.h>
-#include <mastdlib.h>
-
+#include "IncludeFile.h"
 #include "Util.h"
 #include "conf.h"
 #include "resource/Convert.h"

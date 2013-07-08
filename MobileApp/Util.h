@@ -92,6 +92,7 @@ static int getSystemConnection()
 		MAUtil::String tmp = buf;
 		if(tmp == "none")
 		{
+//			TODO translate
 			maPanic(1, "No connection detected");
 			return -1;
 		}

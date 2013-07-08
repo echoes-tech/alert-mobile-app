@@ -15,10 +15,10 @@ TrackingTab::TrackingTab(int language, String loginToken,
 		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(
 				idMobile) {
 
-	// Set title and icon of the stack screen.
+	// Set icon of the stack screen.
 	setIcon(ICON_TRACKING + screenResolution);
-//	setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
-//			setBackgroundColor(255,255,255);
+
+	mIsConnected = false;
 	createUI();
 }
 
@@ -34,7 +34,6 @@ void TrackingTab::runTimerEvent() {
 	String urlTmp = HOST;
 	urlTmp += "/alerts/recipients/" + Convert::toString(_IDMOBILE)
 			+ "/trackings/";
-	//		urlTmp += "/plugins/1/informations";
 	urlTmp += _LOGINTOKEN;
 	lprintfln(urlTmp.c_str());
 	connectUrl(urlTmp, TRACKING_LIST);
@@ -260,7 +259,6 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 				mapHLTA[idx] = new HorizontalLayout();
 				mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));
-//				mapLTAHeure[idx]->setFontSize(18);
 
 				mapLTAHeure[idx]->setBackgroundColor(0x666666);
 				MAExtent size = maGetScrSize();
@@ -276,7 +274,6 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 			}
 
 			lastSendAlert = lastSendAlertTmp;
-//			Screen::setMainWidget(mainLayout);
 		}
 	}
 }
@@ -307,7 +304,7 @@ void TrackingTab::createUI() {
 }
 
 void TrackingTab::connectUrl(String url, eTrakingTab fct) {
-	Screen::setMainWidget(activityPage);
+//	Screen::setMainWidget(activityPage);
 
 	lprintfln("connectUrl");
 	if (mIsConnected == false) {
@@ -322,11 +319,11 @@ void TrackingTab::connectUrl(String url, eTrakingTab fct) {
 void TrackingTab::orientationChange(int screenOrientation) {
 
 	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
-		lprintfln("Orientation paysage");
+//		lprintfln("Orientation paysage");
 		Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
 	} else // Portrait
 	{
-		lprintfln("Orientation Portrait");
+//		lprintfln("Orientation Portrait");
 		Screen::setTitle("");
 //		Screen::setIcon(ICON_TRACKING);
 	}
