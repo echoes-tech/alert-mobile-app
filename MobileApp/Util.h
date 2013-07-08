@@ -48,7 +48,8 @@ enum platform_code{
 
 enum eHttp{
 	GET = 0,
-	POST
+	POST,
+	DELETE
 };
 
 enum eFile{

@@ -23,39 +23,40 @@
 #include "conf.h"
 #include "resource/Convert.h"
 #include "MAHeaders.h"
+#include "Connections.h"
 
 #include "Page.h"
 
 #include "ActivityPage.h"
 
 //#define BUFSIZE 1024
-using namespace Wormhole;
+//using namespace Wormhole;
 using namespace MAUtil;
 using namespace NativeUI;
 
 
-class AlertTab : public NativeUI::Screen, public ButtonListener, public HighLevelHttpConnection, public ListViewListener, public EditBoxListener
+class AlertTab : public NativeUI::Screen, public ButtonListener/*, public HighLevelHttpConnection*/, public ListViewListener, public EditBoxListener, public Connections
 {
 public:
 
-	enum eAlertTab {
-		PLUGIN_LIST = 0,
-		INFORMATION_LIST,
-		ALERT_LIST,
-		ASSET_LIST,
-		OPERATOR_LIST,
-		UNIT_INFO,
-		SUB_UNIT_INFO,
-		USER_LIST,
-		MEDIA_VALUE_LIST,
-		MEDIA_TYPE,
-		POST_MEDIA_SPE,
-		POST_ALERT,
-		SEARCH_INFO,
-		ALERT_INFO,
-		ALERT_RECIPIENT_LIST,
-		UNITS_TYPES
-	};
+//	enum eAlertTab {
+//		PLUGIN_LIST = 0,
+//		INFORMATION_LIST,
+//		ALERT_LIST,
+//		ASSET_LIST,
+//		OPERATOR_LIST,
+//		UNIT_INFO,
+//		SUB_UNIT_INFO,
+//		USER_LIST,
+//		MEDIA_VALUE_LIST,
+//		MEDIA_TYPE,
+//		POST_MEDIA_SPE,
+//		POST_ALERT,
+//		SEARCH_INFO,
+//		ALERT_INFO,
+//		ALERT_RECIPIENT_LIST,
+//		UNITS_TYPES
+//	};
 
 	/**
 	 * Constructor.
@@ -69,8 +70,11 @@ public:
 
 	void handleKeyPress(int keyCode);
 
-	void connectUrl(String url, eAlertTab fct, int verb = GET, String jsonMessage = "");
-	void dataDownloaded(MAHandle , int );
+//	void connectUrl(String url, eAlertTab fct, int verb = GET, String jsonMessage = "");
+//	void dataDownloaded(MAHandle , int );
+
+	virtual void connectUrl1();
+	virtual void dataDownload1(MAUtil::YAJLDom::Value*, int result, eFonction fonction);
 
 	virtual void buttonClicked(Widget* button);
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
@@ -97,6 +101,8 @@ public:
 	void parseJSONAlertInfo(MAUtil::YAJLDom::Value* root);
 	void parseJSONAlertRecipientList(MAUtil::YAJLDom::Value* root);
 	void parseJSONUnitsTypes(MAUtil::YAJLDom::Value* root);
+	void parseJSONDeleteAlert(MAUtil::YAJLDom::Value* root);
+
 
 	void createUI();
 	void createOptionPage();
@@ -116,13 +122,13 @@ private:
 
 	String _LOGINTOKEN;
 	int LANGUAGE;
-	int connERR;
+//	int connERR;
 
-	eAlertTab fonction;
+//	eAlertTab fonction;
 //	char mBuffer[BUFSIZE];
-	bool mIsConnected;
-	int count;
-	String contentString;
+//	bool mIsConnected;
+//	int count;
+//	String contentString;
 	VerticalLayout* activeMainLayout;
 
 	int selectedAsset;

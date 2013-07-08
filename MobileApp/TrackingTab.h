@@ -22,7 +22,7 @@
 #include "notification/LocalNotification.h"
 #include "notification/NotificationManager.h"
 #include "Notification/LocalNotificationListener.h"
-#include <IX_CELLID.h>
+//#include <IX_CELLID.h>
 
 #include "resource/Convert.h"
 #include "MAHeaders.h"
@@ -30,11 +30,13 @@
 #include "Page.h"
 #include "ActivityPage.h"
 
+#include "Connections.h"
+
 //#include <MTXml/MTXml.h>
 
 //#define BUFSIZE 1024
 
-using namespace Wormhole;
+//using namespace Wormhole;
 //using namespace MAUtil;
 using namespace NativeUI;
 using namespace MAPUtil;
@@ -43,13 +45,13 @@ using namespace Notification;
 using Notification::NotificationManager;
 using Notification::LocalNotification;
 
-class TrackingTab : public NativeUI::Screen, public HighLevelHttpConnection, public LocalNotificationListener
+class TrackingTab : public NativeUI::Screen/*, public HighLevelHttpConnection*/, public LocalNotificationListener, public Connections
 {
 public:
 
-	enum eTrakingTab {
-			TRACKING_LIST = 0,
-		};
+//	enum eTrakingTab {
+//			TRACKING_LIST = 0,
+//		};
 
 	/**
 	 * Constructor.
@@ -63,8 +65,12 @@ public:
 
 	void parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root);
 
-	void connectUrl(String url, eTrakingTab fct);
-	void dataDownloaded(MAHandle , int );
+//	void connectUrl(String url, eTrakingTab fct);
+//	void dataDownloaded(MAHandle , int );
+
+	virtual void connectUrl1();
+	virtual void dataDownload1(MAUtil::YAJLDom::Value*, int result, eFonction fonction);
+
 	virtual void didReceiveLocalNotification(Notification::LocalNotification& mNotif){lprintfln("LOCALE notif"); LocalNotification test = mNotif;maNotificationLocalUnschedule(test.getHandle()); maNotificationLocalDestroy(test.getHandle());};
 
 	void createUI();
@@ -74,17 +80,17 @@ public:
 	void runTimerEvent();
 
 private:
-	ActivityPage* activityPage;
+	ActivityPage* mActivityPage;
 
 	MAHandle notificationHandle; //test
 	String _LOGINTOKEN;
 	long long _IDMOBILE;
 	int LANGUAGE;
-	int connERR;
+//	int connERR;
 
-	eTrakingTab fonction;
+//	eFonction fonction;
 //	char mBuffer[BUFSIZE];
-	bool mIsConnected;
+//	bool mIsConnected;
 	bool bCreateUI;
 
 	int count;

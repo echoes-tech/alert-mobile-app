@@ -15,7 +15,7 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	mActivityPage = new ActivityPage();
 	Screen::setMainWidget(mActivityPage);
 	this->show();
-	mIsConnected = false;
+//	mIsConnected = false;
 	_modeAuth = "credential";
 	_idMobile = 0;
 	_tokenConnection = "";
@@ -69,85 +69,143 @@ Authentication::~Authentication() {
 
 }
 
-void Authentication::dataDownloaded(MAHandle data, int result) {
-	lprintfln("dataDownloaded Authentication");
-	mIsConnected = false;
-	this->close();
-	String sMessage = "";
 
-//	TODO verifier pour les réponses du style 300 pour savoir si elle passe dans le res_ok ou non.
-	if (result == RES_OK) {
-		connERR = 0;
-		char * jsonData = new char[maGetDataSize(data) + 1];
-		maReadData(data, jsonData, 0, maGetDataSize(data));
-		String jsonTmp = jsonData;
-		Convert::formatJSONBeforeParse(jsonTmp);
-		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
-				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
-		switch (fonction) {
-		case USER_TOKEN:
-			parseJSONUserToken(root);
-			break;
-		case MEDIAS_LIST:
-			parseJSONMediasList(root);
-			break;
-		case POST_MEDIA_VALUE:
-			parseJSONPostMediaValue(root);
-			break;
-		case POST_MEDIA_VALUE_VALIDATION:
-			parseJSONPostMediaValueValidation(root);
-			break;
-		case AUTHENTICATION_VALIDATION:
-			parseJSONAuthenticationValidation(root);
-		default:
-			break;
-
-			delete jsonData;
-			delete root;
-		}
-	} else if (result == CONNERR_DNS) {
-		connERR++;
-		lprintfln("AlertTab DataDownload result = %d", result);
-		lprintfln("DNS resolution error.");
-		Screen::setMainWidget(vLAuthentication);
-	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
-		connERR = 0;
-		presentation->setText( Convert::tr(Alert_authentication_faillure + LANGUAGE));
-		Screen::setMainWidget(vLAuthentication);
-	} else if (result == 404 && fonction == MEDIAS_LIST) {
-		connERR = 0;
-		createPageMobileChoice();
-	} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
-		connERR = 0;
-		_idMobile = 0;
-		_tokenMobile = "";
-		createUI(); ////////
-//		String urlTmp = HOST;
-//		urlTmp += "/medias/3";
-//		urlTmp += _LOGINTOKEN ;
-//		connectUrl(urlTmp, MEDIAS_LIST);
-
-	} else if (result == CONNERR_GENERIC
-			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
-		connERR = 0;
-		_tokenConnection = "";
-		_login = "";
-		createUI();
-	}
-
-	else {
-		connERR++;
-		lprintfln("AlertTab DataDownload result = %d", result);
-		Screen::setMainWidget(vLAuthentication);
-	}
-	if (connERR >= 1) {
-		sMessage = "Connection Error. ERREUR :";
-		sMessage += Convert::toString(result);
-		maMessageBox("Connection Error", sMessage.c_str());
-		getSystemConnection();
-	}
-
+void Authentication::connectUrl1()
+{
+	Screen::setMainWidget(mActivityPage);
 }
+
+void Authentication::dataDownload1(MAUtil::YAJLDom::Value* root, int result,eFonction fonction) {
+	if (result == RES_OK) {
+			switch (fonction) {
+			case USER_TOKEN:
+				parseJSONUserToken(root);
+				break;
+			case MEDIAS_LIST:
+				parseJSONMediasList(root);
+				break;
+			case POST_MEDIA_VALUE:
+				parseJSONPostMediaValue(root);
+				break;
+			case POST_MEDIA_VALUE_VALIDATION:
+				parseJSONPostMediaValueValidation(root);
+				break;
+			case AUTHENTICATION_VALIDATION:
+				parseJSONAuthenticationValidation(root);
+			default:
+				break;
+				delete root;
+			}
+		} else if (result == CONNERR_DNS) {
+			lprintfln("AlertTab DataDownload result = %d", result);
+			lprintfln("DNS resolution error.");
+			Screen::setMainWidget(vLAuthentication);
+		} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
+			presentation->setText( Convert::tr(Alert_authentication_faillure + LANGUAGE));
+			Screen::setMainWidget(vLAuthentication);
+		} else if (result == 404 && fonction == MEDIAS_LIST) {
+			createPageMobileChoice();
+		} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
+			_idMobile = 0;
+			_tokenMobile = "";
+			createUI(); ////////
+	//		String urlTmp = HOST;
+	//		urlTmp += "/medias/3";
+	//		urlTmp += _LOGINTOKEN ;
+	//		connectUrl(urlTmp, MEDIAS_LIST);
+
+		} else if (result == CONNERR_GENERIC
+				&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
+			_tokenConnection = "";
+			_login = "";
+			createUI();
+		}
+
+		else {
+			lprintfln("AlertTab DataDownload result = %d", result);
+			Screen::setMainWidget(vLAuthentication);
+		}
+}
+
+//void Authentication::dataDownloaded(MAHandle data, int result) {
+//	lprintfln("dataDownloaded Authentication");
+//	mIsConnected = false;
+//	this->close();
+//	String sMessage = "";
+//
+////	TODO verifier pour les réponses du style 300 pour savoir si elle passe dans le res_ok ou non.
+//	if (result == RES_OK) {
+//		connERR = 0;
+//		char * jsonData = new char[maGetDataSize(data) + 1];
+//		maReadData(data, jsonData, 0, maGetDataSize(data));
+//		String jsonTmp = jsonData;
+//		Convert::formatJSONBeforeParse(jsonTmp);
+//		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+//				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
+//		switch (fonction) {
+//		case USER_TOKEN:
+//			parseJSONUserToken(root);
+//			break;
+//		case MEDIAS_LIST:
+//			parseJSONMediasList(root);
+//			break;
+//		case POST_MEDIA_VALUE:
+//			parseJSONPostMediaValue(root);
+//			break;
+//		case POST_MEDIA_VALUE_VALIDATION:
+//			parseJSONPostMediaValueValidation(root);
+//			break;
+//		case AUTHENTICATION_VALIDATION:
+//			parseJSONAuthenticationValidation(root);
+//		default:
+//			break;
+//
+//			delete jsonData;
+//			delete root;
+//		}
+//	} else if (result == CONNERR_DNS) {
+//		connERR++;
+//		lprintfln("AlertTab DataDownload result = %d", result);
+//		lprintfln("DNS resolution error.");
+//		Screen::setMainWidget(vLAuthentication);
+//	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
+//		connERR = 0;
+//		presentation->setText( Convert::tr(Alert_authentication_faillure + LANGUAGE));
+//		Screen::setMainWidget(vLAuthentication);
+//	} else if (result == 404 && fonction == MEDIAS_LIST) {
+//		connERR = 0;
+//		createPageMobileChoice();
+//	} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
+//		connERR = 0;
+//		_idMobile = 0;
+//		_tokenMobile = "";
+//		createUI(); ////////
+////		String urlTmp = HOST;
+////		urlTmp += "/medias/3";
+////		urlTmp += _LOGINTOKEN ;
+////		connectUrl(urlTmp, MEDIAS_LIST);
+//
+//	} else if (result == CONNERR_GENERIC
+//			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
+//		connERR = 0;
+//		_tokenConnection = "";
+//		_login = "";
+//		createUI();
+//	}
+//
+//	else {
+//		connERR++;
+//		lprintfln("AlertTab DataDownload result = %d", result);
+//		Screen::setMainWidget(vLAuthentication);
+//	}
+//	if (connERR >= 1) {
+//		sMessage = "Connection Error. ERREUR :";
+//		sMessage += Convert::toString(result);
+//		maMessageBox("Connection Error", sMessage.c_str());
+//		getSystemConnection();
+//	}
+//
+//}
 
 void Authentication::parseJSONAuthenticationValidation(
 		MAUtil::YAJLDom::Value* root) {
@@ -293,28 +351,28 @@ void Authentication::authenticationAccepted() {
 	screenMain->createUI(_LOGINTOKEN, _idMobile);
 }
 
-void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
-		String jsonMessage) {
-	Screen::setMainWidget(mActivityPage);
-	lprintfln("connectUrl");
-	lprintfln(url.c_str());
-
-	if (mIsConnected == false) {
-		mIsConnected = true;
-		fonction = fct;
-		if (verb == GET) {
-			int tmp = this->get(url.c_str());
-			lprintfln("GET send = %d", tmp);
-		} else if (verb == POST) {
-			lprintfln(jsonMessage.c_str());
-			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
-
-			lprintfln("POST send = %d", tmp);
-		}
-	} else {
-		lprintfln("Déjà connecté: %d", fonction);
-	}
-}
+//void Authentication::connectUrl(String url, eAuthenticationTab fct, int verb,
+//		String jsonMessage) {
+//	Screen::setMainWidget(mActivityPage);
+//	lprintfln("connectUrl");
+//	lprintfln(url.c_str());
+//
+//	if (mIsConnected == false) {
+//		mIsConnected = true;
+//		fonction = fct;
+//		if (verb == GET) {
+//			int tmp = this->get(url.c_str());
+//			lprintfln("GET send = %d", tmp);
+//		} else if (verb == POST) {
+//			lprintfln(jsonMessage.c_str());
+//			int tmp = this->postJsonRequest(url.c_str(), jsonMessage.c_str());
+//
+//			lprintfln("POST send = %d", tmp);
+//		}
+//	} else {
+//		lprintfln("Déjà connecté: %d", fonction);
+//	}
+//}
 
 void Authentication::createPageMobileChoice() {
 	vLMediaChoice = new VerticalLayout();

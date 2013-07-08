@@ -18,7 +18,7 @@ TrackingTab::TrackingTab(int language, String loginToken,
 	// Set icon of the stack screen.
 	setIcon(ICON_TRACKING + screenResolution);
 
-	mIsConnected = false;
+//	mIsConnected = false;
 	createUI();
 }
 
@@ -41,39 +41,55 @@ void TrackingTab::runTimerEvent() {
 	lprintfln("timer");
 }
 
-void TrackingTab::dataDownloaded(MAHandle data, int result) {
-	lprintfln("dataDownloaded trackingTab");
-	mIsConnected = false;
-	this->close();
+void TrackingTab::connectUrl1(){
+//	Screen::setMainWidget(mActivityPage);
+}
+
+void TrackingTab::dataDownload1(MAUtil::YAJLDom::Value* root, int result, eFonction fonction)
+{
 	if (result == RES_OK) {
-		connERR = 0;
-		char * jsonData = new char[maGetDataSize(data) + 1];
-		maReadData(data, jsonData, 0, maGetDataSize(data));
-		String jsonTmp = jsonData;
-		Convert::formatJSONBeforeParse(jsonTmp);
-
-		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
-				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
-
-		parseJSONTrackingAlert(root);
-		delete jsonData;
-		delete root;
-		//this->close();
-	} else if (result == CONNERR_DNS) {
-		connERR++;
-		lprintfln("AlertTab DataDownload result = %d", result);
-		lprintfln("DNS resolution error.");
-	} else if (result != 404) {
-		connERR++;
-		lprintfln("TrackingTab DataDownload result = %d", result);
-	}
-	if (connERR >= 3) {
-		getSystemConnection();
-		String sMessage = "Connection ERROR. ERREUR:";
-		sMessage += Convert::toString(result);
-		maMessageBox("Connection Error", sMessage.c_str());
+			parseJSONTrackingAlert(root);
+			delete root;
+		} else if (result == CONNERR_DNS) {
+			lprintfln("AlertTab DataDownload result = %d", result);
+			lprintfln("DNS resolution error.");
+		} else if (result != 404) {
+			lprintfln("TrackingTab DataDownload result = %d", result);
 	}
 }
+//void TrackingTab::dataDownloaded(MAHandle data, int result) {
+//	lprintfln("dataDownloaded trackingTab");
+//	mIsConnected = false;
+//	this->close();
+//	if (result == RES_OK) {
+//		connERR = 0;
+//		char * jsonData = new char[maGetDataSize(data) + 1];
+//		maReadData(data, jsonData, 0, maGetDataSize(data));
+//		String jsonTmp = jsonData;
+//		Convert::formatJSONBeforeParse(jsonTmp);
+//
+//		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+//				(const unsigned char*) jsonTmp.c_str(), maGetDataSize(data));
+//
+//		parseJSONTrackingAlert(root);
+//		delete jsonData;
+//		delete root;
+//		//this->close();
+//	} else if (result == CONNERR_DNS) {
+//		connERR++;
+//		lprintfln("AlertTab DataDownload result = %d", result);
+//		lprintfln("DNS resolution error.");
+//	} else if (result != 404) {
+//		connERR++;
+//		lprintfln("TrackingTab DataDownload result = %d", result);
+//	}
+//	if (connERR >= 3) {
+//		getSystemConnection();
+//		String sMessage = "Connection ERROR. ERREUR:";
+//		sMessage += Convert::toString(result);
+//		maMessageBox("Connection Error", sMessage.c_str());
+//	}
+//}
 
 void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 	// Traverse the Json tree and print data.
@@ -98,7 +114,7 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 		if (lastSendAlertTmp > lastSendAlert) {
 
-			Screen::setMainWidget(activityPage);
+			Screen::setMainWidget(mActivityPage);
 			//////clean la memoire
 			int index = mapLVITA.size();
 			for (int idx1 = 0; idx1 < index; idx1++) {
@@ -275,11 +291,15 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 			lastSendAlert = lastSendAlertTmp;
 		}
+//		else
+//		{
+//			Screen::setMainWidget(mainLayout);
+//		}
 	}
 }
 
 void TrackingTab::createUI() {
-	activityPage = new ActivityPage();
+	mActivityPage = new ActivityPage();
 	notificationHandle = 0;
 //	notification = new LocalNotification();
 	NotificationManager::getInstance()->addLocalNotificationListener(this);
@@ -303,18 +323,18 @@ void TrackingTab::createUI() {
 	mainLayout->addChild(lValert);
 }
 
-void TrackingTab::connectUrl(String url, eTrakingTab fct) {
-//	Screen::setMainWidget(activityPage);
-
-	lprintfln("connectUrl");
-	if (mIsConnected == false) {
-		mIsConnected = true;
-		fonction = fct;
-		lprintfln("GET REQUEST : %d", this->get(url.c_str()));
-	} else {
-		lprintfln("Déjà connecté: %d", fonction);
-	}
-}
+//void TrackingTab::connectUrl(String url, eTrakingTab fct) {
+//	//Screen::setMainWidget(activityPage);
+//
+//	lprintfln("connectUrl");
+//	if (mIsConnected == false) {
+//		mIsConnected = true;
+//		fonction = fct;
+//		lprintfln("GET REQUEST : %d", this->get(url.c_str()));
+//	} else {
+//		lprintfln("Déjà connecté: %d", fonction);
+//	}
+//}
 
 void TrackingTab::orientationChange(int screenOrientation) {
 

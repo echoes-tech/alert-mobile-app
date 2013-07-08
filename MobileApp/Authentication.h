@@ -10,33 +10,34 @@
 
 #include <NativeUI/Widgets.h>// Include all widgets
 //#include <NativeUI/Screen.h>
-#include <Wormhole/HighLevelHttpConnection.h>
-#include <Wormhole/MessageStreamJSON.h>
-#include <mastdlib.h>
+//#include <Wormhole/HighLevelHttpConnection.h>
+//#include <Wormhole/MessageStreamJSON.h>
+//#include <mastdlib.h>
 
 #include "resource/Convert.h"
 #include "MAHeaders.h"
 #include "Util.h"
 #include "ScreenMain.h"
+#include "Connections.h"
 
 #include "ActivityPage.h"
 
-using namespace Wormhole;
+//using namespace Wormhole;
 //using namespace MAUtil;
 using namespace NativeUI;
 
 
-class Authentication : public NativeUI::Screen, public HighLevelHttpConnection, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener, public ScreenListener
+class Authentication : public NativeUI::Screen/*, public HighLevelHttpConnection*/, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener, public ScreenListener, public Connections
 {
 public:
 
-	enum eAuthenticationTab {
-		USER_TOKEN = 0,
-		MEDIAS_LIST,
-		POST_MEDIA_VALUE,
-		POST_MEDIA_VALUE_VALIDATION,
-		AUTHENTICATION_VALIDATION
-			};
+//	enum eAuthenticationTab {
+//		USER_TOKEN = 0,
+//		MEDIAS_LIST,
+//		POST_MEDIA_VALUE,
+//		POST_MEDIA_VALUE_VALIDATION,
+//		AUTHENTICATION_VALIDATION
+//			};
 
 	/**
 	 * Constructor.
@@ -49,8 +50,11 @@ public:
 	 */
 	virtual ~Authentication();
 
-	void connectUrl(String url, eAuthenticationTab fct, int verb = GET, String jsonMessage = "");
-	void dataDownloaded(MAHandle, int);
+//	void connectUrl(String url, eAuthenticationTab fct, int verb = GET, String jsonMessage = "");
+//	void dataDownloaded(MAHandle, int);
+	virtual void connectUrl1();
+	virtual void dataDownload1(MAUtil::YAJLDom::Value*, int result, eFonction fonction);
+
 
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
 	virtual void buttonClicked(Widget* button);
@@ -78,9 +82,9 @@ private:
 	ActivityPage* mActivityPage;
 //	ActivityIndicator* activityIndicator;
 	int LANGUAGE;
-	eAuthenticationTab fonction;
-	bool mIsConnected;
-	int connERR;
+//	eAuthenticationTab fonction;
+//	bool mIsConnected;
+//	int connERR;
 
 	bool _vibrate;
 	bool _notification;

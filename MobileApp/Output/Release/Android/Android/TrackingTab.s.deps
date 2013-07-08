@@ -99,7 +99,6 @@
   c:/MoSync/include/notification/NotificationManager.h \
   c:/MoSync/include/notification/LocalNotification.h \
   c:/MoSync/include/Notification/LocalNotificationListener.h \
-  c:/MoSync/include/IX_CELLID.h \
   C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Release/Android/Android/MAHeaders.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
   c:/MoSync/include/Wormhole/HighLevelHttpConnection.h \
@@ -113,4 +112,5 @@
   c:/MoSync/include/NativeUI/WebView.h c:/MoSync/include/yajl/YAJLDom.h \
   c:/MoSync/include/mastdlib.h c:/MoSync/include/maxtoa.h \
   C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h \
-  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Connections.h
