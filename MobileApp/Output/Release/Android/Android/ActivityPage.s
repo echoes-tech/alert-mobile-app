@@ -376,142 +376,53 @@
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-.data
-LC0:
-	.ascii "center\0"
 .code
 	.stabs	"_ZN12ActivityPageC2Ev:F(0,6)",36,0,12,__ZN12ActivityPageC2Ev
-	.stabs	"this:p(0,25)=k(0,26)=*(0,27)=xsActivityPage:",160,0,12,-20
+	.stabs	"this:p(0,25)=k(0,26)=*(0,27)=xsActivityPage:",160,0,12,-12
 	.global	__ZN12ActivityPageC2Ev
 
 .func __ZN12ActivityPageC2Ev, 1, void
 	.line 12
-	push rt,d1
-	sub  sp,#0x8
+	push rt,fr
+	sub  sp,#0x4
 	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-20],i0
+	add  fr,#0xc
+	ld   [fr,-12],i0
 	.dlab LBB2
 	.line 12
-	ld   i0,[fr,-20]
+	ld   i0,[fr,-12]
 	call &__ZN8NativeUI14VerticalLayoutC2Ev
-	ld   r14,[fr,-20]
+	ld   r14,[fr,-12]
 	ld   r0,#__ZTV12ActivityPage+8
 	ld   [r14],r0
-	.line 13
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 15
-	ld   d1,[fr,-20]
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI17ActivityIndicatorC1Ev
-	ld   [d1,60],d0
-	.line 16
-	ld   r14,[fr,-20]
-	ld   i0,[fr,-20]
-	ld   i1,[r14,60]
-	call &__ZN8NativeUI6Widget8addChildEPS0_
 	.dlab LBE2
 	.line 17
-	add  sp,#0x8
-	pop  rt,d1
+	add  sp,#0x4
+	pop  rt,fr
 	ret
 Lscope0:
 	.stabs	"_ZN12ActivityPageC1Ev:F(0,6)",36,0,12,__ZN12ActivityPageC1Ev
-	.stabs	"this:p(0,25)",160,0,12,-20
+	.stabs	"this:p(0,25)",160,0,12,-12
 	.global	__ZN12ActivityPageC1Ev
 
 .func __ZN12ActivityPageC1Ev, 1, void
 	.line 12
-	push rt,d1
-	sub  sp,#0x8
+	push rt,fr
+	sub  sp,#0x4
 	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-20],i0
+	add  fr,#0xc
+	ld   [fr,-12],i0
 	.dlab LBB3
 	.line 12
-	ld   i0,[fr,-20]
+	ld   i0,[fr,-12]
 	call &__ZN8NativeUI14VerticalLayoutC2Ev
-	ld   r14,[fr,-20]
+	ld   r14,[fr,-12]
 	ld   r0,#__ZTV12ActivityPage+8
 	ld   [r14],r0
-	.line 13
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 15
-	ld   d1,[fr,-20]
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI17ActivityIndicatorC1Ev
-	ld   [d1,60],d0
-	.line 16
-	ld   r14,[fr,-20]
-	ld   i0,[fr,-20]
-	ld   i1,[r14,60]
-	call &__ZN8NativeUI6Widget8addChildEPS0_
 	.dlab LBE3
 	.line 17
-	add  sp,#0x8
-	pop  rt,d1
+	add  sp,#0x4
+	pop  rt,fr
 	ret
 Lscope1:
 	.stabs	"_ZN12ActivityPageD2Ev:F(0,6)",36,0,23,__ZN12ActivityPageD2Ev
@@ -669,7 +580,7 @@ __ZTV12ActivityPage:
 	.long	__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
 	.long	__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
 	.stabs	"ActivityPage:Tt(0,27)=s64!1,020,(0,28)=xsVerticalLayout:;mActivityIndicator:/0(0,29)=*(0,30)=xsActivityIndicator:,480,32;__base_ctor::(0,31)=#(0,27),(0,6),(0,26),(0,6);:_ZN12ActivityPageC2Ev;2A.;__comp_ctor::(0,31):_ZN12ActivityPageC1Ev;2A.;__base_dtor::(0,31):_ZN12ActivityPageD2Ev;2A.;__comp_dtor::(0,31):_ZN12ActivityPageD1Ev;2A*0;(0,27);;__deleting_dtor::(0,31):_ZN12ActivityPageD0Ev;2A*1;(0,27);;operator=::(0,32)=#(0,27),(0,33)=&(0,27),(0,26),(0,34)=&(0,35)=k(0,27),(0,6);:_ZN12ActivityPageaSERKS_;2A.;__base_ctor::(0,36)=#(0,27),(0,6),(0,26),(0,34),(0,6);:_ZN12ActivityPageC2ERKS_;2A.;__comp_ctor::(0,36):_ZN12ActivityPageC1ERKS_;2A.;;~%(4,78);",128,0,15,0
-LC1:
+LC0:
 	.ascii "TEST_EMULATOR\0"
 .code
 	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,25,__Z41__static_initialization_and_destruction_0ii
@@ -694,7 +605,7 @@ Ltext1:
 	ld   r14,#0x1
 	jc   ne,r0,r14,#L16
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC1
+	ld   i1,#LC0
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 L16:
 	ld   r0,[fr,-16]

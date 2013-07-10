@@ -146,11 +146,17 @@ void ScreenMain::orientationChanged(Screen* screen, int screenOrientation)
 
 	lprintfln("screenOrientation : %d", screenOrientation);
 	if (screen == alertTab) {
+//		lprintfln("screenOrientation 1");
 		alertTab->orientationChange(screenOrientation);
+//		lprintfln("screenOrientation 1");
 	} else if (screen == optionTab) {
+//		lprintfln("screenOrientation 2");
 		optionTab->orientationChange(screenOrientation);
+//		lprintfln("screenOrientation 2");
 	} else if (screen == trackingTab) {
+//		lprintfln("screenOrientation 3");
 		trackingTab->orientationChange(screenOrientation);
+//		lprintfln("screenOrientation 3");
 	}
 //	else if (screen == homeTab) {
 //		homeTab->orientationChange(screenOrientation);

@@ -428,6 +428,11 @@ void Authentication::createUI() {
 		vLAuthentication->fillSpaceHorizontally();
 		vLAuthentication->fillSpaceVertically();
 //		vLAuthentication->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
+		MAExtent size = maGetScrSize();
+		int mScreenWidth = EXTENT_X(size);
+		if (mScreenWidth <= SMALL_RESOLUTION-100) {
+			vLAuthentication->setScrollable(true);
+		}
 //		vLAuthentication->setScrollable(true);
 		icon = new Image();
 		icon->setImage(LOGO);
@@ -583,7 +588,11 @@ void Authentication::orientationChanged(Screen* screen, int screenOrientation)
 			vLAuthentication->setScrollable(true);
 		} else // Portrait
 		{
-			vLAuthentication->setScrollable(false);
+			MAExtent size = maGetScrSize();
+					int mScreenWidth = EXTENT_X(size);
+					if (mScreenWidth > SMALL_RESOLUTION-100) {
+						vLAuthentication->setScrollable(false);
+					}
 		}
 	}
 }

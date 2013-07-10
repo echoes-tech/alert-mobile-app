@@ -1,0 +1,202 @@
+PerformanceFrequency: 3215449
+StartCount: 9212663258
+Hello World!
+argc: 12
+1:-program
+3:-resource
+5:-resolution
+8:-fd
+Emulator connected.
+10:-id
+fmt->BitsPerPixel: 32
+AddFontResourceEx: 2 faces added.
+InitVM .. 
+LoadVM
+maxCustomEventSize: 0x28
+Head.DataSize: 0x400000
+Head.StackSize: 0x80000
+Head.HeapSize: 0x300000
+Head.EntryPoint: 0x29925
+Head.CodeLen: 0x9331b
+CODE_SEGMENT_SIZE: 0x100000
+Head.DataLen: 0xd314
+Head.DataSize: 0x400000
+DATA_SEGMENT_SIZE: 0x400000
+Head.IntLen: 0xcf6
+Type 2, size 23456
+Type 2, size 2218
+Type 2, size 2218
+Type 2, size 15608
+Type 2, size 5268
+Type 2, size 18315
+Type 2, size 5672
+Type 2, size 9331
+Type 2, size 3068
+Type 2, size 856
+Type 4, size 5
+Type 4, size 8
+Type 4, size 16
+Type 4, size 16
+Type 4, size 13
+Type 4, size 21
+Type 4, size 8
+Type 4, size 8
+Type 4, size 11
+Type 4, size 28
+Type 4, size 27
+Type 4, size 50
+Type 4, size 26
+Type 4, size 45
+Type 4, size 23
+Type 4, size 28
+Type 4, size 13
+Type 4, size 17
+Type 4, size 14
+Type 4, size 23
+Type 4, size 19
+Type 4, size 23
+Type 4, size 14
+Type 4, size 18
+Type 4, size 16
+Type 4, size 22
+Type 4, size 12
+Type 4, size 18
+Type 4, size 12
+Type 4, size 23
+Type 4, size 13
+Type 4, size 15
+Type 4, size 17
+Type 4, size 15
+Type 4, size 27
+Type 4, size 29
+Type 4, size 15
+Type 4, size 24
+Type 4, size 13
+Type 4, size 18
+Type 4, size 11
+Type 4, size 13
+Type 4, size 18
+Type 4, size 18
+Type 4, size 7
+Type 4, size 9
+Type 4, size 12
+Type 4, size 14
+Type 4, size 24
+Type 4, size 35
+Type 4, size 6
+Type 4, size 9
+Type 4, size 6
+Type 4, size 7
+Type 4, size 7
+Type 4, size 8
+Type 4, size 22
+Type 4, size 30
+Type 4, size 13
+Type 4, size 16
+Type 4, size 29
+Type 4, size 18
+Type 4, size 4
+Type 4, size 4
+Type 4, size 16
+Type 4, size 20
+Type 4, size 26
+Type 4, size 26
+Type 4, size 25
+Type 4, size 24
+Type 4, size 22
+Type 4, size 17
+Type 4, size 15
+Type 4, size 23
+Type 4, size 60
+Type 4, size 71
+Type 4, size 5
+Type 4, size 7
+Type 4, size 4
+Type 4, size 6
+Type 4, size 6
+Type 4, size 7
+Type 4, size 12
+Type 4, size 18
+Type 4, size 11
+Type 4, size 11
+Type 4, size 5
+Type 4, size 6
+Type 4, size 22
+Type 4, size 30
+Type 4, size 26
+Type 4, size 37
+Type 4, size 25
+Type 4, size 38
+Type 4, size 23
+Type 4, size 33
+Type 4, size 23
+Type 4, size 32
+Type 4, size 39
+Type 4, size 46
+Type 4, size 23
+Type 4, size 43
+Type 4, size 29
+Type 4, size 41
+Type 4, size 12
+Type 4, size 19
+Type 4, size 8
+Type 4, size 10
+Type 4, size 9
+Type 4, size 14
+Type 4, size 14
+Type 4, size 14
+Type 4, size 20
+Type 4, size 26
+Type 4, size 22
+Type 4, size 27
+Type 4, size 13
+Type 4, size 13
+Type 4, size 14
+Type 4, size 18
+Type 4, size 8
+Type 4, size 7
+Type 4, size 24
+Type 4, size 38
+Type 4, size 34
+Type 4, size 23
+Type 4, size 15
+Type 4, size 23
+Type 4, size 11
+Type 4, size 18
+Type 4, size 9
+Type 4, size 9
+Type 4, size 55
+Type 4, size 58
+Type 4, size 17
+Type 4, size 17
+Type 4, size 11
+Type 4, size 15
+Type 4, size 9
+Type 4, size 9
+Type 9, size 10
+Type 4, size 152
+ResLoad complete
+IDL version match!
+maSyscallPanicsDisable
+Connecté ? : -2: 
+maPanic 0, "This application uses Native UI, which is not supported on the current platform. Please select another target profile in the right-hand profile panel."
+DumpCallStackEx:
+reportCallStack
+0
+IP: 0x44252
+Call stack: 8 frames
+0: 0x29954
+1: 0x2425
+2: 0x5032
+3: 0x3eb46
+4: 0x3bd8d
+5: 0x433ee
+6: 0x44463
+7: 0x44254
+Exit @ IP 0x44252  SP 0x3ffeb0
+InstCount: 49775
+IP: 0x29925
+Profile dumped.
+level: 8
+maxLevel: 11
+nodes: 466

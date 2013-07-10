@@ -323,18 +323,6 @@ void TrackingTab::createUI() {
 	mainLayout->addChild(lValert);
 }
 
-//void TrackingTab::connectUrl(String url, eTrakingTab fct) {
-//	//Screen::setMainWidget(activityPage);
-//
-//	lprintfln("connectUrl");
-//	if (mIsConnected == false) {
-//		mIsConnected = true;
-//		fonction = fct;
-//		lprintfln("GET REQUEST : %d", this->get(url.c_str()));
-//	} else {
-//		lprintfln("Déjà connecté: %d", fonction);
-//	}
-//}
 
 void TrackingTab::orientationChange(int screenOrientation) {
 

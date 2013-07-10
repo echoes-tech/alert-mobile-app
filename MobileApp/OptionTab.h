@@ -52,7 +52,7 @@ private:
 	String _LOGINTOKEN;
 	int LANGUAGE;
 
-	int icreateUI;
+//	int icreateUI;
 	String _modeAuth;
 	long long _idMobile;
 	String _tokenConnection;

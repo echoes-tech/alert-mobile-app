@@ -136,6 +136,7 @@ static MAUtil::String getLocalPath() {
     int result = getSystemProperty("mosync.path.local", path);
     // If it works, fine.
     if(result > 0) {
+//    	maToast(path.c_str(), MA_TOAST_DURATION_LONG);
 //        printf("Got local path: %i\n", result);
         return path + "";
     }

@@ -44,6 +44,7 @@
 <property key="dependency.strategy" value="0"/>
 <property key="excludes/Debug" value=""/>
 <property key="excludes/Release" value=""/>
+<property key="iphone:provisioning.file" value="I:\EBFD8AE5-563C-4FB8-9737-83A902846773.mobileprovision"/>
 <property key="profile.mgr.type" value="0"/>
 <property key="symbian.uids:uid.s60v2uid" value="0x08cd582f"/>
 <property key="symbian.uids:uid.s60v3uid" value="0xeba43acc"/>
