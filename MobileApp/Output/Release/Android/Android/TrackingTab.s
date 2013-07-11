@@ -781,8 +781,10 @@ LC13:
 LC14:
 	.ascii "mosync.path.local\0"
 LC15:
-	.ascii "\0"
+	.ascii "Got local path: %i\12\0"
 LC16:
+	.ascii "\0"
+LC17:
 	.ascii "C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h\0"
 .code
 	.stabs	"_Z12getLocalPathv:f(10,1)",36,0,129,__Z12getLocalPathv
@@ -790,9 +792,9 @@ LC16:
 .func __Z12getLocalPathv, 1, int
 	.line 129
 	push rt,fr
-	sub  sp,#0x14
+	sub  sp,#0x18
 	ld   fr,sp
-	add  fr,#0x1c
+	add  fr,#0x20
 	ld   [fr,-28],i0
 	.dlab LBB13
 	.dlab LBB14
@@ -825,11 +827,16 @@ LC16:
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
 	jc   le,r0,r14,#L13
+	.line 140
+	ld   r14,[fr,-20]
+	ld   [sp],r14
+	ld   i0,#LC15
+	call &_printf
 	.line 141
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
-	ld   i1,#LC15
+	ld   i1,#LC16
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffffe8
@@ -859,7 +866,7 @@ L13:
 	ld   r14,fr
 	add  r14,#0xfffffff4
 	ld   i0,r14
-	ld   i1,#LC15
+	ld   i1,#LC16
 	ld   i2,#LC13
 	ld   i3,#0x0
 	call &__ZN10FileLister5startEPKcS1_i
@@ -876,7 +883,7 @@ L13:
 	ld   r0,[fr,-20]
 	ld   r14,#0x0
 	jc   gt,r0,r14,#L14
-	ld   i0,#LC16
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
@@ -904,7 +911,7 @@ L12:
 	.dlab LBE13
 	.line 149
 	ld   r14,[fr,-28]
-	add  sp,#0x14
+	add  sp,#0x18
 	pop  rt,fr
 	ret
 	.stabs	"fl:(88,1)",128,0,131,-12
@@ -954,32 +961,251 @@ Lscope6:
 	pop  rt,fr
 	ret
 Lscope7:
-	.lcomm	_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data, 600 ; size=600
-.data
-LC17:
-	.ascii "EA_mobile_app_conf.txt\0"
-LC18:
-	.ascii "Open '%s'\12\0"
-LC19:
-	.ascii "Size: %i\12\0"
-LC20:
-	.ascii "Closing...\12\0"
-.code
-	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(87,3)",36,0,152,__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabs	"config:p(88,6)",160,0,152,-20
+	.stabs	"_Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE:f(0,3)",36,0,152,__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
+	.stabs	"name:p(4,7)",160,0,152,-16
+	.stabs	"data:p(4,38)",160,0,152,-20
 
-.func __Z9tryToReadRN6MAUtil11BasicStringIcEE, 1, int
+.func __Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE, 2, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext5
 Ltext5:
 	.line 152
+	push rt,d0
+	sub  sp,#0x14
+	ld   fr,sp
+	add  fr,#0x20
+	ld   [fr,-16],i0
+	ld   [fr,-20],i1
+	.dlab LBB19
+	.dlab LBB20
+	.line 153
+	call &_maCreatePlaceholder
+	ld   [fr,-24],r14
+	.line 154
+	ld   i0,[fr,-20]
+	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
+	ld   i0,[fr,-24]
+	ld   i1,r14
+	call &_maCreateData
+	ld   r0,r14
+	ld   r14,#0x1
+	jc   eq,r0,r14,#L21
+	.line 156
+	ld   r14,#0xffffffff
+	ld   [fr,-32],r14
+	jp   #L20
+L21:
+	.line 158
+	ld   i0,[fr,-20]
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
+	ld   d0,r14
+	ld   i0,[fr,-20]
+	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
+	ld   i0,[fr,-24]
+	ld   i1,d0
+	ld   i2,#0x0
+	ld   i3,r14
+	call &_maWriteData
+	.line 160
+	ld   i0,[fr,-16]
+	ld   i1,#0x1
+	call &_maOpenStore
+	ld   [fr,-28],r14
+	.line 162
+	ld   r0,[fr,-28]
+	ld   r14,#0x0
+	jc   le,r0,r14,#L22
+	.line 164
+	ld   i0,[fr,-28]
+	ld   i1,[fr,-24]
+	call &_maWriteStore
+	.line 165
+	ld   i0,[fr,-28]
+	ld   i1,#0x0
+	call &_maCloseStore
+	.line 167
+	ld   r14,#0x1
+	ld   [fr,-32],r14
+	jp   #L20
+L22:
+	.line 169
+	ld   r14,#0xffffffff
+	ld   [fr,-32],r14
+L20:
+	.dlab LBE20
+	.dlab LBE19
+	.line 170
+	ld   r14,[fr,-32]
+	add  sp,#0x14
+	pop  rt,d0
+	ret
+	.stabs	"dataHandle:(6,10)",128,0,153,-24
+	.stabs	"myStore:(6,10)",128,0,160,-28
+	.stabn	192,0,0,LBB20-__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
+	.stabn	224,0,0,LBE20-__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
+Lscope8:
+	.stabs	"_Z13readFromStorePKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,174,__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabs	"name:p(4,7)",160,0,174,-20
+	.stabs	"data:p(88,6)",160,0,174,-24
+
+.func __Z13readFromStorePKcRN6MAUtil11BasicStringIcEE, 2, int
+	.line 174
 	push rt,d1
 	sub  sp,#0x24
 	ld   fr,sp
 	add  fr,#0x34
 	ld   [fr,-20],i0
-	.dlab LBB19
-	.dlab LBB20
-	.line 154
+	ld   [fr,-24],i1
+	.line 174
+	ld   [fr,-52],sp
+	.dlab LBB21
+	.dlab LBB22
+	.line 175
+	ld   i0,[fr,-20]
+	ld   i1,#0x0
+	call &_maOpenStore
+	ld   [fr,-28],r14
+	.dlab LBB23
+	.line 176
+	ld   r0,[fr,-28]
+	ld   r14,#0x0
+	jc   le,r0,r14,#L24
+	.dlab LBB24
+	.line 178
+	call &_maCreatePlaceholder
+	ld   [fr,-32],r14
+	.line 179
+	ld   i0,[fr,-24]
+	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
+	ld   [fr,-36],r14
+	.dlab LBB25
+	.line 180
+	ld   i0,[fr,-28]
+	ld   i1,[fr,-32]
+	call &_maReadStore
+	ld   r0,r14
+	ld   r14,#0xffffffff
+	jc   eq,r0,r14,#L24
+	.dlab LBB26
+	ld   d1,sp
+	.line 182
+	ld   i0,[fr,-32]
+	call &_maGetDataSize
+	ld   [fr,-40],r14
+	.line 183
+	ld   r14,[fr,-40]
+	add  r14,#0x1
+	add  r14,#0x3
+	add  r14,#0x3
+	srl  r14,#0x2
+	mul  r14,#0x4
+	sub  sp,r14
+	ld   r14,sp
+	add  r14,#0x3
+	srl  r14,#0x2
+	ld   d0,r14
+	mul  d0,#0x4
+	.line 184
+	ld   r14,[fr,-40]
+	add  r14,d0
+	ld   r0,#0x0
+	ld.b [r14],r0
+	.line 185
+	ld   i0,[fr,-32]
+	ld   i1,d0
+	ld   i2,#0x0
+	ld   i3,[fr,-40]
+	call &_maReadData
+	.line 187
+	ld   i0,[fr,-24]
+	call &__ZN6MAUtil11BasicStringIcE5clearEv
+	.line 188
+	ld   r14,fr
+	add  r14,#0xffffffd4
+	ld   i0,r14
+	ld   i1,d0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r14,fr
+	add  r14,#0xffffffd4
+	ld   i0,[fr,-24]
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffd4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBB27
+	.line 190
+	ld   sp,d1
+	.dlab LBE27
+	ld   r14,#0x1
+	ld   [fr,-48],r14
+	jp   #L23
+L24:
+	.dlab LBE26
+	.dlab LBE25
+	.dlab LBE24
+	.dlab LBE23
+	.line 193
+	ld   r0,#0xffffffff
+	ld   [fr,-48],r0
+L23:
+	.dlab LBE22
+	.dlab LBE21
+	.line 194
+	ld   sp,[fr,-52]
+	ld   r14,[fr,-48]
+	add  sp,#0x24
+	pop  rt,d1
+	ret
+	.stabs	"store:(6,10)",128,0,175,-28
+	.stabn	192,0,0,LBB22-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabs	"dataHandle:(6,10)",128,0,178,-32
+	.stabs	"len:(0,3)",128,0,179,-36
+	.stabn	192,0,0,LBB24-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabs	"size:(0,3)",128,0,182,-40
+	.stabs	"temp:r(87,8)=*(87,9)=ar(6,57);0;-1;(0,19)",64,0,183,4
+	.stabn	192,0,0,LBB26-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabn	224,0,0,LBE26-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabn	224,0,0,LBE24-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	.stabn	224,0,0,LBE22-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+Lscope9:
+	.lcomm	_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data, 600 ; size=600
+.data
+LC18:
+	.ascii "EA_mobile_app_conf.txt\0"
+LC19:
+	.ascii "OpenRead '%s'\12\0"
+LC20:
+	.ascii "Error %i\12\0"
+LC21:
+	.ascii "File does not exist.\12\0"
+LC22:
+	.ascii "Size: %i\12\0"
+LC23:
+	.ascii "Closing...\12\0"
+LC24:
+	.ascii "Done.\12\0"
+.code
+	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(87,3)",36,0,196,__Z9tryToReadRN6MAUtil11BasicStringIcEE
+	.stabs	"config:p(88,6)",160,0,196,-20
+
+.func __Z9tryToReadRN6MAUtil11BasicStringIcEE, 1, int
+	.line 196
+	push rt,d1
+	sub  sp,#0x24
+	ld   fr,sp
+	add  fr,#0x34
+	ld   [fr,-20],i0
+	.dlab LBB28
+	.dlab LBB29
+	.dlab LBB30
+	.line 198
+	call &__Z11getPlatformv
+	ld   r0,r14
+	ld   r14,#0x1
+	jc   eq,r0,r14,#L27
+	.dlab LBB31
+	.line 199
 	ld   d0,fr
 	add  d0,#0xffffffe8
 	ld   r14,fr
@@ -991,7 +1217,7 @@ Ltext5:
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
-	ld   i1,#LC17
+	ld   i1,#LC18
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffe0
@@ -1007,15 +1233,15 @@ Ltext5:
 	add  r14,#0xffffffe4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 157
+	.line 202
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   [sp],r14
-	ld   i0,#LC18
+	ld   i0,#LC19
 	call &_lprintfln
-	.line 158
+	.line 203
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
@@ -1024,103 +1250,111 @@ Ltext5:
 	ld   i1,#0x1
 	call &_maFileOpen
 	ld   [fr,-36],r14
-	.line 159
+	.line 204
 	ld   r0,[fr,-36]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L21
-	.dlab LBB21
-	.line 161
+	jc   ge,r0,r14,#L28
+	.line 205
+	ld   r14,[fr,-36]
+	ld   [sp],r14
+	ld   i0,#LC20
+	call &_lprintfln
+	.dlab LBB32
+	.line 206
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE21
+	.dlab LBE32
 	ld   r14,#0x0
 	ld   [fr,-48],r14
-	jp   #L20
-L21:
-	.line 165
+	jp   #L26
+L28:
+	.line 210
 	ld   i0,[fr,-36]
 	call &_maFileExists
 	ld   [fr,-40],r14
-	.line 166
+	.line 211
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L22
-	ld   i0,#LC16
+	jc   ge,r0,r14,#L29
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xa6
+	ld   i2,#0xd3
 	call &_bfeHandler
-L22:
-	.line 167
+L29:
+	.line 212
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L24
-	.line 169
+	jc   ne,r0,r14,#L31
+	.line 213
+	ld   i0,#LC21
+	call &_printf
+	.line 214
 	ld   i0,[fr,-36]
 	call &_maFileClose
-	.dlab LBB22
-	.line 170
+	.dlab LBB33
+	.line 215
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE22
+	.dlab LBE33
 	ld   r14,#0x1
 	ld   [fr,-48],r14
-	jp   #L20
-L24:
-	.line 174
+	jp   #L26
+L31:
+	.line 219
 	ld   i0,[fr,-36]
 	call &_maFileSize
 	ld   [fr,-44],r14
-	.line 175
+	.line 220
 	ld   r14,[fr,-44]
 	ld   [sp],r14
-	ld   i0,#LC19
+	ld   i0,#LC22
 	call &_lprintfln
-	.line 176
+	.line 221
 	ld   r0,[fr,-44]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L25
-	ld   i0,#LC16
+	jc   ge,r0,r14,#L32
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xb0
+	ld   i2,#0xdd
 	call &_bfeHandler
-L25:
-	.line 180
+L32:
+	.line 225
 	ld   r0,[fr,-44]
 	ld   r14,#0x257
-	jc   le,r0,r14,#L27
-	ld   i0,#LC16
+	jc   le,r0,r14,#L34
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xb4
+	ld   i2,#0xe1
 	call &_bfeHandler
-L27:
-	.line 181
+L34:
+	.line 226
 	ld   i0,[fr,-36]
 	ld   i1,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
 	ld   i2,[fr,-44]
 	call &_maFileRead
 	ld   [fr,-40],r14
-	.line 182
+	.line 227
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L29
-	ld   i0,#LC16
+	jc   eq,r0,r14,#L36
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xb6
+	ld   i2,#0xe3
 	call &_bfeHandler
-L29:
-	.line 183
+L36:
+	.line 228
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
@@ -1135,54 +1369,76 @@ L29:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 184
+	.line 229
 	ld   i0,[fr,-20]
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.line 191
-	ld   i0,#LC20
+	.line 236
+	ld   i0,#LC23
 	call &_lprintfln
-	.line 192
+	.line 237
 	ld   i0,[fr,-36]
 	call &_maFileClose
 	ld   [fr,-40],r14
-	.line 193
+	.line 238
 	ld   r0,[fr,-40]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L31
-	ld   i0,#LC16
+	jc   eq,r0,r14,#L38
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xc1
+	ld   i2,#0xee
 	call &_bfeHandler
-L31:
-	.dlab LBB23
-	.line 196
+L38:
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE23
+	.dlab LBE31
+	jp   #L40
+L27:
+	.line 242
+	ld   i0,#LC18
+	ld   i1,[fr,-20]
+	call &__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
+	ld   r0,r14
+	ld   r14,#0x0
+	jc   eq,r0,r14,#L41
+	.line 243
 	ld   r14,#0x2
 	ld   [fr,-48],r14
-L20:
-	.dlab LBE20
-	.dlab LBE19
-	.line 197
+	jp   #L26
+L41:
+	.line 246
+	ld   r14,#0x0
+	ld   [fr,-48],r14
+	jp   #L26
+L40:
+	.dlab LBE30
+	.line 250
+	ld   i0,#LC24
+	call &_lprintfln
+	.line 251
+	ld   r14,#0x2
+	ld   [fr,-48],r14
+L26:
+	.dlab LBE29
+	.dlab LBE28
+	.line 252
 	ld   r14,[fr,-48]
 	add  sp,#0x24
 	pop  rt,d1
 	ret
-	.stabs	"filename:(10,1)",128,0,154,-24
-	.stabs	"file:(6,10)",128,0,158,-36
-	.stabs	"res:(0,3)",128,0,165,-40
-	.stabs	"size:(0,3)",128,0,174,-44
-	.stabs	"data:V(87,8)=ar(6,57);0;599;(0,19)",40,0,179,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
-	.stabn	192,0,0,LBB20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE20-__Z9tryToReadRN6MAUtil11BasicStringIcEE
-Lscope8:
+	.stabs	"filename:(10,1)",128,0,199,-24
+	.stabs	"file:(6,10)",128,0,203,-36
+	.stabs	"res:(0,3)",128,0,210,-40
+	.stabs	"size:(0,3)",128,0,219,-44
+	.stabs	"data:V(87,10)=ar(6,57);0;599;(0,19)",40,0,224,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
+	.stabn	192,0,0,LBB31-__Z9tryToReadRN6MAUtil11BasicStringIcEE
+	.stabn	224,0,0,LBE31-__Z9tryToReadRN6MAUtil11BasicStringIcEE
+Lscope10:
 	.stabs	"maFileRead:f(0,3)",36,0,6355,_maFileRead
 	.stabs	"file:p(6,10)",160,0,6355,-12
 	.stabs	"dst:p(6,9)",160,0,6355,-16
@@ -1199,19 +1455,19 @@ Ltext6:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB24
+	.dlab LBB34
 	.line 6356
 	ld   i0,#0x35
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
-	.dlab LBE24
+	.dlab LBE34
 	.line 6357
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope9:
+Lscope11:
 	.stabs	"maFileSize:f(0,3)",36,0,6254,_maFileSize
 	.stabs	"file:p(6,10)",160,0,6254,-12
 
@@ -1222,19 +1478,19 @@ Lscope9:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB25
+	.dlab LBB35
 	.line 6255
 	ld   i0,#0x2d
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE25
+	.dlab LBE35
 	.line 6256
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope10:
+Lscope12:
 	.stabs	"maFileClose:f(0,3)",36,0,6225,_maFileClose
 	.stabs	"file:p(6,10)",160,0,6225,-12
 
@@ -1245,19 +1501,19 @@ Lscope10:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB26
+	.dlab LBB36
 	.line 6226
 	ld   i0,#0x2a
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE26
+	.dlab LBE36
 	.line 6227
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope11:
+Lscope13:
 	.stabs	"maFileExists:f(0,3)",36,0,6218,_maFileExists
 	.stabs	"file:p(6,10)",160,0,6218,-12
 
@@ -1268,19 +1524,19 @@ Lscope11:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB27
+	.dlab LBB37
 	.line 6219
 	ld   i0,#0x29
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE27
+	.dlab LBE37
 	.line 6220
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope12:
+Lscope14:
 	.stabs	"maFileOpen:f(6,10)",36,0,6211,_maFileOpen
 	.stabs	"path:p(4,7)",160,0,6211,-12
 	.stabs	"mode:p(0,3)",160,0,6211,-16
@@ -1293,54 +1549,60 @@ Lscope12:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB28
+	.dlab LBB38
 	.line 6212
 	ld   i0,#0x28
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE28
+	.dlab LBE38
 	.line 6213
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope13:
+Lscope15:
 .data
-LC21:
-	.ascii "true\0"
-LC22:
-	.ascii "false\0"
-LC23:
-	.ascii "{\"login\" : \"\0"
-LC24:
-	.ascii "\",\"token_mobile\" : \"\0"
 LC25:
-	.ascii "\",\"token_authent\" : \"\0"
+	.ascii "OpenWrite '%s'\12\0"
 LC26:
-	.ascii "\",\"authentication_mode\" : \"\0"
+	.ascii "Truncating file...\12\0"
 LC27:
-	.ascii "\",\"id_media_value\" : \0"
+	.ascii "Creating file...\12\0"
 LC28:
-	.ascii ",\"notification\" : \0"
+	.ascii "true\0"
 LC29:
-	.ascii ",\"vibrate\" : \0"
+	.ascii "false\0"
 LC30:
+	.ascii "{\"login\" : \"\0"
+LC31:
+	.ascii "\",\"token_mobile\" : \"\0"
+LC32:
+	.ascii "\",\"token_authent\" : \"\0"
+LC33:
+	.ascii "\",\"authentication_mode\" : \"\0"
+LC34:
+	.ascii "\",\"id_media_value\" : \0"
+LC35:
+	.ascii ",\"notification\" : \0"
+LC36:
+	.ascii ",\"vibrate\" : \0"
+LC37:
 	.ascii "}\0"
 .code
-	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb:f(87,3)",36,0,199,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabs	"login:p(88,6)",160,0,199,-44
-	.stabs	"tokenMobile:p(88,6)",160,0,199,-48
-	.stabs	"tokenAuthent:p(88,6)",160,0,199,-52
-	.stabs	"mode:p(88,6)",160,0,199,-56
-	.stabs	"idMedia:p(87,9)=&(0,15)",160,0,199,0
-	.stabs	"vibrate:p(0,4)",160,0,199,4
-	.stabs	"notification:p(0,4)",160,0,199,8
+	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb:f(87,3)",36,0,254,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"login:p(88,6)",160,0,254,-44
+	.stabs	"tokenMobile:p(88,6)",160,0,254,-48
+	.stabs	"tokenAuthent:p(88,6)",160,0,254,-52
+	.stabs	"mode:p(88,6)",160,0,254,-56
+	.stabs	"idMedia:p(87,11)=&(0,15)",160,0,254,0
+	.stabs	"vibrate:p(0,4)",160,0,254,4
+	.stabs	"notification:p(0,4)",160,0,254,8
 
 .func __Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb, 7, int
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext7
 Ltext7:
-	.line 199
+	.line 254
 	push rt,d7
 	sub  sp,#0x98
 	ld   fr,sp
@@ -1349,183 +1611,219 @@ Ltext7:
 	ld   [fr,-48],i1
 	ld   [fr,-52],i2
 	ld   [fr,-56],i3
-	.dlab LBB29
-	.dlab LBB30
-	.line 201
+	.dlab LBB39
+	.dlab LBB40
+	.dlab LBB41
+	.line 258
+	call &__Z11getPlatformv
+	ld   r0,r14
+	ld   r14,#0x1
+	jc   eq,r0,r14,#L49
+	.dlab LBB42
+	.line 260
 	ld   d0,fr
-	add  d0,#0xffffffc4
+	add  d0,#0xffffffbc
 	ld   r14,fr
-	add  r14,#0xffffffc0
+	add  r14,#0xffffffb8
 	ld   i0,r14
 	call &__Z12getLocalPathv
 	ld   d1,fr
-	add  d1,#0xffffffc0
+	add  d1,#0xffffffb8
 	ld   r14,fr
-	add  r14,#0xffffffbc
+	add  r14,#0xffffffb4
 	ld   i0,r14
-	ld   i1,#LC17
+	ld   i1,#LC18
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffffbc
+	add  r14,#0xffffffb4
 	ld   i0,d0
 	ld   i1,d1
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 263
+	ld   r14,fr
 	add  r14,#0xffffffbc
 	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
+	ld   [sp],r14
+	ld   i0,#LC25
+	call &_printf
+	.line 264
 	ld   r14,fr
-	add  r14,#0xffffffc0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 205
-	ld   r14,fr
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	ld   i1,#0x3
 	call &_maFileOpen
-	ld   [fr,-72],r14
-	.line 206
-	ld   r0,[fr,-72]
+	ld   [fr,-64],r14
+	.line 266
+	ld   r0,[fr,-64]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L39
-	.dlab LBB31
-	.line 208
+	jc   ge,r0,r14,#L50
+	.line 267
+	ld   r14,[fr,-64]
+	ld   [sp],r14
+	ld   i0,#LC20
+	call &_printf
+	.dlab LBB43
+	.line 268
 	ld   r14,fr
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE31
+	.dlab LBE43
 	ld   r14,#0x0
-	ld   [fr,-168],r14
-	jp   #L38
-L39:
-	.line 212
-	ld   i0,[fr,-72]
+	ld   [fr,-164],r14
+	jp   #L48
+L50:
+	.line 272
+	ld   i0,[fr,-64]
 	call &_maFileExists
-	ld   [fr,-76],r14
-	.line 213
-	ld   r0,[fr,-76]
+	ld   [fr,-60],r14
+	.line 273
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L40
-	ld   i0,#LC16
+	jc   ge,r0,r14,#L51
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xd5
+	ld   i2,#0x111
 	call &_bfeHandler
-L40:
-	.line 214
-	ld   r0,[fr,-76]
+L51:
+	.line 274
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L42
-	.line 217
-	ld   i0,[fr,-72]
+	jc   eq,r0,r14,#L53
+	.line 276
+	ld   i0,#LC26
+	call &_printf
+	.line 277
+	ld   i0,[fr,-64]
 	ld   i1,#0x0
 	call &_maFileTruncate
-	ld   [fr,-76],r14
-	.line 218
-	ld   r0,[fr,-76]
+	ld   [fr,-60],r14
+	.line 278
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L45
-	ld   i0,#LC16
+	jc   eq,r0,r14,#L56
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xda
+	ld   i2,#0x116
 	call &_bfeHandler
-L42:
-	.line 222
-	ld   i0,[fr,-72]
+L53:
+	.line 281
+	ld   i0,#LC27
+	call &_printf
+	.line 282
+	ld   i0,[fr,-64]
 	call &_maFileCreate
-	ld   [fr,-76],r14
-	.line 223
-	ld   r0,[fr,-76]
+	ld   [fr,-60],r14
+	.line 283
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   ge,r0,r14,#L45
-	ld   i0,#LC16
+	jc   ge,r0,r14,#L56
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xdf
+	ld   i2,#0x11b
 	call &_bfeHandler
-L45:
-	.line 228
+L56:
 	ld   r14,fr
 	add  r14,#0xffffffbc
-	ld   i0,r14
-	ld   i1,#LC21
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 229
-	ld   r14,fr
-	add  r14,#0xffffffc0
-	ld   i0,r14
-	ld   i1,#LC21
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 230
-	ld.b r0,[fr,4]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L48
-	.line 231
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,r14
-	ld   i1,#LC22
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffb0
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L48:
-	.line 233
-	ld.b r0,[fr,8]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L49
-	.line 234
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,r14
-	ld   i1,#LC22
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffb0
-	ld   r14,fr
-	add  r14,#0xffffffc0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffb0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 L49:
-	.line 237
+	.dlab LBE42
+	.dlab LBE41
+	.line 288
+	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	ld   i1,#LC28
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	.line 289
+	ld   r14,fr
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	ld   i1,#LC28
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	.line 290
+	ld.b r0,[fr,4]
+	and  r0,#0xff  ; zero extend
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L59
+	.line 291
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	ld   i1,#LC29
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffbc
+	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+L59:
+	.line 293
+	ld.b r0,[fr,8]
+	and  r0,#0xff  ; zero extend
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L60
+	.line 294
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	ld   i1,#LC29
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
+	ld   r0,fr
+	add  r0,#0xffffffbc
+	ld   r14,fr
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	ld   i1,r0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+L60:
+	.line 302
 	ld   d1,fr
-	add  d1,#0xffffffb0
+	add  d1,#0xffffffbc
 	ld   d2,fr
-	add  d2,#0xffffffac
+	add  d2,#0xffffffb0
 	ld   d3,fr
-	add  d3,#0xffffffa8
+	add  d3,#0xffffffac
 	ld   d4,fr
-	add  d4,#0xffffffa4
+	add  d4,#0xffffffa8
 	ld   d5,fr
-	add  d5,#0xffffffa0
+	add  d5,#0xffffffa4
 	ld   d6,fr
-	add  d6,#0xffffff9c
+	add  d6,#0xffffffa0
 	ld   d7,fr
-	add  d7,#0xffffff98
+	add  d7,#0xffffff9c
+	ld   r14,fr
+	add  r14,#0xffffff98
+	ld   [fr,-168],r14
 	ld   r14,fr
 	add  r14,#0xffffff94
 	ld   [fr,-172],r14
@@ -1543,155 +1841,156 @@ L49:
 	ld   [fr,-188],r14
 	ld   r14,fr
 	add  r14,#0xffffff80
-	ld   [fr,-192],r14
-	ld   r14,fr
-	add  r14,#0xffffff7c
 	ld   i0,r14
-	ld   i1,#LC23
+	ld   i1,#LC30
 	ld   i2,[fr,-44]
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
-	add  d0,#0xffffff7c
+	add  d0,#0xffffff80
 	ld   r14,fr
-	add  r14,#0xffffff78
+	add  r14,#0xffffff7c
 	ld   i0,r14
-	ld   i1,#LC24
+	ld   i1,#LC31
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff78
-	ld   i0,[fr,-192]
+	add  r14,#0xffffff7c
+	ld   i0,[fr,-188]
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffff80
-	ld   i0,[fr,-188]
+	add  r14,#0xffffff84
+	ld   i0,[fr,-184]
 	ld   i1,r14
 	ld   i2,[fr,-48]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
-	add  d0,#0xffffff84
+	add  d0,#0xffffff88
 	ld   r14,fr
-	add  r14,#0xffffff74
+	add  r14,#0xffffff78
 	ld   i0,r14
-	ld   i1,#LC25
+	ld   i1,#LC32
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff74
-	ld   i0,[fr,-184]
+	add  r14,#0xffffff78
+	ld   i0,[fr,-180]
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffff88
-	ld   i0,[fr,-180]
+	add  r14,#0xffffff8c
+	ld   i0,[fr,-176]
 	ld   i1,r14
 	ld   i2,[fr,-52]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
-	add  d0,#0xffffff8c
+	add  d0,#0xffffff90
 	ld   r14,fr
-	add  r14,#0xffffff70
+	add  r14,#0xffffff74
 	ld   i0,r14
-	ld   i1,#LC26
+	ld   i1,#LC33
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff70
-	ld   i0,[fr,-176]
+	add  r14,#0xffffff74
+	ld   i0,[fr,-172]
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffff90
-	ld   i0,[fr,-172]
+	add  r14,#0xffffff94
+	ld   i0,[fr,-168]
 	ld   i1,r14
 	ld   i2,[fr,-56]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
-	add  d0,#0xffffff94
-	ld   r14,fr
-	add  r14,#0xffffff6c
-	ld   i0,r14
-	ld   i1,#LC27
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff6c
-	ld   i0,d7
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
 	add  d0,#0xffffff98
 	ld   r14,fr
-	add  r14,#0xffffff68
-	ld   r0,[fr]
+	add  r14,#0xffffff70
 	ld   i0,r14
-	ld   i1,[r0]
-	ld   i2,[r0,4]
-	call &__ZN7Convert8toStringEx
+	ld   i1,#LC34
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff68
-	ld   i0,d6
+	add  r14,#0xffffff70
+	ld   i0,d7
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
 	add  d0,#0xffffff9c
 	ld   r14,fr
-	add  r14,#0xffffff64
+	add  r14,#0xffffff6c
+	ld   r0,[fr]
 	ld   i0,r14
-	ld   i1,#LC28
+	ld   i1,[r0]
+	ld   i2,[r0,4]
+	call &__ZN7Convert8toStringEx
+	ld   r14,fr
+	add  r14,#0xffffff6c
+	ld   i0,d6
+	ld   i1,d0
+	ld   i2,r14
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
+	ld   d0,fr
+	add  d0,#0xffffffa0
+	ld   r14,fr
+	add  r14,#0xffffff68
+	ld   i0,r14
+	ld   i1,#LC35
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff64
+	add  r14,#0xffffff68
 	ld   i0,d5
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffffa0
+	add  r14,#0xffffffa4
 	ld   r0,fr
-	add  r0,#0xffffffc0
+	add  r0,#0xffffffb8
 	ld   i0,d4
 	ld   i1,r14
 	ld   i2,r0
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
-	add  d0,#0xffffffa4
+	add  d0,#0xffffffa8
 	ld   r14,fr
-	add  r14,#0xffffff60
+	add  r14,#0xffffff64
 	ld   i0,r14
-	ld   i1,#LC29
+	ld   i1,#LC36
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff60
+	add  r14,#0xffffff64
 	ld   i0,d3
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffffa8
+	add  r14,#0xffffffac
 	ld   r0,fr
-	add  r0,#0xffffffbc
+	add  r0,#0xffffffb4
 	ld   i0,d2
 	ld   i1,r14
 	ld   i2,r0
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   d0,fr
-	add  d0,#0xffffffac
+	add  d0,#0xffffffb0
 	ld   r14,fr
-	add  r14,#0xffffff5c
+	add  r14,#0xffffff60
 	ld   i0,r14
-	ld   i1,#LC30
+	ld   i1,#LC37
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
-	add  r14,#0xffffff5c
+	add  r14,#0xffffff60
 	ld   i0,d1
 	ld   i1,d0
 	ld   i2,r14
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
 	ld   r14,fr
-	add  r14,#0xffffff5c
+	add  r14,#0xffffff60
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1699,11 +1998,11 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffffa8
+	add  r14,#0xffffff64
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff60
+	add  r14,#0xffffffa8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1711,23 +2010,11 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffffa0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff64
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
 	add  r14,#0xffffff68
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff98
+	add  r14,#0xffffffa0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1735,11 +2022,7 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff90
+	add  r14,#0xffffff9c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1747,11 +2030,11 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff8c
+	add  r14,#0xffffff98
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff88
+	add  r14,#0xffffff94
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1759,11 +2042,11 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff84
+	add  r14,#0xffffff90
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffff80
+	add  r14,#0xffffff8c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
@@ -1771,95 +2054,163 @@ L49:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
+	add  r14,#0xffffff88
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffff84
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
 	add  r14,#0xffffff7c
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 239
 	ld   r14,fr
-	add  r14,#0xffffffb0
+	add  r14,#0xffffff80
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.line 304
+	call &__Z11getPlatformv
+	ld   r0,r14
+	ld   r14,#0x1
+	jc   eq,r0,r14,#L61
+	.line 305
+	ld   r14,fr
+	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   d0,r14
 	ld   r14,fr
-	add  r14,#0xffffffb0
+	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE4sizeEv
-	ld   i0,[fr,-72]
+	ld   i0,[fr,-64]
 	ld   i1,d0
 	ld   i2,r14
 	call &_maFileWrite
-	ld   [fr,-76],r14
-	.line 240
+	ld   [fr,-60],r14
+	.line 306
 	ld   r14,fr
-	add  r14,#0xffffffb0
+	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
 	ld   i0,r14
 	call &_lprintfln
-	.line 243
-	ld   r0,[fr,-76]
+	.line 309
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L50
-	ld   i0,#LC16
+	jc   eq,r0,r14,#L62
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xf3
+	ld   i2,#0x135
 	call &_bfeHandler
-L50:
-	.line 247
-	ld   i0,[fr,-72]
+L62:
+	.line 312
+	ld   i0,#LC23
+	call &_printf
+	.line 313
+	ld   i0,[fr,-64]
 	call &_maFileClose
-	ld   [fr,-76],r14
-	.line 248
-	ld   r0,[fr,-76]
+	ld   [fr,-60],r14
+	.line 314
+	ld   r0,[fr,-60]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L52
-	ld   i0,#LC16
+	jc   eq,r0,r14,#L66
+	ld   i0,#LC17
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
-	ld   i2,#0xf8
+	ld   i2,#0x13a
 	call &_bfeHandler
-L52:
-	.dlab LBB32
-	.line 251
+L61:
+	.line 317
 	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffc0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	add  r14,#0xffffffbc
+	ld   i0,#LC18
+	ld   i1,r14
+	call &__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
+	ld   r0,r14
+	ld   r14,#0x0
+	jc   eq,r0,r14,#L67
+	.dlab LBB44
+	.line 318
 	ld   r14,fr
 	add  r14,#0xffffffbc
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	ld   r14,fr
-	add  r14,#0xffffffc4
+	add  r14,#0xffffffb8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE32
+	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE44
 	ld   r14,#0x2
-	ld   [fr,-168],r14
-L38:
-	.dlab LBE30
-	.dlab LBE29
-	.line 252
-	ld   r14,[fr,-168]
+	ld   [fr,-164],r14
+	jp   #L48
+L67:
+	.dlab LBB45
+	.line 321
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE45
+	ld   r14,#0x0
+	ld   [fr,-164],r14
+	jp   #L48
+L66:
+	.line 324
+	ld   i0,#LC24
+	call &_printf
+	.dlab LBB46
+	.line 325
+	ld   r14,fr
+	add  r14,#0xffffffbc
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb8
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	ld   r14,fr
+	add  r14,#0xffffffb4
+	ld   i0,r14
+	call &__ZN6MAUtil11BasicStringIcED1Ev
+	.dlab LBE46
+	ld   r14,#0x2
+	ld   [fr,-164],r14
+L48:
+	.dlab LBE40
+	.dlab LBE39
+	.line 326
+	ld   r14,[fr,-164]
 	add  sp,#0x98
 	pop  rt,d7
 	ret
-	.stabs	"filename:(10,1)",128,0,201,-60
-	.stabs	"file:(6,10)",128,0,205,-72
-	.stabs	"res:(0,3)",128,0,212,-76
-	.stabs	"sVibrate:(10,1)",128,0,228,-68
-	.stabs	"sNotification:(10,1)",128,0,229,-64
-	.stabs	"tmp:(10,1)",128,0,237,-80
-	.stabn	192,0,0,LBB30-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabn	224,0,0,LBE30-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-Lscope14:
+	.stabs	"res:(0,3)",128,0,256,-60
+	.stabs	"file:(6,10)",128,0,257,-64
+	.stabs	"sVibrate:(10,1)",128,0,288,-76
+	.stabs	"sNotification:(10,1)",128,0,289,-72
+	.stabs	"tmp:(10,1)",128,0,297,-68
+	.stabn	192,0,0,LBB40-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(10,1)",128,0,260,-68
+	.stabn	192,0,0,LBB42-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE42-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE40-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+Lscope16:
 	.stabs	"maFileWrite:f(0,3)",36,0,6332,_maFileWrite
 	.stabs	"file:p(6,10)",160,0,6332,-12
 	.stabs	"src:p(14,5)",160,0,6332,-16
@@ -1876,19 +2227,19 @@ Ltext8:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB33
+	.dlab LBB47
 	.line 6333
 	ld   i0,#0x33
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
-	.dlab LBE33
+	.dlab LBE47
 	.line 6334
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope15:
+Lscope17:
 	.stabs	"maFileCreate:f(0,3)",36,0,6235,_maFileCreate
 	.stabs	"file:p(6,10)",160,0,6235,-12
 
@@ -1899,19 +2250,19 @@ Lscope15:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB34
+	.dlab LBB48
 	.line 6236
 	ld   i0,#0x2b
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE34
+	.dlab LBE48
 	.line 6237
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope16:
+Lscope18:
 	.stabs	"maFileTruncate:f(0,3)",36,0,6321,_maFileTruncate
 	.stabs	"file:p(6,10)",160,0,6321,-12
 	.stabs	"offset:p(0,3)",160,0,6321,-16
@@ -1924,19 +2275,19 @@ Lscope16:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB35
+	.dlab LBB49
 	.line 6322
 	ld   i0,#0x32
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE35
+	.dlab LBE49
 	.line 6323
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope17:
+Lscope19:
 	.stabn	162,0,0,0
 	.stabs	"c:/MoSync/include/notification/LocalNotification.h",130,0,0,0
 	.stabs	"NotificationFlag:t(90,1)=eNOTIFICATION_FLAG_INSISTENT:4,NOTIFICATION_FLAG_NO_CLEAR:32,NOTIFICATION_FLAG_HIGH_PRIORITY:128,NOTIFICATION_FLAG_AUTO_CANCEL:16,;",128,0,59,0
@@ -2036,7 +2387,7 @@ Ltext9:
 	ld   [fr,-20],i1
 	ld   d0,i2
 	ld   [fr,-24],i3
-	.dlab LBB36
+	.dlab LBB50
 	.line 16
 	ld   i0,[fr,-16]
 	call &__ZN8NativeUI6ScreenC2Ev
@@ -2127,12 +2478,12 @@ Ltext9:
 	.line 22
 	ld   i0,[fr,-16]
 	call &__ZN11TrackingTab8createUIEv
-	.dlab LBE36
+	.dlab LBE50
 	.line 23
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope18:
+Lscope20:
 	.stabs	"_ZN5STimeC1Ev:f(0,6)",36,0,16,__ZN5STimeC1Ev
 	.stabs	"this:p(0,28)=k(89,4)",160,0,19,-12
 
@@ -2143,17 +2494,17 @@ Lscope18:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB37
+	.dlab LBB51
 	.line 16
 	ld   r14,[fr,-12]
 	add  r14,#0x14
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.dlab LBE37
+	.dlab LBE51
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope19:
+Lscope21:
 	.stabs	"_ZN12Notification25LocalNotificationListenerC2Ev:f(0,6)",36,0,16,__ZN12Notification25LocalNotificationListenerC2Ev
 	.stabs	"this:p(91,55)",160,0,52,-12
 
@@ -2164,16 +2515,16 @@ Lscope19:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB38
+	.dlab LBB52
 	.line 16
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTVN12Notification25LocalNotificationListenerE+8
 	ld   [r14],r0
-	.dlab LBE38
+	.dlab LBE52
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope20:
+Lscope22:
 	.stabs	"_ZN11TrackingTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolutionx:F(0,6)",36,0,14,__ZN11TrackingTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
 	.stabs	"this:p(0,25)",160,0,14,-16
 	.stabs	"language:p(0,3)",160,0,14,-20
@@ -2192,7 +2543,7 @@ Lscope20:
 	ld   [fr,-20],i1
 	ld   d0,i2
 	ld   [fr,-24],i3
-	.dlab LBB39
+	.dlab LBB53
 	.line 16
 	ld   i0,[fr,-16]
 	call &__ZN8NativeUI6ScreenC2Ev
@@ -2283,12 +2634,12 @@ Lscope20:
 	.line 22
 	ld   i0,[fr,-16]
 	call &__ZN11TrackingTab8createUIEv
-	.dlab LBE39
+	.dlab LBE53
 	.line 23
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope21:
+Lscope23:
 	.stabs	"_ZN11TrackingTabD2Ev:F(0,6)",36,0,28,__ZN11TrackingTabD2Ev
 	.stabs	"this:p(0,25)",160,0,28,-12
 	.global	__ZN11TrackingTabD2Ev
@@ -2300,7 +2651,7 @@ Lscope21:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB40
+	.dlab LBB54
 	.line 28
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV11TrackingTab+8
@@ -2363,21 +2714,21 @@ Lscope21:
 	call &__ZN11ConnectionsD2Ev
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE40
+	.dlab LBE54
 	.line 30
 	ld   r14,#0x1
 	and  r14,#0x0
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L61
+	jc   eq,r0,r14,#L76
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-L61:
+L76:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope22:
+Lscope24:
 	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev:f(0,6)",36,0,16,__ZN6MAUtil3MapIiNS_11BasicStringIcEEED1Ev
 	.stabs	"this:p(0,29)=k(1,32)",160,0,33,-12
 
@@ -2388,15 +2739,15 @@ Lscope22:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB41
+	.dlab LBB55
 	.line 16
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev
-	.dlab LBE41
+	.dlab LBE55
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope23:
+Lscope25:
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev:f(0,6)",36,0,16,__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEED1Ev
 	.stabs	"this:p(0,30)=k(1,72)",160,0,33,-12
 
@@ -2407,15 +2758,15 @@ Lscope23:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB42
+	.dlab LBB56
 	.line 16
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev
-	.dlab LBE42
+	.dlab LBE56
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope24:
+Lscope26:
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev:f(0,6)",36,0,16,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEED1Ev
 	.stabs	"this:p(0,31)=k(1,117)",160,0,33,-12
 
@@ -2426,15 +2777,15 @@ Lscope24:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB43
+	.dlab LBB57
 	.line 16
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev
-	.dlab LBE43
+	.dlab LBE57
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope25:
+Lscope27:
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev:f(0,6)",36,0,16,__ZN6MAUtil3MapIiPN8NativeUI5LabelEED1Ev
 	.stabs	"this:p(0,32)=k(1,162)",160,0,33,-12
 
@@ -2445,15 +2796,15 @@ Lscope25:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB44
+	.dlab LBB58
 	.line 16
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev
-	.dlab LBE44
+	.dlab LBE58
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope26:
+Lscope28:
 	.stabs	"_ZN5STimeD1Ev:f(0,6)",36,0,16,__ZN5STimeD1Ev
 	.stabs	"this:p(0,28)",160,0,19,-12
 
@@ -2464,17 +2815,17 @@ Lscope26:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB45
+	.dlab LBB59
 	.line 16
 	ld   r14,[fr,-12]
 	add  r14,#0x14
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE45
+	.dlab LBE59
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope27:
+Lscope29:
 	.set	%0=__ZN11TrackingTabD1Ev
 	.stabs	"this:p(0,25)",160,0,28,-12
 	.global	__ZThn76_N11TrackingTabD1Ev
@@ -2496,7 +2847,7 @@ Ltext10:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope28:
+Lscope30:
 	.stabs	"_ZN11TrackingTabD1Ev:F(0,6)",36,0,28,__ZN11TrackingTabD1Ev
 	.stabs	"this:p(0,25)",160,0,28,-12
 	.global	__ZN11TrackingTabD1Ev
@@ -2510,7 +2861,7 @@ Ltext11:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB46
+	.dlab LBB60
 	.line 28
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV11TrackingTab+8
@@ -2573,21 +2924,21 @@ Ltext11:
 	call &__ZN11ConnectionsD2Ev
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE46
+	.dlab LBE60
 	.line 30
 	ld   r14,#0x1
 	and  r14,#0x2
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L81
+	jc   eq,r0,r14,#L96
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-L81:
+L96:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope29:
+Lscope31:
 	.set	%1=__ZN11TrackingTabD0Ev
 	.stabs	"this:p(0,25)",160,0,28,-12
 	.global	__ZThn76_N11TrackingTabD0Ev
@@ -2609,7 +2960,7 @@ Ltext12:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope30:
+Lscope32:
 	.stabs	"_ZN11TrackingTabD0Ev:F(0,6)",36,0,28,__ZN11TrackingTabD0Ev
 	.stabs	"this:p(0,25)",160,0,28,-12
 	.global	__ZN11TrackingTabD0Ev
@@ -2623,7 +2974,7 @@ Ltext13:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB47
+	.dlab LBB61
 	.line 28
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTV11TrackingTab+8
@@ -2686,29 +3037,29 @@ Ltext13:
 	call &__ZN11ConnectionsD2Ev
 	ld   i0,[fr,-12]
 	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE47
+	.dlab LBE61
 	.line 30
 	ld   r14,#0x1
 	and  r14,#0x3
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L86
+	jc   eq,r0,r14,#L101
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-L86:
+L101:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope31:
+Lscope33:
 .data
-LC31:
+LC38:
 	.ascii "https://dev-api01.echoes-tech.com\0"
-LC32:
+LC39:
 	.ascii "/alerts/recipients/\0"
-LC33:
+LC40:
 	.ascii "/trackings/\0"
-LC34:
+LC41:
 	.ascii "timer\0"
 .code
 	.stabs	"_ZN11TrackingTab13runTimerEventEv:F(0,6)",36,0,32,__ZN11TrackingTab13runTimerEventEv
@@ -2722,8 +3073,8 @@ LC34:
 	ld   fr,sp
 	add  fr,#0x2c
 	ld   [fr,-20],i0
-	.dlab LBB48
-	.dlab LBB49
+	.dlab LBB62
+	.dlab LBB63
 	.line 33
 	ld   r14,[fr,-20]
 	ld   r0,#0x0
@@ -2732,7 +3083,7 @@ LC34:
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
-	ld   i1,#LC31
+	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	.line 35
 	ld   d1,fr
@@ -2751,7 +3102,7 @@ LC34:
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,d0
-	ld   i1,#LC32
+	ld   i1,#LC39
 	ld   i2,r14
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
@@ -2759,7 +3110,7 @@ LC34:
 	ld   r14,fr
 	add  r14,#0xffffffd8
 	ld   i0,r14
-	ld   i1,#LC33
+	ld   i1,#LC40
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -2818,7 +3169,7 @@ LC34:
 	ld   r14,fr
 	add  r14,#0xffffffdc
 	ld   i0,r14
-	ld   i1,#LC15
+	ld   i1,#LC16
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffdc
@@ -2839,22 +3190,22 @@ LC34:
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
 	.line 41
-	ld   i0,#LC34
+	ld   i0,#LC41
 	call &_lprintfln
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE49
-	.dlab LBE48
+	.dlab LBE63
+	.dlab LBE62
 	.line 42
 	add  sp,#0x1c
 	pop  rt,d1
 	ret
 	.stabs	"urlTmp:(10,1)",128,0,34,-24
-	.stabn	192,0,0,LBB49-__ZN11TrackingTab13runTimerEventEv
-	.stabn	224,0,0,LBE49-__ZN11TrackingTab13runTimerEventEv
-Lscope32:
+	.stabn	192,0,0,LBB63-__ZN11TrackingTab13runTimerEventEv
+	.stabn	224,0,0,LBE63-__ZN11TrackingTab13runTimerEventEv
+Lscope34:
 	.set	%2=__ZN11TrackingTab11connectUrl1Ev
 	.stabs	"this:p(0,25)",160,0,44,-12
 	.global	__ZThn76_N11TrackingTab11connectUrl1Ev
@@ -2876,7 +3227,7 @@ Ltext14:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope33:
+Lscope35:
 	.stabs	"_ZN11TrackingTab11connectUrl1Ev:F(0,6)",36,0,44,__ZN11TrackingTab11connectUrl1Ev
 	.stabs	"this:p(0,25)",160,0,44,-12
 	.global	__ZN11TrackingTab11connectUrl1Ev
@@ -2894,7 +3245,7 @@ Ltext15:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope34:
+Lscope36:
 	.set	%3=__ZN11TrackingTab13dataDownload1EPN6MAUtil7YAJLDom5ValueEiN11Connections9eFonctionE
 	.stabs	"this:p(0,25)",160,0,49,-12
 	.stabs	"root:p(101,35)",160,0,49,-16
@@ -2925,13 +3276,13 @@ Ltext16:
 	add  sp,#0x10
 	pop  rt,fr
 	ret
-Lscope35:
+Lscope37:
 .data
-LC35:
+LC42:
 	.ascii "AlertTab DataDownload result = %d\0"
-LC36:
+LC43:
 	.ascii "DNS resolution error.\0"
-LC37:
+LC44:
 	.ascii "TrackingTab DataDownload result = %d\0"
 .code
 	.stabs	"_ZN11TrackingTab13dataDownload1EPN6MAUtil7YAJLDom5ValueEiN11Connections9eFonctionE:F(0,6)",36,0,49,__ZN11TrackingTab13dataDownload1EPN6MAUtil7YAJLDom5ValueEiN11Connections9eFonctionE
@@ -2953,11 +3304,11 @@ Ltext17:
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
 	ld   [fr,-24],i3
-	.dlab LBB50
+	.dlab LBB64
 	.line 50
 	ld   r0,[fr,-20]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L95
+	jc   ne,r0,r14,#L110
 	.line 51
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
@@ -2965,99 +3316,99 @@ Ltext17:
 	.line 52
 	ld   r0,[fr,-16]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L94
+	jc   eq,r0,r14,#L109
 	ld   r14,[fr,-16]
 	ld   r14,[r14]
 	add  r14,#0x4
 	ld   r14,[r14]
 	ld   i0,[fr,-16]
 	call r14
-	jp   #L94
-L95:
+	jp   #L109
+L110:
 	.line 53
 	ld   r0,[fr,-20]
 	ld   r14,#0xfffffffc
-	jc   ne,r0,r14,#L99
+	jc   ne,r0,r14,#L114
 	.line 54
 	ld   r14,[fr,-20]
 	ld   [sp],r14
-	ld   i0,#LC35
+	ld   i0,#LC42
 	call &_lprintfln
 	.line 55
-	ld   i0,#LC36
+	ld   i0,#LC43
 	call &_lprintfln
-	jp   #L94
-L99:
+	jp   #L109
+L114:
 	.line 56
 	ld   r0,[fr,-20]
 	ld   r14,#0x194
-	jc   eq,r0,r14,#L94
+	jc   eq,r0,r14,#L109
 	.line 57
 	ld   r14,[fr,-20]
 	ld   [sp],r14
-	ld   i0,#LC37
+	ld   i0,#LC44
 	call &_lprintfln
-L94:
-	.dlab LBE50
+L109:
+	.dlab LBE64
 	.line 59
 	add  sp,#0x14
 	pop  rt,fr
 	ret
-Lscope36:
+Lscope38:
 .data
-LC38:
-	.ascii "Root node is not valid\12\0"
-LC39:
-	.ascii "Root node is valid :) \12\0"
-LC40:
-	.ascii "%d\12\0"
-LC41:
-	.ascii "send_date\0"
-LC42:
-	.ascii "content\0"
-LC43:
-	.ascii "vibrate\0"
-LC44:
-	.ascii "notification\0"
 LC45:
-	.ascii "_notification\0"
+	.ascii "Root node is not valid\12\0"
 LC46:
-	.ascii "!_notification\0"
+	.ascii "Root node is valid :) \12\0"
 LC47:
-	.ascii "_vibrate\0"
+	.ascii "%d\12\0"
 LC48:
-	.ascii "!_vibrate\0"
+	.ascii "send_date\0"
 LC49:
-	.ascii "maNotificationLocalUnschedule(notification->getHandle() : %d\0"
+	.ascii "content\0"
 LC50:
-	.ascii "%d\0"
+	.ascii "vibrate\0"
 LC51:
-	.ascii "content_body\0"
+	.ascii "notification\0"
 LC52:
-	.ascii "vibrateDuration\0"
+	.ascii "_notification\0"
 LC53:
-	.ascii "1000\0"
+	.ascii "!_notification\0"
 LC54:
-	.ascii "0\0"
+	.ascii "_vibrate\0"
 LC55:
-	.ascii "flag\0"
+	.ascii "!_vibrate\0"
 LC56:
-	.ascii "MA_NOTIFICATION_FLAG_AUTO_CANCEL\0"
+	.ascii "maNotificationLocalUnschedule(notification->getHandle() : %d\0"
 LC57:
-	.ascii "contentTitle\0"
+	.ascii "%d\0"
 LC58:
-	.ascii "Nouvelle alerte\0"
+	.ascii "content_body\0"
 LC59:
-	.ascii "tickerText\0"
+	.ascii "vibrateDuration\0"
 LC60:
-	.ascii "badge_number\0"
+	.ascii "1000\0"
 LC61:
-	.ascii "6\0"
+	.ascii "0\0"
 LC62:
-	.ascii "alert_action\0"
+	.ascii "flag\0"
 LC63:
-	.ascii "Ok\0"
+	.ascii "MA_NOTIFICATION_FLAG_AUTO_CANCEL\0"
 LC64:
+	.ascii "contentTitle\0"
+LC65:
+	.ascii "Nouvelle alerte\0"
+LC66:
+	.ascii "tickerText\0"
+LC67:
+	.ascii "badge_number\0"
+LC68:
+	.ascii "6\0"
+LC69:
+	.ascii "alert_action\0"
+LC70:
+	.ascii "Ok\0"
+LC71:
 	.ascii "play_sound\0"
 .code
 	.stabs	"_ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE:F(0,6)",36,0,94,__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
@@ -3073,33 +3424,33 @@ LC64:
 	add  fr,#0xa4
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB51
-	.dlab LBB52
-	.dlab LBB53
+	.dlab LBB65
+	.dlab LBB66
+	.dlab LBB67
 	.line 99
 	ld   r0,[fr,-28]
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L104
+	jc   eq,r0,r14,#L119
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L104
+	jc   eq,r0,r14,#L119
 	ld   i0,[fr,-28]
 	call &__ZNK6MAUtil7YAJLDom5Value7getTypeEv
 	ld   r0,r14
 	ld   r14,#0x3
-	jc   ne,r0,r14,#L104
-	jp   #L103
-L104:
+	jc   ne,r0,r14,#L119
+	jp   #L118
+L119:
 	.line 101
-	ld   i0,#LC38
+	ld   i0,#LC45
 	call &_lprintfln
-	jp   #L102
-L103:
-	.dlab LBB54
+	jp   #L117
+L118:
+	.dlab LBB68
 	.line 104
-	ld   i0,#LC39
+	ld   i0,#LC46
 	call &_lprintfln
 	.line 105
 	ld   r14,[fr,-28]
@@ -3109,7 +3460,7 @@ L103:
 	ld   i0,[fr,-28]
 	call r14
 	ld   [sp],r14
-	ld   i0,#LC40
+	ld   i0,#LC47
 	call &_lprintfln
 	.line 106
 	ld   r14,[fr,-24]
@@ -3126,7 +3477,7 @@ L103:
 	add  r14,#0xffffffc8
 	ld   i0,r14
 	call &__ZN5STimeC1Ev
-	.dlab LBB55
+	.dlab LBB69
 	.line 109
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
@@ -3136,8 +3487,8 @@ L103:
 	call r14
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   le,r0,r14,#L106
-	.dlab LBB56
+	jc   le,r0,r14,#L121
+	.dlab LBB70
 	.line 110
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
@@ -3153,7 +3504,7 @@ L103:
 	ld   r14,fr
 	add  r14,#0xffffffbc
 	ld   i0,r14
-	ld   i1,#LC41
+	ld   i1,#LC48
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffffbc
@@ -3198,10 +3549,10 @@ L103:
 	add  r14,#0xffffffc0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L106:
-	.dlab LBE56
-	.dlab LBE55
-	.dlab LBB57
+L121:
+	.dlab LBE70
+	.dlab LBE69
+	.dlab LBB71
 	.line 115
 	ld   r14,fr
 	add  r14,#0xffffffc8
@@ -3213,8 +3564,8 @@ L106:
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L107
-	.dlab LBB58
+	jc   eq,r0,r14,#L122
+	.dlab LBB72
 	.line 117
 	ld   r14,[fr,-24]
 	ld   i0,[fr,-24]
@@ -3226,14 +3577,14 @@ L106:
 	ld   i0,r14
 	call &__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv
 	ld   [fr,-60],r14
-	.dlab LBB59
+	.dlab LBB73
 	.line 120
 	ld   r0,#0x0
 	ld   [fr,-100],r0
-L108:
+L123:
 	ld   r0,[fr,-100]
 	ld   r14,[fr,-60]
-	jc   ge,r0,r14,#L109
+	jc   ge,r0,r14,#L124
 	.line 121
 	ld   r14,[fr,-24]
 	add  r14,#0x130
@@ -3292,14 +3643,14 @@ L108:
 	ld   [fr,-136],r14
 	ld   r14,#0x0
 	ld   r1,[fr,-136]
-	jc   eq,r1,r14,#L112
+	jc   eq,r1,r14,#L127
 	ld   r0,[fr,-136]
 	ld   r14,[r0]
 	add  r14,#0x4
 	ld   r14,[r14]
 	ld   i0,[fr,-136]
 	call r14
-L112:
+L127:
 	.line 124
 	ld   r14,[fr,-24]
 	add  r14,#0x1a0
@@ -3312,14 +3663,14 @@ L112:
 	ld   [fr,-140],r14
 	ld   r14,#0x0
 	ld   r1,[fr,-140]
-	jc   eq,r1,r14,#L114
+	jc   eq,r1,r14,#L129
 	ld   r0,[fr,-140]
 	ld   r14,[r0]
 	add  r14,#0x4
 	ld   r14,[r14]
 	ld   i0,[fr,-140]
 	call r14
-L114:
+L129:
 	.line 125
 	ld   r14,[fr,-24]
 	add  r14,#0x168
@@ -3355,14 +3706,14 @@ L114:
 	ld   [fr,-144],r14
 	ld   r14,#0x0
 	ld   r1,[fr,-144]
-	jc   eq,r1,r14,#L116
+	jc   eq,r1,r14,#L131
 	ld   r0,[fr,-144]
 	ld   r14,[r0]
 	add  r14,#0x4
 	ld   r14,[r14]
 	ld   i0,[fr,-144]
 	call r14
-L116:
+L131:
 	.line 127
 	ld   r14,[fr,-24]
 	add  r14,#0x168
@@ -3393,21 +3744,21 @@ L116:
 	ld   [fr,-148],r14
 	ld   r14,#0x0
 	ld   r1,[fr,-148]
-	jc   eq,r1,r14,#L110
+	jc   eq,r1,r14,#L125
 	ld   r0,[fr,-148]
 	ld   r14,[r0]
 	add  r14,#0x4
 	ld   r14,[r14]
 	ld   i0,[fr,-148]
 	call r14
-L110:
+L125:
 	.line 120
 	ld   r14,[fr,-100]
 	add  r14,#0x1
 	ld   [fr,-100],r14
-	jp   #L108
-L109:
-	.dlab LBE59
+	jp   #L123
+L124:
+	.dlab LBE73
 	.line 130
 	ld   r14,[fr,-24]
 	add  r14,#0x130
@@ -3433,11 +3784,11 @@ L109:
 	ld   i0,[fr,-24]
 	ld   i1,[r14,172]
 	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
-	.dlab LBB60
+	.dlab LBB74
 	.line 136
 	ld   r1,#0x0
 	ld   [fr,-100],r1
-L119:
+L134:
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
 	add  r14,#0x28
@@ -3447,9 +3798,9 @@ L119:
 	ld   r0,r14
 	add  r0,#0xffffffff
 	ld   r14,[fr,-100]
-	jc   lt,r0,r14,#L120
-	.dlab LBB61
-	.dlab LBB62
+	jc   lt,r0,r14,#L135
+	.dlab LBB75
+	.dlab LBB76
 	.line 137
 	ld   r14,[fr,-28]
 	ld   r14,[r14]
@@ -3473,7 +3824,7 @@ L119:
 	ld   r14,fr
 	add  r14,#0xffffffa4
 	ld   i0,r14
-	ld   i1,#LC41
+	ld   i1,#LC48
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffffa4
@@ -3522,7 +3873,7 @@ L119:
 	ld   r14,fr
 	add  r14,#0xffffffa4
 	ld   i0,r14
-	ld   i1,#LC42
+	ld   i1,#LC49
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffffa4
@@ -3606,21 +3957,21 @@ L119:
 	ld   r14,[r14]
 	ld   i0,r0
 	call r14
-	.dlab LBB63
+	.dlab LBB77
 	.line 150
 	ld   r14,[fr,-24]
 	ld.b r0,[r14,160]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L122
-	.dlab LBB64
+	jc   ne,r0,r14,#L137
+	.dlab LBB78
 	.line 152
 	ld   d0,fr
 	add  d0,#0xffffffa4
 	ld   r14,fr
 	add  r14,#0xffffffa8
 	ld   i0,r14
-	ld   i1,#LC41
+	ld   i1,#LC48
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffffa8
@@ -3650,7 +4001,7 @@ L119:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN7Convert7toSTimeERN6MAUtil11BasicStringIcEE
-	.dlab LBB65
+	.dlab LBB79
 	.line 155
 	ld   r14,fr
 	add  r14,#0xffffffa8
@@ -3662,8 +4013,8 @@ L119:
 	ld   r0,r14
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L123
-	.dlab LBB66
+	jc   eq,r0,r14,#L138
+	.dlab LBB80
 	.line 156
 	ld   r14,fr
 	add  r14,#0xffffff94
@@ -3698,7 +4049,7 @@ L119:
 	ld   r14,fr
 	add  r14,#0xffffff88
 	ld   i0,r14
-	ld   i1,#LC43
+	ld   i1,#LC50
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffff88
@@ -3724,7 +4075,7 @@ L119:
 	ld   r14,fr
 	add  r14,#0xffffff88
 	ld   i0,r14
-	ld   i1,#LC44
+	ld   i1,#LC51
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffff88
@@ -3750,37 +4101,37 @@ L119:
 	ld.b r0,[fr,-121]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L124
+	jc   eq,r0,r14,#L139
 	.line 164
-	ld   i0,#LC45
+	ld   i0,#LC52
 	call &_lprintfln
-	jp   #L125
-L124:
+	jp   #L140
+L139:
 	.line 169
-	ld   i0,#LC46
+	ld   i0,#LC53
 	call &_lprintfln
-L125:
+L140:
 	.line 172
 	ld.b r0,[fr,-113]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L126
+	jc   eq,r0,r14,#L141
 	.line 174
-	ld   i0,#LC47
+	ld   i0,#LC54
 	call &_lprintfln
-	jp   #L127
-L126:
+	jp   #L142
+L141:
 	.line 177
-	ld   i0,#LC48
+	ld   i0,#LC55
 	call &_lprintfln
-L127:
-	.dlab LBB67
+L142:
+	.dlab LBB81
 	.line 180
 	ld.b r0,[fr,-121]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L128
-	.dlab LBB68
+	jc   eq,r0,r14,#L143
+	.dlab LBB82
 	.line 187
 	ld   r14,[fr,-24]
 	ld   i0,[r14,556]
@@ -3793,7 +4144,7 @@ L127:
 	ld   i0,r14
 	call &_maNotificationLocalUnschedule
 	ld   [sp],r14
-	ld   i0,#LC49
+	ld   i0,#LC56
 	call &_lprintfln
 	.line 218
 	ld   d0,[fr,-24]
@@ -3803,7 +4154,7 @@ L127:
 	ld   r14,[fr,-24]
 	ld   r14,[r14,140]
 	ld   [sp],r14
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
 	.line 221
 	ld   d0,fr
@@ -3811,7 +4162,7 @@ L127:
 	ld   r14,fr
 	add  r14,#0xffffff7c
 	ld   i0,r14
-	ld   i1,#LC42
+	ld   i1,#LC49
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r0,fr
 	add  r0,#0xffffff7c
@@ -3836,7 +4187,7 @@ L127:
 	ld   r0,r14
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
-	ld   i1,#LC51
+	ld   i1,#LC58
 	ld   i2,r0
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
@@ -3851,133 +4202,133 @@ L127:
 	.line 222
 	ld   r14,[fr,-128]
 	ld   [sp],r14
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
 	.line 227
 	call &__Z11getPlatformv
 	ld   r0,r14
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L129
+	jc   ne,r0,r14,#L144
 	.line 231
 	ld.b r0,[fr,-113]
 	and  r0,#0xff  ; zero extend
 	ld   r14,#0x0
-	jc   eq,r0,r14,#L130
+	jc   eq,r0,r14,#L145
 	.line 233
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
-	ld   i1,#LC43
-	ld   i2,#LC21
+	ld   i1,#LC50
+	ld   i2,#LC28
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
 	ld   r0,[fr,-128]
 	ld   [sp],r0
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
 	.line 234
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
-	ld   i1,#LC52
-	ld   i2,#LC53
+	ld   i1,#LC59
+	ld   i2,#LC60
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
 	ld   r1,[fr,-128]
 	ld   [sp],r1
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
-	jp   #L131
-L130:
+	jp   #L146
+L145:
 	.line 239
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
-	ld   i1,#LC43
-	ld   i2,#LC22
+	ld   i1,#LC50
+	ld   i2,#LC29
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
 	ld   r14,[fr,-128]
 	ld   [sp],r14
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
 	.line 240
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
-	ld   i1,#LC52
-	ld   i2,#LC54
-	call &_maNotificationLocalSetProperty
-	ld   [fr,-128],r14
-	ld   r0,[fr,-128]
-	ld   [sp],r0
-	ld   i0,#LC50
-	call &_lprintfln
-L131:
-	.line 244
-	ld   r14,[fr,-24]
-	ld   i0,[r14,140]
-	ld   i1,#LC55
-	ld   i2,#LC56
-	call &_maNotificationLocalSetProperty
-	ld   [fr,-128],r14
-	ld   r1,[fr,-128]
-	ld   [sp],r1
-	ld   i0,#LC50
-	call &_lprintfln
-	.line 246
-	ld   r14,[fr,-24]
-	ld   i0,[r14,140]
-	ld   i1,#LC57
-	ld   i2,#LC58
-	call &_maNotificationLocalSetProperty
-	ld   [fr,-128],r14
-	ld   r14,[fr,-128]
-	ld   [sp],r14
-	ld   i0,#LC50
-	call &_lprintfln
-	.line 248
-	ld   r14,[fr,-24]
-	ld   i0,[r14,140]
 	ld   i1,#LC59
-	ld   i2,#LC58
-	call &_maNotificationLocalSetProperty
-	ld   [fr,-128],r14
-	ld   r0,[fr,-128]
-	ld   [sp],r0
-	ld   i0,#LC50
-	call &_lprintfln
-	jp   #L132
-L129:
-	.line 252
-	ld   r14,[fr,-24]
-	ld   i0,[r14,140]
-	ld   i1,#LC60
 	ld   i2,#LC61
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
-	ld   r1,[fr,-128]
-	ld   [sp],r1
-	ld   i0,#LC50
+	ld   r0,[fr,-128]
+	ld   [sp],r0
+	ld   i0,#LC57
 	call &_lprintfln
-	.line 255
+L146:
+	.line 244
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
 	ld   i1,#LC62
 	ld   i2,#LC63
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
-	ld   r14,[fr,-128]
-	ld   [sp],r14
-	ld   i0,#LC50
+	ld   r1,[fr,-128]
+	ld   [sp],r1
+	ld   i0,#LC57
 	call &_lprintfln
-L132:
-	.line 259
+	.line 246
 	ld   r14,[fr,-24]
 	ld   i0,[r14,140]
 	ld   i1,#LC64
-	ld   i2,#LC21
+	ld   i2,#LC65
+	call &_maNotificationLocalSetProperty
+	ld   [fr,-128],r14
+	ld   r14,[fr,-128]
+	ld   [sp],r14
+	ld   i0,#LC57
+	call &_lprintfln
+	.line 248
+	ld   r14,[fr,-24]
+	ld   i0,[r14,140]
+	ld   i1,#LC66
+	ld   i2,#LC65
 	call &_maNotificationLocalSetProperty
 	ld   [fr,-128],r14
 	ld   r0,[fr,-128]
 	ld   [sp],r0
-	ld   i0,#LC50
+	ld   i0,#LC57
+	call &_lprintfln
+	jp   #L147
+L144:
+	.line 252
+	ld   r14,[fr,-24]
+	ld   i0,[r14,140]
+	ld   i1,#LC67
+	ld   i2,#LC68
+	call &_maNotificationLocalSetProperty
+	ld   [fr,-128],r14
+	ld   r1,[fr,-128]
+	ld   [sp],r1
+	ld   i0,#LC57
+	call &_lprintfln
+	.line 255
+	ld   r14,[fr,-24]
+	ld   i0,[r14,140]
+	ld   i1,#LC69
+	ld   i2,#LC70
+	call &_maNotificationLocalSetProperty
+	ld   [fr,-128],r14
+	ld   r14,[fr,-128]
+	ld   [sp],r14
+	ld   i0,#LC57
+	call &_lprintfln
+L147:
+	.line 259
+	ld   r14,[fr,-24]
+	ld   i0,[r14,140]
+	ld   i1,#LC71
+	ld   i2,#LC28
+	call &_maNotificationLocalSetProperty
+	ld   [fr,-128],r14
+	ld   r0,[fr,-128]
+	ld   [sp],r0
+	ld   i0,#LC57
 	call &_lprintfln
 	.line 262
 	ld   r14,[fr,-24]
@@ -3986,18 +4337,18 @@ L132:
 	ld   [fr,-128],r14
 	ld   r1,[fr,-128]
 	ld   [sp],r1
-	ld   i0,#LC50
+	ld   i0,#LC57
 	call &_lprintfln
-L128:
-	.dlab LBE68
-	.dlab LBE67
+L143:
+	.dlab LBE82
+	.dlab LBE81
 	ld   r14,fr
 	add  r14,#0xffffff94
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L123:
-	.dlab LBE66
-	.dlab LBE65
+L138:
+	.dlab LBE80
+	.dlab LBE79
 	ld   r14,fr
 	add  r14,#0xffffffa8
 	ld   i0,r14
@@ -4006,9 +4357,9 @@ L123:
 	add  r14,#0xffffffa4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L122:
-	.dlab LBE64
-	.dlab LBE63
+L137:
+	.dlab LBE78
+	.dlab LBE77
 	.line 276
 	ld   r14,[fr,-24]
 	add  r14,#0x130
@@ -4100,11 +4451,11 @@ L122:
 	ld   [fr,-160],r14
 	ld   r14,#0x0
 	ld   r1,[fr,-160]
-	jc   ge,r1,r14,#L133
+	jc   ge,r1,r14,#L148
 	ld   r14,[fr,-160]
 	add  r14,#0x3
 	ld   [fr,-160],r14
-L133:
+L148:
 	ld   r14,[fr,-160]
 	sra  r14,#0x2
 	ld   r1,[fr,-156]
@@ -4218,15 +4569,15 @@ L133:
 	add  r14,#0xffffffa0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE62
-	.dlab LBE61
+	.dlab LBE76
+	.dlab LBE75
 	.line 136
 	ld   r14,[fr,-100]
 	add  r14,#0x1
 	ld   [fr,-100],r14
-	jp   #L119
-L120:
-	.dlab LBE60
+	jp   #L134
+L135:
+	.dlab LBE74
 	.line 292
 	ld   r14,[fr,-24]
 	add  r14,#0x210
@@ -4235,58 +4586,58 @@ L120:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN5STimeaSERKS_
-L107:
-	.dlab LBE58
-	.dlab LBE57
+L122:
+	.dlab LBE72
+	.dlab LBE71
 	ld   r14,fr
 	add  r14,#0xffffffc8
 	ld   i0,r14
 	call &__ZN5STimeD1Ev
-L102:
-	.dlab LBE54
-	.dlab LBE53
-	.dlab LBE52
-	.dlab LBE51
+L117:
+	.dlab LBE68
+	.dlab LBE67
+	.dlab LBE66
+	.dlab LBE65
 	.line 299
 	add  sp,#0x90
 	pop  rt,d2
 	ret
 	.stabs	"lastSendAlertTmp:(89,1)",128,0,108,-56
-	.stabn	192,0,0,LBB54-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB68-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"valueTmp0:(101,35)",128,0,110,-60
 	.stabs	"dateTmp:(10,1)",128,0,111,-64
-	.stabn	192,0,0,LBB56-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE56-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB70-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE70-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"index:(0,3)",128,0,119,-60
-	.stabn	192,0,0,LBB58-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB72-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"idx1:(0,3)",128,0,120,-100
-	.stabn	192,0,0,LBB59-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE59-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB73-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE73-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"idx:(0,3)",128,0,136,-100
-	.stabn	192,0,0,LBB60-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB74-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"valueTmp:(101,35)",128,0,137,-104
 	.stabs	"convert:(10,1)",128,0,142,-96
 	.stabs	"size:(6,11)",128,0,280,-112
 	.stabs	"mScreenWidth:(0,3)",128,0,281,-128
-	.stabn	192,0,0,LBB62-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB76-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"dateTmp1:(10,1)",128,0,151,-92
 	.stabs	"lastSendAlertTmp1:(89,1)",128,0,153,-88
-	.stabn	192,0,0,LBB64-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB78-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"config:(10,1)",128,0,156,-108
 	.stabs	"root:(101,35)",128,0,159,-112
 	.stabs	"_vibrate:(0,4)",128,0,160,-113
 	.stabs	"_notification:(0,4)",128,0,161,-121
-	.stabn	192,0,0,LBB66-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB80-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabs	"res:(0,3)",128,0,206,-128
-	.stabn	192,0,0,LBB68-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	192,0,0,LBB82-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE82-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE80-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE78-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE76-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE74-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
+	.stabn	224,0,0,LBE72-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
 	.stabn	224,0,0,LBE68-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE66-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE64-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE62-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE60-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE58-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-	.stabn	224,0,0,LBE54-__ZN11TrackingTab22parseJSONTrackingAlertEPN6MAUtil7YAJLDom5ValueE
-Lscope37:
+Lscope39:
 	.stabs	"maNotificationLocalSchedule:f(0,3)",36,0,8222,_maNotificationLocalSchedule
 	.stabs	"notificationHandle:p(6,10)",160,0,8222,-12
 
@@ -4299,19 +4650,19 @@ Ltext18:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB69
+	.dlab LBB83
 	.line 8223
 	ld   i0,#0x1ef
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE69
+	.dlab LBE83
 	.line 8224
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope38:
+Lscope40:
 	.stabs	"maNotificationLocalSetProperty:f(0,3)",36,0,8184,_maNotificationLocalSetProperty
 	.stabs	"notificationHandle:p(6,10)",160,0,8184,-12
 	.stabs	"property:p(4,7)",160,0,8184,-16
@@ -4326,19 +4677,19 @@ Lscope38:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB70
+	.dlab LBB84
 	.line 8185
 	ld   i0,#0x1ed
 	ld   i1,[fr,-12]
 	ld   i2,[fr,-16]
 	ld   i3,[fr,-20]
 	call &_maIOCtl
-	.dlab LBE70
+	.dlab LBE84
 	.line 8186
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope39:
+Lscope41:
 	.stabs	"maNotificationLocalCreate:f(6,10)",36,0,8151,_maNotificationLocalCreate
 
 .func _maNotificationLocalCreate, 0, int
@@ -4346,18 +4697,18 @@ Lscope39:
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.dlab LBB71
+	.dlab LBB85
 	.line 8152
 	ld   i0,#0x1eb
 	ld   i1,#0x0
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE71
+	.dlab LBE85
 	.line 8153
 	pop  rt,fr
 	ret
-Lscope40:
+Lscope42:
 	.stabs	"maNotificationLocalUnschedule:f(0,3)",36,0,8239,_maNotificationLocalUnschedule
 	.stabs	"notificationHandle:p(6,10)",160,0,8239,-12
 
@@ -4368,19 +4719,19 @@ Lscope40:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB72
+	.dlab LBB86
 	.line 8240
 	ld   i0,#0x1f0
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE72
+	.dlab LBE86
 	.line 8241
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope41:
+Lscope43:
 	.stabs	"_ZN5STimeaSERKS_:f(89,3)",36,0,112,__ZN5STimeaSERKS_
 	.stabs	"this:p(0,28)",160,0,19,-12
 	.stabs	"_ctor_arg:p(89,5)",160,0,19,-16
@@ -4395,7 +4746,7 @@ Ltext19:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB73
+	.dlab LBB87
 	.line 112
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -4429,11 +4780,11 @@ Ltext19:
 	ld   r14,[r14,24]
 	ld   [r0,24],r14
 	ld   r14,[fr,-12]
-	.dlab LBE73
+	.dlab LBE87
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope42:
+Lscope44:
 	.stabs	"_ZN11TrackingTab8createUIEv:F(0,6)",36,0,301,__ZN11TrackingTab8createUIEv
 	.stabs	"this:p(0,25)",160,0,301,-28
 	.global	__ZN11TrackingTab8createUIEv
@@ -4445,8 +4796,8 @@ Lscope42:
 	ld   fr,sp
 	add  fr,#0x34
 	ld   [fr,-28],i0
-	.dlab LBB74
-	.dlab LBB75
+	.dlab LBB88
+	.dlab LBB89
 	.line 302
 	ld   d1,[fr,-28]
 	ld   i0,#0x40
@@ -4474,7 +4825,7 @@ Lscope42:
 	ld   r14,fr
 	add  r14,#0xffffffe0
 	ld   i0,r14
-	ld   i1,#LC31
+	ld   i1,#LC38
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	.line 308
 	ld   d1,fr
@@ -4493,7 +4844,7 @@ Lscope42:
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,d0
-	ld   i1,#LC32
+	ld   i1,#LC39
 	ld   i2,r14
 	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	ld   d0,fr
@@ -4501,7 +4852,7 @@ Lscope42:
 	ld   r14,fr
 	add  r14,#0xffffffd0
 	ld   i0,r14
-	ld   i1,#LC33
+	ld   i1,#LC40
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffd0
@@ -4560,7 +4911,7 @@ Lscope42:
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
-	ld   i1,#LC15
+	ld   i1,#LC16
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffd4
@@ -4598,7 +4949,7 @@ Lscope42:
 	ld   r14,fr
 	add  r14,#0xffffffd4
 	ld   i0,r14
-	ld   i1,#LC54
+	ld   i1,#LC61
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   d2,fr
 	add  d2,#0xffffffd4
@@ -4670,7 +5021,7 @@ Lscope42:
 	ld   i2,#0x0
 	call &__ZN8NativeUI8ListViewC1ENS_12ListViewTypeENS_13ListViewStyleE
 	ld   [d1,184],d0
-	.line 323
+	.line 324
 	ld   r14,[fr,-28]
 	ld   r14,[r14,172]
 	ld   r14,[r14]
@@ -4685,35 +5036,35 @@ Lscope42:
 	add  r14,#0xffffffe0
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE75
-	.dlab LBE74
-	.line 324
+	.dlab LBE89
+	.dlab LBE88
+	.line 325
 	add  sp,#0x1c
 	pop  rt,d3
 	ret
 	.stabs	"urlTmp:(10,1)",128,0,307,-32
-	.stabn	192,0,0,LBB75-__ZN11TrackingTab8createUIEv
-	.stabn	224,0,0,LBE75-__ZN11TrackingTab8createUIEv
-Lscope43:
-	.stabs	"_ZN11TrackingTab17orientationChangeEi:F(0,6)",36,0,327,__ZN11TrackingTab17orientationChangeEi
-	.stabs	"this:p(0,25)",160,0,327,-12
-	.stabs	"screenOrientation:p(0,3)",160,0,327,-16
+	.stabn	192,0,0,LBB89-__ZN11TrackingTab8createUIEv
+	.stabn	224,0,0,LBE89-__ZN11TrackingTab8createUIEv
+Lscope45:
+	.stabs	"_ZN11TrackingTab17orientationChangeEi:F(0,6)",36,0,328,__ZN11TrackingTab17orientationChangeEi
+	.stabs	"this:p(0,25)",160,0,328,-12
+	.stabs	"screenOrientation:p(0,3)",160,0,328,-16
 	.global	__ZN11TrackingTab17orientationChangeEi
 
 .func __ZN11TrackingTab17orientationChangeEi, 2, void
-	.line 327
+	.line 328
 	push rt,fr
 	sub  sp,#0xc
 	ld   fr,sp
 	add  fr,#0x14
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB76
-	.line 329
+	.dlab LBB90
+	.line 330
 	ld   r0,[fr,-16]
 	ld   r14,#0x8
-	jc   ne,r0,r14,#L141
-	.line 331
+	jc   ne,r0,r14,#L156
+	.line 332
 	ld   r14,[fr,-12]
 	ld   r14,[r14,156]
 	add  r14,#0xd
@@ -4734,13 +5085,13 @@ Lscope43:
 	add  r14,#0xffffffec
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L140
-L141:
-	.line 335
+	jp   #L155
+L156:
+	.line 336
 	ld   r14,fr
 	add  r14,#0xffffffec
 	ld   i0,r14
-	ld   i1,#LC15
+	ld   i1,#LC16
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
 	ld   r14,fr
 	add  r14,#0xffffffec
@@ -4751,13 +5102,13 @@ L141:
 	add  r14,#0xffffffec
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L140:
-	.dlab LBE76
-	.line 338
+L155:
+	.dlab LBE90
+	.line 339
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope44:
+Lscope46:
 	.stabs	"_ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_:f(10,2)",36,0,395,__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
 	.stabs	"c:p(4,7)",160,0,395,-16
 	.stabs	"s:p(4,11)",160,0,395,-20
@@ -4773,7 +5124,7 @@ Ltext20:
 	ld   d0,i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB77
+	.dlab LBB91
 	.line 396
 	ld   r14,fr
 	add  r14,#0xffffffe8
@@ -4786,18 +5137,18 @@ Ltext20:
 	ld   i1,r14
 	ld   i2,[fr,-20]
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB78
+	.dlab LBB92
 	ld   r14,fr
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE78
-	.dlab LBE77
+	.dlab LBE92
+	.dlab LBE91
 	ld   r14,d0
 	add  sp,#0xc
 	pop  rt,d0
 	ret
-Lscope45:
+Lscope47:
 	.stabs	"_ZN6MAUtil7CompareIKiEEiRKT_S4_:f(0,3)",36,0,47,__ZN6MAUtil7CompareIKiEEiRKT_S4_
 	.stabs	"a:p(1,11)",160,0,47,-12
 	.stabs	"b:p(1,11)",160,0,47,-16
@@ -4812,39 +5163,39 @@ Ltext21:
 	add  fr,#0x14
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB79
+	.dlab LBB93
 	.line 48
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
 	ld   r1,[r14]
 	ld   r14,[r0]
-	jc   ge,r1,r14,#L145
+	jc   ge,r1,r14,#L160
 	.line 49
 	ld   r14,#0xffffffff
 	ld   [fr,-20],r14
-	jp   #L144
-L145:
+	jp   #L159
+L160:
 	.line 50
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
 	ld   r1,[r14]
 	ld   r14,[r0]
-	jc   ne,r1,r14,#L147
+	jc   ne,r1,r14,#L162
 	.line 51
 	ld   r14,#0x0
 	ld   [fr,-20],r14
-	jp   #L144
-L147:
+	jp   #L159
+L162:
 	.line 53
 	ld   r14,#0x1
 	ld   [fr,-20],r14
-L144:
-	.dlab LBE79
+L159:
+	.dlab LBE93
 	ld   r14,[fr,-20]
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope46:
+Lscope48:
 	.stabs	"Pair<const int,MAUtil::BasicString<char> >:Tt(1,29)=s8first:(1,12),0,32;second:(10,1),32,32;__base_ctor::(0,33)=#(1,29),(0,6),(0,34)=*(1,29),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2Ev;2A.;__comp_ctor::(0,33):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1Ev;2A.;__base_ctor::(0,35)=#(1,29),(0,6),(0,34),(1,11),(4,38),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERS1_RKS3_;2A.;__comp_ctor::(0,35):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_;2A.;operator=::(0,36)=#(1,29),(0,37)=&(1,29),(0,34),(1,27),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEaSERKS4_;2A.;__base_ctor::(0,38)=#(1,29),(0,6),(0,34),(1,27),(0,6);:_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC2ERKS4_;2A.;__comp_ctor::(0,38):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_;2A.;__base_dtor::(0,33):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED2Ev;2A.;__comp_dtor::(0,33):_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiNS_11BasicStringIcEEEC1EPFiRKiS5_E
 	.stabs	"this:p(0,29)",160,0,43,-12
@@ -4860,17 +5211,17 @@ Ltext22:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB80
+	.dlab LBB94
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei
-	.dlab LBE80
+	.dlab LBE94
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope47:
+Lscope49:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEED2Ev
 	.stabs	"this:p(0,39)=k(1,3)",160,0,74,-12
 
@@ -4883,15 +5234,15 @@ Ltext23:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB81
+	.dlab LBB95
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv
-	.dlab LBE81
+	.dlab LBE95
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope48:
+Lscope50:
 	.stabs	"Pair<const int,NativeUI::HorizontalLayout*>:Tt(1,69)=s8first:(1,12),0,32;second:(1,76),32,32;__base_ctor::(0,40)=#(1,69),(0,6),(0,41)=*(1,69),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC2Ev;2A.;__comp_ctor::(0,40):_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC1Ev;2A.;__base_ctor::(0,42)=#(1,69),(0,6),(0,41),(1,11),(1,74),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,42):_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC1ERS1_RKS4_;2A.;operator=::(0,43)=#(1,69),(0,44)=&(1,69),(0,41),(1,67),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEaSERKS5_;2A.;__base_ctor::(0,45)=#(1,69),(0,6),(0,41),(1,67),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC2ERKS5_;2A.;__comp_ctor::(0,45):_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC1ERKS5_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEC1EPFiRKiS6_E
 	.stabs	"this:p(0,30)",160,0,43,-12
@@ -4907,17 +5258,17 @@ Ltext24:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB82
+	.dlab LBB96
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei
-	.dlab LBE82
+	.dlab LBE96
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope49:
+Lscope51:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEED2Ev
 	.stabs	"this:p(0,46)=k(1,47)",160,0,74,-12
 
@@ -4930,15 +5281,15 @@ Ltext25:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB83
+	.dlab LBB97
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv
-	.dlab LBE83
+	.dlab LBE97
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope50:
+Lscope52:
 	.stabs	"Pair<const int,NativeUI::ListViewItem*>:Tt(1,114)=s8first:(1,12),0,32;second:(1,121),32,32;__base_ctor::(0,47)=#(1,114),(0,6),(0,48)=*(1,114),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2Ev;2A.;__comp_ctor::(0,47):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1Ev;2A.;__base_ctor::(0,49)=#(1,114),(0,6),(0,48),(1,11),(1,119),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,49):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_;2A.;operator=::(0,50)=#(1,114),(0,51)=&(1,114),(0,48),(1,112),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEaSERKS5_;2A.;__base_ctor::(0,52)=#(1,114),(0,6),(0,48),(1,112),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC2ERKS5_;2A.;__comp_ctor::(0,52):_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERKS5_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEC1EPFiRKiS6_E
 	.stabs	"this:p(0,31)",160,0,43,-12
@@ -4954,17 +5305,17 @@ Ltext26:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB84
+	.dlab LBB98
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei
-	.dlab LBE84
+	.dlab LBE98
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope51:
+Lscope53:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEED2Ev
 	.stabs	"this:p(0,53)=k(1,92)",160,0,74,-12
 
@@ -4977,15 +5328,15 @@ Ltext27:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB85
+	.dlab LBB99
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv
-	.dlab LBE85
+	.dlab LBE99
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope52:
+Lscope54:
 	.stabs	"Pair<const int,NativeUI::Label*>:Tt(1,159)=s8first:(1,12),0,32;second:(1,166),32,32;__base_ctor::(0,54)=#(1,159),(0,6),(0,55)=*(1,159),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2Ev;2A.;__comp_ctor::(0,54):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1Ev;2A.;__base_ctor::(0,56)=#(1,159),(0,6),(0,55),(1,11),(1,164),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERS1_RKS4_;2A.;__comp_ctor::(0,56):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_;2A.;operator=::(0,57)=#(1,159),(0,58)=&(1,159),(0,55),(1,157),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEaSERKS5_;2A.;__base_ctor::(0,59)=#(1,159),(0,6),(0,55),(1,157),(0,6);:_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC2ERKS5_;2A.;__comp_ctor::(0,59):_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERKS5_;2A.;;",128,0,61,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E:f(0,6)",36,0,43,__ZN6MAUtil3MapIiPN8NativeUI5LabelEEC1EPFiRKiS6_E
 	.stabs	"this:p(0,32)",160,0,43,-12
@@ -5001,17 +5352,17 @@ Ltext28:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB86
+	.dlab LBB100
 	.line 43
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	ld   i2,#0x0
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei
-	.dlab LBE86
+	.dlab LBE100
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope53:
+Lscope55:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev:f(0,6)",36,0,74,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEED2Ev
 	.stabs	"this:p(0,60)=k(1,137)",160,0,74,-12
 
@@ -5024,15 +5375,15 @@ Ltext29:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB87
+	.dlab LBB101
 	.line 75
 	ld   i0,[fr,-12]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv
-	.dlab LBE87
+	.dlab LBE101
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope54:
+Lscope56:
 	.stabs	"_ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv:f(5,1)",36,0,136,__ZNK6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4sizeEv
 	.stabs	"this:p(0,61)=k(1,102)",160,0,136,-12
 
@@ -5043,15 +5394,15 @@ Lscope54:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB88
+	.dlab LBB102
 	.line 137
 	ld   r14,[fr,-12]
 	ld   r14,[r14,24]
-	.dlab LBE88
+	.dlab LBE102
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope55:
+Lscope57:
 	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::HorizontalLayout*> >::DictNode:Tt(0,62)=s32!1,020,(14,3);data:(1,69),192,64;__base_ctor::(0,63)=#(0,62),(0,6),(0,64)=*(0,62),(1,69),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,63):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC1ES6_;2A.;operator=::(0,65)=#(0,62),(0,66)=&(0,62),(0,64),(0,67)=&(0,68)=k(0,62),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,69)=#(0,62),(0,6),(0,64),(0,67),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,69):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi:f(1,83)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
 	.stabs	"this:p(0,30)",160,0,51,-24
@@ -5067,19 +5418,19 @@ Ltext30:
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB89
-	.dlab LBB90
+	.dlab LBB103
+	.dlab LBB104
 	.line 52
 	ld   i0,[fr,-24]
 	ld   i1,[fr,-28]
 	call &_dict_lookup
 	ld   [fr,-32],r14
-	.dlab LBB91
+	.dlab LBB105
 	.line 53
 	ld   r0,[fr,-32]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L167
-	.dlab LBB92
+	jc   ne,r0,r14,#L182
+	.dlab LBB106
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -5109,24 +5460,24 @@ Ltext30:
 	ld   i1,[fr,-32]
 	ld   i2,r14
 	call &_dict_insert
-L167:
-	.dlab LBE92
-	.dlab LBE91
+L182:
+	.dlab LBE106
+	.dlab LBE105
 	.line 58
 	ld   r14,[fr,-32]
 	add  r14,#0x1c
-	.dlab LBE90
-	.dlab LBE89
+	.dlab LBE104
+	.dlab LBE103
 	add  sp,#0x18
 	pop  rt,d2
 	ret
 	.stabs	"node:(0,64)",128,0,52,-32
-	.stabn	192,0,0,LBB90-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
+	.stabn	192,0,0,LBB104-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
 	.stabs	"p:(1,69)",128,0,54,-40
-	.stabn	192,0,0,LBB92-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
-	.stabn	224,0,0,LBE92-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
-	.stabn	224,0,0,LBE90-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
-Lscope56:
+	.stabn	192,0,0,LBB106-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
+	.stabn	224,0,0,LBE106-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
+	.stabn	224,0,0,LBE104-__ZN6MAUtil3MapIiPN8NativeUI16HorizontalLayoutEEixERKi
+Lscope58:
 	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::Label*> >::DictNode:Tt(0,70)=s32!1,020,(14,3);data:(1,159),192,64;__base_ctor::(0,71)=#(0,70),(0,6),(0,72)=*(0,70),(1,159),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,71):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_;2A.;operator=::(0,73)=#(0,70),(0,74)=&(0,70),(0,72),(0,75)=&(0,76)=k(0,70),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,77)=#(0,70),(0,6),(0,72),(0,75),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,77):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi:f(1,173)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
 	.stabs	"this:p(0,32)",160,0,51,-24
@@ -5140,19 +5491,19 @@ Lscope56:
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB93
-	.dlab LBB94
+	.dlab LBB107
+	.dlab LBB108
 	.line 52
 	ld   i0,[fr,-24]
 	ld   i1,[fr,-28]
 	call &_dict_lookup
 	ld   [fr,-32],r14
-	.dlab LBB95
+	.dlab LBB109
 	.line 53
 	ld   r0,[fr,-32]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L169
-	.dlab LBB96
+	jc   ne,r0,r14,#L184
+	.dlab LBB110
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -5182,24 +5533,24 @@ Lscope56:
 	ld   i1,[fr,-32]
 	ld   i2,r14
 	call &_dict_insert
-L169:
-	.dlab LBE96
-	.dlab LBE95
+L184:
+	.dlab LBE110
+	.dlab LBE109
 	.line 58
 	ld   r14,[fr,-32]
 	add  r14,#0x1c
-	.dlab LBE94
-	.dlab LBE93
+	.dlab LBE108
+	.dlab LBE107
 	add  sp,#0x18
 	pop  rt,d2
 	ret
 	.stabs	"node:(0,72)",128,0,52,-32
-	.stabn	192,0,0,LBB94-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	192,0,0,LBB108-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
 	.stabs	"p:(1,159)",128,0,54,-40
-	.stabn	192,0,0,LBB96-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-	.stabn	224,0,0,LBE96-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-	.stabn	224,0,0,LBE94-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
-Lscope57:
+	.stabn	192,0,0,LBB110-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	224,0,0,LBE110-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+	.stabn	224,0,0,LBE108-__ZN6MAUtil3MapIiPN8NativeUI5LabelEEixERKi
+Lscope59:
 	.stabs	"Dictionary<const int,MAUtil::Pair<const int, NativeUI::ListViewItem*> >::DictNode:Tt(0,78)=s32!1,020,(14,3);data:(1,114),192,64;__base_ctor::(0,79)=#(0,78),(0,6),(0,80)=*(0,78),(1,114),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ES6_;2A.;__comp_ctor::(0,79):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_;2A.;operator=::(0,81)=#(0,78),(0,82)=&(0,78),(0,80),(0,83)=&(0,84)=k(0,78),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeaSERKS8_;2A.;__base_ctor::(0,85)=#(0,78),(0,6),(0,80),(0,83),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC2ERKS8_;2A.;__comp_ctor::(0,85):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ERKS8_;2A.;;",128,0,60,0
 	.stabs	"_ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi:f(1,128)",36,0,51,__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	.stabs	"this:p(0,31)",160,0,51,-24
@@ -5213,19 +5564,19 @@ Lscope57:
 	add  fr,#0x2c
 	ld   [fr,-24],i0
 	ld   [fr,-28],i1
-	.dlab LBB97
-	.dlab LBB98
+	.dlab LBB111
+	.dlab LBB112
 	.line 52
 	ld   i0,[fr,-24]
 	ld   i1,[fr,-28]
 	call &_dict_lookup
 	ld   [fr,-32],r14
-	.dlab LBB99
+	.dlab LBB113
 	.line 53
 	ld   r0,[fr,-32]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L171
-	.dlab LBB100
+	jc   ne,r0,r14,#L186
+	.dlab LBB114
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -5255,24 +5606,24 @@ Lscope57:
 	ld   i1,[fr,-32]
 	ld   i2,r14
 	call &_dict_insert
-L171:
-	.dlab LBE100
-	.dlab LBE99
+L186:
+	.dlab LBE114
+	.dlab LBE113
 	.line 58
 	ld   r14,[fr,-32]
 	add  r14,#0x1c
-	.dlab LBE98
-	.dlab LBE97
+	.dlab LBE112
+	.dlab LBE111
 	add  sp,#0x18
 	pop  rt,d2
 	ret
 	.stabs	"node:(0,80)",128,0,52,-32
-	.stabn	192,0,0,LBB98-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabn	192,0,0,LBB112-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
 	.stabs	"p:(1,114)",128,0,54,-40
-	.stabn	192,0,0,LBB100-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-	.stabn	224,0,0,LBE100-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-	.stabn	224,0,0,LBE98-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
-Lscope58:
+	.stabn	192,0,0,LBB114-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabn	224,0,0,LBE114-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+	.stabn	224,0,0,LBE112-__ZN6MAUtil3MapIiPN8NativeUI12ListViewItemEEixERKi
+Lscope60:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5clearEv
 	.stabs	"this:p(0,46)",160,0,79,-12
 
@@ -5285,15 +5636,15 @@ Ltext31:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB101
+	.dlab LBB115
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE101
+	.dlab LBE115
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope59:
+Lscope61:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5clearEv
 	.stabs	"this:p(0,60)",160,0,79,-12
 
@@ -5304,15 +5655,15 @@ Lscope59:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB102
+	.dlab LBB116
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE102
+	.dlab LBE116
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope60:
+Lscope62:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5clearEv
 	.stabs	"this:p(0,53)",160,0,79,-12
 
@@ -5323,15 +5674,15 @@ Lscope60:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB103
+	.dlab LBB117
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE103
+	.dlab LBE117
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope61:
+Lscope63:
 	.stabs	"Dictionary<const int,MAUtil::Pair<const int, MAUtil::BasicString<char> > >::DictNode:Tt(0,86)=s32!1,020,(14,3);data:(1,29),192,64;__base_ctor::(0,87)=#(0,86),(0,6),(0,88)=*(0,86),(1,29),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ES5_;2A.;__comp_ctor::(0,87):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_;2A.;operator=::(0,89)=#(0,86),(0,90)=&(0,86),(0,88),(0,91)=&(0,92)=k(0,86),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeaSERKS7_;2A.;__base_ctor::(0,93)=#(0,86),(0,6),(0,88),(0,91),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC2ERKS7_;2A.;__comp_ctor::(0,93):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ERKS7_;2A.;__base_dtor::(0,94)=#(0,86),(0,6),(0,88),(0,6);:_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD2Ev;2A.;__comp_dtor::(0,94):_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev;2A.;;",128,0,60,0
 	.stabs	"_ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi:f(88,6)",36,0,51,__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
 	.stabs	"this:p(0,29)",160,0,51,-20
@@ -5347,19 +5698,19 @@ Ltext32:
 	add  fr,#0x30
 	ld   [fr,-20],i0
 	ld   [fr,-24],i1
-	.dlab LBB104
-	.dlab LBB105
+	.dlab LBB118
+	.dlab LBB119
 	.line 52
 	ld   i0,[fr,-20]
 	ld   i1,[fr,-24]
 	call &_dict_lookup
 	ld   [fr,-28],r14
-	.dlab LBB106
+	.dlab LBB120
 	.line 53
 	ld   r0,[fr,-28]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L176
-	.dlab LBB107
+	jc   ne,r0,r14,#L191
+	.dlab LBB121
 	.line 54
 	ld   r14,fr
 	add  r14,#0xffffffd8
@@ -5409,24 +5760,24 @@ Ltext32:
 	add  r14,#0xffffffdc
 	ld   i0,r14
 	call &__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
-L176:
-	.dlab LBE107
-	.dlab LBE106
+L191:
+	.dlab LBE121
+	.dlab LBE120
 	.line 58
 	ld   r14,[fr,-28]
 	add  r14,#0x1c
-	.dlab LBE105
-	.dlab LBE104
+	.dlab LBE119
+	.dlab LBE118
 	add  sp,#0x20
 	pop  rt,d1
 	ret
 	.stabs	"node:(0,88)",128,0,52,-28
-	.stabn	192,0,0,LBB105-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	192,0,0,LBB119-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
 	.stabs	"p:(1,29)",128,0,54,-36
-	.stabn	192,0,0,LBB107-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-	.stabn	224,0,0,LBE107-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-	.stabn	224,0,0,LBE105-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
-Lscope62:
+	.stabn	192,0,0,LBB121-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	224,0,0,LBE121-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+	.stabn	224,0,0,LBE119-__ZN6MAUtil3MapIiNS_11BasicStringIcEEEixERKi
+Lscope64:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev:f(0,6)",36,0,54,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
 	.stabs	"this:p(0,95)=k(0,34)",160,0,61,-12
 
@@ -5437,17 +5788,17 @@ Lscope62:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB108
+	.dlab LBB122
 	.line 54
 	ld   r14,[fr,-12]
 	add  r14,#0x4
 	ld   i0,r14
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE108
+	.dlab LBE122
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope63:
+Lscope65:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_:f(0,6)",36,0,55,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERKS4_
 	.stabs	"this:p(0,95)",160,0,61,-12
 	.stabs	"_ctor_arg:p(1,27)",160,0,61,-16
@@ -5460,7 +5811,7 @@ Lscope63:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB109
+	.dlab LBB123
 	.line 55
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -5473,11 +5824,11 @@ Lscope63:
 	ld   i0,r14
 	ld   i1,r0
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	.dlab LBE109
+	.dlab LBE123
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope64:
+Lscope66:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEEC2EPFiRS1_S7_Ei
 	.stabs	"this:p(0,39)",160,0,44,-12
 	.stabs	"cf:p(1,22)",160,0,44,-16
@@ -5494,7 +5845,7 @@ Ltext33:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB110
+	.dlab LBB124
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -5503,11 +5854,11 @@ Ltext33:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E
-	.dlab LBE110
+	.dlab LBE124
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope65:
+Lscope67:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv:f(0,6)",36,0,79,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5clearEv
 	.stabs	"this:p(0,39)",160,0,79,-12
 
@@ -5518,15 +5869,15 @@ Lscope65:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB111
+	.dlab LBB125
 	.line 80
 	ld   i0,[fr,-12]
 	call &_dict_free_nodes
-	.dlab LBE111
+	.dlab LBE125
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope66:
+Lscope68:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEEC2EPFiRS1_S8_Ei
 	.stabs	"this:p(0,46)",160,0,44,-12
 	.stabs	"cf:p(1,22)",160,0,44,-16
@@ -5541,7 +5892,7 @@ Lscope66:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB112
+	.dlab LBB126
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -5550,11 +5901,11 @@ Lscope66:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E
-	.dlab LBE112
+	.dlab LBE126
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope67:
+Lscope69:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEEC2EPFiRS1_S8_Ei
 	.stabs	"this:p(0,53)",160,0,44,-12
 	.stabs	"cf:p(1,22)",160,0,44,-16
@@ -5569,7 +5920,7 @@ Lscope67:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB113
+	.dlab LBB127
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -5578,11 +5929,11 @@ Lscope67:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E
-	.dlab LBE113
+	.dlab LBE127
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope68:
+Lscope70:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei:f(0,6)",36,0,44,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEEC2EPFiRS1_S8_Ei
 	.stabs	"this:p(0,60)",160,0,44,-12
 	.stabs	"cf:p(1,22)",160,0,44,-16
@@ -5597,7 +5948,7 @@ Lscope68:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB114
+	.dlab LBB128
 	.line 45
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-20]
@@ -5606,11 +5957,11 @@ Lscope68:
 	ld   i0,[fr,-12]
 	ld   i1,[fr,-16]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E
-	.dlab LBE114
+	.dlab LBE128
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope69:
+Lscope71:
 	.stabs	"_ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC1ERS1_RKS4_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiPN8NativeUI16HorizontalLayoutEEC1ERS1_RKS4_
 	.stabs	"this:p(0,96)=k(0,41)",160,0,66,-12
 	.stabs	"f:p(1,11)",160,0,66,-16
@@ -5627,7 +5978,7 @@ Ltext34:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB115
+	.dlab LBB129
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -5637,11 +5988,11 @@ Ltext34:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	ld   [r0,4],r14
-	.dlab LBE115
+	.dlab LBE129
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope70:
+Lscope72:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC1ES6_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE8DictNodeC1ES6_
 	.stabs	"this:p(0,97)=k(0,64)",160,0,32,-12
 	.stabs	"s:p(1,69)",160,0,32,-20
@@ -5657,7 +6008,7 @@ Ltext35:
 	ld   [fr,-12],i0
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
-	.dlab LBB116
+	.dlab LBB130
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -5672,11 +6023,11 @@ Ltext35:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE116
+	.dlab LBE130
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope71:
+Lscope73:
 	.stabs	"_ZN7dnode_tC2Ev:f(0,6)",36,0,33,__ZN7dnode_tC2Ev
 	.stabs	"this:p(0,98)=k(14,4)",160,0,48,-12
 
@@ -5691,7 +6042,7 @@ Lscope71:
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope72:
+Lscope74:
 	.stabs	"_ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiPN8NativeUI5LabelEEC1ERS1_RKS4_
 	.stabs	"this:p(0,99)=k(0,55)",160,0,66,-12
 	.stabs	"f:p(1,11)",160,0,66,-16
@@ -5708,7 +6059,7 @@ Ltext36:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB117
+	.dlab LBB131
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -5718,11 +6069,11 @@ Ltext36:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	ld   [r0,4],r14
-	.dlab LBE117
+	.dlab LBE131
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope73:
+Lscope75:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE8DictNodeC1ES6_
 	.stabs	"this:p(0,100)=k(0,72)",160,0,32,-12
 	.stabs	"s:p(1,159)",160,0,32,-20
@@ -5738,7 +6089,7 @@ Ltext37:
 	ld   [fr,-12],i0
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
-	.dlab LBB118
+	.dlab LBB132
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -5753,11 +6104,11 @@ Ltext37:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE118
+	.dlab LBE132
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope74:
+Lscope76:
 	.stabs	"_ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiPN8NativeUI12ListViewItemEEC1ERS1_RKS4_
 	.stabs	"this:p(0,101)=k(0,48)",160,0,66,-12
 	.stabs	"f:p(1,11)",160,0,66,-16
@@ -5774,7 +6125,7 @@ Ltext38:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB119
+	.dlab LBB133
 	.line 66
 	ld   r0,[fr,-12]
 	ld   r14,[fr,-16]
@@ -5784,11 +6135,11 @@ Ltext38:
 	ld   r14,[fr,-20]
 	ld   r14,[r14]
 	ld   [r0,4],r14
-	.dlab LBE119
+	.dlab LBE133
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope75:
+Lscope77:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE8DictNodeC1ES6_
 	.stabs	"this:p(0,102)=k(0,80)",160,0,32,-12
 	.stabs	"s:p(1,114)",160,0,32,-20
@@ -5804,7 +6155,7 @@ Ltext39:
 	ld   [fr,-12],i0
 	ld   [fr,-20],i1
 	ld   [fr,-16],i2
-	.dlab LBB120
+	.dlab LBB134
 	.line 33
 	ld   i0,[fr,-12]
 	call &__ZN7dnode_tC2Ev
@@ -5819,11 +6170,11 @@ Ltext39:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE120
+	.dlab LBE134
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope76:
+Lscope78:
 	.stabs	"_ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_:f(0,6)",36,0,66,__ZN6MAUtil4PairIKiNS_11BasicStringIcEEEC1ERS1_RKS3_
 	.stabs	"this:p(0,95)",160,0,66,-12
 	.stabs	"f:p(1,11)",160,0,66,-16
@@ -5840,7 +6191,7 @@ Ltext40:
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
 	ld   [fr,-20],i2
-	.dlab LBB121
+	.dlab LBB135
 	.line 66
 	ld   r14,[fr,-12]
 	ld   r0,[fr,-16]
@@ -5851,11 +6202,11 @@ Ltext40:
 	ld   i0,r14
 	ld   i1,[fr,-20]
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	.dlab LBE121
+	.dlab LBE135
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope77:
+Lscope79:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_:f(0,6)",36,0,32,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeC1ES5_
 	.stabs	"this:p(0,103)=k(0,88)",160,0,32,-16
 	.stabs	"s:a(1,29)",64,0,32,4
@@ -5870,7 +6221,7 @@ Ltext41:
 	add  fr,#0x10
 	ld   [fr,-16],i0
 	ld   d0,i1
-	.dlab LBB122
+	.dlab LBB136
 	.line 33
 	ld   i0,[fr,-16]
 	call &__ZN7dnode_tC2Ev
@@ -5884,11 +6235,11 @@ Ltext41:
 	ld   i1,#0x0
 	ld   i2,#0x18
 	call &_memset
-	.dlab LBE122
+	.dlab LBE136
 	add  sp,#0x4
 	pop  rt,d0
 	ret
-Lscope78:
+Lscope80:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4initEPFiRS1_S7_E
 	.stabs	"this:p(0,39)",160,0,38,-12
 	.stabs	"cf:p(1,22)",160,0,38,-16
@@ -5901,7 +6252,7 @@ Lscope78:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB123
+	.dlab LBB137
 	.line 39
 	ld   i0,[fr,-12]
 	ld   i1,#0xffffffff
@@ -5913,11 +6264,11 @@ Lscope78:
 	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
-	.dlab LBE123
+	.dlab LBE137
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope79:
+Lscope81:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4initEPFiRS1_S8_E
 	.stabs	"this:p(0,46)",160,0,38,-12
 	.stabs	"cf:p(1,22)",160,0,38,-16
@@ -5930,7 +6281,7 @@ Lscope79:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB124
+	.dlab LBB138
 	.line 39
 	ld   i0,[fr,-12]
 	ld   i1,#0xffffffff
@@ -5942,11 +6293,11 @@ Lscope79:
 	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
-	.dlab LBE124
+	.dlab LBE138
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope80:
+Lscope82:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4initEPFiRS1_S8_E
 	.stabs	"this:p(0,53)",160,0,38,-12
 	.stabs	"cf:p(1,22)",160,0,38,-16
@@ -5959,7 +6310,7 @@ Lscope80:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB125
+	.dlab LBB139
 	.line 39
 	ld   i0,[fr,-12]
 	ld   i1,#0xffffffff
@@ -5971,11 +6322,11 @@ Lscope80:
 	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
-	.dlab LBE125
+	.dlab LBE139
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope81:
+Lscope83:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E:f(0,6)",36,0,38,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4initEPFiRS1_S8_E
 	.stabs	"this:p(0,60)",160,0,38,-12
 	.stabs	"cf:p(1,22)",160,0,38,-16
@@ -5988,7 +6339,7 @@ Lscope81:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB126
+	.dlab LBB140
 	.line 39
 	ld   i0,[fr,-12]
 	ld   i1,#0xffffffff
@@ -6000,13 +6351,13 @@ Lscope81:
 	ld   i2,#__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv
 	ld   i3,[fr,-12]
 	call &_dict_set_allocator
-	.dlab LBE126
+	.dlab LBE140
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope82:
+Lscope84:
 .data
-LC65:
+LC72:
 	.ascii "c:/MoSync/include/MAUtil/Dictionary.h\0"
 .code
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE5allocEPv
@@ -6020,16 +6371,16 @@ Ltext42:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB127
+	.dlab LBB141
 	.line 201
-	ld   i0,#LC65
+	ld   i0,#LC72
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE127
-Lscope83:
+	.dlab LBE141
+Lscope85:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -6041,23 +6392,23 @@ Lscope83:
 	add  fr,#0x14
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB128
+	.dlab LBB142
 	.line 202
 	ld   r0,[fr,-12]
 	ld   [fr,-20],r0
 	ld   r14,#0x0
 	ld   r0,[fr,-20]
-	jc   eq,r0,r14,#L200
+	jc   eq,r0,r14,#L215
 	ld   i0,[fr,-20]
 	call &__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev
 	ld   i0,[fr,-20]
 	call &__ZdlPv
-L200:
-	.dlab LBE128
+L215:
+	.dlab LBE142
 	add  sp,#0xc
 	pop  rt,fr
 	ret
-Lscope84:
+Lscope86:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_NS_11BasicStringIcEEEEE8DictNodeD1Ev
 	.stabs	"this:p(0,103)",160,0,60,-12
 
@@ -6068,17 +6419,17 @@ Lscope84:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB129
+	.dlab LBB143
 	.line 202
 	ld   r14,[fr,-12]
 	add  r14,#0x18
 	ld   i0,r14
 	call &__ZN6MAUtil4PairIKiNS_11BasicStringIcEEED1Ev
-	.dlab LBE129
+	.dlab LBE143
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope85:
+Lscope87:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE5allocEPv, 1, int
@@ -6088,16 +6439,16 @@ Lscope85:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB130
+	.dlab LBB144
 	.line 201
-	ld   i0,#LC65
+	ld   i0,#LC72
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE130
-Lscope86:
+	.dlab LBE144
+Lscope88:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI16HorizontalLayoutEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -6109,15 +6460,15 @@ Lscope86:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB131
+	.dlab LBB145
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE131
+	.dlab LBE145
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope87:
+Lscope89:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE5allocEPv, 1, int
@@ -6127,16 +6478,16 @@ Lscope87:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB132
+	.dlab LBB146
 	.line 201
-	ld   i0,#LC65
+	ld   i0,#LC72
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE132
-Lscope88:
+	.dlab LBE146
+Lscope90:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI12ListViewItemEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -6148,15 +6499,15 @@ Lscope88:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB133
+	.dlab LBB147
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE133
+	.dlab LBE147
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope89:
+Lscope91:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv:f(14,20)",36,0,201,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv
 
 .func __ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE5allocEPv, 1, int
@@ -6166,16 +6517,16 @@ Lscope89:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB134
+	.dlab LBB148
 	.line 201
-	ld   i0,#LC65
+	ld   i0,#LC72
 	call &_FileNameFromPath
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0xc9
 	call &_bfeHandler
-	.dlab LBE134
-Lscope90:
+	.dlab LBE148
+Lscope92:
 	.stabs	"_ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv:f(0,6)",36,0,202,__ZN6MAUtil10DictionaryIKiNS_4PairIS1_PN8NativeUI5LabelEEEE4freeEP7dnode_tPv
 	.stabs	"node:p(14,20)",160,0,202,-12
 
@@ -6187,15 +6538,15 @@ Lscope90:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB135
+	.dlab LBB149
 	.line 202
 	ld   i0,[fr,-12]
 	call &__ZdlPv
-	.dlab LBE135
+	.dlab LBE149
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope91:
+Lscope93:
 	.global	__ZTV11TrackingTab
 .data
 	.align 4
@@ -6284,27 +6635,27 @@ __ZTVN12Notification25LocalNotificationListenerE:
 	.long	___cxa_pure_virtual
 	.stabs	"LocalNotificationListener:Tt(91,50)=s4_vptr$LocalNotificationListener:(0,135)=*(0,1),0,32;didReceiveLocalNotification::(0,136)=#(91,50),(0,6),(91,49),(0,116),(0,6);:_ZN12Notification25LocalNotificationListener27didReceiveLocalNotificationERNS_17LocalNotificationE;2A*0;(91,50);;operator=::(0,137)=#(91,50),(0,138)=&(91,50),(91,49),(0,139)=&(0,140)=k(91,50),(0,6);:_ZN12Notification25LocalNotificationListeneraSERKS0_;2A.;__base_ctor::(0,141)=#(91,50),(0,6),(91,49),(0,139),(0,6);:_ZN12Notification25LocalNotificationListenerC2ERKS0_;2A.;__comp_ctor::(0,141):_ZN12Notification25LocalNotificationListenerC1ERKS0_;2A.;__base_ctor::(0,142)=#(91,50),(0,6),(91,49),(0,6);:_ZN12Notification25LocalNotificationListenerC2Ev;2A.;__comp_ctor::(0,142):_ZN12Notification25LocalNotificationListenerC1Ev;2A.;;~%(91,50);",128,0,52,0
 	.stabs	"ConnListener:Tt(15,168)=s8_vptr$ConnListener:(0,135),0,32;_mConn:/0(6,10),32,32;connEvent::(0,143)=#(15,168),(0,6),(15,167),(0,144)=&(0,145)=k(6,103),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(15,168);;operator=::(0,146)=#(15,168),(0,147)=&(15,168),(15,167),(0,148)=&(0,149)=k(15,168),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,150)=#(15,168),(0,6),(15,167),(0,148),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,150):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,151)=#(15,168),(0,6),(15,167),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,151):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(15,168);",128,0,100,0
-LC66:
+LC73:
 	.ascii "TEST_EMULATOR\0"
-LC67:
+LC74:
 	.ascii "SERVICE_NOT_AVAILABLE\0"
-LC68:
+LC75:
 	.ascii "ACCOUNT_MISSING\0"
-LC69:
+LC76:
 	.ascii "AUTHENTICATION_FAILED\0"
-LC70:
+LC77:
 	.ascii "TOO_MANY_REGISTRATIONS\0"
-LC71:
+LC78:
 	.ascii "INVALID_SENDER\0"
 .code
-	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,338,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:p(0,3)",160,0,338,-12
-	.stabs	"__priority:p(0,3)",160,0,338,-16
+	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,339,__Z41__static_initialization_and_destruction_0ii
+	.stabs	"__initialize_p:p(0,3)",160,0,339,-12
+	.stabs	"__priority:p(0,3)",160,0,339,-16
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\TrackingTab.cpp",132,0,0,Ltext43
 Ltext43:
-	.line 338
+	.line 339
 	push rt,fr
 	sub  sp,#0x8
 	ld   fr,sp
@@ -6316,145 +6667,145 @@ Ltext44:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L213
+	jc   ne,r0,r14,#L228
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L213
+	jc   ne,r0,r14,#L228
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC66
+	ld   i1,#LC73
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L213:
+L228:
 	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext45
 Ltext45:
 	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L214
+	jc   ne,r0,r14,#L229
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L214
+	jc   ne,r0,r14,#L229
 	.line 88
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
-	ld   i1,#LC67
+	ld   i1,#LC74
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L214:
+L229:
 	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L215
+	jc   ne,r0,r14,#L230
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L215
+	jc   ne,r0,r14,#L230
 	.line 97
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
-	ld   i1,#LC68
+	ld   i1,#LC75
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L215:
+L230:
 	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L216
+	jc   ne,r0,r14,#L231
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L216
+	jc   ne,r0,r14,#L231
 	.line 106
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
-	ld   i1,#LC69
+	ld   i1,#LC76
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L216:
+L231:
 	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L217
+	jc   ne,r0,r14,#L232
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L217
+	jc   ne,r0,r14,#L232
 	.line 115
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
-	ld   i1,#LC70
+	ld   i1,#LC77
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L217:
+L232:
 	.line 121
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L218
+	jc   ne,r0,r14,#L233
 	ld   r0,[fr,-12]
 	ld   r14,#0x1
-	jc   ne,r0,r14,#L218
+	jc   ne,r0,r14,#L233
 	.line 122
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
-	ld   i1,#LC71
+	ld   i1,#LC78
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L218:
+L233:
 	.line 121
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L219
+	jc   ne,r0,r14,#L234
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L219
+	jc   ne,r0,r14,#L234
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L219:
+L234:
 	.line 114
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L220
+	jc   ne,r0,r14,#L235
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L220
+	jc   ne,r0,r14,#L235
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L220:
+L235:
 	.line 105
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L221
+	jc   ne,r0,r14,#L236
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L221
+	jc   ne,r0,r14,#L236
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L221:
+L236:
 	.line 96
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L222
+	jc   ne,r0,r14,#L237
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L222
+	jc   ne,r0,r14,#L237
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L222:
+L237:
 	.line 87
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L223
+	jc   ne,r0,r14,#L238
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L223
+	jc   ne,r0,r14,#L238
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L223:
+L238:
 	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext46
 Ltext46:
 	.line 99
 	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L212
+	jc   ne,r0,r14,#L227
 	ld   r0,[fr,-12]
 	ld   r14,#0x0
-	jc   ne,r0,r14,#L212
+	jc   ne,r0,r14,#L227
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
 	call &__ZN6MAUtil11BasicStringIcED1Ev
-L212:
+L227:
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\TrackingTab.cpp",132,0,0,Ltext47
 Ltext47:
-	.line 338
+	.line 339
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope92:
+Lscope94:
 	.set	%4=__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
 	.stabs	"this:p(0,25)",160,0,74,-12
 	.stabs	"mNotif:p(0,116)",160,0,74,-16
@@ -6478,9 +6829,9 @@ Ltext48:
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope93:
+Lscope95:
 .data
-LC72:
+LC79:
 	.ascii "LOCALE notif\0"
 .code
 	.stabs	"_ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE:f(0,6)",36,0,74,__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
@@ -6495,10 +6846,10 @@ LC72:
 	add  fr,#0x18
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB136
-	.dlab LBB137
+	.dlab LBB150
+	.dlab LBB151
 	.line 74
-	ld   i0,#LC72
+	ld   i0,#LC79
 	call &_lprintfln
 	ld   r14,fr
 	add  r14,#0xffffffe8
@@ -6521,15 +6872,15 @@ LC72:
 	add  r14,#0xffffffe8
 	ld   i0,r14
 	call &__ZN12Notification17LocalNotificationD1Ev
-	.dlab LBE137
-	.dlab LBE136
+	.dlab LBE151
+	.dlab LBE150
 	add  sp,#0x10
 	pop  rt,fr
 	ret
 	.stabs	"test:(91,34)",128,0,74,-24
-	.stabn	192,0,0,LBB137-__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
-	.stabn	224,0,0,LBE137-__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
-Lscope94:
+	.stabn	192,0,0,LBB151-__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
+	.stabn	224,0,0,LBE151-__ZN11TrackingTab27didReceiveLocalNotificationERN12Notification17LocalNotificationE
+Lscope96:
 	.stabs	"maNotificationLocalDestroy:f(0,3)",36,0,8165,_maNotificationLocalDestroy
 	.stabs	"notificationHandle:p(6,10)",160,0,8165,-12
 
@@ -6542,19 +6893,19 @@ Ltext49:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   [fr,-12],i0
-	.dlab LBB138
+	.dlab LBB152
 	.line 8166
 	ld   i0,#0x1ec
 	ld   i1,[fr,-12]
 	ld   i2,#0x0
 	ld   i3,#0x0
 	call &_maIOCtl
-	.dlab LBE138
+	.dlab LBE152
 	.line 8167
 	add  sp,#0x4
 	pop  rt,fr
 	ret
-Lscope95:
+Lscope97:
 	.stabs	"_ZN12Notification17LocalNotificationC1ERKS0_:f(0,6)",36,0,74,__ZN12Notification17LocalNotificationC1ERKS0_
 	.stabs	"this:p(91,32)",160,0,143,-12
 	.stabs	"_ctor_arg:p(0,152)=&(0,153)=k(91,34)",160,0,143,-16
@@ -6569,7 +6920,7 @@ Ltext50:
 	add  fr,#0x10
 	ld   [fr,-12],i0
 	ld   [fr,-16],i1
-	.dlab LBB139
+	.dlab LBB153
 	.line 74
 	ld   r14,[fr,-12]
 	ld   r0,#__ZTVN12Notification17LocalNotificationE+8
@@ -6578,11 +6929,11 @@ Ltext50:
 	ld   r14,[fr,-16]
 	ld   r14,[r14,4]
 	ld   [r0,4],r14
-	.dlab LBE139
+	.dlab LBE153
 	add  sp,#0x8
 	pop  rt,fr
 	ret
-Lscope96:
+Lscope98:
 .data
 	.align 4
 __ZN8NativeUI8BUF_SIZEE:
@@ -6591,37 +6942,37 @@ __ZN8NativeUI8BUF_SIZEE:
 __ZN8NativeUI12MAX_BUF_SIZEE:
 	.long	2048
 .code
-	.stabs	"_GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx:f(0,6)",36,0,339,__GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
+	.stabs	"_GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx:f(0,6)",36,0,340,__GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
 
 .func __GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx, 0, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\TrackingTab.cpp",132,0,0,Ltext51
 Ltext51:
-	.line 339
+	.line 340
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 339
+	.line 340
 	ld   i0,#0x1
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope97:
+Lscope99:
 	.ctor __GLOBAL__I__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
-	.stabs	"_GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx:f(0,6)",36,0,340,__GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
+	.stabs	"_GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx:f(0,6)",36,0,341,__GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
 
 .func __GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx, 0, void
-	.line 340
+	.line 341
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 340
+	.line 341
 	ld   i0,#0x0
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii
 	pop  rt,fr
 	ret
-Lscope98:
+Lscope100:
 	.dtor __GLOBAL__D__ZN11TrackingTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolutionx
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE:S(4,39)",40,0,87,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	.stabs	"_ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE:S(4,39)",40,0,96,__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE

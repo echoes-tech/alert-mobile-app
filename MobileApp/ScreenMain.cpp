@@ -11,7 +11,7 @@
  */
 ScreenMain::ScreenMain() :
 		TabScreen() {
-
+	this->setTitle("TEST"); // test IOS
 	uiCreated = false;
 	LANGUAGE = getSystemLanguage();
 	lprintfln("test mainscreen %s", getLocalPath().c_str());
@@ -68,7 +68,9 @@ void ScreenMain::createUI(String loginToken, long long idMobile) {
 }
 
 void ScreenMain::pullRequest() {
+	lprintfln("timer ScreenMain");
 	if (uiCreated) {
+		lprintfln("timer ScreenMain dans le if");
 		trackingTab->runTimerEvent();
 	}
 }

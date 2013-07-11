@@ -31,9 +31,9 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	} else if (eFileTmp == FILE_OPEN_ERROR) {
 		maPanic(1, "ERROR FILE STRORAGE");
 	} else {
-			Convert::formatJSONBeforeParse(config);
-					MAUtil::YAJLDom::Value* root = YAJLDom::parse(
-							(const unsigned char*) config.c_str(), config.size());
+		Convert::formatJSONBeforeParse(config);
+		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
+				(const unsigned char*) config.c_str(), config.size());
 
 		_modeAuth = root->getValueForKey("authentication_mode")->toString();
 		_idMobile = root->getValueForKey("id_media_value")->toInt();
@@ -69,62 +69,62 @@ Authentication::~Authentication() {
 
 }
 
-
-void Authentication::connectUrl1()
-{
+void Authentication::connectUrl1() {
 	Screen::setMainWidget(mActivityPage);
 }
 
-void Authentication::dataDownload1(MAUtil::YAJLDom::Value* root, int result,eFonction fonction) {
+void Authentication::dataDownload1(MAUtil::YAJLDom::Value* root, int result,
+		eFonction fonction) {
 	if (result == RES_OK) {
-			switch (fonction) {
-			case USER_TOKEN:
-				parseJSONUserToken(root);
-				break;
-			case MEDIAS_LIST:
-				parseJSONMediasList(root);
-				break;
-			case POST_MEDIA_VALUE:
-				parseJSONPostMediaValue(root);
-				break;
-			case POST_MEDIA_VALUE_VALIDATION:
-				parseJSONPostMediaValueValidation(root);
-				break;
-			case AUTHENTICATION_VALIDATION:
-				parseJSONAuthenticationValidation(root);
-			default:
-				break;
-				delete root;
-			}
-		} else if (result == CONNERR_DNS) {
-			lprintfln("AlertTab DataDownload result = %d", result);
-			lprintfln("DNS resolution error.");
-			Screen::setMainWidget(vLAuthentication);
-		} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
-			presentation->setText( Convert::tr(Alert_authentication_faillure + LANGUAGE));
-			Screen::setMainWidget(vLAuthentication);
-		} else if (result == 404 && fonction == MEDIAS_LIST) {
-			createPageMobileChoice();
-		} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
-			_idMobile = 0;
-			_tokenMobile = "";
-			createUI(); ////////
-	//		String urlTmp = HOST;
-	//		urlTmp += "/medias/3";
-	//		urlTmp += _LOGINTOKEN ;
-	//		connectUrl(urlTmp, MEDIAS_LIST);
-
-		} else if (result == CONNERR_GENERIC
-				&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
-			_tokenConnection = "";
-			_login = "";
-			createUI();
+		switch (fonction) {
+		case USER_TOKEN:
+			parseJSONUserToken(root);
+			break;
+		case MEDIAS_LIST:
+			parseJSONMediasList(root);
+			break;
+		case POST_MEDIA_VALUE:
+			parseJSONPostMediaValue(root);
+			break;
+		case POST_MEDIA_VALUE_VALIDATION:
+			parseJSONPostMediaValueValidation(root);
+			break;
+		case AUTHENTICATION_VALIDATION:
+			parseJSONAuthenticationValidation(root);
+		default:
+			break;
+			delete root;
 		}
+	} else if (result == CONNERR_DNS) {
+		lprintfln("AlertTab DataDownload result = %d", result);
+		lprintfln("DNS resolution error.");
+		Screen::setMainWidget(vLAuthentication);
+	} else if (result == CONNERR_GENERIC && fonction == USER_TOKEN) {
+		presentation->setText(
+				Convert::tr(Alert_authentication_faillure + LANGUAGE));
+		Screen::setMainWidget(vLAuthentication);
+	} else if (result == 404 && fonction == MEDIAS_LIST) {
+		createPageMobileChoice();
+	} else if (result == 404 && fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie 404 c'est qu'il y a un probléme dans identification du mobile il faut donc la refaire.
+		_idMobile = 0;
+		_tokenMobile = "";
+		createUI(); ////////
+		//		String urlTmp = HOST;
+		//		urlTmp += "/medias/3";
+		//		urlTmp += _LOGINTOKEN ;
+		//		connectUrl(urlTmp, MEDIAS_LIST);
 
-		else {
-			lprintfln("AlertTab DataDownload result = %d", result);
-			Screen::setMainWidget(vLAuthentication);
-		}
+	} else if (result == CONNERR_GENERIC
+			&& fonction == AUTHENTICATION_VALIDATION) { //si AUTHENTICATION_VALIDATION renvoie CONNERR_GENERIC c'est qu'il y a un probléme dans identification du user il devra donc remettre ses credentials.
+		_tokenConnection = "";
+		_login = "";
+		createUI();
+	}
+
+	else {
+		lprintfln("AlertTab DataDownload result = %d", result);
+		Screen::setMainWidget(vLAuthentication);
+	}
 }
 
 //void Authentication::dataDownloaded(MAHandle data, int result) {
@@ -248,12 +248,14 @@ void Authentication::parseJSONAuthenticationValidation(
 		} else if (!isAuth && isConfirmed && _modeAuth == "credential") {
 			_tokenMobile = tmpMobiletoken;
 			_tokenConnection = "";
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile, _vibrate, _notification);
 			authenticationAccepted();
 		} else if (!isAuth && isConfirmed) {
 			_tokenMobile = tmpMobiletoken;
 			_tokenConnection = "";
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile, _vibrate, _notification);
 			createUI();
 		} else {
 			_idMobile = 0;
@@ -276,7 +278,8 @@ void Authentication::parseJSONPostMediaValueValidation(
 		lprintfln("Root node is valid :) \n");
 
 		if (root->getValueForKey("is_confirmed")->toString() == "true") {
-			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
+			tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,
+					_idMobile, _vibrate, _notification);
 			authenticationAccepted();
 		}
 	}
@@ -298,8 +301,9 @@ void Authentication::parseJSONPostMediaValue(MAUtil::YAJLDom::Value* root) {
 			+ "/validate/";
 	urlTmp += _LOGINTOKEN;
 	String message = "";
-				message.clear();
-message = "                  {\"mev_validation\": true ,\"mev_token\" : \"" + _tokenMobile + "\"}";
+	message.clear();
+	message = "                  {\"mev_validation\": true ,\"mev_token\" : \""
+			+ _tokenMobile + "\"}";
 	connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
 }
 
@@ -407,7 +411,9 @@ void Authentication::createPageMobileChoice() {
 		oldMediaTitle->setHeight(100);
 		vLMediaChoice->addChild(oldMediaTitle);
 		lVMedia = new ListView();
+		if (getPlatform() != IOS) {
 		lVMedia->fillSpaceVertically();
+		}
 		lVMedia->addListViewListener(this);
 		vLMediaChoice->addChild(lVMedia);
 		for (int idx = 0; idx < mapMediaID.size(); idx++) {
@@ -421,7 +427,6 @@ void Authentication::createPageMobileChoice() {
 
 }
 
-
 void Authentication::createUI() {
 	if (vLAuthentication == NULL) {
 		vLAuthentication = new VerticalLayout();
@@ -430,7 +435,8 @@ void Authentication::createUI() {
 //		vLAuthentication->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
 		MAExtent size = maGetScrSize();
 		int mScreenWidth = EXTENT_X(size);
-		if (mScreenWidth <= SMALL_RESOLUTION-100) {
+		lprintfln("test for IOS screen size : %d");
+		if (mScreenWidth <= SMALL_RESOLUTION - 100) {
 			vLAuthentication->setScrollable(true);
 		}
 //		vLAuthentication->setScrollable(true);
@@ -443,8 +449,13 @@ void Authentication::createUI() {
 		presentation = new Label(
 				Convert::tr(authentication_connection_title + LANGUAGE));
 //		presentation->setHeight(100);
+
 		presentation->fillSpaceHorizontally();
-		presentation->fillSpaceVertically();
+
+		if (getPlatform() != IOS) {
+			presentation->fillSpaceVertically();
+		}
+
 		vLAuthentication->addChild(presentation);
 		login = new Label(
 				Convert::tr(authentication_connection_login + LANGUAGE));
@@ -480,29 +491,30 @@ void Authentication::createUI() {
 		lAuthenticationMode = new Label(
 				Convert::tr(authentication_mode_page_title + LANGUAGE));
 		vLAuthentication->addChild(lAuthenticationMode);
+		if (getPlatform() != IOS) {
+			rGAuthenticationChoice = new RadioGroup();
+			rGAuthenticationChoice->addRadioGroupListener(this);
+			vLAuthentication->addChild(rGAuthenticationChoice);
 
-		rGAuthenticationChoice = new RadioGroup();
-		rGAuthenticationChoice->addRadioGroupListener(this);
-		vLAuthentication->addChild(rGAuthenticationChoice);
-
-		rBModeCredential = new RadioButton();
-		rBModeCredential->setText(
-				Convert::tr(authentication_mode_credential + LANGUAGE));
-		rBModeCredential->setTextColor(0xC0C0C0);
-		rGAuthenticationChoice->addView(rBModeCredential);
-		rBModeNone = new RadioButton();
-		rBModeNone->setText(Convert::tr(authentication_mode_none + LANGUAGE));
-		rBModeNone->setTextColor(0xC0C0C0);
+			rBModeCredential = new RadioButton();
+			rBModeCredential->setText(
+					Convert::tr(authentication_mode_credential + LANGUAGE));
+			rBModeCredential->setTextColor(0xC0C0C0);
+			rGAuthenticationChoice->addView(rBModeCredential);
+			rBModeNone = new RadioButton();
+			rBModeNone->setText(
+					Convert::tr(authentication_mode_none + LANGUAGE));
+			rBModeNone->setTextColor(0xC0C0C0);
 //	rBModeNone->setProperty("fontSize", "50");
 //	lprintfln("TEEEESSt %d",maWidgetSetProperty(rBModeNone->getWidgetHandle(), MAW_BUTTON_FONT_SIZE, "30.0"));
-		rGAuthenticationChoice->addView(rBModeNone);
-		if (_modeAuth == "none") {
-			rGAuthenticationChoice->setChecked(rBModeNone);
-		} else {
-			rGAuthenticationChoice->setChecked(rBModeCredential);
+			rGAuthenticationChoice->addView(rBModeNone);
+			if (_modeAuth == "none") {
+				rGAuthenticationChoice->setChecked(rBModeNone);
+			} else {
+				rGAuthenticationChoice->setChecked(rBModeCredential);
+			}
+			rGAuthenticationChoice->fillSpaceVertically();
 		}
-		rGAuthenticationChoice->fillSpaceVertically();
-
 		bValidate = new Button();
 		bValidate->setText(
 				Convert::tr(
@@ -536,7 +548,8 @@ void Authentication::buttonClicked(Widget* button) {
 			urlTmp += _LOGINTOKEN;
 			String message = "";
 			message.clear();
-			message = "                  {\"med_id\": 3 ,\"mev_value\" : \"" + ebNewMediaName->getText() + "\"}";
+			message = "                  {\"med_id\": 3 ,\"mev_value\" : \""
+					+ ebNewMediaName->getText() + "\"}";
 			connectUrl(urlTmp, POST_MEDIA_VALUE, POST, message);
 		}
 	}
@@ -556,7 +569,9 @@ void Authentication::listViewItemClicked(ListView* listView,
 				urlTmp += _LOGINTOKEN;
 				String message = "";
 				message.clear();
-				message = "                  {\"mev_validation\": true ,\"mev_token\" : \"" + _tokenMobile + "\"}";
+				message =
+						"                  {\"mev_validation\": true ,\"mev_token\" : \""
+								+ _tokenMobile + "\"}";
 				connectUrl(urlTmp, POST_MEDIA_VALUE_VALIDATION, POST, message);
 			}
 		}
@@ -570,7 +585,8 @@ void Authentication::radioButtonSelected(NativeUI::RadioGroup*, int,
 	} else if (rB == rBModeNone) {
 		_modeAuth = "none";
 	}
-	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
+	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth, _idMobile,
+			_vibrate, _notification);
 }
 
 bool Authentication::newMediaNameValid() {
@@ -581,18 +597,17 @@ bool Authentication::newMediaNameValid() {
 	return true;
 }
 
-void Authentication::orientationChanged(Screen* screen, int screenOrientation)
- {
+void Authentication::orientationChanged(Screen* screen, int screenOrientation) {
 	if (vLAuthentication != NULL) {
 		if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
 			vLAuthentication->setScrollable(true);
 		} else // Portrait
 		{
 			MAExtent size = maGetScrSize();
-					int mScreenWidth = EXTENT_X(size);
-					if (mScreenWidth > SMALL_RESOLUTION-100) {
-						vLAuthentication->setScrollable(false);
-					}
+			int mScreenWidth = EXTENT_X(size);
+			if (mScreenWidth > SMALL_RESOLUTION - 100) {
+				vLAuthentication->setScrollable(false);
+			}
 		}
 	}
 }

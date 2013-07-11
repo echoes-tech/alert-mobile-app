@@ -1009,7 +1009,12 @@ void AlertTab::buttonClicked(Widget* button) {
 		urlTmp += "/assets/";
 		urlTmp += _LOGINTOKEN;
 		connectUrl(urlTmp, ASSET_LIST);
-	} else if (button == bCancel) {
+	} else if (button == bRefreshAlert) {
+		String urlTmp = HOST;
+		urlTmp += "/alerts/";
+		urlTmp += _LOGINTOKEN;
+		connectUrl(urlTmp, ALERT_LIST);
+	}else if (button == bCancel) {
 		mapLVIAlert[posOptionAlert]->removeChild(HLOptionAlert);
 		mapLVIAlert[posOptionAlert]->addChild(mapLAlertName[posOptionAlert]);
 		posOptionAlert = -1;
@@ -1295,14 +1300,23 @@ void AlertTab::createUI() {
 	lValert->addListViewListener(this);
 	lValert->fillSpaceVertically();
 
-	ListViewItem *lviAddAlert = new ListViewItem();
+//	ListViewItem *lviAddAlert = new ListViewItem();
+	HorizontalLayout* hLButton = new HorizontalLayout();
+	hLButton->wrapContentVertically();
 	bAddAlert = new Button();
 	bAddAlert->addButtonListener(this);
 	bAddAlert->fillSpaceHorizontally();
 	bAddAlert->setText(Convert::tr(alert_create_Button_add_alert + LANGUAGE));
-	lviAddAlert->addChild(bAddAlert);
+	bRefreshAlert = new Button();
+	bRefreshAlert->addButtonListener(this);
+	bRefreshAlert->fillSpaceHorizontally();
+	bRefreshAlert->setText(Convert::tr(alert_create_Button_refresh_alert + LANGUAGE));
+//	lviAddAlert->addChild(bAddAlert);
+	hLButton->addChild(bAddAlert);
+	hLButton->addChild(bRefreshAlert);
 	mainLayoutAlertChoice->addChild(lValert);
-	mainLayoutAlertChoice->addChild(lviAddAlert);
+//	mainLayoutAlertChoice->addChild(lviAddAlert);
+	mainLayoutAlertChoice->addChild(hLButton);
 	createDestListPage();
 	createDetailAlertPage();
 }

@@ -320,6 +320,7 @@ void TrackingTab::createUI() {
 	Screen::setMainWidget(mainLayout);
 
 	lValert = new ListView();
+//	lValert->wrapContentVertically();
 	mainLayout->addChild(lValert);
 }
 

@@ -436,43 +436,111 @@ __ZTV12ActivityPage:
 	.long	__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
 	.long	__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
 	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
+LC0:
+	.ascii "center\0"
 .code
 	.stabs	"_ZN12ActivityPageC2Ev:F(0,6)",36,0,12,__ZN12ActivityPageC2Ev
-	.stabs	"this:P(0,57)=k(0,30)",64,0,12,4
+	.stabs	"this:P(0,57)=k(0,30)",64,0,12,5
 	.global	__ZN12ActivityPageC2Ev
 
 .func __ZN12ActivityPageC2Ev, 1, void
 	.line 12
-	push rt,d0
+	push rt,d1
+	sub  sp,#0x4
 	ld   fr,sp
-	add  fr,#0xc
-	ld   d0,i0
+	add  fr,#0x14
+	ld   d1,i0
 	.dlab LBB2
 	.line 12
 	call &__ZN8NativeUI14VerticalLayoutC2Ev ; call non-native
 	ld   r14,#__ZTV12ActivityPage+8
-	ld   [d0],r14
+	ld   [d1],r14
+	.line 13
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 14
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 15
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev ; call non-native
+	ld   [d1,60],d0
+	.line 16
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Widget8addChildEPS0_ ; call non-native
 	.dlab LBE2
-	pop  rt,d0
+	add  sp,#0x4
+	pop  rt,d1
 	ret
 Lscope0:
 	.stabs	"_ZN12ActivityPageC1Ev:F(0,6)",36,0,12,__ZN12ActivityPageC1Ev
-	.stabs	"this:P(0,57)",64,0,12,4
+	.stabs	"this:P(0,57)",64,0,12,5
 	.global	__ZN12ActivityPageC1Ev
 
 .func __ZN12ActivityPageC1Ev, 1, void
 	.line 12
-	push rt,d0
+	push rt,d1
+	sub  sp,#0x4
 	ld   fr,sp
-	add  fr,#0xc
-	ld   d0,i0
+	add  fr,#0x14
+	ld   d1,i0
 	.dlab LBB3
 	.line 12
 	call &__ZN8NativeUI14VerticalLayoutC2Ev ; call non-native
 	ld   r14,#__ZTV12ActivityPage+8
-	ld   [d0],r14
+	ld   [d1],r14
+	.line 13
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 14
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 15
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev ; call non-native
+	ld   [d1,60],d0
+	.line 16
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Widget8addChildEPS0_ ; call non-native
 	.dlab LBE3
-	pop  rt,d0
+	add  sp,#0x4
+	pop  rt,d1
 	ret
 Lscope1:
 	.stabs	"_ZN12ActivityPageD2Ev:F(0,6)",36,0,23,__ZN12ActivityPageD2Ev
@@ -536,7 +604,7 @@ Lscope3:
 	ret
 Lscope4:
 .data
-LC0:
+LC1:
 	.ascii "TEST_EMULATOR\0"
 .code
 	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,25,__Z41__static_initialization_and_destruction_0ii
@@ -579,7 +647,7 @@ L21:
 Ltext5:
 	.line 99
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC0
+	ld   i1,#LC1
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ActivityPage.cpp",132,0,0,Ltext6
 Ltext6:

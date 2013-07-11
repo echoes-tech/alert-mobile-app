@@ -27,15 +27,17 @@ public:
 		getSystemConnection();
 
 		mMainScreen = new ScreenMain();
+		if (getPlatform() != IOS) {
 		addTimer(this, TIMER_PERIOD, 0);
 		addFocusListener(this);
-
+		}
 		Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
 	}
 
 	// send timer event to trackingTabObject
 	void runTimerEvent() {
-		maReportResourceInformation();
+//		maReportResourceInformation();
+		lprintfln("timer main");
 		mMainScreen->pullRequest();
 //		maToast("timer", MA_TOAST_DURATION_LONG); // TODO a supprimer juste pour test
 	}

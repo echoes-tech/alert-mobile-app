@@ -1,5 +1,5 @@
 PerformanceFrequency: 3215449
-StartCount: 9212663258
+StartCount: 80339644960
 Hello World!
 argc: 12
 1:-program
@@ -16,13 +16,13 @@ maxCustomEventSize: 0x28
 Head.DataSize: 0x400000
 Head.StackSize: 0x80000
 Head.HeapSize: 0x300000
-Head.EntryPoint: 0x29925
-Head.CodeLen: 0x9331b
+Head.EntryPoint: 0x2a12b
+Head.CodeLen: 0x93b21
 CODE_SEGMENT_SIZE: 0x100000
-Head.DataLen: 0xd314
+Head.DataLen: 0xd530
 Head.DataSize: 0x400000
 DATA_SEGMENT_SIZE: 0x400000
-Head.IntLen: 0xcf6
+Head.IntLen: 0xd4a
 Type 2, size 23456
 Type 2, size 2218
 Type 2, size 2218
@@ -183,19 +183,19 @@ maPanic 0, "This application uses Native UI, which is not supported on the curre
 DumpCallStackEx:
 reportCallStack
 0
-IP: 0x44252
+IP: 0x44a58
 Call stack: 8 frames
-0: 0x29954
-1: 0x2425
-2: 0x5032
-3: 0x3eb46
-4: 0x3bd8d
-5: 0x433ee
-6: 0x44463
-7: 0x44254
-Exit @ IP 0x44252  SP 0x3ffeb0
-InstCount: 49775
-IP: 0x29925
+0: 0x2a15a
+1: 0x241c
+2: 0x5189
+3: 0x3f34c
+4: 0x3c593
+5: 0x43bf4
+6: 0x44c69
+7: 0x44a5a
+Exit @ IP 0x44a58  SP 0x3ffeb4
+InstCount: 49774
+IP: 0x2A12B
 Profile dumped.
 level: 8
 maxLevel: 11

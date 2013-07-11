@@ -195,6 +195,12 @@ ET NE PAS HESITER A EFFACER LE CONTENU DU FICICHER "MAHeaders.h" AVANT LA COMPIL
     <string id="alert_notification_option_vibrate">with vibrate </string>
     <string id="alert_notification_option_vibrate_FR">Avec vibreur </string>
  
+ <string id="alert_create_Button_refresh_alert">Refresh page </string>
+    <string id="alert_create_Button_refresh_alert_FR">Rafraîchir la page </string>
+ 
+ alert_create_Button_refresh_alert
+ 
+ 
   <!-- authentication (page choix des medias) -->
     <string id="authentication_new_media_title">New terminal ?</string>
     <string id="authentication_new_media_title_FR">Nouveau terminal ?</string>

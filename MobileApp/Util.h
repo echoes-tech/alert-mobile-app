@@ -137,7 +137,7 @@ static MAUtil::String getLocalPath() {
     // If it works, fine.
     if(result > 0) {
 //    	maToast(path.c_str(), MA_TOAST_DURATION_LONG);
-//        printf("Got local path: %i\n", result);
+        printf("Got local path: %i\n", result);
         return path + "";
     }
 
@@ -148,106 +148,180 @@ static MAUtil::String getLocalPath() {
     return path;
 }
 
+static int saveToStore(const char *name, const String &data)
+{
+	MAHandle dataHandle = maCreatePlaceholder();
+	if(maCreateData(dataHandle, data.length()) != RES_OK)
+	{
+		return -1;
+	}
+	maWriteData(dataHandle, data.c_str(), 0, data.length());
+
+	MAHandle myStore = maOpenStore(name, MAS_CREATE_IF_NECESSARY);
+
+	if(myStore > 0)
+	{
+		maWriteStore(myStore, dataHandle);
+		maCloseStore(myStore, 0);
+
+		return 1;
+	}
+	return -1;
+}
+
+
+static int readFromStore(const char *name, String &data)
+{
+	MAHandle store = maOpenStore(name, 0);
+	if(store>0)
+	{
+		MAHandle dataHandle = maCreatePlaceholder();
+		int len = data.length();
+		if( maReadStore(store, dataHandle) != RES_OUT_OF_MEMORY  )
+		{
+			int size = maGetDataSize(dataHandle);
+			char temp[size + 1];
+			temp[size] = '\0';
+			maReadData(dataHandle, &temp, 0, size);
+
+			data.clear();
+			data = String(temp);
+
+			return 1;
+		}
+	}
+	return -1;
+}
 
 static eFile tryToRead(MAUtil::String &config) {
     // Construct the filename.
-    MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
+	if (getPlatform() != IOS) {
+		MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
-    // Open the file handle.
-    lprintfln("Open '%s'\n", filename.c_str());
-    MAHandle file = maFileOpen(filename.c_str(), MA_ACCESS_READ);
-    if(file < 0) {
-//        printf("Error %i\n", file);
-        return FILE_OPEN_ERROR;
-    }
+		// Open the file handle.
+		lprintfln("OpenRead '%s'\n", filename.c_str());
+		MAHandle file = maFileOpen(filename.c_str(), MA_ACCESS_READ);
+		if (file < 0) {
+			lprintfln("Error %i\n", file);
+			return FILE_OPEN_ERROR;
+		}
 
-    // Check if the file exists.
-    int res = maFileExists(file);
-    MAASSERT(res >= 0);
-    if(!res) {
-//        printf("File does not exist.\n");
-        maFileClose(file);
-        return FILE_NOT_EXIST;
-    }
+		// Check if the file exists.
+		int res = maFileExists(file);
+		MAASSERT(res >= 0);
+		if (!res) {
+			printf("File does not exist.\n");
+			maFileClose(file);
+			return FILE_NOT_EXIST;
+		}
 
-    // Get the file size.
-    int size = maFileSize(file);
-    lprintfln("Size: %i\n", size);
-    MAASSERT(size >= 0);
+		// Get the file size.
+		int size = maFileSize(file);
+		lprintfln("Size: %i\n", size);
+		MAASSERT(size >= 0);
 
-    // Read the file data.
-    static char data[600];
-    MAASSERT(size < (int)sizeof(data));
-    res = maFileRead(file, data, size);
-    MAASSERT(res == 0);
-    config = data;
-    lprintfln(config.c_str());
+		// Read the file data.
+		static char data[600];
+		MAASSERT(size < (int)sizeof(data));
+		res = maFileRead(file, data, size);
+		MAASSERT(res == 0);
+		config = data;
+		lprintfln(config.c_str());
 //    maToast(data,MA_TOAST_DURATION_LONG);
-    // Print some data.
+		// Print some data.
 //    data[300] = 0;
 //    lprintfln("%s\n", data);
 
-    // Close the file.
-    lprintfln("Closing...\n");
-    res = maFileClose(file);
-    MAASSERT(res == 0);
+		// Close the file.
+		lprintfln("Closing...\n");
+		res = maFileClose(file);
+		MAASSERT(res == 0);
+	}
+	else
+	{
+		if (readFromStore("EA_mobile_app_conf.txt",config)){
+					return FILE_CLOSE;
+				}
+				else{
+					return FILE_OPEN_ERROR;
+				}
 
-//    lprintfln("Done.\n");
+	}
+    lprintfln("Done.\n");
     return FILE_CLOSE;
 }
 
 static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUtil::String &tokenAuthent, MAUtil::String &mode, long long &idMedia, bool vibrate, bool notification) {
-    // Construct the filename.
-    MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
-    // Open the file handle.
-//    printf("Open '%s'\n", filename.c_str());
-    MAHandle file = maFileOpen(filename.c_str(), MA_ACCESS_READ_WRITE);
-    if(file < 0) {
-//        printf("Error %i\n", file);
-        return FILE_OPEN_ERROR;
-    }
+	int res;
+	MAHandle file;
+	if (getPlatform() != IOS) {
+		// Construct the filename.
+		MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
-    // If the file exists...
-    int res = maFileExists(file);
-    MAASSERT(res >= 0);
-    if(res) {
-        // Truncate it, deleting any old data.
-//        printf("Truncating file...\n");
-        res = maFileTruncate(file, 0);
-        MAASSERT(res == 0);
-    } else {
-        // Otherwise, create it.
-//        printf("Creating file...\n");
-        res = maFileCreate(file);
-        MAASSERT(res >= 0);
-    }
-    // In either case, we now have an empty file at our disposal.
+		// Open the file handle.
+		printf("OpenWrite '%s'\n", filename.c_str());
+		file = maFileOpen(filename.c_str(),
+				MA_ACCESS_READ_WRITE /*MAS_CREATE_IF_NECESSARY*/);
+		if (file < 0) {
+			printf("Error %i\n", file);
+			return FILE_OPEN_ERROR;
+		}
 
-    // Write data.
-    String sVibrate = "true";
-    String sNotification = "true";
-    if(vibrate == false){
-    	sVibrate = "false";
-    }
-    if(notification == false){
-    	sNotification = "false";
-    }
+		// If the file exists...
+	    res = maFileExists(file);
+		MAASSERT(res >= 0);
+		if (res) {
+			// Truncate it, deleting any old data.
+			printf("Truncating file...\n");
+			res = maFileTruncate(file, 0);
+			MAASSERT(res == 0);
+		} else {
+			// Otherwise, create it.
+			printf("Creating file...\n");
+			res = maFileCreate(file);
+			MAASSERT(res >= 0);
+		}
+		// In either case, we now have an empty file at our disposal.
+	}
+	// Write data.
+	String sVibrate = "true";
+	String sNotification = "true";
+	if (vibrate == false) {
+		sVibrate = "false";
+	}
+	if (notification == false) {
+		sNotification = "false";
+	}
 
-    MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \"" + tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent + "\",\"authentication_mode\" : \"" + mode + "\",\"id_media_value\" : " + Convert::toString(idMedia)  + ",\"notification\" : " + sNotification + ",\"vibrate\" : " + sVibrate + "}";
-    //    static const char data[] = tmp.c_str();
-    res = maFileWrite(file, tmp.c_str(), tmp.size());
-    lprintfln(tmp.c_str());
+	MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \""
+			+ tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent
+			+ "\",\"authentication_mode\" : \"" + mode
+			+ "\",\"id_media_value\" : " + Convert::toString(idMedia)
+			+ ",\"notification\" : " + sNotification + ",\"vibrate\" : "
+			+ sVibrate + "}";
+	//    static const char data[] = tmp.c_str();
+	if (getPlatform() != IOS) {
+		res = maFileWrite(file, tmp.c_str(), tmp.size());
+		lprintfln(tmp.c_str());
 //    maToast(tmp.c_str(),MA_TOAST_DURATION_LONG);
 //    res = maFileWrite(file, data, sizeof(data));
-    MAASSERT(res == 0);
+		MAASSERT(res == 0);
 
-    // Close the file.
-//    printf("Closing...\n");
-    res = maFileClose(file);
-    MAASSERT(res == 0);
-
-//    printf("Done.\n");
+		// Close the file.
+		printf("Closing...\n");
+		res = maFileClose(file);
+		MAASSERT(res == 0);
+	}
+	else{
+		if (saveToStore("EA_mobile_app_conf.txt",tmp)){
+			return FILE_CLOSE;
+		}
+		else{
+			return FILE_OPEN_ERROR;
+		}
+	}
+    printf("Done.\n");
     return FILE_CLOSE;
 }
 
@@ -284,5 +358,7 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
 //    }
 //    maFileListClose(list);
 //}
+
+
 
 #endif /* UTIL_H_ */

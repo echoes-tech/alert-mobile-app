@@ -149,6 +149,7 @@ private:
 	MAUtil::Map<int, Label*> mapLAlertName;
 	MAUtil::Map<int, long long> mapAlertId;
 	Button *bAddAlert;
+	Button *bRefreshAlert;
 	Button *bDelete;
 	Button *bCancel;
 	Button *bView;

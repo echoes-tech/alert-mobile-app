@@ -5,6 +5,7 @@
  *      Author: gdr
  */
 
+#include "Util.h"
 #include "Page.h"
 #include "resource/Convert.h"
 
@@ -20,14 +21,21 @@ Page::Page(String title, String Memo) {
 	mtitle = new Label(title);
 
 //		mtitle->setFontSize(EXTENT_Y(maGetTextSize(""))*2);
-	mtitle->setFontColor(0xFFFFFF);
+
 	mtitle->fillSpaceHorizontally();
 	this->addChild(mtitle);
 
 	Label* line1 = new Label();
 	line1->setHeight(2);
 	line1->fillSpaceHorizontally();
-	line1->setBackgroundColor(0xFFFFFF);
+	if (getPlatform() != IOS) {
+		mtitle->setFontColor(0xFFFFFF);
+		line1->setBackgroundColor(0xFFFFFF);
+	} else {
+		mtitle->setFontColor(0x000000);
+		line1->setBackgroundColor(0x000000);
+	}
+
 	this->addChild(line1);
 }
 
