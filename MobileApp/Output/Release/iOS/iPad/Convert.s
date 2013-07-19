@@ -1090,53 +1090,72 @@ LC14:
 	.stabn	192,0,0,LBB27-__ZN7Convert8toStringEi
 	.stabn	224,0,0,LBE27-__ZN7Convert8toStringEi
 Lscope12:
+.data
+LC15:
+	.ascii "convert to string\0"
+LC16:
+	.ascii "convert to string1\0"
+LC17:
+	.ascii "convert to string2\0"
+.code
 	.stabs	"_ZN7Convert8toStringEx:F(2,1)",36,0,185,__ZN7Convert8toStringEx
-	.stabs	"input:P(0,15)",64,0,185,30
+	.stabs	"input:P(0,15)",64,0,185,5
 	.global	__ZN7Convert8toStringEx
 
 .func __ZN7Convert8toStringEx, 3, int
 	.line 185
-	push rt,d1
+	push rt,d3
 	sub  sp,#0x88
 	ld   fr,sp
-	add  fr,#0x98
+	add  fr,#0xa0
 	ld   d0,i0
+	ld   d1,i1
+	ld   d2,i2
 	.dlab LBB28
 	.dlab LBB29
-	.line 187
-	ld   d1,fr
-	add  d1,#0xffffff70
-	ld   [sp],i1
-	ld   [sp,4],i2
-	ld   i0,d1
+	.line 186
+	ld   i0,#LC15
+	call &_lprintfln ; call non-native
+	.line 188
+	ld   i0,#LC16
+	call &_lprintfln ; call non-native
+	.line 189
+	ld   d3,fr
+	add  d3,#0xffffff68
+	ld   [sp],d1
+	ld   [sp,4],d2
+	ld   i0,d3
 	ld   i1,#0x80
 	ld   i2,#LC14
 	call &_snprintf ; call non-native
-	.line 189
+	.line 190
+	ld   i0,#LC17
+	call &_lprintfln ; call non-native
+	.line 192
 	ld   i0,d0
-	ld   i1,d1
+	ld   i1,d3
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.dlab LBE29
 	.dlab LBE28
-	.line 190
+	.line 193
 	ld   r14,d0
 	add  sp,#0x88
-	pop  rt,d1
+	pop  rt,d3
 	ret
-	.stabs	"buffer:(0,40)",128,0,186,-144
+	.stabs	"buffer:(0,40)",128,0,187,-152
 	.stabn	192,0,0,LBB29-__ZN7Convert8toStringEx
 	.stabn	224,0,0,LBE29-__ZN7Convert8toStringEx
 Lscope13:
 .data
-LC15:
+LC18:
 	.ascii "%f\0"
 .code
-	.stabs	"_ZN7Convert8toStringEd:F(2,1)",36,0,193,__ZN7Convert8toStringEd
-	.stabs	"input:P(0,8)",64,0,193,13
+	.stabs	"_ZN7Convert8toStringEd:F(2,1)",36,0,196,__ZN7Convert8toStringEd
+	.stabs	"input:P(0,8)",64,0,196,13
 	.global	__ZN7Convert8toStringEd
 
 .func __ZN7Convert8toStringEd, 3, int
-	.line 193
+	.line 196
 	push rt,d1
 	sub  sp,#0x88
 	ld   fr,sp
@@ -1144,53 +1163,53 @@ LC15:
 	ld   d1,i0
 	.dlab LBB30
 	.dlab LBB31
-	.line 195
+	.line 198
 	ld   d0,fr
 	add  d0,#0xffffff70
 	ld [sp],i1
 	ld [sp,4],i2 ;11
 	ld   i0,d0
 	ld   i1,#0x80
-	ld   i2,#LC15
+	ld   i2,#LC18
 	call &_snprintf ; call non-native
-	.line 197
+	.line 200
 	ld   i0,d1
 	ld   i1,d0
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.dlab LBE31
 	.dlab LBE30
-	.line 198
+	.line 201
 	ld   r14,d1
 	add  sp,#0x88
 	pop  rt,d1
 	ret
-	.stabs	"buffer:(0,40)",128,0,194,-144
+	.stabs	"buffer:(0,40)",128,0,197,-144
 	.stabn	192,0,0,LBB31-__ZN7Convert8toStringEd
 	.stabn	224,0,0,LBE31-__ZN7Convert8toStringEd
 Lscope14:
-	.stabs	"_ZN7Convert8toStringEPKhm:F(2,1)",36,0,201,__ZN7Convert8toStringEPKhm
-	.stabs	"src:P(0,41)=*(0,42)=k(5,12)",64,0,201,13
-	.stabs	"count:P(4,1)",64,0,201,14
+	.stabs	"_ZN7Convert8toStringEPKhm:F(2,1)",36,0,204,__ZN7Convert8toStringEPKhm
+	.stabs	"src:P(0,41)=*(0,42)=k(5,12)",64,0,204,13
+	.stabs	"count:P(4,1)",64,0,204,14
 	.global	__ZN7Convert8toStringEPKhm
 
 .func __ZN7Convert8toStringEPKhm, 3, int
-	.line 201
+	.line 204
 	push rt,d1
 	ld   fr,sp
 	add  fr,#0x10
 	ld   d1,i0
-	.line 201
+	.line 204
 	ld   d0,sp
 	.dlab LBB32
 	.dlab LBB33
-	.line 203
+	.line 206
 	add  i2,#0x7
 	and  i2,#0xfffffffc
 	sub  sp,i2
 	ld   r3,sp
-	.line 204
+	.line 207
 	ld   r2,#0x0
-	.line 231
+	.line 234
 	ld.b r0,[i1]
 	ld   r14,r0
 	and  r14,#0xff  ; zero extend
@@ -1199,11 +1218,11 @@ L101:
 	.dlab LBB34
 	.dlab LBB35
 	.dlab LBB36
-	.line 207
+	.line 210
 	xb   r14,r0
 	ld   r1,#0x0
 	jc   lt,r14,r1,#L93
-	.line 210
+	.line 213
 	ld   r14,r2
 	add  r14,r3
 	add  i1,#0x1
@@ -1214,7 +1233,7 @@ L104:
 	.dlab LBB39
 	.dlab LBB40
 	.dlab LBB41
-	.line 231
+	.line 234
 	add  r2,#0x1
 	ld.b r0,[i1]
 L91:
@@ -1231,11 +1250,11 @@ L91:
 	ld   r1,#0x0
 	jc   ne,r14,r1,#L101
 L92:
-	.line 235
+	.line 238
 	add  r2,r3
 	ld   r4,#0x0
 	ld.b [r2],r4
-	.line 237
+	.line 240
 	ld   i0,d1
 	ld   i1,r3
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
@@ -1244,7 +1263,7 @@ L92:
 	.dlab LBE42
 	.dlab LBE33
 	.dlab LBE32
-	.line 238
+	.line 241
 	ld   r14,d1
 	pop  rt,d1
 	ret
@@ -1256,7 +1275,7 @@ L93:
 	.dlab LBB47
 	.dlab LBB48
 	.dlab LBB49
-	.line 212
+	.line 215
 	ld   r1,r0
 	and  r1,#0xff  ; zero extend
 	ld   r14,r1
@@ -1265,33 +1284,33 @@ L93:
 	jc   eq,r14,r4,#L106
 	.dlab LBB50
 	.dlab LBB51
-	.line 221
+	.line 224
 	ld   r14,r1
 	and  r14,#0xf0
 	ld   r1,#0xe0
 	jc   ne,r14,r1,#L91
 	.dlab LBB52
-	.line 224
+	.line 227
 	add  i1,#0x1
-	.line 225
+	.line 228
 	ld.b r14,[i1]
 	and  r14,#0xff  ; zero extend
 	add  i1,#0x1
-	.line 226
+	.line 229
 	ld.b r4,[i1]
 	add  i1,#0x1
-	.line 227
+	.line 230
 	ld   r1,r14
 	ld   r0,r14
 	and  r0,#0xc0
 	ld   r14,#0x80
 	jc   ne,r0,r14,#L92
-	.line 229
+	.line 232
 	ld   r14,r4
 	and  r14,#0xc0
 L105:
 	jc   ne,r14,r0,#L92
-	.line 231
+	.line 234
 	ld   r0,r2
 	add  r0,r3
 	and  r1,#0x1f
@@ -1306,12 +1325,12 @@ L106:
 	.dlab LBE51
 	.dlab LBE50
 	.dlab LBB53
-	.line 215
+	.line 218
 	add  i1,#0x1
-	.line 216
+	.line 219
 	ld.b r4,[i1]
 	add  i1,#0x1
-	.line 217
+	.line 220
 	ld   r14,r4
 	and  r14,#0xc0
 	ld   r0,#0x80
@@ -1324,64 +1343,64 @@ L106:
 	.dlab LBE45
 	.dlab LBE44
 	.dlab LBE43
-	.stabs	"output:r(0,43)=*(0,44)=ar(5,57);0;-1;(0,19)",64,0,203,19
-	.stabs	"ctr:r(0,3)",64,0,204,18
+	.stabs	"output:r(0,43)=*(0,44)=ar(5,57);0;-1;(0,19)",64,0,206,19
+	.stabs	"ctr:r(0,3)",64,0,207,18
 	.stabn	192,0,0,LBB33-__ZN7Convert8toStringEPKhm
 	.stabn	224,0,0,LBE33-__ZN7Convert8toStringEPKhm
-	.stabs	"output:r(0,45)=*(0,44)",64,0,203,19
-	.stabs	"ctr:r(0,3)",64,0,204,18
+	.stabs	"output:r(0,45)=*(0,44)",64,0,206,19
+	.stabs	"ctr:r(0,3)",64,0,207,18
 	.stabn	192,0,0,LBB44-__ZN7Convert8toStringEPKhm
 	.stabn	224,0,0,LBE44-__ZN7Convert8toStringEPKhm
 Lscope15:
-	.stabs	"_ZN7Convert8hexToIntEPKc:F(0,3)",36,0,241,__ZN7Convert8hexToIntEPKc
-	.stabs	"input:P(1,7)",64,0,241,12
+	.stabs	"_ZN7Convert8hexToIntEPKc:F(0,3)",36,0,244,__ZN7Convert8hexToIntEPKc
+	.stabs	"input:P(1,7)",64,0,244,12
 	.global	__ZN7Convert8hexToIntEPKc
 
 .func __ZN7Convert8hexToIntEPKc, 1, int
-	.line 241
+	.line 244
 	push fr,fr
 	ld   fr,sp
 	add  fr,#0x4
 	.dlab LBB54
 	.dlab LBB55
-	.line 243
+	.line 246
 	ld   r1,#0x0
 	jp   #L108
 L118:
 	.dlab LBB56
-	.line 246
+	.line 249
 	ld   r2,#0x2f
 	jc   le,r15,r2,#L117
-	.line 247
+	.line 250
 	ld   r2,#0x39
 	jc   le,r15,r2,#L112
-	.line 249
+	.line 252
 	ld   r2,#0x60
 	jc   le,r15,r2,#L113
 	ld   r14,r0
 	add  r14,#0xffffffe0
 L113:
-	.line 250
+	.line 253
 	xb   r15,r14
 	ld   r0,#0x5a
 	jc   gt,r15,r0,#L117
-	.line 251
+	.line 254
 	ld   r2,#0x39
 	jc   le,r15,r2,#L117
 	add  r14,#0xfffffff9
 	xb   r15,r14
-	.line 252
+	.line 255
 	jc   le,r15,r2,#L117
 L112:
-	.line 254
+	.line 257
 	add  r14,#0xffffffd0
-	.line 255
+	.line 258
 	sll  r1,#0x4
-	.line 256
+	.line 259
 	xb   r14,r14
 	add  r1,r14
 L108:
-	.line 244
+	.line 247
 	ld.b r0,[i0]
 	add  i0,#0x1
 	ld   r14,r0
@@ -1389,49 +1408,49 @@ L108:
 	ld   r2,#0x0
 	jc   ne,r15,r2,#L118
 	.dlab LBE56
-	.line 259
+	.line 262
 	ld   r14,r1
 	.dlab LBE55
 	.dlab LBE54
-	.line 260
+	.line 263
 	pop  fr,fr
 	ret
 L117:
 	.dlab LBB57
 	.dlab LBB58
 	.dlab LBB59
-	.line 252
+	.line 255
 	ld   r14,#0x0
 	.dlab LBE59
 	.dlab LBE58
 	.dlab LBE57
-	.line 260
+	.line 263
 	pop  fr,fr
 	ret
-	.stabs	"v:r(0,3)",64,0,243,17
+	.stabs	"v:r(0,3)",64,0,246,17
 	.stabn	192,0,0,LBB55-__ZN7Convert8hexToIntEPKc
-	.stabs	"c:r(0,19)",64,0,244,30
+	.stabs	"c:r(0,19)",64,0,247,30
 	.stabn	192,0,0,LBB56-__ZN7Convert8hexToIntEPKc
 	.stabn	224,0,0,LBE56-__ZN7Convert8hexToIntEPKc
 	.stabn	224,0,0,LBE55-__ZN7Convert8hexToIntEPKc
-	.stabs	"v:r(0,3)",64,0,243,17
+	.stabs	"v:r(0,3)",64,0,246,17
 	.stabn	192,0,0,LBB58-__ZN7Convert8hexToIntEPKc
-	.stabs	"c:r(0,19)",64,0,244,30
+	.stabs	"c:r(0,19)",64,0,247,30
 	.stabn	192,0,0,LBB59-__ZN7Convert8hexToIntEPKc
 	.stabn	224,0,0,LBE59-__ZN7Convert8hexToIntEPKc
 	.stabn	224,0,0,LBE58-__ZN7Convert8hexToIntEPKc
 Lscope16:
 .data
-LC16:
+LC19:
 	.ascii "\\\0"
 .code
-	.stabs	"_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi:F(0,6)",36,0,264,__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
-	.stabs	"input:P(0,37)",64,0,264,8
-	.stabs	"nbBackslash:P(0,3)",64,0,264,10
+	.stabs	"_ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi:F(0,6)",36,0,267,__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
+	.stabs	"input:P(0,37)",64,0,267,8
+	.stabs	"nbBackslash:P(0,3)",64,0,267,10
 	.global	__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
 
 .func __ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi, 2, void
-	.line 264
+	.line 267
 	push rt,d7
 	sub  sp,#0x10
 	ld   fr,sp
@@ -1440,7 +1459,7 @@ LC16:
 	ld   d6,i1
 	.dlab LBB60
 	.dlab LBB61
-	.line 265
+	.line 268
 	ld   d5,#0x0
 	ld   d7,fr
 	add  d7,#0xffffffd4
@@ -1448,10 +1467,10 @@ L131:
 	.dlab LBB62
 	.dlab LBB63
 	.dlab LBB64
-	.line 268
+	.line 271
 	ld   d1,#0x0
 	ld   i0,d7
-	ld   i1,#LC16
+	ld   i1,#LC19
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d7
@@ -1470,7 +1489,7 @@ L125:
 	jc   eq,r14,r0,#L122
 	.dlab LBB65
 	.dlab LBB66
-	.line 270
+	.line 273
 	ld   d2,r0
 	ld   d3,fr
 	add  d3,#0xffffffc8
@@ -1478,9 +1497,9 @@ L125:
 	ld   d1,fr
 	add  d1,#0xffffffcc
 L129:
-	.line 272
+	.line 275
 	ld   i0,d1
-	ld   i1,#LC16
+	ld   i1,#LC19
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d1
@@ -1488,7 +1507,7 @@ L129:
 	call &__ZNK6MAUtil11BasicStringIcE4findERKS1_j ; call non-native
 	ld   d0,r14
 	ld   i0,d3
-	ld   i1,#LC16
+	ld   i1,#LC19
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d0
@@ -1498,14 +1517,14 @@ L129:
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 270
+	.line 273
 	add  d2,#0x1
 	jc   lt,d2,d6,#L129
 L135:
 	.dlab LBE66
-	.line 274
+	.line 277
 	ld   i0,d3
-	ld   i1,#LC16
+	ld   i1,#LC19
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d3
@@ -1514,7 +1533,7 @@ L135:
 	ld   d5,r14
 	ld   i0,d3
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 276
+	.line 279
 	ld   r14,d6
 	add  r14,d6
 	add  d5,r14
@@ -1522,7 +1541,7 @@ L135:
 	.dlab LBE64
 	.dlab LBE63
 	.dlab LBE62
-	.line 280
+	.line 283
 	ld   r14,#0xffffffff
 	jc   ne,d5,r14,#L131
 L139:
@@ -1548,11 +1567,11 @@ L138:
 	.dlab LBB72
 	.dlab LBB73
 	.dlab LBB74
-	.line 268
+	.line 271
 	ld   d0,fr
 	add  d0,#0xffffffd0
 	ld   i0,d0
-	ld   i1,#LC16
+	ld   i1,#LC19
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d0
@@ -1571,71 +1590,71 @@ L137:
 	.dlab LBE72
 	.dlab LBE68
 	.dlab LBE67
-	.stabs	"compt:r(0,3)",64,0,265,9
+	.stabs	"compt:r(0,3)",64,0,268,9
 	.stabn	192,0,0,LBB61-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
-	.stabs	"i:r(0,3)",64,0,270,6
+	.stabs	"i:r(0,3)",64,0,273,6
 	.stabn	192,0,0,LBB66-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
 	.stabn	224,0,0,LBE66-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
 	.stabn	224,0,0,LBE61-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
-	.stabs	"compt:r(0,3)",64,0,265,9
+	.stabs	"compt:r(0,3)",64,0,268,9
 	.stabn	192,0,0,LBB68-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
 	.stabn	224,0,0,LBE68-__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
 Lscope17:
-	.stabs	"_ZN7Convert2trEi:F(5,5)",36,0,285,__ZN7Convert2trEi
-	.stabs	"stringResource:P(5,10)",64,0,285,4
+	.stabs	"_ZN7Convert2trEi:F(5,5)",36,0,288,__ZN7Convert2trEi
+	.stabs	"stringResource:P(5,10)",64,0,288,4
 	.global	__ZN7Convert2trEi
 
 .func __ZN7Convert2trEi, 1, int
-	.line 285
+	.line 288
 	push rt,d2
 	ld   fr,sp
 	add  fr,#0x14
 	ld   d0,i0
 	.dlab LBB75
 	.dlab LBB76
-	.line 287
+	.line 290
 	call &_maGetDataSize ; call non-native
 	ld   d1,r14
-	.line 291
+	.line 294
 	ld   i0,r14
 	add  i0,#0x1
 	call &__Znam ; call non-native
 	ld   d2,r14
-	.line 294
+	.line 297
 	ld   i0,d0
 	ld   i1,r14
 	ld   i2,#0x0
 	ld   i3,d1
 	call &_maReadData ; call non-native
-	.line 297
+	.line 300
 	add  d1,d2
 	ld   r14,#0x0
 	ld.b [d1],r14
 	.dlab LBE76
 	.dlab LBE75
-	.line 301
+	.line 304
 	ld   r14,d2
 	pop  rt,d2
 	ret
-	.stabs	"length:r(0,3)",64,0,287,5
-	.stabs	"buffer:r(5,5)",64,0,291,6
+	.stabs	"length:r(0,3)",64,0,290,5
+	.stabs	"buffer:r(5,5)",64,0,294,6
 	.stabn	192,0,0,LBB76-__ZN7Convert2trEi
 	.stabn	224,0,0,LBE76-__ZN7Convert2trEi
 Lscope18:
 .data
-LC17:
+LC20:
 	.ascii "URLEncoding\0"
-LC18:
+LC21:
 	.ascii "\0"
-LC19:
+LC22:
 	.ascii "%%%02X\0\0"
 .code
-	.stabs	"_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE:F(2,1)",36,0,306,__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"c:P(0,46)=&(0,47)=k(2,1)",64,0,306,6
+	.stabs	"_ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE:F(2,1)",36,0,309,__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
+	.stabs	"c:P(0,46)=&(0,47)=k(2,1)",64,0,309,6
 	.global	__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 
 .func __ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE, 2, int
-	.line 306
+	.line 309
 	push rt,d5
 	sub  sp,#0xc
 	ld   fr,sp
@@ -1644,32 +1663,32 @@ LC19:
 	ld   d2,i1
 	.dlab LBB77
 	.dlab LBB78
-	.line 307
-	ld   i0,#LC17
+	.line 310
+	ld   i0,#LC20
 	call &_lprintfln ; call non-native
-	.line 308
+	.line 311
 	ld   i0,d3
-	ld   i1,#LC18
+	ld   i1,#LC21
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.line 309
+	.line 312
 	ld   d5,fr
 	add  d5,#0xffffffdc
 	ld   i0,d5
-	ld   i1,#LC18
+	ld   i1,#LC21
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.line 310
+	.line 313
 	ld   i0,d2
 	call &__ZNK6MAUtil11BasicStringIcE6lengthEv ; call non-native
 	ld   d4,r14
 	.dlab LBB79
-	.line 311
+	.line 314
 	ld   d1,#0x0
 	jc   le,d4,d1,#L153
 L156:
 	.dlab LBB80
 	.dlab LBB81
 	.dlab LBB82
-	.line 321
+	.line 324
 	ld   i0,d2
 	ld   i1,d1
 	call &__ZNK6MAUtil11BasicStringIcEixEi ; call non-native
@@ -1744,7 +1763,7 @@ L149:
 	ld   r0,#0x2d
 	jc   eq,r14,r0,#L146
 	.dlab LBB83
-	.line 334
+	.line 337
 	ld   i0,d2
 	ld   i1,d1
 	call &__ZNK6MAUtil11BasicStringIcEixEi ; call non-native
@@ -1754,9 +1773,9 @@ L149:
 	add  d0,#0xffffffd8
 	ld   [sp],r14
 	ld   i0,d0
-	ld   i1,#LC19
+	ld   i1,#LC22
 	call &_sprintf ; call non-native
-	.line 335
+	.line 338
 	ld   i0,d3
 	ld   i1,d0
 	ld   i2,#0x3
@@ -1765,20 +1784,20 @@ L149:
 	.dlab LBE82
 	.dlab LBE81
 	.dlab LBE80
-	.line 311
+	.line 314
 	add  d1,#0x1
 L157:
 	jc   gt,d4,d1,#L156
 L153:
 	.dlab LBE79
 	.dlab LBB84
-	.line 338
+	.line 341
 	ld   i0,d5
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.dlab LBE84
 	.dlab LBE78
 	.dlab LBE77
-	.line 339
+	.line 342
 	ld   r14,d3
 	add  sp,#0xc
 	pop  rt,d5
@@ -1790,7 +1809,7 @@ L146:
 	.dlab LBB88
 	.dlab LBB89
 	.dlab LBB90
-	.line 328
+	.line 331
 	ld   i0,d2
 	ld   i1,d1
 	call &__ZNK6MAUtil11BasicStringIcEixEi ; call non-native
@@ -1798,47 +1817,47 @@ L146:
 	ld   i1,r14
 	ld   i2,#0x1
 	.dlab LBB91
-	.line 335
+	.line 338
 	call &__ZN6MAUtil11BasicStringIcE6appendEPKci ; call non-native
 	.dlab LBE91
 	.dlab LBE90
 	.dlab LBE89
 	.dlab LBE88
-	.line 311
+	.line 314
 	add  d1,#0x1
 	jp   #L157
 	.dlab LBE87
 	.dlab LBE86
 	.dlab LBE85
-	.stabs	"escaped:r(0,48)=*(2,1)",64,0,308,7
-	.stabs	"charCode:(2,1)",128,0,309,-36
-	.stabs	"max:r(0,3)",64,0,310,8
+	.stabs	"escaped:r(0,48)=*(2,1)",64,0,311,7
+	.stabs	"charCode:(2,1)",128,0,312,-36
+	.stabs	"max:r(0,3)",64,0,313,8
 	.stabn	192,0,0,LBB78-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"i:r(0,3)",64,0,311,5
+	.stabs	"i:r(0,3)",64,0,314,5
 	.stabn	192,0,0,LBB79-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"buffer:(0,49)=ar(5,57);0;3;(0,19)",128,0,332,-40
+	.stabs	"buffer:(0,49)=ar(5,57);0;3;(0,19)",128,0,335,-40
 	.stabn	192,0,0,LBB83-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE83-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE79-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE78-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"escaped:r(0,50)=*(2,1)",64,0,308,7
-	.stabs	"charCode:(2,1)",128,0,309,-36
-	.stabs	"max:r(0,3)",64,0,310,8
+	.stabs	"escaped:r(0,50)=*(2,1)",64,0,311,7
+	.stabs	"charCode:(2,1)",128,0,312,-36
+	.stabs	"max:r(0,3)",64,0,313,8
 	.stabn	192,0,0,LBB86-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"i:r(0,3)",64,0,311,5
+	.stabs	"i:r(0,3)",64,0,314,5
 	.stabn	192,0,0,LBB87-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"buffer:(0,49)",128,0,332,-40
+	.stabs	"buffer:(0,49)",128,0,335,-40
 	.stabn	192,0,0,LBB91-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE91-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE87-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE86-__ZN7Convert9URLencodeERKN6MAUtil11BasicStringIcEE
 Lscope19:
-	.stabs	"_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE:F(2,1)",36,0,342,__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"c:P(0,46)",64,0,342,5
+	.stabs	"_ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE:F(2,1)",36,0,345,__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
+	.stabs	"c:P(0,46)",64,0,345,5
 	.global	__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 
 .func __ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE, 2, int
-	.line 342
+	.line 345
 	push rt,d4
 	sub  sp,#0x8
 	ld   fr,sp
@@ -1847,28 +1866,28 @@ Lscope19:
 	ld   d1,i1
 	.dlab LBB92
 	.dlab LBB93
-	.line 343
-	ld   i1,#LC18
+	.line 346
+	ld   i1,#LC21
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.line 344
+	.line 347
 	ld   d4,fr
 	add  d4,#0xffffffe0
 	ld   i0,d4
-	ld   i1,#LC18
+	ld   i1,#LC21
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.line 345
+	.line 348
 	ld   i0,d1
 	call &__ZNK6MAUtil11BasicStringIcE6lengthEv ; call non-native
 	ld   d3,r14
-	.line 346
+	.line 349
 	ld   d0,#0x0
-	.line 359
+	.line 362
 	jc   le,d3,d0,#L165
 L168:
 	.dlab LBB94
 	.dlab LBB95
 	.dlab LBB96
-	.line 349
+	.line 352
 	ld   i0,d1
 	ld   i1,d0
 	call &__ZNK6MAUtil11BasicStringIcEixEi ; call non-native
@@ -1876,7 +1895,7 @@ L168:
 	xb   r14,r14
 	ld   r0,#0x25
 	jc   eq,r14,r0,#L161
-	.line 351
+	.line 354
 	ld   i1,d0
 	add  d0,#0x1
 	ld   i0,d1
@@ -1884,7 +1903,7 @@ L168:
 	ld   i0,d2
 	ld   i1,r14
 	.dlab LBB97
-	.line 359
+	.line 362
 	ld   i2,#0x1
 	call &__ZN6MAUtil11BasicStringIcE6appendEPKci ; call non-native
 L169:
@@ -1895,13 +1914,13 @@ L169:
 	jc   gt,d3,d0,#L168
 L165:
 	.dlab LBB98
-	.line 362
+	.line 365
 	ld   i0,d4
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.dlab LBE98
 	.dlab LBE93
 	.dlab LBE92
-	.line 363
+	.line 366
 	ld   r14,d2
 	add  sp,#0x8
 	pop  rt,d4
@@ -1913,7 +1932,7 @@ L161:
 	.dlab LBB102
 	.dlab LBB103
 	.dlab LBB104
-	.line 355
+	.line 358
 	ld   i0,d1
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
 	ld   i0,d4
@@ -1921,14 +1940,14 @@ L161:
 	add  i1,d0
 	ld   i2,#0x2
 	call &__ZN6MAUtil11BasicStringIcE6appendEPKci ; call non-native
-	.line 356
+	.line 359
 	ld   i0,d4
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
 	ld   i0,r14
 	call &__ZN7Convert8hexToIntEPKc ; call non-native
-	.line 357
+	.line 360
 	ld.b [fr,-33],r14
-	.line 359
+	.line 362
 	ld   i0,d2
 	ld   i1,fr
 	add  i1,#0xffffffdf
@@ -1941,37 +1960,37 @@ L161:
 	.dlab LBE101
 	.dlab LBE100
 	.dlab LBE99
-	.stabs	"unescaped:r(0,51)=*(2,1)",64,0,343,6
-	.stabs	"encoded:(2,1)",128,0,344,-32
-	.stabs	"max:r(0,3)",64,0,345,7
-	.stabs	"i:r(0,3)",64,0,346,4
+	.stabs	"unescaped:r(0,51)=*(2,1)",64,0,346,6
+	.stabs	"encoded:(2,1)",128,0,347,-32
+	.stabs	"max:r(0,3)",64,0,348,7
+	.stabs	"i:r(0,3)",64,0,349,4
 	.stabn	192,0,0,LBB93-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"ec:(0,19)",128,0,357,-33
+	.stabs	"ec:(0,19)",128,0,360,-33
 	.stabn	192,0,0,LBB97-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE97-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE93-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"unescaped:r(0,52)=*(2,1)",64,0,343,6
-	.stabs	"encoded:(2,1)",128,0,344,-32
-	.stabs	"max:r(0,3)",64,0,345,7
-	.stabs	"i:r(0,3)",64,0,346,4
+	.stabs	"unescaped:r(0,52)=*(2,1)",64,0,346,6
+	.stabs	"encoded:(2,1)",128,0,347,-32
+	.stabs	"max:r(0,3)",64,0,348,7
+	.stabs	"i:r(0,3)",64,0,349,4
 	.stabn	192,0,0,LBB100-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
-	.stabs	"ec:(0,19)",128,0,357,-33
+	.stabs	"ec:(0,19)",128,0,360,-33
 	.stabn	192,0,0,LBB104-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE104-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE100-__ZN7Convert9URLdecodeERKN6MAUtil11BasicStringIcEE
 Lscope20:
 .data
-LC20:
+LC23:
 	.ascii "<br />\0"
-LC21:
+LC24:
 	.ascii "    \0"
 .code
-	.stabs	"_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE:F(0,6)",36,0,366,__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
-	.stabs	"input:P(0,37)",64,0,366,6
+	.stabs	"_ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE:F(0,6)",36,0,369,__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
+	.stabs	"input:P(0,37)",64,0,369,6
 	.global	__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 
 .func __ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE, 1, void
-	.line 366
+	.line 369
 	push rt,d3
 	sub  sp,#0x4
 	ld   fr,sp
@@ -1979,14 +1998,14 @@ LC21:
 	ld   d2,i0
 	.dlab LBB105
 	.dlab LBB106
-	.line 367
+	.line 370
 	ld   d3,#0x0
 	ld   d1,fr
 	add  d1,#0xffffffe4
 L175:
-	.line 373
+	.line 376
 	ld   i0,d1
-	ld   i1,#LC20
+	ld   i1,#LC23
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d2
 	ld   i1,d1
@@ -1995,15 +2014,15 @@ L175:
 	ld   d0,r14
 	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 374
+	.line 377
 	ld   i0,d2
 	call &__ZNK6MAUtil11BasicStringIcE4sizeEv ; call non-native
 	jc   le,r14,d0,#L173
 	ld   r14,#0x0
 	jc   lt,d0,r14,#L173
-	.line 377
+	.line 380
 	ld   i0,d1
-	ld   i1,#LC20
+	ld   i1,#LC23
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d2
 	ld   i1,d1
@@ -2015,9 +2034,9 @@ L175:
 	call &__ZN6MAUtil11BasicStringIcE6removeEii ; call non-native
 	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 378
+	.line 381
 	ld   i0,d1
-	ld   i1,#LC21
+	ld   i1,#LC24
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d2
 	ld   i1,d0
@@ -2025,7 +2044,7 @@ L175:
 	call &__ZN6MAUtil11BasicStringIcE6insertEiRKS1_ ; call non-native
 	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 383
+	.line 386
 	ld   r14,#0xffffffff
 	jc   ne,d3,r14,#L175
 L178:
@@ -2043,12 +2062,12 @@ L173:
 	jp   #L178
 	.dlab LBE108
 	.dlab LBE107
-	.stabs	"compt:r(0,3)",64,0,367,7
-	.stabs	"position:r(0,3)",64,0,368,4
+	.stabs	"compt:r(0,3)",64,0,370,7
+	.stabs	"position:r(0,3)",64,0,371,4
 	.stabn	192,0,0,LBB106-__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE106-__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
-	.stabs	"compt:r(0,3)",64,0,367,7
-	.stabs	"position:r(0,3)",64,0,368,4
+	.stabs	"compt:r(0,3)",64,0,370,7
+	.stabs	"position:r(0,3)",64,0,371,4
 	.stabn	192,0,0,LBB108-__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 	.stabn	224,0,0,LBE108-__ZN7Convert10HTMLdecodeERN6MAUtil11BasicStringIcEE
 Lscope21:

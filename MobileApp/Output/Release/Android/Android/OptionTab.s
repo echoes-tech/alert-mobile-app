@@ -283,7 +283,6 @@
 	.stabs	"c:/MoSync/include/NativeUI/Layout.h",130,0,0,0
 	.stabs	"c:/MoSync/include/Ads/Banner.h",130,0,0,0
 	.stabs	"BannerSize:t(46,1)=eBANNER_SIZE_DEFAULT:0,BANNER_SIZE_RECT:1,BANNER_SIZE_IAB:2,BANNER_SIZE_LEADERBOARD:3,BANNER_SIZE_WP7_XLARGE:4,BANNER_SIZE_WP7_XXLARGE:5,;",128,0,62,0
-	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
 	.stabs	"Vector<Ads::BannerListener*>:Tt(46,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(46,3)=*(46,4)=*(46,5)=xsBannerListener:,64,32;__base_ctor::(46,6)=#(46,2),(0,6),(46,7)=*(46,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2Ei;2A.;__comp_ctor::(46,6):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1Ei;2A.;__base_ctor::(46,8)=#(46,2),(0,6),(46,7),(46,9)=*(46,10)=k(46,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2EPKS3_i;2A.;__comp_ctor::(46,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1EPKS3_i;2A.;__base_ctor::(46,11)=#(46,2),(0,6),(46,7),(46,12)=&(46,13)=k(46,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2ERKS4_;2A.;__comp_ctor::(46,11):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1ERKS4_;2A.;__base_dtor::(46,14)=#(46,2),(0,6),(46,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED2Ev;2A.;__comp_dtor::(46,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED1Ev;2A.;operator=::(46,15)=#(46,2),(46,16)=&(46,2),(46,7),(46,12),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEaSERKS4_;2A.;add::(46,17)=#(46,2),(0,6),(46,7),(46,18)=&(46,10),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addERKS3_;2A.(46,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addEPKS3_i;2A.;remove::(46,19)=#(46,2),(0,6),(46,7),(46,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEPS3_;2A.(46,20)=#(46,2),(0,6),(46,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEi;2A.(46,21)=#(46,2),(0,6),(46,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEii;2A.;insert::(46,22)=#(46,2),(0,6),(46,7),(0,3),(46,4),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6insertEiS3_;2A.;size::(46,23)=#(46,2),(0,3),(46,24)=*(46,13),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE4sizeEv;2B.;resize::(46,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6resizeEi;2A.;reserve::(46,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7reserveEi;2A.;clear::(46,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5clearEv;2A.;empty::(46,25)=#(46,2),(0,4),(46,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5emptyEv;2B.;capacity::(46,23):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE8capacityEv;2B.;begin::(46,26)=#(46,2),(46,3),(46,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2A.;end::(46,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2A.;begin::(46,27)=#(46,2),(46,9),(46,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2B.;end::(46,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2B.;operator[]::(46,28)=#(46,2),(46,29)=&(46,4),(46,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2A.(46,30)=#(46,2),(46,18),(46,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2B.;pointer::(46,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2B.(46,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"Vector<Ads::Banner*>:Tt(45,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(45,2)=*(45,3)=*(45,4)=xsBanner:,64,32;__base_ctor::(45,5)=#(45,1),(0,6),(45,6)=*(45,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2Ei;2A.;__comp_ctor::(45,5):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1Ei;2A.;__base_ctor::(45,7)=#(45,1),(0,6),(45,6),(45,8)=*(45,9)=k(45,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2EPKS3_i;2A.;__comp_ctor::(45,7):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1EPKS3_i;2A.;__base_ctor::(45,10)=#(45,1),(0,6),(45,6),(45,11)=&(45,12)=k(45,1),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2ERKS4_;2A.;__comp_ctor::(45,10):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1ERKS4_;2A.;__base_dtor::(45,13)=#(45,1),(0,6),(45,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEED2Ev;2A.;__comp_dtor::(45,13):_ZN6MAUtil6VectorIPN3Ads6BannerEED1Ev;2A.;operator=::(45,14)=#(45,1),(45,15)=&(45,1),(45,6),(45,11),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEaSERKS4_;2A.;add::(45,16)=#(45,1),(0,6),(45,6),(45,17)=&(45,9),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE3addERKS3_;2A.(45,7):_ZN6MAUtil6VectorIPN3Ads6BannerEE3addEPKS3_i;2A.;remove::(45,18)=#(45,1),(0,6),(45,6),(45,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEPS3_;2A.(45,19)=#(45,1),(0,6),(45,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEi;2A.(45,20)=#(45,1),(0,6),(45,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEii;2A.;insert::(45,21)=#(45,1),(0,6),(45,6),(0,3),(45,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6insertEiS3_;2A.;size::(45,22)=#(45,1),(0,3),(45,23)=*(45,12),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE4sizeEv;2B.;resize::(45,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE6resizeEi;2A.;reserve::(45,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE7reserveEi;2A.;clear::(45,13):_ZN6MAUtil6VectorIPN3Ads6BannerEE5clearEv;2A.;empty::(45,24)=#(45,1),(0,4),(45,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5emptyEv;2B.;capacity::(45,22):_ZNK6MAUtil6VectorIPN3Ads6BannerEE8capacityEv;2B.;begin::(45,25)=#(45,1),(45,2),(45,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2A.;end::(45,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE3endEv;2A.;begin::(45,26)=#(45,1),(45,8),(45,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2B.;end::(45,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE3endEv;2B.;operator[]::(45,27)=#(45,1),(45,28)=&(45,3),(45,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEixEi;2A.(45,29)=#(45,1),(45,17),(45,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEEixEi;2B.;pointer::(45,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2B.(45,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2A.;;",128,0,95,0
@@ -434,3803 +433,21 @@
 	.stabs	"eHttp:t(96,2)=eGET:0,POST:1,DELETE:2,;",128,0,49,0
 	.stabs	"eFile:t(96,3)=eFILE_OPEN_ERROR:0,FILE_NOT_EXIST:1,FILE_CLOSE:2,;",128,0,55,0
 	.stabs	"eScreenResolution:t(96,4)=eLARGE_SCREEN_RESOLUTION:0,SMALL_SCREEN_RESOLUTION:1,;",128,0,61,0
-.data
-LC0:
-	.ascii "mosync.device.OS\0"
-LC1:
-	.ascii "Android\0"
-LC2:
-	.ascii "iPhone OS\0"
-.code
-	.stabs	"_Z11getPlatformv:f(0,3)",36,0,71,__Z11getPlatformv
-
-.func __Z11getPlatformv, 0, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext1
-Ltext1:
-	.line 71
-	push rt,fr
-	sub  sp,#0x104
-	ld   fr,sp
-	add  fr,#0x10c
-	.dlab LBB2
-	.dlab LBB3
-	.line 73
-	ld   r14,fr
-	add  r14,#0xfffffef8
-	ld   i0,#LC0
-	ld   i1,r14
-	ld   i2,#0x100
-	call &_maGetSystemProperty
-	.line 75
-	ld   r14,fr
-	add  r14,#0xfffffef8
-	ld   i0,r14
-	ld   i1,#LC1
-	call &_strcmp
-	ld   r0,r14
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L2
-	.line 77
-	ld   r14,#0x0
-	ld   [fr,-268],r14
-	jp   #L1
-L2:
-	.line 81
-	ld   r14,fr
-	add  r14,#0xfffffef8
-	ld   i0,r14
-	ld   i1,#LC2
-	call &_strcmp
-	ld   r0,r14
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L3
-	.line 82
-	ld   r14,#0x1
-	ld   [fr,-268],r14
-	jp   #L1
-L3:
-	.line 84
-	ld   r14,#0x2
-	ld   [fr,-268],r14
-L1:
-	.dlab LBE3
-	.dlab LBE2
-	.line 85
-	ld   r14,[fr,-268]
-	add  sp,#0x104
-	pop  rt,fr
-	ret
-	.stabs	"platform:(96,5)=ar(6,57);0;255;(0,19)",128,0,72,-264
-	.stabn	192,0,0,LBB3-__Z11getPlatformv
-	.stabn	224,0,0,LBE3-__Z11getPlatformv
-Lscope0:
-	.stabs	"maGetSystemProperty:f(0,3)",36,0,6598,_maGetSystemProperty
-	.stabs	"key:p(20,7)",160,0,6598,-12
-	.stabs	"buf:p(6,5)",160,0,6598,-16
-	.stabs	"size:p(0,3)",160,0,6598,-20
-
-.func _maGetSystemProperty, 3, int
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext2
-Ltext2:
-	.line 6598
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.dlab LBB4
-	.line 6599
-	ld   i0,#0x5a
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,[fr,-20]
-	call &_maIOCtl
-	.dlab LBE4
-	.line 6600
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope1:
-.data
-LC3:
-	.ascii "\0"
-	.space	63	;(ASM_OUTPUT_SKIP)
-LC4:
-	.ascii "mosync.network.type\0"
-LC5:
-	.ascii "Connect\303\251 ? : %i: %s\12\0"
-LC6:
-	.ascii "none\0"
-LC7:
-	.ascii "No connection detected\0"
-.code
-	.stabs	"_Z19getSystemConnectionv:f(0,3)",36,0,88,__Z19getSystemConnectionv
-
-.func __Z19getSystemConnectionv, 0, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext3
-Ltext3:
-	.line 88
-	push rt,d0
-	sub  sp,#0x54
-	ld   fr,sp
-	add  fr,#0x60
-	.dlab LBB5
-	.dlab LBB6
-	.line 89
-	ld.b r14,[&LC3]
-	ld.b [fr,-76],r14
-	ld   r14,fr
-	add  r14,#0xffffffb5
-	ld   r0,#0x3f
-	ld   i0,r14
-	ld   i1,#0x0
-	ld   i2,r0
-	call &_memset
-	.line 91
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,#LC4
-	ld   i1,r14
-	ld   i2,#0x40
-	call &_maGetSystemProperty
-	ld   [fr,-80],r14
-	.line 92
-	ld   r14,[fr,-80]
-	ld   [sp],r14
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   [sp,4],r14
-	ld   i0,#LC5
-	call &_lprintfln
-	.line 93
-	ld   r14,fr
-	add  r14,#0xffffffac
-	ld   r0,fr
-	add  r0,#0xffffffb4
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 94
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   i0,r14
-	ld   i1,#LC6
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffa8
-	ld   r14,fr
-	add  r14,#0xffffffac
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
-	ld   d0,r14
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r0,d0
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L7
-	.line 97
-	ld   i0,#0x1
-	ld   i1,#LC7
-	call &_maPanic
-L7:
-	.line 100
-	ld   d0,[fr,-80]
-	.dlab LBB7
-	ld   r14,fr
-	add  r14,#0xffffffac
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE7
-	ld   r14,d0
-	.dlab LBE6
-	.dlab LBE5
-	.line 102
-	add  sp,#0x54
-	pop  rt,d0
-	ret
-	.stabs	"buf:(96,6)=ar(6,57);0;63;(0,19)",128,0,89,-76
-	.stabs	"res:(0,3)",128,0,91,-80
-	.stabs	"tmp:(13,1)",128,0,93,-84
-	.stabn	192,0,0,LBB6-__Z19getSystemConnectionv
-	.stabn	224,0,0,LBE6-__Z19getSystemConnectionv
-Lscope2:
-.data
-LC8:
-	.ascii "mosync.iso-639-1\0"
-LC9:
-	.ascii "LANGUAGE : %i: %s\12\0"
-LC10:
-	.ascii "fr\0"
-LC11:
-	.ascii " DAns LANGUAGE : %i: %s\12\0"
-.code
-	.stabs	"_Z17getSystemLanguagev:f(0,3)",36,0,106,__Z17getSystemLanguagev
-
-.func __Z17getSystemLanguagev, 0, int
-	.line 106
-	push rt,d0
-	sub  sp,#0x58
-	ld   fr,sp
-	add  fr,#0x64
-	.dlab LBB8
-	.dlab LBB9
-	.line 107
-	ld   r14,#0x0
-	ld   [fr,-16],r14
-	.line 108
-	ld.b r14,[&LC3]
-	ld.b [fr,-80],r14
-	ld   r14,fr
-	add  r14,#0xffffffb1
-	ld   r0,#0x3f
-	ld   i0,r14
-	ld   i1,#0x0
-	ld   i2,r0
-	call &_memset
-	.line 109
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,#LC8
-	ld   i1,r14
-	ld   i2,#0x40
-	call &_maGetSystemProperty
-	ld   [fr,-84],r14
-	.line 110
-	ld   r14,[fr,-84]
-	ld   [sp],r14
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   [sp,4],r14
-	ld   i0,#LC9
-	call &_lprintfln
-	.line 111
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   r0,fr
-	add  r0,#0xffffffb0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 112
-	ld   r14,fr
-	add  r14,#0xffffffa4
-	ld   i0,r14
-	ld   i1,#LC10
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffa4
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
-	ld   d0,r14
-	ld   r14,fr
-	add  r14,#0xffffffa4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r0,d0
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L9
-	.line 114
-	ld   r14,[fr,-84]
-	ld   [sp],r14
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   [sp,4],r14
-	ld   i0,#LC11
-	call &_lprintfln
-	.line 115
-	ld   r14,#0x1
-	ld   [fr,-16],r14
-L9:
-	.line 117
-	ld   d0,[fr,-16]
-	.dlab LBB10
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE10
-	ld   r14,d0
-	.dlab LBE9
-	.dlab LBE8
-	.line 118
-	add  sp,#0x58
-	pop  rt,d0
-	ret
-	.stabs	"language:(0,3)",128,0,107,-16
-	.stabs	"buf:(96,6)",128,0,108,-80
-	.stabs	"res:(0,3)",128,0,109,-84
-	.stabs	"tmp:(13,1)",128,0,111,-88
-	.stabn	192,0,0,LBB9-__Z17getSystemLanguagev
-	.stabn	224,0,0,LBE9-__Z17getSystemLanguagev
-Lscope3:
-	.stabs	"_Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,120,__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
-	.stabs	"key:p(20,7)",160,0,120,-12
-	.stabs	"dst:p(97,6)",160,0,120,-16
-
-.func __Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE, 2, int
-	.line 120
-	push rt,fr
-	sub  sp,#0x10
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB11
-	.dlab LBB12
-	.line 121
-	ld   i0,[fr,-12]
-	ld   i1,#0x0
-	ld   i2,#0x0
-	call &_maGetSystemProperty
-	ld   [fr,-20],r14
-	.line 122
-	ld   r0,[fr,-20]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L11
-	.line 123
-	ld   r14,[fr,-20]
-	ld   [fr,-24],r14
-	jp   #L10
-L11:
-	.line 124
-	ld   r14,[fr,-20]
-	add  r14,#0xffffffff
-	ld   i0,[fr,-16]
-	ld   i1,r14
-	call &__ZN6MAUtil11BasicStringIcE6resizeEi
-	.line 125
-	ld   i0,[fr,-16]
-	call &__ZN6MAUtil11BasicStringIcE7pointerEv
-	ld   i0,[fr,-12]
-	ld   i1,r14
-	ld   i2,[fr,-20]
-	call &_maGetSystemProperty
-	.line 126
-	ld   r14,[fr,-20]
-	ld   [fr,-24],r14
-L10:
-	.dlab LBE12
-	.dlab LBE11
-	.line 127
-	ld   r14,[fr,-24]
-	add  sp,#0x10
-	pop  rt,fr
-	ret
-	.stabs	"size:(0,3)",128,0,121,-20
-	.stabn	192,0,0,LBB12-__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE12-__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
-Lscope4:
-.data
-LC12:
-	.ascii "/\0"
-LC13:
-	.ascii "*\0"
-LC14:
-	.ascii "mosync.path.local\0"
-LC15:
-	.ascii "Got local path: %i\12\0"
-LC16:
-	.ascii "\0"
-LC17:
-	.ascii "C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h\0"
-.code
-	.stabs	"_Z12getLocalPathv:f(13,1)",36,0,129,__Z12getLocalPathv
-
-.func __Z12getLocalPathv, 1, int
-	.line 129
-	push rt,fr
-	sub  sp,#0x18
-	ld   fr,sp
-	add  fr,#0x20
-	ld   [fr,-28],i0
-	.dlab LBB13
-	.dlab LBB14
-	.line 131
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   i0,r14
-	call &__ZN10FileListerC1Ev
-	.line 132
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   i0,r14
-	ld   i1,#LC12
-	ld   i2,#LC13
-	ld   i3,#0x0
-	call &__ZN10FileLister5startEPKcS1_i
-	.line 134
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 136
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,#LC14
-	ld   i1,r14
-	call &__Z17getSystemPropertyPKcRN6MAUtil11BasicStringIcEE
-	ld   [fr,-20],r14
-	.line 138
-	ld   r0,[fr,-20]
-	ld   r14,#0x0
-	jc   le,r0,r14,#L13
-	.line 140
-	ld   r14,[fr,-20]
-	ld   [sp],r14
-	ld   i0,#LC15
-	call &_printf
-	.line 141
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC16
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffe8
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,[fr,-28]
-	ld   i1,r14
-	ld   i2,r0
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB15
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   i0,r14
-	call &__ZN10FileListerD1Ev
-	.dlab LBE15
-	jp   #L12
-L13:
-	.line 145
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   i0,r14
-	ld   i1,#LC16
-	ld   i2,#LC13
-	ld   i3,#0x0
-	call &__ZN10FileLister5startEPKcS1_i
-	.line 146
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   r0,fr
-	add  r0,#0xfffffff0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN10FileLister4nextERN6MAUtil11BasicStringIcEE
-	ld   [fr,-20],r14
-	.line 147
-	ld   r0,[fr,-20]
-	ld   r14,#0x0
-	jc   gt,r0,r14,#L14
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x93
-	call &_bfeHandler
-L14:
-	.line 148
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,[fr,-28]
-	ld   i1,r14
-	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	.dlab LBB16
-	ld   r14,fr
-	add  r14,#0xfffffff0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xfffffff4
-	ld   i0,r14
-	call &__ZN10FileListerD1Ev
-L12:
-	.dlab LBE16
-	.dlab LBE14
-	.dlab LBE13
-	.line 149
-	ld   r14,[fr,-28]
-	add  sp,#0x18
-	pop  rt,fr
-	ret
-	.stabs	"fl:(97,1)",128,0,131,-12
-	.stabs	"path:(13,1)",128,0,134,-16
-	.stabs	"result:(0,3)",128,0,136,-20
-	.stabn	192,0,0,LBB14-__Z12getLocalPathv
-	.stabn	224,0,0,LBE14-__Z12getLocalPathv
-Lscope5:
-	.stabs	"_ZN10FileListerD1Ev:f(0,6)",36,0,37,__ZN10FileListerD1Ev
-	.stabs	"this:p(96,7)=k(97,3)",160,0,37,-12
-
-.func __ZN10FileListerD1Ev, 1, void
-	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext4
-Ltext4:
-	.line 37
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB17
-	.line 37
-	ld   i0,[fr,-12]
-	call &__ZN10FileLister5closeEv
-	.dlab LBE17
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope6:
-	.stabs	"_ZN10FileListerC1Ev:f(0,6)",36,0,36,__ZN10FileListerC1Ev
-	.stabs	"this:p(96,7)",160,0,36,-12
-
-.func __ZN10FileListerC1Ev, 1, void
-	.line 36
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB18
-	.line 36
-	ld   r14,[fr,-12]
-	ld   r0,#0xffffffff
-	ld   [r14],r0
-	.dlab LBE18
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope7:
-	.stabs	"_Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE:f(0,3)",36,0,152,__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
-	.stabs	"name:p(20,7)",160,0,152,-16
-	.stabs	"data:p(20,38)",160,0,152,-20
-
-.func __Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE, 2, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext5
-Ltext5:
-	.line 152
-	push rt,d0
-	sub  sp,#0x14
-	ld   fr,sp
-	add  fr,#0x20
-	ld   [fr,-16],i0
-	ld   [fr,-20],i1
-	.dlab LBB19
-	.dlab LBB20
-	.line 153
-	call &_maCreatePlaceholder
-	ld   [fr,-24],r14
-	.line 154
-	ld   i0,[fr,-20]
-	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
-	ld   i0,[fr,-24]
-	ld   i1,r14
-	call &_maCreateData
-	ld   r0,r14
-	ld   r14,#0x1
-	jc   eq,r0,r14,#L21
-	.line 156
-	ld   r14,#0xffffffff
-	ld   [fr,-32],r14
-	jp   #L20
-L21:
-	.line 158
-	ld   i0,[fr,-20]
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   d0,r14
-	ld   i0,[fr,-20]
-	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
-	ld   i0,[fr,-24]
-	ld   i1,d0
-	ld   i2,#0x0
-	ld   i3,r14
-	call &_maWriteData
-	.line 160
-	ld   i0,[fr,-16]
-	ld   i1,#0x1
-	call &_maOpenStore
-	ld   [fr,-28],r14
-	.line 162
-	ld   r0,[fr,-28]
-	ld   r14,#0x0
-	jc   le,r0,r14,#L22
-	.line 164
-	ld   i0,[fr,-28]
-	ld   i1,[fr,-24]
-	call &_maWriteStore
-	.line 165
-	ld   i0,[fr,-28]
-	ld   i1,#0x0
-	call &_maCloseStore
-	.line 167
-	ld   r14,#0x1
-	ld   [fr,-32],r14
-	jp   #L20
-L22:
-	.line 169
-	ld   r14,#0xffffffff
-	ld   [fr,-32],r14
-L20:
-	.dlab LBE20
-	.dlab LBE19
-	.line 170
-	ld   r14,[fr,-32]
-	add  sp,#0x14
-	pop  rt,d0
-	ret
-	.stabs	"dataHandle:(6,10)",128,0,153,-24
-	.stabs	"myStore:(6,10)",128,0,160,-28
-	.stabn	192,0,0,LBB20-__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE20-__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
-Lscope8:
-	.stabs	"_Z13readFromStorePKcRN6MAUtil11BasicStringIcEE:f(0,3)",36,0,174,__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabs	"name:p(20,7)",160,0,174,-20
-	.stabs	"data:p(97,6)",160,0,174,-24
-
-.func __Z13readFromStorePKcRN6MAUtil11BasicStringIcEE, 2, int
-	.line 174
-	push rt,d1
-	sub  sp,#0x24
-	ld   fr,sp
-	add  fr,#0x34
-	ld   [fr,-20],i0
-	ld   [fr,-24],i1
-	.line 174
-	ld   [fr,-52],sp
-	.dlab LBB21
-	.dlab LBB22
-	.line 175
-	ld   i0,[fr,-20]
-	ld   i1,#0x0
-	call &_maOpenStore
-	ld   [fr,-28],r14
-	.dlab LBB23
-	.line 176
-	ld   r0,[fr,-28]
-	ld   r14,#0x0
-	jc   le,r0,r14,#L24
-	.dlab LBB24
-	.line 178
-	call &_maCreatePlaceholder
-	ld   [fr,-32],r14
-	.line 179
-	ld   i0,[fr,-24]
-	call &__ZNK6MAUtil11BasicStringIcE6lengthEv
-	ld   [fr,-36],r14
-	.dlab LBB25
-	.line 180
-	ld   i0,[fr,-28]
-	ld   i1,[fr,-32]
-	call &_maReadStore
-	ld   r0,r14
-	ld   r14,#0xffffffff
-	jc   eq,r0,r14,#L24
-	.dlab LBB26
-	ld   d1,sp
-	.line 182
-	ld   i0,[fr,-32]
-	call &_maGetDataSize
-	ld   [fr,-40],r14
-	.line 183
-	ld   r14,[fr,-40]
-	add  r14,#0x1
-	add  r14,#0x3
-	add  r14,#0x3
-	srl  r14,#0x2
-	mul  r14,#0x4
-	sub  sp,r14
-	ld   r14,sp
-	add  r14,#0x3
-	srl  r14,#0x2
-	ld   d0,r14
-	mul  d0,#0x4
-	.line 184
-	ld   r14,[fr,-40]
-	add  r14,d0
-	ld   r0,#0x0
-	ld.b [r14],r0
-	.line 185
-	ld   i0,[fr,-32]
-	ld   i1,d0
-	ld   i2,#0x0
-	ld   i3,[fr,-40]
-	call &_maReadData
-	.line 187
-	ld   i0,[fr,-24]
-	call &__ZN6MAUtil11BasicStringIcE5clearEv
-	.line 188
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	ld   i1,d0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,[fr,-24]
-	ld   i1,r14
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBB27
-	.line 190
-	ld   sp,d1
-	.dlab LBE27
-	ld   r14,#0x1
-	ld   [fr,-48],r14
-	jp   #L23
-L24:
-	.dlab LBE26
-	.dlab LBE25
-	.dlab LBE24
-	.dlab LBE23
-	.line 193
-	ld   r0,#0xffffffff
-	ld   [fr,-48],r0
-L23:
-	.dlab LBE22
-	.dlab LBE21
-	.line 194
-	ld   sp,[fr,-52]
-	ld   r14,[fr,-48]
-	add  sp,#0x24
-	pop  rt,d1
-	ret
-	.stabs	"store:(6,10)",128,0,175,-28
-	.stabn	192,0,0,LBB22-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabs	"dataHandle:(6,10)",128,0,178,-32
-	.stabs	"len:(0,3)",128,0,179,-36
-	.stabn	192,0,0,LBB24-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabs	"size:(0,3)",128,0,182,-40
-	.stabs	"temp:r(96,8)=*(96,9)=ar(6,57);0;-1;(0,19)",64,0,183,4
-	.stabn	192,0,0,LBB26-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE26-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE24-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE22-__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-Lscope9:
-	.lcomm	_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data, 600 ; size=600
-.data
-LC18:
-	.ascii "EA_mobile_app_conf.txt\0"
-LC19:
-	.ascii "OpenRead '%s'\12\0"
-LC20:
-	.ascii "Error %i\12\0"
-LC21:
-	.ascii "File does not exist.\12\0"
-LC22:
-	.ascii "Size: %i\12\0"
-LC23:
-	.ascii "Closing...\12\0"
-LC24:
-	.ascii "Done.\12\0"
-.code
-	.stabs	"_Z9tryToReadRN6MAUtil11BasicStringIcEE:f(96,3)",36,0,196,__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabs	"config:p(97,6)",160,0,196,-20
-
-.func __Z9tryToReadRN6MAUtil11BasicStringIcEE, 1, int
-	.line 196
-	push rt,d1
-	sub  sp,#0x24
-	ld   fr,sp
-	add  fr,#0x34
-	ld   [fr,-20],i0
-	.dlab LBB28
-	.dlab LBB29
-	.dlab LBB30
-	.line 198
-	call &__Z11getPlatformv
-	ld   r0,r14
-	ld   r14,#0x1
-	jc   eq,r0,r14,#L27
-	.dlab LBB31
-	.line 199
-	ld   d0,fr
-	add  d0,#0xffffffe8
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__Z12getLocalPathv
-	ld   d1,fr
-	add  d1,#0xffffffe4
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	ld   i1,#LC18
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,d0
-	ld   i1,d1
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 202
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   [sp],r14
-	ld   i0,#LC19
-	call &_lprintfln
-	.line 203
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   i0,r14
-	ld   i1,#0x1
-	call &_maFileOpen
-	ld   [fr,-36],r14
-	.line 204
-	ld   r0,[fr,-36]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L28
-	.line 205
-	ld   r14,[fr,-36]
-	ld   [sp],r14
-	ld   i0,#LC20
-	call &_lprintfln
-	.dlab LBB32
-	.line 206
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE32
-	ld   r14,#0x0
-	ld   [fr,-48],r14
-	jp   #L26
-L28:
-	.line 210
-	ld   i0,[fr,-36]
-	call &_maFileExists
-	ld   [fr,-40],r14
-	.line 211
-	ld   r0,[fr,-40]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L29
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0xd3
-	call &_bfeHandler
-L29:
-	.line 212
-	ld   r0,[fr,-40]
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L31
-	.line 213
-	ld   i0,#LC21
-	call &_printf
-	.line 214
-	ld   i0,[fr,-36]
-	call &_maFileClose
-	.dlab LBB33
-	.line 215
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE33
-	ld   r14,#0x1
-	ld   [fr,-48],r14
-	jp   #L26
-L31:
-	.line 219
-	ld   i0,[fr,-36]
-	call &_maFileSize
-	ld   [fr,-44],r14
-	.line 220
-	ld   r14,[fr,-44]
-	ld   [sp],r14
-	ld   i0,#LC22
-	call &_lprintfln
-	.line 221
-	ld   r0,[fr,-44]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L32
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0xdd
-	call &_bfeHandler
-L32:
-	.line 225
-	ld   r0,[fr,-44]
-	ld   r14,#0x257
-	jc   le,r0,r14,#L34
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0xe1
-	call &_bfeHandler
-L34:
-	.line 226
-	ld   i0,[fr,-36]
-	ld   i1,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
-	ld   i2,[fr,-44]
-	call &_maFileRead
-	ld   [fr,-40],r14
-	.line 227
-	ld   r0,[fr,-40]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L36
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0xe3
-	call &_bfeHandler
-L36:
-	.line 228
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	ld   i1,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 229
-	ld   i0,[fr,-20]
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   i0,r14
-	call &_lprintfln
-	.line 236
-	ld   i0,#LC23
-	call &_lprintfln
-	.line 237
-	ld   i0,[fr,-36]
-	call &_maFileClose
-	ld   [fr,-40],r14
-	.line 238
-	ld   r0,[fr,-40]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L38
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0xee
-	call &_bfeHandler
-L38:
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE31
-	jp   #L40
-L27:
-	.line 242
-	ld   i0,#LC18
-	ld   i1,[fr,-20]
-	call &__Z13readFromStorePKcRN6MAUtil11BasicStringIcEE
-	ld   r0,r14
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L41
-	.line 243
-	ld   r14,#0x2
-	ld   [fr,-48],r14
-	jp   #L26
-L41:
-	.line 246
-	ld   r14,#0x0
-	ld   [fr,-48],r14
-	jp   #L26
-L40:
-	.dlab LBE30
-	.line 250
-	ld   i0,#LC24
-	call &_lprintfln
-	.line 251
-	ld   r14,#0x2
-	ld   [fr,-48],r14
-L26:
-	.dlab LBE29
-	.dlab LBE28
-	.line 252
-	ld   r14,[fr,-48]
-	add  sp,#0x24
-	pop  rt,d1
-	ret
-	.stabs	"filename:(13,1)",128,0,199,-24
-	.stabs	"file:(6,10)",128,0,203,-36
-	.stabs	"res:(0,3)",128,0,210,-40
-	.stabs	"size:(0,3)",128,0,219,-44
-	.stabs	"data:V(96,10)=ar(6,57);0;599;(0,19)",40,0,224,_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
-	.stabn	192,0,0,LBB31-__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	.stabn	224,0,0,LBE31-__Z9tryToReadRN6MAUtil11BasicStringIcEE
-Lscope10:
-	.stabs	"maFileRead:f(0,3)",36,0,6355,_maFileRead
-	.stabs	"file:p(6,10)",160,0,6355,-12
-	.stabs	"dst:p(6,9)",160,0,6355,-16
-	.stabs	"len:p(0,3)",160,0,6355,-20
-
-.func _maFileRead, 3, int
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext6
-Ltext6:
-	.line 6355
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.dlab LBB34
-	.line 6356
-	ld   i0,#0x35
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,[fr,-20]
-	call &_maIOCtl
-	.dlab LBE34
-	.line 6357
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope11:
-	.stabs	"maFileSize:f(0,3)",36,0,6254,_maFileSize
-	.stabs	"file:p(6,10)",160,0,6254,-12
-
-.func _maFileSize, 1, int
-	.line 6254
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB35
-	.line 6255
-	ld   i0,#0x2d
-	ld   i1,[fr,-12]
-	ld   i2,#0x0
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE35
-	.line 6256
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope12:
-	.stabs	"maFileClose:f(0,3)",36,0,6225,_maFileClose
-	.stabs	"file:p(6,10)",160,0,6225,-12
-
-.func _maFileClose, 1, int
-	.line 6225
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB36
-	.line 6226
-	ld   i0,#0x2a
-	ld   i1,[fr,-12]
-	ld   i2,#0x0
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE36
-	.line 6227
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope13:
-	.stabs	"maFileExists:f(0,3)",36,0,6218,_maFileExists
-	.stabs	"file:p(6,10)",160,0,6218,-12
-
-.func _maFileExists, 1, int
-	.line 6218
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB37
-	.line 6219
-	ld   i0,#0x29
-	ld   i1,[fr,-12]
-	ld   i2,#0x0
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE37
-	.line 6220
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope14:
-	.stabs	"maFileOpen:f(6,10)",36,0,6211,_maFileOpen
-	.stabs	"path:p(20,7)",160,0,6211,-12
-	.stabs	"mode:p(0,3)",160,0,6211,-16
-
-.func _maFileOpen, 2, int
-	.line 6211
-	push rt,fr
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB38
-	.line 6212
-	ld   i0,#0x28
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE38
-	.line 6213
-	add  sp,#0x8
-	pop  rt,fr
-	ret
-Lscope15:
-.data
-LC25:
-	.ascii "OpenWrite '%s'\12\0"
-LC26:
-	.ascii "Truncating file...\12\0"
-LC27:
-	.ascii "Creating file...\12\0"
-LC28:
-	.ascii "true\0"
-LC29:
-	.ascii "false\0"
-LC30:
-	.ascii "{\"login\" : \"\0"
-LC31:
-	.ascii "\",\"token_mobile\" : \"\0"
-LC32:
-	.ascii "\",\"token_authent\" : \"\0"
-LC33:
-	.ascii "\",\"authentication_mode\" : \"\0"
-LC34:
-	.ascii "\",\"id_media_value\" : \0"
-LC35:
-	.ascii ",\"notification\" : \0"
-LC36:
-	.ascii ",\"vibrate\" : \0"
-LC37:
-	.ascii "}\0"
-.code
-	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb:f(96,3)",36,0,254,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabs	"login:p(97,6)",160,0,254,-44
-	.stabs	"tokenMobile:p(97,6)",160,0,254,-48
-	.stabs	"tokenAuthent:p(97,6)",160,0,254,-52
-	.stabs	"mode:p(97,6)",160,0,254,-56
-	.stabs	"idMedia:p(96,11)=&(0,15)",160,0,254,0
-	.stabs	"vibrate:p(0,4)",160,0,254,4
-	.stabs	"notification:p(0,4)",160,0,254,8
-
-.func __Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb, 7, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext7
-Ltext7:
-	.line 254
-	push rt,d7
-	sub  sp,#0x98
-	ld   fr,sp
-	add  fr,#0xc0
-	ld   [fr,-44],i0
-	ld   [fr,-48],i1
-	ld   [fr,-52],i2
-	ld   [fr,-56],i3
-	.dlab LBB39
-	.dlab LBB40
-	.dlab LBB41
-	.line 258
-	call &__Z11getPlatformv
-	ld   r0,r14
-	ld   r14,#0x1
-	jc   eq,r0,r14,#L49
-	.dlab LBB42
-	.line 260
-	ld   d0,fr
-	add  d0,#0xffffffbc
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &__Z12getLocalPathv
-	ld   d1,fr
-	add  d1,#0xffffffb8
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	ld   i1,#LC18
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,d0
-	ld   i1,d1
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 263
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   [sp],r14
-	ld   i0,#LC25
-	call &_printf
-	.line 264
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   i0,r14
-	ld   i1,#0x3
-	call &_maFileOpen
-	ld   [fr,-64],r14
-	.line 266
-	ld   r0,[fr,-64]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L50
-	.line 267
-	ld   r14,[fr,-64]
-	ld   [sp],r14
-	ld   i0,#LC20
-	call &_printf
-	.dlab LBB43
-	.line 268
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE43
-	ld   r14,#0x0
-	ld   [fr,-164],r14
-	jp   #L48
-L50:
-	.line 272
-	ld   i0,[fr,-64]
-	call &_maFileExists
-	ld   [fr,-60],r14
-	.line 273
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L51
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x111
-	call &_bfeHandler
-L51:
-	.line 274
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L53
-	.line 276
-	ld   i0,#LC26
-	call &_printf
-	.line 277
-	ld   i0,[fr,-64]
-	ld   i1,#0x0
-	call &_maFileTruncate
-	ld   [fr,-60],r14
-	.line 278
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L56
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x116
-	call &_bfeHandler
-L53:
-	.line 281
-	ld   i0,#LC27
-	call &_printf
-	.line 282
-	ld   i0,[fr,-64]
-	call &_maFileCreate
-	ld   [fr,-60],r14
-	.line 283
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   ge,r0,r14,#L56
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x11b
-	call &_bfeHandler
-L56:
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L49:
-	.dlab LBE42
-	.dlab LBE41
-	.line 288
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	ld   i1,#LC28
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 289
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	ld   i1,#LC28
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	.line 290
-	ld.b r0,[fr,4]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L59
-	.line 291
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	ld   i1,#LC29
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffbc
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L59:
-	.line 293
-	ld.b r0,[fr,8]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L60
-	.line 294
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	ld   i1,#LC29
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffbc
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L60:
-	.line 302
-	ld   d1,fr
-	add  d1,#0xffffffbc
-	ld   d2,fr
-	add  d2,#0xffffffb0
-	ld   d3,fr
-	add  d3,#0xffffffac
-	ld   d4,fr
-	add  d4,#0xffffffa8
-	ld   d5,fr
-	add  d5,#0xffffffa4
-	ld   d6,fr
-	add  d6,#0xffffffa0
-	ld   d7,fr
-	add  d7,#0xffffff9c
-	ld   r14,fr
-	add  r14,#0xffffff98
-	ld   [fr,-168],r14
-	ld   r14,fr
-	add  r14,#0xffffff94
-	ld   [fr,-172],r14
-	ld   r14,fr
-	add  r14,#0xffffff90
-	ld   [fr,-176],r14
-	ld   r14,fr
-	add  r14,#0xffffff8c
-	ld   [fr,-180],r14
-	ld   r14,fr
-	add  r14,#0xffffff88
-	ld   [fr,-184],r14
-	ld   r14,fr
-	add  r14,#0xffffff84
-	ld   [fr,-188],r14
-	ld   r14,fr
-	add  r14,#0xffffff80
-	ld   i0,r14
-	ld   i1,#LC30
-	ld   i2,[fr,-44]
-	call &__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
-	ld   d0,fr
-	add  d0,#0xffffff80
-	ld   r14,fr
-	add  r14,#0xffffff7c
-	ld   i0,r14
-	ld   i1,#LC31
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff7c
-	ld   i0,[fr,-188]
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffff84
-	ld   i0,[fr,-184]
-	ld   i1,r14
-	ld   i2,[fr,-48]
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffff88
-	ld   r14,fr
-	add  r14,#0xffffff78
-	ld   i0,r14
-	ld   i1,#LC32
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff78
-	ld   i0,[fr,-180]
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffff8c
-	ld   i0,[fr,-176]
-	ld   i1,r14
-	ld   i2,[fr,-52]
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffff90
-	ld   r14,fr
-	add  r14,#0xffffff74
-	ld   i0,r14
-	ld   i1,#LC33
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff74
-	ld   i0,[fr,-172]
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffff94
-	ld   i0,[fr,-168]
-	ld   i1,r14
-	ld   i2,[fr,-56]
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffff98
-	ld   r14,fr
-	add  r14,#0xffffff70
-	ld   i0,r14
-	ld   i1,#LC34
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff70
-	ld   i0,d7
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffff9c
-	ld   r14,fr
-	add  r14,#0xffffff6c
-	ld   r0,[fr]
-	ld   i0,r14
-	ld   i1,[r0]
-	ld   i2,[r0,4]
-	call &__ZN7Convert8toStringEx
-	ld   r14,fr
-	add  r14,#0xffffff6c
-	ld   i0,d6
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffffa0
-	ld   r14,fr
-	add  r14,#0xffffff68
-	ld   i0,r14
-	ld   i1,#LC35
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff68
-	ld   i0,d5
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffa4
-	ld   r0,fr
-	add  r0,#0xffffffb8
-	ld   i0,d4
-	ld   i1,r14
-	ld   i2,r0
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffffa8
-	ld   r14,fr
-	add  r14,#0xffffff64
-	ld   i0,r14
-	ld   i1,#LC36
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff64
-	ld   i0,d3
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffac
-	ld   r0,fr
-	add  r0,#0xffffffb4
-	ld   i0,d2
-	ld   i1,r14
-	ld   i2,r0
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   d0,fr
-	add  d0,#0xffffffb0
-	ld   r14,fr
-	add  r14,#0xffffff60
-	ld   i0,r14
-	ld   i1,#LC37
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffff60
-	ld   i0,d1
-	ld   i1,d0
-	ld   i2,r14
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	ld   r14,fr
-	add  r14,#0xffffff60
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffac
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff64
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffa8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffa4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff68
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffa0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff6c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff70
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff74
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff90
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff8c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff78
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff84
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff7c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffff80
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 304
-	call &__Z11getPlatformv
-	ld   r0,r14
-	ld   r14,#0x1
-	jc   eq,r0,r14,#L61
-	.line 305
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   d0,r14
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE4sizeEv
-	ld   i0,[fr,-64]
-	ld   i1,d0
-	ld   i2,r14
-	call &_maFileWrite
-	ld   [fr,-60],r14
-	.line 306
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   i0,r14
-	call &_lprintfln
-	.line 309
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L62
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x135
-	call &_bfeHandler
-L62:
-	.line 312
-	ld   i0,#LC23
-	call &_printf
-	.line 313
-	ld   i0,[fr,-64]
-	call &_maFileClose
-	ld   [fr,-60],r14
-	.line 314
-	ld   r0,[fr,-60]
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L66
-	ld   i0,#LC17
-	call &_FileNameFromPath
-	ld   i0,#0x6
-	ld   i1,r14
-	ld   i2,#0x13a
-	call &_bfeHandler
-L61:
-	.line 317
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,#LC18
-	ld   i1,r14
-	call &__Z11saveToStorePKcRKN6MAUtil11BasicStringIcEE
-	ld   r0,r14
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L67
-	.dlab LBB44
-	.line 318
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE44
-	ld   r14,#0x2
-	ld   [fr,-164],r14
-	jp   #L48
-L67:
-	.dlab LBB45
-	.line 321
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE45
-	ld   r14,#0x0
-	ld   [fr,-164],r14
-	jp   #L48
-L66:
-	.line 324
-	ld   i0,#LC24
-	call &_printf
-	.dlab LBB46
-	.line 325
-	ld   r14,fr
-	add  r14,#0xffffffbc
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffb4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE46
-	ld   r14,#0x2
-	ld   [fr,-164],r14
-L48:
-	.dlab LBE40
-	.dlab LBE39
-	.line 326
-	ld   r14,[fr,-164]
-	add  sp,#0x98
-	pop  rt,d7
-	ret
-	.stabs	"res:(0,3)",128,0,256,-60
-	.stabs	"file:(6,10)",128,0,257,-64
-	.stabs	"sVibrate:(13,1)",128,0,288,-76
-	.stabs	"sNotification:(13,1)",128,0,289,-72
-	.stabs	"tmp:(13,1)",128,0,297,-68
-	.stabn	192,0,0,LBB40-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabs	"filename:(13,1)",128,0,260,-68
-	.stabn	192,0,0,LBB42-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabn	224,0,0,LBE42-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	.stabn	224,0,0,LBE40-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-Lscope16:
-	.stabs	"maFileWrite:f(0,3)",36,0,6332,_maFileWrite
-	.stabs	"file:p(6,10)",160,0,6332,-12
-	.stabs	"src:p(8,5)",160,0,6332,-16
-	.stabs	"len:p(0,3)",160,0,6332,-20
-
-.func _maFileWrite, 3, int
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext8
-Ltext8:
-	.line 6332
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.dlab LBB47
-	.line 6333
-	ld   i0,#0x33
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,[fr,-20]
-	call &_maIOCtl
-	.dlab LBE47
-	.line 6334
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope17:
-	.stabs	"maFileCreate:f(0,3)",36,0,6235,_maFileCreate
-	.stabs	"file:p(6,10)",160,0,6235,-12
-
-.func _maFileCreate, 1, int
-	.line 6235
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB48
-	.line 6236
-	ld   i0,#0x2b
-	ld   i1,[fr,-12]
-	ld   i2,#0x0
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE48
-	.line 6237
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope18:
-	.stabs	"maFileTruncate:f(0,3)",36,0,6321,_maFileTruncate
-	.stabs	"file:p(6,10)",160,0,6321,-12
-	.stabs	"offset:p(0,3)",160,0,6321,-16
-
-.func _maFileTruncate, 2, int
-	.line 6321
-	push rt,fr
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB49
-	.line 6322
-	ld   i0,#0x32
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE49
-	.line 6323
-	add  sp,#0x8
-	pop  rt,fr
-	ret
-Lscope19:
 	.stabn	162,0,0,0
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Page.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"_ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:F(0,6)",36,0,15,__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
-	.stabs	"this:p(0,25)=k(0,26)=*(0,27)=xsOptionTab:",160,0,15,-16
-	.stabs	"language:p(0,3)",160,0,15,-20
-	.stabs	"loginToken:a(13,1)",64,0,15,4
-	.stabs	"screenResolution:p(96,4)",160,0,15,-24
-	.global	__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
-
-.func __ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution, 4, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext9
-Ltext9:
-	.line 15
-	push rt,d0
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-16],i0
-	ld   [fr,-20],i1
-	ld   d0,i2
-	ld   [fr,-24],i3
-	.dlab LBB50
-	.line 16
-	ld   i0,[fr,-16]
-	call &__ZN8NativeUI6ScreenC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x48
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x78
-	ld   i0,r14
-	call &__ZN8NativeUI18RadioGroupListenerC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x7c
-	ld   i0,r14
-	call &__ZN8NativeUI16CheckBoxListenerC2Ev
-	ld   r14,[fr,-16]
-	ld   r0,#__ZTV9OptionTab+8
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x48
-	ld   r0,#__ZTV9OptionTab+220
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x70
-	ld   r0,#__ZTV9OptionTab+260
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x78
-	ld   r0,#__ZTV9OptionTab+288
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x7c
-	ld   r0,#__ZTV9OptionTab+300
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x80
-	ld   i0,r14
-	ld   i1,d0
-	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	ld   r14,[fr,-16]
-	ld   r0,[fr,-20]
-	ld   [r14,132],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 17
-	ld   r14,[fr,-24]
-	add  r14,#0x8
-	ld   i0,[fr,-16]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen7setIconEi
-	.line 19
-	ld   i0,[fr,-16]
-	call &__ZN9OptionTab8createUIEv
-	.dlab LBE50
-	.line 20
-	add  sp,#0xc
-	pop  rt,d0
-	ret
-Lscope20:
-	.stabs	"_ZN8NativeUI16CheckBoxListenerC2Ev:f(0,6)",36,0,16,__ZN8NativeUI16CheckBoxListenerC2Ev
-	.stabs	"this:p(33,9)",160,0,47,-12
-
-.func __ZN8NativeUI16CheckBoxListenerC2Ev, 1, void
-	.line 16
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB51
-	.line 16
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTVN8NativeUI16CheckBoxListenerE+8
-	ld   [r14],r0
-	.dlab LBE51
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope21:
-	.stabs	"_ZN8NativeUI18RadioGroupListenerC2Ev:f(0,6)",36,0,16,__ZN8NativeUI18RadioGroupListenerC2Ev
-	.stabs	"this:p(70,9)",160,0,47,-12
-
-.func __ZN8NativeUI18RadioGroupListenerC2Ev, 1, void
-	.line 16
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB52
-	.line 16
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTVN8NativeUI18RadioGroupListenerE+8
-	ld   [r14],r0
-	.dlab LBE52
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope22:
-	.stabs	"_ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution:F(0,6)",36,0,15,__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution
-	.stabs	"this:p(0,25)",160,0,15,-16
-	.stabs	"language:p(0,3)",160,0,15,-20
-	.stabs	"loginToken:a(13,1)",64,0,15,4
-	.stabs	"screenResolution:p(96,4)",160,0,15,-24
-	.global	__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution
-
-.func __ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution, 4, void
-	.line 15
-	push rt,d0
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-16],i0
-	ld   [fr,-20],i1
-	ld   d0,i2
-	ld   [fr,-24],i3
-	.dlab LBB53
-	.line 16
-	ld   i0,[fr,-16]
-	call &__ZN8NativeUI6ScreenC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x48
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x78
-	ld   i0,r14
-	call &__ZN8NativeUI18RadioGroupListenerC2Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x7c
-	ld   i0,r14
-	call &__ZN8NativeUI16CheckBoxListenerC2Ev
-	ld   r14,[fr,-16]
-	ld   r0,#__ZTV9OptionTab+8
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x48
-	ld   r0,#__ZTV9OptionTab+220
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x70
-	ld   r0,#__ZTV9OptionTab+260
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x78
-	ld   r0,#__ZTV9OptionTab+288
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x7c
-	ld   r0,#__ZTV9OptionTab+300
-	ld   [r14],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x80
-	ld   i0,r14
-	ld   i1,d0
-	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_
-	ld   r14,[fr,-16]
-	ld   r0,[fr,-20]
-	ld   [r14,132],r0
-	ld   r14,[fr,-16]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	ld   r14,[fr,-16]
-	add  r14,#0x9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 17
-	ld   r14,[fr,-24]
-	add  r14,#0x8
-	ld   i0,[fr,-16]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen7setIconEi
-	.line 19
-	ld   i0,[fr,-16]
-	call &__ZN9OptionTab8createUIEv
-	.dlab LBE53
-	.line 20
-	add  sp,#0xc
-	pop  rt,d0
-	ret
-Lscope23:
-	.stabs	"_ZN9OptionTabD2Ev:F(0,6)",36,0,26,__ZN9OptionTabD2Ev
-	.stabs	"this:p(0,25)",160,0,26,-12
-	.global	__ZN9OptionTabD2Ev
-
-.func __ZN9OptionTabD2Ev, 1, void
-	.line 26
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB54
-	.line 26
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV9OptionTab+8
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   r0,#__ZTV9OptionTab+220
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x70
-	ld   r0,#__ZTV9OptionTab+260
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x78
-	ld   r0,#__ZTV9OptionTab+288
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x7c
-	ld   r0,#__ZTV9OptionTab+300
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x80
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE54
-	.line 28
-	ld   r14,#0x1
-	and  r14,#0x0
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L76
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L76:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope24:
-	.set	%0=__ZN9OptionTabD1Ev
-	.stabs	"this:p(0,25)",160,0,26,-12
-	.global	__ZThn72_N9OptionTabD1Ev
-
-.func __ZThn72_N9OptionTabD1Ev, 1, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext10
-Ltext10:
-	.line 30
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.line 30
-	ld   r14,[fr,-12]
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &%0
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope25:
-	.stabs	"_ZN9OptionTabD1Ev:F(0,6)",36,0,26,__ZN9OptionTabD1Ev
-	.stabs	"this:p(0,25)",160,0,26,-12
-	.global	__ZN9OptionTabD1Ev
-
-.func __ZN9OptionTabD1Ev, 1, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext11
-Ltext11:
-	.line 26
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB55
-	.line 26
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV9OptionTab+8
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   r0,#__ZTV9OptionTab+220
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x70
-	ld   r0,#__ZTV9OptionTab+260
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x78
-	ld   r0,#__ZTV9OptionTab+288
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x7c
-	ld   r0,#__ZTV9OptionTab+300
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x80
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE55
-	.line 28
-	ld   r14,#0x1
-	and  r14,#0x2
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L81
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L81:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope26:
-	.set	%1=__ZN9OptionTabD0Ev
-	.stabs	"this:p(0,25)",160,0,26,-12
-	.global	__ZThn72_N9OptionTabD0Ev
-
-.func __ZThn72_N9OptionTabD0Ev, 1, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext12
-Ltext12:
-	.line 30
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.line 30
-	ld   r14,[fr,-12]
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	call &%1
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope27:
-	.stabs	"_ZN9OptionTabD0Ev:F(0,6)",36,0,26,__ZN9OptionTabD0Ev
-	.stabs	"this:p(0,25)",160,0,26,-12
-	.global	__ZN9OptionTabD0Ev
-
-.func __ZN9OptionTabD0Ev, 1, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext13
-Ltext13:
-	.line 26
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB56
-	.line 26
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV9OptionTab+8
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   r0,#__ZTV9OptionTab+220
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x70
-	ld   r0,#__ZTV9OptionTab+260
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x78
-	ld   r0,#__ZTV9OptionTab+288
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x7c
-	ld   r0,#__ZTV9OptionTab+300
-	ld   [r14],r0
-	ld   r14,[fr,-12]
-	add  r14,#0x9c
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x98
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x94
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x80
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,[fr,-12]
-	add  r14,#0x48
-	ld   i0,r14
-	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI6ScreenD2Ev
-	.dlab LBE56
-	.line 28
-	ld   r14,#0x1
-	and  r14,#0x3
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L86
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L86:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope28:
-	.set	%2=__ZN9OptionTab14dataDownloadedEii
-	.stabs	"this:p(0,25)",160,0,31,-12
-	.stabs	"data:p(6,10)",160,0,31,-16
-	.stabs	"result:p(0,3)",160,0,31,-20
-	.global	__ZThn72_N9OptionTab14dataDownloadedEii
-
-.func __ZThn72_N9OptionTab14dataDownloadedEii, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext14
-Ltext14:
-	.line 30
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.line 30
-	ld   r14,[fr,-12]
-	add  r14,#0xffffffb8
-	ld   i0,r14
-	ld   i1,[fr,-16]
-	ld   i2,[fr,-20]
-	call &%2
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope29:
-.data
-LC38:
-	.ascii "dataDownloaded HomeTab\0"
-.code
-	.stabs	"_ZN9OptionTab14dataDownloadedEii:F(0,6)",36,0,31,__ZN9OptionTab14dataDownloadedEii
-	.stabs	"this:p(0,25)",160,0,31,-12
-	.stabs	"data:p(6,10)",160,0,31,-16
-	.stabs	"result:p(0,3)",160,0,31,-20
-	.global	__ZN9OptionTab14dataDownloadedEii
-
-.func __ZN9OptionTab14dataDownloadedEii, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext15
-Ltext15:
-	.line 31
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.dlab LBB57
-	.line 32
-	ld   i0,#LC38
-	call &_lprintfln
-	.dlab LBE57
-	.line 35
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope30:
-.data
-LC39:
-	.ascii "ERROR FILE STRORAGE\0"
-LC40:
-	.ascii "Can not read config file.\0"
-LC41:
-	.ascii "Can not read config file\0"
-LC42:
-	.ascii "authentication_mode\0"
-LC43:
-	.ascii "id_media_value\0"
-LC44:
-	.ascii "token_authent\0"
-LC45:
-	.ascii "token_mobile\0"
-LC46:
-	.ascii "login\0"
-LC47:
-	.ascii "vibrate\0"
-LC48:
-	.ascii "notification\0"
-LC49:
-	.ascii "Gestion du compte\0"
-LC50:
-	.ascii "0\0"
-.code
-	.stabs	"_ZN9OptionTab8createUIEv:F(0,6)",36,0,37,__ZN9OptionTab8createUIEv
-	.stabs	"this:p(0,25)",160,0,37,-28
-	.global	__ZN9OptionTab8createUIEv
-
-.func __ZN9OptionTab8createUIEv, 1, void
-	.line 37
-	push rt,d3
-	sub  sp,#0x18
-	ld   fr,sp
-	add  fr,#0x30
-	ld   [fr,-28],i0
-	.dlab LBB58
-	.dlab LBB59
-	.line 39
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcEC1Ev
-	.line 40
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__Z9tryToReadRN6MAUtil11BasicStringIcEE
-	ld   [fr,-36],r14
-	.dlab LBB60
-	.line 41
-	ld   r0,[fr,-36]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L93
-	.line 42
-	ld   i0,#LC39
-	ld   i1,#LC40
-	call &_maMessageBox
-	jp   #L94
-L93:
-	.dlab LBB61
-	.dlab LBB62
-	.line 43
-	ld   r0,[fr,-36]
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L95
-	.line 44
-	ld   i0,#LC39
-	ld   i1,#LC41
-	call &_maMessageBox
-	jp   #L94
-L95:
-	.dlab LBB63
-	.line 46
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	ld   i1,#0x1
-	call &__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi
-	.line 48
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE5c_strEv
-	ld   d0,r14
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZNK6MAUtil11BasicStringIcE4sizeEv
-	ld   i0,d0
-	ld   i1,r14
-	call &__ZN6MAUtil7YAJLDom5parseEPKhm
-	ld   [fr,-40],r14
-	.line 49
-	ld   d0,fr
-	add  d0,#0xffffffd4
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC42
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0x8
-	ld   r14,[r14]
-	ld   i0,d0
-	ld   i1,r0
-	call r14
-	ld   r0,fr
-	add  r0,#0xffffffd4
-	ld   r14,[fr,-28]
-	add  r14,#0x88
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 50
-	ld   d0,[fr,-28]
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC43
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0x10
-	ld   r14,[r14]
-	ld   i0,r0
-	call r14
-	ld   r0,r14
-	ld   r1,r0
-	sra  r1,#0x1f
-	ld   r14,r0
-	ld   r15,r1
-	ld   [d0,140],r14
-	ld   [d0,144],r15
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 51
-	ld   d0,fr
-	add  d0,#0xffffffd0
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	ld   i1,#LC44
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd4
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0x8
-	ld   r14,[r14]
-	ld   i0,d0
-	ld   i1,r0
-	call r14
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-28]
-	add  r14,#0x94
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 52
-	ld   d0,fr
-	add  d0,#0xffffffd0
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	ld   i1,#LC45
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd4
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0x8
-	ld   r14,[r14]
-	ld   i0,d0
-	ld   i1,r0
-	call r14
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-28]
-	add  r14,#0x98
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 53
-	ld   d0,fr
-	add  d0,#0xffffffd0
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	ld   i1,#LC46
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd4
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0x8
-	ld   r14,[r14]
-	ld   i0,d0
-	ld   i1,r0
-	call r14
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-28]
-	add  r14,#0x9c
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 54
-	ld   d0,[fr,-28]
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC47
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0xc
-	ld   r14,[r14]
-	ld   i0,r0
-	call r14
-	ld.b [d0,160],r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 55
-	ld   d0,[fr,-28]
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC48
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-40]
-	ld   r14,[r14]
-	add  r14,#0x18
-	ld   r14,[r14]
-	ld   i0,[fr,-40]
-	ld   i1,r0
-	call r14
-	ld   r0,r14
-	ld   r14,[r0]
-	add  r14,#0xc
-	ld   r14,[r14]
-	ld   i0,r0
-	call r14
-	ld.b [d0,161],r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 57
-	ld   d3,[fr,-28]
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC49
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffd0
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	ld   i1,#LC50
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d2,fr
-	add  d2,#0xffffffd4
-	ld   i0,#0x44
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	ld   i2,d2
-	call &__ZN4PageC1EN6MAUtil11BasicStringIcEES2_
-	ld   [d3,164],d0
-	ld   r14,fr
-	add  r14,#0xffffffd4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 59
-	ld   d2,[fr,-28]
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x89
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffd0
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,168],d0
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 61
-	ld   r14,[fr,-28]
-	ld   r14,[r14,164]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,164]
-	ld   i1,[r1,168]
-	call r14
-	.line 63
-	ld   d1,[fr,-28]
-	ld   i0,#0x48
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI10RadioGroupC1Ev
-	ld   [d1,172],d0
-	.line 65
-	ld   r14,[fr,-28]
-	ld   r14,[r14,164]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,164]
-	ld   i1,[r1,172]
-	call r14
-	.line 67
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI11RadioButtonC1Ev
-	ld   [d1,176],d0
-	.line 71
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x8b
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r1,fr
-	add  r1,#0xffffffd0
-	ld   r14,[fr,-28]
-	ld   r14,[r14,176]
-	ld   r14,[r14]
-	add  r14,#0xa4
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,176]
-	ld   i1,r1
-	call r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 72
-	ld   r14,[fr,-28]
-	ld   r14,[r14,176]
-	ld   r14,[r14]
-	add  r14,#0xac
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,176]
-	ld   i1,#0xc0c0c0
-	call r14
-	.line 73
-	ld   r14,[fr,-28]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0xa0
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,176]
-	call r14
-	.line 74
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI11RadioButtonC1Ev
-	ld   [d1,180],d0
-	.line 75
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x8d
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r1,fr
-	add  r1,#0xffffffd0
-	ld   r14,[fr,-28]
-	ld   r14,[r14,180]
-	ld   r14,[r14]
-	add  r14,#0xa4
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,180]
-	ld   i1,r1
-	call r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 76
-	ld   r14,[fr,-28]
-	ld   r14,[r14,180]
-	ld   r14,[r14]
-	add  r14,#0xac
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,180]
-	ld   i1,#0xc0c0c0
-	call r14
-	.line 77
-	ld   r14,[fr,-28]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0xa0
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,180]
-	call r14
-	.line 78
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,#LC6
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffd0
-	ld   r14,[fr,-28]
-	add  r14,#0x88
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_
-	ld   d0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	ld   r0,d0
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L97
-	.line 79
-	ld   r14,[fr,-28]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0xa8
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,180]
-	call r14
-	jp   #L98
-L97:
-	.line 81
-	ld   r14,[fr,-28]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0xa8
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,[r1,176]
-	call r14
-L98:
-	.line 86
-	ld   r14,[fr,-28]
-	ld   i0,[r14,164]
-	ld   i1,#0x2
-	ld   i2,#0xffffff
-	call &__ZN4Page12setBreakLineEii
-	.line 88
-	ld   d2,[fr,-28]
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x7b
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffd0
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,184],d0
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 89
-	ld   r14,[fr,-28]
-	ld   r14,[r14,164]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,164]
-	ld   i1,[r1,184]
-	call r14
-	.line 91
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI16HorizontalLayoutC1Ev
-	ld   [d1,188],d0
-	.line 92
-	ld   r14,[fr,-28]
-	ld   r14,[r14,188]
-	ld   r14,[r14]
-	add  r14,#0x74
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,188]
-	call r14
-	.line 93
-	ld   d2,[fr,-28]
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x7d
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffd0
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,192],d0
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 94
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI8CheckBoxC1Ev
-	ld   [d1,196],d0
-	.line 95
-	ld   r14,[fr,-28]
-	ld   r14,[r14,196]
-	ld   r14,[r14]
-	add  r14,#0xa0
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,196]
-	ld.b i1,[r1,161]
-	call r14
-	.line 96
-	ld   r14,[fr,-28]
-	ld   r14,[r14,196]
-	ld   r14,[r14]
-	add  r14,#0xa8
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	add  r1,#0x7c
-	ld   r14,[r14]
-	ld   i0,[r0,196]
-	ld   i1,r1
-	call r14
-	.line 97
-	ld   r14,[fr,-28]
-	ld   r14,[r14,188]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,188]
-	ld   i1,[r1,196]
-	call r14
-	.line 98
-	ld   r14,[fr,-28]
-	ld   r14,[r14,188]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,188]
-	ld   i1,[r1,192]
-	call r14
-	.line 100
-	ld   r14,[fr,-28]
-	ld   r14,[r14,164]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,164]
-	ld   i1,[r1,188]
-	call r14
-	.line 102
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI16HorizontalLayoutC1Ev
-	ld   [d1,200],d0
-	.line 103
-	ld   r14,[fr,-28]
-	ld   r14,[r14,200]
-	ld   r14,[r14]
-	add  r14,#0x74
-	ld   r0,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,200]
-	call r14
-	.line 104
-	ld   d2,[fr,-28]
-	ld   r14,[fr,-28]
-	ld   r14,[r14,132]
-	add  r14,#0x7f
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   d1,fr
-	add  d1,#0xffffffd0
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	ld   i1,d1
-	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE
-	ld   [d2,204],d0
-	ld   r14,fr
-	add  r14,#0xffffffd0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 105
-	ld   d1,[fr,-28]
-	ld   i0,#0x3c
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI8CheckBoxC1Ev
-	ld   [d1,208],d0
-	.line 106
-	ld   r14,[fr,-28]
-	ld   r14,[r14,208]
-	ld   r14,[r14]
-	add  r14,#0xa0
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,208]
-	ld.b i1,[r1,160]
-	call r14
-	.line 107
-	ld   r14,[fr,-28]
-	ld   r14,[r14,208]
-	ld   r14,[r14]
-	add  r14,#0xa8
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	add  r1,#0x7c
-	ld   r14,[r14]
-	ld   i0,[r0,208]
-	ld   i1,r1
-	call r14
-	.line 108
-	ld   r14,[fr,-28]
-	ld   r14,[r14,200]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,200]
-	ld   i1,[r1,208]
-	call r14
-	.line 109
-	ld   r14,[fr,-28]
-	ld   r14,[r14,200]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,200]
-	ld   i1,[r1,204]
-	call r14
-	.line 110
-	ld   r14,[fr,-28]
-	ld   r14,[r14,164]
-	ld   r14,[r14]
-	add  r14,#0x34
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	ld   r14,[r14]
-	ld   i0,[r0,164]
-	ld   i1,[r1,200]
-	call r14
-	.line 112
-	ld   r14,[fr,-28]
-	ld   i0,[r14,164]
-	ld   i1,#0x2
-	ld   i2,#0xffffff
-	call &__ZN4Page12setBreakLineEii
-	.line 114
-	ld   r14,[fr,-28]
-	ld   r14,[r14,172]
-	ld   r14,[r14]
-	add  r14,#0xb0
-	ld   r0,[fr,-28]
-	ld   r1,[fr,-28]
-	add  r1,#0x78
-	ld   r14,[r14]
-	ld   i0,[r0,172]
-	ld   i1,r1
-	call r14
-	.line 115
-	ld   r14,[fr,-28]
-	ld   i0,[fr,-28]
-	ld   i1,[r14,164]
-	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE
-L94:
-	.dlab LBE63
-	.dlab LBE62
-	.dlab LBE61
-	.dlab LBE60
-	ld   r14,fr
-	add  r14,#0xffffffe0
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE59
-	.dlab LBE58
-	.line 117
-	add  sp,#0x18
-	pop  rt,d3
-	ret
-	.stabs	"config:(13,1)",128,0,39,-32
-	.stabs	"eFileTmp:(96,3)",128,0,40,-36
-	.stabn	192,0,0,LBB59-__ZN9OptionTab8createUIEv
-	.stabs	"root:(24,35)",128,0,47,-40
-	.stabn	192,0,0,LBB63-__ZN9OptionTab8createUIEv
-	.stabn	224,0,0,LBE63-__ZN9OptionTab8createUIEv
-	.stabn	224,0,0,LBE59-__ZN9OptionTab8createUIEv
-Lscope31:
-	.stabs	"maMessageBox:f(0,6)",36,0,7067,_maMessageBox
-	.stabs	"title:p(20,7)",160,0,7067,-12
-	.stabs	"message:p(20,7)",160,0,7067,-16
-
-.func _maMessageBox, 2, void
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext16
-Ltext16:
-	.line 7067
-	push rt,fr
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB64
-	.line 7068
-	ld   i0,#0x19a
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE64
-	.line 7069
-	add  sp,#0x8
-	pop  rt,fr
-	ret
-Lscope32:
-	.set	%3=__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.stabs	"this:p(0,25)",160,0,121,-12
-	.stabs	"rB:p(70,32)",160,0,121,-24
-	.global	__ZThn120_N9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-
-.func __ZThn120_N9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext17
-Ltext17:
-	.line 30
-	push rt,fr
-	sub  sp,#0x10
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	ld   [fr,-24],i3
-	.line 30
-	ld   r14,[fr,-12]
-	add  r14,#0xffffff88
-	ld   i0,r14
-	ld   i1,[fr,-16]
-	ld   i2,[fr,-20]
-	ld   i3,[fr,-24]
-	call &%3
-	add  sp,#0x10
-	pop  rt,fr
-	ret
-Lscope33:
-.data
-LC51:
-	.ascii "radioButtonSelected\0"
-LC52:
-	.ascii "credential\0"
-.code
-	.stabs	"_ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE:F(0,6)",36,0,121,__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-	.stabs	"this:p(0,25)",160,0,121,-12
-	.stabs	"rB:p(70,32)",160,0,121,-24
-	.global	__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
-
-.func __ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext18
-Ltext18:
-	.line 121
-	push rt,fr
-	sub  sp,#0x20
-	ld   fr,sp
-	add  fr,#0x28
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	ld   [fr,-24],i3
-	.dlab LBB65
-	.line 123
-	ld   i0,#LC51
-	call &_lprintfln
-	.line 124
-	ld   r14,[fr,-12]
-	ld   r0,[r14,176]
-	ld   r14,[fr,-24]
-	jc   ne,r0,r14,#L102
-	.line 125
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	ld   i1,#LC52
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffe4
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L103
-L102:
-	.line 126
-	ld   r14,[fr,-12]
-	ld   r0,[r14,180]
-	ld   r14,[fr,-24]
-	jc   ne,r0,r14,#L103
-	.line 127
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	ld   i1,#LC6
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r0,fr
-	add  r0,#0xffffffe4
-	ld   r14,[fr,-12]
-	add  r14,#0x88
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEaSERKS1_
-	ld   r14,fr
-	add  r14,#0xffffffe4
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L103:
-	.line 131
-	ld   r0,[fr,-12]
-	add  r0,#0x9c
-	ld   r1,[fr,-12]
-	add  r1,#0x98
-	ld   r2,[fr,-12]
-	add  r2,#0x94
-	ld   r3,[fr,-12]
-	add  r3,#0x88
-	ld   r14,[fr,-12]
-	add  r14,#0x8c
-	ld   [sp],r14
-	ld   r14,[fr,-12]
-	ld.b r14,[r14,160]
-	ld.b [sp,4],r14
-	ld   r14,[fr,-12]
-	ld.b r14,[r14,161]
-	ld.b [sp,8],r14
-	ld   i0,r0
-	ld   i1,r1
-	ld   i2,r2
-	ld   i3,r3
-	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	ld   r0,r14
-	ld   r14,#0x2
-	jc   eq,r0,r14,#L101
-	.line 132
-	ld   r14,[fr,-12]
-	ld   r14,[r14,132]
-	add  r14,#0x6f
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   i0,r14
-	ld   i1,#0x0
-	call &_maToast
-L101:
-	.dlab LBE65
-	.line 137
-	add  sp,#0x20
-	pop  rt,fr
-	ret
-Lscope34:
-	.stabs	"maToast:f(0,3)",36,0,7103,_maToast
-	.stabs	"message:p(20,7)",160,0,7103,-12
-	.stabs	"duration:p(0,3)",160,0,7103,-16
-
-.func _maToast, 2, int
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext19
-Ltext19:
-	.line 7103
-	push rt,fr
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB66
-	.line 7104
-	ld   i0,#0x19c
-	ld   i1,[fr,-12]
-	ld   i2,[fr,-16]
-	ld   i3,#0x0
-	call &_maIOCtl
-	.dlab LBE66
-	.line 7105
-	add  sp,#0x8
-	pop  rt,fr
-	ret
-Lscope35:
-	.set	%4=__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
-	.stabs	"this:p(0,25)",160,0,140,-12
-	.stabs	"cB:p(0,28)=*(0,29)=xsCheckBox:",160,0,140,-16
-	.stabs	"b:p(0,4)",160,0,140,-17
-	.global	__ZThn124_N9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
-
-.func __ZThn124_N9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext20
-Ltext20:
-	.line 30
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	ld.b [fr,-17],i2
-	.line 30
-	ld   r14,[fr,-12]
-	add  r14,#0xffffff84
-	ld   i0,r14
-	ld   i1,[fr,-16]
-	ld.b i2,[fr,-17]
-	call &%4
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope36:
-.data
-LC53:
-	.ascii "bool %s\0"
-LC54:
-	.ascii "_notification %s\0"
-LC55:
-	.ascii "_vibrate %s\0"
-.code
-	.stabs	"_ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb:F(0,6)",36,0,140,__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
-	.stabs	"this:p(0,25)",160,0,140,-16
-	.stabs	"cB:p(0,28)",160,0,140,-20
-	.stabs	"b:p(0,4)",160,0,140,-21
-	.global	__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
-
-.func __ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext21
-Ltext21:
-	.line 140
-	push rt,d0
-	sub  sp,#0x18
-	ld   fr,sp
-	add  fr,#0x24
-	ld   [fr,-16],i0
-	ld   [fr,-20],i1
-	ld.b [fr,-21],i2
-	.dlab LBB67
-	.line 141
-	ld.b r14,[fr,-21]
-	and  r14,#0xff  ; zero extend
-	ld   [sp],r14
-	ld   i0,#LC53
-	call &_lprintfln
-	.line 142
-	ld   r14,[fr,-16]
-	ld   r0,[r14,196]
-	ld   r14,[fr,-20]
-	jc   ne,r0,r14,#L109
-	.line 144
-	ld   d0,[fr,-16]
-	ld   r14,[fr,-16]
-	ld   r14,[r14,196]
-	ld   r14,[r14]
-	add  r14,#0xa4
-	ld   r0,[fr,-16]
-	ld   r14,[r14]
-	ld   i0,[r0,196]
-	call r14
-	ld.b [d0,161],r14
-	.line 145
-	ld   r14,[fr,-16]
-	ld.b r0,[r14,161]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L111
-	.line 147
-	ld   r14,[fr,-16]
-	ld.b r14,[r14,161]
-	and  r14,#0xff  ; zero extend
-	ld   [sp],r14
-	ld   i0,#LC54
-	call &_lprintfln
-	jp   #L111
-L109:
-	.line 150
-	ld   r14,[fr,-16]
-	ld   r0,[r14,208]
-	ld   r14,[fr,-20]
-	jc   ne,r0,r14,#L111
-	.line 152
-	ld   d0,[fr,-16]
-	ld   r14,[fr,-16]
-	ld   r14,[r14,208]
-	ld   r14,[r14]
-	add  r14,#0xa4
-	ld   r0,[fr,-16]
-	ld   r14,[r14]
-	ld   i0,[r0,208]
-	call r14
-	ld.b [d0,160],r14
-	.line 153
-	ld   r14,[fr,-16]
-	ld.b r0,[r14,160]
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L111
-	.line 155
-	ld   r14,[fr,-16]
-	ld.b r14,[r14,160]
-	and  r14,#0xff  ; zero extend
-	ld   [sp],r14
-	ld   i0,#LC55
-	call &_lprintfln
-L111:
-	.line 159
-	ld   r0,[fr,-16]
-	add  r0,#0x9c
-	ld   r1,[fr,-16]
-	add  r1,#0x98
-	ld   r2,[fr,-16]
-	add  r2,#0x94
-	ld   r3,[fr,-16]
-	add  r3,#0x88
-	ld   r14,[fr,-16]
-	add  r14,#0x8c
-	ld   [sp],r14
-	ld   r14,[fr,-16]
-	ld.b r14,[r14,160]
-	ld.b [sp,4],r14
-	ld   r14,[fr,-16]
-	ld.b r14,[r14,161]
-	ld.b [sp,8],r14
-	ld   i0,r0
-	ld   i1,r1
-	ld   i2,r2
-	ld   i3,r3
-	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
-	ld   r0,r14
-	ld   r14,#0x2
-	jc   eq,r0,r14,#L108
-	.line 160
-	ld   r14,[fr,-16]
-	ld   r14,[r14,132]
-	add  r14,#0x6f
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   i0,r14
-	ld   i1,#0x0
-	call &_maToast
-L108:
-	.dlab LBE67
-	.line 167
-	add  sp,#0x18
-	pop  rt,d0
-	ret
-Lscope37:
-	.stabs	"_ZN9OptionTab17orientationChangeEi:F(0,6)",36,0,169,__ZN9OptionTab17orientationChangeEi
-	.stabs	"this:p(0,25)",160,0,169,-12
-	.stabs	"screenOrientation:p(0,3)",160,0,169,-16
-	.global	__ZN9OptionTab17orientationChangeEi
-
-.func __ZN9OptionTab17orientationChangeEi, 2, void
-	.line 169
-	push rt,fr
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x14
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.dlab LBB68
-	.line 171
-	ld   r0,[fr,-16]
-	ld   r14,#0x8
-	jc   ne,r0,r14,#L116
-	.line 173
-	ld   r14,[fr,-12]
-	ld   r14,[r14,132]
-	add  r14,#0x11
-	ld   i0,r14
-	call &__ZN7Convert2trEi
-	ld   r0,r14
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,r14
-	ld   i1,r0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,[fr,-12]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	jp   #L115
-L116:
-	.line 177
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,r14
-	ld   i1,#LC16
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,[fr,-12]
-	ld   i1,r14
-	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffec
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L115:
-	.dlab LBE68
-	.line 180
-	add  sp,#0xc
-	pop  rt,fr
-	ret
-Lscope38:
-	.stabs	"_ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_:f(13,2)",36,0,395,__ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_
-	.stabs	"c:p(20,7)",160,0,395,-16
-	.stabs	"s:p(20,11)",160,0,395,-20
-
-.func __ZN6MAUtilplIcEENS_11BasicStringIT_EEPKS2_RKS3_, 3, int
-	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext22
-Ltext22:
-	.line 395
-	push rt,d0
-	sub  sp,#0xc
-	ld   fr,sp
-	add  fr,#0x18
-	ld   d0,i0
-	ld   [fr,-16],i1
-	ld   [fr,-20],i2
-	.dlab LBB69
-	.line 396
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,[fr,-16]
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,d0
-	ld   i1,r14
-	ld   i2,[fr,-20]
-	call &__ZNK6MAUtil11BasicStringIcEplERKS1_
-	.dlab LBB70
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.dlab LBE70
-	.dlab LBE69
-	ld   r14,d0
-	add  sp,#0xc
-	pop  rt,d0
-	ret
-Lscope39:
+	.stabs	"OptionTab:Tt(0,25)=s216!4,020,(80,33);02576,(0,26)=xsHighLevelHttpConnection:;02960,(70,4);02992,(33,4);_LOGINTOKEN:/0(13,1),1024,32;LANGUAGE:/0(0,3),1056,32;_modeAuth:/0(13,1),1088,32;_idMobile:/0(0,15),1120,64;_tokenConnection:/0(13,1),1184,32;_tokenMobile:/0(13,1),1216,32;_login:/0(13,1),1248,32;_vibrate:/0(0,4),1280,8;_notification:/0(0,4),1288,8;vLOption:/0(0,27)=*(0,28)=xsPage:,1312,32;lAuthenticationMode:/0(0,29)=*(0,30)=xsLabel:,1344,32;rGAuthenticationChoice:/0(0,31)=*(0,32)=xsRadioGroup:,1376,32;rBModeCredential:/0(70,32),1408,32;rBModeNone:/0(70,32),1440,32;cbAuthenticationChoice:/0(0,33)=*(0,34)=xsCheckBox:,1472,32;lNotificationOption:/0(0,29),1504,32;hlSetNotification:/0(0,35)=*(0,36)=xsHorizontalLayout:,1536,32;lSetNotification:/0(0,29),1568,32;cBSetNotification:/0(0,33),1600,32;hlSetVibration:/0(0,35),1632,32;lSetVibration:/0(0,29),1664,32;cBSetVibration:/0(0,33),1696,32;__base_ctor::(0,37)=#(0,25),(0,6),(0,38)=*(0,25),(0,3),(13,1),(96,4),(0,6);:_ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,37):_ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__base_dtor::(0,39)=#(0,25),(0,6),(0,38),(0,6);:_ZN9OptionTabD2Ev;2A.;__comp_dtor::(0,39):_ZN9OptionTabD1Ev;2A*0;(0,25);;__deleting_dtor::(0,39):_ZN9OptionTabD0Ev;2A*1;(0,25);;dataDownloaded::(0,40)=#(0,25),(0,6),(0,38),(6,10),(0,3),(0,6);:_ZN9OptionTab14dataDownloadedEii;2A*48;(0,25);;radioButtonSelected::(0,41)=#(0,25),(0,6),(0,38),(0,31),(0,3),(70,32),(0,6);:_ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE;2A*49;(0,25);;checkBoxStateChanged::(0,42)=#(0,25),(0,6),(0,38),(0,33),(0,4),(0,6);:_ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb;2A*50;(0,25);;orientationChange::(0,43)=#(0,25),(0,6),(0,38),(0,3),(0,6);:_ZN9OptionTab17orientationChangeEi;2A.;createUI::(0,39):_ZN9OptionTab8createUIEv;2A.;operator=::(0,44)=#(0,25),(0,45)=&(0,25),(0,38),(0,46)=&(0,47)=k(0,25),(0,6);:_ZN9OptionTabaSERKS_;2A.;__base_ctor::(0,48)=#(0,25),(0,6),(0,38),(0,46),(0,6);:_ZN9OptionTabC2ERKS_;2A.;__comp_ctor::(0,48):_ZN9OptionTabC1ERKS_;2A.;;~%(20,78);",128,0,30,0
+	.stabs	"OptionStackScreen:Tt(0,49)=s108!2,020,(0,50)=xsStackScreen:;02768,(80,4);LANGUAGE:/0(0,3),800,32;mOptionTab:/0(0,38),832,32;__base_ctor::(0,51)=#(0,49),(0,6),(0,52)=*(0,49),(0,3),(13,1),(96,4),(0,6);:_ZN17OptionStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,51):_ZN17OptionStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;stackScreenScreenPopped::(0,53)=#(0,49),(0,6),(0,52),(0,54)=*(0,50),(80,32),(80,32),(0,6);:_ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,49);;orientationChange::(0,55)=#(0,49),(0,6),(0,52),(0,3),(0,6);:_ZN17OptionStackScreen17orientationChangeEi;2A.;operator=::(0,56)=#(0,49),(0,57)=&(0,49),(0,52),(0,58)=&(0,59)=k(0,49),(0,6);:_ZN17OptionStackScreenaSERKS_;2A.;__base_ctor::(0,60)=#(0,49),(0,6),(0,52),(0,58),(0,6);:_ZN17OptionStackScreenC2ERKS_;2A.;__comp_ctor::(0,60):_ZN17OptionStackScreenC1ERKS_;2A.;__base_dtor::(0,61)=#(0,49),(0,6),(0,52),(0,6);:_ZN17OptionStackScreenD2Ev;2A.;__comp_dtor::(0,61):_ZN17OptionStackScreenD1Ev;2A*0;(0,49);;__deleting_dtor::(0,61):_ZN17OptionStackScreenD0Ev;2A*1;(0,49);;;~%(20,78);",128,0,84,0
+	.stabs	"WebViewListener:Tt(19,4)=s4_vptr$WebViewListener:(0,62)=*(0,1),0,32;__base_ctor::(0,63)=#(19,4),(0,6),(19,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,63):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,63):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,63):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(19,4);;__deleting_dtor::(0,63):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(19,4);;webViewHookInvoked::(0,64)=#(19,4),(0,6),(19,3),(0,65)=*(0,66)=xsWebView:,(0,3),(6,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(19,4);;webViewContentLoading::(0,67)=#(19,4),(0,6),(19,3),(0,65),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(19,4);;operator=::(0,68)=#(19,4),(0,69)=&(19,4),(19,3),(0,70)=&(0,71)=k(19,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,72)=#(19,4),(0,6),(19,3),(0,70),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,72):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(19,4);",128,0,50,0
+	.stabs	"StackScreenListener:Tt(80,4)=s4_vptr$StackScreenListener:(0,62),0,32;stackScreenScreenPopped::(0,73)=#(80,4),(0,6),(80,3),(0,54),(80,32),(80,32),(0,6);:_ZN8NativeUI19StackScreenListener23stackScreenScreenPoppedEPNS_11StackScreenEPNS_6ScreenES4_;2A*0;(80,4);;operator=::(0,74)=#(80,4),(0,75)=&(80,4),(80,3),(0,76)=&(0,77)=k(80,4),(0,6);:_ZN8NativeUI19StackScreenListeneraSERKS0_;2A.;__base_ctor::(0,78)=#(80,4),(0,6),(80,3),(0,76),(0,6);:_ZN8NativeUI19StackScreenListenerC2ERKS0_;2A.;__comp_ctor::(0,78):_ZN8NativeUI19StackScreenListenerC1ERKS0_;2A.;__base_ctor::(0,79)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI19StackScreenListenerC2Ev;2A.;__comp_ctor::(0,79):_ZN8NativeUI19StackScreenListenerC1Ev;2A.;;~%(80,4);",128,0,48,0
+	.stabs	"RadioGroupListener:Tt(70,4)=s4_vptr$RadioGroupListener:(0,62),0,32;radioButtonSelected::(0,80)=#(70,4),(0,6),(70,3),(0,31),(0,3),(70,32),(0,6);:_ZN8NativeUI18RadioGroupListener19radioButtonSelectedEPNS_10RadioGroupEiPNS_11RadioButtonE;2A*0;(70,4);;operator=::(0,81)=#(70,4),(0,82)=&(70,4),(70,3),(0,83)=&(0,84)=k(70,4),(0,6);:_ZN8NativeUI18RadioGroupListeneraSERKS0_;2A.;__base_ctor::(0,85)=#(70,4),(0,6),(70,3),(0,83),(0,6);:_ZN8NativeUI18RadioGroupListenerC2ERKS0_;2A.;__comp_ctor::(0,85):_ZN8NativeUI18RadioGroupListenerC1ERKS0_;2A.;__base_ctor::(0,86)=#(70,4),(0,6),(70,3),(0,6);:_ZN8NativeUI18RadioGroupListenerC2Ev;2A.;__comp_ctor::(0,86):_ZN8NativeUI18RadioGroupListenerC1Ev;2A.;;~%(70,4);",128,0,47,0
+	.stabs	"CheckBoxListener:Tt(33,4)=s4_vptr$CheckBoxListener:(0,62),0,32;checkBoxStateChanged::(0,87)=#(33,4),(0,6),(33,3),(0,33),(0,4),(0,6);:_ZN8NativeUI16CheckBoxListener20checkBoxStateChangedEPNS_8CheckBoxEb;2A*0;(33,4);;operator=::(0,88)=#(33,4),(0,89)=&(33,4),(33,3),(0,90)=&(0,91)=k(33,4),(0,6);:_ZN8NativeUI16CheckBoxListeneraSERKS0_;2A.;__base_ctor::(0,92)=#(33,4),(0,6),(33,3),(0,90),(0,6);:_ZN8NativeUI16CheckBoxListenerC2ERKS0_;2A.;__comp_ctor::(0,92):_ZN8NativeUI16CheckBoxListenerC1ERKS0_;2A.;__base_ctor::(0,93)=#(33,4),(0,6),(33,3),(0,6);:_ZN8NativeUI16CheckBoxListenerC2Ev;2A.;__comp_ctor::(0,93):_ZN8NativeUI16CheckBoxListenerC1Ev;2A.;;~%(33,4);",128,0,47,0
+	.stabs	"HttpConnectionListener:Tt(0,94)=s4!1,020,(0,95)=xsConnectionListener:;httpFinished::(0,96)=#(0,94),(0,6),(0,97)=*(0,94),(0,98)=*(0,99)=xsHttpConnection:,(0,3),(0,6);:_ZN6MAUtil22HttpConnectionListener12httpFinishedEPNS_14HttpConnectionEi;2A*4;(0,94);;operator=::(0,100)=#(0,94),(0,101)=&(0,94),(0,97),(0,102)=&(0,103)=k(0,94),(0,6);:_ZN6MAUtil22HttpConnectionListeneraSERKS0_;2A.;__base_ctor::(0,104)=#(0,94),(0,6),(0,97),(0,102),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2ERKS0_;2A.;__comp_ctor::(0,104):_ZN6MAUtil22HttpConnectionListenerC1ERKS0_;2A.;__base_ctor::(0,105)=#(0,94),(0,6),(0,97),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2Ev;2A.;__comp_ctor::(0,105):_ZN6MAUtil22HttpConnectionListenerC1Ev;2A.;;~%(0,95);",128,0,219,0
+	.stabs	"RefCounted:Tt(0,106)=s8_vptr$RefCounted:(0,62),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,107)=#(0,106),(0,6),(0,108)=*(0,106),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,107):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,109)=#(0,106),(0,6),(0,108),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,109):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,110)=#(0,106),(0,3),(0,108),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,109):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,109):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,106);;__deleting_dtor::(0,109):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,106);;operator=::(0,111)=#(0,106),(0,112)=&(0,106),(0,108),(0,113)=&(0,114)=k(0,106),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,115)=#(0,106),(0,6),(0,108),(0,113),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,115):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,106);",128,0,28,0
+	.stabs	"ConnListener:Tt(12,168)=s8_vptr$ConnListener:(0,62),0,32;_mConn:/0(6,10),32,32;connEvent::(0,116)=#(12,168),(0,6),(12,167),(0,117)=&(0,118)=k(6,103),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(12,168);;operator=::(0,119)=#(12,168),(0,120)=&(12,168),(12,167),(0,121)=&(0,122)=k(12,168),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,123)=#(12,168),(0,6),(12,167),(0,121),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,123):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,124)=#(12,168),(0,6),(12,167),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,124):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(12,168);",128,0,100,0
+	.ctor __GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+	.dtor __GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
 	.global	__ZTV9OptionTab
 .data
 	.align 4
@@ -4311,108 +528,3194 @@ __ZTV9OptionTab:
 	.long	-124
 	.long	0
 	.long	__ZThn124_N9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
-	.stabs	"OptionTab:Tt(0,27)=s212!4,020,(80,33);02576,(0,30)=xsHighLevelHttpConnection:;02960,(70,4);02992,(33,4);_LOGINTOKEN:/0(13,1),1024,32;LANGUAGE:/0(0,3),1056,32;_modeAuth:/0(13,1),1088,32;_idMobile:/0(0,15),1120,64;_tokenConnection:/0(13,1),1184,32;_tokenMobile:/0(13,1),1216,32;_login:/0(13,1),1248,32;_vibrate:/0(0,4),1280,8;_notification:/0(0,4),1288,8;vLOption:/0(0,31)=*(0,32)=xsPage:,1312,32;lAuthenticationMode:/0(0,33)=*(0,34)=xsLabel:,1344,32;rGAuthenticationChoice:/0(0,35)=*(0,36)=xsRadioGroup:,1376,32;rBModeCredential:/0(70,32),1408,32;rBModeNone:/0(70,32),1440,32;lNotificationOption:/0(0,33),1472,32;hlSetNotification:/0(0,37)=*(0,38)=xsHorizontalLayout:,1504,32;lSetNotification:/0(0,33),1536,32;cBSetNotification:/0(0,28),1568,32;hlSetVibration:/0(0,37),1600,32;lSetVibration:/0(0,33),1632,32;cBSetVibration:/0(0,28),1664,32;__base_ctor::(0,39)=#(0,27),(0,6),(0,26),(0,3),(13,1),(96,4),(0,6);:_ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,39):_ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__base_dtor::(0,40)=#(0,27),(0,6),(0,26),(0,6);:_ZN9OptionTabD2Ev;2A.;__comp_dtor::(0,40):_ZN9OptionTabD1Ev;2A*0;(0,27);;__deleting_dtor::(0,40):_ZN9OptionTabD0Ev;2A*1;(0,27);;dataDownloaded::(0,41)=#(0,27),(0,6),(0,26),(6,10),(0,3),(0,6);:_ZN9OptionTab14dataDownloadedEii;2A*48;(0,27);;radioButtonSelected::(0,42)=#(0,27),(0,6),(0,26),(0,35),(0,3),(70,32),(0,6);:_ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE;2A*49;(0,27);;checkBoxStateChanged::(0,43)=#(0,27),(0,6),(0,26),(0,28),(0,4),(0,6);:_ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb;2A*50;(0,27);;orientationChange::(0,44)=#(0,27),(0,6),(0,26),(0,3),(0,6);:_ZN9OptionTab17orientationChangeEi;2A.;createUI::(0,40):_ZN9OptionTab8createUIEv;2A.;operator=::(0,45)=#(0,27),(0,46)=&(0,27),(0,26),(0,47)=&(0,48)=k(0,27),(0,6);:_ZN9OptionTabaSERKS_;2A.;__base_ctor::(0,49)=#(0,27),(0,6),(0,26),(0,47),(0,6);:_ZN9OptionTabC2ERKS_;2A.;__comp_ctor::(0,49):_ZN9OptionTabC1ERKS_;2A.;;~%(20,78);",128,0,30,0
+	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
 	.align 4
 __ZTVN8NativeUI18RadioGroupListenerE:
 	.long	0
 	.long	0
 	.long	___cxa_pure_virtual
-	.stabs	"RadioGroupListener:Tt(70,4)=s4_vptr$RadioGroupListener:(0,50)=*(0,1),0,32;radioButtonSelected::(0,51)=#(70,4),(0,6),(70,3),(0,35),(0,3),(70,32),(0,6);:_ZN8NativeUI18RadioGroupListener19radioButtonSelectedEPNS_10RadioGroupEiPNS_11RadioButtonE;2A*0;(70,4);;operator=::(0,52)=#(70,4),(0,53)=&(70,4),(70,3),(0,54)=&(0,55)=k(70,4),(0,6);:_ZN8NativeUI18RadioGroupListeneraSERKS0_;2A.;__base_ctor::(0,56)=#(70,4),(0,6),(70,3),(0,54),(0,6);:_ZN8NativeUI18RadioGroupListenerC2ERKS0_;2A.;__comp_ctor::(0,56):_ZN8NativeUI18RadioGroupListenerC1ERKS0_;2A.;__base_ctor::(0,57)=#(70,4),(0,6),(70,3),(0,6);:_ZN8NativeUI18RadioGroupListenerC2Ev;2A.;__comp_ctor::(0,57):_ZN8NativeUI18RadioGroupListenerC1Ev;2A.;;~%(70,4);",128,0,47,0
 	.align 4
 __ZTVN8NativeUI16CheckBoxListenerE:
 	.long	0
 	.long	0
 	.long	___cxa_pure_virtual
-	.stabs	"CheckBoxListener:Tt(33,4)=s4_vptr$CheckBoxListener:(0,50),0,32;checkBoxStateChanged::(0,58)=#(33,4),(0,6),(33,3),(0,28),(0,4),(0,6);:_ZN8NativeUI16CheckBoxListener20checkBoxStateChangedEPNS_8CheckBoxEb;2A*0;(33,4);;operator=::(0,59)=#(33,4),(0,60)=&(33,4),(33,3),(0,61)=&(0,62)=k(33,4),(0,6);:_ZN8NativeUI16CheckBoxListeneraSERKS0_;2A.;__base_ctor::(0,63)=#(33,4),(0,6),(33,3),(0,61),(0,6);:_ZN8NativeUI16CheckBoxListenerC2ERKS0_;2A.;__comp_ctor::(0,63):_ZN8NativeUI16CheckBoxListenerC1ERKS0_;2A.;__base_ctor::(0,64)=#(33,4),(0,6),(33,3),(0,6);:_ZN8NativeUI16CheckBoxListenerC2Ev;2A.;__comp_ctor::(0,64):_ZN8NativeUI16CheckBoxListenerC1Ev;2A.;;~%(33,4);",128,0,47,0
-	.stabs	"HttpConnectionListener:Tt(0,65)=s4!1,020,(0,66)=xsConnectionListener:;httpFinished::(0,67)=#(0,65),(0,6),(0,68)=*(0,65),(0,69)=*(0,70)=xsHttpConnection:,(0,3),(0,6);:_ZN6MAUtil22HttpConnectionListener12httpFinishedEPNS_14HttpConnectionEi;2A*4;(0,65);;operator=::(0,71)=#(0,65),(0,72)=&(0,65),(0,68),(0,73)=&(0,74)=k(0,65),(0,6);:_ZN6MAUtil22HttpConnectionListeneraSERKS0_;2A.;__base_ctor::(0,75)=#(0,65),(0,6),(0,68),(0,73),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2ERKS0_;2A.;__comp_ctor::(0,75):_ZN6MAUtil22HttpConnectionListenerC1ERKS0_;2A.;__base_ctor::(0,76)=#(0,65),(0,6),(0,68),(0,6);:_ZN6MAUtil22HttpConnectionListenerC2Ev;2A.;__comp_ctor::(0,76):_ZN6MAUtil22HttpConnectionListenerC1Ev;2A.;;~%(0,66);",128,0,219,0
-	.stabs	"ConnListener:Tt(12,168)=s8_vptr$ConnListener:(0,50),0,32;_mConn:/0(6,10),32,32;connEvent::(0,77)=#(12,168),(0,6),(12,167),(0,78)=&(0,79)=k(6,103),(0,6);:_ZN6MAUtil12ConnListener9connEventERK15MAConnEventData;2A*0;(12,168);;operator=::(0,80)=#(12,168),(0,81)=&(12,168),(12,167),(0,82)=&(0,83)=k(12,168),(0,6);:_ZN6MAUtil12ConnListeneraSERKS0_;2A.;__base_ctor::(0,84)=#(12,168),(0,6),(12,167),(0,82),(0,6);:_ZN6MAUtil12ConnListenerC2ERKS0_;2A.;__comp_ctor::(0,84):_ZN6MAUtil12ConnListenerC1ERKS0_;2A.;__base_ctor::(0,85)=#(12,168),(0,6),(12,167),(0,6);:_ZN6MAUtil12ConnListenerC2Ev;2A.;__comp_ctor::(0,85):_ZN6MAUtil12ConnListenerC1Ev;2A.;;~%(12,168);",128,0,100,0
+LC0:
+	.ascii "mosync.device.OS\0"
+LC1:
+	.ascii "Android\0"
+LC2:
+	.ascii "iPhone OS\0"
+.code
+	.stabs	"_Z11getPlatformv:f(0,3)",36,0,71,__Z11getPlatformv
+
+.func __Z11getPlatformv, 0, int
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext1
+Ltext1:
+	.line 71
+	push rt,d0
+	sub  sp,#0x100
+	ld   fr,sp
+	add  fr,#0x10c
+	.dlab LBB2
+	.dlab LBB3
+	.dlab LBB4
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext2
+Ltext2:
+	.line 6598
+	ld   d0,fr
+	add  d0,#0xfffffef4
+	.dlab LBB5
+	ld   i0,#0x5a
+	ld   i1,#LC0
+	ld   i2,d0
+	ld   i3,#0x100
+	call &_maIOCtl ; call non-native
+	.dlab LBE5
+	.dlab LBE4
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext3
+Ltext3:
+	.line 75
+	ld   i0,d0
+	ld   i1,#LC1
+	call &_strcmp ; call non-native
+	.line 77
+	ld   r0,r14
+	.line 75
+	ld   r1,#0x0
+	jc   eq,r14,r1,#L1
+	.line 81
+	ld   i0,d0
+	ld   i1,#LC2
+	call &_strcmp ; call non-native
+	.line 82
+	neg r0,r14
+	or   r0,r14
+	srl  r0,#0x1f
+	add  r0,#0x1
+L1:
+	.dlab LBE3
+	.dlab LBE2
+	.line 85
+	ld   r14,r0
+	add  sp,#0x100
+	pop  rt,d0
+	ret
+	.stabs	"platform:(0,125)=ar(6,57);0;255;(0,19)",128,0,72,-268
+	.stabn	192,0,0,LBB3-__Z11getPlatformv
+	.stabs	"buf:r(6,5)",64,0,6598,4
+	.stabn	192,0,0,LBB4-__Z11getPlatformv
+	.stabn	224,0,0,LBE4-__Z11getPlatformv
+	.stabn	224,0,0,LBE3-__Z11getPlatformv
+Lscope0:
+.data
+LC3:
+	.ascii "/\0"
+LC4:
+	.ascii "*\0"
+LC5:
+	.ascii "mosync.path.local\0"
+LC6:
+	.ascii "Got local path: %i\12\0"
+LC7:
+	.ascii "\0"
+LC8:
+	.ascii "C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h\0"
+.code
+	.stabs	"_Z12getLocalPathv:f(13,1)",36,0,129,__Z12getLocalPathv
+
+.func __Z12getLocalPathv, 1, int
+	.line 129
+	push rt,d4
+	sub  sp,#0x10
+	ld   fr,sp
+	add  fr,#0x2c
+	ld   d3,i0
+	.dlab LBB6
+	.dlab LBB7
+	.dlab LBB8
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext4
+Ltext4:
+	.line 36
+	ld   d4,fr
+	add  d4,#0xffffffe0
+	.dlab LBB9
+	ld   r0,#0xffffffff
+	ld   [d4],r0
+	.dlab LBE9
+	.dlab LBE8
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext5
+Ltext5:
+	.line 132
+	ld   i0,d4
+	ld   i1,#LC3
+	ld   i2,#LC4
+	ld   i3,#0x0
+	call &__ZN10FileLister5startEPKcS1_i ; call non-native
+	.line 134
+	ld   d2,fr
+	add  d2,#0xffffffdc
+	ld   i0,d2
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	.dlab LBB10
+	.dlab LBB11
+	.dlab LBB12
+	.dlab LBB13
+	.dlab LBB14
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext6
+Ltext6:
+	.line 6598
+	ld   i0,#0x5a
+	ld   i1,#LC5
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	ld   d1,r15
+	ld   i1,r14
+	.dlab LBE14
+	.dlab LBE13
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext7
+Ltext7:
+	.line 122
+	ld   r0,#0x0
+	jc   lt,d0,r0,#L11
+	.line 124
+	ld   i0,d2
+	add  i1,#0xffffffff
+	call &__ZN6MAUtil11BasicStringIcE6resizeEi ; call non-native
+	.dlab LBB15
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext8
+Ltext8:
+	.line 6598
+	ld   i0,d2
+	call &__ZN6MAUtil11BasicStringIcE7pointerEv ; call non-native
+	.dlab LBB16
+	ld   i0,#0x5a
+	ld   i1,#LC5
+	ld   i2,r14
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	.dlab LBE16
+	.dlab LBE15
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext9
+Ltext9:
+	.line 125
+	ld   r14,d0
+L11:
+	.dlab LBE12
+	.dlab LBE11
+	.dlab LBE10
+	.line 138
+	ld   r0,#0x0
+	jc   le,r14,r0,#L13
+	.line 140
+	ld   [sp],r14
+	ld   i0,#LC6
+	call &_printf ; call non-native
+	.line 141
+	ld   d0,fr
+	add  d0,#0xffffffd8
+	ld   i0,d0
+	ld   i1,#LC7
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d3
+	ld   i1,d2
+	ld   i2,d0
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	.dlab LBB17
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE17
+	.dlab LBB18
+	.line 148
+	ld   i0,d2
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBB19
+	.dlab LBB20
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext10
+Ltext10:
+	.line 37
+	ld   i0,d4
+	call &__ZN10FileLister5closeEv ; call non-native
+	.dlab LBE20
+	.dlab LBE19
+	.dlab LBE18
+	.dlab LBE7
+	.dlab LBE6
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext11
+Ltext11:
+	.line 149
+	ld   r14,d3
+	add  sp,#0x10
+	pop  rt,d4
+	ret
+L13:
+	.dlab LBB21
+	.dlab LBB22
+	.line 145
+	ld   i0,d4
+	ld   i1,#LC7
+	ld   i2,#LC4
+	ld   i3,#0x0
+	call &__ZN10FileLister5startEPKcS1_i ; call non-native
+	.line 146
+	ld   i0,d4
+	ld   i1,d2
+	call &__ZN10FileLister4nextERN6MAUtil11BasicStringIcEE ; call non-native
+	.line 147
+	ld   r0,#0x0
+	jc   le,r14,r0,#L23
+	.line 148
+	ld   i0,d3
+	ld   i1,d2
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	.dlab LBB23
+	ld   i0,d2
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBB24
+	.dlab LBB25
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext12
+Ltext12:
+	.line 37
+	ld   i0,d4
+	call &__ZN10FileLister5closeEv ; call non-native
+	.dlab LBE25
+	.dlab LBE24
+	.dlab LBE23
+	.dlab LBE22
+	.dlab LBE21
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext13
+Ltext13:
+	.line 149
+	ld   r14,d3
+	add  sp,#0x10
+	pop  rt,d4
+	ret
+L23:
+	.dlab LBB26
+	.dlab LBB27
+	.line 147
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x93
+	call &_bfeHandler ; call non-native
+	.dlab LBE27
+	.dlab LBE26
+	.stabs	"fl:(97,1)",128,0,131,-32
+	.stabs	"path:(13,1)",128,0,134,-36
+	.stabn	192,0,0,LBB7-__Z12getLocalPathv
+	.stabn	224,0,0,LBE7-__Z12getLocalPathv
+	.stabs	"fl:(97,1)",128,0,131,-32
+	.stabs	"path:(13,1)",128,0,134,-36
+	.stabn	192,0,0,LBB22-__Z12getLocalPathv
+	.stabn	224,0,0,LBE22-__Z12getLocalPathv
+	.stabs	"fl:(97,1)",128,0,131,-32
+	.stabs	"path:(13,1)",128,0,134,-36
+	.stabn	192,0,0,LBB27-__Z12getLocalPathv
+	.stabn	224,0,0,LBE27-__Z12getLocalPathv
+Lscope1:
+.data
+LC9:
+	.ascii "trytowrite\0"
+LC10:
+	.ascii "EA_mobile_app_conf.txt\0"
+LC11:
+	.ascii "OpenWrite '%s'\12\0"
+LC13:
+	.ascii "Truncating file...\0"
+LC15:
+	.ascii "true\0"
+LC17:
+	.ascii "trytowrite1\0"
+LC18:
+	.ascii "{\"login\" : \"\0"
+LC19:
+	.ascii "trytowrite1.01\0"
+LC20:
+	.ascii "trytowrite1.02\0"
+LC21:
+	.ascii "\",\"token_mobile\" : \"\0"
+LC22:
+	.ascii "trytowrite1.03\0"
+LC23:
+	.ascii "trytowrite1.1\0"
+LC24:
+	.ascii "\",\"token_authent\" : \"\0"
+LC25:
+	.ascii "trytowrite1.2\0"
+LC26:
+	.ascii "\",\"authentication_mode\" : \"\0"
+LC27:
+	.ascii "trytowrite1.3\0"
+LC28:
+	.ascii "\",\"id_media_value\" : \0"
+LC29:
+	.ascii "trytowrite1.4\0"
+LC30:
+	.ascii ",\"notification\" : \0"
+LC31:
+	.ascii ",\"vibrate\" : \0"
+LC32:
+	.ascii "trytowrite1.5\0"
+LC33:
+	.ascii "}\0"
+LC34:
+	.ascii "trytowrite1.6\0"
+LC35:
+	.ascii "trytowrite1.7\0"
+LC36:
+	.ascii "Closing...\0"
+LC47:
+	.ascii "Done.\0"
+LC16:
+	.ascii "false\0"
+LC37:
+	.ascii "trytowrite2\0"
+LC38:
+	.ascii "saveToStore\0"
+LC39:
+	.ascii "saveToStore1\0"
+LC45:
+	.ascii "trytowrite3\0"
+LC14:
+	.ascii "Creating file...\0"
+LC12:
+	.ascii "Error %i\12\0"
+LC40:
+	.ascii "saveToStore2\0"
+LC41:
+	.ascii "saveToStore3\0"
+LC42:
+	.ascii "saveToStore4\0"
+LC43:
+	.ascii "saveToStore5\0"
+LC44:
+	.ascii "saveToStore6\0"
+.code
+	.stabs	"_Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb:f(96,3)",36,0,259,__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"login:P(97,6)",64,0,259,10
+	.stabs	"tokenMobile:P(97,6)",64,0,259,11
+	.stabs	"tokenAuthent:p(97,6)",160,0,259,-116
+	.stabs	"mode:p(97,6)",160,0,259,-120
+	.stabs	"idMedia:p(0,126)=&(0,15)",160,0,259,0
+	.stabs	"vibrate:p(0,4)",160,0,259,4
+	.stabs	"notification:p(0,4)",160,0,259,8
+
+.func __Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb, 7, int
+	.line 259
+	push rt,d7
+	sub  sp,#0x60
+	ld   fr,sp
+	add  fr,#0x88
+	ld   d6,i0
+	ld   d7,i1
+	ld   [fr,-116],i2
+	ld   [fr,-120],i3
+	ld   r0,[fr]
+	ld   [fr,-124],r0
+	.dlab LBB28
+	.dlab LBB29
+	.line 261
+	ld   i0,#LC9
+	call &_lprintfln ; call non-native
+	.line 264
+	call &__Z11getPlatformv ; call non-native
+	ld   [fr,-132],r14
+	.dlab LBB30
+	.line 265
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L25
+	.dlab LBB31
+	.line 267
+	ld   i0,#0xffffffd0
+	add  i0,fr
+	call &__Z12getLocalPathv ; call non-native
+	ld   i0,#0xffffffcc
+	add  i0,fr
+	ld   i1,#LC10
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,#0xffffffd0
+	add  i1,fr
+	ld   i2,#0xffffffcc
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,#0xffffffcc
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffd0
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 270
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   [sp],r14
+	ld   i0,#LC11
+	call &_printf ; call non-native
+	.dlab LBB32
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext14
+Ltext14:
+	.line 6211
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	.dlab LBB33
+	ld   i0,#0x28
+	ld   i1,r14
+	ld   i2,#0x3
+	ld   i3,#0x0
+	call &_maIOCtl ; call non-native
+	ld   d2,r14
+	ld   d3,r15
+	.dlab LBE33
+	.dlab LBE32
+	ld   [fr,-128],r14
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext15
+Ltext15:
+	.line 273
+	ld   r14,#0x0
+	jc   lt,d2,r14,#L63
+	.dlab LBB34
+	.dlab LBB35
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext16
+Ltext16:
+	.line 6218
+	ld   i0,#0x29
+	ld   i1,d2
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	.dlab LBE35
+	.dlab LBE34
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext17
+Ltext17:
+	.line 280
+	ld   r0,#0x0
+	jc   lt,r14,r0,#L64
+	.line 281
+	ld   r14,#0x0
+	jc   eq,d0,r14,#L31
+	.line 283
+	ld   i0,#LC13
+	call &_puts ; call non-native
+	.dlab LBB36
+	.dlab LBB37
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext18
+Ltext18:
+	.line 6321
+	ld   i0,#0x32
+	ld   i1,d2
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+	ld   r0,r14
+	.dlab LBE37
+	.dlab LBE36
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext19
+Ltext19:
+	.line 285
+	ld   r14,#0x0
+	jc   ne,r0,r14,#L65
+L35:
+	.line 290
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+L25:
+	.dlab LBE31
+	.dlab LBE30
+	.line 295
+	ld   i0,#0xffffffcc
+	add  i0,fr
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.line 296
+	ld   i0,#0xffffffd0
+	add  i0,fr
+	ld   i1,#LC15
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.line 297
+	ld.b r14,[fr,4]
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   eq,r14,r0,#L66
+	.line 300
+	ld.b r14,[fr,8]
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   eq,r14,r0,#L67
+L40:
+	.line 303
+	ld   i0,#LC17
+	call &_lprintfln ; call non-native
+	.line 304
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,#LC18
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.line 305
+	ld   i0,#LC19
+	call &_lprintfln ; call non-native
+	.line 306
+	ld   i0,#0xffffffc8
+	add  i0,fr
+	ld   i1,d6
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	.line 307
+	ld   i0,#LC20
+	call &_lprintfln ; call non-native
+	.line 308
+	ld   i0,#0xffffffc4
+	add  i0,fr
+	ld   i1,#LC21
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.line 309
+	ld   i0,#LC22
+	call &_lprintfln ; call non-native
+	.line 310
+	ld   i0,#0xffffffc0
+	add  i0,fr
+	ld   i1,d7
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	.line 311
+	ld   i0,#LC23
+	call &_lprintfln ; call non-native
+	.dlab LBB38
+	.dlab LBB39
+	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext20
+Ltext20:
+	.line 395
+	ld   i0,#0xffffffb8
+	add  i0,fr
+	ld   i1,#LC24
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffbc
+	add  i0,fr
+	ld   i1,#0xffffffb8
+	add  i1,fr
+	ld   i2,[fr,-116]
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,#0xffffffb8
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE39
+	.dlab LBE38
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext21
+Ltext21:
+	.line 313
+	ld   i0,#LC25
+	call &_lprintfln ; call non-native
+	.dlab LBB40
+	.dlab LBB41
+	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext22
+Ltext22:
+	.line 395
+	ld   i0,#0xffffffb4
+	add  i0,fr
+	ld   i1,#LC26
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffb8
+	add  i0,fr
+	ld   i1,#0xffffffb4
+	add  i1,fr
+	ld   i2,[fr,-120]
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,#0xffffffb4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE41
+	.dlab LBE40
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext23
+Ltext23:
+	.line 315
+	ld   i0,#LC27
+	call &_lprintfln ; call non-native
+	.dlab LBB42
+	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext24
+Ltext24:
+	.line 395
+	ld   d0,fr
+	add  d0,#0xffffffb0
+	ld   i0,d0
+	ld   r14,[fr,-124]
+	ld   i1,[r14]
+	ld   i2,[r14,4]
+	call &__ZN7Convert8toStringEx ; call non-native
+	.dlab LBB43
+	ld   i0,#0xffffffac
+	add  i0,fr
+	ld   i1,#LC28
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffb4
+	add  i0,fr
+	ld   i1,#0xffffffac
+	add  i1,fr
+	ld   i2,d0
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,#0xffffffac
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE43
+	.dlab LBE42
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext25
+Ltext25:
+	.line 317
+	ld   i0,#LC29
+	call &_lprintfln ; call non-native
+	.dlab LBB44
+	.dlab LBB45
+	.stabs	"c:/MoSync/include/MAUtil/String.h",132,0,0,Ltext26
+Ltext26:
+	.line 395
+	ld   d7,fr
+	add  d7,#0xffffffa8
+	ld   i0,d7
+	ld   i1,#LC30
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d0
+	ld   i1,d7
+	ld   i2,#0xffffffd0
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE45
+	.dlab LBE44
+	ld   i0,d7
+	ld   i1,#LC31
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffac
+	add  i0,fr
+	ld   i1,d0
+	ld   i2,d7
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext27
+Ltext27:
+	.line 319
+	ld   i0,#LC32
+	call &_lprintfln ; call non-native
+	.line 320
+	ld   i0,d0
+	ld   i1,#LC33
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d7
+	ld   i1,#0xffffffcc
+	add  i1,fr
+	ld   i2,d0
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 321
+	ld   i0,#LC34
+	call &_lprintfln ; call non-native
+	.line 322
+	ld   d1,fr
+	add  d1,#0xffffffa4
+	ld   d2,fr
+	add  d2,#0xffffffa0
+	ld   d3,fr
+	add  d3,#0xffffff9c
+	ld   d4,fr
+	add  d4,#0xffffff98
+	ld   d5,fr
+	add  d5,#0xffffff94
+	ld   d6,fr
+	add  d6,#0xffffff90
+	ld   i0,d6
+	ld   i1,#0xffffffc8
+	add  i1,fr
+	ld   i2,#0xffffffc4
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d5
+	ld   i1,d6
+	ld   i2,#0xffffffc0
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d4
+	ld   i1,d5
+	ld   i2,#0xffffffbc
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d3
+	ld   i1,d4
+	ld   i2,#0xffffffb8
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d2
+	ld   i1,d3
+	ld   i2,#0xffffffb4
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d1
+	ld   i1,d2
+	ld   i2,#0xffffffac
+	add  i2,fr
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d0
+	ld   i1,d1
+	ld   i2,d7
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,d0
+	call &__ZN6MAUtil11BasicStringIcEpLERKS1_ ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d2
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d3
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d5
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 323
+	ld   i0,#LC35
+	call &_lprintfln ; call non-native
+	.line 325
+	ld   r0,[fr,-132]
+	ld   r14,#0x1
+	jc   eq,r0,r14,#L45
+	.dlab LBB46
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext28
+Ltext28:
+	.line 6332
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   d0,r14
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE4sizeEv ; call non-native
+	.dlab LBB47
+	ld   i0,#0x33
+	ld   i1,[fr,-128]
+	ld   i2,d0
+	ld   i3,r14
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	ld   d1,r15
+	ld   d2,r14
+	.dlab LBE47
+	.dlab LBE46
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext29
+Ltext29:
+	.line 327
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   i0,r14
+	call &_lprintfln ; call non-native
+	.line 330
+	ld   r0,#0x0
+	jc   ne,d0,r0,#L68
+	.line 333
+	ld   i0,#LC36
+	call &_puts ; call non-native
+	.dlab LBB48
+	.dlab LBB49
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext30
+Ltext30:
+	.line 6225
+	ld   i0,#0x2a
+	ld   i1,[fr,-128]
+	ld   i2,d0
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	.dlab LBE49
+	.dlab LBE48
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext31
+Ltext31:
+	.line 335
+	jc   ne,d0,r14,#L69
+	.line 347
+	ld   i0,#LC47
+	call &_puts ; call non-native
+L61:
+	.dlab LBB50
+	.line 348
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffac
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffb4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffb8
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffbc
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffc0
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffc4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffc8
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffd0
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,#0xffffffcc
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE50
+	ld   r14,#0x2
+	.dlab LBE29
+	.dlab LBE28
+	.line 349
+	add  sp,#0x60
+	pop  rt,d7
+	ret
+L66:
+	.dlab LBB51
+	.dlab LBB52
+	.line 298
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,#LC16
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffcc
+	add  i0,fr
+	ld   i1,#0xffffffd4
+	add  i1,fr
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 300
+	ld.b r14,[fr,8]
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   ne,r14,r0,#L40
+L67:
+	.line 301
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,#LC16
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffd0
+	add  i0,fr
+	ld   i1,#0xffffffd4
+	add  i1,fr
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	jp   #L40
+L45:
+	.line 337
+	ld   i0,#LC37
+	call &_lprintfln ; call non-native
+	.dlab LBB53
+	.dlab LBB54
+	.dlab LBB55
+	.line 153
+	ld   i0,#LC38
+	call &_lprintfln ; call non-native
+	.line 154
+	call &_maCreatePlaceholder ; call non-native
+	ld   d1,r14
+	.line 155
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE6lengthEv ; call non-native
+	ld   i0,d1
+	ld   i1,r14
+	call &_maCreateData ; call non-native
+	ld   d2,r14
+	ld   r14,[fr,-132]
+	.line 157
+	ld   i0,#LC39
+	.line 155
+	jc   eq,d2,r14,#L70
+	.line 171
+	call &_lprintfln ; call non-native
+L59:
+	.dlab LBE55
+	.dlab LBE54
+	.dlab LBE53
+	.line 339
+	ld   i0,#LC45
+	call &_lprintfln ; call non-native
+	jp   #L61
+L31:
+	.dlab LBB56
+	.dlab LBB57
+	.line 288
+	ld   i0,#LC14
+	call &_puts ; call non-native
+	.dlab LBB58
+	.dlab LBB59
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext32
+Ltext32:
+	.line 6235
+	ld   i0,#0x2b
+	ld   i1,d2
+	ld   i2,d0
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	.dlab LBE59
+	.dlab LBE58
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext33
+Ltext33:
+	.line 290
+	jc   le,d0,r14,#L35
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x122
+	.dlab LBE57
+	.dlab LBE56
+	.line 335
+	call &_bfeHandler ; call non-native
+L63:
+	.dlab LBB60
+	.dlab LBB61
+	.line 274
+	ld   [sp],d2
+	ld   i0,#LC12
+	call &_printf ; call non-native
+	.dlab LBB62
+	.line 275
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE62
+	ld   r14,#0x0
+	.dlab LBE61
+	.dlab LBE60
+	.dlab LBE52
+	.dlab LBE51
+	.line 349
+	add  sp,#0x60
+	pop  rt,d7
+	ret
+L70:
+	.dlab LBB63
+	.dlab LBB64
+	.dlab LBB65
+	.dlab LBB66
+	.dlab LBB67
+	.line 160
+	ld   i0,#LC40
+	call &_lprintfln ; call non-native
+	.line 161
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   d0,r14
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE6lengthEv ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	ld   i2,#0x0
+	ld   i3,r14
+	call &_maWriteData ; call non-native
+	.line 162
+	ld   i0,#LC41
+	call &_lprintfln ; call non-native
+	.line 163
+	ld   i0,#LC10
+	ld   i1,d2
+	call &_maOpenStore ; call non-native
+	ld   d0,r14
+	.line 165
+	ld   r0,#0x0
+	jc   le,r14,r0,#L59
+	.line 167
+	ld   i0,#LC42
+	call &_lprintfln ; call non-native
+	.line 168
+	ld   i0,d0
+	ld   i1,d1
+	call &_maWriteStore ; call non-native
+	.line 169
+	ld   i0,#LC43
+	call &_lprintfln ; call non-native
+	.line 170
+	ld   i0,d0
+	ld   i1,#0x0
+	call &_maCloseStore ; call non-native
+	.line 171
+	ld   i0,#LC44
+	call &_lprintfln ; call non-native
+	jp   #L59
+L65:
+	.dlab LBE67
+	.dlab LBE66
+	.dlab LBE65
+	.dlab LBB68
+	.dlab LBB69
+	.line 285
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x11d
+	.dlab LBE69
+	.dlab LBE68
+	.line 335
+	call &_bfeHandler ; call non-native
+L68:
+	.line 330
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x14a
+	.line 335
+	call &_bfeHandler ; call non-native
+L69:
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x14f
+	call &_bfeHandler ; call non-native
+L64:
+	.dlab LBB70
+	.dlab LBB71
+	.line 280
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0x118
+	.dlab LBE71
+	.dlab LBE70
+	.line 335
+	call &_bfeHandler ; call non-native
+	.dlab LBE64
+	.dlab LBE63
+	.stabs	"idMedia:(0,126)",128,0,259,-124
+	.stabs	"res:r(0,3)",64,0,262,8
+	.stabs	"file:(6,10)",128,0,263,-128
+	.stabs	"plateforme:(0,3)",128,0,264,-132
+	.stabs	"sVibrate:(13,1)",128,0,295,-52
+	.stabs	"sNotification:(13,1)",128,0,296,-48
+	.stabs	"tmp:(13,1)",128,0,304,-44
+	.stabs	"tmp01:(13,1)",128,0,306,-56
+	.stabs	"tmp02:(13,1)",128,0,308,-60
+	.stabs	"tmp1:(13,1)",128,0,310,-64
+	.stabs	"tmp2:(13,1)",128,0,312,-68
+	.stabs	"tmp3:(13,1)",128,0,314,-72
+	.stabs	"tmp4:(13,1)",128,0,316,-76
+	.stabs	"tmp5:(13,1)",128,0,318,-84
+	.stabs	"tmp6:(13,1)",128,0,320,-88
+	.stabn	192,0,0,LBB29-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(13,1)",128,0,267,-44
+	.stabn	192,0,0,LBB31-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE31-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"src:r(8,5)",64,0,6332,4
+	.stabn	192,0,0,LBB46-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE46-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE29-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"res:r(0,3)",64,0,262,8
+	.stabs	"file:(6,10)",128,0,263,-128
+	.stabs	"plateforme:(0,3)",128,0,264,-132
+	.stabs	"sVibrate:(13,1)",128,0,295,-52
+	.stabs	"sNotification:(13,1)",128,0,296,-48
+	.stabs	"tmp:(13,1)",128,0,304,-44
+	.stabs	"tmp01:(13,1)",128,0,306,-56
+	.stabs	"tmp02:(13,1)",128,0,308,-60
+	.stabs	"tmp1:(13,1)",128,0,310,-64
+	.stabs	"tmp2:(13,1)",128,0,312,-68
+	.stabs	"tmp3:(13,1)",128,0,314,-72
+	.stabs	"tmp4:(13,1)",128,0,316,-76
+	.stabs	"tmp5:(13,1)",128,0,318,-84
+	.stabs	"tmp6:(13,1)",128,0,320,-88
+	.stabn	192,0,0,LBB52-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"dataHandle:r(6,10)",64,0,154,5
+	.stabs	"myStore:r(6,10)",64,0,163,4
+	.stabn	192,0,0,LBB55-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE55-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(13,1)",128,0,267,-44
+	.stabn	192,0,0,LBB57-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE57-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(13,1)",128,0,267,-44
+	.stabn	192,0,0,LBB61-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE61-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE52-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"res:r(0,3)",64,0,262,8
+	.stabs	"file:(6,10)",128,0,263,-128
+	.stabs	"plateforme:(0,3)",128,0,264,-132
+	.stabs	"sVibrate:(13,1)",128,0,295,-52
+	.stabs	"sNotification:(13,1)",128,0,296,-48
+	.stabs	"tmp:(13,1)",128,0,304,-44
+	.stabs	"tmp01:(13,1)",128,0,306,-56
+	.stabs	"tmp02:(13,1)",128,0,308,-60
+	.stabs	"tmp1:(13,1)",128,0,310,-64
+	.stabs	"tmp2:(13,1)",128,0,312,-68
+	.stabs	"tmp3:(13,1)",128,0,314,-72
+	.stabs	"tmp4:(13,1)",128,0,316,-76
+	.stabs	"tmp5:(13,1)",128,0,318,-84
+	.stabs	"tmp6:(13,1)",128,0,320,-88
+	.stabn	192,0,0,LBB64-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"dataHandle:r(6,10)",64,0,154,5
+	.stabs	"myStore:r(6,10)",64,0,163,4
+	.stabn	192,0,0,LBB67-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE67-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(13,1)",128,0,267,-44
+	.stabn	192,0,0,LBB69-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE69-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabs	"filename:(13,1)",128,0,267,-44
+	.stabn	192,0,0,LBB71-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE71-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+	.stabn	224,0,0,LBE64-__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb
+Lscope2:
+	.stabs	"_ZN9OptionTab17orientationChangeEi:F(0,6)",36,0,208,__ZN9OptionTab17orientationChangeEi
+	.stabs	"this:P(0,127)=k(0,38)",64,0,208,5
+	.stabs	"screenOrientation:P(0,3)",64,0,208,13
+	.global	__ZN9OptionTab17orientationChangeEi
+
+.func __ZN9OptionTab17orientationChangeEi, 2, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext34
+Ltext34:
+	.line 208
+	push rt,d1
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x14
+	ld   d1,i0
+	.dlab LBB72
+	.line 210
+	ld   r14,#0x8
+	jc   eq,i1,r14,#L75
+	.line 216
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,#LC7
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE72
+	.line 219
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+L75:
+	.dlab LBB73
+	.line 212
+	ld   i0,[i0,132]
+	add  i0,#0x11
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,r14
+	.line 216
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE73
+	.line 219
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+Lscope3:
+	.stabs	"_ZN9OptionTabD2Ev:F(0,6)",36,0,29,__ZN9OptionTabD2Ev
+	.stabs	"this:P(0,127)",64,0,29,4
+	.global	__ZN9OptionTabD2Ev
+
+.func __ZN9OptionTabD2Ev, 1, void
+	.line 29
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB74
+	.line 29
+	ld   r14,#__ZTV9OptionTab+8
+	ld   [i0],r14
+	ld   r14,#__ZTV9OptionTab+220
+	ld   [i0,72],r14
+	ld   r14,#__ZTV9OptionTab+260
+	ld   [i0,112],r14
+	ld   r14,#__ZTV9OptionTab+288
+	ld   [i0,120],r14
+	ld   r14,#__ZTV9OptionTab+300
+	ld   [i0,124],r14
+	add  i0,#0x9c
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x98
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x94
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x88
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x80
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x48
+	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev ; call non-native
+	ld   i0,d0
+	call &__ZN8NativeUI6ScreenD2Ev ; call non-native
+	.dlab LBE74
+	.line 31
+	pop  rt,d0
+	ret
+Lscope4:
+	.set	%0=__ZN9OptionTabD1Ev
+	.stabs	"this:P(0,127)",64,0,29,12
+	.global	__ZThn72_N9OptionTabD1Ev
+
+.func __ZThn72_N9OptionTabD1Ev, 1, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext35
+Ltext35:
+	.line 30
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 30
+	add  i0,#0xffffffb8
+	call &%0 ; call non-native
+	pop  rt,fr
+	ret
+Lscope5:
+	.stabs	"_ZN9OptionTabD1Ev:F(0,6)",36,0,29,__ZN9OptionTabD1Ev
+	.stabs	"this:P(0,127)",64,0,29,4
+	.global	__ZN9OptionTabD1Ev
+
+.func __ZN9OptionTabD1Ev, 1, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext36
+Ltext36:
+	.line 29
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB75
+	.line 29
+	ld   r14,#__ZTV9OptionTab+8
+	ld   [i0],r14
+	ld   r14,#__ZTV9OptionTab+220
+	ld   [i0,72],r14
+	ld   r14,#__ZTV9OptionTab+260
+	ld   [i0,112],r14
+	ld   r14,#__ZTV9OptionTab+288
+	ld   [i0,120],r14
+	ld   r14,#__ZTV9OptionTab+300
+	ld   [i0,124],r14
+	add  i0,#0x9c
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x98
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x94
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x88
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x80
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x48
+	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev ; call non-native
+	ld   i0,d0
+	call &__ZN8NativeUI6ScreenD2Ev ; call non-native
+	.dlab LBE75
+	.line 31
+	pop  rt,d0
+	ret
+Lscope6:
+	.set	%1=__ZN9OptionTabD0Ev
+	.stabs	"this:P(0,127)",64,0,29,12
+	.global	__ZThn72_N9OptionTabD0Ev
+
+.func __ZThn72_N9OptionTabD0Ev, 1, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext37
+Ltext37:
+	.line 30
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 30
+	add  i0,#0xffffffb8
+	call &%1 ; call non-native
+	pop  rt,fr
+	ret
+Lscope7:
+	.stabs	"_ZN9OptionTabD0Ev:F(0,6)",36,0,29,__ZN9OptionTabD0Ev
+	.stabs	"this:P(0,127)",64,0,29,4
+	.global	__ZN9OptionTabD0Ev
+
+.func __ZN9OptionTabD0Ev, 1, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext38
+Ltext38:
+	.line 29
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB76
+	.line 29
+	ld   r14,#__ZTV9OptionTab+8
+	ld   [i0],r14
+	ld   r14,#__ZTV9OptionTab+220
+	ld   [i0,72],r14
+	ld   r14,#__ZTV9OptionTab+260
+	ld   [i0,112],r14
+	ld   r14,#__ZTV9OptionTab+288
+	ld   [i0,120],r14
+	ld   r14,#__ZTV9OptionTab+300
+	ld   [i0,124],r14
+	add  i0,#0x9c
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x98
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x94
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x88
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x80
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	add  i0,#0x48
+	call &__ZN8Wormhole23HighLevelHttpConnectionD2Ev ; call non-native
+	ld   i0,d0
+	call &__ZN8NativeUI6ScreenD2Ev ; call non-native
+	.dlab LBE76
+	.line 31
+	ld   i0,d0
+	call &__ZdlPv ; call non-native
+	pop  rt,d0
+	ret
+Lscope8:
+	.set	%2=__ZN9OptionTab14dataDownloadedEii
+	.stabs	"this:P(0,127)",64,0,34,12
+	.stabs	"data:P(6,10)",64,0,34,13
+	.stabs	"result:P(0,3)",64,0,34,14
+	.global	__ZThn72_N9OptionTab14dataDownloadedEii
+
+.func __ZThn72_N9OptionTab14dataDownloadedEii, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext39
+Ltext39:
+	.line 30
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 30
+	add  i0,#0xffffffb8
+	call &%2 ; call non-native
+	pop  rt,fr
+	ret
+Lscope9:
+.data
+LC48:
+	.ascii "dataDownloaded HomeTab\0"
+.code
+	.stabs	"_ZN9OptionTab14dataDownloadedEii:F(0,6)",36,0,34,__ZN9OptionTab14dataDownloadedEii
+	.stabs	"this:P(0,127)",64,0,34,12
+	.stabs	"data:P(6,10)",64,0,34,13
+	.stabs	"result:P(0,3)",64,0,34,14
+	.global	__ZN9OptionTab14dataDownloadedEii
+
+.func __ZN9OptionTab14dataDownloadedEii, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext40
+Ltext40:
+	.line 34
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.dlab LBB77
+	.line 35
+	ld   i0,#LC48
+	call &_lprintfln ; call non-native
+	.dlab LBE77
+	pop  rt,fr
+	ret
+Lscope10:
+	.lcomm	_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data, 600 ; size=600
+.data
+LC49:
+	.ascii "OpenRead '%s'\12\0"
+LC51:
+	.ascii "Size: %i\12\0"
+LC52:
+	.ascii "Closing...\12\0"
+LC53:
+	.ascii "Done.\12\0"
+LC57:
+	.ascii "authentication_mode\0"
+LC58:
+	.ascii "id_media_value\0"
+LC59:
+	.ascii "token_authent\0"
+LC60:
+	.ascii "token_mobile\0"
+LC61:
+	.ascii "login\0"
+LC62:
+	.ascii "vibrate\0"
+LC63:
+	.ascii "notification\0"
+LC64:
+	.ascii "Gestion du compte\0"
+LC65:
+	.ascii "0\0"
+LC66:
+	.ascii "none\0"
+LC50:
+	.ascii "File does not exist.\0"
+LC54:
+	.ascii "ERROR FILE STRORAGE\0"
+LC55:
+	.ascii "Can not read config file.\0"
 LC56:
+	.ascii "Can not read config file\0"
+.code
+	.stabs	"_ZN9OptionTab8createUIEv:F(0,6)",36,0,40,__ZN9OptionTab8createUIEv
+	.stabs	"this:P(0,127)",64,0,40,9
+	.global	__ZN9OptionTab8createUIEv
+
+.func __ZN9OptionTab8createUIEv, 1, void
+	.line 40
+	push rt,d7
+	sub  sp,#0x18
+	ld   fr,sp
+	add  fr,#0x40
+	ld   d5,i0
+	.line 40
+	ld   [fr,-60],sp
+	.dlab LBB78
+	.dlab LBB79
+	.line 42
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	.dlab LBB80
+	.dlab LBB81
+	.dlab LBB82
+	.dlab LBB83
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext41
+Ltext41:
+	.line 203
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L93
+	.dlab LBB84
+	.line 204
+	ld   d7,fr
+	add  d7,#0xffffffd0
+	ld   d0,fr
+	add  d0,#0xffffffcc
+	ld   i0,d0
+	call &__Z12getLocalPathv ; call non-native
+	ld   d6,fr
+	add  d6,#0xffffffc8
+	ld   i0,d6
+	ld   i1,#LC10
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d7
+	ld   i1,d0
+	ld   i2,d6
+	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 207
+	ld   i0,d7
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   [sp],r14
+	ld   i0,#LC49
+	call &_lprintfln ; call non-native
+	.dlab LBB85
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext42
+Ltext42:
+	.line 6211
+	ld   i0,d7
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	.dlab LBB86
+	ld   i0,#0x28
+	ld   i1,r14
+	ld   i2,#0x1
+	ld   i3,#0x0
+	call &_maIOCtl ; call non-native
+	ld   d2,r14
+	ld   d3,r15
+	.dlab LBE86
+	.dlab LBE85
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext43
+Ltext43:
+	.line 209
+	ld   r1,#0x0
+	jc   lt,r14,r1,#L138
+	.dlab LBB87
+	.dlab LBB88
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext44
+Ltext44:
+	.line 6218
+	ld   i0,#0x29
+	ld   i1,r14
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	ld   d1,r15
+	.dlab LBE88
+	.dlab LBE87
+	ld   d4,r14
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext45
+Ltext45:
+	.line 216
+	ld   r14,#0x0
+	jc   lt,d0,r14,#L139
+	.line 217
+	ld   r0,#0x0
+	jc   eq,d0,r0,#L140
+	.dlab LBB89
+	.dlab LBB90
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext46
+Ltext46:
+	.line 6254
+	ld   i0,#0x2d
+	ld   i1,d2
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	.dlab LBE90
+	.dlab LBE89
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext47
+Ltext47:
+	.line 225
+	ld   [sp],r14
+	ld   i0,#LC51
+	call &_lprintfln ; call non-native
+	.line 226
+	ld   r1,#0x0
+	jc   lt,d0,r1,#L141
+	.line 230
+	ld   r14,#0x257
+	jc   gt,d0,r14,#L142
+	.dlab LBB91
+	.dlab LBB92
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext48
+Ltext48:
+	.line 6355
+	ld   i0,#0x35
+	ld   i1,d2
+	ld   i2,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	ld   d0,r14
+	.dlab LBE92
+	.dlab LBE91
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext49
+Ltext49:
+	.line 232
+	ld   r0,#0x0
+	jc   ne,r14,r0,#L143
+	.line 233
+	ld   i0,d6
+	ld   i1,#_ZZ9tryToReadRN6MAUtil11BasicStringIcEEE4data
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,d6
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 234
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   i0,r14
+	call &_lprintfln ; call non-native
+	.line 241
+	ld   i0,#LC52
+	call &_lprintfln ; call non-native
+	.dlab LBB93
+	.dlab LBB94
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext50
+Ltext50:
+	.line 6225
+	ld   i0,#0x2a
+	ld   i1,d2
+	ld   i2,d0
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	.dlab LBE94
+	.dlab LBE93
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext51
+Ltext51:
+	.line 243
+	jc   ne,d0,r14,#L144
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE84
+	.dlab LBE83
+	.line 255
+	ld   i0,#LC53
+	call &_lprintfln ; call non-native
+L122:
+	.dlab LBE82
+	.dlab LBE81
+	.dlab LBE80
+	.dlab LBB95
+	.dlab LBB96
+	.dlab LBB97
+	.dlab LBB98
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext52
+Ltext52:
+	.line 49
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,#0x1
+	call &__ZN7Convert21formatJSONBeforeParseERN6MAUtil11BasicStringIcEEi ; call non-native
+	.line 51
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   d0,r14
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZNK6MAUtil11BasicStringIcE4sizeEv ; call non-native
+	ld   i0,d0
+	ld   i1,r14
+	call &__ZN6MAUtil7YAJLDom5parseEPKhm ; call non-native
+	ld   d2,r14
+	.line 52
+	ld   d4,fr
+	add  d4,#0xffffffc8
+	ld   d1,fr
+	add  d1,#0xffffffcc
+	ld   i0,d1
+	ld   i1,#LC57
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d1
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,8]
+	ld   i0,d4
+	ld   i1,r14
+	call d0 ; call non-native
+	ld   d6,d5
+	add  d6,#0x88
+	ld   i0,d6
+	ld   i1,d4
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 53
+	ld   i0,d4
+	ld   i1,#LC58
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d4
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,16]
+	ld   i0,r14
+	call d0 ; call non-native
+	ld   r1,r14
+	sra  r1,#0x1f
+	ld   [d5,140],r14
+	ld   [d5,144],r1
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 54
+	ld   i0,d1
+	ld   i1,#LC59
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d1
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,8]
+	ld   i0,d4
+	ld   i1,r14
+	call d0 ; call non-native
+	ld   i0,d5
+	add  i0,#0x94
+	ld   i1,d4
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 55
+	ld   i0,d1
+	ld   i1,#LC60
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d1
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,8]
+	ld   i0,d4
+	ld   i1,r14
+	call d0 ; call non-native
+	ld   i0,d5
+	add  i0,#0x98
+	ld   i1,d4
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 56
+	ld   i0,d1
+	ld   i1,#LC61
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d1
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,8]
+	ld   i0,d4
+	ld   i1,r14
+	call d0 ; call non-native
+	ld   i0,d5
+	add  i0,#0x9c
+	ld   i1,d4
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 57
+	ld   i0,d4
+	ld   i1,#LC62
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d4
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,12]
+	ld   i0,r14
+	call d0 ; call non-native
+	ld.b [d5,160],r14
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 58
+	ld   i0,d4
+	ld   i1,#LC63
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   r14,[d2]
+	ld   d0,[r14,24]
+	ld   i0,d2
+	ld   i1,d4
+	call d0 ; call non-native
+	ld   r0,[r14]
+	ld   d0,[r0,12]
+	ld   i0,r14
+	call d0 ; call non-native
+	ld.b [d5,161],r14
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 60
+	ld   i0,d4
+	ld   i1,#LC64
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,#LC65
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x44
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d4
+	ld   i2,d1
+	call &__ZN4PageC1EN6MAUtil11BasicStringIcEES2_ ; call non-native
+	ld   [d5,164],d0
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 62
+	ld   i0,[d5,132]
+	add  i0,#0x89
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d4
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE ; call non-native
+	ld   [d5,168],d0
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 64
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,168]
+	call d0 ; call non-native
+	.dlab LBB99
+	.line 68
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L125
+	.line 69
+	ld   i0,#0x48
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI10RadioGroupC1Ev ; call non-native
+	ld   [d5,172],d0
+	.line 71
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d1,[r14,52]
+	ld   i1,d0
+	call d1 ; call non-native
+	.line 72
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI11RadioButtonC1Ev ; call non-native
+	ld   [d5,176],d0
+	.line 76
+	ld   i0,[d5,132]
+	add  i0,#0x8b
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,[d5,176]
+	ld   r14,[i0]
+	ld   d0,[r14,164]
+	ld   i1,d4
+	call d0 ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 77
+	ld   i0,[d5,176]
+	ld   r14,[i0]
+	ld   d0,[r14,172]
+	ld   i1,#0xc0c0c0
+	call d0 ; call non-native
+	.line 78
+	ld   i0,[d5,172]
+	ld   r14,[i0]
+	ld   d0,[r14,160]
+	ld   i1,[d5,176]
+	call d0 ; call non-native
+	.line 79
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI11RadioButtonC1Ev ; call non-native
+	ld   [d5,180],d0
+	.line 80
+	ld   i0,[d5,132]
+	add  i0,#0x8d
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,[d5,180]
+	ld   r14,[i0]
+	ld   d0,[r14,164]
+	ld   i1,d4
+	call d0 ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 81
+	ld   i0,[d5,180]
+	ld   r14,[i0]
+	ld   d0,[r14,172]
+	ld   i1,#0xc0c0c0
+	call d0 ; call non-native
+	.line 82
+	ld   i0,[d5,172]
+	ld   r14,[i0]
+	ld   d0,[r14,160]
+	ld   i1,[d5,180]
+	call d0 ; call non-native
+	.line 83
+	ld   i0,d4
+	ld   i1,#LC66
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d6
+	ld   i1,d4
+	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_ ; call non-native
+	ld   d0,r14
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	and  d0,#0xff  ; zero extend
+	ld   r1,#0x0
+	jc   ne,d0,r1,#L145
+	.line 86
+	ld   i0,[d5,172]
+	ld   r14,[i0]
+	ld   d0,[r14,168]
+	ld   i1,[d5,176]
+L134:
+	call d0 ; call non-native
+	.line 88
+	ld   i0,[d5,172]
+	ld   r14,[i0]
+	ld   d0,[r14,176]
+	ld   i1,d5
+	add  i1,#0x78
+	call d0 ; call non-native
+	ld   d2,d5
+	add  d2,#0x7c
+L128:
+	.dlab LBE99
+	.line 109
+	ld   i0,[d5,164]
+	ld   i1,#0x2
+	ld   i2,#0xffffff
+	call &__ZN4Page12setBreakLineEii ; call non-native
+	.line 111
+	ld   i0,[d5,132]
+	add  i0,#0x7b
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d4
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE ; call non-native
+	ld   [d5,188],d0
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 112
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,188]
+	call d0 ; call non-native
+	.line 114
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI16HorizontalLayoutC1Ev ; call non-native
+	ld   [d5,192],d0
+	.line 115
+	ld   r14,[d0]
+	ld   d1,[r14,116]
+	ld   i0,d0
+	call d1 ; call non-native
+	.line 116
+	ld   i0,[d5,132]
+	add  i0,#0x7d
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d4
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE ; call non-native
+	ld   [d5,196],d0
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 117
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI8CheckBoxC1Ev ; call non-native
+	ld   [d5,200],d0
+	.line 118
+	ld   r14,[d0]
+	ld   d1,[r14,160]
+	ld   i0,d0
+	ld.b i1,[d5,161]
+	call d1 ; call non-native
+	.line 119
+	ld   i0,[d5,200]
+	ld   r14,[i0]
+	ld   d0,[r14,168]
+	ld   i1,d2
+	call d0 ; call non-native
+	.line 120
+	ld   i0,[d5,192]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,200]
+	call d0 ; call non-native
+	.line 121
+	ld   i0,[d5,192]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,196]
+	call d0 ; call non-native
+	.line 123
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,192]
+	call d0 ; call non-native
+	.line 125
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI16HorizontalLayoutC1Ev ; call non-native
+	ld   [d5,204],d0
+	.line 126
+	ld   r14,[d0]
+	ld   d1,[r14,116]
+	ld   i0,d0
+	call d1 ; call non-native
+	.line 127
+	ld   i0,[d5,132]
+	add  i0,#0x7f
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d4
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE ; call non-native
+	ld   [d5,208],d0
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 128
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI8CheckBoxC1Ev ; call non-native
+	ld   [d5,212],d0
+	.line 129
+	ld   r14,[d0]
+	ld   d1,[r14,160]
+	ld   i0,d0
+	ld.b i1,[d5,160]
+	call d1 ; call non-native
+	.line 130
+	ld   i0,[d5,212]
+	ld   r14,[i0]
+	ld   d0,[r14,168]
+	ld   i1,d2
+	call d0 ; call non-native
+	.line 131
+	ld   i0,[d5,204]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,212]
+	call d0 ; call non-native
+	.line 132
+	ld   i0,[d5,204]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,208]
+	call d0 ; call non-native
+	.line 133
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,[d5,204]
+	call d0 ; call non-native
+	.line 135
+	ld   i0,[d5,164]
+	ld   i1,#0x2
+	ld   i2,#0xffffff
+	call &__ZN4Page12setBreakLineEii ; call non-native
+	.line 138
+	ld   i0,d5
+	ld   i1,[d5,164]
+	call &__ZN8NativeUI6Screen13setMainWidgetEPNS_6WidgetE ; call non-native
+	.dlab LBE98
+	.dlab LBE97
+	.dlab LBE96
+	.dlab LBE95
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE79
+	.dlab LBE78
+	.line 140
+	ld   sp,[fr,-60]
+	add  sp,#0x18
+	pop  rt,d7
+	ret
+L140:
+	.dlab LBB100
+	.dlab LBB101
+	.dlab LBB102
+	.dlab LBB103
+	.dlab LBB104
+	.dlab LBB105
+	.dlab LBB106
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext53
+Ltext53:
+	.line 218
+	ld   i0,#LC50
+	call &_puts ; call non-native
+	.dlab LBB107
+	.dlab LBB108
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext54
+Ltext54:
+	.line 6225
+	ld   i0,#0x2a
+	ld   i1,d2
+	ld   i2,d0
+	ld   i3,d0
+	call &_maIOCtl ; call non-native
+	.dlab LBE108
+	.dlab LBE107
+	.dlab LBB109
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext55
+Ltext55:
+	.line 219
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE109
+	.dlab LBE106
+	.dlab LBE105
+	.dlab LBE104
+	.dlab LBE103
+	.dlab LBE102
+	.dlab LBB110
+	.dlab LBB111
+	.dlab LBB112
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext56
+Ltext56:
+	.line 7068
+	ld   i0,#0x19a
+	ld   i1,#LC54
+	ld   i2,#LC55
+L136:
+	ld   i3,#0x0
+	call &_maIOCtl ; call non-native
+	.dlab LBE112
+	.dlab LBE111
+	.dlab LBE110
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext57
+Ltext57:
+	.line 138
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE101
+	.dlab LBE100
+	.line 140
+	ld   sp,[fr,-60]
+	add  sp,#0x18
+	pop  rt,d7
+	ret
+L93:
+	.dlab LBB113
+	.dlab LBB114
+	.dlab LBB115
+	.dlab LBB116
+	.dlab LBB117
+	.dlab LBB118
+	.dlab LBB119
+	.dlab LBB120
+	.dlab LBB121
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext58
+Ltext58:
+	.line 180
+	ld   i0,#LC10
+	ld   i1,#0x0
+	call &_maOpenStore ; call non-native
+	ld   d0,r14
+	.dlab LBB122
+	.line 181
+	ld   r1,#0x0
+	jc   le,r14,r1,#L122
+	.dlab LBB123
+	.line 183
+	call &_maCreatePlaceholder ; call non-native
+	ld   d2,r14
+	.dlab LBB124
+	.line 185
+	ld   i0,d0
+	ld   i1,r14
+	call &_maReadStore ; call non-native
+	ld   r0,#0xffffffff
+	jc   eq,r14,r0,#L122
+	.dlab LBB125
+	.line 187
+	ld   i0,d2
+	call &_maGetDataSize ; call non-native
+	.line 188
+	ld   r0,r14
+	add  r0,#0x7
+	and  r0,#0xfffffffc
+	sub  sp,r0
+	ld   d1,sp
+	add  d1,#0x4
+	.line 189
+	ld   r0,r14
+	add  r0,d1
+	ld   r1,#0x0
+	ld.b [r0],r1
+	.line 190
+	ld   i0,d2
+	ld   i1,d1
+	ld   i2,#0x0
+	ld   i3,r14
+	call &_maReadData ; call non-native
+	.line 192
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	call &__ZN6MAUtil11BasicStringIcE5clearEv ; call non-native
+	.line 193
+	ld   d0,fr
+	add  d0,#0xffffffc8
+	ld   i0,d0
+	ld   i1,d1
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0xffffffd4
+	add  i0,fr
+	ld   i1,d0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBB126
+	ld   sp,[fr,-60]
+	jp   #L122
+L145:
+	.dlab LBE126
+	.dlab LBE125
+	.dlab LBE124
+	.dlab LBE123
+	.dlab LBE122
+	.dlab LBE121
+	.dlab LBE120
+	.dlab LBE119
+	.dlab LBE118
+	.dlab LBE117
+	.dlab LBE116
+	.dlab LBE115
+	.dlab LBB127
+	.dlab LBB128
+	.dlab LBB129
+	.dlab LBB130
+	.dlab LBB131
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext59
+Ltext59:
+	.line 84
+	ld   i0,[d5,172]
+	ld   r14,[i0]
+	ld   d0,[r14,168]
+	ld   i1,[d5,180]
+	jp   #L134
+L125:
+	.dlab LBB132
+	.line 93
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d1,r14
+	ld   i0,r14
+	call &__ZN8NativeUI16HorizontalLayoutC1Ev ; call non-native
+	.line 94
+	ld   r14,[d1]
+	ld   d0,[r14,116]
+	ld   i0,d1
+	call d0 ; call non-native
+	.line 95
+	ld   i0,[d5,132]
+	add  i0,#0x8d
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d4
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d3,r14
+	ld   i0,r14
+	ld   i1,d4
+	call &__ZN8NativeUI5LabelC1EN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 96
+	ld   i0,#0x3c
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI8CheckBoxC1Ev ; call non-native
+	ld   [d5,184],d0
+	.line 97
+	ld   r14,[d1]
+	ld   d2,[r14,52]
+	ld   i0,d1
+	ld   i1,d0
+	call d2 ; call non-native
+	.line 98
+	ld   r14,[d1]
+	ld   d0,[r14,52]
+	ld   i0,d1
+	ld   i1,d3
+	call d0 ; call non-native
+	.line 99
+	ld   i0,[d5,164]
+	ld   r14,[i0]
+	ld   d0,[r14,52]
+	ld   i1,d1
+	call d0 ; call non-native
+	.line 100
+	ld   i0,d4
+	ld   i1,#LC66
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d6
+	ld   i1,d4
+	call &__ZNK6MAUtil11BasicStringIcEeqERKS1_ ; call non-native
+	ld   d0,r14
+	ld   i0,d4
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	ld   i1,d0
+	and  i1,#0xff  ; zero extend
+	ld   r14,#0x0
+	jc   eq,i1,r14,#L129
+	.line 101
+	ld   i0,[d5,184]
+	ld   r14,[i0]
+	ld   d0,[r14,160]
+	ld   i1,#0x1
+L135:
+	.line 103
+	call d0 ; call non-native
+	.line 105
+	ld   i0,[d5,184]
+	ld   r14,[i0]
+	ld   d2,d5
+	add  d2,#0x7c
+	ld   d0,[r14,168]
+	ld   i1,d2
+	call d0 ; call non-native
+	jp   #L128
+L138:
+	.dlab LBE132
+	.dlab LBE131
+	.dlab LBE130
+	.dlab LBE129
+	.dlab LBE128
+	.dlab LBE127
+	.dlab LBB133
+	.dlab LBB134
+	.dlab LBB135
+	.dlab LBB136
+	.dlab LBB137
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext60
+Ltext60:
+	.line 210
+	ld   [sp],r14
+	ld   i0,#LC12
+	call &_lprintfln ; call non-native
+	.dlab LBB138
+	ld   i0,d7
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE138
+	.dlab LBE137
+	.dlab LBE136
+	.dlab LBE135
+	.dlab LBE134
+	.dlab LBE133
+	.dlab LBB139
+	.dlab LBB140
+	.dlab LBB141
+	.dlab LBB142
+	.dlab LBB143
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext61
+Ltext61:
+	.line 7068
+	ld   i0,#0x19a
+	ld   i1,#LC54
+	ld   i2,#LC56
+	jp   #L136
+L129:
+	.dlab LBE143
+	.dlab LBE142
+	.dlab LBB144
+	.dlab LBB145
+	.dlab LBB146
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext62
+Ltext62:
+	.line 103
+	ld   i0,[d5,184]
+	ld   r14,[i0]
+	ld   d0,[r14,160]
+	jp   #L135
+L139:
+	.dlab LBE146
+	.dlab LBE145
+	.dlab LBE144
+	.dlab LBE141
+	.dlab LBE140
+	.dlab LBE139
+	.dlab LBB147
+	.dlab LBB148
+	.dlab LBB149
+	.dlab LBB150
+	.dlab LBB151
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext63
+Ltext63:
+	.line 216
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0xd8
+	.line 243
+	call &_bfeHandler ; call non-native
+L141:
+	.line 226
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0xe2
+	.line 243
+	call &_bfeHandler ; call non-native
+L144:
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0xf3
+	call &_bfeHandler ; call non-native
+L142:
+	.line 230
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0xe6
+	.line 243
+	call &_bfeHandler ; call non-native
+L143:
+	.line 232
+	ld   i0,#LC8
+	call &_FileNameFromPath ; call non-native
+	ld   i0,#0x6
+	ld   i1,r14
+	ld   i2,#0xe8
+	.line 243
+	call &_bfeHandler ; call non-native
+	.dlab LBE151
+	.dlab LBE150
+	.dlab LBE149
+	.dlab LBE148
+	.dlab LBE147
+	.dlab LBE114
+	.dlab LBE113
+	.stabs	"config:(13,1)",128,0,42,-44
+	.stabn	192,0,0,LBB79-__ZN9OptionTab8createUIEv
+	.stabs	"filename:(13,1)",128,0,204,-48
+	.stabs	"res:r(0,3)",64,0,215,8
+	.stabs	"size:r(0,3)",64,0,224,8
+	.stabn	192,0,0,LBB84-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE84-__ZN9OptionTab8createUIEv
+	.stabs	"root:r(24,35)",64,0,50,6
+	.stabn	192,0,0,LBB98-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE98-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE79-__ZN9OptionTab8createUIEv
+	.stabs	"config:(13,1)",128,0,42,-44
+	.stabn	192,0,0,LBB101-__ZN9OptionTab8createUIEv
+	.stabs	"filename:(13,1)",128,0,204,-48
+	.stabs	"res:r(0,3)",64,0,215,8
+	.stabs	"size:r(0,3)",64,0,224,8
+	.stabn	192,0,0,LBB106-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE106-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE101-__ZN9OptionTab8createUIEv
+	.stabs	"config:(13,1)",128,0,42,-44
+	.stabn	192,0,0,LBB114-__ZN9OptionTab8createUIEv
+	.stabs	"store:r(6,10)",64,0,180,4
+	.stabn	192,0,0,LBB121-__ZN9OptionTab8createUIEv
+	.stabs	"dataHandle:r(6,10)",64,0,183,6
+	.stabn	192,0,0,LBB123-__ZN9OptionTab8createUIEv
+	.stabs	"size:r(0,3)",64,0,187,30
+	.stabs	"temp:r(0,128)=*(0,129)=ar(6,57);0;-1;(0,19)",64,0,188,5
+	.stabn	192,0,0,LBB125-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE125-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE123-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE121-__ZN9OptionTab8createUIEv
+	.stabs	"root:r(24,35)",64,0,50,6
+	.stabn	192,0,0,LBB130-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE130-__ZN9OptionTab8createUIEv
+	.stabs	"filename:(13,1)",128,0,204,-48
+	.stabs	"res:r(0,3)",64,0,215,8
+	.stabs	"size:r(0,3)",64,0,224,8
+	.stabn	192,0,0,LBB137-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE137-__ZN9OptionTab8createUIEv
+	.stabs	"root:r(24,35)",64,0,50,6
+	.stabn	192,0,0,LBB144-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE144-__ZN9OptionTab8createUIEv
+	.stabs	"filename:(13,1)",128,0,204,-48
+	.stabs	"res:r(0,3)",64,0,215,8
+	.stabs	"size:r(0,3)",64,0,224,8
+	.stabn	192,0,0,LBB151-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE151-__ZN9OptionTab8createUIEv
+	.stabn	224,0,0,LBE114-__ZN9OptionTab8createUIEv
+Lscope11:
+	.stabs	"_ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution:F(0,6)",36,0,15,__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution
+	.stabs	"this:P(0,127)",64,0,15,7
+	.stabs	"language:P(0,3)",64,0,15,6
+	.stabs	"loginToken:a(13,1)",64,0,15,5
+	.stabs	"screenResolution:P(96,4)",64,0,15,8
+	.global	__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution
+
+.func __ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext64
+Ltext64:
+	.line 15
+	push rt,d4
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x20
+	ld   d3,i0
+	ld   d2,i1
+	ld   d1,i2
+	ld   d4,i3
+	.dlab LBB152
+	.line 16
+	call &__ZN8NativeUI6ScreenC2Ev ; call non-native
+	ld   d0,d3
+	add  d0,#0x48
+	ld   i0,d0
+	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev ; call non-native
+	ld   r0,#__ZTV9OptionTab+8
+	ld   [d3],r0
+	ld   r14,#__ZTV9OptionTab+220
+	ld   [d0],r14
+	ld   r0,#__ZTV9OptionTab+260
+	ld   [d3,112],r0
+	ld   r14,#__ZTV9OptionTab+288
+	ld   [d3,120],r14
+	ld   r0,#__ZTV9OptionTab+300
+	ld   [d3,124],r0
+	ld   i0,d3
+	add  i0,#0x80
+	ld   i1,d1
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	ld   [d3,132],d2
+	ld   i0,d3
+	add  i0,#0x88
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x94
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x98
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x9c
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	.line 17
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L150
+	.line 20
+	ld   i0,d3
+	ld   i1,d4
+	add  i1,#0x8
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 22
+	ld   i0,d3
+	call &__ZN9OptionTab8createUIEv ; call non-native
+	.dlab LBE152
+	add  sp,#0x4
+	pop  rt,d4
+	ret
+L150:
+	.dlab LBB153
+	.line 18
+	ld   i0,[d3,132]
+	add  i0,#0x11
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffe0
+	ld   i0,d0
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d3
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 20
+	ld   i0,d3
+	ld   i1,d4
+	add  i1,#0x8
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 22
+	ld   i0,d3
+	call &__ZN9OptionTab8createUIEv ; call non-native
+	.dlab LBE153
+	add  sp,#0x4
+	pop  rt,d4
+	ret
+Lscope12:
+	.stabs	"_ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:F(0,6)",36,0,15,__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+	.stabs	"this:P(0,127)",64,0,15,7
+	.stabs	"language:P(0,3)",64,0,15,6
+	.stabs	"loginToken:a(13,1)",64,0,15,5
+	.stabs	"screenResolution:P(96,4)",64,0,15,8
+	.global	__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+
+.func __ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution, 4, void
+	.line 15
+	push rt,d4
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x20
+	ld   d3,i0
+	ld   d2,i1
+	ld   d1,i2
+	ld   d4,i3
+	.dlab LBB154
+	.line 16
+	call &__ZN8NativeUI6ScreenC2Ev ; call non-native
+	ld   d0,d3
+	add  d0,#0x48
+	ld   i0,d0
+	call &__ZN8Wormhole23HighLevelHttpConnectionC2Ev ; call non-native
+	ld   r0,#__ZTV9OptionTab+8
+	ld   [d3],r0
+	ld   r14,#__ZTV9OptionTab+220
+	ld   [d0],r14
+	ld   r0,#__ZTV9OptionTab+260
+	ld   [d3,112],r0
+	ld   r14,#__ZTV9OptionTab+288
+	ld   [d3,120],r14
+	ld   r0,#__ZTV9OptionTab+300
+	ld   [d3,124],r0
+	ld   i0,d3
+	add  i0,#0x80
+	ld   i1,d1
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	ld   [d3,132],d2
+	ld   i0,d3
+	add  i0,#0x88
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x94
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x98
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	ld   i0,d3
+	add  i0,#0x9c
+	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
+	.line 17
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L155
+	.line 20
+	ld   i0,d3
+	ld   i1,d4
+	add  i1,#0x8
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 22
+	ld   i0,d3
+	call &__ZN9OptionTab8createUIEv ; call non-native
+	.dlab LBE154
+	add  sp,#0x4
+	pop  rt,d4
+	ret
+L155:
+	.dlab LBB155
+	.line 18
+	ld   i0,[d3,132]
+	add  i0,#0x11
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffe0
+	ld   i0,d0
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d3
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 20
+	ld   i0,d3
+	ld   i1,d4
+	add  i1,#0x8
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 22
+	ld   i0,d3
+	call &__ZN9OptionTab8createUIEv ; call non-native
+	.dlab LBE155
+	add  sp,#0x4
+	pop  rt,d4
+	ret
+Lscope13:
+	.set	%3=__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+	.stabs	"this:P(0,127)",64,0,144,12
+	.stabs	"rB:P(70,32)",64,0,144,15
+	.global	__ZThn120_N9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+
+.func __ZThn120_N9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext65
+Ltext65:
+	.line 30
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 30
+	add  i0,#0xffffff88
+	call &%3 ; call non-native
+	pop  rt,fr
+	ret
+Lscope14:
+.data
+LC67:
+	.ascii "radioButtonSelected\0"
+LC68:
+	.ascii "credential\0"
+.code
+	.stabs	"_ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE:F(0,6)",36,0,144,__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+	.stabs	"this:P(0,127)",64,0,144,5
+	.stabs	"rB:P(70,32)",64,0,144,4
+	.global	__ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE
+
+.func __ZN9OptionTab19radioButtonSelectedEPN8NativeUI10RadioGroupEiPNS0_11RadioButtonE, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext66
+Ltext66:
+	.line 144
+	push rt,d2
+	sub  sp,#0x10
+	ld   fr,sp
+	add  fr,#0x24
+	ld   d1,i0
+	ld   d0,i3
+	.dlab LBB156
+	.line 145
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L157
+	.line 146
+	ld   i0,#LC67
+	call &_lprintfln ; call non-native
+	.line 147
+	ld   r14,[d1,176]
+	jc   eq,r14,d0,#L166
+	.line 149
+	ld   r14,[d1,180]
+	ld   d2,d1
+	add  d2,#0x88
+	jc   eq,r14,d0,#L167
+L160:
+	.line 154
+	ld   r14,d1
+	add  r14,#0x8c
+	ld   [sp],r14
+	ld.b r14,[d1,160]
+	ld.b [sp,4],r14
+	ld.b r0,[d1,161]
+	ld.b [sp,8],r0
+	ld   i0,d1
+	add  i0,#0x9c
+	ld   i1,d1
+	add  i1,#0x98
+	ld   i2,d1
+	add  i2,#0x94
+	ld   i3,d2
+	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb ; call non-native
+	ld   r0,#0x2
+	jc   eq,r14,r0,#L157
+	.dlab LBB157
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext67
+Ltext67:
+	.line 7103
+	ld   i0,[d1,132]
+	add  i0,#0x6f
+	call &__ZN7Convert2trEi ; call non-native
+	.dlab LBB158
+	ld   i0,#0x19c
+	ld   i1,r14
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+L157:
+	.dlab LBE158
+	.dlab LBE157
+	.dlab LBE156
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext68
+Ltext68:
+	.line 161
+	add  sp,#0x10
+	pop  rt,d2
+	ret
+L166:
+	.dlab LBB159
+	.line 148
+	ld   d0,fr
+	add  d0,#0xffffffe8
+	ld   i0,d0
+	ld   i1,#LC68
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   d2,d1
+	add  d2,#0x88
+L165:
+	.line 150
+	ld   i0,d2
+	ld   i1,d0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	jp   #L160
+L167:
+	ld   d0,fr
+	add  d0,#0xffffffe8
+	ld   i0,d0
+	ld   i1,#LC66
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	jp   #L165
+	.dlab LBE159
+Lscope15:
+	.set	%4=__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
+	.stabs	"this:P(0,127)",64,0,164,12
+	.stabs	"cB:P(0,33)",64,0,164,13
+	.stabs	"b:P(0,4)",64,0,164,14
+	.global	__ZThn124_N9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
+
+.func __ZThn124_N9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext69
+Ltext69:
+	.line 30
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 30
+	add  i0,#0xffffff84
+	call &%4 ; call non-native
+	pop  rt,fr
+	ret
+Lscope16:
+.data
+LC69:
+	.ascii "bool %s\0"
+LC72:
+	.ascii "_modeAuth %s\0"
+LC70:
+	.ascii "_notification %s\0"
+LC71:
+	.ascii "_vibrate %s\0"
+.code
+	.stabs	"_ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb:F(0,6)",36,0,164,__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
+	.stabs	"this:P(0,127)",64,0,164,5
+	.stabs	"cB:P(0,33)",64,0,164,6
+	.stabs	"b:P(0,4)",64,0,164,14
+	.global	__ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb
+
+.func __ZN9OptionTab20checkBoxStateChangedEPN8NativeUI8CheckBoxEb, 3, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext70
+Ltext70:
+	.line 164
+	push rt,d3
+	sub  sp,#0x10
+	ld   fr,sp
+	add  fr,#0x28
+	ld   d1,i0
+	ld   d2,i1
+	.dlab LBB160
+	.dlab LBB161
+	.line 166
+	and  i2,#0xff  ; zero extend
+	ld   [sp],i2
+	ld   i0,#LC69
+	call &_lprintfln ; call non-native
+	.line 167
+	ld   r14,[d1,200]
+	jc   eq,r14,d2,#L185
+	.line 175
+	ld   r14,[d1,212]
+	jc   eq,r14,d2,#L186
+L172:
+	.dlab LBB162
+	.line 183
+	call &__Z11getPlatformv ; call non-native
+	ld   d3,d1
+	add  d3,#0x88
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L187
+L175:
+	.dlab LBE162
+	.line 198
+	ld   r14,d1
+	add  r14,#0x8c
+	ld   [sp],r14
+	ld.b r14,[d1,160]
+	ld.b [sp,4],r14
+	ld.b r0,[d1,161]
+	ld.b [sp,8],r0
+	ld   i0,d1
+	add  i0,#0x9c
+	ld   i1,d1
+	add  i1,#0x98
+	ld   i2,d1
+	add  i2,#0x94
+	ld   i3,d3
+	call &__Z10tryToWriteRN6MAUtil11BasicStringIcEES2_S2_S2_Rxbb ; call non-native
+	ld   r0,#0x2
+	jc   eq,r14,r0,#L169
+	.dlab LBB163
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext71
+Ltext71:
+	.line 7103
+	ld   i0,[d1,132]
+	add  i0,#0x6f
+	call &__ZN7Convert2trEi ; call non-native
+	.dlab LBB164
+	ld   i0,#0x19c
+	ld   i1,r14
+	ld   i2,#0x0
+	ld   i3,i2
+	call &_maIOCtl ; call non-native
+L169:
+	.dlab LBE164
+	.dlab LBE163
+	.dlab LBE161
+	.dlab LBE160
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext72
+Ltext72:
+	.line 206
+	add  sp,#0x10
+	pop  rt,d3
+	ret
+L187:
+	.dlab LBB165
+	.dlab LBB166
+	.dlab LBB167
+	.dlab LBB168
+	.dlab LBB169
+	.line 184
+	ld   i0,[d1,184]
+	jc   ne,i0,d2,#L175
+	.dlab LBB170
+	.line 186
+	ld   r14,[i0]
+	ld   d0,[r14,164]
+	call d0 ; call non-native
+	.line 187
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   eq,r14,r0,#L177
+	.line 189
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,#LC66
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+L184:
+	.line 192
+	ld   i0,d3
+	ld   i1,d0
+	call &__ZN6MAUtil11BasicStringIcEaSERKS1_ ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 194
+	ld   i0,d3
+	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
+	ld   [sp],r14
+	ld   i0,#LC72
+	call &_lprintfln ; call non-native
+	jp   #L175
+L185:
+	.dlab LBE170
+	.dlab LBE169
+	.dlab LBE168
+	.dlab LBE167
+	.line 169
+	ld   r14,[d2]
+	ld   d0,[r14,164]
+	ld   i0,d2
+	call d0 ; call non-native
+	ld.b [d1,161],r14
+	.line 170
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   eq,r14,r0,#L172
+	.line 172
+	ld   [sp],r14
+	ld   i0,#LC70
+	.line 180
+	call &_lprintfln ; call non-native
+	jp   #L172
+L186:
+	.line 177
+	ld   r14,[d2]
+	ld   d0,[r14,164]
+	ld   i0,d2
+	call d0 ; call non-native
+	ld.b [d1,160],r14
+	.line 178
+	and  r14,#0xff  ; zero extend
+	ld   r0,#0x0
+	jc   eq,r14,r0,#L172
+	.line 180
+	ld   [sp],r14
+	ld   i0,#LC71
+	call &_lprintfln ; call non-native
+	jp   #L172
+L177:
+	.dlab LBB171
+	.dlab LBB172
+	.dlab LBB173
+	.dlab LBB174
+	.line 192
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,#LC68
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   d3,d1
+	add  d3,#0x88
+	jp   #L184
+	.dlab LBE174
+	.dlab LBE173
+	.dlab LBE172
+	.dlab LBE171
+	.dlab LBE166
+	.dlab LBE165
+Lscope17:
+.data
+LC73:
 	.ascii "TEST_EMULATOR\0"
 .code
-	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,180,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:p(0,3)",160,0,180,-12
-	.stabs	"__priority:p(0,3)",160,0,180,-16
+	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,219,__Z41__static_initialization_and_destruction_0ii
+	.stabs	"__initialize_p:P(0,3)",64,0,219,12
+	.stabs	"__priority:P(0,3)",64,0,219,13
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext23
-Ltext23:
-	.line 180
+	.line 219
 	push rt,fr
-	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext24
-Ltext24:
+	add  fr,#0x8
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext73
+Ltext73:
 	.line 99
-	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L120
-	ld   r0,[fr,-12]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L120
-	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC56
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L120:
-	ld   r0,[fr,-16]
-	ld   r14,#0xffff
-	jc   ne,r0,r14,#L119
-	ld   r0,[fr,-12]
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L119
-	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-L119:
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext25
-Ltext25:
-	.line 180
-	add  sp,#0x8
+	jc   eq,i1,r14,#L192
+L188:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext74
+Ltext74:
+	.line 219
 	pop  rt,fr
 	ret
-Lscope40:
-.data
-	.align 4
-__ZN8NativeUI8BUF_SIZEE:
-	.long	256
-	.align 4
-__ZN8NativeUI12MAX_BUF_SIZEE:
-	.long	2048
-.code
-	.stabs	"_GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:f(0,6)",36,0,181,__GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+L192:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext75
+Ltext75:
+	.line 99
+	ld   r14,#0x1
+	jc   eq,i0,r14,#L193
+	ld   r14,#0x0
+	jc   ne,i0,r14,#L188
+	ld   i0,#__ZN3Ads13TEST_EMULATORE
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext76
+Ltext76:
+	.line 219
+	pop  rt,fr
+	ret
+L193:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext77
+Ltext77:
+	.line 99
+	ld   i0,#__ZN3Ads13TEST_EMULATORE
+	ld   i1,#LC73
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\OptionTab.cpp",132,0,0,Ltext78
+Ltext78:
+	.line 219
+	pop  rt,fr
+	ret
+Lscope18:
+	.stabs	"_GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:f(0,6)",36,0,220,__GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
 
 .func __GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution, 0, void
-	.line 181
+	.line 220
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 181
+	.line 220
 	ld   i0,#0x1
 	ld   i1,#0xffff
-	call &__Z41__static_initialization_and_destruction_0ii
+	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
-Lscope41:
-	.ctor __GLOBAL__I__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
-	.stabs	"_GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:f(0,6)",36,0,182,__GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+Lscope19:
+	.stabs	"_GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution:f(0,6)",36,0,221,__GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
 
 .func __GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution, 0, void
-	.line 182
+	.line 221
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 182
+	.line 221
 	ld   i0,#0x0
 	ld   i1,#0xffff
-	call &__Z41__static_initialization_and_destruction_0ii
+	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
-Lscope42:
-	.dtor __GLOBAL__D__ZN9OptionTabC2EiN6MAUtil11BasicStringIcEE17eScreenResolution
+Lscope20:
 	.stabs	"_ZN3Ads13TEST_EMULATORE:S(20,39)",40,0,99,__ZN3Ads13TEST_EMULATORE
-	.stabs	"_ZN8NativeUI8BUF_SIZEE:S(0,86)=k(0,3)",38,0,44,__ZN8NativeUI8BUF_SIZEE
-	.stabs	"_ZN8NativeUI12MAX_BUF_SIZEE:S(0,86)",38,0,47,__ZN8NativeUI12MAX_BUF_SIZEE
 	.text
 	.stabs "",100,0,0,Letext
 Letext:

@@ -62,11 +62,13 @@ private:
 	bool _notification;
 
 	Page* vLOption;
-
+//android
 	Label* lAuthenticationMode;
 	RadioGroup* rGAuthenticationChoice;
 	RadioButton* rBModeCredential;
 	RadioButton* rBModeNone;
+//IOS
+	CheckBox* cbAuthenticationChoice;
 
 	Label* lNotificationOption;
 	HorizontalLayout* hlSetNotification;
@@ -76,6 +78,63 @@ private:
 	Label* lSetVibration;
 	CheckBox* cBSetVibration;
 
+};
+
+class OptionStackScreen : public NativeUI::StackScreen, public NativeUI::StackScreenListener
+{
+public:
+	OptionStackScreen(int language, String loginToken, eScreenResolution screenResolution):StackScreen(), LANGUAGE(language){
+		addStackScreenListener(this);
+		if(getPlatform() == IOS){
+			Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
+		}
+		setPushTransition(MAW_TRANSITION_TYPE_NONE,0);
+		setIcon(ICON_OPTION + screenResolution);
+		mOptionTab = new OptionTab(language, loginToken, screenResolution);
+		push(mOptionTab);
+	};
+
+	virtual void stackScreenScreenPopped( StackScreen* stackScreen, Screen* fromScreen, Screen* toScreen){
+//		lprintfln("stackScreenScreenPopped");
+//		mAlertTab->handleKeyPress(MAK_BACK);
+//		push(mAlertTab);
+//		mAlertTab->fillSpaceHorizontally();
+//		mAlertTab->fillSpaceVertically();
+//	};
+
+//	void handleKeyPress(int keyCode){
+//		mOptionTab->handleKeyPress(keyCode);
+	};
+
+	void orientationChange(int screenOrientation){
+		if(getPlatform() != IOS){
+			if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		//		lprintfln("Orientation paysage");
+				Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
+			} else // Portrait
+			{
+		//		lprintfln("Orientation Portrait");
+				Screen::setTitle("");
+			}
+			mOptionTab->orientationChange(screenOrientation);
+		}
+	};
+
+//	 virtual void handleWidgetEvent(MAWidgetEventData* widgetEventData){
+//		 lprintfln("widget event %d",  widgetEventData->eventType);
+//
+//		 if( widgetEventData->eventType == MAW_EVENT_STACK_SCREEN_POPPED)
+//		 {
+//			 mAlertTab->handleKeyPress(MAK_BACK);
+//			 push(mAlertTab);
+//			 mAlertTab->fillSpaceHorizontally();
+//			 mAlertTab->fillSpaceVertically();
+//		 }
+
+//	 };
+private:
+	int LANGUAGE;
+	OptionTab *mOptionTab;
 };
 
 

@@ -23,6 +23,40 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	_login = "";
 	_vibrate = true;
 	_notification = true;
+
+	String sVibrate = "true";
+	String sNotification = "true";
+	if (_vibrate == false) {
+		sVibrate = "false";
+	}
+	if (_notification == false) {
+		sNotification = "false";
+	}
+	// //GDR IOS PB : quand je ne met pas les lignes suivantes il y a un probléme de mémoire lors de la création du fichier de conf sur les Iphones (pas sur Ipad)
+//	(crétation donc 1ére fois que l'appli est installé sur le mobile) pourquoi???
+		//Iphone
+		lprintfln("trytowrite1");
+		String tmp = "{\"login\" : \"";
+		String tmp01 = _login ;
+		String tmp02 = "\",\"token_mobile\" : \"";
+		lprintfln("trytowrite1.1");
+		String tmp1	= _tokenMobile;
+			lprintfln("trytowrite1.1");
+		String tmp2 = "\",\"token_authent\" : \"" + _tokenConnection;
+			lprintfln("trytowrite1.2");
+		String tmp3	= "\",\"authentication_mode\" : \"" + _modeAuth;
+			lprintfln("trytowrite1.3");
+		String tmp4	= "\",\"id_media_value\" : " + Convert::toString(_idMobile);
+			lprintfln("trytowrite1.4");
+		String tmp5	= ",\"notification\" : " + sNotification + ",\"vibrate\" : ";
+			lprintfln("trytowrite1.5");
+		String tmp6	= sVibrate + "}";
+			lprintfln("trytowrite1.6");
+			tmp += tmp1 + tmp2 + tmp3 + tmp4 + tmp5 + tmp6;
+		lprintfln("trytowrite1.7");
+		//Iphone
+//
+//
 //	tryToWrite(_login,_login,_login,_login,_idMobile,_vibrate,_notification);
 	String config;
 	eFile eFileTmp = tryToRead(config);
@@ -31,27 +65,50 @@ Authentication::Authentication(int language, ScreenMain* mScreenMain) :
 	} else if (eFileTmp == FILE_OPEN_ERROR) {
 		maPanic(1, "ERROR FILE STRORAGE");
 	} else {
+		lprintfln("before parse");
 		Convert::formatJSONBeforeParse(config);
+		lprintfln(config.c_str());
 		MAUtil::YAJLDom::Value* root = YAJLDom::parse(
 				(const unsigned char*) config.c_str(), config.size());
-
-		_modeAuth = root->getValueForKey("authentication_mode")->toString();
-		_idMobile = root->getValueForKey("id_media_value")->toInt();
-		_tokenConnection = root->getValueForKey("token_authent")->toString();
-		_tokenMobile = root->getValueForKey("token_mobile")->toString();
-		_login = root->getValueForKey("login")->toString();
-		_vibrate = root->getValueForKey("vibrate")->toBoolean();
-		_notification = root->getValueForKey("notification")->toBoolean();
-
-		if (_modeAuth == "none") {
-//			TODO : va voir toute les appmobile du compte, il faudrait utilisé get /medias/3/media_values/id (pas encore creer dans l'API) AUTHENTICATION_VALIDATION
-			_LOGINTOKEN = "?login=" + _login + "&token=" + _tokenConnection;
-			String urlTmp = HOST;
-			urlTmp += "/medias/3/";
-			urlTmp += _LOGINTOKEN;
-			connectUrl(urlTmp, AUTHENTICATION_VALIDATION);
-		} else {
+		if(root == NULL)
+		{
+			lprintfln("File corrupted");
+			tryToWrite(_login,_login,_login,_login,_idMobile,_vibrate,_notification);
 			createUI();
+		}
+		else
+		{
+//			lprintfln("File corrupted1");
+			_modeAuth = root->getValueForKey("authentication_mode")->toString();
+//			lprintfln("File corrupted2 : %s", _modeAuth.c_str());
+			_idMobile = root->getValueForKey("id_media_value")->toInt();
+//			lprintfln("File corrupted3 : %d", _idMobile);
+			_tokenConnection = root->getValueForKey("token_authent")->toString();
+//			lprintfln("File corrupted4 : %s", _tokenConnection.c_str());
+			_tokenMobile = root->getValueForKey("token_mobile")->toString();
+//			lprintfln("File corrupted5 : %s", _tokenMobile.c_str());
+			_login = root->getValueForKey("login")->toString();
+//			lprintfln("File corrupted6 : %s", _login.c_str());
+			if (_idMobile != 0 && _tokenConnection != "" && _tokenMobile != "" && _login != "") {
+				_vibrate = root->getValueForKey("vibrate")->toBoolean();
+//				lprintfln("File corrupted7");
+				_notification =
+						root->getValueForKey("notification")->toBoolean();
+				lprintfln("after parse");
+				if (_modeAuth == "none") {
+//			TODO : va voir toute les appmobile du compte, il faudrait utilisé get /medias/3/media_values/id (pas encore creer dans l'API) AUTHENTICATION_VALIDATION
+					_LOGINTOKEN = "?login=" + _login + "&token="
+							+ _tokenConnection;
+					String urlTmp = HOST;
+					urlTmp += "/medias/3/";
+					urlTmp += _LOGINTOKEN;
+					connectUrl(urlTmp, AUTHENTICATION_VALIDATION);
+				} else {
+					createUI();
+				}
+			} else {
+				createUI();
+			}
 		}
 	}
 	screenMain = mScreenMain;
@@ -435,7 +492,7 @@ void Authentication::createUI() {
 //		vLAuthentication->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
 		MAExtent size = maGetScrSize();
 		int mScreenWidth = EXTENT_X(size);
-		lprintfln("test for IOS screen size : %d");
+		lprintfln("test for IOS screen size : %d", mScreenWidth);
 		if (mScreenWidth <= SMALL_RESOLUTION - 100) {
 			vLAuthentication->setScrollable(true);
 		}
@@ -514,6 +571,22 @@ void Authentication::createUI() {
 				rGAuthenticationChoice->setChecked(rBModeCredential);
 			}
 			rGAuthenticationChoice->fillSpaceVertically();
+		}
+		else
+		{
+			HorizontalLayout *hLIOSModeAuthent = new HorizontalLayout();
+			Label *lIOSModeAuthent = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
+			cbAuthenticationChoice = new CheckBox();
+			hLIOSModeAuthent->addChild(cbAuthenticationChoice);
+			hLIOSModeAuthent->addChild(lIOSModeAuthent);
+			vLAuthentication->addChild(hLIOSModeAuthent);
+			if(_modeAuth == "none"){
+				cbAuthenticationChoice->setState(true);
+			}else{
+				cbAuthenticationChoice->setState(false);
+			}
+			cbAuthenticationChoice->addCheckBoxListener(this);
+
 		}
 		bValidate = new Button();
 		bValidate->setText(
@@ -610,4 +683,24 @@ void Authentication::orientationChanged(Screen* screen, int screenOrientation) {
 			}
 		}
 	}
+}
+
+void Authentication::checkBoxStateChanged(NativeUI::CheckBox* cB, bool b)
+{
+	lprintfln("bool %s",b);
+	if(cB == cbAuthenticationChoice)
+	{
+		bool modeAuth = cbAuthenticationChoice->isChecked();
+		if(modeAuth)
+		{
+			_modeAuth = "none";
+
+		}else{
+			_modeAuth = "credential";
+		}
+		lprintfln("_modeAuth %s", _modeAuth.c_str());
+	}
+	if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification) != FILE_CLOSE) {
+				maToast(Convert::tr(alert_change_mode_auth_no_saved + LANGUAGE),MA_TOAST_DURATION_SHORT);
+			}
 }

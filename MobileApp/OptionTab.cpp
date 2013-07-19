@@ -14,6 +14,9 @@
 	 */
 	OptionTab::OptionTab(int language, String loginToken, eScreenResolution screenResolution): Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken)
 	{
+		if(getPlatform() == IOS){
+					Screen::setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
+				}
 		setIcon(ICON_OPTION + screenResolution);
 //		setTitle(Convert::tr(OPTION_TAB_EN + LANGUAGE));
 		createUI();
@@ -60,10 +63,12 @@ void OptionTab::createUI() {
 				Convert::tr(authentication_mode_page_title + LANGUAGE));
 		vLOption->addChild(lAuthenticationMode);
 
-		rGAuthenticationChoice = new RadioGroup();
 
-		vLOption->addChild(rGAuthenticationChoice);
 
+		if(getPlatform() != IOS){
+			rGAuthenticationChoice = new RadioGroup();
+
+					vLOption->addChild(rGAuthenticationChoice);
 		rBModeCredential = new RadioButton();
 //		HorizontalLayout *hlCredential = new HorizontalLayout();
 //		Label *lCredential = new Label(Convert::tr(authentication_mode_credential + LANGUAGE));
@@ -80,8 +85,26 @@ void OptionTab::createUI() {
 		} else {
 			rGAuthenticationChoice->setChecked(rBModeCredential);
 		}
+		rGAuthenticationChoice->addRadioGroupListener(this);
 //		rGAuthenticationChoice->fillSpaceVertically();
+	}
+		else
+				{
+					HorizontalLayout *hLIOSModeAuthent = new HorizontalLayout();
+					hLIOSModeAuthent->wrapContentVertically();
+					Label *lIOSModeAuthent = new Label(Convert::tr(authentication_mode_none + LANGUAGE));
+					cbAuthenticationChoice = new CheckBox();
+					hLIOSModeAuthent->addChild(cbAuthenticationChoice);
+					hLIOSModeAuthent->addChild(lIOSModeAuthent);
+					vLOption->addChild(hLIOSModeAuthent);
+					if(_modeAuth == "none"){
+						cbAuthenticationChoice->setState(true);
+					}else{
+						cbAuthenticationChoice->setState(false);
+					}
+					cbAuthenticationChoice->addCheckBoxListener(this);
 
+				}
 
 		vLOption->setBreakLine();
 
@@ -111,7 +134,7 @@ void OptionTab::createUI() {
 
 		vLOption->setBreakLine();
 
-		rGAuthenticationChoice->addRadioGroupListener(this);
+
 		Screen::setMainWidget(vLOption);
 	}
 }
@@ -119,7 +142,7 @@ void OptionTab::createUI() {
 
 void OptionTab::radioButtonSelected(NativeUI::RadioGroup*, int,
 		NativeUI::RadioButton* rB) {
-
+	if(getPlatform() != IOS){
 	lprintfln("radioButtonSelected");
 	if (rB == rBModeCredential) {
 		_modeAuth = "credential";
@@ -134,10 +157,12 @@ void OptionTab::radioButtonSelected(NativeUI::RadioGroup*, int,
 //	} else {
 //		icreateUI++;
 //	}
+	}
 }
 
 void OptionTab::checkBoxStateChanged(NativeUI::CheckBox* cB, bool b)
 {
+
 	lprintfln("bool %s",b);
 	if(cB == cBSetNotification)
 	{
@@ -154,6 +179,20 @@ void OptionTab::checkBoxStateChanged(NativeUI::CheckBox* cB, bool b)
 				{
 				lprintfln("_vibrate %s", _vibrate);
 				}
+	}
+	if(getPlatform() == IOS){
+		if(cB == cbAuthenticationChoice)
+		{
+				bool modeAuth = cbAuthenticationChoice->isChecked();
+				if(modeAuth)
+				{
+					_modeAuth = "none";
+
+				}else{
+					_modeAuth = "credential";
+				}
+				lprintfln("_modeAuth %s", _modeAuth.c_str());
+		}
 	}
 //	tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification);
 	if (tryToWrite(_login, _tokenMobile, _tokenConnection, _modeAuth,_idMobile, _vibrate, _notification) != FILE_CLOSE) {
@@ -178,4 +217,3 @@ void OptionTab::orientationChange(int screenOrientation) {
 //		Screen::setIcon(ICON_OPTION);
 	}
 }
-

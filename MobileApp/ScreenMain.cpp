@@ -40,11 +40,14 @@ void ScreenMain::createUI(String loginToken, long long idMobile) {
 		lprintfln("resolution small");
 	}
 
-
-	alertTab = new AlertTab(LANGUAGE, loginToken, screenResolution);
-	trackingTab = new TrackingTab(LANGUAGE, loginToken, screenResolution, idMobile);
+	lprintfln("creation des tab");
+	alertTab = new AlertStackScreen(LANGUAGE, loginToken, screenResolution);
+	lprintfln("alertTab crée");
+	trackingTab = new TrackingStackScreen(LANGUAGE, loginToken, screenResolution, idMobile);
+	lprintfln("trackingTab crée");
 //	homeTab = new HomeTab(LANGUAGE, loginToken, screenResolution);
-	optionTab = new OptionTab(LANGUAGE, loginToken, screenResolution);
+	optionTab = new OptionStackScreen(LANGUAGE, loginToken, screenResolution);
+	lprintfln("optionTab crée");
 
 //	 Add them as tabs.
 //	this->addTab(homeTab); //tab index 0;
@@ -83,7 +86,7 @@ void ScreenMain::handleKeyPress(int keyCode) {
 	maAlertPrintFirstTime = true;
 	if (keyCode == MAK_BACK) {
 		if (this->getActiveTabIndex() == 1) {
-			alertTab->handleKeyPress(keyCode);
+//			alertTab->handleKeyPress(keyCode);
 		} else {
 			maAlert("", "",
 					Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
@@ -104,6 +107,7 @@ void ScreenMain::handleKeyPress(int keyCode) {
  * event handling method.
  */
 void ScreenMain::customEvent(const MAEvent& event) {
+	if(getPlatform() != IOS){
 	if (EVENT_TYPE_ALERT == event.type) {
 		if (1 == event.alertButtonIndex) {
 			maPanic(1, Convert::tr(Screen_Main_close_app + LANGUAGE));
@@ -118,6 +122,7 @@ void ScreenMain::customEvent(const MAEvent& event) {
 		maAlert("", "", Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
 				Convert::tr(Screen_Main_Button_home + LANGUAGE),
 				Convert::tr(Screen_Main_Button_cancel + LANGUAGE));
+	}
 	}
 }
 

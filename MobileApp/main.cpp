@@ -27,10 +27,10 @@ public:
 		getSystemConnection();
 
 		mMainScreen = new ScreenMain();
-		if (getPlatform() != IOS) {
+//		if (getPlatform() != IOS) {
 		addTimer(this, TIMER_PERIOD, 0);
 		addFocusListener(this);
-		}
+//		}
 		Authentication* mAuthentication = new Authentication(getSystemLanguage(), mMainScreen);
 	}
 
@@ -126,7 +126,7 @@ private:
 
 extern "C" int MAMain() {
 
-		maSyscallPanicsDisable();
+//		maSyscallPanicsDisable();
 		maAutostartOn();
 		Moblet::run(new NativeUIMoblet());
 }

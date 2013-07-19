@@ -116,5 +116,44 @@ private:
 	LocalNotification* notification;
 };
 
+class TrackingStackScreen : public NativeUI::StackScreen, public NativeUI::StackScreenListener
+{
+public:
+	TrackingStackScreen(int language, String loginToken, eScreenResolution screenResolution, int idMobile):StackScreen(), LANGUAGE(language){
+		addStackScreenListener(this);
+		if(getPlatform() == IOS){
+			setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
+		}
+		setPushTransition(MAW_TRANSITION_TYPE_NONE,0);
+		setIcon(ICON_TRACKING + screenResolution);
+		mTrackingTab = new TrackingTab(language, loginToken, screenResolution, idMobile);
+		push(mTrackingTab);
+	};
+
+	void runTimerEvent(){
+		mTrackingTab->runTimerEvent();
+	}
+
+	virtual void stackScreenScreenPopped( StackScreen* stackScreen, Screen* fromScreen, Screen* toScreen){
+	};
+
+	void orientationChange(int screenOrientation){
+		if(getPlatform() != IOS){
+			if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		//		lprintfln("Orientation paysage");
+				Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
+			} else // Portrait
+			{
+		//		lprintfln("Orientation Portrait");
+				Screen::setTitle("");
+			}
+			mTrackingTab->orientationChange(screenOrientation);
+		}
+	};
+
+private:
+	int LANGUAGE;
+	TrackingTab *mTrackingTab;
+};
 
 #endif /* TRACKINGTAB_H_ */

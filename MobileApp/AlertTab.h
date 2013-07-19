@@ -222,7 +222,7 @@ private:
 
 	//view 5.3
 	Page* mainLayoutUnitChoice;
-	int nbOfSubUnits; //si > 0 alors on va chercher les sous unités.
+	int nbOfSubUnits; //si > 0 alors on va chercher les sous unitÃ©s.
 	ListView *lVUnit;
 	MAUtil::Map<int, long long> mapUnitId;
 	MAUtil::Map<int, ListViewItem*> mapLVIUnit;
@@ -274,5 +274,74 @@ private:
 
 };
 
+
+
+
+
+//TODO //GDR IOS PB : IOS StckScreen est utile pour montre la barre bleu avec le titre de la page et pour avoir le bouton retour.
+// Probléme en développant pour android je n'ai pas utilisé de stackscreen il faudrait refaire l'objet alertTab avec
+// un objet screen pour chaque page et non un seul screen pour tous l'objet et inserrer les screen au fur et à mesure dans la pile
+// pour avoir le bon fonctionnement. Attention je ne sais pas comment on vide la pile une fois qu'on a finit de créer l'alerte.
+class AlertStackScreen : public NativeUI::StackScreen, public NativeUI::StackScreenListener
+{
+public:
+	AlertStackScreen(int language, String loginToken, eScreenResolution screenResolution):StackScreen(), LANGUAGE(language){
+		addStackScreenListener(this);
+		home = new Screen();
+		home->setTitle("Gestion des alertes 1");
+
+		push(home);
+		if(getPlatform() == IOS){
+			setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+		}
+		setPushTransition(MAW_TRANSITION_TYPE_NONE,0);
+		setIcon(ICON_ALERT + screenResolution);
+		mAlertTab = new AlertTab(language, loginToken, screenResolution);
+		push(mAlertTab);
+	};
+
+	virtual void stackScreenScreenPopped( StackScreen* stackScreen, Screen* fromScreen, Screen* toScreen){
+		lprintfln("stackScreenScreenPopped");
+		mAlertTab->handleKeyPress(MAK_BACK);
+		push(mAlertTab);
+		mAlertTab->fillSpaceHorizontally();
+		mAlertTab->fillSpaceVertically();
+	};
+
+	void handleKeyPress(int keyCode){
+		mAlertTab->handleKeyPress(keyCode);
+	};
+
+	void orientationChange(int screenOrientation){
+		if(getPlatform() == IOS){
+			if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
+		//		lprintfln("Orientation paysage");
+				Screen::setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+			} else // Portrait
+			{
+		//		lprintfln("Orientation Portrait");
+				Screen::setTitle("");
+			}
+		mAlertTab->orientationChange(screenOrientation);
+		}
+	};
+
+	 virtual void handleWidgetEvent(MAWidgetEventData* widgetEventData){
+		 lprintfln("widget event %d",  widgetEventData->eventType);
+
+		 if( widgetEventData->eventType == MAW_EVENT_STACK_SCREEN_POPPED)
+		 {
+			 mAlertTab->handleKeyPress(MAK_BACK);
+			 push(mAlertTab);
+//			 mAlertTab->fillSpaceHorizontally();
+//			 mAlertTab->fillSpaceVertically();
+		 }
+
+	 };
+private:
+	int LANGUAGE;
+	Screen *home;
+	AlertTab *mAlertTab;
+};
 
 #endif /* ALERTTAB_H_ */

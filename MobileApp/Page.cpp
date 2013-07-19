@@ -55,6 +55,9 @@ void Page::setBreakLine(int height, int color) {
 	Label* line1 = new Label();
 	line1->setHeight(height);
 	line1->fillSpaceHorizontally();
+	if (getPlatform() == IOS) {
+		color = 0x000000;
+		}
 	line1->setBackgroundColor(color);
 	this->addChild(line1);
 

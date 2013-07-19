@@ -11,13 +11,13 @@
 <property key="build.prefs:additional.include.paths/Debug" value="%mosync-home%/include"/>
 <property key="build.prefs:additional.include.paths/Release" value="%mosync-home%/include"/>
 <property key="build.prefs:additional.libraries" value="MAUtil.lib,nativeui.lib"/>
-<property key="build.prefs:additional.libraries/Debug" value="mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajlD.lib, MAP.lib, MAUI.lib"/>
+<property key="build.prefs:additional.libraries/Debug" value="mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajlD.lib,  MAP.lib, MAUI.lib"/>
 <property key="build.prefs:additional.libraries/Release" value="mastd.lib, NativeUI.lib, MAFS.lib, MAUtil.lib, Notification.lib, Wormhole.lib, yajl.lib,  MAP.lib, MAUI.lib"/>
 <property key="build.prefs:additional.library.paths/Debug" value="%mosync-home%/lib/pipe"/>
 <property key="build.prefs:additional.library.paths/Release" value="%mosync-home%/lib/pipe"/>
 <property key="build.prefs:app.name/Debug" value="ECHOES Alert"/>
 <property key="build.prefs:app.name/Release" value="ECHOES Alert"/>
-<property key="build.prefs:app.output.path/Debug" value="Release/"/>
+<property key="build.prefs:app.output.path/Debug" value="Debug/"/>
 <property key="build.prefs:app.permissions" value="Autostart File\ Storage Internet\ Access Push\ Notifications Vibration"/>
 <property key="build.prefs:app.version/Debug" value="0.1"/>
 <property key="build.prefs:app.version/Release" value="0.1"/>
@@ -25,7 +25,7 @@
 <property key="build.prefs:extra.link.sw/Release" value=""/>
 <property key="build.prefs:extra.res.sw/Debug" value=""/>
 <property key="build.prefs:extra.res.sw/Release" value=""/>
-<property key="build.prefs:gcc.switches/Debug" value="-O0 -DPLATFORM_%platform-family% -DVARIANT_%platform-variant% "/>
+<property key="build.prefs:gcc.switches/Debug" value="-O0 -DPLATFORM_%platform-family% -DVARIANT_%platform-variant%"/>
 <property key="build.prefs:gcc.warnings/Debug" value="0"/>
 <property key="build.prefs:gcc.warnings/Release" value="0"/>
 <property key="build.prefs:ignore.default.include.paths/Debug" value="true"/>
@@ -35,11 +35,11 @@
 <property key="build.prefs:ignore.default.library.paths/Debug" value="true"/>
 <property key="build.prefs:ignore.default.library.paths/Release" value="true"/>
 <property key="build.prefs:memory.data/Debug" value="4096"/>
-<property key="build.prefs:memory.data/Release" value="4096"/>
+<property key="build.prefs:memory.data/Release" value="16384"/>
 <property key="build.prefs:memory.heap/Debug" value="3072"/>
-<property key="build.prefs:memory.heap/Release" value="3072"/>
+<property key="build.prefs:memory.heap/Release" value="8192"/>
 <property key="build.prefs:memory.stack/Debug" value="512"/>
-<property key="build.prefs:memory.stack/Release" value="512"/>
+<property key="build.prefs:memory.stack/Release" value="2048"/>
 <property key="build.prefs:project.type" value=""/>
 <property key="dependency.strategy" value="0"/>
 <property key="excludes/Debug" value=""/>

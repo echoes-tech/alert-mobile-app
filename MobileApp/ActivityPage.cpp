@@ -10,10 +10,10 @@
 
 ActivityPage::ActivityPage()
 	{
-//		this->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
-//		this->setChildVerticalAlignment(MAW_ALIGNMENT_CENTER);
-//		mActivityIndicator = new ActivityIndicator();
-//		this->addChild(mActivityIndicator);
+		this->setChildHorizontalAlignment(MAW_ALIGNMENT_CENTER);
+		this->setChildVerticalAlignment(MAW_ALIGNMENT_CENTER);
+		mActivityIndicator = new ActivityIndicator();
+		this->addChild(mActivityIndicator);
 	}
 
 	/**

@@ -5,6 +5,8 @@
  *      Author: gdr
  */
 
+
+
 #include "AlertTab.h"
 #include <MAUI/Image.h>
 
@@ -15,6 +17,11 @@
 AlertTab::AlertTab(int language, String loginToken, eScreenResolution screenResolution) :
 		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken) {
 
+	if(getPlatform() == IOS){
+						Screen::setTitle(Convert::tr(CREATE_ALERT_TAB_EN + LANGUAGE));
+					}
+
+//		push(this);
 	mActivityPage = new ActivityPage();
 //	mIsConnected = false;
 	setIcon(ICON_ALERT + screenResolution);
@@ -43,23 +50,31 @@ void AlertTab::handleKeyPress(int keyCode) {
 	if (keyCode == MAK_BACK) {
 		if (activeMainLayout == mainLayoutAssetChoice) {
 			activeMainLayout = mainLayoutAlertChoice;
+			lValert->requestFocus();
 		} else if (activeMainLayout == mainLayoutPluginChoice) {
 			activeMainLayout = mainLayoutAssetChoice;
+			lVAsset->requestFocus();
 		} else if (activeMainLayout == mainLayoutInfoChoice) {
 			activeMainLayout = mainLayoutPluginChoice;
+			lVPlugin->requestFocus();
 		} else if (activeMainLayout == mainLayoutOptionChoice) {
 			activeMainLayout = mainLayoutInfoChoice;
+			lVInfo->requestFocus();
 		} else if (activeMainLayout == mainLayoutOperatorChoice
 				|| activeMainLayout == mainLayoutUnitChoice) {
 			activeMainLayout = mainLayoutOptionChoice;
 		} else if (activeMainLayout == mainLayoutMediaChoice) {
 			activeMainLayout = mainLayoutUserChoice;
+			lVUser->requestFocus();
 		} else if (activeMainLayout == mainLayoutMediaValueChoice) {
 			activeMainLayout = mainLayoutMediaChoice;
+			lVMedia->requestFocus();
 		} else if (activeMainLayout == mainLayoutSnoozeChoice) {
 			activeMainLayout = mainLayoutMediaValueChoice;
+			lVMediaValue->requestFocus();
 		} else if (activeMainLayout == mainLayoutAlertDetailChoice) {
 			activeMainLayout = mainLayoutAlertChoice;
+			lValert->requestFocus();
 		} else if (activeMainLayout == mainLayoutUserChoice) {
 			if (mapLListDestName.size() > 0) {
 				activeMainLayout = mainLayoutListDestChoice;
@@ -67,17 +82,19 @@ void AlertTab::handleKeyPress(int keyCode) {
 				activeMainLayout = mainLayoutOptionChoice;
 			}
 		} else if (activeMainLayout == mainLayoutAlertChoice) {
+			if(getPlatform() != IOS)
+			{
 			maAlert("", "",
 					Convert::tr(Screen_Main_Button_close_app + LANGUAGE),
 					Convert::tr(Screen_Main_Button_home + LANGUAGE),
 					Convert::tr(Screen_Main_Button_cancel + LANGUAGE));
+			}
 		}
 
 //		activeMainLayout->setHeight(30000);
 		Screen::setMainWidget(activeMainLayout);
-		activeMainLayout->fillSpaceVertically();
-		activeMainLayout->fillSpaceHorizontally();
-
+//		activeMainLayout->fillSpaceVertically();
+//		activeMainLayout->fillSpaceHorizontally();
 	}
 }
 void AlertTab::connectUrl1(){
@@ -675,17 +692,18 @@ void AlertTab::parseJSONAsset(MAUtil::YAJLDom::Value* root) {
 		}
 	}
 	for (int idx = 0; idx <= root->getNumChildValues() - 1; idx++) {
-
 		MAUtil::YAJLDom::Value* valueTmp = root->getValueByIndex(idx);
 
 		mapAssetId[idx] = valueTmp->getValueForKey("id")->toInt();
 		mapLAssetName[idx] = valueTmp->getValueForKey("name")->toString().c_str();
 		mapLVIAsset[idx] = new ListViewItem();
+//		mapLVIAsset[idx]->setAccessoryType(LIST_VIEW_ITEM_ACCESSORY_CHECKMARK);
 		mapLVIAsset[idx]->setIcon(ICON_SERVER_SMALL);
-		mapLVIAsset[idx]->setText(mapLAssetName[idx]);
 
+		mapLVIAsset[idx]->setText(mapLAssetName[idx]);
 		lVAsset->addChild(mapLVIAsset[idx]);
 
+		lprintfln("parseJSONAsset4");
 	}
 	mainLayoutAssetChoice->fillSpaceVertically();
 	Screen::setMainWidget(mainLayoutAssetChoice);
@@ -723,10 +741,17 @@ void AlertTab::parseJSONAlert(MAUtil::YAJLDom::Value* root) {
 				valueTmp1->getValueForKey("name")->toString().c_str());
 
 		mapLVIAlert[idx] = new ListViewItem();
-		mapLVIAlert[idx]->addChild(mapLAlertName[idx]);
+		mapLVIAlert[idx]->setAccessoryType(LIST_VIEW_ITEM_ACCESSORY_DISCLOSURE);
+//		mapLVIAlert[idx]->setAccessoryType(LIST_VIEW_ITEM_ACCESSORY_NONE = 0,
+//				LIST_VIEW_ITEM_ACCESSORY_DISCLOSURE,
+//				LIST_VIEW_ITEM_ACCESSORY_DETAIL,
+//				LIST_VIEW_ITEM_ACCESSORY_CHECKMARK);
+//		mapLVIAlert[idx]->addChild(mapLAlertName[idx]);//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+		mapLVIAlert[idx]->setText(mapLAlertName[idx]->getText());//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
 
 		lValert->addChild(mapLVIAlert[idx]);
 	}
+	lValert->reloadData();//test
 }
 
 void AlertTab::parseJSONInformation(MAUtil::YAJLDom::Value* root) {
@@ -841,14 +866,20 @@ void AlertTab::listViewItemClicked(ListView* listView,
 		if (posOptionAlert != -1) //savoir si on a ouvert les options (supprimer/annuler/view), d'une alerte dans la View 1
 				{
 			mapLVIAlert[posOptionAlert]->removeChild(HLOptionAlert);
-			mapLVIAlert[posOptionAlert]->addChild(
-					mapLAlertName[posOptionAlert]);
+
+//			mapLVIAlert[posOptionAlert]->addChild(mapLAlertName[posOptionAlert]);//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+			mapLVIAlert[posOptionAlert]->setText(mapLAlertName[posOptionAlert]->getText());//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+
+
 			posOptionAlert = -1;
 		}
 		for (int i = 0; i < mapLVIAlert.size(); i++) {
 			if (mapLVIAlert[i] == listViewItem) {
 				posOptionAlert = i;
-				mapLVIAlert[i]->removeChild(mapLAlertName[i]);
+
+//				mapLVIAlert[i]->removeChild(mapLAlertName[i]);//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+				mapLVIAlert[i]->setText("");//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+
 				HLOptionAlert = new HorizontalLayout();
 
 				bDelete = new Button();
@@ -1016,7 +1047,8 @@ void AlertTab::buttonClicked(Widget* button) {
 		connectUrl(urlTmp, ALERT_LIST);
 	}else if (button == bCancel) {
 		mapLVIAlert[posOptionAlert]->removeChild(HLOptionAlert);
-		mapLVIAlert[posOptionAlert]->addChild(mapLAlertName[posOptionAlert]);
+//		mapLVIAlert[posOptionAlert]->addChild(mapLAlertName[posOptionAlert]);//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
+		mapLVIAlert[posOptionAlert]->setText(mapLAlertName[posOptionAlert]->getText());//test IOS pour mettre le texte sur plusieurs ligne (pas testé sur IOS)
 		posOptionAlert = -1;
 	} else if (button == bView) {
 		String urlTmp = HOST;
@@ -1047,7 +1079,7 @@ void AlertTab::buttonClicked(Widget* button) {
 			mapSnoozeList[index] = Convert::toInt(eBSnooze->getText().c_str());
 //			lprintfln("YOOOOO : %d", mapSnoozeList[index]);
 			Screen::setMainWidget(mainLayoutListDestChoice);
-			//pour que les deux boutons soient de la même taille.
+			//pour que les deux boutons soient de la mÃªme taille.
 			bCreateAlert->setHeight(bAddOtherDest->getHeight());
 			bAddOtherDest->setHeight(bCreateAlert->getHeight());
 
@@ -1093,27 +1125,41 @@ void AlertTab::createDestListPage() {
 	lVListDest->addListViewListener(this);
 	lVListDest->fillSpaceVertically();
 	mainLayoutListDestChoice->addChild(lVListDest);
-
-//	hLButtonListDest = new HorizontalLayout();
-	lVIButtonListDest = new ListViewItem();
+	lprintfln("createDestListPage");
 
 	bAddOtherDest = new Button();
 	bAddOtherDest->setWidth(width / 2);
 	bAddOtherDest->setText(
 			Convert::tr(alert_create_Button_Add_another_recipient + LANGUAGE));
 	bAddOtherDest->addButtonListener(this);
-	lVIButtonListDest->addChild(bAddOtherDest);
+
+
 	bCreateAlert = new Button();
 	bCreateAlert->setWidth(width / 2);
 	bCreateAlert->setLeftPosition(width / 2);
 	bCreateAlert->setText(
 			Convert::tr(alert_create_Button_Create_alert + LANGUAGE));
 	bCreateAlert->addButtonListener(this);
+	if(getPlatform() == ANDROID)
+	{
+	lVIButtonListDest = new ListViewItem();
+	lVIButtonListDest->addChild(bAddOtherDest);
 	lVIButtonListDest->addChild(bCreateAlert);
 	lVIButtonListDest->wrapContentVertically();
 //	bCreateAlert->fillSpaceVertically();
 
 	mainLayoutListDestChoice->addChild(lVIButtonListDest);
+	}else{
+		bCreateAlert->fillSpaceHorizontally();
+		bAddOtherDest->fillSpaceHorizontally();
+		hLButtonListDest = new HorizontalLayout();
+		hLButtonListDest->addChild(bAddOtherDest);
+		hLButtonListDest->addChild(bCreateAlert);
+		hLButtonListDest->wrapContentVertically();
+		//	bCreateAlert->fillSpaceVertically();
+		mainLayoutListDestChoice->addChild(hLButtonListDest);
+	}
+
 //	bCreateAlert->setHeight(bAddOtherDest->getHeight());
 	lprintfln("hauteur bouton");
 	lprintfln("%d",bAddOtherDest->getHeight());
@@ -1194,10 +1240,6 @@ void AlertTab::createOptionPage() {
 		hlTmp->addChild(eBKeyValue);
 		hlTmp->wrapContentVertically();
 
-		lVCriteria = new ListView();
-		lVCriteria->wrapContentVertically();
-		lVCriteria->addListViewListener(this);
-
 		criterion = new Label();
 		criterion->setText(Convert::tr(alert_create_Label_operator + LANGUAGE));
 
@@ -1227,14 +1269,23 @@ void AlertTab::createOptionPage() {
 
 		mainLayoutOptionChoice->addChild(hlTmp);
 		mainLayoutOptionChoice->setBreakLine(1, 0x333333);
+		if(getPlatform() !=IOS){
+				lVCriteria = new ListView();
+						lVCriteria->wrapContentVertically();
+						lVCriteria->addListViewListener(this);
 		mainLayoutOptionChoice->addChild(lVCriteria);
 		mainLayoutOptionChoice->setBreakLine(1, 0x333333);
+
 		lVCriteria->addChild(mapLVIOption[0]);
+		}
 		mainLayoutOptionChoice->addChild(hLTmp1);
 		mainLayoutOptionChoice->setBreakLine(1, 0x333333);
 
 		mainLayoutOptionChoice->addChild(lVUnit);
 		lVUnit->addChild(mapLVIOption[1]);
+		if(getPlatform() == IOS){
+			lVUnit->addChild(mapLVIOption[0]);
+		}
 
 		bDest = new Button();
 		bDest->fillSpaceHorizontally();

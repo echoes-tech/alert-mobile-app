@@ -27,7 +27,7 @@
 using namespace NativeUI;
 
 
-class Authentication : public NativeUI::Screen/*, public HighLevelHttpConnection*/, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener, public ScreenListener, public Connections
+class Authentication : public NativeUI::Screen/*, public HighLevelHttpConnection*/, public ButtonListener, public ListViewListener, public RadioGroupListener, public EditBoxListener, public ScreenListener, public Connections, public CheckBoxListener
 {
 public:
 
@@ -59,6 +59,7 @@ public:
 	virtual void listViewItemClicked(ListView* listView, ListViewItem* listViewItem);
 	virtual void buttonClicked(Widget* button);
 	virtual void radioButtonSelected(NativeUI::RadioGroup*, int, NativeUI::RadioButton*);
+	virtual void checkBoxStateChanged(NativeUI::CheckBox* cB, bool b);
 
 	 virtual void editBoxEditingDidEnd(EditBox* editBox) {}
 	 virtual void editBoxReturn(EditBox* editBox){maWidgetSetProperty(editBox->getWidgetHandle(), MAW_EDIT_BOX_SHOW_KEYBOARD, "false");}
@@ -109,10 +110,12 @@ private:
 	Button *bValidate;
 
 	Label* lAuthenticationMode;
+//	Android
 	RadioGroup* rGAuthenticationChoice;
 	RadioButton* rBModeCredential;
 	RadioButton* rBModeNone;
-
+//	IOS
+	CheckBox* cbAuthenticationChoice;
 
 //	View 2
 	VerticalLayout *vLMediaChoice;

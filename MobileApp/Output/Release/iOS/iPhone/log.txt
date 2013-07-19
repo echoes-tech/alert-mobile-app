@@ -1,5 +1,5 @@
-PerformanceFrequency: 3215410
-StartCount: 15707110337
+PerformanceFrequency: 3215419
+StartCount: 2118433103
 Hello World!
 argc: 12
 1:-program
@@ -13,16 +13,16 @@ AddFontResourceEx: 2 faces added.
 InitVM .. 
 LoadVM
 maxCustomEventSize: 0x28
-Head.DataSize: 0x400000
-Head.StackSize: 0x80000
-Head.HeapSize: 0x300000
-Head.EntryPoint: 0x36863
-Head.CodeLen: 0xa4f18
+Head.DataSize: 0x1000000
+Head.StackSize: 0x200000
+Head.HeapSize: 0x800000
+Head.EntryPoint: 0x2bc33
+Head.CodeLen: 0x95629
 CODE_SEGMENT_SIZE: 0x100000
-Head.DataLen: 0xdcb4
-Head.DataSize: 0x400000
-DATA_SEGMENT_SIZE: 0x400000
-Head.IntLen: 0xd8f
+Head.DataLen: 0xdc1c
+Head.DataSize: 0x1000000
+DATA_SEGMENT_SIZE: 0x1000000
+Head.IntLen: 0xd56
 Type 2, size 23456
 Type 2, size 2218
 Type 2, size 2218
@@ -91,8 +91,8 @@ Type 4, size 7
 Type 4, size 8
 Type 4, size 22
 Type 4, size 30
-Type 4, size 12
-Type 4, size 15
+Type 4, size 13
+Type 4, size 16
 Type 4, size 29
 Type 4, size 18
 Type 4, size 4
@@ -151,6 +151,8 @@ Type 4, size 22
 Type 4, size 27
 Type 4, size 13
 Type 4, size 13
+Type 4, size 13
+Type 4, size 20
 Type 4, size 14
 Type 4, size 18
 Type 4, size 8
@@ -165,6 +167,8 @@ Type 4, size 11
 Type 4, size 18
 Type 4, size 9
 Type 4, size 9
+Type 4, size 55
+Type 4, size 58
 Type 4, size 17
 Type 4, size 17
 Type 4, size 11
@@ -172,7 +176,7 @@ Type 4, size 15
 Type 4, size 9
 Type 4, size 9
 Type 9, size 10
-Type 4, size 150
+Type 4, size 154
 ResLoad complete
 IDL version match!
 Connecté ? : -2: 
@@ -180,21 +184,20 @@ maPanic 0, "This application uses Native UI, which is not supported on the curre
 DumpCallStackEx:
 reportCallStack
 0
-IP: 0x51190
-Call stack: 9 frames
-0: 0x36892
-1: 0x4625
-2: 0x4702
-3: 0xa533
-4: 0x4ba84
-5: 0x48ccb
-6: 0x5032c
-7: 0x513a1
-8: 0x51192
-Exit @ IP 0x51190  SP 0x3fff04
-InstCount: 48847
-IP: 0x36863
+IP: 0x46560
+Call stack: 8 frames
+0: 0x2bc62
+1: 0x2431
+2: 0x514e
+3: 0x40e54
+4: 0x3e09b
+5: 0x456fc
+6: 0x46771
+7: 0x46562
+Exit @ IP 0x46560  SP 0xfffeac
+InstCount: 49726
+IP: 0x2BC33
 Profile dumped.
-level: 9
-maxLevel: 12
-nodes: 451
+level: 8
+maxLevel: 11
+nodes: 466

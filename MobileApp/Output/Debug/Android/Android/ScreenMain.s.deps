@@ -1,7 +1,7 @@
  \
- C:\Users\gdr\Documents\mosync\MobileApp\Output\Debug\Android\Android\ScreenMain.s:  \
- C:\Users\gdr\Documents\mosync\MobileApp\ScreenMain.cpp \
-  C:\Users\gdr\Documents\mosync\MobileApp\/ScreenMain.h \
+ C:\Users\gdr\Documents\source\mobile-app\MobileApp\Output\Debug\Android\Android\ScreenMain.s:  \
+ C:\Users\gdr\Documents\source\mobile-app\MobileApp\ScreenMain.cpp \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ScreenMain.h \
   c:/MoSync/include/NativeUI/Widgets.h \
   c:/MoSync/include/NativeUI/ActivityIndicator.h \
   c:/MoSync/include/NativeUI/Widget.h c:/MoSync/include/ma.h \
@@ -20,12 +20,15 @@
   c:/MoSync/include/MAUtil/ListenerSet.h c:/MoSync/include/MAUtil/util.h \
   c:/MoSync/include/MAUtil/String.h c:/MoSync/include/IX_WIDGET.h \
   c:/MoSync/include/NativeUI/WidgetUtil.h \
+  c:/MoSync/include/NativeUI/ActionBar.h \
   c:/MoSync/include/NativeUI/Button.h \
   c:/MoSync/include/NativeUI/TextWidget.h \
   c:/MoSync/include/NativeUI/ButtonListener.h \
   c:/MoSync/include/NativeUI/CameraPreview.h \
+  c:/MoSync/include/NativeUI/Camera.h \
   c:/MoSync/include/NativeUI/CheckBox.h \
   c:/MoSync/include/NativeUI/CheckBoxListener.h \
+  c:/MoSync/include/NativeUI/CustomPicker.h \
   c:/MoSync/include/NativeUI/DatePicker.h \
   c:/MoSync/include/NativeUI/DatePickerListener.h \
   c:/MoSync/include/NativeUI/Dialog.h \
@@ -85,5 +88,33 @@
   c:/MoSync/include/NativeUI/WebViewListener.h \
   c:/MoSync/include/NativeUI/WidgetManager.h \
   c:/MoSync/include/NativeUI/WidgetEventListener.h \
-  C:\Users\gdr\Documents\mosync\MobileApp\/AlertTab.h \
-  c:/MoSync/include/NativeUI/Screen.h
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/TrackingTab.h \
+  c:/MoSync/include/MAP/DateTime.h c:/MoSync/include/maapi.h \
+  c:/MoSync/include/mastring.h c:/MoSync/include/matime.h \
+  c:/MoSync/include/MAP/TimeSpan.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/conf.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Util.h \
+  c:/MoSync/include/MAUtil/FileLister.h c:/MoSync/include/mavsprintf.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/resource/Convert.h \
+  c:/MoSync/include/notification/LocalNotification.h \
+  c:/MoSync/include/notification/NotificationManager.h \
+  c:/MoSync/include/notification/LocalNotification.h \
+  c:/MoSync/include/Notification/LocalNotificationListener.h \
+  C:/Users/gdr/Documents/source/mobile-app/MobileApp/Output/Debug/Android/Android/MAHeaders.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/IncludeFile.h \
+  c:/MoSync/include/Wormhole/HighLevelHttpConnection.h \
+  c:/MoSync/include/maheap.h c:/MoSync/include/MAUtil/Connection.h \
+  c:/MoSync/include/MAUtil/Environment.h \
+  c:/MoSync/include/Wormhole/MessageStreamJSON.h \
+  c:/MoSync/include/MAUtil/HashMap.h c:/MoSync/include/MAUtil/HashDict.h \
+  c:/MoSync/include/kazlib/hash.h \
+  c:/MoSync/include/MAUtil/HashDict_impl.h \
+  c:/MoSync/include/MAUtil/HashMap_impl.h \
+  c:/MoSync/include/NativeUI/WebView.h c:/MoSync/include/yajl/YAJLDom.h \
+  c:/MoSync/include/mastdlib.h c:/MoSync/include/maxtoa.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Page.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/ActivityPage.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/Connections.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/HomeTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/OptionTab.h \
+  C:\Users\gdr\Documents\source\mobile-app\MobileApp\/AlertTab.h

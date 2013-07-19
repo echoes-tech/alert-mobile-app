@@ -63,10 +63,10 @@ public:
 	bool maAlertPrintFirstTime;
 	bool uiCreated;
 
-	AlertTab* alertTab;
-	TrackingTab* trackingTab;
+	AlertStackScreen* alertTab;
+	TrackingStackScreen* trackingTab;
 	HomeTab* homeTab;
-	OptionTab* optionTab;
+	OptionStackScreen* optionTab;
 
 };
 

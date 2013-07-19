@@ -482,10 +482,14 @@
 	.stabs	"Map<int,int>:Tt(109,69)=s56!1,020,(109,44);__base_ctor::(109,70)=#(109,69),(0,6),(109,71)=*(109,69),(84,22),(0,6);:_ZN6MAUtil3MapIiiEC2EPFiRKiS3_E;2A.;__comp_ctor::(109,70):_ZN6MAUtil3MapIiiEC1EPFiRKiS3_E;2A.;insert::(109,72)=#(109,69),(109,65),(109,71),(84,11),(84,11),(0,6);:_ZN6MAUtil3MapIiiE6insertERKiS3_;2A.(109,73)=#(109,69),(109,65),(109,71),(109,74)=&(109,75)=k(109,76)=xsPair<int,int>:,(0,6);:_ZN6MAUtil3MapIiiE6insertERKNS_4PairIiiEE;2A.;operator[]::(109,77)=#(109,69),(109,78)=&(0,3),(109,71),(84,11),(0,6);:_ZN6MAUtil3MapIiiEixERKi;2A.;operator=::(109,79)=#(109,69),(109,80)=&(109,69),(109,71),(109,81)=&(109,82)=k(109,69),(0,6);:_ZN6MAUtil3MapIiiEaSERKS1_;2A.;__base_ctor::(109,83)=#(109,69),(0,6),(109,71),(109,81),(0,6);:_ZN6MAUtil3MapIiiEC2ERKS1_;2A.;__comp_ctor::(109,83):_ZN6MAUtil3MapIiiEC1ERKS1_;2A.;__base_dtor::(109,84)=#(109,69),(0,6),(109,71),(0,6);:_ZN6MAUtil3MapIiiED2Ev;2A.;__comp_dtor::(109,84):_ZN6MAUtil3MapIiiED1Ev;2A.;;",128,0,33,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-	.stabs	"ScreenMain:Tt(0,25)=s112!2,020,(0,26)=xsTabScreen:;02672,(55,5);LANGUAGE:/0(0,3),704,32;maAlertPrintFirstTime:/0(0,4),736,8;uiCreated:/0(0,4),744,8;alertTab:/0(0,27)=*(0,28)=xsAlertTab:,768,32;trackingTab:/0(0,29)=*(0,30)=xsTrackingTab:,800,32;homeTab:/0(0,31)=*(0,32)=xsHomeTab:,832,32;optionTab:/0(0,33)=*(0,34)=xsOptionTab:,864,32;__base_ctor::(0,35)=#(0,25),(0,6),(0,36)=*(0,25),(0,6);:_ZN10ScreenMainC2Ev;2A.;__comp_ctor::(0,35):_ZN10ScreenMainC1Ev;2A.;__base_dtor::(0,35):_ZN10ScreenMainD2Ev;2A.;__comp_dtor::(0,35):_ZN10ScreenMainD1Ev;2A*0;(0,25);;__deleting_dtor::(0,35):_ZN10ScreenMainD0Ev;2A*1;(0,25);;createUI::(0,37)=#(0,25),(0,6),(0,36),(10,1),(0,15),(0,6);:_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx;2A.;pullRequest::(0,35):_ZN10ScreenMain11pullRequestEv;2A.;handleKeyPress::(0,38)=#(0,25),(0,6),(0,36),(0,3),(0,6);:_ZN10ScreenMain14handleKeyPressEi;2A*53;(0,25);;handlePointerPressed::(0,39)=#(0,25),(0,6),(0,36),(6,27),(0,6);:_ZN10ScreenMain20handlePointerPressedE9MAPoint2d;2A*54;(0,25);;handlePointerMoved::(0,39):_ZN10ScreenMain18handlePointerMovedE9MAPoint2d;2A*55;(0,25);;handlePointerReleased::(0,39):_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d;2A*56;(0,25);;customEvent::(0,40)=#(0,25),(0,6),(0,36),(0,41)=&(0,42)=k(6,165),(0,6);:_ZN10ScreenMain11customEventERK7MAEvent;2A.;orientationChanged::(0,43)=#(0,25),(0,6),(0,36),(69,32),(0,3),(0,6);:_ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi;2A*57;(0,25);;operator=::(0,44)=#(0,25),(0,45)=&(0,25),(0,36),(0,46)=&(0,47)=k(0,25),(0,6);:_ZN10ScreenMainaSERKS_;2A.;__base_ctor::(0,48)=#(0,25),(0,6),(0,36),(0,46),(0,6);:_ZN10ScreenMainC2ERKS_;2A.;__comp_ctor::(0,48):_ZN10ScreenMainC1ERKS_;2A.;;~%(4,78);",128,0,19,0
-	.stabs	"WebViewListener:Tt(80,4)=s4_vptr$WebViewListener:(0,49)=*(0,1),0,32;__base_ctor::(0,50)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,50):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,50):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,50):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(80,4);;__deleting_dtor::(0,50):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(80,4);;webViewHookInvoked::(0,51)=#(80,4),(0,6),(80,3),(0,52)=*(0,53)=xsWebView:,(0,3),(6,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(80,4);;webViewContentLoading::(0,54)=#(80,4),(0,6),(80,3),(0,52),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(80,4);;operator=::(0,55)=#(80,4),(0,56)=&(80,4),(80,3),(0,57)=&(0,58)=k(80,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,59)=#(80,4),(0,6),(80,3),(0,57),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,59):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(80,4);",128,0,50,0
-	.stabs	"ScreenListener:Tt(55,5)=s4_vptr$ScreenListener:(0,49),0,32;orientationChanged::(0,60)=#(55,5),(0,6),(55,4),(69,32),(0,3),(0,6);:_ZN8NativeUI14ScreenListener18orientationChangedEPNS_6ScreenEi;2A*0;(55,5);;orientationWillChange::(0,61)=#(55,5),(0,6),(55,4),(69,32),(0,6);:_ZN8NativeUI14ScreenListener21orientationWillChangeEPNS_6ScreenE;2A*1;(55,5);;optionsMenuClosed::(0,61):_ZN8NativeUI14ScreenListener17optionsMenuClosedEPNS_6ScreenE;2A*2;(55,5);;optionsMenuItemSelected::(0,60):_ZN8NativeUI14ScreenListener23optionsMenuItemSelectedEPNS_6ScreenEi;2A*3;(55,5);;actionBarItemSelected::(0,60):_ZN8NativeUI14ScreenListener21actionBarItemSelectedEPNS_6ScreenEi;2A*4;(55,5);;actionBarUpSelected::(0,61):_ZN8NativeUI14ScreenListener19actionBarUpSelectedEPNS_6ScreenE;2A*5;(55,5);;operator=::(0,62)=#(55,5),(0,63)=&(55,5),(55,4),(0,64)=&(0,65)=k(55,5),(0,6);:_ZN8NativeUI14ScreenListeneraSERKS0_;2A.;__base_ctor::(0,66)=#(55,5),(0,6),(55,4),(0,64),(0,6);:_ZN8NativeUI14ScreenListenerC2ERKS0_;2A.;__comp_ctor::(0,66):_ZN8NativeUI14ScreenListenerC1ERKS0_;2A.;__base_ctor::(0,67)=#(55,5),(0,6),(55,4),(0,6);:_ZN8NativeUI14ScreenListenerC2Ev;2A.;__comp_ctor::(0,67):_ZN8NativeUI14ScreenListenerC1Ev;2A.;;~%(55,5);",128,0,51,0
-	.stabs	"RefCounted:Tt(0,68)=s8_vptr$RefCounted:(0,49),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,69)=#(0,68),(0,6),(0,70)=*(0,68),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,69):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,71)=#(0,68),(0,6),(0,70),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,71):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,72)=#(0,68),(0,3),(0,70),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,71):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,71):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,68);;__deleting_dtor::(0,71):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,68);;operator=::(0,73)=#(0,68),(0,74)=&(0,68),(0,70),(0,75)=&(0,76)=k(0,68),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,77)=#(0,68),(0,6),(0,70),(0,75),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,77):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,68);",128,0,28,0
+	.stabs	"ScreenMain:Tt(0,25)=s112!2,020,(0,26)=xsTabScreen:;02672,(55,5);LANGUAGE:/0(0,3),704,32;maAlertPrintFirstTime:/0(0,4),736,8;uiCreated:/0(0,4),744,8;alertTab:/0(0,27)=*(0,28)=xsAlertStackScreen:,768,32;trackingTab:/0(0,29)=*(0,30)=xsTrackingStackScreen:,800,32;homeTab:/0(0,31)=*(0,32)=xsHomeTab:,832,32;optionTab:/0(0,33)=*(0,34)=xsOptionStackScreen:,864,32;__base_ctor::(0,35)=#(0,25),(0,6),(0,36)=*(0,25),(0,6);:_ZN10ScreenMainC2Ev;2A.;__comp_ctor::(0,35):_ZN10ScreenMainC1Ev;2A.;__base_dtor::(0,35):_ZN10ScreenMainD2Ev;2A.;__comp_dtor::(0,35):_ZN10ScreenMainD1Ev;2A*0;(0,25);;__deleting_dtor::(0,35):_ZN10ScreenMainD0Ev;2A*1;(0,25);;createUI::(0,37)=#(0,25),(0,6),(0,36),(10,1),(0,15),(0,6);:_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx;2A.;pullRequest::(0,35):_ZN10ScreenMain11pullRequestEv;2A.;handleKeyPress::(0,38)=#(0,25),(0,6),(0,36),(0,3),(0,6);:_ZN10ScreenMain14handleKeyPressEi;2A*53;(0,25);;handlePointerPressed::(0,39)=#(0,25),(0,6),(0,36),(6,27),(0,6);:_ZN10ScreenMain20handlePointerPressedE9MAPoint2d;2A*54;(0,25);;handlePointerMoved::(0,39):_ZN10ScreenMain18handlePointerMovedE9MAPoint2d;2A*55;(0,25);;handlePointerReleased::(0,39):_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d;2A*56;(0,25);;customEvent::(0,40)=#(0,25),(0,6),(0,36),(0,41)=&(0,42)=k(6,165),(0,6);:_ZN10ScreenMain11customEventERK7MAEvent;2A.;orientationChanged::(0,43)=#(0,25),(0,6),(0,36),(69,32),(0,3),(0,6);:_ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi;2A*57;(0,25);;operator=::(0,44)=#(0,25),(0,45)=&(0,25),(0,36),(0,46)=&(0,47)=k(0,25),(0,6);:_ZN10ScreenMainaSERKS_;2A.;__base_ctor::(0,48)=#(0,25),(0,6),(0,36),(0,46),(0,6);:_ZN10ScreenMainC2ERKS_;2A.;__comp_ctor::(0,48):_ZN10ScreenMainC1ERKS_;2A.;;~%(4,78);",128,0,19,0
+	.stabs	"AlertStackScreen:Tt(0,28)=s112!2,020,(0,49)=xsStackScreen:;02768,(69,4);LANGUAGE:/0(0,3),800,32;home:/0(69,32),832,32;mAlertTab:/0(0,50)=*(0,51)=xsAlertTab:,864,32;__base_ctor::(0,52)=#(0,28),(0,6),(0,27),(0,3),(10,1),(88,4),(0,6);:_ZN16AlertStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,52):_ZN16AlertStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;stackScreenScreenPopped::(0,53)=#(0,28),(0,6),(0,27),(0,54)=*(0,49),(69,32),(69,32),(0,6);:_ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,28);;handleKeyPress::(0,55)=#(0,28),(0,6),(0,27),(0,3),(0,6);:_ZN16AlertStackScreen14handleKeyPressEi;2A.;orientationChange::(0,55):_ZN16AlertStackScreen17orientationChangeEi;2A.;handleWidgetEvent::(0,56)=#(0,28),(0,6),(0,27),(0,57)=*(16,18),(0,6);:_ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData;2A*39;(0,28);;operator=::(0,58)=#(0,28),(0,59)=&(0,28),(0,27),(0,60)=&(0,61)=k(0,28),(0,6);:_ZN16AlertStackScreenaSERKS_;2A.;__base_ctor::(0,62)=#(0,28),(0,6),(0,27),(0,60),(0,6);:_ZN16AlertStackScreenC2ERKS_;2A.;__comp_ctor::(0,62):_ZN16AlertStackScreenC1ERKS_;2A.;__base_dtor::(0,63)=#(0,28),(0,6),(0,27),(0,6);:_ZN16AlertStackScreenD2Ev;2A.;__comp_dtor::(0,63):_ZN16AlertStackScreenD1Ev;2A*0;(0,28);;__deleting_dtor::(0,63):_ZN16AlertStackScreenD0Ev;2A*1;(0,28);;;~%(4,78);",128,0,278,0
+	.stabs	"OptionStackScreen:Tt(0,34)=s108!2,020,(0,49);02768,(69,4);LANGUAGE:/0(0,3),800,32;mOptionTab:/0(0,64)=*(0,65)=xsOptionTab:,832,32;__base_ctor::(0,66)=#(0,34),(0,6),(0,33),(0,3),(10,1),(88,4),(0,6);:_ZN17OptionStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,66):_ZN17OptionStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;stackScreenScreenPopped::(0,67)=#(0,34),(0,6),(0,33),(0,54),(69,32),(69,32),(0,6);:_ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,34);;orientationChange::(0,68)=#(0,34),(0,6),(0,33),(0,3),(0,6);:_ZN17OptionStackScreen17orientationChangeEi;2A.;operator=::(0,69)=#(0,34),(0,70)=&(0,34),(0,33),(0,71)=&(0,72)=k(0,34),(0,6);:_ZN17OptionStackScreenaSERKS_;2A.;__base_ctor::(0,73)=#(0,34),(0,6),(0,33),(0,71),(0,6);:_ZN17OptionStackScreenC2ERKS_;2A.;__comp_ctor::(0,73):_ZN17OptionStackScreenC1ERKS_;2A.;__base_dtor::(0,74)=#(0,34),(0,6),(0,33),(0,6);:_ZN17OptionStackScreenD2Ev;2A.;__comp_dtor::(0,74):_ZN17OptionStackScreenD1Ev;2A*0;(0,34);;__deleting_dtor::(0,74):_ZN17OptionStackScreenD0Ev;2A*1;(0,34);;;~%(4,78);",128,0,84,0
+	.stabs	"TrackingStackScreen:Tt(0,30)=s108!2,020,(0,49);02768,(69,4);LANGUAGE:/0(0,3),800,32;mTrackingTab:/0(0,75)=*(0,76)=xsTrackingTab:,832,32;__base_ctor::(0,77)=#(0,30),(0,6),(0,29),(0,3),(10,1),(88,4),(0,3),(0,6);:_ZN19TrackingStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolutioni;2A.;__comp_ctor::(0,77):_ZN19TrackingStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolutioni;2A.;runTimerEvent::(0,78)=#(0,30),(0,6),(0,29),(0,6);:_ZN19TrackingStackScreen13runTimerEventEv;2A.;stackScreenScreenPopped::(0,79)=#(0,30),(0,6),(0,29),(0,54),(69,32),(69,32),(0,6);:_ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,30);;orientationChange::(0,80)=#(0,30),(0,6),(0,29),(0,3),(0,6);:_ZN19TrackingStackScreen17orientationChangeEi;2A.;operator=::(0,81)=#(0,30),(0,82)=&(0,30),(0,29),(0,83)=&(0,84)=k(0,30),(0,6);:_ZN19TrackingStackScreenaSERKS_;2A.;__base_ctor::(0,85)=#(0,30),(0,6),(0,29),(0,83),(0,6);:_ZN19TrackingStackScreenC2ERKS_;2A.;__comp_ctor::(0,85):_ZN19TrackingStackScreenC1ERKS_;2A.;__base_dtor::(0,78):_ZN19TrackingStackScreenD2Ev;2A.;__comp_dtor::(0,78):_ZN19TrackingStackScreenD1Ev;2A*0;(0,30);;__deleting_dtor::(0,78):_ZN19TrackingStackScreenD0Ev;2A*1;(0,30);;;~%(4,78);",128,0,120,0
+	.stabs	"WebViewListener:Tt(80,4)=s4_vptr$WebViewListener:(0,86)=*(0,1),0,32;__base_ctor::(0,87)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,87):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,87):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,87):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(80,4);;__deleting_dtor::(0,87):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(80,4);;webViewHookInvoked::(0,88)=#(80,4),(0,6),(80,3),(0,89)=*(0,90)=xsWebView:,(0,3),(6,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(80,4);;webViewContentLoading::(0,91)=#(80,4),(0,6),(80,3),(0,89),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(80,4);;operator=::(0,92)=#(80,4),(0,93)=&(80,4),(80,3),(0,94)=&(0,95)=k(80,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,96)=#(80,4),(0,6),(80,3),(0,94),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,96):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(80,4);",128,0,50,0
+	.stabs	"StackScreenListener:Tt(69,4)=s4_vptr$StackScreenListener:(0,86),0,32;stackScreenScreenPopped::(0,97)=#(69,4),(0,6),(69,3),(0,54),(69,32),(69,32),(0,6);:_ZN8NativeUI19StackScreenListener23stackScreenScreenPoppedEPNS_11StackScreenEPNS_6ScreenES4_;2A*0;(69,4);;operator=::(0,98)=#(69,4),(0,99)=&(69,4),(69,3),(0,100)=&(0,101)=k(69,4),(0,6);:_ZN8NativeUI19StackScreenListeneraSERKS0_;2A.;__base_ctor::(0,102)=#(69,4),(0,6),(69,3),(0,100),(0,6);:_ZN8NativeUI19StackScreenListenerC2ERKS0_;2A.;__comp_ctor::(0,102):_ZN8NativeUI19StackScreenListenerC1ERKS0_;2A.;__base_ctor::(0,103)=#(69,4),(0,6),(69,3),(0,6);:_ZN8NativeUI19StackScreenListenerC2Ev;2A.;__comp_ctor::(0,103):_ZN8NativeUI19StackScreenListenerC1Ev;2A.;;~%(69,4);",128,0,48,0
+	.stabs	"ScreenListener:Tt(55,5)=s4_vptr$ScreenListener:(0,86),0,32;orientationChanged::(0,104)=#(55,5),(0,6),(55,4),(69,32),(0,3),(0,6);:_ZN8NativeUI14ScreenListener18orientationChangedEPNS_6ScreenEi;2A*0;(55,5);;orientationWillChange::(0,105)=#(55,5),(0,6),(55,4),(69,32),(0,6);:_ZN8NativeUI14ScreenListener21orientationWillChangeEPNS_6ScreenE;2A*1;(55,5);;optionsMenuClosed::(0,105):_ZN8NativeUI14ScreenListener17optionsMenuClosedEPNS_6ScreenE;2A*2;(55,5);;optionsMenuItemSelected::(0,104):_ZN8NativeUI14ScreenListener23optionsMenuItemSelectedEPNS_6ScreenEi;2A*3;(55,5);;actionBarItemSelected::(0,104):_ZN8NativeUI14ScreenListener21actionBarItemSelectedEPNS_6ScreenEi;2A*4;(55,5);;actionBarUpSelected::(0,105):_ZN8NativeUI14ScreenListener19actionBarUpSelectedEPNS_6ScreenE;2A*5;(55,5);;operator=::(0,106)=#(55,5),(0,107)=&(55,5),(55,4),(0,108)=&(0,109)=k(55,5),(0,6);:_ZN8NativeUI14ScreenListeneraSERKS0_;2A.;__base_ctor::(0,110)=#(55,5),(0,6),(55,4),(0,108),(0,6);:_ZN8NativeUI14ScreenListenerC2ERKS0_;2A.;__comp_ctor::(0,110):_ZN8NativeUI14ScreenListenerC1ERKS0_;2A.;__base_ctor::(0,111)=#(55,5),(0,6),(55,4),(0,6);:_ZN8NativeUI14ScreenListenerC2Ev;2A.;__comp_ctor::(0,111):_ZN8NativeUI14ScreenListenerC1Ev;2A.;;~%(55,5);",128,0,51,0
+	.stabs	"RefCounted:Tt(0,112)=s8_vptr$RefCounted:(0,86),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,113)=#(0,112),(0,6),(0,114)=*(0,112),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,113):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,115)=#(0,112),(0,6),(0,114),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,115):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,116)=#(0,112),(0,3),(0,114),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,115):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,115):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,112);;__deleting_dtor::(0,115):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,112);;operator=::(0,117)=#(0,112),(0,118)=&(0,112),(0,114),(0,119)=&(0,120)=k(0,112),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,121)=#(0,112),(0,6),(0,114),(0,119),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,121):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,112);",128,0,28,0
 	.ctor __GLOBAL__I__ZN10ScreenMainC2Ev
 	.dtor __GLOBAL__D__ZN10ScreenMainC2Ev
 	.global	__ZTV10ScreenMain
@@ -566,6 +570,206 @@ __ZTV10ScreenMain:
 	.lcomm	__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE, 4 ; size=4
 	.lcomm	__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE, 4 ; size=4
 	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
+	.align 4
+__ZTV16AlertStackScreen:
+	.long	0
+	.long	0
+	.long	__ZN16AlertStackScreenD1Ev
+	.long	__ZN16AlertStackScreenD0Ev
+	.long	__ZN8NativeUI6Widget25markWidgetHandleAsDeletedEv
+	.long	__ZNK8NativeUI6Widget15getWidgetHandleEv
+	.long	__ZN8NativeUI6Widget11setPropertyERKN6MAUtil11BasicStringIcEES5_
+	.long	__ZN8NativeUI6Widget14setPropertyIntERKN6MAUtil11BasicStringIcEEi
+	.long	__ZN8NativeUI6Widget16setPropertyFloatERKN6MAUtil11BasicStringIcEEf
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget8addChildEPS0_
+	.long	__ZN8NativeUI6Widget11insertChildEPS0_i
+	.long	__ZN8NativeUI6Widget11removeChildEPS0_
+	.long	__ZNK8NativeUI11StackScreen8getChildEi
+	.long	__ZNK8NativeUI6Widget17countChildWidgetsEv
+	.long	__ZN8NativeUI6Widget11setPositionEii
+	.long	__ZN8NativeUI6Widget15setLeftPositionEi
+	.long	__ZN8NativeUI6Widget14setTopPositionEi
+	.long	__ZN8NativeUI6Widget7setSizeEii
+	.long	__ZN8NativeUI6Widget8getWidthEv
+	.long	__ZN8NativeUI6Widget9getHeightEv
+	.long	__ZN8NativeUI6Widget8setWidthEi
+	.long	__ZN8NativeUI6Widget9setHeightEi
+	.long	__ZN8NativeUI6Widget21fillSpaceHorizontallyEv
+	.long	__ZN8NativeUI6Widget19fillSpaceVerticallyEv
+	.long	__ZN8NativeUI6Widget23wrapContentHorizontallyEv
+	.long	__ZN8NativeUI6Widget21wrapContentVerticallyEv
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEi
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEiii
+	.long	__ZN8NativeUI6Widget21setBackgroundGradientEii
+	.long	__ZN8NativeUI6Widget10setVisibleEb
+	.long	__ZN8NativeUI6Widget9isVisibleEv
+	.long	__ZN8NativeUI6Widget10setEnabledEb
+	.long	__ZN8NativeUI6Widget9isEnabledEv
+	.long	__ZN8NativeUI6Widget16addEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN8NativeUI6Widget19removeEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData
+	.long	__ZN8NativeUI6Screen4showEv
+	.long	__ZN8NativeUI6Screen18showWithTransitionEii
+	.long	__ZN8NativeUI6Screen21orientationWillChangeEv
+	.long	__ZN8NativeUI6Screen20orientationDidChangeEv
+	.long	__ZN8NativeUI6Screen17removeOptionsMenuEv
+	.long	__ZN8NativeUI11StackScreen7isShownEv
+	.long	__ZN8NativeUI6Screen17addScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI6Screen20removeScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI11StackScreen12getStackSizeEv
+	.long	__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE
+	.long	__ZN8NativeUI11StackScreen3popEv
+	.long	__ZN8NativeUI11StackScreen16enableBackButtonEb
+	.long	__ZN8NativeUI11StackScreen17setPushTransitionEii
+	.long	__ZN8NativeUI11StackScreen16setPopTransitionEii
+	.long	__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZN8NativeUI11StackScreen25removeStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZNK8NativeUI11StackScreen9getScreenEi
+	.long	__ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.long	-96
+	.long	0
+	.long	__ZThn96_N16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.align 4
+__ZTVN8NativeUI19StackScreenListenerE:
+	.long	0
+	.long	0
+	.long	___cxa_pure_virtual
+	.align 4
+__ZTV19TrackingStackScreen:
+	.long	0
+	.long	0
+	.long	__ZN19TrackingStackScreenD1Ev
+	.long	__ZN19TrackingStackScreenD0Ev
+	.long	__ZN8NativeUI6Widget25markWidgetHandleAsDeletedEv
+	.long	__ZNK8NativeUI6Widget15getWidgetHandleEv
+	.long	__ZN8NativeUI6Widget11setPropertyERKN6MAUtil11BasicStringIcEES5_
+	.long	__ZN8NativeUI6Widget14setPropertyIntERKN6MAUtil11BasicStringIcEEi
+	.long	__ZN8NativeUI6Widget16setPropertyFloatERKN6MAUtil11BasicStringIcEEf
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget8addChildEPS0_
+	.long	__ZN8NativeUI6Widget11insertChildEPS0_i
+	.long	__ZN8NativeUI6Widget11removeChildEPS0_
+	.long	__ZNK8NativeUI11StackScreen8getChildEi
+	.long	__ZNK8NativeUI6Widget17countChildWidgetsEv
+	.long	__ZN8NativeUI6Widget11setPositionEii
+	.long	__ZN8NativeUI6Widget15setLeftPositionEi
+	.long	__ZN8NativeUI6Widget14setTopPositionEi
+	.long	__ZN8NativeUI6Widget7setSizeEii
+	.long	__ZN8NativeUI6Widget8getWidthEv
+	.long	__ZN8NativeUI6Widget9getHeightEv
+	.long	__ZN8NativeUI6Widget8setWidthEi
+	.long	__ZN8NativeUI6Widget9setHeightEi
+	.long	__ZN8NativeUI6Widget21fillSpaceHorizontallyEv
+	.long	__ZN8NativeUI6Widget19fillSpaceVerticallyEv
+	.long	__ZN8NativeUI6Widget23wrapContentHorizontallyEv
+	.long	__ZN8NativeUI6Widget21wrapContentVerticallyEv
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEi
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEiii
+	.long	__ZN8NativeUI6Widget21setBackgroundGradientEii
+	.long	__ZN8NativeUI6Widget10setVisibleEb
+	.long	__ZN8NativeUI6Widget9isVisibleEv
+	.long	__ZN8NativeUI6Widget10setEnabledEb
+	.long	__ZN8NativeUI6Widget9isEnabledEv
+	.long	__ZN8NativeUI6Widget16addEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN8NativeUI6Widget19removeEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN8NativeUI11StackScreen17handleWidgetEventEP17MAWidgetEventData
+	.long	__ZN8NativeUI6Screen4showEv
+	.long	__ZN8NativeUI6Screen18showWithTransitionEii
+	.long	__ZN8NativeUI6Screen21orientationWillChangeEv
+	.long	__ZN8NativeUI6Screen20orientationDidChangeEv
+	.long	__ZN8NativeUI6Screen17removeOptionsMenuEv
+	.long	__ZN8NativeUI11StackScreen7isShownEv
+	.long	__ZN8NativeUI6Screen17addScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI6Screen20removeScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI11StackScreen12getStackSizeEv
+	.long	__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE
+	.long	__ZN8NativeUI11StackScreen3popEv
+	.long	__ZN8NativeUI11StackScreen16enableBackButtonEb
+	.long	__ZN8NativeUI11StackScreen17setPushTransitionEii
+	.long	__ZN8NativeUI11StackScreen16setPopTransitionEii
+	.long	__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZN8NativeUI11StackScreen25removeStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZNK8NativeUI11StackScreen9getScreenEi
+	.long	__ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.long	-96
+	.long	0
+	.long	__ZThn96_N19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.align 4
+__ZTV17OptionStackScreen:
+	.long	0
+	.long	0
+	.long	__ZN17OptionStackScreenD1Ev
+	.long	__ZN17OptionStackScreenD0Ev
+	.long	__ZN8NativeUI6Widget25markWidgetHandleAsDeletedEv
+	.long	__ZNK8NativeUI6Widget15getWidgetHandleEv
+	.long	__ZN8NativeUI6Widget11setPropertyERKN6MAUtil11BasicStringIcEES5_
+	.long	__ZN8NativeUI6Widget14setPropertyIntERKN6MAUtil11BasicStringIcEEi
+	.long	__ZN8NativeUI6Widget16setPropertyFloatERKN6MAUtil11BasicStringIcEEf
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget14getPropertyIntERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget16getPropertyFloatERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEERi
+	.long	__ZN8NativeUI6Widget17getPropertyStringERKN6MAUtil11BasicStringIcEE
+	.long	__ZN8NativeUI6Widget8addChildEPS0_
+	.long	__ZN8NativeUI6Widget11insertChildEPS0_i
+	.long	__ZN8NativeUI6Widget11removeChildEPS0_
+	.long	__ZNK8NativeUI11StackScreen8getChildEi
+	.long	__ZNK8NativeUI6Widget17countChildWidgetsEv
+	.long	__ZN8NativeUI6Widget11setPositionEii
+	.long	__ZN8NativeUI6Widget15setLeftPositionEi
+	.long	__ZN8NativeUI6Widget14setTopPositionEi
+	.long	__ZN8NativeUI6Widget7setSizeEii
+	.long	__ZN8NativeUI6Widget8getWidthEv
+	.long	__ZN8NativeUI6Widget9getHeightEv
+	.long	__ZN8NativeUI6Widget8setWidthEi
+	.long	__ZN8NativeUI6Widget9setHeightEi
+	.long	__ZN8NativeUI6Widget21fillSpaceHorizontallyEv
+	.long	__ZN8NativeUI6Widget19fillSpaceVerticallyEv
+	.long	__ZN8NativeUI6Widget23wrapContentHorizontallyEv
+	.long	__ZN8NativeUI6Widget21wrapContentVerticallyEv
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEi
+	.long	__ZN8NativeUI6Widget18setBackgroundColorEiii
+	.long	__ZN8NativeUI6Widget21setBackgroundGradientEii
+	.long	__ZN8NativeUI6Widget10setVisibleEb
+	.long	__ZN8NativeUI6Widget9isVisibleEv
+	.long	__ZN8NativeUI6Widget10setEnabledEb
+	.long	__ZN8NativeUI6Widget9isEnabledEv
+	.long	__ZN8NativeUI6Widget16addEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN8NativeUI6Widget19removeEventListenerEPNS_19WidgetEventListenerE
+	.long	__ZN8NativeUI11StackScreen17handleWidgetEventEP17MAWidgetEventData
+	.long	__ZN8NativeUI6Screen4showEv
+	.long	__ZN8NativeUI6Screen18showWithTransitionEii
+	.long	__ZN8NativeUI6Screen21orientationWillChangeEv
+	.long	__ZN8NativeUI6Screen20orientationDidChangeEv
+	.long	__ZN8NativeUI6Screen17removeOptionsMenuEv
+	.long	__ZN8NativeUI11StackScreen7isShownEv
+	.long	__ZN8NativeUI6Screen17addScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI6Screen20removeScreenListenerEPNS_14ScreenListenerE
+	.long	__ZN8NativeUI11StackScreen12getStackSizeEv
+	.long	__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE
+	.long	__ZN8NativeUI11StackScreen3popEv
+	.long	__ZN8NativeUI11StackScreen16enableBackButtonEb
+	.long	__ZN8NativeUI11StackScreen17setPushTransitionEii
+	.long	__ZN8NativeUI11StackScreen16setPopTransitionEii
+	.long	__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZN8NativeUI11StackScreen25removeStackScreenListenerEPNS_19StackScreenListenerE
+	.long	__ZNK8NativeUI11StackScreen9getScreenEi
+	.long	__ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.long	-96
+	.long	0
+	.long	__ZThn96_N17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
 	.align 4
 __ZTVN8NativeUI14ScreenListenerE:
 	.long	0
@@ -662,61 +866,128 @@ Lscope4:
 Lscope5:
 .data
 LC0:
+	.ascii "mosync.device.OS\0"
+LC1:
+	.ascii "Android\0"
+LC2:
+	.ascii "iPhone OS\0"
+.code
+	.stabs	"_Z11getPlatformv:f(0,3)",36,0,71,__Z11getPlatformv
+
+.func __Z11getPlatformv, 0, int
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext2
+Ltext2:
+	.line 71
+	push rt,d0
+	sub  sp,#0x100
+	ld   fr,sp
+	add  fr,#0x10c
+	.dlab LBB2
+	.dlab LBB3
+	.dlab LBB4
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext3
+Ltext3:
+	.line 6598
+	ld   d0,fr
+	add  d0,#0xfffffef4
+	.dlab LBB5
+	ld   i0,#0x5a
+	ld   i1,#LC0
+	ld   i2,d0
+	ld   i3,#0x100
+	call &_maIOCtl ; call non-native
+	.dlab LBE5
+	.dlab LBE4
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext4
+Ltext4:
+	.line 75
+	ld   i0,d0
+	ld   i1,#LC1
+	call &_strcmp ; call non-native
+	.line 77
+	ld   r0,r14
+	.line 75
+	ld   r1,#0x0
+	jc   eq,r14,r1,#L7
+	.line 81
+	ld   i0,d0
+	ld   i1,#LC2
+	call &_strcmp ; call non-native
+	.line 82
+	neg r0,r14
+	or   r0,r14
+	srl  r0,#0x1f
+	add  r0,#0x1
+L7:
+	.dlab LBE3
+	.dlab LBE2
+	.line 85
+	ld   r14,r0
+	add  sp,#0x100
+	pop  rt,d0
+	ret
+	.stabs	"platform:(0,122)=ar(6,57);0;255;(0,19)",128,0,72,-268
+	.stabn	192,0,0,LBB3-__Z11getPlatformv
+	.stabs	"buf:r(6,5)",64,0,6598,4
+	.stabn	192,0,0,LBB4-__Z11getPlatformv
+	.stabn	224,0,0,LBE4-__Z11getPlatformv
+	.stabn	224,0,0,LBE3-__Z11getPlatformv
+Lscope6:
+.data
+LC3:
 	.ascii "\0"
 	.space	63	;(ASM_OUTPUT_SKIP)
-LC1:
-	.ascii "mosync.iso-639-1\0"
-LC2:
-	.ascii "LANGUAGE : %i: %s\12\0"
-LC3:
-	.ascii "fr\0"
 LC4:
+	.ascii "mosync.iso-639-1\0"
+LC5:
+	.ascii "LANGUAGE : %i: %s\12\0"
+LC6:
+	.ascii "fr\0"
+LC7:
 	.ascii " DAns LANGUAGE : %i: %s\12\0"
 .code
 	.stabs	"_Z17getSystemLanguagev:f(0,3)",36,0,106,__Z17getSystemLanguagev
 
 .func __Z17getSystemLanguagev, 0, int
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext2
-Ltext2:
 	.line 106
 	push rt,d6
 	sub  sp,#0x50
 	ld   fr,sp
 	add  fr,#0x74
-	.dlab LBB2
-	.dlab LBB3
+	.dlab LBB6
+	.dlab LBB7
 	.line 107
 	ld   d6,#0x0
 	.line 108
-	ld.b r14,[&LC0]
+	ld.b r14,[&LC3]
 	ld.b [fr,-100],r14
 	ld   i0,fr
 	add  i0,#0xffffff9d
 	ld   i1,d6
 	ld   i2,#0x3f
 	call &_memset ; call non-native
-	.dlab LBB4
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext3
-Ltext3:
+	.dlab LBB8
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext5
+Ltext5:
 	.line 6598
 	ld   d5,fr
 	add  d5,#0xffffff9c
-	.dlab LBB5
+	.dlab LBB9
 	ld   i0,#0x5a
-	ld   i1,#LC1
+	ld   i1,#LC4
 	ld   i2,d5
 	ld   i3,#0x40
 	call &_maIOCtl ; call non-native
 	ld   d2,r14
 	ld   d3,r15
-	.dlab LBE5
-	.dlab LBE4
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext4
-Ltext4:
+	.dlab LBE9
+	.dlab LBE8
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext6
+Ltext6:
 	.line 110
 	ld   [sp],r14
 	ld   [sp,4],d5
-	ld   i0,#LC2
+	ld   i0,#LC5
 	call &_lprintfln ; call non-native
 	.line 111
 	ld   d4,fr
@@ -728,7 +999,7 @@ Ltext4:
 	ld   d1,fr
 	add  d1,#0xffffff94
 	ld   i0,d1
-	ld   i1,#LC3
+	ld   i1,#LC6
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d4
 	ld   i1,d1
@@ -737,67 +1008,67 @@ Ltext4:
 	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	and  d0,#0xff  ; zero extend
-	jc   ne,d0,d6,#L11
-	.dlab LBB6
+	jc   ne,d0,d6,#L16
+	.dlab LBB10
 	.line 117
 	ld   i0,d4
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.dlab LBE10
+	.dlab LBE7
 	.dlab LBE6
-	.dlab LBE3
-	.dlab LBE2
 	.line 118
 	ld   r14,d6
 	add  sp,#0x50
 	pop  rt,d6
 	ret
-L11:
-	.dlab LBB7
-	.dlab LBB8
+L16:
+	.dlab LBB11
+	.dlab LBB12
 	.line 114
 	ld   [sp],d2
 	ld   [sp,4],d5
-	ld   i0,#LC4
+	ld   i0,#LC7
 	call &_lprintfln ; call non-native
 	.line 115
 	ld   d6,#0x1
-	.dlab LBB9
+	.dlab LBB13
 	.line 117
 	ld   i0,d4
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE9
-	.dlab LBE8
-	.dlab LBE7
+	.dlab LBE13
+	.dlab LBE12
+	.dlab LBE11
 	.line 118
 	ld   r14,d6
 	add  sp,#0x50
 	pop  rt,d6
 	ret
 	.stabs	"language:r(0,3)",64,0,107,10
-	.stabs	"buf:(0,78)=ar(6,57);0;63;(0,19)",128,0,108,-100
+	.stabs	"buf:(0,123)=ar(6,57);0;63;(0,19)",128,0,108,-100
 	.stabs	"tmp:(10,1)",128,0,111,-104
-	.stabn	192,0,0,LBB3-__Z17getSystemLanguagev
+	.stabn	192,0,0,LBB7-__Z17getSystemLanguagev
 	.stabs	"buf:r(6,5)",64,0,6598,9
-	.stabn	192,0,0,LBB4-__Z17getSystemLanguagev
-	.stabn	224,0,0,LBE4-__Z17getSystemLanguagev
-	.stabn	224,0,0,LBE3-__Z17getSystemLanguagev
-	.stabs	"language:r(0,3)",64,0,107,10
-	.stabs	"buf:(0,78)",128,0,108,-100
-	.stabs	"tmp:(10,1)",128,0,111,-104
 	.stabn	192,0,0,LBB8-__Z17getSystemLanguagev
 	.stabn	224,0,0,LBE8-__Z17getSystemLanguagev
-Lscope6:
+	.stabn	224,0,0,LBE7-__Z17getSystemLanguagev
+	.stabs	"language:r(0,3)",64,0,107,10
+	.stabs	"buf:(0,123)",128,0,108,-100
+	.stabs	"tmp:(10,1)",128,0,111,-104
+	.stabn	192,0,0,LBB12-__Z17getSystemLanguagev
+	.stabn	224,0,0,LBE12-__Z17getSystemLanguagev
+Lscope7:
 .data
-LC5:
-	.ascii "/\0"
-LC6:
-	.ascii "*\0"
-LC7:
-	.ascii "mosync.path.local\0"
 LC8:
-	.ascii "Got local path: %i\12\0"
+	.ascii "/\0"
 LC9:
-	.ascii "\0"
+	.ascii "*\0"
 LC10:
+	.ascii "mosync.path.local\0"
+LC11:
+	.ascii "Got local path: %i\12\0"
+LC12:
+	.ascii "\0"
+LC13:
 	.ascii "C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h\0"
 .code
 	.stabs	"_Z12getLocalPathv:f(10,1)",36,0,129,__Z12getLocalPathv
@@ -809,25 +1080,25 @@ LC10:
 	ld   fr,sp
 	add  fr,#0x2c
 	ld   d3,i0
-	.dlab LBB10
-	.dlab LBB11
-	.dlab LBB12
-	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext5
-Ltext5:
+	.dlab LBB14
+	.dlab LBB15
+	.dlab LBB16
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext7
+Ltext7:
 	.line 36
 	ld   d4,fr
 	add  d4,#0xffffffe0
-	.dlab LBB13
+	.dlab LBB17
 	ld   r0,#0xffffffff
 	ld   [d4],r0
-	.dlab LBE13
-	.dlab LBE12
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext6
-Ltext6:
+	.dlab LBE17
+	.dlab LBE16
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext8
+Ltext8:
 	.line 132
 	ld   i0,d4
-	ld   i1,#LC5
-	ld   i2,#LC6
+	ld   i1,#LC8
+	ld   i2,#LC9
 	ld   i3,#0x0
 	call &__ZN10FileLister5startEPKcS1_i ; call non-native
 	.line 134
@@ -835,106 +1106,106 @@ Ltext6:
 	add  d2,#0xffffffdc
 	ld   i0,d2
 	call &__ZN6MAUtil11BasicStringIcEC1Ev ; call non-native
-	.dlab LBB14
-	.dlab LBB15
-	.dlab LBB16
-	.dlab LBB17
 	.dlab LBB18
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext7
-Ltext7:
+	.dlab LBB19
+	.dlab LBB20
+	.dlab LBB21
+	.dlab LBB22
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext9
+Ltext9:
 	.line 6598
 	ld   i0,#0x5a
-	ld   i1,#LC7
+	ld   i1,#LC10
 	ld   i2,#0x0
 	ld   i3,i2
 	call &_maIOCtl ; call non-native
 	ld   d0,r14
 	ld   d1,r15
 	ld   i1,r14
-	.dlab LBE18
-	.dlab LBE17
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext8
-Ltext8:
+	.dlab LBE22
+	.dlab LBE21
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext10
+Ltext10:
 	.line 122
 	ld   r0,#0x0
-	jc   lt,d0,r0,#L16
+	jc   lt,d0,r0,#L21
 	.line 124
 	ld   i0,d2
 	add  i1,#0xffffffff
 	call &__ZN6MAUtil11BasicStringIcE6resizeEi ; call non-native
-	.dlab LBB19
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext9
-Ltext9:
+	.dlab LBB23
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext11
+Ltext11:
 	.line 6598
 	ld   i0,d2
 	call &__ZN6MAUtil11BasicStringIcE7pointerEv ; call non-native
-	.dlab LBB20
+	.dlab LBB24
 	ld   i0,#0x5a
-	ld   i1,#LC7
+	ld   i1,#LC10
 	ld   i2,r14
 	ld   i3,d0
 	call &_maIOCtl ; call non-native
-	.dlab LBE20
-	.dlab LBE19
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext10
-Ltext10:
+	.dlab LBE24
+	.dlab LBE23
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext12
+Ltext12:
 	.line 125
 	ld   r14,d0
-L16:
-	.dlab LBE16
-	.dlab LBE15
-	.dlab LBE14
+L21:
+	.dlab LBE20
+	.dlab LBE19
+	.dlab LBE18
 	.line 138
 	ld   r0,#0x0
-	jc   le,r14,r0,#L18
+	jc   le,r14,r0,#L23
 	.line 140
 	ld   [sp],r14
-	ld   i0,#LC8
+	ld   i0,#LC11
 	call &_printf ; call non-native
 	.line 141
 	ld   d0,fr
 	add  d0,#0xffffffd8
 	ld   i0,d0
-	ld   i1,#LC9
+	ld   i1,#LC12
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d3
 	ld   i1,d2
 	ld   i2,d0
 	call &__ZNK6MAUtil11BasicStringIcEplERKS1_ ; call non-native
-	.dlab LBB21
+	.dlab LBB25
 	ld   i0,d0
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE21
-	.dlab LBB22
+	.dlab LBE25
+	.dlab LBB26
 	.line 148
 	ld   i0,d2
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBB23
-	.dlab LBB24
-	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext11
-Ltext11:
+	.dlab LBB27
+	.dlab LBB28
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext13
+Ltext13:
 	.line 37
 	ld   i0,d4
 	call &__ZN10FileLister5closeEv ; call non-native
-	.dlab LBE24
-	.dlab LBE23
-	.dlab LBE22
-	.dlab LBE11
-	.dlab LBE10
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext12
-Ltext12:
+	.dlab LBE28
+	.dlab LBE27
+	.dlab LBE26
+	.dlab LBE15
+	.dlab LBE14
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext14
+Ltext14:
 	.line 149
 	ld   r14,d3
 	add  sp,#0x10
 	pop  rt,d4
 	ret
-L18:
-	.dlab LBB25
-	.dlab LBB26
+L23:
+	.dlab LBB29
+	.dlab LBB30
 	.line 145
 	ld   i0,d4
-	ld   i1,#LC9
-	ld   i2,#LC6
+	ld   i1,#LC12
+	ld   i2,#LC9
 	ld   i3,#0x0
 	call &__ZN10FileLister5startEPKcS1_i ; call non-native
 	.line 146
@@ -943,82 +1214,285 @@ L18:
 	call &__ZN10FileLister4nextERN6MAUtil11BasicStringIcEE ; call non-native
 	.line 147
 	ld   r0,#0x0
-	jc   le,r14,r0,#L28
+	jc   le,r14,r0,#L33
 	.line 148
 	ld   i0,d3
 	ld   i1,d2
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
-	.dlab LBB27
+	.dlab LBB31
 	ld   i0,d2
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBB28
-	.dlab LBB29
-	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext13
-Ltext13:
+	.dlab LBB32
+	.dlab LBB33
+	.stabs	"c:/MoSync/include/MAUtil/FileLister.h",132,0,0,Ltext15
+Ltext15:
 	.line 37
 	ld   i0,d4
 	call &__ZN10FileLister5closeEv ; call non-native
+	.dlab LBE33
+	.dlab LBE32
+	.dlab LBE31
+	.dlab LBE30
 	.dlab LBE29
-	.dlab LBE28
-	.dlab LBE27
-	.dlab LBE26
-	.dlab LBE25
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext14
-Ltext14:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext16
+Ltext16:
 	.line 149
 	ld   r14,d3
 	add  sp,#0x10
 	pop  rt,d4
 	ret
-L28:
-	.dlab LBB30
-	.dlab LBB31
+L33:
+	.dlab LBB34
+	.dlab LBB35
 	.line 147
-	ld   i0,#LC10
+	ld   i0,#LC13
 	call &_FileNameFromPath ; call non-native
 	ld   i0,#0x6
 	ld   i1,r14
 	ld   i2,#0x93
 	call &_bfeHandler ; call non-native
-	.dlab LBE31
-	.dlab LBE30
+	.dlab LBE35
+	.dlab LBE34
 	.stabs	"fl:(89,1)",128,0,131,-32
 	.stabs	"path:(10,1)",128,0,134,-36
-	.stabn	192,0,0,LBB11-__Z12getLocalPathv
-	.stabn	224,0,0,LBE11-__Z12getLocalPathv
+	.stabn	192,0,0,LBB15-__Z12getLocalPathv
+	.stabn	224,0,0,LBE15-__Z12getLocalPathv
 	.stabs	"fl:(89,1)",128,0,131,-32
 	.stabs	"path:(10,1)",128,0,134,-36
-	.stabn	192,0,0,LBB26-__Z12getLocalPathv
-	.stabn	224,0,0,LBE26-__Z12getLocalPathv
+	.stabn	192,0,0,LBB30-__Z12getLocalPathv
+	.stabn	224,0,0,LBE30-__Z12getLocalPathv
 	.stabs	"fl:(89,1)",128,0,131,-32
 	.stabs	"path:(10,1)",128,0,134,-36
-	.stabn	192,0,0,LBB31-__Z12getLocalPathv
-	.stabn	224,0,0,LBE31-__Z12getLocalPathv
-Lscope7:
+	.stabn	192,0,0,LBB35-__Z12getLocalPathv
+	.stabn	224,0,0,LBE35-__Z12getLocalPathv
+Lscope8:
+	.set	%0=__ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,124)=k(0,29)",64,0,137,12
+	.stabs	"stackScreen:P(0,54)",64,0,137,13
+	.stabs	"fromScreen:P(69,32)",64,0,137,14
+	.stabs	"toScreen:P(69,32)",64,0,137,15
+
+.func __ZThn96_N19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext17
+Ltext17:
+	.line 120
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 120
+	add  i0,#0xffffffa0
+	call &%0 ; call non-native
+	pop  rt,fr
+	ret
+Lscope9:
+	.stabs	"_ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_:f(0,6)",36,0,137,__ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,124)",64,0,137,12
+	.stabs	"stackScreen:P(0,54)",64,0,137,13
+	.stabs	"fromScreen:P(69,32)",64,0,137,14
+	.stabs	"toScreen:P(69,32)",64,0,137,15
+
+.func __ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.line 137
+	push fr,fr
+	ld   fr,sp
+	add  fr,#0x4
+	.line 137
+	pop  fr,fr
+	ret
+Lscope10:
+	.set	%1=__ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,125)=k(0,33)",64,0,97,12
+	.stabs	"stackScreen:P(0,54)",64,0,97,13
+	.stabs	"fromScreen:P(69,32)",64,0,97,14
+	.stabs	"toScreen:P(69,32)",64,0,97,15
+
+.func __ZThn96_N17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext18
+Ltext18:
+	.line 84
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 84
+	add  i0,#0xffffffa0
+	call &%1 ; call non-native
+	pop  rt,fr
+	ret
+Lscope11:
+	.stabs	"_ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_:f(0,6)",36,0,97,__ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,125)",64,0,97,12
+	.stabs	"stackScreen:P(0,54)",64,0,97,13
+	.stabs	"fromScreen:P(69,32)",64,0,97,14
+	.stabs	"toScreen:P(69,32)",64,0,97,15
+
+.func __ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.line 97
+	push fr,fr
+	ld   fr,sp
+	add  fr,#0x4
+	.line 97
+	pop  fr,fr
+	ret
+Lscope12:
+	.set	%2=__ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,126)=k(0,27)",64,0,294,12
+	.stabs	"stackScreen:P(0,54)",64,0,294,13
+	.stabs	"fromScreen:P(69,32)",64,0,294,14
+	.stabs	"toScreen:P(69,32)",64,0,294,15
+
+.func __ZThn96_N16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext19
+Ltext19:
+	.line 278
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 278
+	add  i0,#0xffffffa0
+	call &%2 ; call non-native
+	pop  rt,fr
+	ret
+Lscope13:
 .data
-LC11:
+LC14:
+	.ascii "stackScreenScreenPopped\0"
+.code
+	.stabs	"_ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_:f(0,6)",36,0,294,__ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_
+	.stabs	"this:P(0,126)",64,0,294,5
+	.stabs	"stackScreen:P(0,54)",64,0,294,13
+	.stabs	"fromScreen:P(69,32)",64,0,294,14
+	.stabs	"toScreen:P(69,32)",64,0,294,15
+
+.func __ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_, 4, void
+	.line 294
+	push rt,d1
+	ld   fr,sp
+	add  fr,#0x10
+	ld   d1,i0
+	.dlab LBB36
+	.line 295
+	ld   i0,#LC14
+	call &_lprintfln ; call non-native
+	.line 296
+	ld   i0,[d1,108]
+	ld   i1,#0x124
+	call &__ZN8AlertTab14handleKeyPressEi ; call non-native
+	.line 297
+	ld   r14,[d1]
+	ld   d0,[r14,196]
+	ld   i0,d1
+	ld   i1,[d1,108]
+	call d0 ; call non-native
+	.line 298
+	ld   i0,[d1,108]
+	ld   r14,[i0]
+	ld   d0,[r14,104]
+	call d0 ; call non-native
+	.line 299
+	ld   i0,[d1,108]
+	ld   r14,[i0]
+	ld   d0,[r14,108]
+	call d0 ; call non-native
+	.dlab LBE36
+	pop  rt,d1
+	ret
+Lscope14:
+.data
+LC15:
+	.ascii "widget event %d\0"
+.code
+	.stabs	"_ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData:f(0,6)",36,0,318,__ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData
+	.stabs	"this:P(0,126)",64,0,318,5
+	.stabs	"widgetEventData:P(0,57)",64,0,318,4
+
+.func __ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData, 2, void
+	.line 318
+	push rt,d1
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x14
+	ld   d1,i0
+	ld   d0,i1
+	.dlab LBB37
+	.line 319
+	ld   r0,[i1]
+	ld   [sp],r0
+	ld   i0,#LC15
+	call &_lprintfln ; call non-native
+	.line 321
+	ld   r14,[d0]
+	ld   r0,#0xa
+	jc   eq,r14,r0,#L42
+	.dlab LBE37
+	.line 329
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+L42:
+	.dlab LBB38
+	.line 323
+	ld   i0,[d1,108]
+	ld   i1,#0x124
+	call &__ZN8AlertTab14handleKeyPressEi ; call non-native
+	.line 324
+	ld   r14,[d1]
+	ld   d0,[r14,196]
+	ld   i0,d1
+	ld   i1,[d1,108]
+	call d0 ; call non-native
+	.line 325
+	ld   i0,[d1,108]
+	ld   r14,[i0]
+	ld   d0,[r14,104]
+	call d0 ; call non-native
+	.line 326
+	ld   i0,[d1,108]
+	ld   r14,[i0]
+	ld   d0,[r14,108]
+	call d0 ; call non-native
+	.dlab LBE38
+	.line 329
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+Lscope15:
+.data
+LC16:
+	.ascii "TEST\0"
+LC17:
 	.ascii "test mainscreen %s\0"
 .code
 	.stabs	"_ZN10ScreenMainC2Ev:F(0,6)",36,0,12,__ZN10ScreenMainC2Ev
-	.stabs	"this:P(0,79)=k(0,36)",64,0,12,4
+	.stabs	"this:P(0,127)=k(0,36)",64,0,12,4
 	.global	__ZN10ScreenMainC2Ev
 
 .func __ZN10ScreenMainC2Ev, 1, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext15
-Ltext15:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext20
+Ltext20:
 	.line 12
-	push rt,d0
+	push rt,d1
 	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x14
+	add  fr,#0x18
 	ld   d0,i0
-	.dlab LBB32
+	.dlab LBB39
 	.line 13
 	call &__ZN8NativeUI9TabScreenC2Ev ; call non-native
 	ld   r14,#__ZTV10ScreenMain+8
 	ld   [d0],r14
 	ld   r14,#__ZTV10ScreenMain+248
 	ld   [d0,84],r14
+	.line 14
+	ld   d1,fr
+	add  d1,#0xffffffec
+	ld   i0,d1
+	ld   i1,#LC16
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d0
+	ld   i1,d1
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.line 15
 	ld   r14,#0x0
 	ld.b [d0,93],r14
@@ -1026,40 +1500,49 @@ Ltext15:
 	call &__Z17getSystemLanguagev ; call non-native
 	ld   [d0,88],r14
 	.line 17
-	ld   d0,fr
-	add  d0,#0xfffffff0
-	ld   i0,d0
+	ld   i0,d1
 	call &__Z12getLocalPathv ; call non-native
-	ld   i0,d0
+	ld   i0,d1
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
 	ld   [sp],r14
-	ld   i0,#LC11
+	ld   i0,#LC17
 	call &_lprintfln ; call non-native
-	ld   i0,d0
+	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE32
+	.dlab LBE39
 	add  sp,#0x8
-	pop  rt,d0
+	pop  rt,d1
 	ret
-Lscope8:
+Lscope16:
 	.stabs	"_ZN10ScreenMainC1Ev:F(0,6)",36,0,12,__ZN10ScreenMainC1Ev
-	.stabs	"this:P(0,79)",64,0,12,4
+	.stabs	"this:P(0,127)",64,0,12,4
 	.global	__ZN10ScreenMainC1Ev
 
 .func __ZN10ScreenMainC1Ev, 1, void
 	.line 12
-	push rt,d0
+	push rt,d1
 	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x14
+	add  fr,#0x18
 	ld   d0,i0
-	.dlab LBB33
+	.dlab LBB40
 	.line 13
 	call &__ZN8NativeUI9TabScreenC2Ev ; call non-native
 	ld   r14,#__ZTV10ScreenMain+8
 	ld   [d0],r14
 	ld   r14,#__ZTV10ScreenMain+248
 	ld   [d0,84],r14
+	.line 14
+	ld   d1,fr
+	add  d1,#0xffffffec
+	ld   i0,d1
+	ld   i1,#LC16
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d0
+	ld   i1,d1
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d1
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.line 15
 	ld   r14,#0x0
 	ld.b [d0,93],r14
@@ -1067,24 +1550,22 @@ Lscope8:
 	call &__Z17getSystemLanguagev ; call non-native
 	ld   [d0,88],r14
 	.line 17
-	ld   d0,fr
-	add  d0,#0xfffffff0
-	ld   i0,d0
+	ld   i0,d1
 	call &__Z12getLocalPathv ; call non-native
-	ld   i0,d0
+	ld   i0,d1
 	call &__ZNK6MAUtil11BasicStringIcE5c_strEv ; call non-native
 	ld   [sp],r14
-	ld   i0,#LC11
+	ld   i0,#LC17
 	call &_lprintfln ; call non-native
-	ld   i0,d0
+	ld   i0,d1
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE33
+	.dlab LBE40
 	add  sp,#0x8
-	pop  rt,d0
+	pop  rt,d1
 	ret
-Lscope9:
+Lscope17:
 	.stabs	"_ZN10ScreenMainD2Ev:F(0,6)",36,0,28,__ZN10ScreenMainD2Ev
-	.stabs	"this:P(0,79)",64,0,28,30
+	.stabs	"this:P(0,127)",64,0,28,30
 	.global	__ZN10ScreenMainD2Ev
 
 .func __ZN10ScreenMainD2Ev, 1, void
@@ -1092,20 +1573,20 @@ Lscope9:
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.dlab LBB34
+	.dlab LBB41
 	.line 28
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [i0],r0
 	ld   r0,#__ZTV10ScreenMain+248
 	ld   [i0,84],r0
 	call &__ZN8NativeUI9TabScreenD2Ev ; call non-native
-	.dlab LBE34
+	.dlab LBE41
 	.line 29
 	pop  rt,fr
 	ret
-Lscope10:
+Lscope18:
 	.stabs	"_ZN10ScreenMainD1Ev:F(0,6)",36,0,28,__ZN10ScreenMainD1Ev
-	.stabs	"this:P(0,79)",64,0,28,30
+	.stabs	"this:P(0,127)",64,0,28,30
 	.global	__ZN10ScreenMainD1Ev
 
 .func __ZN10ScreenMainD1Ev, 1, void
@@ -1113,20 +1594,20 @@ Lscope10:
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.dlab LBB35
+	.dlab LBB42
 	.line 28
 	ld   r0,#__ZTV10ScreenMain+8
 	ld   [i0],r0
 	ld   r0,#__ZTV10ScreenMain+248
 	ld   [i0,84],r0
 	call &__ZN8NativeUI9TabScreenD2Ev ; call non-native
-	.dlab LBE35
+	.dlab LBE42
 	.line 29
 	pop  rt,fr
 	ret
-Lscope11:
+Lscope19:
 	.stabs	"_ZN10ScreenMainD0Ev:F(0,6)",36,0,28,__ZN10ScreenMainD0Ev
-	.stabs	"this:P(0,79)",64,0,28,4
+	.stabs	"this:P(0,127)",64,0,28,4
 	.global	__ZN10ScreenMainD0Ev
 
 .func __ZN10ScreenMainD0Ev, 1, void
@@ -1135,58 +1616,68 @@ Lscope11:
 	ld   fr,sp
 	add  fr,#0xc
 	ld   d0,i0
-	.dlab LBB36
+	.dlab LBB43
 	.line 28
 	ld   r14,#__ZTV10ScreenMain+8
 	ld   [i0],r14
 	ld   r14,#__ZTV10ScreenMain+248
 	ld   [i0,84],r14
 	call &__ZN8NativeUI9TabScreenD2Ev ; call non-native
-	.dlab LBE36
+	.dlab LBE43
 	.line 29
 	ld   i0,d0
 	call &__ZdlPv ; call non-native
 	pop  rt,d0
 	ret
-Lscope12:
+Lscope20:
 .data
-LC12:
+LC18:
 	.ascii "resolution x %d, y %d\0"
-LC13:
+LC20:
+	.ascii "creation des tab\0"
+LC21:
+	.ascii "home\0"
+LC22:
+	.ascii "alertTab cr\303\251e\0"
+LC23:
+	.ascii "trackingTab cr\303\251e\0"
+LC24:
+	.ascii "optionTab cr\303\251e\0"
+LC19:
 	.ascii "resolution small\0"
 .code
 	.stabs	"_ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx:F(0,6)",36,0,31,__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
-	.stabs	"this:P(0,79)",64,0,31,6
-	.stabs	"loginToken:a(10,1)",64,0,31,9
+	.stabs	"this:P(0,127)",64,0,31,6
+	.stabs	"loginToken:v(10,1)",160,0,31,-52
 	.stabs	"idMobile:P(0,15)",64,0,31,7
 	.global	__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
 
 .func __ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx, 4, void
 	.line 31
-	push rt,d6
-	sub  sp,#0xc
+	push rt,d7
+	sub  sp,#0x1c
 	ld   fr,sp
-	add  fr,#0x30
+	add  fr,#0x44
 	ld   d2,i0
-	ld   d5,i1
+	ld   [fr,-52],i1
 	ld   d3,i2
 	ld   d4,i3
-	.dlab LBB37
-	.dlab LBB38
-	.dlab LBB39
-	.dlab LBB40
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext16
-Ltext16:
+	.dlab LBB44
+	.dlab LBB45
+	.dlab LBB46
+	.dlab LBB47
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext21
+Ltext21:
 	.line 8743
 	ld   i0,#0x20c
 	ld   i1,#0x2
 	ld   i2,#0x0
 	ld   i3,i2
 	call &_maIOCtl ; call non-native
-	.dlab LBE40
-	.dlab LBE39
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext17
-Ltext17:
+	.dlab LBE47
+	.dlab LBE46
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext22
+Ltext22:
 	.line 33
 	call &_maGetScrSize ; call non-native
 	.line 34
@@ -1195,84 +1686,293 @@ Ltext17:
 	.line 35
 	xh r14,r14
 	.line 36
-	ld   d6,#0x0
+	ld   r0,#0x0
+	ld   [fr,-56],r0
 	.line 37
 	ld   [sp],d0
 	ld   [sp,4],r14
-	ld   i0,#LC12
+	ld   i0,#LC18
 	call &_lprintfln ; call non-native
 	.line 38
 	ld   r14,#0x200
-	jc   le,d0,r14,#L49
-L47:
+	jc   le,d0,r14,#L72
+L61:
+	.line 43
+	ld   i0,#LC20
+	call &_lprintfln ; call non-native
 	.line 44
-	ld   d0,fr
-	add  d0,#0xffffffd8
-	ld   i0,d0
-	ld   i1,d5
+	ld   d6,fr
+	add  d6,#0xffffffd4
+	ld   i0,d6
+	ld   i1,[fr,-52]
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
-	ld   i0,#0xa04
+	ld   i0,#0x70
 	call &__Znwm ; call non-native
 	ld   d1,r14
+	.dlab LBB48
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext23
+Ltext23:
+	.line 280
+	ld   d7,[d2,88]
+	.dlab LBB49
 	ld   i0,r14
-	ld   i1,[d2,88]
-	ld   i2,d0
-	ld   i3,d6
-	call &__ZN8AlertTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution ; call non-native
-	ld   [d2,96],d1
-	ld   i0,d0
+	call &__ZN8NativeUI11StackScreenC2Ev ; call non-native
+	.dlab LBB50
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext24
+Ltext24:
+	.line 122
+	ld   i1,d1
+	add  i1,#0x60
+	.dlab LBE50
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext25
+Ltext25:
+	.line 280
+	ld   r14,#__ZTV16AlertStackScreen+8
+	ld   [d1],r14
+	ld   r0,#__ZTV16AlertStackScreen+248
+	ld   [i1],r0
+	ld   [d1,100],d7
+	.line 281
+	ld   i0,d1
+	call &__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE ; call non-native
+	.line 282
+	ld   i0,#0x48
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI6ScreenC1Ev ; call non-native
+	ld   [d1,104],d0
+	.line 283
+	ld   d5,fr
+	add  d5,#0xffffffd0
+	ld   i0,d5
+	ld   i1,#LC21
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,[d1,104]
+	ld   i1,d5
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d5
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 284
+	ld   i0,d1
+	ld   i1,[d1,104]
+	call &__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE ; call non-native
+	.line 285
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L73
+L63:
+	.line 288
+	ld   i0,d1
+	ld   i1,#0x0
+	ld   i2,i1
+	call &__ZN8NativeUI11StackScreen17setPushTransitionEii ; call non-native
+	.line 289
+	ld   i0,d1
+	ld   i1,[fr,-56]
+	add  i1,#0x6
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 290
+	ld   i0,d5
+	ld   i1,d6
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	ld   i0,#0xa08
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d7
+	ld   i2,d5
+	ld   i3,[fr,-56]
+	call &__ZN8AlertTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution ; call non-native
+	ld   [d1,108],d0
+	ld   i0,d5
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 291
+	ld   i0,d1
+	ld   i1,[d1,108]
+	call &__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE ; call non-native
+	.dlab LBE49
+	.dlab LBE48
+	ld   [d2,96],d1
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext26
+Ltext26:
 	.line 45
-	ld   i0,d0
+	ld   i0,#LC22
+	call &_lprintfln ; call non-native
+	.line 46
+	ld   i0,d5
+	ld   i1,[fr,-52]
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	ld   i0,#0x6c
+	call &__Znwm ; call non-native
+	ld   d1,r14
+	.dlab LBB51
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext27
+Ltext27:
+	.line 122
+	ld   d7,[d2,88]
+	ld   [fr,-60],d3
+	.dlab LBB52
+	ld   i0,r14
+	call &__ZN8NativeUI11StackScreenC2Ev ; call non-native
+	.dlab LBB53
+	ld   i1,d1
+	add  i1,#0x60
+	.dlab LBE53
+	ld   r14,#__ZTV19TrackingStackScreen+8
+	ld   [d1],r14
+	ld   r0,#__ZTV19TrackingStackScreen+248
+	ld   [i1],r0
+	ld   [d1,100],d7
+	.line 123
+	ld   i0,d1
+	call &__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE ; call non-native
+	.line 124
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L74
+L66:
+	.line 127
+	ld   i0,d1
+	ld   i1,#0x0
+	ld   i2,i1
+	call &__ZN8NativeUI11StackScreen17setPushTransitionEii ; call non-native
+	.line 128
+	ld   i0,d1
+	ld   i1,[fr,-56]
+	add  i1,#0x4
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 129
+	ld   i0,d6
 	ld   i1,d5
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
 	ld   i0,#0x230
 	call &__Znwm ; call non-native
-	ld   d1,r14
-	ld   i1,[d2,88]
+	ld   d0,r14
+	ld   r15,[fr,-60]
+	sra  r15,#0x1f
 	ld   [sp],d3
-	ld   [sp,4],d4
-	ld   i0,r14
-	ld   i2,d0
-	ld   i3,d6
+	ld   [sp,4],r15
+	ld   i0,d0
+	ld   i1,d7
+	ld   i2,d6
+	ld   i3,[fr,-56]
 	call &__ZN11TrackingTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolutionx ; call non-native
-	ld   [d2,100],d1
-	ld   i0,d0
+	ld   [d1,104],d0
+	ld   i0,d6
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 130
+	ld   i0,d1
+	ld   i1,[d1,104]
+	call &__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE ; call non-native
+	.dlab LBE52
+	.dlab LBE51
+	ld   [d2,100],d1
+	ld   i0,d5
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext28
+Ltext28:
 	.line 47
-	ld   i0,d0
-	ld   i1,d5
+	ld   i0,#LC23
+	call &_lprintfln ; call non-native
+	.line 49
+	ld   i0,d5
+	ld   i1,[fr,-52]
 	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
-	ld   i0,#0xd4
+	ld   i0,#0x6c
 	call &__Znwm ; call non-native
 	ld   d1,r14
+	.dlab LBB54
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext29
+Ltext29:
+	.line 86
+	ld   d3,[d2,88]
+	.dlab LBB55
 	ld   i0,r14
-	ld   i1,[d2,88]
-	ld   i2,d0
-	ld   i3,d6
+	call &__ZN8NativeUI11StackScreenC2Ev ; call non-native
+	.dlab LBB56
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext30
+Ltext30:
+	.line 122
+	ld   i1,d1
+	add  i1,#0x60
+	.dlab LBE56
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext31
+Ltext31:
+	.line 86
+	ld   r14,#__ZTV17OptionStackScreen+8
+	ld   [d1],r14
+	ld   r0,#__ZTV17OptionStackScreen+248
+	ld   [i1],r0
+	ld   [d1,100],d3
+	.line 87
+	ld   i0,d1
+	call &__ZN8NativeUI11StackScreen22addStackScreenListenerEPNS_19StackScreenListenerE ; call non-native
+	.line 88
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L75
+L69:
+	.line 91
+	ld   i0,d1
+	ld   i1,#0x0
+	ld   i2,i1
+	call &__ZN8NativeUI11StackScreen17setPushTransitionEii ; call non-native
+	.line 92
+	ld   i0,d1
+	ld   i1,[fr,-56]
+	add  i1,#0x8
+	call &__ZN8NativeUI6Screen7setIconEi ; call non-native
+	.line 93
+	ld   i0,d6
+	ld   i1,d5
+	call &__ZN6MAUtil11BasicStringIcEC1ERKS1_ ; call non-native
+	ld   i0,#0xd8
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	ld   i1,d3
+	ld   i2,d6
+	ld   i3,[fr,-56]
 	call &__ZN9OptionTabC1EiN6MAUtil11BasicStringIcEE17eScreenResolution ; call non-native
-	ld   [d2,108],d1
-	ld   i0,d0
+	ld   [d1,104],d0
+	ld   i0,d6
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.line 51
+	.line 94
+	ld   i0,d1
+	ld   i1,[d1,104]
+	call &__ZN8NativeUI11StackScreen4pushEPNS_6ScreenE ; call non-native
+	.dlab LBE55
+	.dlab LBE54
+	ld   [d2,108],d1
+	ld   i0,d5
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext32
+Ltext32:
+	.line 50
+	ld   i0,#LC24
+	call &_lprintfln ; call non-native
+	.line 54
 	ld   r14,[d2]
 	ld   d0,[r14,192]
 	ld   i0,d2
 	ld   i1,[d2,100]
 	call d0 ; call non-native
-	.line 52
+	.line 55
 	ld   r14,[d2]
 	ld   d0,[r14,192]
 	ld   i0,d2
 	ld   i1,[d2,96]
 	call d0 ; call non-native
-	.line 53
+	.line 56
 	ld   r14,[d2]
 	ld   d0,[r14,192]
 	ld   i0,d2
 	ld   i1,[d2,108]
 	call d0 ; call non-native
-	.line 55
+	.line 58
 	ld   i0,[d2,96]
 	ld   r14,[i0]
 	ld   d1,d2
@@ -1280,166 +1980,271 @@ L47:
 	ld   d0,[r14,184]
 	ld   i1,d1
 	call d0 ; call non-native
-	.line 56
+	.line 59
 	ld   i0,[d2,100]
 	ld   r14,[i0]
 	ld   d0,[r14,184]
 	ld   i1,d1
 	call d0 ; call non-native
-	.line 58
+	.line 61
 	ld   i0,[d2,108]
 	ld   r14,[i0]
 	ld   d0,[r14,184]
 	ld   i1,d1
 	call d0 ; call non-native
-	.line 60
+	.line 63
 	ld   r14,[d2]
 	ld   d0,[r14,160]
 	ld   i0,d2
 	call d0 ; call non-native
-	.line 61
+	.line 64
 	ld   r14,#0x1
 	ld.b [d2,93],r14
-	.dlab LBB41
-	.dlab LBB42
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext18
-Ltext18:
+	.dlab LBB57
+	.dlab LBB58
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext33
+Ltext33:
 	.line 8759
 	ld   i0,#0x20d
 	ld   i1,#0xf
 	ld   i2,#0x0
 	ld   i3,i2
 	call &_maIOCtl ; call non-native
-	.dlab LBE42
-	.dlab LBE41
-	.dlab LBE38
-	.dlab LBE37
-	add  sp,#0xc
-	pop  rt,d6
-	ret
-L49:
-	.dlab LBB43
-	.dlab LBB44
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext19
-Ltext19:
-	.line 39
-	ld   d6,#0x1
-	.line 40
-	ld   i0,#LC13
-	call &_lprintfln ; call non-native
-	jp   #L47
+	.dlab LBE58
+	.dlab LBE57
+	.dlab LBE45
 	.dlab LBE44
-	.dlab LBE43
+	add  sp,#0x1c
+	pop  rt,d7
+	ret
+L72:
+	.dlab LBB59
+	.dlab LBB60
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext34
+Ltext34:
+	.line 39
+	ld   r0,#0x1
+	ld   [fr,-56],r0
+	.line 40
+	ld   i0,#LC19
+	call &_lprintfln ; call non-native
+	jp   #L61
+L75:
+	.dlab LBB61
+	.dlab LBB62
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext35
+Ltext35:
+	.line 89
+	ld   i0,[d1,100]
+	add  i0,#0x11
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d6
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d6
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	jp   #L69
+L73:
+	.dlab LBE62
+	.dlab LBE61
+	.dlab LBB63
+	.dlab LBB64
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext36
+Ltext36:
+	.line 286
+	ld   i0,[d1,100]
+	add  i0,#0xf
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d5
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d5
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d5
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	jp   #L63
+L74:
+	.dlab LBE64
+	.dlab LBE63
+	.dlab LBB65
+	.dlab LBB66
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext37
+Ltext37:
+	.line 125
+	ld   i0,[d1,100]
+	add  i0,#0xd
+	call &__ZN7Convert2trEi ; call non-native
+	ld   i0,d6
+	ld   i1,r14
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d6
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d6
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	jp   #L66
+	.dlab LBE66
+	.dlab LBE65
+	.dlab LBE60
+	.dlab LBE59
 	.stabs	"size:r(6,11)",64,0,33,30
 	.stabs	"mScreenWidth:r(0,3)",64,0,34,4
 	.stabs	"mScreenHeight:r(0,3)",64,0,35,30
-	.stabs	"screenResolution:r(88,4)",64,0,36,10
-	.stabn	192,0,0,LBB38-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
-	.stabn	224,0,0,LBE38-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"screenResolution:(88,4)",128,0,36,-56
+	.stabn	192,0,0,LBB45-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,280,11
+	.stabn	192,0,0,LBB48-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"this:r(69,9)",64,0,122,13
+	.stabn	192,0,0,LBB50-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE50-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE48-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,122,11
+	.stabs	"idMobile:(0,3)",128,0,122,-60
+	.stabn	192,0,0,LBB51-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"this:r(69,9)",64,0,122,13
+	.stabn	192,0,0,LBB53-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE53-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE51-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,86,7
+	.stabn	192,0,0,LBB54-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"this:r(69,9)",64,0,122,13
+	.stabn	192,0,0,LBB56-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE56-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE54-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE45-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
 	.stabs	"size:r(6,11)",64,0,33,30
 	.stabs	"mScreenWidth:r(0,3)",64,0,34,4
 	.stabs	"mScreenHeight:r(0,3)",64,0,35,30
-	.stabs	"screenResolution:r(88,4)",64,0,36,10
-	.stabn	192,0,0,LBB44-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
-	.stabn	224,0,0,LBE44-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
-Lscope13:
+	.stabs	"screenResolution:(88,4)",128,0,36,-56
+	.stabn	192,0,0,LBB60-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,86,7
+	.stabn	192,0,0,LBB61-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE61-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,280,11
+	.stabn	192,0,0,LBB63-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE63-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabs	"language:r(0,3)",64,0,122,11
+	.stabs	"idMobile:(0,3)",128,0,122,-60
+	.stabn	192,0,0,LBB65-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE65-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+	.stabn	224,0,0,LBE60-__ZN10ScreenMain8createUIEN6MAUtil11BasicStringIcEEx
+Lscope21:
 .data
-LC14:
+LC25:
 	.ascii "timer ScreenMain\0"
-LC15:
+LC26:
 	.ascii "timer ScreenMain dans le if\0"
 .code
-	.stabs	"_ZN10ScreenMain11pullRequestEv:F(0,6)",36,0,70,__ZN10ScreenMain11pullRequestEv
-	.stabs	"this:P(0,79)",64,0,70,4
+	.stabs	"_ZN10ScreenMain11pullRequestEv:F(0,6)",36,0,73,__ZN10ScreenMain11pullRequestEv
+	.stabs	"this:P(0,127)",64,0,73,4
 	.global	__ZN10ScreenMain11pullRequestEv
 
 .func __ZN10ScreenMain11pullRequestEv, 1, void
-	.line 70
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext38
+Ltext38:
+	.line 73
 	push rt,d0
 	ld   fr,sp
 	add  fr,#0xc
 	ld   d0,i0
-	.dlab LBB45
-	.line 71
-	ld   i0,#LC14
+	.dlab LBB67
+	.line 74
+	ld   i0,#LC25
 	call &_lprintfln ; call non-native
-	.line 72
+	.line 75
 	ld.b r14,[d0,93]
 	and  r14,#0xff  ; zero extend
 	ld   r0,#0x0
-	jc   ne,r14,r0,#L52
-	.dlab LBE45
-	.line 76
+	jc   ne,r14,r0,#L79
+	.dlab LBE67
+	.line 79
 	pop  rt,d0
 	ret
-L52:
-	.dlab LBB46
-	.line 73
-	ld   i0,#LC15
+L79:
+	.dlab LBB68
+	.line 76
+	ld   i0,#LC26
 	call &_lprintfln ; call non-native
-	.line 74
-	ld   i0,[d0,100]
+	.dlab LBB69
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext39
+Ltext39:
+	.line 133
+	ld   r14,[d0,100]
+	.dlab LBB70
+	.line 134
+	ld   i0,[r14,104]
 	call &__ZN11TrackingTab13runTimerEventEv ; call non-native
-	.dlab LBE46
-	.line 76
+	.dlab LBE70
+	.dlab LBE69
+	.dlab LBE68
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext40
+Ltext40:
+	.line 79
 	pop  rt,d0
 	ret
-Lscope14:
+	.stabs	"this:r(0,124)",64,0,133,30
+	.stabn	192,0,0,LBB69-__ZN10ScreenMain11pullRequestEv
+	.stabn	224,0,0,LBE69-__ZN10ScreenMain11pullRequestEv
+Lscope22:
 .data
-LC16:
+LC27:
 	.ascii "Tab Active : %d\0"
 .code
-	.stabs	"_ZN10ScreenMain14handleKeyPressEi:F(0,6)",36,0,81,__ZN10ScreenMain14handleKeyPressEi
-	.stabs	"this:P(0,79)",64,0,81,6
-	.stabs	"keyCode:P(0,3)",64,0,81,5
+	.stabs	"_ZN10ScreenMain14handleKeyPressEi:F(0,6)",36,0,84,__ZN10ScreenMain14handleKeyPressEi
+	.stabs	"this:P(0,127)",64,0,84,6
+	.stabs	"keyCode:P(0,3)",64,0,84,5
 	.global	__ZN10ScreenMain14handleKeyPressEi
 
 .func __ZN10ScreenMain14handleKeyPressEi, 2, void
-	.line 81
+	.line 84
 	push rt,d2
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x1c
 	ld   d2,i0
 	ld   d1,i1
-	.dlab LBB47
-	.line 82
+	.dlab LBB71
+	.line 85
 	ld   r14,[i0]
 	ld   d0,[r14,200]
 	call d0 ; call non-native
 	ld   [sp],r14
-	ld   i0,#LC16
+	ld   i0,#LC27
 	call &_lprintfln ; call non-native
-	.line 83
+	.line 86
 	ld   r0,#0x1
 	ld.b [d2,92],r0
-	.line 84
+	.line 87
 	ld   r14,#0x124
-	jc   eq,d1,r14,#L62
-	.line 94
+	jc   eq,d1,r14,#L89
+	.line 97
 	ld   r14,#0x125
-	jc   eq,d1,r14,#L60
+	jc   eq,d1,r14,#L87
 	ld   r0,#0x116
-	jc   eq,d1,r0,#L60
-L53:
-	.dlab LBE47
-	.line 100
+	jc   eq,d1,r0,#L87
+L80:
+	.dlab LBE71
+	.line 103
 	add  sp,#0x8
 	pop  rt,d2
 	ret
-L62:
-	.dlab LBB48
-	.line 85
+L89:
+	.dlab LBB72
+	.line 88
 	ld   r14,[d2]
 	ld   d0,[r14,200]
 	ld   i0,d2
 	call d0 ; call non-native
 	ld   r0,#0x1
-	jc   eq,r14,r0,#L63
-L60:
-	.dlab LBB49
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext20
-Ltext20:
+	jc   eq,r14,r0,#L80
+L87:
+	.dlab LBB73
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext41
+Ltext41:
 	.line 7084
 	ld   i0,[d2,88]
 	add  i0,#0x57
@@ -1452,101 +2257,98 @@ Ltext20:
 	ld   i0,[d2,88]
 	add  i0,#0x5b
 	call &__ZN7Convert2trEi ; call non-native
-	.dlab LBB50
+	.dlab LBB74
 	.line 7085
 	ld   [sp],d0
 	ld   [sp,4],r14
 	ld   i0,#0x19b
-	ld   i1,#LC9
+	ld   i1,#LC12
 	ld   i2,i1
 	ld   i3,d1
 	call &_maIOCtl ; call non-native
-	.dlab LBE50
-	.dlab LBE49
-	.dlab LBE48
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext21
-Ltext21:
-	.line 100
+	.dlab LBE74
+	.dlab LBE73
+	.dlab LBE72
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext42
+Ltext42:
+	.line 103
 	add  sp,#0x8
 	pop  rt,d2
 	ret
-L63:
-	.dlab LBB51
-	.line 86
-	ld   i0,[d2,96]
-	ld   i1,#0x124
-	call &__ZN8AlertTab14handleKeyPressEi ; call non-native
-	jp   #L53
-	.dlab LBE51
 	.stabs	"button1:r(4,7)",64,0,7084,5
 	.stabs	"button2:r(4,7)",64,0,7084,4
-	.stabn	192,0,0,LBB49-__ZN10ScreenMain14handleKeyPressEi
-	.stabn	224,0,0,LBE49-__ZN10ScreenMain14handleKeyPressEi
-Lscope15:
-	.stabs	"_ZN10ScreenMain11customEventERK7MAEvent:F(0,6)",36,0,106,__ZN10ScreenMain11customEventERK7MAEvent
-	.stabs	"this:P(0,79)",64,0,106,6
-	.stabs	"event:P(0,41)",64,0,106,13
+	.stabn	192,0,0,LBB73-__ZN10ScreenMain14handleKeyPressEi
+	.stabn	224,0,0,LBE73-__ZN10ScreenMain14handleKeyPressEi
+Lscope23:
+	.stabs	"_ZN10ScreenMain11customEventERK7MAEvent:F(0,6)",36,0,109,__ZN10ScreenMain11customEventERK7MAEvent
+	.stabs	"this:P(0,127)",64,0,109,6
+	.stabs	"event:P(0,41)",64,0,109,4
 	.global	__ZN10ScreenMain11customEventERK7MAEvent
 
 .func __ZN10ScreenMain11customEventERK7MAEvent, 2, void
-	.line 106
+	.line 109
 	push rt,d2
 	sub  sp,#0x8
 	ld   fr,sp
 	add  fr,#0x1c
 	ld   d2,i0
-	.dlab LBB52
-	.line 107
-	ld   r14,[i1]
+	ld   d0,i1
+	.dlab LBB75
+	.line 110
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L90
+	.line 111
+	ld   r14,[d0]
 	ld   r0,#0x22
-	jc   eq,r14,r0,#L75
-	.line 115
+	jc   eq,r14,r0,#L102
+	.line 119
 	ld   r0,#0x36
-	jc   eq,r14,r0,#L76
-L64:
-	.dlab LBE52
-	.line 122
+	jc   eq,r14,r0,#L103
+L90:
+	.dlab LBE75
+	.line 127
 	add  sp,#0x8
 	pop  rt,d2
 	ret
-L75:
-	.dlab LBB53
-	.line 108
-	ld   d0,[i1,4]
+L102:
+	.dlab LBB76
+	.line 112
+	ld   d0,[d0,4]
 	ld   r14,#0x1
-	jc   eq,d0,r14,#L77
-	.line 110
+	jc   eq,d0,r14,#L104
+	.line 114
 	ld   r0,#0x2
-	jc   ne,d0,r0,#L64
-	.dlab LBB54
-	.dlab LBB55
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext22
-Ltext22:
+	jc   ne,d0,r0,#L90
+	.dlab LBB77
+	.dlab LBB78
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext43
+Ltext43:
 	.line 6539
 	ld   i0,#0x57
 	ld   i1,#0x0
 	ld   i2,i1
 	ld   i3,i1
 	call &_maIOCtl ; call non-native
-	jp   #L64
-L76:
-	.dlab LBE55
-	.dlab LBE54
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext23
-Ltext23:
-	.line 115
-	ld.b r14,[i0,92]
+	jp   #L90
+L103:
+	.dlab LBE78
+	.dlab LBE77
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext44
+Ltext44:
+	.line 119
+	ld.b r14,[d2,92]
 	and  r14,#0xff  ; zero extend
 	ld   r0,#0x0
-	jc   eq,r14,r0,#L64
-	.line 117
+	jc   eq,r14,r0,#L90
+	.line 121
 	ld   r14,#0x0
-	ld.b [i0,92],r14
-	.dlab LBB56
-	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext24
-Ltext24:
+	ld.b [d2,92],r14
+	.dlab LBB79
+	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext45
+Ltext45:
 	.line 7084
-	ld   i0,[i0,88]
+	ld   i0,[d2,88]
 	add  i0,#0x57
 	call &__ZN7Convert2trEi ; call non-native
 	ld   d1,r14
@@ -1557,201 +2359,333 @@ Ltext24:
 	ld   i0,[d2,88]
 	add  i0,#0x5b
 	call &__ZN7Convert2trEi ; call non-native
-	.dlab LBB57
+	.dlab LBB80
 	.line 7085
 	ld   [sp],d0
 	ld   [sp,4],r14
 	ld   i0,#0x19b
-	ld   i1,#LC9
+	ld   i1,#LC12
 	ld   i2,i1
 	ld   i3,d1
 	call &_maIOCtl ; call non-native
-	jp   #L64
-L77:
-	.dlab LBE57
-	.dlab LBE56
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext25
-Ltext25:
-	.line 109
-	ld   i0,[i0,88]
+	jp   #L90
+L104:
+	.dlab LBE80
+	.dlab LBE79
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext46
+Ltext46:
+	.line 113
+	ld   i0,[d2,88]
 	add  i0,#0x55
 	call &__ZN7Convert2trEi ; call non-native
 	ld   i0,d0
 	ld   i1,r14
 	call &_maPanic ; call non-native
-	.dlab LBE53
+	.dlab LBE76
 	.stabs	"button1:r(4,7)",64,0,7084,5
 	.stabs	"button2:r(4,7)",64,0,7084,4
-	.stabn	192,0,0,LBB56-__ZN10ScreenMain11customEventERK7MAEvent
-	.stabn	224,0,0,LBE56-__ZN10ScreenMain11customEventERK7MAEvent
-Lscope16:
-	.stabs	"_ZN10ScreenMain20handlePointerPressedE9MAPoint2d:F(0,6)",36,0,127,__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
-	.stabs	"this:P(0,79)",64,0,127,12
-	.stabs	"point:P(6,27)",64,0,127,13
+	.stabn	192,0,0,LBB79-__ZN10ScreenMain11customEventERK7MAEvent
+	.stabn	224,0,0,LBE79-__ZN10ScreenMain11customEventERK7MAEvent
+Lscope24:
+	.stabs	"_ZN10ScreenMain20handlePointerPressedE9MAPoint2d:F(0,6)",36,0,132,__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
+	.stabs	"this:P(0,127)",64,0,132,12
+	.stabs	"point:P(6,27)",64,0,132,13
 	.global	__ZN10ScreenMain20handlePointerPressedE9MAPoint2d
 
 .func __ZN10ScreenMain20handlePointerPressedE9MAPoint2d, 3, void
-	.line 127
+	.line 132
 	push fr,fr
 	ld   fr,sp
 	add  fr,#0x4
-	.line 127
+	.line 132
 	pop  fr,fr
 	ret
-Lscope17:
-	.stabs	"_ZN10ScreenMain18handlePointerMovedE9MAPoint2d:F(0,6)",36,0,134,__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
-	.stabs	"this:P(0,79)",64,0,134,12
-	.stabs	"point:P(6,27)",64,0,134,13
+Lscope25:
+	.stabs	"_ZN10ScreenMain18handlePointerMovedE9MAPoint2d:F(0,6)",36,0,139,__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
+	.stabs	"this:P(0,127)",64,0,139,12
+	.stabs	"point:P(6,27)",64,0,139,13
 	.global	__ZN10ScreenMain18handlePointerMovedE9MAPoint2d
 
 .func __ZN10ScreenMain18handlePointerMovedE9MAPoint2d, 3, void
-	.line 134
+	.line 139
 	push fr,fr
 	ld   fr,sp
 	add  fr,#0x4
-	.line 134
+	.line 139
 	pop  fr,fr
 	ret
-Lscope18:
-	.stabs	"_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d:F(0,6)",36,0,141,__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
-	.stabs	"this:P(0,79)",64,0,141,12
-	.stabs	"point:P(6,27)",64,0,141,13
+Lscope26:
+	.stabs	"_ZN10ScreenMain21handlePointerReleasedE9MAPoint2d:F(0,6)",36,0,146,__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
+	.stabs	"this:P(0,127)",64,0,146,12
+	.stabs	"point:P(6,27)",64,0,146,13
 	.global	__ZN10ScreenMain21handlePointerReleasedE9MAPoint2d
 
 .func __ZN10ScreenMain21handlePointerReleasedE9MAPoint2d, 3, void
-	.line 141
+	.line 146
 	push fr,fr
 	ld   fr,sp
 	add  fr,#0x4
-	.line 141
+	.line 146
 	pop  fr,fr
 	ret
-Lscope19:
-	.set	%0=__ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
-	.stabs	"this:P(0,79)",64,0,147,12
-	.stabs	"screen:P(69,32)",64,0,147,13
-	.stabs	"screenOrientation:P(0,3)",64,0,147,14
+Lscope27:
+	.set	%3=__ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
+	.stabs	"this:P(0,127)",64,0,152,12
+	.stabs	"screen:P(69,32)",64,0,152,13
+	.stabs	"screenOrientation:P(0,3)",64,0,152,14
 	.global	__ZThn84_N10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
 
 .func __ZThn84_N10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/ScreenMain.h",132,0,0,Ltext26
-Ltext26:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/ScreenMain.h",132,0,0,Ltext47
+Ltext47:
 	.line 19
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
 	.line 19
 	add  i0,#0xffffffac
-	call &%0 ; call non-native
+	call &%3 ; call non-native
 	pop  rt,fr
 	ret
-Lscope20:
+Lscope28:
 .data
-LC17:
+LC28:
 	.ascii "screenOrientation : %d\0"
 .code
-	.stabs	"_ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi:F(0,6)",36,0,147,__ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
-	.stabs	"this:P(0,79)",64,0,147,4
-	.stabs	"screen:P(69,32)",64,0,147,5
-	.stabs	"screenOrientation:P(0,3)",64,0,147,6
+	.stabs	"_ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi:F(0,6)",36,0,152,__ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
+	.stabs	"this:P(0,127)",64,0,152,4
+	.stabs	"screen:P(69,32)",64,0,152,5
+	.stabs	"screenOrientation:P(0,3)",64,0,152,7
 	.global	__ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi
 
 .func __ZN10ScreenMain18orientationChangedEPN8NativeUI6ScreenEi, 3, void
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext27
-Ltext27:
-	.line 147
-	push rt,d2
-	sub  sp,#0x4
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext48
+Ltext48:
+	.line 152
+	push rt,d3
+	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x18
+	add  fr,#0x20
 	ld   d0,i0
 	ld   d1,i1
-	ld   d2,i2
-	.dlab LBB58
-	.line 149
-	ld   [sp],i2
-	ld   i0,#LC17
-	call &_lprintfln ; call non-native
-	.line 150
-	ld   r14,[d0,96]
-	jc   eq,r14,d1,#L88
+	ld   d3,i2
+	.dlab LBB81
 	.line 154
+	ld   [sp],i2
+	ld   i0,#LC28
+	call &_lprintfln ; call non-native
+	.line 155
+	ld   r14,[d0,96]
+	jc   eq,r14,d1,#L128
+	.line 159
 	ld   r14,[d0,108]
-	jc   eq,r14,d1,#L89
-	.line 158
-	ld   i0,[d0,100]
-	jc   eq,i0,d1,#L90
-L82:
-	.dlab LBE58
-	.line 166
-	add  sp,#0x4
-	pop  rt,d2
+	jc   eq,r14,d1,#L129
+	.line 163
+	ld   d2,[d0,100]
+	jc   eq,d2,d1,#L130
+L109:
+	.dlab LBE81
+	.line 171
+	add  sp,#0x8
+	pop  rt,d3
 	ret
-L88:
-	.dlab LBB59
-	.line 152
+L128:
+	.dlab LBB82
+	.dlab LBB83
+	.dlab LBB84
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext49
+Ltext49:
+	.line 307
+	ld   r0,#0x8
+	jc   eq,d3,r0,#L131
+	.line 313
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,#LC12
+L125:
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	ld   i0,d1
-	ld   i1,d2
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 315
+	ld   i0,[d1,108]
+	ld   i1,d3
 	call &__ZN8AlertTab17orientationChangeEi ; call non-native
-	jp   #L82
-L89:
-	.line 156
-	ld   i0,d1
-	ld   i1,d2
-	call &__ZN9OptionTab17orientationChangeEi ; call non-native
-	jp   #L82
-L90:
-	.line 160
-	ld   i1,d2
+	.dlab LBE84
+	.dlab LBE83
+	.dlab LBE82
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext50
+Ltext50:
+	.line 171
+	add  sp,#0x8
+	pop  rt,d3
+	ret
+L130:
+	.dlab LBB85
+	.dlab LBB86
+	.dlab LBB87
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext51
+Ltext51:
+	.line 141
+	ld   r0,#0x8
+	jc   eq,d3,r0,#L132
+	.line 147
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,#LC12
+L127:
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d2
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 149
+	ld   i0,[d2,104]
+	ld   i1,d3
 	call &__ZN11TrackingTab17orientationChangeEi ; call non-native
-	jp   #L82
-	.dlab LBE59
-Lscope21:
+	.dlab LBE87
+	.dlab LBE86
+	.dlab LBE85
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext52
+Ltext52:
+	.line 171
+	add  sp,#0x8
+	pop  rt,d3
+	ret
+L129:
+	.dlab LBB88
+	.dlab LBB89
+	.dlab LBB90
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext53
+Ltext53:
+	.line 110
+	call &__Z11getPlatformv ; call non-native
+	ld   r0,#0x1
+	jc   eq,r14,r0,#L109
+	.line 111
+	ld   r14,#0x8
+	jc   eq,d3,r14,#L133
+	.line 117
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,#LC12
+L126:
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Screen8setTitleERKN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 119
+	ld   i0,[d1,104]
+	ld   i1,d3
+	call &__ZN9OptionTab17orientationChangeEi ; call non-native
+	jp   #L109
+L131:
+	.dlab LBE90
+	.dlab LBE89
+	.dlab LBB91
+	.dlab LBB92
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/AlertTab.h",132,0,0,Ltext54
+Ltext54:
+	.line 309
+	ld   i0,[d1,100]
+	add  i0,#0xf
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,r14
+	jp   #L125
+L133:
+	.dlab LBE92
+	.dlab LBE91
+	.dlab LBB93
+	.dlab LBB94
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/OptionTab.h",132,0,0,Ltext55
+Ltext55:
+	.line 113
+	ld   i0,[d1,100]
+	add  i0,#0x11
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,r14
+	jp   #L126
+L132:
+	.dlab LBE94
+	.dlab LBE93
+	.dlab LBB95
+	.dlab LBB96
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/TrackingTab.h",132,0,0,Ltext56
+Ltext56:
+	.line 143
+	ld   i0,[d2,100]
+	add  i0,#0xd
+	call &__ZN7Convert2trEi ; call non-native
+	ld   d0,fr
+	add  d0,#0xffffffe4
+	ld   i0,d0
+	ld   i1,r14
+	jp   #L127
+	.dlab LBE96
+	.dlab LBE95
+	.dlab LBE88
+Lscope29:
 .data
-LC18:
+LC29:
 	.ascii "TEST_EMULATOR\0"
-LC19:
+LC30:
 	.ascii "SERVICE_NOT_AVAILABLE\0"
-LC20:
+LC31:
 	.ascii "ACCOUNT_MISSING\0"
-LC21:
+LC32:
 	.ascii "AUTHENTICATION_FAILED\0"
-LC22:
+LC33:
 	.ascii "TOO_MANY_REGISTRATIONS\0"
-LC23:
+LC34:
 	.ascii "INVALID_SENDER\0"
 .code
-	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,166,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:P(0,3)",64,0,166,12
-	.stabs	"__priority:P(0,3)",64,0,166,13
+	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,171,__Z41__static_initialization_and_destruction_0ii
+	.stabs	"__initialize_p:P(0,3)",64,0,171,12
+	.stabs	"__priority:P(0,3)",64,0,171,13
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
-	.line 166
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext57
+Ltext57:
+	.line 171
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext28
-Ltext28:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext58
+Ltext58:
 	.line 99
 	ld   r14,#0xffff
-	jc   eq,i1,r14,#L126
-L91:
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext29
-Ltext29:
-	.line 166
+	jc   eq,i1,r14,#L169
+L134:
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext59
+Ltext59:
+	.line 171
 	pop  rt,fr
 	ret
-L126:
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext30
-Ltext30:
+L169:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext60
+Ltext60:
 	.line 99
 	ld   r14,#0x1
-	jc   eq,i0,r14,#L127
-	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext31
-Ltext31:
+	jc   eq,i0,r14,#L170
+	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext61
+Ltext61:
 	.line 121
 	ld   r14,#0x0
-	jc   ne,i0,r14,#L91
+	jc   ne,i0,r14,#L134
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.line 114
@@ -1766,79 +2700,202 @@ Ltext31:
 	.line 87
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext32
-Ltext32:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext62
+Ltext62:
 	.line 99
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext33
-Ltext33:
-	.line 166
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext63
+Ltext63:
+	.line 171
 	pop  rt,fr
 	ret
-L127:
-	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext34
-Ltext34:
+L170:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext64
+Ltext64:
 	.line 99
 	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC18
+	ld   i1,#LC29
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext35
-Ltext35:
+	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext65
+Ltext65:
 	.line 88
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
-	ld   i1,#LC19
+	ld   i1,#LC30
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.line 97
 	ld   i0,#__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
-	ld   i1,#LC20
+	ld   i1,#LC31
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.line 106
 	ld   i0,#__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE
-	ld   i1,#LC21
+	ld   i1,#LC32
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.line 115
 	ld   i0,#__ZN12Notification53NOTIFICATIONS_REGISTRATION_ERR_TOO_MANY_REGISTRATIONSE
-	ld   i1,#LC22
+	ld   i1,#LC33
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
 	.line 122
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
-	ld   i1,#LC23
+	ld   i1,#LC34
 	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
-	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext36
-Ltext36:
-	.line 166
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ScreenMain.cpp",132,0,0,Ltext66
+Ltext66:
+	.line 171
 	pop  rt,fr
 	ret
-Lscope22:
-	.stabs	"_GLOBAL__I__ZN10ScreenMainC2Ev:f(0,6)",36,0,167,__GLOBAL__I__ZN10ScreenMainC2Ev
+Lscope30:
+	.stabs	"_ZN19TrackingStackScreenD1Ev:f(0,6)",36,0,171,__ZN19TrackingStackScreenD1Ev
+	.stabs	"this:P(0,124)",64,0,120,30
 
-.func __GLOBAL__I__ZN10ScreenMainC2Ev, 0, void
-	.line 167
+.func __ZN19TrackingStackScreenD1Ev, 1, void
+	.line 171
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 167
+	.dlab LBB97
+	.line 171
+	ld   r0,#__ZTV19TrackingStackScreen+8
+	ld   [i0],r0
+	ld   r0,#__ZTV19TrackingStackScreen+248
+	ld   [i0,96],r0
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE97
+	pop  rt,fr
+	ret
+Lscope31:
+	.stabs	"_ZN19TrackingStackScreenD0Ev:f(0,6)",36,0,171,__ZN19TrackingStackScreenD0Ev
+	.stabs	"this:P(0,124)",64,0,120,4
+
+.func __ZN19TrackingStackScreenD0Ev, 1, void
+	.line 171
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB98
+	.line 171
+	ld   r14,#__ZTV19TrackingStackScreen+8
+	ld   [i0],r14
+	ld   r14,#__ZTV19TrackingStackScreen+248
+	ld   [i0,96],r14
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE98
+	ld   i0,d0
+	call &__ZdlPv ; call non-native
+	pop  rt,d0
+	ret
+Lscope32:
+	.stabs	"_ZN17OptionStackScreenD1Ev:f(0,6)",36,0,171,__ZN17OptionStackScreenD1Ev
+	.stabs	"this:P(0,125)",64,0,84,30
+
+.func __ZN17OptionStackScreenD1Ev, 1, void
+	.line 171
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.dlab LBB99
+	.line 171
+	ld   r0,#__ZTV17OptionStackScreen+8
+	ld   [i0],r0
+	ld   r0,#__ZTV17OptionStackScreen+248
+	ld   [i0,96],r0
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE99
+	pop  rt,fr
+	ret
+Lscope33:
+	.stabs	"_ZN17OptionStackScreenD0Ev:f(0,6)",36,0,171,__ZN17OptionStackScreenD0Ev
+	.stabs	"this:P(0,125)",64,0,84,4
+
+.func __ZN17OptionStackScreenD0Ev, 1, void
+	.line 171
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB100
+	.line 171
+	ld   r14,#__ZTV17OptionStackScreen+8
+	ld   [i0],r14
+	ld   r14,#__ZTV17OptionStackScreen+248
+	ld   [i0,96],r14
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE100
+	ld   i0,d0
+	call &__ZdlPv ; call non-native
+	pop  rt,d0
+	ret
+Lscope34:
+	.stabs	"_ZN16AlertStackScreenD1Ev:f(0,6)",36,0,171,__ZN16AlertStackScreenD1Ev
+	.stabs	"this:P(0,126)",64,0,278,30
+
+.func __ZN16AlertStackScreenD1Ev, 1, void
+	.line 171
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.dlab LBB101
+	.line 171
+	ld   r0,#__ZTV16AlertStackScreen+8
+	ld   [i0],r0
+	ld   r0,#__ZTV16AlertStackScreen+248
+	ld   [i0,96],r0
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE101
+	pop  rt,fr
+	ret
+Lscope35:
+	.stabs	"_ZN16AlertStackScreenD0Ev:f(0,6)",36,0,171,__ZN16AlertStackScreenD0Ev
+	.stabs	"this:P(0,126)",64,0,278,4
+
+.func __ZN16AlertStackScreenD0Ev, 1, void
+	.line 171
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB102
+	.line 171
+	ld   r14,#__ZTV16AlertStackScreen+8
+	ld   [i0],r14
+	ld   r14,#__ZTV16AlertStackScreen+248
+	ld   [i0,96],r14
+	call &__ZN8NativeUI11StackScreenD2Ev ; call non-native
+	.dlab LBE102
+	ld   i0,d0
+	call &__ZdlPv ; call non-native
+	pop  rt,d0
+	ret
+Lscope36:
+	.stabs	"_GLOBAL__I__ZN10ScreenMainC2Ev:f(0,6)",36,0,172,__GLOBAL__I__ZN10ScreenMainC2Ev
+
+.func __GLOBAL__I__ZN10ScreenMainC2Ev, 0, void
+	.line 172
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.line 172
 	ld   i0,#0x1
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
-Lscope23:
-	.stabs	"_GLOBAL__D__ZN10ScreenMainC2Ev:f(0,6)",36,0,168,__GLOBAL__D__ZN10ScreenMainC2Ev
+Lscope37:
+	.stabs	"_GLOBAL__D__ZN10ScreenMainC2Ev:f(0,6)",36,0,173,__GLOBAL__D__ZN10ScreenMainC2Ev
 
 .func __GLOBAL__D__ZN10ScreenMainC2Ev, 0, void
-	.line 168
+	.line 173
 	push rt,fr
 	ld   fr,sp
 	add  fr,#0x8
-	.line 168
+	.line 173
 	ld   i0,#0x0
 	ld   i1,#0xffff
 	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
-Lscope24:
+Lscope38:
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE:S(4,39)",40,0,87,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_SERVICE_NOT_AVAILABLEE
 	.stabs	"_ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE:S(4,39)",40,0,96,__ZN12Notification46NOTIFICATIONS_REGISTRATION_ERR_ACCOUNT_MISSINGE
 	.stabs	"_ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE:S(4,39)",40,0,105,__ZN12Notification52NOTIFICATIONS_REGISTRATION_ERR_AUTHENTICATION_FAILEDE

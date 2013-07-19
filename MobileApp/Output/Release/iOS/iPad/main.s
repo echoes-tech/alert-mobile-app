@@ -487,12 +487,16 @@
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Authentication.h",130,0,0,0
 	.stabn	162,0,0,0
 	.stabs	"NativeUIMoblet:Tt(0,25)=s248!3,020,(0,26)=xsMoblet:;021888,(7,304);021920,(7,4);mMainScreen:/0(0,27)=*(0,28)=xsScreenMain:,1952,32;__base_ctor::(0,29)=#(0,25),(0,6),(0,30)=*(0,25),(0,6);:_ZN14NativeUIMobletC2Ev;2A.;__comp_ctor::(0,29):_ZN14NativeUIMobletC1Ev;2A.;runTimerEvent::(0,29):_ZN14NativeUIMoblet13runTimerEventEv;2A*14;(0,25);;customEvent::(0,31)=#(0,25),(0,6),(0,30),(0,32)=&(0,33)=k(2,165),(0,6);:_ZN14NativeUIMoblet11customEventERK7MAEvent;2A*13;(0,25);;__base_dtor::(0,29):_ZN14NativeUIMobletD2Ev;2A.;__comp_dtor::(0,29):_ZN14NativeUIMobletD1Ev;2A*2;(0,25);;__deleting_dtor::(0,29):_ZN14NativeUIMobletD0Ev;2A*3;(0,25);;keyPressEvent::(0,34)=#(0,25),(0,6),(0,30),(0,3),(0,3),(0,6);:_ZN14NativeUIMoblet13keyPressEventEii;2A*4;(0,25);;pointerPressEvent::(0,35)=#(0,25),(0,6),(0,30),(2,27),(0,6);:_ZN14NativeUIMoblet17pointerPressEventE9MAPoint2d;2A*6;(0,25);;pointerMoveEvent::(0,35):_ZN14NativeUIMoblet16pointerMoveEventE9MAPoint2d;2A*7;(0,25);;pointerReleaseEvent::(0,35):_ZN14NativeUIMoblet19pointerReleaseEventE9MAPoint2d;2A*8;(0,25);;focusLost::(0,29):_ZN14NativeUIMoblet9focusLostEv;2A*15;(0,25);;focusGained::(0,29):_ZN14NativeUIMoblet11focusGainedEv;2A*16;(0,25);;operator=::(0,36)=#(0,25),(0,37)=&(0,25),(0,30),(0,38)=&(0,39)=k(0,25),(0,6);:_ZN14NativeUIMobletaSERKS_;2A.;__base_ctor::(0,40)=#(0,25),(0,6),(0,30),(0,38),(0,6);:_ZN14NativeUIMobletC2ERKS_;2A.;__comp_ctor::(0,40):_ZN14NativeUIMobletC1ERKS_;2A.;;~%(0,41)=xsEnvironment:;",128,0,20,0
-	.stabs	"WebViewListener:Tt(80,4)=s4_vptr$WebViewListener:(0,42)=*(0,1),0,32;__base_ctor::(0,43)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,43):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,43):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,43):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(80,4);;__deleting_dtor::(0,43):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(80,4);;webViewHookInvoked::(0,44)=#(80,4),(0,6),(80,3),(0,45)=*(0,46)=xsWebView:,(0,3),(2,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(80,4);;webViewContentLoading::(0,47)=#(80,4),(0,6),(80,3),(0,45),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(80,4);;operator=::(0,48)=#(80,4),(0,49)=&(80,4),(80,3),(0,50)=&(0,51)=k(80,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,52)=#(80,4),(0,6),(80,3),(0,50),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,52):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(80,4);",128,0,50,0
-	.stabs	"CustomEventListener:Tt(7,350)=s4_vptr$CustomEventListener:(0,42),0,32;customEvent::(0,53)=#(7,350),(0,6),(7,349),(0,32),(0,6);:_ZN6MAUtil19CustomEventListener11customEventERK7MAEvent;2A*0;(7,350);;operator=::(0,54)=#(7,350),(0,55)=&(7,350),(7,349),(0,56)=&(0,57)=k(7,350),(0,6);:_ZN6MAUtil19CustomEventListeneraSERKS0_;2A.;__base_ctor::(0,58)=#(7,350),(0,6),(7,349),(0,56),(0,6);:_ZN6MAUtil19CustomEventListenerC2ERKS0_;2A.;__comp_ctor::(0,58):_ZN6MAUtil19CustomEventListenerC1ERKS0_;2A.;__base_ctor::(0,59)=#(7,350),(0,6),(7,349),(0,6);:_ZN6MAUtil19CustomEventListenerC2Ev;2A.;__comp_ctor::(0,59):_ZN6MAUtil19CustomEventListenerC1Ev;2A.;;~%(7,350);",128,0,152,0
-	.stabs	"FocusListener:Tt(7,304)=s4_vptr$FocusListener:(0,42),0,32;focusLost::(0,60)=#(7,304),(0,6),(7,303),(0,6);:_ZN6MAUtil13FocusListener9focusLostEv;2A*0;(7,304);;focusGained::(0,60):_ZN6MAUtil13FocusListener11focusGainedEv;2A*1;(7,304);;operator=::(0,61)=#(7,304),(0,62)=&(7,304),(7,303),(0,63)=&(0,64)=k(7,304),(0,6);:_ZN6MAUtil13FocusListeneraSERKS0_;2A.;__base_ctor::(0,65)=#(7,304),(0,6),(7,303),(0,63),(0,6);:_ZN6MAUtil13FocusListenerC2ERKS0_;2A.;__comp_ctor::(0,65):_ZN6MAUtil13FocusListenerC1ERKS0_;2A.;__base_ctor::(0,66)=#(7,304),(0,6),(7,303),(0,6);:_ZN6MAUtil13FocusListenerC2Ev;2A.;__comp_ctor::(0,66):_ZN6MAUtil13FocusListenerC1Ev;2A.;;~%(7,304);",128,0,142,0
-	.stabs	"TimerListener:Tt(7,4)=s4_vptr$TimerListener:(0,42),0,32;runTimerEvent::(0,67)=#(7,4),(0,6),(7,3),(0,6);:_ZN6MAUtil13TimerListener13runTimerEventEv;2A*0;(7,4);;operator=::(0,68)=#(7,4),(0,69)=&(7,4),(7,3),(0,70)=&(0,71)=k(7,4),(0,6);:_ZN6MAUtil13TimerListeneraSERKS0_;2A.;__base_ctor::(0,72)=#(7,4),(0,6),(7,3),(0,70),(0,6);:_ZN6MAUtil13TimerListenerC2ERKS0_;2A.;__comp_ctor::(0,72):_ZN6MAUtil13TimerListenerC1ERKS0_;2A.;__base_ctor::(0,73)=#(7,4),(0,6),(7,3),(0,6);:_ZN6MAUtil13TimerListenerC2Ev;2A.;__comp_ctor::(0,73):_ZN6MAUtil13TimerListenerC1Ev;2A.;;~%(7,4);",128,0,133,0
-	.stabs	"CloseListener:Tt(7,107)=s4_vptr$CloseListener:(0,42),0,32;closeEvent::(0,74)=#(7,107),(0,6),(7,106),(0,6);:_ZN6MAUtil13CloseListener10closeEventEv;2A*0;(7,107);;operator=::(0,75)=#(7,107),(0,76)=&(7,107),(7,106),(0,77)=&(0,78)=k(7,107),(0,6);:_ZN6MAUtil13CloseListeneraSERKS0_;2A.;__base_ctor::(0,79)=#(7,107),(0,6),(7,106),(0,77),(0,6);:_ZN6MAUtil13CloseListenerC2ERKS0_;2A.;__comp_ctor::(0,79):_ZN6MAUtil13CloseListenerC1ERKS0_;2A.;__base_ctor::(0,80)=#(7,107),(0,6),(7,106),(0,6);:_ZN6MAUtil13CloseListenerC2Ev;2A.;__comp_ctor::(0,80):_ZN6MAUtil13CloseListenerC1Ev;2A.;;~%(7,107);",128,0,112,0
-	.stabs	"RefCounted:Tt(0,81)=s8_vptr$RefCounted:(0,42),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,82)=#(0,81),(0,6),(0,83)=*(0,81),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,82):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,84)=#(0,81),(0,6),(0,83),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,84):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,85)=#(0,81),(0,3),(0,83),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,84):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,84):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,81);;__deleting_dtor::(0,84):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,81);;operator=::(0,86)=#(0,81),(0,87)=&(0,81),(0,83),(0,88)=&(0,89)=k(0,81),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,90)=#(0,81),(0,6),(0,83),(0,88),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,90):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,81);",128,0,28,0
+	.stabs	"AlertStackScreen:Tt(0,42)=s112!2,020,(0,43)=xsStackScreen:;02768,(69,4);LANGUAGE:/0(0,3),800,32;home:/0(69,32),832,32;mAlertTab:/0(0,44)=*(0,45)=xsAlertTab:,864,32;__base_ctor::(0,46)=#(0,42),(0,6),(0,47)=*(0,42),(0,3),(4,1),(89,4),(0,6);:_ZN16AlertStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,46):_ZN16AlertStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;stackScreenScreenPopped::(0,48)=#(0,42),(0,6),(0,47),(0,49)=*(0,43),(69,32),(69,32),(0,6);:_ZN16AlertStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,42);;handleKeyPress::(0,50)=#(0,42),(0,6),(0,47),(0,3),(0,6);:_ZN16AlertStackScreen14handleKeyPressEi;2A.;orientationChange::(0,50):_ZN16AlertStackScreen17orientationChangeEi;2A.;handleWidgetEvent::(0,51)=#(0,42),(0,6),(0,47),(0,52)=*(16,18),(0,6);:_ZN16AlertStackScreen17handleWidgetEventEP17MAWidgetEventData;2A*39;(0,42);;operator=::(0,53)=#(0,42),(0,54)=&(0,42),(0,47),(0,55)=&(0,56)=k(0,42),(0,6);:_ZN16AlertStackScreenaSERKS_;2A.;__base_ctor::(0,57)=#(0,42),(0,6),(0,47),(0,55),(0,6);:_ZN16AlertStackScreenC2ERKS_;2A.;__comp_ctor::(0,57):_ZN16AlertStackScreenC1ERKS_;2A.;__base_dtor::(0,58)=#(0,42),(0,6),(0,47),(0,6);:_ZN16AlertStackScreenD2Ev;2A.;__comp_dtor::(0,58):_ZN16AlertStackScreenD1Ev;2A*0;(0,42);;__deleting_dtor::(0,58):_ZN16AlertStackScreenD0Ev;2A*1;(0,42);;;~%(12,78);",128,0,278,0
+	.stabs	"OptionStackScreen:Tt(0,59)=s108!2,020,(0,43);02768,(69,4);LANGUAGE:/0(0,3),800,32;mOptionTab:/0(0,60)=*(0,61)=xsOptionTab:,832,32;__base_ctor::(0,62)=#(0,59),(0,6),(0,63)=*(0,59),(0,3),(4,1),(89,4),(0,6);:_ZN17OptionStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;__comp_ctor::(0,62):_ZN17OptionStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolution;2A.;stackScreenScreenPopped::(0,64)=#(0,59),(0,6),(0,63),(0,49),(69,32),(69,32),(0,6);:_ZN17OptionStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,59);;orientationChange::(0,65)=#(0,59),(0,6),(0,63),(0,3),(0,6);:_ZN17OptionStackScreen17orientationChangeEi;2A.;operator=::(0,66)=#(0,59),(0,67)=&(0,59),(0,63),(0,68)=&(0,69)=k(0,59),(0,6);:_ZN17OptionStackScreenaSERKS_;2A.;__base_ctor::(0,70)=#(0,59),(0,6),(0,63),(0,68),(0,6);:_ZN17OptionStackScreenC2ERKS_;2A.;__comp_ctor::(0,70):_ZN17OptionStackScreenC1ERKS_;2A.;__base_dtor::(0,71)=#(0,59),(0,6),(0,63),(0,6);:_ZN17OptionStackScreenD2Ev;2A.;__comp_dtor::(0,71):_ZN17OptionStackScreenD1Ev;2A*0;(0,59);;__deleting_dtor::(0,71):_ZN17OptionStackScreenD0Ev;2A*1;(0,59);;;~%(12,78);",128,0,84,0
+	.stabs	"TrackingStackScreen:Tt(0,72)=s108!2,020,(0,43);02768,(69,4);LANGUAGE:/0(0,3),800,32;mTrackingTab:/0(0,73)=*(0,74)=xsTrackingTab:,832,32;__base_ctor::(0,75)=#(0,72),(0,6),(0,76)=*(0,72),(0,3),(4,1),(89,4),(0,3),(0,6);:_ZN19TrackingStackScreenC2EiN6MAUtil11BasicStringIcEE17eScreenResolutioni;2A.;__comp_ctor::(0,75):_ZN19TrackingStackScreenC1EiN6MAUtil11BasicStringIcEE17eScreenResolutioni;2A.;runTimerEvent::(0,77)=#(0,72),(0,6),(0,76),(0,6);:_ZN19TrackingStackScreen13runTimerEventEv;2A.;stackScreenScreenPopped::(0,78)=#(0,72),(0,6),(0,76),(0,49),(69,32),(69,32),(0,6);:_ZN19TrackingStackScreen23stackScreenScreenPoppedEPN8NativeUI11StackScreenEPNS0_6ScreenES4_;2A*57;(0,72);;orientationChange::(0,79)=#(0,72),(0,6),(0,76),(0,3),(0,6);:_ZN19TrackingStackScreen17orientationChangeEi;2A.;operator=::(0,80)=#(0,72),(0,81)=&(0,72),(0,76),(0,82)=&(0,83)=k(0,72),(0,6);:_ZN19TrackingStackScreenaSERKS_;2A.;__base_ctor::(0,84)=#(0,72),(0,6),(0,76),(0,82),(0,6);:_ZN19TrackingStackScreenC2ERKS_;2A.;__comp_ctor::(0,84):_ZN19TrackingStackScreenC1ERKS_;2A.;__base_dtor::(0,77):_ZN19TrackingStackScreenD2Ev;2A.;__comp_dtor::(0,77):_ZN19TrackingStackScreenD1Ev;2A*0;(0,72);;__deleting_dtor::(0,77):_ZN19TrackingStackScreenD0Ev;2A*1;(0,72);;;~%(12,78);",128,0,120,0
+	.stabs	"WebViewListener:Tt(80,4)=s4_vptr$WebViewListener:(0,85)=*(0,1),0,32;__base_ctor::(0,86)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,86):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,86):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,86):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(80,4);;__deleting_dtor::(0,86):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(80,4);;webViewHookInvoked::(0,87)=#(80,4),(0,6),(80,3),(0,88)=*(0,89)=xsWebView:,(0,3),(2,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(80,4);;webViewContentLoading::(0,90)=#(80,4),(0,6),(80,3),(0,88),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(80,4);;operator=::(0,91)=#(80,4),(0,92)=&(80,4),(80,3),(0,93)=&(0,94)=k(80,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,95)=#(80,4),(0,6),(80,3),(0,93),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,95):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(80,4);",128,0,50,0
+	.stabs	"StackScreenListener:Tt(69,4)=s4_vptr$StackScreenListener:(0,85),0,32;stackScreenScreenPopped::(0,96)=#(69,4),(0,6),(69,3),(0,49),(69,32),(69,32),(0,6);:_ZN8NativeUI19StackScreenListener23stackScreenScreenPoppedEPNS_11StackScreenEPNS_6ScreenES4_;2A*0;(69,4);;operator=::(0,97)=#(69,4),(0,98)=&(69,4),(69,3),(0,99)=&(0,100)=k(69,4),(0,6);:_ZN8NativeUI19StackScreenListeneraSERKS0_;2A.;__base_ctor::(0,101)=#(69,4),(0,6),(69,3),(0,99),(0,6);:_ZN8NativeUI19StackScreenListenerC2ERKS0_;2A.;__comp_ctor::(0,101):_ZN8NativeUI19StackScreenListenerC1ERKS0_;2A.;__base_ctor::(0,102)=#(69,4),(0,6),(69,3),(0,6);:_ZN8NativeUI19StackScreenListenerC2Ev;2A.;__comp_ctor::(0,102):_ZN8NativeUI19StackScreenListenerC1Ev;2A.;;~%(69,4);",128,0,48,0
+	.stabs	"CustomEventListener:Tt(7,350)=s4_vptr$CustomEventListener:(0,85),0,32;customEvent::(0,103)=#(7,350),(0,6),(7,349),(0,32),(0,6);:_ZN6MAUtil19CustomEventListener11customEventERK7MAEvent;2A*0;(7,350);;operator=::(0,104)=#(7,350),(0,105)=&(7,350),(7,349),(0,106)=&(0,107)=k(7,350),(0,6);:_ZN6MAUtil19CustomEventListeneraSERKS0_;2A.;__base_ctor::(0,108)=#(7,350),(0,6),(7,349),(0,106),(0,6);:_ZN6MAUtil19CustomEventListenerC2ERKS0_;2A.;__comp_ctor::(0,108):_ZN6MAUtil19CustomEventListenerC1ERKS0_;2A.;__base_ctor::(0,109)=#(7,350),(0,6),(7,349),(0,6);:_ZN6MAUtil19CustomEventListenerC2Ev;2A.;__comp_ctor::(0,109):_ZN6MAUtil19CustomEventListenerC1Ev;2A.;;~%(7,350);",128,0,152,0
+	.stabs	"FocusListener:Tt(7,304)=s4_vptr$FocusListener:(0,85),0,32;focusLost::(0,110)=#(7,304),(0,6),(7,303),(0,6);:_ZN6MAUtil13FocusListener9focusLostEv;2A*0;(7,304);;focusGained::(0,110):_ZN6MAUtil13FocusListener11focusGainedEv;2A*1;(7,304);;operator=::(0,111)=#(7,304),(0,112)=&(7,304),(7,303),(0,113)=&(0,114)=k(7,304),(0,6);:_ZN6MAUtil13FocusListeneraSERKS0_;2A.;__base_ctor::(0,115)=#(7,304),(0,6),(7,303),(0,113),(0,6);:_ZN6MAUtil13FocusListenerC2ERKS0_;2A.;__comp_ctor::(0,115):_ZN6MAUtil13FocusListenerC1ERKS0_;2A.;__base_ctor::(0,116)=#(7,304),(0,6),(7,303),(0,6);:_ZN6MAUtil13FocusListenerC2Ev;2A.;__comp_ctor::(0,116):_ZN6MAUtil13FocusListenerC1Ev;2A.;;~%(7,304);",128,0,142,0
+	.stabs	"TimerListener:Tt(7,4)=s4_vptr$TimerListener:(0,85),0,32;runTimerEvent::(0,117)=#(7,4),(0,6),(7,3),(0,6);:_ZN6MAUtil13TimerListener13runTimerEventEv;2A*0;(7,4);;operator=::(0,118)=#(7,4),(0,119)=&(7,4),(7,3),(0,120)=&(0,121)=k(7,4),(0,6);:_ZN6MAUtil13TimerListeneraSERKS0_;2A.;__base_ctor::(0,122)=#(7,4),(0,6),(7,3),(0,120),(0,6);:_ZN6MAUtil13TimerListenerC2ERKS0_;2A.;__comp_ctor::(0,122):_ZN6MAUtil13TimerListenerC1ERKS0_;2A.;__base_ctor::(0,123)=#(7,4),(0,6),(7,3),(0,6);:_ZN6MAUtil13TimerListenerC2Ev;2A.;__comp_ctor::(0,123):_ZN6MAUtil13TimerListenerC1Ev;2A.;;~%(7,4);",128,0,133,0
+	.stabs	"CloseListener:Tt(7,107)=s4_vptr$CloseListener:(0,85),0,32;closeEvent::(0,124)=#(7,107),(0,6),(7,106),(0,6);:_ZN6MAUtil13CloseListener10closeEventEv;2A*0;(7,107);;operator=::(0,125)=#(7,107),(0,126)=&(7,107),(7,106),(0,127)=&(0,128)=k(7,107),(0,6);:_ZN6MAUtil13CloseListeneraSERKS0_;2A.;__base_ctor::(0,129)=#(7,107),(0,6),(7,106),(0,127),(0,6);:_ZN6MAUtil13CloseListenerC2ERKS0_;2A.;__comp_ctor::(0,129):_ZN6MAUtil13CloseListenerC1ERKS0_;2A.;__base_ctor::(0,130)=#(7,107),(0,6),(7,106),(0,6);:_ZN6MAUtil13CloseListenerC2Ev;2A.;__comp_ctor::(0,130):_ZN6MAUtil13CloseListenerC1Ev;2A.;;~%(7,107);",128,0,112,0
+	.stabs	"RefCounted:Tt(0,131)=s8_vptr$RefCounted:(0,85),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,132)=#(0,131),(0,6),(0,133)=*(0,131),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,132):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,134)=#(0,131),(0,6),(0,133),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,134):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,135)=#(0,131),(0,3),(0,133),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,134):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,134):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,131);;__deleting_dtor::(0,134):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,131);;operator=::(0,136)=#(0,131),(0,137)=&(0,131),(0,133),(0,138)=&(0,139)=k(0,131),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,140)=#(0,131),(0,6),(0,133),(0,138),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,140):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,131);",128,0,28,0
 	.ctor __GLOBAL__I_MAMain
 	.dtor __GLOBAL__D_MAMain
 	.lcomm	__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE, 4 ; size=4
@@ -568,7 +572,7 @@ __ZTVN6MAUtil13TimerListenerE:
 	.long	___cxa_pure_virtual
 .code
 	.stabs	"_ZN6MAUtil11KeyListener13keyPressEventEi:f(0,6)",36,0,68,__ZN6MAUtil11KeyListener13keyPressEventEi
-	.stabs	"this:P(0,91)=k(7,46)",64,0,68,12
+	.stabs	"this:P(0,141)=k(7,46)",64,0,68,12
 	.stabs	"keyCode:P(0,3)",64,0,68,13
 
 .func __ZN6MAUtil11KeyListener13keyPressEventEi, 2, void
@@ -583,7 +587,7 @@ Ltext1:
 	ret
 Lscope0:
 	.stabs	"_ZN6MAUtil11KeyListener15keyReleaseEventEi:f(0,6)",36,0,69,__ZN6MAUtil11KeyListener15keyReleaseEventEi
-	.stabs	"this:P(0,91)",64,0,69,12
+	.stabs	"this:P(0,141)",64,0,69,12
 	.stabs	"keyCode:P(0,3)",64,0,69,13
 
 .func __ZN6MAUtil11KeyListener15keyReleaseEventEi, 2, void
@@ -596,7 +600,7 @@ Lscope0:
 	ret
 Lscope1:
 	.set	%0=__ZN6MAUtil6Moblet15keyReleaseEventEii
-	.stabs	"this:P(0,92)=k(0,93)=*(0,26)",64,0,58,12
+	.stabs	"this:P(0,142)=k(0,143)=*(0,26)",64,0,58,12
 	.stabs	"keyCode:P(0,3)",64,0,58,13
 	.stabs	"nativeCode:P(0,3)",64,0,58,14
 
@@ -614,7 +618,7 @@ Ltext2:
 	ret
 Lscope2:
 	.stabs	"_ZN6MAUtil6Moblet15keyReleaseEventEii:f(0,6)",36,0,58,__ZN6MAUtil6Moblet15keyReleaseEventEii
-	.stabs	"this:P(0,92)",64,0,58,12
+	.stabs	"this:P(0,142)",64,0,58,12
 	.stabs	"keyCode:P(0,3)",64,0,58,13
 	.stabs	"nativeCode:P(0,3)",64,0,58,14
 
@@ -628,7 +632,7 @@ Lscope2:
 	ret
 Lscope3:
 	.set	%1=__ZN6MAUtil6Moblet20multitouchPressEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,78,12
+	.stabs	"this:P(0,142)",64,0,78,12
 	.stabs	"p:P(2,27)",64,0,78,30
 	.stabs	"touchId:P(0,3)",64,0,78,15
 
@@ -644,7 +648,7 @@ Lscope3:
 	ret
 Lscope4:
 	.stabs	"_ZN6MAUtil6Moblet20multitouchPressEventE9MAPoint2di:f(0,6)",36,0,78,__ZN6MAUtil6Moblet20multitouchPressEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,78,12
+	.stabs	"this:P(0,142)",64,0,78,12
 	.stabs	"p:P(2,27)",64,0,78,13
 	.stabs	"touchId:P(0,3)",64,0,78,15
 
@@ -658,7 +662,7 @@ Lscope4:
 	ret
 Lscope5:
 	.set	%2=__ZN6MAUtil6Moblet19multitouchMoveEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,83,12
+	.stabs	"this:P(0,142)",64,0,83,12
 	.stabs	"p:P(2,27)",64,0,83,30
 	.stabs	"touchId:P(0,3)",64,0,83,15
 
@@ -674,7 +678,7 @@ Lscope5:
 	ret
 Lscope6:
 	.stabs	"_ZN6MAUtil6Moblet19multitouchMoveEventE9MAPoint2di:f(0,6)",36,0,83,__ZN6MAUtil6Moblet19multitouchMoveEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,83,12
+	.stabs	"this:P(0,142)",64,0,83,12
 	.stabs	"p:P(2,27)",64,0,83,13
 	.stabs	"touchId:P(0,3)",64,0,83,15
 
@@ -688,7 +692,7 @@ Lscope6:
 	ret
 Lscope7:
 	.set	%3=__ZN6MAUtil6Moblet22multitouchReleaseEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,88,12
+	.stabs	"this:P(0,142)",64,0,88,12
 	.stabs	"p:P(2,27)",64,0,88,30
 	.stabs	"touchId:P(0,3)",64,0,88,15
 
@@ -704,7 +708,7 @@ Lscope7:
 	ret
 Lscope8:
 	.stabs	"_ZN6MAUtil6Moblet22multitouchReleaseEventE9MAPoint2di:f(0,6)",36,0,88,__ZN6MAUtil6Moblet22multitouchReleaseEventE9MAPoint2di
-	.stabs	"this:P(0,92)",64,0,88,12
+	.stabs	"this:P(0,142)",64,0,88,12
 	.stabs	"p:P(2,27)",64,0,88,13
 	.stabs	"touchId:P(0,3)",64,0,88,15
 
@@ -779,7 +783,7 @@ L11:
 	add  sp,#0x100
 	pop  rt,d0
 	ret
-	.stabs	"platform:(0,94)=ar(2,57);0;255;(0,19)",128,0,72,-268
+	.stabs	"platform:(0,144)=ar(2,57);0;255;(0,19)",128,0,72,-268
 	.stabn	192,0,0,LBB3-__Z11getPlatformv
 	.stabs	"buf:r(2,5)",64,0,6598,4
 	.stabn	192,0,0,LBB4-__Z11getPlatformv
@@ -787,7 +791,7 @@ L11:
 	.stabn	224,0,0,LBE3-__Z11getPlatformv
 Lscope10:
 	.set	%4=__ZN14NativeUIMoblet13runTimerEventEv
-	.stabs	"this:P(0,95)=k(0,30)",64,0,38,12
+	.stabs	"this:P(0,145)=k(0,30)",64,0,38,12
 
 .func __ZThn240_N14NativeUIMoblet13runTimerEventEv, 1, void
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\main.cpp",132,0,0,Ltext6
@@ -807,7 +811,7 @@ LC3:
 	.ascii "timer main\0"
 .code
 	.stabs	"_ZN14NativeUIMoblet13runTimerEventEv:f(0,6)",36,0,38,__ZN14NativeUIMoblet13runTimerEventEv
-	.stabs	"this:P(0,95)",64,0,38,4
+	.stabs	"this:P(0,145)",64,0,38,4
 
 .func __ZN14NativeUIMoblet13runTimerEventEv, 1, void
 	.line 38
@@ -827,7 +831,7 @@ LC3:
 	ret
 Lscope12:
 	.set	%5=__ZN14NativeUIMoblet11customEventERK7MAEvent
-	.stabs	"this:P(0,95)",64,0,48,12
+	.stabs	"this:P(0,145)",64,0,48,12
 	.stabs	"event:P(0,32)",64,0,48,13
 
 .func __ZThn228_N14NativeUIMoblet11customEventERK7MAEvent, 2, void
@@ -842,7 +846,7 @@ Lscope12:
 	ret
 Lscope13:
 	.stabs	"_ZN14NativeUIMoblet11customEventERK7MAEvent:f(0,6)",36,0,48,__ZN14NativeUIMoblet11customEventERK7MAEvent
-	.stabs	"this:P(0,95)",64,0,48,12
+	.stabs	"this:P(0,145)",64,0,48,12
 	.stabs	"event:P(0,32)",64,0,48,13
 
 .func __ZN14NativeUIMoblet11customEventERK7MAEvent, 2, void
@@ -859,7 +863,7 @@ Lscope13:
 	ret
 Lscope14:
 	.set	%6=__ZN14NativeUIMobletD1Ev
-	.stabs	"this:P(0,95)",64,0,66,12
+	.stabs	"this:P(0,145)",64,0,66,12
 
 .func __ZThn220_N14NativeUIMobletD1Ev, 1, void
 	.line 20
@@ -873,7 +877,7 @@ Lscope14:
 	ret
 Lscope15:
 	.set	%7=__ZN14NativeUIMobletD1Ev
-	.stabs	"this:P(0,95)",64,0,66,12
+	.stabs	"this:P(0,145)",64,0,66,12
 
 .func __ZThn216_N14NativeUIMobletD1Ev, 1, void
 	.line 20
@@ -887,7 +891,7 @@ Lscope15:
 	ret
 Lscope16:
 	.stabs	"_ZN14NativeUIMobletD1Ev:f(0,6)",36,0,66,__ZN14NativeUIMobletD1Ev
-	.stabs	"this:P(0,95)",64,0,66,5
+	.stabs	"this:P(0,145)",64,0,66,5
 
 .func __ZN14NativeUIMobletD1Ev, 1, void
 	.line 66
@@ -959,7 +963,7 @@ L33:
 	.dlab LBE11
 Lscope17:
 	.set	%8=__ZN14NativeUIMobletD0Ev
-	.stabs	"this:P(0,95)",64,0,66,12
+	.stabs	"this:P(0,145)",64,0,66,12
 
 .func __ZThn220_N14NativeUIMobletD0Ev, 1, void
 	.line 20
@@ -973,7 +977,7 @@ Lscope17:
 	ret
 Lscope18:
 	.set	%9=__ZN14NativeUIMobletD0Ev
-	.stabs	"this:P(0,95)",64,0,66,12
+	.stabs	"this:P(0,145)",64,0,66,12
 
 .func __ZThn216_N14NativeUIMobletD0Ev, 1, void
 	.line 20
@@ -987,7 +991,7 @@ Lscope18:
 	ret
 Lscope19:
 	.stabs	"_ZN14NativeUIMobletD0Ev:f(0,6)",36,0,66,__ZN14NativeUIMobletD0Ev
-	.stabs	"this:P(0,95)",64,0,66,5
+	.stabs	"this:P(0,145)",64,0,66,5
 
 .func __ZN14NativeUIMobletD0Ev, 1, void
 	.line 66
@@ -1061,7 +1065,7 @@ L46:
 	.dlab LBE15
 Lscope20:
 	.set	%10=__ZN14NativeUIMoblet13keyPressEventEii
-	.stabs	"this:P(0,95)",64,0,74,12
+	.stabs	"this:P(0,145)",64,0,74,12
 	.stabs	"keyCode:P(0,3)",64,0,74,13
 	.stabs	"nativeCode:P(0,3)",64,0,74,14
 
@@ -1077,7 +1081,7 @@ Lscope20:
 	ret
 Lscope21:
 	.stabs	"_ZN14NativeUIMoblet13keyPressEventEii:f(0,6)",36,0,74,__ZN14NativeUIMoblet13keyPressEventEii
-	.stabs	"this:P(0,95)",64,0,74,12
+	.stabs	"this:P(0,145)",64,0,74,12
 	.stabs	"keyCode:P(0,3)",64,0,74,13
 	.stabs	"nativeCode:P(0,3)",64,0,74,14
 
@@ -1097,7 +1101,7 @@ Lscope21:
 	ret
 Lscope22:
 	.set	%11=__ZN14NativeUIMoblet17pointerPressEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,87,12
+	.stabs	"this:P(0,145)",64,0,87,12
 	.stabs	"point:p(2,27)",160,0,87,-16
 
 .func __ZThn220_N14NativeUIMoblet17pointerPressEventE9MAPoint2d, 3, void
@@ -1116,7 +1120,7 @@ Lscope22:
 	ret
 Lscope23:
 	.stabs	"_ZN14NativeUIMoblet17pointerPressEventE9MAPoint2d:f(0,6)",36,0,87,__ZN14NativeUIMoblet17pointerPressEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,87,4
+	.stabs	"this:P(0,145)",64,0,87,4
 	.stabs	"point:p(2,27)",160,0,87,-20
 
 .func __ZN14NativeUIMoblet17pointerPressEventE9MAPoint2d, 3, void
@@ -1150,7 +1154,7 @@ L50:
 	ret
 Lscope24:
 	.set	%12=__ZN14NativeUIMoblet16pointerMoveEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,96,12
+	.stabs	"this:P(0,145)",64,0,96,12
 	.stabs	"point:p(2,27)",160,0,96,-16
 
 .func __ZThn220_N14NativeUIMoblet16pointerMoveEventE9MAPoint2d, 3, void
@@ -1169,7 +1173,7 @@ Lscope24:
 	ret
 Lscope25:
 	.stabs	"_ZN14NativeUIMoblet16pointerMoveEventE9MAPoint2d:f(0,6)",36,0,96,__ZN14NativeUIMoblet16pointerMoveEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,96,4
+	.stabs	"this:P(0,145)",64,0,96,4
 	.stabs	"point:p(2,27)",160,0,96,-20
 
 .func __ZN14NativeUIMoblet16pointerMoveEventE9MAPoint2d, 3, void
@@ -1203,7 +1207,7 @@ L53:
 	ret
 Lscope26:
 	.set	%13=__ZN14NativeUIMoblet19pointerReleaseEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,105,12
+	.stabs	"this:P(0,145)",64,0,105,12
 	.stabs	"point:p(2,27)",160,0,105,-16
 
 .func __ZThn220_N14NativeUIMoblet19pointerReleaseEventE9MAPoint2d, 3, void
@@ -1222,7 +1226,7 @@ Lscope26:
 	ret
 Lscope27:
 	.stabs	"_ZN14NativeUIMoblet19pointerReleaseEventE9MAPoint2d:f(0,6)",36,0,105,__ZN14NativeUIMoblet19pointerReleaseEventE9MAPoint2d
-	.stabs	"this:P(0,95)",64,0,105,12
+	.stabs	"this:P(0,145)",64,0,105,12
 	.stabs	"point:p(2,27)",160,0,105,-20
 
 .func __ZN14NativeUIMoblet19pointerReleaseEventE9MAPoint2d, 3, void
@@ -1245,7 +1249,7 @@ Lscope27:
 	ret
 Lscope28:
 	.set	%14=__ZN14NativeUIMoblet9focusLostEv
-	.stabs	"this:P(0,95)",64,0,109,12
+	.stabs	"this:P(0,145)",64,0,109,12
 
 .func __ZThn236_N14NativeUIMoblet9focusLostEv, 1, void
 	.line 20
@@ -1263,7 +1267,7 @@ LC4:
 	.ascii "focus lost\0"
 .code
 	.stabs	"_ZN14NativeUIMoblet9focusLostEv:f(0,6)",36,0,109,__ZN14NativeUIMoblet9focusLostEv
-	.stabs	"this:P(0,95)",64,0,109,12
+	.stabs	"this:P(0,145)",64,0,109,12
 
 .func __ZN14NativeUIMoblet9focusLostEv, 1, void
 	.line 109
@@ -1279,7 +1283,7 @@ LC4:
 	ret
 Lscope30:
 	.set	%15=__ZN14NativeUIMoblet11focusGainedEv
-	.stabs	"this:P(0,95)",64,0,113,12
+	.stabs	"this:P(0,145)",64,0,113,12
 
 .func __ZThn236_N14NativeUIMoblet11focusGainedEv, 1, void
 	.line 20
@@ -1297,7 +1301,7 @@ LC5:
 	.ascii "focus gained\0"
 .code
 	.stabs	"_ZN14NativeUIMoblet11focusGainedEv:f(0,6)",36,0,113,__ZN14NativeUIMoblet11focusGainedEv
-	.stabs	"this:P(0,95)",64,0,113,12
+	.stabs	"this:P(0,145)",64,0,113,12
 
 .func __ZN14NativeUIMoblet11focusGainedEv, 1, void
 	.line 113
@@ -1353,43 +1357,33 @@ LC10:
 	.dlab LBB24
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext11
 Ltext11:
-	.line 8036
-	ld   i0,#0x1e4
-	ld   i1,#0x0
-	ld   i2,i1
-	ld   i3,i1
-	call &_maIOCtl ; call non-native
-	.dlab LBE24
-	.dlab LBE23
-	.dlab LBB25
-	.dlab LBB26
 	.line 7010
 	ld   i0,#0x9c
 	ld   i1,#0x0
 	ld   i2,i1
 	ld   i3,i1
 	call &_maIOCtl ; call non-native
-	.dlab LBE26
-	.dlab LBE25
+	.dlab LBE24
+	.dlab LBE23
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\main.cpp",132,0,0,Ltext12
 Ltext12:
 	.line 131
 	ld   i0,#0xf8
 	call &__Znwm ; call non-native
 	ld   d3,r14
-	.dlab LBB27
-	.dlab LBB28
+	.dlab LBB25
+	.dlab LBB26
 	.line 25
 	ld   i0,r14
 	call &__ZN6MAUtil6MobletC2Ev ; call non-native
-	.dlab LBB29
+	.dlab LBB27
 	ld   d2,d3
 	add  d2,#0xec
-	.dlab LBE29
-	.dlab LBB30
+	.dlab LBE27
+	.dlab LBB28
 	ld   d1,d3
 	add  d1,#0xf0
-	.dlab LBE30
+	.dlab LBE28
 	ld   r0,#__ZTV14NativeUIMoblet+8
 	ld   [d3],r0
 	ld   r14,#__ZTV14NativeUIMoblet+84
@@ -1404,10 +1398,10 @@ Ltext12:
 	ld   [d2],r14
 	ld   r0,#__ZTV14NativeUIMoblet+200
 	ld   [d1],r0
+	.dlab LBB29
+	.dlab LBB30
 	.dlab LBB31
 	.dlab LBB32
-	.dlab LBB33
-	.dlab LBB34
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext13
 Ltext13:
 	.line 89
@@ -1418,20 +1412,20 @@ Ltext13:
 	ld   i1,#0x0
 	ld   i2,#0x3f
 	call &_memset ; call non-native
-	.dlab LBB35
+	.dlab LBB33
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext14
 Ltext14:
 	.line 6598
 	ld   d4,fr
 	add  d4,#0xffffff98
-	.dlab LBB36
+	.dlab LBB34
 	ld   i0,#0x5a
 	ld   i1,#LC7
 	ld   i2,d4
 	ld   i3,#0x40
 	call &_maIOCtl ; call non-native
-	.dlab LBE36
-	.dlab LBE35
+	.dlab LBE34
+	.dlab LBE33
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext15
 Ltext15:
 	.line 92
@@ -1459,15 +1453,15 @@ Ltext15:
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	and  d0,#0xff  ; zero extend
 	ld   r0,#0x0
-	jc   ne,d0,r0,#L74
-	.dlab LBB37
+	jc   ne,d0,r0,#L73
+	.dlab LBB35
 	.line 100
 	ld   i0,d5
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE37
-	.dlab LBE34
-	.dlab LBE33
+	.dlab LBE35
 	.dlab LBE32
+	.dlab LBE31
+	.dlab LBE30
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\main.cpp",132,0,0,Ltext16
 Ltext16:
 	.line 29
@@ -1480,7 +1474,7 @@ Ltext16:
 	.line 30
 	call &__Z11getPlatformv ; call non-native
 	ld   r0,#0x1
-	jc   eq,r14,r0,#L69
+	jc   eq,r14,r0,#L68
 	.line 31
 	ld   i0,d3
 	ld   i1,d1
@@ -1491,10 +1485,10 @@ Ltext16:
 	ld   i0,d3
 	ld   i1,d2
 	call &__ZN6MAUtil11Environment16addFocusListenerEPNS_13FocusListenerE ; call non-native
-L69:
+L68:
+	.dlab LBB36
+	.dlab LBB37
 	.dlab LBB38
-	.dlab LBB39
-	.dlab LBB40
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext17
 Ltext17:
 	.line 107
@@ -1507,8 +1501,8 @@ Ltext17:
 	ld   i1,d7
 	ld   i2,#0x3f
 	call &_memset ; call non-native
-	.dlab LBB41
-	.dlab LBB42
+	.dlab LBB39
+	.dlab LBB40
 	.stabs	"c:/MoSync/include/maapi.h",132,0,0,Ltext18
 Ltext18:
 	.line 6598
@@ -1519,8 +1513,8 @@ Ltext18:
 	call &_maIOCtl ; call non-native
 	ld   d1,r14
 	ld   d2,r15
-	.dlab LBE42
-	.dlab LBE41
+	.dlab LBE40
+	.dlab LBE39
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext19
 Ltext19:
 	.line 110
@@ -1543,25 +1537,25 @@ Ltext19:
 	ld   i0,d5
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	and  d0,#0xff  ; zero extend
-	jc   ne,d0,d7,#L75
-	.dlab LBB43
+	jc   ne,d0,d7,#L74
+	.dlab LBB41
 	.line 117
 	ld   i0,d6
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE43
-	.dlab LBE40
-	.dlab LBE39
+	.dlab LBE41
 	.dlab LBE38
+	.dlab LBE37
+	.dlab LBE36
 	.line 106
-	ld   i0,#0x1f8
+	ld   i0,#0x200
 	call &__Znwm ; call non-native
 	ld   i0,r14
 	ld   i1,d7
 	ld   i2,[d3,244]
 	call &__ZN14AuthenticationC1EiP10ScreenMain ; call non-native
-	.dlab LBE31
-	.dlab LBE28
-	.dlab LBE27
+	.dlab LBE29
+	.dlab LBE26
+	.dlab LBE25
 	ld   i0,d3
 	call &__ZN6MAUtil6Moblet3runEPS0_ ; call non-native
 	.dlab LBE22
@@ -1571,14 +1565,14 @@ Ltext20:
 	add  sp,#0x50
 	pop  rt,d7
 	ret
-L75:
+L74:
+	.dlab LBB42
+	.dlab LBB43
 	.dlab LBB44
 	.dlab LBB45
 	.dlab LBB46
 	.dlab LBB47
 	.dlab LBB48
-	.dlab LBB49
-	.dlab LBB50
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext21
 Ltext21:
 	.line 114
@@ -1588,81 +1582,81 @@ Ltext21:
 	call &_lprintfln ; call non-native
 	.line 115
 	ld   d7,#0x1
-	.dlab LBB51
+	.dlab LBB49
 	.line 117
 	ld   i0,d6
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
-	.dlab LBE51
-	.dlab LBE50
 	.dlab LBE49
 	.dlab LBE48
+	.dlab LBE47
+	.dlab LBE46
 	.line 106
-	ld   i0,#0x1f8
+	ld   i0,#0x200
 	call &__Znwm ; call non-native
 	ld   i0,r14
 	ld   i1,d7
 	ld   i2,[d3,244]
 	call &__ZN14AuthenticationC1EiP10ScreenMain ; call non-native
-	.dlab LBE47
-	.dlab LBE46
 	.dlab LBE45
+	.dlab LBE44
+	.dlab LBE43
 	ld   i0,d3
 	call &__ZN6MAUtil6Moblet3runEPS0_ ; call non-native
-	.dlab LBE44
+	.dlab LBE42
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\main.cpp",132,0,0,Ltext22
 Ltext22:
 	.line 132
 	add  sp,#0x50
 	pop  rt,d7
 	ret
-L74:
+L73:
+	.dlab LBB50
+	.dlab LBB51
 	.dlab LBB52
 	.dlab LBB53
 	.dlab LBB54
 	.dlab LBB55
 	.dlab LBB56
-	.dlab LBB57
-	.dlab LBB58
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\/Util.h",132,0,0,Ltext23
 Ltext23:
 	.line 97
 	ld   i0,#0x1
 	ld   i1,#LC10
 	call &_maPanic ; call non-native
-	.dlab LBE58
-	.dlab LBE57
 	.dlab LBE56
 	.dlab LBE55
 	.dlab LBE54
 	.dlab LBE53
 	.dlab LBE52
-	.stabs	"this:r(0,96)=k(7,303)",64,0,25,6
-	.stabn	192,0,0,LBB29-_MAMain
-	.stabn	224,0,0,LBE29-_MAMain
-	.stabs	"this:r(0,97)=k(7,3)",64,0,25,5
-	.stabn	192,0,0,LBB30-_MAMain
-	.stabn	224,0,0,LBE30-_MAMain
-	.stabs	"buf:(0,98)=ar(2,57);0;63;(0,19)",128,0,89,-104
+	.dlab LBE51
+	.dlab LBE50
+	.stabs	"this:r(0,146)=k(7,303)",64,0,25,6
+	.stabn	192,0,0,LBB27-_MAMain
+	.stabn	224,0,0,LBE27-_MAMain
+	.stabs	"this:r(0,147)=k(7,3)",64,0,25,5
+	.stabn	192,0,0,LBB28-_MAMain
+	.stabn	224,0,0,LBE28-_MAMain
+	.stabs	"buf:(0,148)=ar(2,57);0;63;(0,19)",128,0,89,-104
 	.stabs	"tmp:(4,1)",128,0,93,-108
-	.stabn	192,0,0,LBB34-_MAMain
+	.stabn	192,0,0,LBB32-_MAMain
 	.stabs	"buf:r(2,5)",64,0,6598,8
-	.stabn	192,0,0,LBB35-_MAMain
-	.stabn	224,0,0,LBE35-_MAMain
-	.stabn	224,0,0,LBE34-_MAMain
+	.stabn	192,0,0,LBB33-_MAMain
+	.stabn	224,0,0,LBE33-_MAMain
+	.stabn	224,0,0,LBE32-_MAMain
 	.stabs	"language:r(0,3)",64,0,107,11
-	.stabs	"buf:(0,98)",128,0,108,-104
+	.stabs	"buf:(0,148)",128,0,108,-104
 	.stabs	"tmp:(4,1)",128,0,111,-112
-	.stabn	192,0,0,LBB40-_MAMain
-	.stabn	224,0,0,LBE40-_MAMain
+	.stabn	192,0,0,LBB38-_MAMain
+	.stabn	224,0,0,LBE38-_MAMain
 	.stabs	"language:r(0,3)",64,0,107,11
-	.stabs	"buf:(0,98)",128,0,108,-104
+	.stabs	"buf:(0,148)",128,0,108,-104
 	.stabs	"tmp:(4,1)",128,0,111,-112
-	.stabn	192,0,0,LBB50-_MAMain
-	.stabn	224,0,0,LBE50-_MAMain
-	.stabs	"buf:(0,98)",128,0,89,-104
+	.stabn	192,0,0,LBB48-_MAMain
+	.stabn	224,0,0,LBE48-_MAMain
+	.stabs	"buf:(0,148)",128,0,89,-104
 	.stabs	"tmp:(4,1)",128,0,93,-108
-	.stabn	192,0,0,LBB58-_MAMain
-	.stabn	224,0,0,LBE58-_MAMain
+	.stabn	192,0,0,LBB56-_MAMain
+	.stabn	224,0,0,LBE56-_MAMain
 Lscope33:
 .data
 LC15:
@@ -1693,24 +1687,24 @@ Ltext24:
 Ltext25:
 	.line 99
 	ld   r14,#0xffff
-	jc   eq,i1,r14,#L111
-L76:
+	jc   eq,i1,r14,#L110
+L75:
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\main.cpp",132,0,0,Ltext26
 Ltext26:
 	.line 132
 	pop  rt,fr
 	ret
-L111:
+L110:
 	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext27
 Ltext27:
 	.line 99
 	ld   r14,#0x1
-	jc   eq,i0,r14,#L112
+	jc   eq,i0,r14,#L111
 	.stabs	"c:/MoSync/include/notification/NotificationManager.h",132,0,0,Ltext28
 Ltext28:
 	.line 121
 	ld   r14,#0x0
-	jc   ne,i0,r14,#L76
+	jc   ne,i0,r14,#L75
 	ld   i0,#__ZN12Notification45NOTIFICATIONS_REGISTRATION_ERR_INVALID_SENDERE
 	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
 	.line 114
@@ -1735,7 +1729,7 @@ Ltext30:
 	.line 132
 	pop  rt,fr
 	ret
-L112:
+L111:
 	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext31
 Ltext31:
 	.line 99

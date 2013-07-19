@@ -5,6 +5,14 @@
  *      Author: gdr
  */
 
+
+//WARNING //GDR IOS PB : mettre le contenu d'un label sur plusieurs lignes pour voir tout le contenu.
+//listView->listViewItem->label (label sur 1 seul ligne même avec la fonction label->setMaxNumberOfLines(10))
+//listView->VerticaleLayout->label (label non visible)
+//listView->listViewItem->VerticaleLayout->label (label sur 1 seul ligne)
+//ListViewItem->SetText(label->getText()) pas tester pour IPhone car pas de réseau wifi promopoleconf cependant ne marchera pas pour tracking alert ou il faudra supprimer le label donnant l'heure de récepption.
+//les enchainements de widget énoncés ci dessus marchent tous sur android
+
 #include "TrackingTab.h"
 
 /**
@@ -15,6 +23,9 @@ TrackingTab::TrackingTab(int language, String loginToken,
 		Screen(), LANGUAGE(language), _LOGINTOKEN(loginToken), _IDMOBILE(
 				idMobile) {
 
+	if(getPlatform() == IOS){
+						Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));
+					}
 	// Set icon of the stack screen.
 	setIcon(ICON_TRACKING + screenResolution);
 
@@ -116,14 +127,15 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 
 			Screen::setMainWidget(mActivityPage);
 			//////clean la memoire
-			int index = mapLVITA.size();
+			int index = mapHLTA.size();
 			for (int idx1 = 0; idx1 < index; idx1++) {
-				mapHLTA[idx1]->removeChild(mapLTAHeure[idx1]);
-				mapHLTA[idx1]->removeChild(mapLTADesc[idx1]);
-				delete mapLTAHeure[idx1];
-				delete mapLTADesc[idx1];
-				mapLVITA[idx1]->removeChild(mapHLTA[idx1]);
-				delete mapHLTA[idx1];
+//				mapHLTA[idx1]->removeChild(mapLTAHeure[idx1]);//
+//				mapHLTA[idx1]->removeChild(mapLTADesc[idx1]);//
+//				delete mapLTAHeure[idx1];//
+//				delete mapLTADesc[idx1];//
+//				mapLVITA[idx1]->removeChild(mapHLTA[idx1]);//
+//
+//				delete mapHLTA[idx1];//
 				lValert->removeChild(mapLVITA[idx1]);
 				delete mapLVITA[idx1];
 			}
@@ -144,8 +156,9 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 				Convert::HTMLdecode(convert);
 
 				mapLTADesc[idx] = new Label(convert);
-				mapLTADesc[idx]->wrapContentHorizontally();
-				mapLTADesc[idx]->wrapContentVertically();
+				mapLTADesc[idx]->setMaxNumberOfLines(10);
+				mapLTADesc[idx]->wrapContentHorizontally();//
+				mapLTADesc[idx]->wrapContentVertically();//
 
 				if (!bCreateUI) {
 					String dateTmp1 =
@@ -274,19 +287,23 @@ void TrackingTab::parseJSONTrackingAlert(MAUtil::YAJLDom::Value* root) {
 				}
 
 				mapHLTA[idx] = new HorizontalLayout();
-				mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));
+
+				mapLTAHeure[idx] = new Label((mapTrackingAlertDate[idx]));//
 
 				mapLTAHeure[idx]->setBackgroundColor(0x666666);
 				MAExtent size = maGetScrSize();
 				int mScreenWidth = EXTENT_X(size);
 				mapLTAHeure[idx]->setWidth(mScreenWidth / 4);
 				mapHLTA[idx]->addChild(mapLTAHeure[idx]);
-
 				mapHLTA[idx]->addChild(mapLTADesc[idx]);
-				mapLVITA[idx] = new ListViewItem();
-				mapLVITA[idx]->addChild(mapHLTA[idx]);
+				mapLVITA[idx] = new ListViewItem();//
 
-				lValert->addChild(mapLVITA[idx]);
+
+				mapLVITA[idx]->addChild(mapHLTA[idx]);//
+//				mapLVITA[idx]->setText(mapLTADesc[idx]->getText());
+//				mapLVITA[idx]->setSubtitle(mapTrackingAlertDate[idx]);
+
+				lValert->addChild(mapLVITA[idx]);//
 			}
 
 			lastSendAlert = lastSendAlertTmp;
@@ -315,6 +332,8 @@ void TrackingTab::createUI() {
 			Convert::tr(traking_list_Label_title_alert + LANGUAGE));
 	lListNoAlert = new Label(
 			Convert::tr(traking_list_Label_title_no_alert + LANGUAGE));
+	lListNoAlert->setMaxNumberOfLines(10);//test
+	lListNoAlert->wrapContentVertically();
 	mainLayout->addChild(lListNoAlert);
 
 	Screen::setMainWidget(mainLayout);
@@ -326,7 +345,6 @@ void TrackingTab::createUI() {
 
 
 void TrackingTab::orientationChange(int screenOrientation) {
-
 	if (screenOrientation == MA_SCREEN_ORIENTATION_LANDSCAPE_RIGHT) {
 //		lprintfln("Orientation paysage");
 		Screen::setTitle(Convert::tr(TRACKING_ALERT_TAB_EN + LANGUAGE));

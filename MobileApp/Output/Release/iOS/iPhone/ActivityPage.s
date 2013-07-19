@@ -238,7 +238,6 @@
 	.stabs	"c:/MoSync/include/NativeUI/Layout.h",130,0,0,0
 	.stabs	"c:/MoSync/include/Ads/Banner.h",130,0,0,0
 	.stabs	"BannerSize:t(35,1)=eBANNER_SIZE_DEFAULT:0,BANNER_SIZE_RECT:1,BANNER_SIZE_IAB:2,BANNER_SIZE_LEADERBOARD:3,BANNER_SIZE_WP7_XLARGE:4,BANNER_SIZE_WP7_XXLARGE:5,;",128,0,62,0
-	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
 	.stabs	"Vector<Ads::BannerListener*>:Tt(35,2)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(35,3)=*(35,4)=*(35,5)=xsBannerListener:,64,32;__base_ctor::(35,6)=#(35,2),(0,6),(35,7)=*(35,2),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2Ei;2A.;__comp_ctor::(35,6):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1Ei;2A.;__base_ctor::(35,8)=#(35,2),(0,6),(35,7),(35,9)=*(35,10)=k(35,4),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2EPKS3_i;2A.;__comp_ctor::(35,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1EPKS3_i;2A.;__base_ctor::(35,11)=#(35,2),(0,6),(35,7),(35,12)=&(35,13)=k(35,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC2ERKS4_;2A.;__comp_ctor::(35,11):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEC1ERKS4_;2A.;__base_dtor::(35,14)=#(35,2),(0,6),(35,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED2Ev;2A.;__comp_dtor::(35,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEED1Ev;2A.;operator=::(35,15)=#(35,2),(35,16)=&(35,2),(35,7),(35,12),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEaSERKS4_;2A.;add::(35,17)=#(35,2),(0,6),(35,7),(35,18)=&(35,10),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addERKS3_;2A.(35,8):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3addEPKS3_i;2A.;remove::(35,19)=#(35,2),(0,6),(35,7),(35,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEPS3_;2A.(35,20)=#(35,2),(0,6),(35,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEi;2A.(35,21)=#(35,2),(0,6),(35,7),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6removeEii;2A.;insert::(35,22)=#(35,2),(0,6),(35,7),(0,3),(35,4),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6insertEiS3_;2A.;size::(35,23)=#(35,2),(0,3),(35,24)=*(35,13),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE4sizeEv;2B.;resize::(35,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE6resizeEi;2A.;reserve::(35,20):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7reserveEi;2A.;clear::(35,14):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5clearEv;2A.;empty::(35,25)=#(35,2),(0,4),(35,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5emptyEv;2B.;capacity::(35,23):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE8capacityEv;2B.;begin::(35,26)=#(35,2),(35,3),(35,7),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2A.;end::(35,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2A.;begin::(35,27)=#(35,2),(35,9),(35,24),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE5beginEv;2B.;end::(35,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE3endEv;2B.;operator[]::(35,28)=#(35,2),(35,29)=&(35,4),(35,7),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2A.(35,30)=#(35,2),(35,18),(35,24),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEEixEi;2B.;pointer::(35,27):_ZNK6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2B.(35,26):_ZN6MAUtil6VectorIPN3Ads14BannerListenerEE7pointerEv;2A.;;",128,0,95,0
 	.stabn	162,0,0,0
 	.stabs	"Vector<Ads::Banner*>:Tt(34,1)=s12mSize:/1(0,3),0,32;mCapacity:/1(0,3),32,32;mData:/1(34,2)=*(34,3)=*(34,4)=xsBanner:,64,32;__base_ctor::(34,5)=#(34,1),(0,6),(34,6)=*(34,1),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2Ei;2A.;__comp_ctor::(34,5):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1Ei;2A.;__base_ctor::(34,7)=#(34,1),(0,6),(34,6),(34,8)=*(34,9)=k(34,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2EPKS3_i;2A.;__comp_ctor::(34,7):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1EPKS3_i;2A.;__base_ctor::(34,10)=#(34,1),(0,6),(34,6),(34,11)=&(34,12)=k(34,1),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEC2ERKS4_;2A.;__comp_ctor::(34,10):_ZN6MAUtil6VectorIPN3Ads6BannerEEC1ERKS4_;2A.;__base_dtor::(34,13)=#(34,1),(0,6),(34,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEED2Ev;2A.;__comp_dtor::(34,13):_ZN6MAUtil6VectorIPN3Ads6BannerEED1Ev;2A.;operator=::(34,14)=#(34,1),(34,15)=&(34,1),(34,6),(34,11),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEaSERKS4_;2A.;add::(34,16)=#(34,1),(0,6),(34,6),(34,17)=&(34,9),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE3addERKS3_;2A.(34,7):_ZN6MAUtil6VectorIPN3Ads6BannerEE3addEPKS3_i;2A.;remove::(34,18)=#(34,1),(0,6),(34,6),(34,2),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEPS3_;2A.(34,19)=#(34,1),(0,6),(34,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEi;2A.(34,20)=#(34,1),(0,6),(34,6),(0,3),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6removeEii;2A.;insert::(34,21)=#(34,1),(0,6),(34,6),(0,3),(34,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE6insertEiS3_;2A.;size::(34,22)=#(34,1),(0,3),(34,23)=*(34,12),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE4sizeEv;2B.;resize::(34,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE6resizeEi;2A.;reserve::(34,19):_ZN6MAUtil6VectorIPN3Ads6BannerEE7reserveEi;2A.;clear::(34,13):_ZN6MAUtil6VectorIPN3Ads6BannerEE5clearEv;2A.;empty::(34,24)=#(34,1),(0,4),(34,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5emptyEv;2B.;capacity::(34,22):_ZNK6MAUtil6VectorIPN3Ads6BannerEE8capacityEv;2B.;begin::(34,25)=#(34,1),(34,2),(34,6),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2A.;end::(34,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE3endEv;2A.;begin::(34,26)=#(34,1),(34,8),(34,23),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEE5beginEv;2B.;end::(34,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE3endEv;2B.;operator[]::(34,27)=#(34,1),(34,28)=&(34,3),(34,6),(0,3),(0,6);:_ZN6MAUtil6VectorIPN3Ads6BannerEEixEi;2A.(34,29)=#(34,1),(34,17),(34,23),(0,3),(0,6);:_ZNK6MAUtil6VectorIPN3Ads6BannerEEixEi;2B.;pointer::(34,26):_ZNK6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2B.(34,25):_ZN6MAUtil6VectorIPN3Ads6BannerEE7pointerEv;2A.;;",128,0,95,0
@@ -376,243 +375,11 @@
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
 	.stabn	162,0,0,0
-.data
-LC0:
-	.ascii "center\0"
-.code
-	.stabs	"_ZN12ActivityPageC2Ev:F(0,6)",36,0,12,__ZN12ActivityPageC2Ev
-	.stabs	"this:p(0,25)=k(0,26)=*(0,27)=xsActivityPage:",160,0,12,-20
-	.global	__ZN12ActivityPageC2Ev
-
-.func __ZN12ActivityPageC2Ev, 1, void
-	.line 12
-	push rt,d1
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-20],i0
-	.dlab LBB2
-	.line 12
-	ld   i0,[fr,-20]
-	call &__ZN8NativeUI14VerticalLayoutC2Ev
-	ld   r14,[fr,-20]
-	ld   r0,#__ZTV12ActivityPage+8
-	ld   [r14],r0
-	.line 13
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 15
-	ld   d1,[fr,-20]
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI17ActivityIndicatorC1Ev
-	ld   [d1,60],d0
-	.line 16
-	ld   r14,[fr,-20]
-	ld   i0,[fr,-20]
-	ld   i1,[r14,60]
-	call &__ZN8NativeUI6Widget8addChildEPS0_
-	.dlab LBE2
-	.line 17
-	add  sp,#0x8
-	pop  rt,d1
-	ret
-Lscope0:
-	.stabs	"_ZN12ActivityPageC1Ev:F(0,6)",36,0,12,__ZN12ActivityPageC1Ev
-	.stabs	"this:p(0,25)",160,0,12,-20
-	.global	__ZN12ActivityPageC1Ev
-
-.func __ZN12ActivityPageC1Ev, 1, void
-	.line 12
-	push rt,d1
-	sub  sp,#0x8
-	ld   fr,sp
-	add  fr,#0x18
-	ld   [fr,-20],i0
-	.dlab LBB3
-	.line 12
-	ld   i0,[fr,-20]
-	call &__ZN8NativeUI14VerticalLayoutC2Ev
-	ld   r14,[fr,-20]
-	ld   r0,#__ZTV12ActivityPage+8
-	ld   [r14],r0
-	.line 13
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 14
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	ld   i1,#LC0
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,[fr,-20]
-	ld   i1,r14
-	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
-	ld   r14,fr
-	add  r14,#0xffffffe8
-	ld   i0,r14
-	call &__ZN6MAUtil11BasicStringIcED1Ev
-	.line 15
-	ld   d1,[fr,-20]
-	ld   i0,#0x30
-	call &__Znwm
-	ld   d0,r14
-	ld   i0,d0
-	call &__ZN8NativeUI17ActivityIndicatorC1Ev
-	ld   [d1,60],d0
-	.line 16
-	ld   r14,[fr,-20]
-	ld   i0,[fr,-20]
-	ld   i1,[r14,60]
-	call &__ZN8NativeUI6Widget8addChildEPS0_
-	.dlab LBE3
-	.line 17
-	add  sp,#0x8
-	pop  rt,d1
-	ret
-Lscope1:
-	.stabs	"_ZN12ActivityPageD2Ev:F(0,6)",36,0,23,__ZN12ActivityPageD2Ev
-	.stabs	"this:p(0,25)",160,0,23,-12
-	.global	__ZN12ActivityPageD2Ev
-
-.func __ZN12ActivityPageD2Ev, 1, void
-	.line 23
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB4
-	.line 23
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV12ActivityPage+8
-	ld   [r14],r0
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI14VerticalLayoutD2Ev
-	.dlab LBE4
-	.line 25
-	ld   r14,#0x1
-	and  r14,#0x0
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L3
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L3:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope2:
-	.stabs	"_ZN12ActivityPageD1Ev:F(0,6)",36,0,23,__ZN12ActivityPageD1Ev
-	.stabs	"this:p(0,25)",160,0,23,-12
-	.global	__ZN12ActivityPageD1Ev
-
-.func __ZN12ActivityPageD1Ev, 1, void
-	.line 23
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB5
-	.line 23
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV12ActivityPage+8
-	ld   [r14],r0
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI14VerticalLayoutD2Ev
-	.dlab LBE5
-	.line 25
-	ld   r14,#0x1
-	and  r14,#0x2
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L7
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L7:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope3:
-	.stabs	"_ZN12ActivityPageD0Ev:F(0,6)",36,0,23,__ZN12ActivityPageD0Ev
-	.stabs	"this:p(0,25)",160,0,23,-12
-	.global	__ZN12ActivityPageD0Ev
-
-.func __ZN12ActivityPageD0Ev, 1, void
-	.line 23
-	push rt,fr
-	sub  sp,#0x4
-	ld   fr,sp
-	add  fr,#0xc
-	ld   [fr,-12],i0
-	.dlab LBB6
-	.line 23
-	ld   r14,[fr,-12]
-	ld   r0,#__ZTV12ActivityPage+8
-	ld   [r14],r0
-	ld   i0,[fr,-12]
-	call &__ZN8NativeUI14VerticalLayoutD2Ev
-	.dlab LBE6
-	.line 25
-	ld   r14,#0x1
-	and  r14,#0x3
-	ld   r0,r14
-	and  r0,#0xff  ; zero extend
-	ld   r14,#0x0
-	jc   eq,r0,r14,#L11
-	ld   i0,[fr,-12]
-	call &__ZdlPv
-L11:
-	add  sp,#0x4
-	pop  rt,fr
-	ret
-Lscope4:
+	.stabs	"ActivityPage:Tt(0,25)=s64!1,020,(0,26)=xsVerticalLayout:;mActivityIndicator:/0(0,27)=*(0,28)=xsActivityIndicator:,480,32;__base_ctor::(0,29)=#(0,25),(0,6),(0,30)=*(0,25),(0,6);:_ZN12ActivityPageC2Ev;2A.;__comp_ctor::(0,29):_ZN12ActivityPageC1Ev;2A.;__base_dtor::(0,29):_ZN12ActivityPageD2Ev;2A.;__comp_dtor::(0,29):_ZN12ActivityPageD1Ev;2A*0;(0,25);;__deleting_dtor::(0,29):_ZN12ActivityPageD0Ev;2A*1;(0,25);;operator=::(0,31)=#(0,25),(0,32)=&(0,25),(0,30),(0,33)=&(0,34)=k(0,25),(0,6);:_ZN12ActivityPageaSERKS_;2A.;__base_ctor::(0,35)=#(0,25),(0,6),(0,30),(0,33),(0,6);:_ZN12ActivityPageC2ERKS_;2A.;__comp_ctor::(0,35):_ZN12ActivityPageC1ERKS_;2A.;;~%(4,78);",128,0,15,0
+	.stabs	"WebViewListener:Tt(80,4)=s4_vptr$WebViewListener:(0,36)=*(0,1),0,32;__base_ctor::(0,37)=#(80,4),(0,6),(80,3),(0,6);:_ZN8NativeUI15WebViewListenerC2Ev;2A.;__comp_ctor::(0,37):_ZN8NativeUI15WebViewListenerC1Ev;2A.;__base_dtor::(0,37):_ZN8NativeUI15WebViewListenerD2Ev;2A.;__comp_dtor::(0,37):_ZN8NativeUI15WebViewListenerD1Ev;2A*0;(80,4);;__deleting_dtor::(0,37):_ZN8NativeUI15WebViewListenerD0Ev;2A*1;(80,4);;webViewHookInvoked::(0,38)=#(80,4),(0,6),(80,3),(0,39)=*(0,40)=xsWebView:,(0,3),(6,10),(0,6);:_ZN8NativeUI15WebViewListener18webViewHookInvokedEPNS_7WebViewEii;2A*2;(80,4);;webViewContentLoading::(0,41)=#(80,4),(0,6),(80,3),(0,39),(0,3),(0,6);:_ZN8NativeUI15WebViewListener21webViewContentLoadingEPNS_7WebViewEi;2A*3;(80,4);;operator=::(0,42)=#(80,4),(0,43)=&(80,4),(80,3),(0,44)=&(0,45)=k(80,4),(0,6);:_ZN8NativeUI15WebViewListeneraSERKS0_;2A.;__base_ctor::(0,46)=#(80,4),(0,6),(80,3),(0,44),(0,6);:_ZN8NativeUI15WebViewListenerC2ERKS0_;2A.;__comp_ctor::(0,46):_ZN8NativeUI15WebViewListenerC1ERKS0_;2A.;;~%(80,4);",128,0,50,0
+	.stabs	"RefCounted:Tt(0,47)=s8_vptr$RefCounted:(0,36),0,32;mRefCount:/0(0,3),32,32;__base_ctor::(0,48)=#(0,47),(0,6),(0,49)=*(0,47),(0,3),(0,6);:_ZN6MAUtil10RefCountedC2Ei;2A.;__comp_ctor::(0,48):_ZN6MAUtil10RefCountedC1Ei;2A.;addRef::(0,50)=#(0,47),(0,6),(0,49),(0,6);:_ZN6MAUtil10RefCounted6addRefEv;2A.;release::(0,50):_ZN6MAUtil10RefCounted7releaseEv;2A.;getRefCount::(0,51)=#(0,47),(0,3),(0,49),(0,6);:_ZN6MAUtil10RefCounted11getRefCountEv;2A.;__base_dtor::(0,50):_ZN6MAUtil10RefCountedD2Ev;2A.;__comp_dtor::(0,50):_ZN6MAUtil10RefCountedD1Ev;2A*0;(0,47);;__deleting_dtor::(0,50):_ZN6MAUtil10RefCountedD0Ev;2A*1;(0,47);;operator=::(0,52)=#(0,47),(0,53)=&(0,47),(0,49),(0,54)=&(0,55)=k(0,47),(0,6);:_ZN6MAUtil10RefCountedaSERKS0_;2A.;__base_ctor::(0,56)=#(0,47),(0,6),(0,49),(0,54),(0,6);:_ZN6MAUtil10RefCountedC2ERKS0_;2A.;__comp_ctor::(0,56):_ZN6MAUtil10RefCountedC1ERKS0_;2A.;;~%(0,47);",128,0,28,0
+	.ctor __GLOBAL__I__ZN12ActivityPageC2Ev
+	.dtor __GLOBAL__D__ZN12ActivityPageC2Ev
 	.global	__ZTV12ActivityPage
 .data
 	.align 4
@@ -668,59 +435,226 @@ __ZTV12ActivityPage:
 	.long	__ZN8NativeUI6Layout12removeBannerEPN3Ads6BannerE
 	.long	__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE
 	.long	__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE
-	.stabs	"ActivityPage:Tt(0,27)=s64!1,020,(0,28)=xsVerticalLayout:;mActivityIndicator:/0(0,29)=*(0,30)=xsActivityIndicator:,480,32;__base_ctor::(0,31)=#(0,27),(0,6),(0,26),(0,6);:_ZN12ActivityPageC2Ev;2A.;__comp_ctor::(0,31):_ZN12ActivityPageC1Ev;2A.;__base_dtor::(0,31):_ZN12ActivityPageD2Ev;2A.;__comp_dtor::(0,31):_ZN12ActivityPageD1Ev;2A*0;(0,27);;__deleting_dtor::(0,31):_ZN12ActivityPageD0Ev;2A*1;(0,27);;operator=::(0,32)=#(0,27),(0,33)=&(0,27),(0,26),(0,34)=&(0,35)=k(0,27),(0,6);:_ZN12ActivityPageaSERKS_;2A.;__base_ctor::(0,36)=#(0,27),(0,6),(0,26),(0,34),(0,6);:_ZN12ActivityPageC2ERKS_;2A.;__comp_ctor::(0,36):_ZN12ActivityPageC1ERKS_;2A.;;~%(4,78);",128,0,15,0
+	.lcomm	__ZN3Ads13TEST_EMULATORE, 4 ; size=4
+LC0:
+	.ascii "center\0"
+.code
+	.stabs	"_ZN12ActivityPageC2Ev:F(0,6)",36,0,12,__ZN12ActivityPageC2Ev
+	.stabs	"this:P(0,57)=k(0,30)",64,0,12,5
+	.global	__ZN12ActivityPageC2Ev
+
+.func __ZN12ActivityPageC2Ev, 1, void
+	.line 12
+	push rt,d1
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x14
+	ld   d1,i0
+	.dlab LBB2
+	.line 12
+	call &__ZN8NativeUI14VerticalLayoutC2Ev ; call non-native
+	ld   r14,#__ZTV12ActivityPage+8
+	ld   [d1],r14
+	.line 13
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 14
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 15
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev ; call non-native
+	ld   [d1,60],d0
+	.line 16
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Widget8addChildEPS0_ ; call non-native
+	.dlab LBE2
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+Lscope0:
+	.stabs	"_ZN12ActivityPageC1Ev:F(0,6)",36,0,12,__ZN12ActivityPageC1Ev
+	.stabs	"this:P(0,57)",64,0,12,5
+	.global	__ZN12ActivityPageC1Ev
+
+.func __ZN12ActivityPageC1Ev, 1, void
+	.line 12
+	push rt,d1
+	sub  sp,#0x4
+	ld   fr,sp
+	add  fr,#0x14
+	ld   d1,i0
+	.dlab LBB3
+	.line 12
+	call &__ZN8NativeUI14VerticalLayoutC2Ev ; call non-native
+	ld   r14,#__ZTV12ActivityPage+8
+	ld   [d1],r14
+	.line 13
+	ld   d0,fr
+	add  d0,#0xffffffec
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout27setChildHorizontalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 14
+	ld   i0,d0
+	ld   i1,#LC0
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI14VerticalLayout25setChildVerticalAlignmentEN6MAUtil11BasicStringIcEE ; call non-native
+	ld   i0,d0
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.line 15
+	ld   i0,#0x30
+	call &__Znwm ; call non-native
+	ld   d0,r14
+	ld   i0,r14
+	call &__ZN8NativeUI17ActivityIndicatorC1Ev ; call non-native
+	ld   [d1,60],d0
+	.line 16
+	ld   i0,d1
+	ld   i1,d0
+	call &__ZN8NativeUI6Widget8addChildEPS0_ ; call non-native
+	.dlab LBE3
+	add  sp,#0x4
+	pop  rt,d1
+	ret
+Lscope1:
+	.stabs	"_ZN12ActivityPageD2Ev:F(0,6)",36,0,23,__ZN12ActivityPageD2Ev
+	.stabs	"this:P(0,57)",64,0,23,12
+	.global	__ZN12ActivityPageD2Ev
+
+.func __ZN12ActivityPageD2Ev, 1, void
+	.line 23
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.dlab LBB4
+	.line 23
+	ld   r14,#__ZTV12ActivityPage+8
+	ld   [i0],r14
+	call &__ZN8NativeUI14VerticalLayoutD2Ev ; call non-native
+	.dlab LBE4
+	.line 25
+	pop  rt,fr
+	ret
+Lscope2:
+	.stabs	"_ZN12ActivityPageD1Ev:F(0,6)",36,0,23,__ZN12ActivityPageD1Ev
+	.stabs	"this:P(0,57)",64,0,23,12
+	.global	__ZN12ActivityPageD1Ev
+
+.func __ZN12ActivityPageD1Ev, 1, void
+	.line 23
+	push rt,fr
+	ld   fr,sp
+	add  fr,#0x8
+	.dlab LBB5
+	.line 23
+	ld   r14,#__ZTV12ActivityPage+8
+	ld   [i0],r14
+	call &__ZN8NativeUI14VerticalLayoutD2Ev ; call non-native
+	.dlab LBE5
+	.line 25
+	pop  rt,fr
+	ret
+Lscope3:
+	.stabs	"_ZN12ActivityPageD0Ev:F(0,6)",36,0,23,__ZN12ActivityPageD0Ev
+	.stabs	"this:P(0,57)",64,0,23,4
+	.global	__ZN12ActivityPageD0Ev
+
+.func __ZN12ActivityPageD0Ev, 1, void
+	.line 23
+	push rt,d0
+	ld   fr,sp
+	add  fr,#0xc
+	ld   d0,i0
+	.dlab LBB6
+	.line 23
+	ld   r14,#__ZTV12ActivityPage+8
+	ld   [i0],r14
+	call &__ZN8NativeUI14VerticalLayoutD2Ev ; call non-native
+	.dlab LBE6
+	.line 25
+	ld   i0,d0
+	call &__ZdlPv ; call non-native
+	pop  rt,d0
+	ret
+Lscope4:
+.data
 LC1:
 	.ascii "TEST_EMULATOR\0"
 .code
 	.stabs	"_Z41__static_initialization_and_destruction_0ii:f(0,6)",36,0,25,__Z41__static_initialization_and_destruction_0ii
-	.stabs	"__initialize_p:p(0,3)",160,0,25,-12
-	.stabs	"__priority:p(0,3)",160,0,25,-16
+	.stabs	"__initialize_p:P(0,3)",64,0,25,12
+	.stabs	"__priority:P(0,3)",64,0,25,13
 
 .func __Z41__static_initialization_and_destruction_0ii, 2, void
 	.line 25
 	push rt,fr
-	sub  sp,#0x8
 	ld   fr,sp
-	add  fr,#0x10
-	ld   [fr,-12],i0
-	ld   [fr,-16],i1
+	add  fr,#0x8
 	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext1
 Ltext1:
 	.line 99
-	ld   r0,[fr,-16]
 	ld   r14,#0xffff
-	jc   ne,r0,r14,#L16
-	ld   r0,[fr,-12]
-	ld   r14,#0x1
-	jc   ne,r0,r14,#L16
-	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	ld   i1,#LC1
-	call &__ZN6MAUtil11BasicStringIcEC1EPKc
-L16:
-	ld   r0,[fr,-16]
-	ld   r14,#0xffff
-	jc   ne,r0,r14,#L15
-	ld   r0,[fr,-12]
-	ld   r14,#0x0
-	jc   ne,r0,r14,#L15
-	ld   i0,#__ZN3Ads13TEST_EMULATORE
-	call &__ZN6MAUtil11BasicStringIcED1Ev
+	jc   eq,i1,r14,#L20
 L15:
 	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ActivityPage.cpp",132,0,0,Ltext2
 Ltext2:
 	.line 25
-	add  sp,#0x8
+	pop  rt,fr
+	ret
+L20:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext3
+Ltext3:
+	.line 99
+	ld   r14,#0x1
+	jc   eq,i0,r14,#L21
+	ld   r14,#0x0
+	jc   ne,i0,r14,#L15
+	ld   i0,#__ZN3Ads13TEST_EMULATORE
+	call &__ZN6MAUtil11BasicStringIcED1Ev ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ActivityPage.cpp",132,0,0,Ltext4
+Ltext4:
+	.line 25
+	pop  rt,fr
+	ret
+L21:
+	.stabs	"c:/MoSync/include/Ads/Banner.h",132,0,0,Ltext5
+Ltext5:
+	.line 99
+	ld   i0,#__ZN3Ads13TEST_EMULATORE
+	ld   i1,#LC1
+	call &__ZN6MAUtil11BasicStringIcEC1EPKc ; call non-native
+	.stabs	"C:\\Users\\gdr\\Documents\\source\\mobile-app\\MobileApp\\ActivityPage.cpp",132,0,0,Ltext6
+Ltext6:
+	.line 25
 	pop  rt,fr
 	ret
 Lscope5:
-.data
-	.align 4
-__ZN8NativeUI8BUF_SIZEE:
-	.long	256
-	.align 4
-__ZN8NativeUI12MAX_BUF_SIZEE:
-	.long	2048
-.code
 	.stabs	"_GLOBAL__I__ZN12ActivityPageC2Ev:f(0,6)",36,0,26,__GLOBAL__I__ZN12ActivityPageC2Ev
 
 .func __GLOBAL__I__ZN12ActivityPageC2Ev, 0, void
@@ -731,11 +665,10 @@ __ZN8NativeUI12MAX_BUF_SIZEE:
 	.line 26
 	ld   i0,#0x1
 	ld   i1,#0xffff
-	call &__Z41__static_initialization_and_destruction_0ii
+	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
 Lscope6:
-	.ctor __GLOBAL__I__ZN12ActivityPageC2Ev
 	.stabs	"_GLOBAL__D__ZN12ActivityPageC2Ev:f(0,6)",36,0,27,__GLOBAL__D__ZN12ActivityPageC2Ev
 
 .func __GLOBAL__D__ZN12ActivityPageC2Ev, 0, void
@@ -746,14 +679,11 @@ Lscope6:
 	.line 27
 	ld   i0,#0x0
 	ld   i1,#0xffff
-	call &__Z41__static_initialization_and_destruction_0ii
+	call &__Z41__static_initialization_and_destruction_0ii ; call non-native
 	pop  rt,fr
 	ret
 Lscope7:
-	.dtor __GLOBAL__D__ZN12ActivityPageC2Ev
 	.stabs	"_ZN3Ads13TEST_EMULATORE:S(4,39)",40,0,99,__ZN3Ads13TEST_EMULATORE
-	.stabs	"_ZN8NativeUI8BUF_SIZEE:S(0,37)=k(0,3)",38,0,44,__ZN8NativeUI8BUF_SIZEE
-	.stabs	"_ZN8NativeUI12MAX_BUF_SIZEE:S(0,37)",38,0,47,__ZN8NativeUI12MAX_BUF_SIZEE
 	.text
 	.stabs "",100,0,0,Letext
 Letext:

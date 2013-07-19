@@ -32,7 +32,7 @@ MA 02110-1301, USA.
 #include <ma.h>
 #include <maassert.h>
 #include <conprint.h>
-#include <MAUtil/String.h>
+//#include <MAUtil/String.h>
 #include <MAUtil/FileLister.h>
 
 #include "mavsprintf.h"
@@ -150,20 +150,25 @@ static MAUtil::String getLocalPath() {
 
 static int saveToStore(const char *name, const String &data)
 {
+	lprintfln("saveToStore");
 	MAHandle dataHandle = maCreatePlaceholder();
 	if(maCreateData(dataHandle, data.length()) != RES_OK)
 	{
+		lprintfln("saveToStore1");
 		return -1;
 	}
+	lprintfln("saveToStore2");
 	maWriteData(dataHandle, data.c_str(), 0, data.length());
-
+	lprintfln("saveToStore3");
 	MAHandle myStore = maOpenStore(name, MAS_CREATE_IF_NECESSARY);
 
 	if(myStore > 0)
 	{
+		lprintfln("saveToStore4");
 		maWriteStore(myStore, dataHandle);
+		lprintfln("saveToStore5");
 		maCloseStore(myStore, 0);
-
+		lprintfln("saveToStore6");
 		return 1;
 	}
 	return -1;
@@ -176,7 +181,7 @@ static int readFromStore(const char *name, String &data)
 	if(store>0)
 	{
 		MAHandle dataHandle = maCreatePlaceholder();
-		int len = data.length();
+//		int len = data.length();
 		if( maReadStore(store, dataHandle) != RES_OUT_OF_MEMORY  )
 		{
 			int size = maGetDataSize(dataHandle);
@@ -253,9 +258,11 @@ static eFile tryToRead(MAUtil::String &config) {
 
 static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUtil::String &tokenAuthent, MAUtil::String &mode, long long &idMedia, bool vibrate, bool notification) {
 
+	lprintfln("trytowrite");
 	int res;
 	MAHandle file;
-	if (getPlatform() != IOS) {
+	int plateforme = getPlatform();
+	if (plateforme != IOS) {
 		// Construct the filename.
 		MAUtil::String filename = getLocalPath() + "EA_mobile_app_conf.txt";
 
@@ -293,15 +300,29 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
 	if (notification == false) {
 		sNotification = "false";
 	}
-
-	MAUtil::String tmp = "{\"login\" : \"" + login + "\",\"token_mobile\" : \""
-			+ tokenMobile + "\",\"token_authent\" : \"" + tokenAuthent
-			+ "\",\"authentication_mode\" : \"" + mode
-			+ "\",\"id_media_value\" : " + Convert::toString(idMedia)
-			+ ",\"notification\" : " + sNotification + ",\"vibrate\" : "
-			+ sVibrate + "}";
+	lprintfln("trytowrite1");
+	String tmp = "{\"login\" : \"";
+	lprintfln("trytowrite1.01");
+	String tmp01 = login ;
+	lprintfln("trytowrite1.02");
+	String tmp02 = "\",\"token_mobile\" : \"";
+	lprintfln("trytowrite1.03");
+	String tmp1	= tokenMobile;
+		lprintfln("trytowrite1.1");
+	String tmp2 = "\",\"token_authent\" : \"" + tokenAuthent;
+		lprintfln("trytowrite1.2");
+	String tmp3	= "\",\"authentication_mode\" : \"" + mode;
+		lprintfln("trytowrite1.3");
+	String tmp4	= "\",\"id_media_value\" : " + Convert::toString(idMedia);
+		lprintfln("trytowrite1.4");
+	String tmp5	= ",\"notification\" : " + sNotification + ",\"vibrate\" : ";
+		lprintfln("trytowrite1.5");
+	String tmp6	= sVibrate + "}";
+		lprintfln("trytowrite1.6");
+		tmp += tmp01 + tmp02 + tmp1 + tmp2 + tmp3 + tmp4 + tmp5 + tmp6;
+	lprintfln("trytowrite1.7");
 	//    static const char data[] = tmp.c_str();
-	if (getPlatform() != IOS) {
+	if (plateforme != IOS) {
 		res = maFileWrite(file, tmp.c_str(), tmp.size());
 		lprintfln(tmp.c_str());
 //    maToast(tmp.c_str(),MA_TOAST_DURATION_LONG);
@@ -312,12 +333,14 @@ static eFile tryToWrite(MAUtil::String &login, MAUtil::String &tokenMobile, MAUt
 		printf("Closing...\n");
 		res = maFileClose(file);
 		MAASSERT(res == 0);
-	}
-	else{
+	}else{
+		lprintfln("trytowrite2");
 		if (saveToStore("EA_mobile_app_conf.txt",tmp)){
+			lprintfln("trytowrite3");
 			return FILE_CLOSE;
 		}
 		else{
+			lprintfln("trytowrite4");
 			return FILE_OPEN_ERROR;
 		}
 	}

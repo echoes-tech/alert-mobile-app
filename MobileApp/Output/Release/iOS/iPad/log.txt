@@ -1,5 +1,5 @@
-PerformanceFrequency: 3215449
-StartCount: 80339644960
+PerformanceFrequency: 3215400
+StartCount: 22458221331
 Hello World!
 argc: 12
 1:-program
@@ -13,16 +13,16 @@ AddFontResourceEx: 2 faces added.
 InitVM .. 
 LoadVM
 maxCustomEventSize: 0x28
-Head.DataSize: 0x400000
-Head.StackSize: 0x80000
-Head.HeapSize: 0x300000
-Head.EntryPoint: 0x2a12b
-Head.CodeLen: 0x93b21
+Head.DataSize: 0x1000000
+Head.StackSize: 0x200000
+Head.HeapSize: 0x800000
+Head.EntryPoint: 0x2ba27
+Head.CodeLen: 0x9541d
 CODE_SEGMENT_SIZE: 0x100000
-Head.DataLen: 0xd530
-Head.DataSize: 0x400000
-DATA_SEGMENT_SIZE: 0x400000
-Head.IntLen: 0xd4a
+Head.DataLen: 0xdbfc
+Head.DataSize: 0x1000000
+DATA_SEGMENT_SIZE: 0x1000000
+Head.IntLen: 0xd5d
 Type 2, size 23456
 Type 2, size 2218
 Type 2, size 2218
@@ -151,6 +151,8 @@ Type 4, size 22
 Type 4, size 27
 Type 4, size 13
 Type 4, size 13
+Type 4, size 13
+Type 4, size 20
 Type 4, size 14
 Type 4, size 18
 Type 4, size 8
@@ -174,28 +176,27 @@ Type 4, size 15
 Type 4, size 9
 Type 4, size 9
 Type 9, size 10
-Type 4, size 152
+Type 4, size 154
 ResLoad complete
 IDL version match!
-maSyscallPanicsDisable
 Connecté ? : -2: 
 maPanic 0, "This application uses Native UI, which is not supported on the current platform. Please select another target profile in the right-hand profile panel."
 DumpCallStackEx:
 reportCallStack
 0
-IP: 0x44a58
+IP: 0x46354
 Call stack: 8 frames
-0: 0x2a15a
-1: 0x241c
-2: 0x5189
-3: 0x3f34c
-4: 0x3c593
-5: 0x43bf4
-6: 0x44c69
-7: 0x44a5a
-Exit @ IP 0x44a58  SP 0x3ffeb4
-InstCount: 49774
-IP: 0x2A12B
+0: 0x2ba56
+1: 0x242e
+2: 0x53fa
+3: 0x40c48
+4: 0x3de8f
+5: 0x454f0
+6: 0x46565
+7: 0x46356
+Exit @ IP 0x46354  SP 0xfffeb0
+InstCount: 49725
+IP: 0x2BA27
 Profile dumped.
 level: 8
 maxLevel: 11
